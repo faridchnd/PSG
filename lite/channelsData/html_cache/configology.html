@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.02K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">10</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">114</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Contact : <a href="https://t.me/piavati" target="_blank">@piavati</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=3cf5644c8fd2031b61_13823849080055586599">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ed28723dd3862e5c35_6244053570316667002">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=3cf5644c8fd2031b61_13823849080055586599">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ed28723dd3862e5c35_6244053570316667002">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/configology">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/configology">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/configology?before=1283" class="tme_messages_more js-messages_more" data-before="1283"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1283" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4MywidCI6MTc1MTk3NjQ1OSwiaCI6ImExY2JmNGI0YTE0MmZmNzRlZCJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/configology?before=1283" class="tme_messages_more js-messages_more" data-before="1283"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1283" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4MywidCI6MTc1MTk4MTU1OSwiaCI6ImVkMDExZjg2Y2YyMmQ5MDIzOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,23 +245,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/Configology/1283" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote expandable>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@4.158.124.20:443#%40Configology%F0%9F%A9%B8<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@4.158.124.20:443#%40Configology%F0%9F%A9%B82<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@74.177.202.58:443#%40Configology%F0%9F%A9%B83<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@131.145.34.231:443#%40Configology%F0%9F%A9%B84</blockquote><br/><br/><br/>Connect<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA9B8.png')"><b>🩸</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">472</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1283"><time datetime="2025-07-07T17:25:41+00:00" class="time">17:25</time></a></span>
+    <span class="tgme_widget_message_views">476</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1283"><time datetime="2025-07-07T17:25:41+00:00" class="time">17:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1284" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NCwidCI6MTc1MTk3NjQ1OSwiaCI6Ijk1MzE4NmIwMjgzN2Y5YWQ0MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1284" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NCwidCI6MTc1MTk4MTU1OSwiaCI6IjdkZDA1NGM3NGEwNmJjYjFmYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -159,20 +269,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">خیلی کشور بامزه‌ایه. تو جنگ هم هواش از بقیه موقع‌ها تمیزتره هم دلار توش ارزون‌تره، عالیه.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98AD.png')"><b>😭</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">469</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1284"><time datetime="2025-07-07T17:30:32+00:00" class="time">17:30</time></a></span>
+    <span class="tgme_widget_message_views">473</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1284"><time datetime="2025-07-07T17:30:32+00:00" class="time">17:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1285" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NSwidCI6MTc1MTk3NjQ1OSwiaCI6IjZiZTIzNmM4NjAwMWYwNTQ5NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1285" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NSwidCI6MTc1MTk4MTU1OSwiaCI6ImYzYjEzMjU3Y2RmMmY1ZmUwMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -187,20 +295,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fbc0fd74-9af5-4c7e-ae65-048e34a04929@172.66.132.12:443?path=%2F%F0%9F%A7%94%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%A7%94%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F&amp;security=tls&amp;alpn=h3%2Ch2%2Chttp%2F1.1&amp;encryption=none&amp;host=s1.sUbUrl.OrG&amp;fp=randomized&amp;type=ws&amp;sni=s1.sUbUrl.OrG#%40Configology%F0%9F%87%BA%F0%9F%87%B2<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">514</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1285"><time datetime="2025-07-07T17:34:38+00:00" class="time">17:34</time></a></span>
+    <span class="tgme_widget_message_views">518</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1285"><time datetime="2025-07-07T17:34:38+00:00" class="time">17:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1286" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NiwidCI6MTc1MTk3NjQ1OSwiaCI6Ijk1YzRkMjdhZjljOGM3YjFlMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1286" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NiwidCI6MTc1MTk4MTU1OSwiaCI6IjBmMmVhMGNmNTdhNmY2ZGVlMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -215,20 +321,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">من فکر می‌کنم این آلودگی طبیعی نیست و اگه رادیواکتیوی باشه به زودی همه‌مون سه‌پستون می‌شیم.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>9</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">518</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1286"><time datetime="2025-07-07T17:34:52+00:00" class="time">17:34</time></a></span>
+    <span class="tgme_widget_message_views">523</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1286"><time datetime="2025-07-07T17:34:52+00:00" class="time">17:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1287" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NywidCI6MTc1MTk3NjQ1OSwiaCI6ImQ2YzcyOTY5MmE5OGZhYTUzOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1287" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4NywidCI6MTc1MTk4MTU1OSwiaCI6IjhkNjkzNmU4MjdmOTNlNDVkMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -243,20 +347,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0@104.16.0.113:80?path=%2F%3Fed%3D2560%2F%3FJOKERRVPN&amp;security=none&amp;encryption=none&amp;host=barayeiran.nastaranh.dpdns.org&amp;type=ws#%40Configology%F0%9F%90%88<br/><br/>پینگ۶۰۰<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9088.png')"><b>🐈</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA684.png')"><b>🦄</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">515</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1287"><time datetime="2025-07-07T18:51:11+00:00" class="time">18:51</time></a></span>
+    <span class="tgme_widget_message_views">520</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1287"><time datetime="2025-07-07T18:51:11+00:00" class="time">18:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1288" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjM2NjMxYTFmYzZlNDAwM2EyNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1288" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4OCwidCI6MTc1MTk4MTU1OSwiaCI6IjVhMTYwYTg1NTNkZTExZDFkNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -271,20 +373,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2F%3Fed%3D2590&amp;security=none&amp;encryption=none&amp;host=dw.alibichareh.dpdns.org&amp;type=ws#%40Configology%F0%9F%A7%A1<br/><br/>وصله<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A1.png')"><b>🧡</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">489</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1288"><time datetime="2025-07-07T20:05:21+00:00" class="time">20:05</time></a></span>
+    <span class="tgme_widget_message_views">497</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1288"><time datetime="2025-07-07T20:05:21+00:00" class="time">20:05</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1289" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjJjMTAzM2JlODE1MzU2YjI1ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1289" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTI4OSwidCI6MTc1MTk4MTU1OSwiaCI6IjFjMjlkOWFkZDRlNjFhZjgwOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -301,23 +401,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/Configology/1289" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote expandable>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@4.250.60.151:443#%40Configology%F0%9F%A9%B5<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@admin.c4.webramz.co:443#%40Configology%F0%9F%92%99</blockquote><br/><br/><br/>Connect<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA9B5.png')"><b>🩵</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">502</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1289"><time datetime="2025-07-07T20:06:51+00:00" class="time">20:06</time></a></span>
+    <span class="tgme_widget_message_views">514</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1289"><time datetime="2025-07-07T20:06:51+00:00" class="time">20:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1349" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM0OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjkyZjVjOGM2YmNlNTVhNTliOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1349" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM0OSwidCI6MTc1MTk4MTU1OSwiaCI6IjY0MjEwOWE5OTYyYWMwOGQxMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -332,20 +425,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2F%3Fed%3D2590&amp;security=none&amp;encryption=none&amp;host=dw.alibichareh.dpdns.org&amp;type=ws#%40Configology%F0%9F%AB%A7<br/><br/>پینگ۷۰۰<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA7.png')"><b>🫧</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">371</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1349"><time datetime="2025-07-08T06:19:34+00:00" class="time">06:19</time></a></span>
+    <span class="tgme_widget_message_views">393</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1349"><time datetime="2025-07-08T06:19:34+00:00" class="time">06:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1350" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MCwidCI6MTc1MTk3NjQ1OSwiaCI6Ijk4ZGE1NjMyMzIxYzRiMTk5NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1350" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MCwidCI6MTc1MTk4MTU1OSwiaCI6ImY0M2RlNmNkODBmZjlhNmI3MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -361,24 +452,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Configology/1279" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Configology/1279" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانیفگولوژی | Conifgology</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">دارم با خانومی حرف میزنم</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ممد بعداز گفتن این جمله دیگه رویت نشده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9180.png')"><b>👀</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">372</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1350"><time datetime="2025-07-08T06:22:58+00:00" class="time">06:22</time></a></span>
+    <span class="tgme_widget_message_views">394</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1350"><time datetime="2025-07-08T06:22:58+00:00" class="time">06:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1351" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MSwidCI6MTc1MTk3NjQ1OSwiaCI6IjRmMGVmYmQzZGRmMGMzMTYxZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1351" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MSwidCI6MTc1MTk4MTU1OSwiaCI6IjljOGYwYzZmY2UzYmFiMDYwNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -393,20 +482,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">290</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1351"><time datetime="2025-07-08T09:27:58+00:00" class="time">09:27</time></a></span>
+    <span class="tgme_widget_message_views">324</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1351"><time datetime="2025-07-08T09:27:58+00:00" class="time">09:27</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1352" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MiwidCI6MTc1MTk3NjQ1OSwiaCI6ImNiN2FhZDc3MzZjZDlhZjc4YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1352" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MiwidCI6MTc1MTk4MTU1OSwiaCI6ImRjNDNiNGQ5ZjUwOWJhNDkwNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -421,20 +508,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">زیدی منو خورد</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">288</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1352"><time datetime="2025-07-08T09:28:06+00:00" class="time">09:28</time></a></span>
+    <span class="tgme_widget_message_views">323</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1352"><time datetime="2025-07-08T09:28:06+00:00" class="time">09:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1353" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MywidCI6MTc1MTk3NjQ1OSwiaCI6IjVhYjczMGFkMmVmODYxOTQwMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1353" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1MywidCI6MTc1MTk4MTU1OSwiaCI6Ijc3YzRiNGM0OTY1Zjk5YjU0YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -449,20 +534,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">من نبودم خوب لاسیدین ها</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">253</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1353"><time datetime="2025-07-08T09:59:38+00:00" class="time">09:59</time></a></span>
+    <span class="tgme_widget_message_views">292</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1353"><time datetime="2025-07-08T09:59:38+00:00" class="time">09:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1354" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NCwidCI6MTc1MTk3NjQ1OSwiaCI6IjNiN2JlNmQ4YjQ4MzgzMTRlOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1354" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NCwidCI6MTc1MTk4MTU1OSwiaCI6IjZjYWVjZjM4ZTY0ZDE0Mzk1YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -478,24 +561,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Configology/1352" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Configology/1352" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانیفگولوژی | Conifgology</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">زیدی منو خورد</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">خیلی سریع دست به کار شده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">256</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1354"><time datetime="2025-07-08T09:59:52+00:00" class="time">09:59</time></a></span>
+    <span class="tgme_widget_message_views">293</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1354"><time datetime="2025-07-08T09:59:52+00:00" class="time">09:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap sticker_media no_bubble js-widget_message" data-post="Configology/1355" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NSwidCI6MTc1MTk3NjQ1OSwiaCI6ImVkOTJhNmM1NzI0OWYzODRmZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap sticker_media no_bubble js-widget_message" data-post="Configology/1355" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NSwidCI6MTc1MTk4MTU1OSwiaCI6IjZlNjc4ZjJlY2Y4ZjBkNDY0OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -511,7 +592,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Configology/1354" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Configology/1354" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانیفگولوژی | Conifgology</span>
 </div>
@@ -524,17 +605,15 @@
   </div>
 </div>
 <div class="tgme_widget_message_sticker_wrap media_supported_cont"><div class="tgme_widget_message_videosticker js-videosticker" style="background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iLTMwMCUiIHgyPSItMjAwJSIgeTE9IjAiIHkyPSIwIj48c3RvcCBvZmZzZXQ9Ii0xMCUiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1vcGFjaXR5PSIuMDciLz48c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1vcGFjaXR5PSIuMDciLz48c3RvcCBvZmZzZXQ9IjExMCUiIHN0b3Atb3BhY2l0eT0iLjEiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJ4MSIgZnJvbT0iLTMwMCUiIHRvPSIxMjAwJSIgZHVyPSIzcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJ4MiIgZnJvbT0iLTIwMCUiIHRvPSIxMzAwJSIgZHVyPSIzcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI2cpIiBkPSJNMjU2LDUxMmgtMjU2bDAtMjU2LDAtMjU2aDI1NiwyNTZ2MjU2LDI1NmgtMjU2eiIvPjwvc3ZnPg==');width:256px;"><div style="padding-top:100%"></div><video class="js-videosticker_video" src="https://cdn4.cdn-telegram.org/file/60b720cbf0.webm?token=Qohs_TScTMupM8W5Iz14RAGjLPQUPe3FfJKz5r3E2F4c3aIMYjBWdGeg-KxE7Cjoti3h6C5G47eSbTBdTeExYhno2UIA7HZpJyOh88Ne_75jHghAmornAMngMh6G9yvlPvq_JEmpUCo1brnelLo2LqCXbwZxZxRzOaDzK0tf5z_9SJ7JFn9x10yCwAXvHWbRfSpjbcWq1FoID-v_WTJJC9oIY6a0tCGVuarryOP7ThGWys3p4ChmCy08AF5Zk0RzePD1VWE6NVw9IPnBqQJc3Pdx34v-KQxii1YzCcAe4ofEyWlNXz7bwVWfzlOtDzUYCCy-Fg2jLWucNM_kr9if0A" width="100%" height="100%" preload muted autoplay loop playsinline disablepictureinpicture><img src="https://cdn4.cdn-telegram.org/file/T-c7axj5nnEkB_hcQfH0krMKqLR_j7IyCptAMEx1P-7p-7qx2Yyp4v45Hv_iSI69ZpqPhajleCrn1Tqz5GyqWA2mg9W3xm1RhXa94dEns6b5DSqiGbhdu3dR01pUNaaOVd8q-wYLFLc8T5x9VP0ABUateZv78tg5QNerF1C_gbgtXsnvf-kjk_bF3fvGSbpzcERbfhEhHkYgJHXX8QkraB3scIMoe-1n3VbfzFtIEt9M8PLVi15aa-PloACzE7VfNll5eZ6MaVpFZNlyu2V2LNcWMatrGqTS_5Mq6MYoQUDcKQd1obom8qVJLPcFrhpuR7zQ8qqymtpon2vtvolntg"></video></div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">175</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1355"><time datetime="2025-07-08T10:58:42+00:00" class="time">10:58</time></a></span>
+    <span class="tgme_widget_message_views">222</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">› 𝑬𝒎𝒚 &#33;</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1355"><time datetime="2025-07-08T10:58:42+00:00" class="time">10:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1356" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NiwidCI6MTc1MTk3NjQ1OSwiaCI6IjdhZDVjMjU2MmE4YzFkYTU1ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1356" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NiwidCI6MTc1MTk4MTU1OSwiaCI6Ijc5MGUyNjgyMzllZTE3YzQ5MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -549,20 +628,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">عکسای مجتبی پورمحسن واقعا واسم عجیبه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98AD.png')"><b>😭</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">160</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1356"><time datetime="2025-07-08T11:15:44+00:00" class="time">11:15</time></a></span>
+    <span class="tgme_widget_message_views">208</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1356"><time datetime="2025-07-08T11:15:44+00:00" class="time">11:15</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1357" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NywidCI6MTc1MTk3NjQ1OSwiaCI6ImZlZGY4YmI3MjBiZWE2OGJkMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1357" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1NywidCI6MTc1MTk4MTU1OSwiaCI6ImRjODBkOTAyODhhZjhhNzMyMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -579,18 +656,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">چرا انقدر صداش به قیافش نمیاااااد</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">153</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1357"><time datetime="2025-07-08T11:18:02+00:00" class="time">11:18</time></a></span>
+    <span class="tgme_widget_message_views">197</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1357"><time datetime="2025-07-08T11:18:02+00:00" class="time">11:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1358" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjU1ZmM1MTZhZDlkZDAyYjdhNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1358" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1OCwidCI6MTc1MTk4MTU1OSwiaCI6ImFlZjVjNTMwNzIzZWYxYTYzNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -609,18 +684,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6010567819357439828 1399444374_456247124" href="https://t.me/Configology/1358" style="width:750px;background-image:url('https://cdn4.cdn-telegram.org/file/l25qZCijQg3MjUCgpoPBqrnoBVJ8Rev66P-Ss7HJck2CEqELVdLQpI-07X0DLgHjo5iWa-54k869fKHZ-V4xR91EkOZWzeMwZvL8ahgOIJBbPqcdu4d7LDyXYsiDtoF4ZCl3JAfKca-psSi20Z-TbLzebR_mfDyqif7SiRql-pAMpmCz1XopoWleetGilgl6VphL-OnH9ZS9YX_PiEYPFTXDuGKLNkm6Fdv0zjAt6HA6R7_-XtG8EMBBmWRNhKipZ4gXmkhhLByAbbhTai2NeJqzXcODupJwqNAWtRb4TKm-NI_T1ad3awN4fnIGVanDXiQnd_mZoMTTjXw3XgVg2A.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100.66666666667%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">به پدر زنم یه لینک فرستادن گفتن عکسای نیوشا توشه، ولی نبوده<br/>دارم میرم اونجا امیدوارم که اشتباه شده باشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">به پدر زنم یه لینک فرستادن گفتن عکسای نیوشا توشه، ولی نبوده<br/>دارم میرم اونجا امیدوارم که اشتباه شده باشه</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">143</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1358"><time datetime="2025-07-08T11:24:28+00:00" class="time">11:24</time></a></span>
+    <span class="tgme_widget_message_views">203</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1358"><time datetime="2025-07-08T11:24:28+00:00" class="time">11:24</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1359" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjZiMzI5YjliNTg1YzFkOWQzZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1359" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM1OSwidCI6MTc1MTk4MTU1OSwiaCI6IjQyNTI5Y2RlMDJiOWRjZTY2MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -637,23 +710,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/Configology/1359" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote expandable>vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2FTelegram---MTMVPN---Telegram---MTMVPN---Telegram---MTMVPN---Telegram---MTMVPN%3Fed%3D2590&amp;security=none&amp;encryption=none&amp;host=dw.alibichareh.dpdns.org&amp;type=ws#%40Configology%F0%9F%A6%A01<br/><br/>vless://3d554bba-9c77-499f-9055-1eb42058ed00@230920393.f-sub.com:3799?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A02<br/><br/>vless://3d554bba-9c77-499f-9055-1eb42058ed00@99823232.webnama.com.tr:1517?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A03<br/><br/>vless://3d554bba-9c77-499f-9055-1eb42058ed00@892389823.webnama.com.tr:1517?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A04<br/><br/>vless://ab80613b-e04b-4af5-bad9-9ca5c448266e@compose.fast.hosting-ip.com:80?mode=auto&amp;path=%2FGoodLuck%3Fed%3D2560&amp;security=none&amp;encryption=none&amp;extra=%7B%22scMaxEachPostBytes%22%3A%20%221000000%22%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&amp;host=Mastercloud.global.ssl.fastly.net.&amp;type=xhttp#%40Configology%F0%9F%A6%A05<br/><br/>vless://7f502367-c958-4e74-9ac7-1364406e69f5@65.109.191.147:8443?security=none&amp;encryption=none&amp;host=tgju.org&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A06<br/><br/>vless://3d554bba-9c77-499f-9055-1eb42058ed00@300232332.webnama.com.tr:1517?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A07<br/><br/>vless://375805ec-e355-4e09-afe1-6dbc4da21f2e@91.99.166.88:8443?security=none&amp;encryption=none&amp;host=skyroom.online&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A08<br/><br/>vless://eacdd4fc-718c-40e3-bab1-40fe822fda2d@xpanel-ir.panelfreedom.com:2092?security=none&amp;encryption=none&amp;host=parsabr.com&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A09<br/><br/>vless://8e4d0dba-884f-4bbd-9f1d-ea5ec78efe7d@bam.erfann.shop:15807?security=none&amp;encryption=none&amp;host=ua.yektanet.com&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A010<br/><br/>vless://7dfe125d-806d-4e5a-a91c-bcc2020ef7be@91.99.238.186:31015?security=none&amp;encryption=none&amp;host=exo.ir&amp;headerType=http&amp;type=tcp#%40Configology%F0%9F%A6%A011<br/><br/>vless://a707317c-2236-41c0-9c00-63e866401b25@server2.ultra-irancell.com:80?mode=auto&amp;path=%2F&amp;security=none&amp;encryption=none&amp;extra=%7B%22scMaxEachPostBytes%22%3A%20%221000000%22%2C%20%22scMaxConcurrentPosts%22%3A%20100%2C%20%22scMinPostsIntervalMs%22%3A%2030%2C%20%22xPaddingBytes%22%3A%20%22100-1000%22%2C%20%22noGRPCHeader%22%3A%20false%7D&amp;host=turboo-server.org&amp;type=xhttp#%40Configology%F0%9F%A6%A012</blockquote><br/><br/><br/>Connect<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA6A0.png')"><b>🦠</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">117</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1359"><time datetime="2025-07-08T11:32:01+00:00" class="time">11:32</time></a></span>
+    <span class="tgme_widget_message_views">183</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1359"><time datetime="2025-07-08T11:32:01+00:00" class="time">11:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1360" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM2MCwidCI6MTc1MTk3NjQ1OSwiaCI6IjlkNzRhOTA0ZjkwN2NmMzM5OCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1360" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM2MCwidCI6MTc1MTk4MTU1OSwiaCI6IjQ5MzA0NzU3YjkwMTQ3YTkwNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -668,20 +734,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">امروزم که روز قدردانی از گاوهاست.<br/>خودت میدونی باید برای کی بفرستی دیگه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB5F09F8FBB.png')"><b>🫵🏻</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">107</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1360"><time datetime="2025-07-08T11:36:47+00:00" class="time">11:36</time></a></span>
+    <span class="tgme_widget_message_views">179</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1360"><time datetime="2025-07-08T11:36:47+00:00" class="time">11:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1369" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM2OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjBlOWNjZWFhZDhhNjlkYjFiYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Configology/1369" data-view="eyJjIjotMjg2NDk1MjM3MywicCI6MTM2OSwidCI6MTc1MTk4MTU1OSwiaCI6IjFhNzA2MzZiOTcyZDhlZTU3YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Configology"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/kIaHsKPV-f90qQia72JssaTNYg6HZxe_SVkb2z2K6C7kro0_yTN7qLZzdn9apsAdKJNYp2bSXmD5VMzSTjChtgvauh9RyPAd_Mu9kjGjfZfjy3pObig4FeA-iEWGOSvnjeOgV9fbCg8QoHwjz6SmlZ2ITHBEXwaD7-QnNjS3d51qT9CRUP_CBQjujCmO6vwNJgsBPYCzXpHZ60xDT3DH_2DcjquCF7_K8buvb5JKVZyg622wu99ooHOM6o2Nla2HV03vcEy9z8vOcLoS_N3I5nV_LB_HlTQILEqGK3tdpSXx67H4c5mPQOdbJX6nXwe_ORP_6t1kNIRCTNc5iCM41g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -698,13 +762,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Configology"><span dir="auto">کانیفگولوژی | Conifgology</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://84c0faa2-fb2e-45b4-8dfc-17ca15bbba67@mahtabhub.metishop.top:8080?path=%2F&amp;security=none&amp;encryption=none&amp;type=ws#%40Configology%F0%9F%A6%A5<br/><br/>وصله<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">33</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1369"><time datetime="2025-07-08T11:54:46+00:00" class="time">11:54</time></a></span>
+    <span class="tgme_widget_message_views">117</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝐛𝐚𝐡𝐚𝐫</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Configology/1369"><time datetime="2025-07-08T11:54:46+00:00" class="time">11:54</time></a></span>
   </div>
 </div>
   </div>
@@ -718,11 +780,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 45.13ms -->
+<!-- page generated in 51.59ms -->

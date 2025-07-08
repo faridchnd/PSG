@@ -56,9 +56,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -87,7 +204,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">230</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">video</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">72</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>اخبار کال اف <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>وارزون <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>خرید و فروش اکانت+cp<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>واسطه گری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>کاستوم روم هفتگی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>تنها ادمین واسطه<br/><a href="https://t.me/aliirezamcp" target="_blank">@aliirezamcp</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺️</b></i>قبل از هر گونه خرید و فروش با واسطه در ارتباط باشید</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=0d93da1da11f5bc0bc_14457642279539290168">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a1470d5e96f4d1d884_11847182847736648195">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -108,7 +225,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=0d93da1da11f5bc0bc_14457642279539290168">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a1470d5e96f4d1d884_11847182847736648195">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/limootuursh">
@@ -125,7 +242,7 @@
 <main class="tgme_main" data-url="/limootuursh">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/limootuursh?before=222" class="tme_messages_more js-messages_more" data-before="222"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/222" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjIyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOGYzZGQ2NTYxOTA1YWFhYTc2In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/limootuursh?before=222" class="tme_messages_more js-messages_more" data-before="222"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/222" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjIyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzAxMzgxNWQ3NjE0NjUwM2RmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -142,9 +259,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.Me/proxy?server=178.63.142.212&amp;port=8&amp;secret=Ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000" target="_blank" rel="noopener">https://t.Me/proxy?server=178.63.142.212&amp;port=8&amp;secret=Ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000</a><br/><br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -153,7 +268,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/223" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjIzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiY2UxYWMzNjI3NTQ0NWIzMTI1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/223" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjIzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMGMwNjZlYzkyZTEyYWNhNTE3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -170,10 +285,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">V2ray کانفینگ<br/><br/>vless://376b9861-2fc6-4647-959c-18185cd9c95a@104.31.16.36:443?path=%2Ffflsws&amp;security=tls&amp;encryption=none&amp;host=lmn39.sbs&amp;type=ws&amp;sni=lmn39.sbs#20+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://61958b98-d52a-420e-bb42-a3fd22985895@www.unpkg.com:2096?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;fp=chrome&amp;type=grpc&amp;serviceName=.....&amp;sni=italia.dalixw.fun#21+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://61958b98-d52a-420e-bb42-a3fd22985895@telus.com:2096?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;fp=chrome&amp;type=grpc&amp;serviceName=.....&amp;sni=pol.dalixw.fun#22+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://80ce8c17-f249-471b-b78a-17a60f17b1be@104.21.19.124:80?path=%2Ftelegram%2Fid%2Fov2ray&amp;security=none&amp;encryption=none&amp;host=www.moji1372.buzz&amp;type=ws#23+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://1dffb1fd-09b3-4bbe-9631-a3ae6a9a57d1@104.18.78.200:80?path=%2F&amp;security=none&amp;encryption=none&amp;host=gxg7RQ.dL-apArAT.coM&amp;type=ws#24+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443?path=%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;host=3k.pureboy.eu.org&amp;type=ws&amp;sni=3k.pureboy.eu.org#25+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@3k.pureboy.eu.org:443?path=%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;host=3k.pureboy.eu.org&amp;type=ws&amp;sni=3k.pureboy.eu.org#26+YALDA+NIGHT+%F0%9F%8D%89<br/><br/>vmess://eyJhZGQiOiJkYXFlaHdpdi5zaXRlIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJkYXFlaHdpdi5zaXRlIiwiaWQiOiI0ZmEzNWVhNC02NjhlLTRkN2ItOWJiYy1iODM2ODEwNjA2MTciLCJuZXQiOiJ3cyIsInBhdGgiOiIva3dobXZ3cyIsInBvcnQiOiI0NDMiLCJwcyI6IjI3IFlBTERBIE5JR0hUIPCfjYkiLCJzY3kiOiJhdXRvIiwic25pIjoiZGFxZWh3aXYuc2l0ZSIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/><br/>vmess://eyJhZGQiOiI4MS4xMi4yNy42IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImRmY2MxNTAwLTcwYzQtNDEwYi1iNWZlLTIwNTJhMDExMDE0ZSIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNTYyOTUiLCJwcyI6IjI4IFlBTERBIE5JR0hUIPCfjYkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9<br/><br/>vless://f9f89381-7aa4-4c1f-8ce5-4e0e15453d90@49.12.192.107:2096?mode=gun&amp;security=reality&amp;encryption=none&amp;pbk=OVCexPrzOMdpDzigcnRe-Ufilj4qQe2bXA-LAT---jo&amp;fp=chrome&amp;type=grpc&amp;serviceName=ZEDMODEON&amp;sni=sourceforge.net&amp;sid=e46a1eae#29+YALDA+NIGHT+%F0%9F%8D%89<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E280BC.png')"><b>‼️</b></i> بدون توجه به پینگ متصل شوید .<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97A3.png')"><b>🗣️</b></i> عملکرد سرورها روی هر اپراتور متفاوت است در صورت قطعی از سرورهای دیگر کانال استفاده کنید.<br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">513</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/limootuursh/223"><time datetime="2023-12-20T06:58:45+00:00" class="time">06:58</time></a></span>
@@ -181,7 +294,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/224" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiOGFlZjkxNjhjOTI3YmYzYjY1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/224" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWFmODdiNzIyMzI4MTRhNmM2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -198,9 +311,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">یادت هست...<br/>چند ماه پیش را میگویم، انتظار پاییز را میکشیدیم برایش ذوق داشتیم. اکنون پاییز نفس های آخرش را میکشد، به همین زودی تمام شد. خیلی فکر ها برایش داشتیم نه؟ خیلی خاطره‌ها خواستیم بسازیم که نشد...<br/>خب تمام عمر همین است فصل‌ های مختلف زندگی میگذرد، تمام میشود در آخر این تویی که خودت را تنها میابی. تنهای تنها میان اتفاقاتی که نیفتاد&#33; پس بخند، با تمام نداشته‌ هایت برقص در همین لحظه، همین حالا به حال خوبت وعده‌ی فلان فصل و فلان روز و فلان شخص را نده.<br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -209,7 +320,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/225" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDE3MTU2OGVmYmRjMjk1ZTU0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/225" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjRhOWNhNjdiOTI2YmZhZWViIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -226,9 +337,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">به قول دکتر، فرض کن تو بهترین توت‌فرنگی دنیایی.‌ بهترین توت‌فرنگی توی کل دنیا. هیچ توت‌فرنگی‌ای بهتر از تو وجود نداره. هم تپلی، هم ترش و شیرینی. هم خوب رسیدی و تازه‌ای و به موقع چیدنت. هم قشنگی، بدون ذره‌ای نقص. <br/>ولی اون خربزه دوست داره.<br/>خربزه دوست داره عزیزِ من. بفهم&#33;<br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -237,7 +346,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/226" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTJjZjNjNTJlNTE0MWEwNDA1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/226" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNmZjM2I2YjVhYzQwMzY4ZTVhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -254,9 +363,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=159.69.176.228&amp;port=443&amp;secret=7hYDAQIAAQAB_AMDhuJMOt1zMTAxLmRpdmFyY2RuLmNvbRYDAQIAAQABAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=159.69.176.228&amp;port=443&amp;secret=7hYDAQIAAQAB_AMDhuJMOt1zMTAxLmRpdmFyY2RuLmNvbRYDAQIAAQABAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -265,7 +372,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/227" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiODY4ZWRjYTM5Zjg4YjUwODM5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/227" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZmEzNzZmYzkwY2Y4MWY3NDg2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -282,10 +389,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.Me/proxy?server=136.243.217.24&amp;port=8&amp;secret=ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000" target="_blank" rel="noopener">https://t.Me/proxy?server=136.243.217.24&amp;port=8&amp;secret=ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000</a><br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">542</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/limootuursh/227"><time datetime="2023-12-20T09:14:44+00:00" class="time">09:14</time></a></span>
@@ -293,7 +398,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/228" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTNjMjdiNmIwNjU2MTU5Zjg0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/228" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjE1MTUzZjA4ZmQwYmU2ODk5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -310,10 +415,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">𝒚𝒐𝒖&#39;𝒓𝒆 𝒏𝒐𝒕𝒉𝒊𝒏𝒈 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒎𝒆 𝒓𝒆𝒎𝒆𝒎𝒃𝒆𝒓 𝒕𝒉𝒂𝒕<br/><br/>تو بدون من هیچی نیستی اینو یادت باشه<br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">511</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/limootuursh/228"><time datetime="2023-12-21T08:01:48+00:00" class="time">08:01</time></a></span>
@@ -321,7 +424,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/229" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMzQ1NTZlNmVjM2NhNjNmMGI0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/229" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjI5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZWY4NzY1NjU5YjcxYTVmOTczIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -338,10 +441,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">متصل<br/><br/><a href="https://T.me/proxy?server=136.243.217.116&amp;port=8&amp;secret=ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000" target="_blank" rel="noopener">https://T.me/proxy?server=136.243.217.116&amp;port=8&amp;secret=ee1603010200010001fc030386e24c3add6379626572706f6c6963652e676f762e69726379626572706F6c6963652e676f762e69726379626572706f6c6963652e676f762e697200000000000000000000000000000000</a><br/><br/><a href="https://t.me/limootuursh" target="_blank">@limootuursh</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">545</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/limootuursh/229"><time datetime="2023-12-21T15:15:15+00:00" class="time">15:15</time></a></span>
@@ -349,7 +450,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/238" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6IjIzOGciLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjUwMzZiNjQyZmFjZDQ2ZjA4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/238" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6IjIzOGciLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjM1Yjg2MTc2NDM2ZWMzNDQ2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -380,9 +481,7 @@
 </a>
     </div>
   </div>
-</div>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/+BYjDTGdIptw4MmE0" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">callcenter</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | اولین پوسترهای فصل اول<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> <a href="?q=%23News">#News</a> | <a href="?q=%23CODM">#CODM</a> <a href="?q=%23S11">#S11</a></div></div>
-
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/+BYjDTGdIptw4MmE0" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">callcenter</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | اولین پوسترهای فصل اول<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> <a href="?q=%23News">#News</a> | <a href="?q=%23CODM">#CODM</a> <a href="?q=%23S11">#S11</a></div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -391,7 +490,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/240" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjE1ZmQ5ODkyNzAwZDQ3OTg3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/240" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzg3NDIzNGJmYjM3MDFmMjI0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -414,15 +513,13 @@
   <video src="https://cdn4.cdn-telegram.org/file/fe18871b27.mp4?token=P_MNebYsdr43_OtCo0HVlYbN9146-LByEDa9vz6Cul4m7hNMsohnVdcviw0h4Oy8EISelcjlYMWCewaRjunEMD8XgIbzS4q2QIWv5l9OZO29A2SGYUwZ-q9llT2lI9emKsVK2putU_6tainrrrcyrD-Jzdz818DbdZoC-aN6fbC6UFVGaEN6wFpJSj5k3lOdXLXmNy8sVVV3BPtHohteug4hznMB0jgCTpoxFD43-09jLH46re2dNHaHKcZqd9dj4QLrHblh3mpKXPakngfL8UhLrbuvTyq7JuiiYX_0V_S985FKlaAQoHVIYq-3SBvyU318GDddbwcwneDwT2GEk4Gmj55zQLb3IFMSiE06GOoYSD7tGqoNCHDIv2qPGsrucdIBMKXDwbR6GryK0P7pJmwOONCidx9SI89Moiq-PHHfR6cUN-cg77xGFH8MAcLqdq2C7F6Bo4b7OzXerZ_Cy-pryAL6MPdO9MeUtgtqbHZAu62T9SbE7YuQgoyHOZs9KFisJmKv8axseaHotfn5HrOnsmfEFNXW6AjnierZOmJeiFZPrtS6uwKuOZ3jnteZgKwLQMbJE3msUrJ6cb7oJbhozXWPS5hnrHsRJXMbxuP0PXuJPui9L0u1V-5YjU8zGYVhBO-JDftLK1flbZwSImVLQQjrN4vuFpW0kegbbAY" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">2:19</time>
+<time class="message_video_duration js-message_video_duration">2:18</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/+BYjDTGdIptw4MmE0" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">callcenter</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | موسیقی متن Siren میتیک<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> <a href="?q=%23News">#News</a> | <a href="?q=%23CODM">#CODM</a> <a href="?q=%23S11">#S11</a></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/+BYjDTGdIptw4MmE0" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">callcenter</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | موسیقی متن Siren میتیک<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> <a href="?q=%23News">#News</a> | <a href="?q=%23CODM">#CODM</a> <a href="?q=%23S11">#S11</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -431,7 +528,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/241" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTk1ODg2ODMwMDk0MWQ5OTRjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/241" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDM3YzUxOTFlNTY4MjM4ZTlmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -450,9 +547,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5805412233948283166 1351677867_456245534" href="https://t.me/limootuursh/241" style="width:735px;background-image:url('https://cdn4.cdn-telegram.org/file/Boo-y-lI682-r0crv3Wg48zh6irJjHJw-4lfveuzNtwgqH-Y2UuT8QPWmb3V479oLBQ3xmvttnJMU86WHWxvmiRvDRCa8bwGuzBOh7fFygBiTKMzttPR4lxhF7bMfOkx_WuZaeDvZFecAT90TM3kE0TnDYBrHFfAh8FGdw-tFzmB0biZ6O8bX2sU5lJ1quGwfikJ0YdaGUuErLPw7N9P6JZHImfCApgUzaGiJyZ_iWa-nUKnzSTEWwnDzV0jesPF02eMEvdyrEbJ4GN57N2nuogKkFlvy9DqA_6yn9b7qZTRuuE0TPKD-Ibb0yitXmxGwxX-YRJe2uASl3ak-Gbsdg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:108.84353741497%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">تک هند / 1.3 / طاق بریپ<br/>فول کورماکو <br/>فول بلک گلد<br/>5 اسکین گردونه<br/>120اسکین<br/>200گان اپیک<br/>ترپ ماین و فلشبنگ لجند<br/>9سیزن بتل لجند/3سیزن مولتی لجند<br/><br/>6868986967255351297</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">تک هند / 1.3 / طاق بریپ<br/>فول کورماکو <br/>فول بلک گلد<br/>5 اسکین گردونه<br/>120اسکین<br/>200گان اپیک<br/>ترپ ماین و فلشبنگ لجند<br/>9سیزن بتل لجند/3سیزن مولتی لجند<br/><br/>6868986967255351297</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -461,7 +556,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/243" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDBhZDlmNWU5MjZhZjVjYmZjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/243" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTE1M2M5YzdiYmRmZTMwOTY5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -480,9 +575,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5805412233948283167 1351677867_456245535" href="https://t.me/limootuursh/243" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/H_KpNgDk6TVl1FBpju4tsWyXrbu5tdoRPmDwW6iCAXahPEjThycrAFzaw5fVUmlIaB6-ZUWKtMdhW4cdfAsY2byZ-MEnC_B6fUoydMnp3PQpv-9sgchOus_aiWAs9Z1h-hGe_8qtpKRnGKxWCrOGIkk_MybTimDha7KqGahA0o2FE0sf9DyJjQyWYI8mk8IBo8a4dUwnmv992SthAbKNA_NTr7BF549lDmz-A5-B0JNIOfbbGHrPzO2-f6AGNzCiBRmqa9vda-DVRJLlpbjgav4mbF5WagrHRPvA4Mnn31s06omIJHTRdSYd7mQFdb4SiRVRubmPvxGSGn10JZT5HA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:45%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%D8%B1%D9%88%D8%B4_%D8%A7%DA%A9%D8%A7%D9%86%D8%AA">#فروش_اکانت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> | ریجن: هند<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i> | لینک: تک سیو<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928E.png')"><b>💎</b></i> | سی‌پی: ۴<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9493.png')"><b>🔓</b></i> | بتل پس: خیلی زیاد<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939D.png')"><b>📝</b></i> | توضیحات:<br/>فول ام ۱۳ متیک <br/>فول کیلو متیک <br/>فول ای کی ۴۷ متیک <br/>فول ای ام ۲ متیک <br/>فول اسپکتر متیک به جز گان<br/>فول گانزو لجندی <br/>فول ۱۱۷ لجند<br/>ای کی ۴۷ کروماکو پرستیژ<br/>چاپر لجند(هلیکوپتر)و اسکینشو هم داره ولی فول نی <br/>فول کریت رگنار و فانتوم و اسپکتر<br/>فول لاکی باکس نیستی<br/>۱۶ اسکین گردونه ناب در کل<br/>باندل ریپر،پک مارا گربه<br/>دنس ناب نیکتو هم داره <br/>کلس ایربون و کوییک استریک لجند<br/>سی ۴ و کوکتل مولوتف و ای ام پی و تروفی سیستم و گاز گریند و فلش دران و کانتکت گریند لجند هم داره<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i> | قیمت: ۴۷۰۰ تومان</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%D8%B1%D9%88%D8%B4_%D8%A7%DA%A9%D8%A7%D9%86%D8%AA">#فروش_اکانت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> | ریجن: هند<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i> | لینک: تک سیو<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928E.png')"><b>💎</b></i> | سی‌پی: ۴<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9493.png')"><b>🔓</b></i> | بتل پس: خیلی زیاد<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939D.png')"><b>📝</b></i> | توضیحات:<br/>فول ام ۱۳ متیک <br/>فول کیلو متیک <br/>فول ای کی ۴۷ متیک <br/>فول ای ام ۲ متیک <br/>فول اسپکتر متیک به جز گان<br/>فول گانزو لجندی <br/>فول ۱۱۷ لجند<br/>ای کی ۴۷ کروماکو پرستیژ<br/>چاپر لجند(هلیکوپتر)و اسکینشو هم داره ولی فول نی <br/>فول کریت رگنار و فانتوم و اسپکتر<br/>فول لاکی باکس نیستی<br/>۱۶ اسکین گردونه ناب در کل<br/>باندل ریپر،پک مارا گربه<br/>دنس ناب نیکتو هم داره <br/>کلس ایربون و کوییک استریک لجند<br/>سی ۴ و کوکتل مولوتف و ای ام پی و تروفی سیستم و گاز گریند و فلش دران و کانتکت گریند لجند هم داره<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i> | قیمت: ۴۷۰۰ تومان</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -491,7 +584,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/244" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNWU0ZmNjMDA2YjRlZDk4M2UwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/244" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWFkOTMzMWIzMzRjMDU0MmM3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -510,9 +603,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5805412233948283239 1351677867_456245607" href="https://t.me/limootuursh/244" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/aMj4VEjCCjJQUNw2gDZiyBk85RNvajDrJK1SNPikl09hwNGarDon5Z-Cf4e54Gwx-T50nrFvgtl35jwSDjmxveWpcKsGLG0OjLe9vvhf8kbrEm9Bursny88Uxx3rQH5JeHExu6KSHxQf_7lugjVl6vWxx1mRDKQ0XdM82W6y0O0oXeanpV1rgBj8GrJu7wgfWWc3xOzwMPokEGG2wKtKaCIst6AjYo-qtWJmRzJrec45zDhQuuQ0cxOAunf7drf89fnESO9YOYGrRmm0Po6hEmYA7njqP_-opSAtEfU7e3f0B-mSJsLjhw4mSwZpl-c1yqspJmfS6vnlS2W3m2brEQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">تک هند چنج <br/>لول ۳۰۰<br/>۲ اسکین گردونه<br/>۴ یا ۵ پس که ۳ تاش برگشتنی<br/>لول ۳۰۰ ( خام نیس ) <br/>دنساش گاد <br/>UID : 7047921446542573569<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i> قیمت ۴۵۰</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">تک هند چنج <br/>لول ۳۰۰<br/>۲ اسکین گردونه<br/>۴ یا ۵ پس که ۳ تاش برگشتنی<br/>لول ۳۰۰ ( خام نیس ) <br/>دنساش گاد <br/>UID : 7047921446542573569<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i> قیمت ۴۵۰</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -521,7 +612,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/245" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTA5NTg4ODNhNzY5NGU4MWM0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/245" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZTcyYjJiZWNhODFmMmFhOGRlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -540,10 +631,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5805412233948283242 1351677867_456245610" href="https://t.me/limootuursh/245" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/duiOMQFNTqMrAMcOvaUmT5iXce02vFgExT9b7ZtMJC4VpcxFd9s1IujyjvyXPdJ3xRxqMVRJ7D4oOJxbLufFUIpB1Xk6ofcGmecIn3QRcDBfFOf7UGchUqKt4zNxOWd_YdxT5nVQPhZNPgE3ij6eHAdrkvtwVXxvLfMsUGJCYo1ssJD9GpxfFar7QTx7z_UNEuUUfVpAZn5xoQLs-Znj6Jj-XsPD6urPho48jZ_oGR8hxDWUdaS-oxX80aoyAnhgJa0cosqEEz22xT6B5OKVggPp9CrYRKljOvR0fKHXFWvU8e8PBpMxyIlIxO5xAvs3Zq0LhYMKwgAQ3i3DX6GzrA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:44.875%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">فیس چنج اکتی دیس<br/><br/>15فول مهندسی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>اودن متیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کریک6متیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول اچ آس لجند<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول کریم لجند   <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول هالیدی        <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول لوکاس        <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول زیلات         <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول ماشین لجندری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول ال کی ۲۴<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول اوتلا<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول تایپ۲۵<br/><br/>بقیه فولاش یادم نی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i> <br/>کلی اسکین کریت و گردونه گاد از جمله:<br/>ویوان مشکی.ویوان آبی.و......<br/>فقط ۵۰۰ب بالا گان آیپیک دار<br/>خلاصه هرچی بگم کم گفتم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">فیس چنج اکتی دیس<br/><br/>15فول مهندسی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>اودن متیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کریک6متیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول اچ آس لجند<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول کریم لجند   <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول هالیدی        <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول لوکاس        <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول زیلات         <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول ماشین لجندری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول ال کی ۲۴<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول اوتلا<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>فول تایپ۲۵<br/><br/>بقیه فولاش یادم نی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i> <br/>کلی اسکین کریت و گردونه گاد از جمله:<br/>ویوان مشکی.ویوان آبی.و......<br/>فقط ۵۰۰ب بالا گان آیپیک دار<br/>خلاصه هرچی بگم کم گفتم</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">814</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/limootuursh/245"><time datetime="2023-12-31T12:40:52+00:00" class="time">12:40</time></a></span>
@@ -551,7 +640,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/246" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYzU3OGMwZGFiMWVjNTQxNDFhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/246" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWI5MWMwZDRiYTUyMTMwNWYxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -570,9 +659,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5805412233948283255 1351677867_456245623" href="https://t.me/limootuursh/246" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/qef39wwTjqGpYY7D-F4M7EYQZ5G4UXmWRryhHR6dfcuF0LPEiWrmkhlx-gRN9gMgSAp3KGpoVvAvtM5FGX3Lh2b7sL4CAJaIdyX-F8XXbix2SkLSB3Fc7fnzH63VU_2DCCmyc6B3xypDX93ykc9FuiEawGjqvTsroPfLxJuEfGJnSzfkHOWRQ2od50T7vVyzhslrdD71CKXMq0_PktdY_Mz7xJ3sTJIyotjXlBAm9IRmYDOz0YKlny3S0YxR1gGbHyRRethkTAciz8QHiyOwU7LZkjh1Xq06Kp7yRJ6QJkc99mVgIaOP5vwe1G1meUmQmfEpDiGeH3__iKMTVJFFbA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">فیس دیس هند تضمینی فول احراز<br/><br/>کیلو کریم ویچ ویوان<br/><br/>فول داماس بهترین کریتا <br/><br/>6952367885751353345</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">فیس دیس هند تضمینی فول احراز<br/><br/>کیلو کریم ویچ ویوان<br/><br/>فول داماس بهترین کریتا <br/><br/>6952367885751353345</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -581,7 +668,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/247" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMGRkMzBmNDQ0MWZkODQ3ZjMxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/247" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjQ3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjk2NjBmZWFhODcyY2E5ZWI1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -604,9 +691,7 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">Namos arman - ch.txt</div>
     <div class="tgme_widget_message_document_extra" dir="auto">375.9 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">کمبو کال اف <br/>بزنید حالشو ببرید</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">کمبو کال اف <br/>بزنید حالشو ببرید</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -615,7 +700,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/248" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6IjI0OGciLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmFlM2Y3Yzk1OGU5MTQxMTNlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="limootuursh/248" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6IjI0OGciLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMGEwNWJjYjJmMzU0YTM3MzYwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -646,9 +731,7 @@
 </a>
     </div>
   </div>
-</div>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | به زودی&#33;</div></div>
-
+</div><div class="tgme_widget_message_text js-message_text" dir="auto"><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8695.png')"><b>🆕</b></i> | <a href="?q=%23%D8%AE%D8%A8%D8%B1_%D8%AC%D8%AF%DB%8C%D8%AF">#خبر_جدید</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> | به زودی&#33;</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -657,7 +740,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="limootuursh/250" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjUwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYzY4MTkxM2E5ZjliMmMxM2UxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="limootuursh/250" data-view="eyJjIjotMTk1MTg0NDY3MiwicCI6MjUwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiOTM1MzBkZGNjODI2ZmVhZjUwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/limootuursh"><i class="tgme_widget_message_user_photo bgcolor1" data-content="C"><img src="https://cdn4.cdn-telegram.org/file/DOHy-tY8YkGXB910NoaFW3MJgNyS9yLk0sqbo64_00ZOO7jR0NW7sXkvilFvfBO-jrSSHJebIvzj1Ja4oZM0-GM27WBBoGWXveMLuTYGYdxt3XjeiqpbbeLZ2MRHoFmq-dKMo8SWd7mCAi1L3puvjZfUkmvu4_31XqvW6ueMOYR1JOzvJvOPCUY6nYtTk3Y_9_QqPOuw-dda9Y-uFEsx0BJ-fFYJjFxNVAvaCCoNhj6raShdC9Y1_Q_gap2bgo-2KqcMyf-BGQ3fRzhn784QVlwwAiuFGKkGRtiYMwlpI1F_9sIyImrY5yQk5v02VfSNjf1TK-IK6iwMvq8i34K7dQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -674,9 +757,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/limootuursh"><span dir="auto">Call center limo</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">The owner of this channel has been inactive for the last 17 months. If they remain inactive for the next 27 days, they may lose their account and admin rights in this channel. The contents of the channel will remain accessible for all users.</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -694,11 +775,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 76.02ms -->
+<!-- page generated in 74.21ms -->

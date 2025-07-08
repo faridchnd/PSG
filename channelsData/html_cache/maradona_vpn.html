@@ -43,9 +43,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -74,7 +191,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">10</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">مارادونا از هر فیلتری رد میشه<br/>ارتباط با ادمین <a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=576cd6695670e41285_12952393941117609606">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=fb507a3a0b6e2d28fb_15708734814427031425">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -95,7 +212,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=576cd6695670e41285_12952393941117609606">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=fb507a3a0b6e2d28fb_15708734814427031425">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/maradona_vpn">
@@ -112,7 +229,7 @@
 <main class="tgme_main" data-url="/maradona_vpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="maradona_vpn/1" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MSwidCI6MTc1MTk3NjIwMSwiaCI6IjE5ZTU3YmVjNmFmMDQ2NTBjYiJ9">
+      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="maradona_vpn/1" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MSwidCI6MTc1MTk4MTMwNCwiaCI6IjkzNWUyNjBmNGRhZWYwYTFhYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -129,9 +246,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel created</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -140,7 +255,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo js-widget_message" data-post="maradona_vpn/2" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MiwidCI6MTc1MTk3NjIwMSwiaCI6ImYwNjVhMjM3NDU2MDVkNzFjMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo js-widget_message" data-post="maradona_vpn/2" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MiwidCI6MTc1MTk4MTMwNCwiaCI6ImIwMmYxZGI2YzZjM2U4Mjg0NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -157,9 +272,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-<a class="tgme_widget_message_service_photo" href="https://t.me/maradona_vpn/2"><img src="https://cdn4.cdn-telegram.org/file/fpFy0quntNvMARV9UjPhLLgW1KPPdYqe9pU5Fb1Pbv_zAY7CsClW93ioWcPU-L_Y3rhRYhw9CyqHw6cm9ZSf08HtyrFi-2SGR5BY0n5THIk_p8f5dXKdYPAqTtwK0t4mok8W6kF85C6pyM5Fo_S1NjP0PAVqnzzO_ejkZW44_iWfYFUhdMNY6QaC3j8PX6t9RDFGCZKUBFToSOYY6upb__gDNBruf-IZC8xT7s6XUKn4XbNAj5-e2OdCiWKK1G5yE0Q4WYFsep4l_sxuY1uyTh6lgFOuHT1IukiI-OF8idtBL9DZLciNohnrZwLA6iLkCfgD1RIZt5R1TLv6mpWjtA.jpg"></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
-
+<a class="tgme_widget_message_service_photo" href="https://t.me/maradona_vpn/2"><img src="https://cdn4.cdn-telegram.org/file/X1CP9he3IT9drFl1_VZCEdsj48bgKKPLX9Pk-nBocwLGJ_ghURSbwNLW0rd3XOJYAvHC4tMvjIT9BkEOHXngiyXLsvTtjvyXFuKNBmyE_ZtzKLSw9T8LTzPvyGxHo_UMR7HseGhzT1kNTG4-xAJarvIo07TZlccuv3C91EqLMfv_fjIcg_QQxWnxZ8kuYu0rjvpU3ci8FczKalRN0FXbgH25-NFJnX9HWDR2kqNDi7_gGXGZAn5HbLAx76eaFH9CLIZQvZFAvb0HZcAokPXwXWr5w0uaAMmupCwO8z23O03szlPvQIkA5S-5Mm-Rf0y9paB0IRQELfaAsMnmsPuamg.jpg"></a><div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -168,7 +281,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/3" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MywidCI6MTc1MTk3NjIwMSwiaCI6IjA3OTc0MTliMTBmNzg3MWM4MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/3" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MywidCI6MTc1MTk4MTMwNCwiaCI6IjQ2NDQwMWFiODdkYTkwM2YzMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -185,9 +298,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرور های پرسرعت<br/><b><br/></b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>تضمین سرعت و کیفیت سرور</b> <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>تضمین تا روز پایان سرورتون</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>انلاک کردن:اسپاتیفی،نتفلیکس،چت جی پی تی</b><br/><br/> تعرفه سرور های گیگی (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> 10 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 35 تومان <br/> 20 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 55 تومان <br/> 30 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 70 تومان <br/> 40 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 90 تومان <br/><br/>تعرفه سرویس های نامحدود (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 120 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i>کاربر قیمت : 180 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3⃣</b></i>کاربر قیمت : 240 تومان <br/><br/><br/><b> جهت خرید سرور و پشتیبانی فوری</b> :<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><br/>PV <a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/>CH <a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -196,7 +307,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="maradona_vpn/4" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NCwidCI6MTc1MTk3NjIwMSwiaCI6IjE3NWQxMzc2YTFkNjk0ODVlYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="maradona_vpn/4" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NCwidCI6MTc1MTk4MTMwNCwiaCI6IjAxODlkZjliOTE1MGMwMGY3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -213,9 +324,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">تعرفه سرور های پرسرعت  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین سرعت و کیفیت سرور  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین تا روز پایان سرورتون <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>انلاک کردن:اسپاتیفی،نتفلیکس،چت جی پی تی   تعرفه سرور های گیگی (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه )    10 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 35 تومان   20 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 55 تومان   30 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 70 تومان   40 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -224,7 +333,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/6" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NiwidCI6MTc1MTk3NjIwMSwiaCI6IjI1ZWNhOGY5NTE1MjM2YmEyNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/6" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NiwidCI6MTc1MTk4MTMwNCwiaCI6IjVhZTg2ODRjYTE4YTFhMWNiYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -241,9 +350,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ های رایگان امروز :<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -252,7 +359,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/7" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NywidCI6MTc1MTk3NjIwMSwiaCI6ImFjYTE5NzU0OWE0M2I0NTUyZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/7" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6NywidCI6MTc1MTk4MTMwNCwiaCI6IjE0NWVkMTQzZjJkMzE5NTBkOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -269,9 +376,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">trojan://saMgiangGt@art1.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@art2.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@art3.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@art4.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@art5.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@maradona2.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@maradona1.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@maradona3.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@maradona4.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn<br/>trojan://saMgiangGt@maradona6.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc17224&amp;mode=multi#%40maradona_vpn</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -280,7 +385,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/8" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6OCwidCI6MTc1MTk3NjIwMSwiaCI6IjVlM2ZmM2VkMzI1ZGJjYTkzMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/8" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6OCwidCI6MTc1MTk4MTMwNCwiaCI6ImVhMTM1ZTE4MjM4OTFhYmI1NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -297,9 +402,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرور های پرسرعت <b><i>مارادونا</i></b><br/><b><br/></b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>تضمین سرعت و کیفیت سرور</b> <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>تضمین تا روز پایان سرورتون</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>انلاک کردن:اسپاتیفی،نتفلیکس،چت جی پی تی</b><br/><br/>تعرفه سرور های گیگی (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/>10 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 35 تومان <br/>20 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 55 تومان <br/>30 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 70 تومان <br/>40 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 90 تومان <br/><br/>تعرفه سرویس های نامحدود (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/>نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 120 تومان <br/>نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i>کاربر قیمت : 180 تومان <br/>نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3⃣</b></i>کاربر قیمت : 240 تومان <br/><br/><br/><b>جهت خرید سرور و پشتیبانی فوری</b> :<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><br/>PV <a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/>CH <a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -308,7 +411,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/9" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6OSwidCI6MTc1MTk3NjIwMSwiaCI6IjViOWE1MzgwNzBiMmQyMWNmNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/9" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6OSwidCI6MTc1MTk4MTMwNCwiaCI6IjEwMDg2Mzc5Y2JhNjViMDQ2ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -325,10 +428,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ رایگان امشب:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><b>اسپاتیفای</b>،<b>نتفلیکس</b> و <b>چت جی پی تی</b> رو براحتی باز کنید.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>مناسب همه اپراتورها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>قابل استفاده برای <b>آندروید</b> <b>ios</b> <b>ویندوز</b> و <b>لینوکس</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i><br/><br/>trojan://Maradona_vpn@185.59.218.220:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#Maradona_vpn-Maradona<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">27</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/maradona_vpn/9"><time datetime="2023-09-30T17:10:30+00:00" class="time">17:10</time></a></span>
@@ -336,7 +437,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/10" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTAsInQiOjE3NTE5NzYyMDEsImgiOiI4ZTdjNGY0ODA4MTgwNzZmNmUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/10" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTAsInQiOjE3NTE5ODEzMDQsImgiOiI5YzQ4MzI0NmFhMGY0MDZjYmQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -353,16 +454,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <b>امشب با مارادونا فیلترچی رو دریبل بزن</b><br/>&nbsp;&nbsp;&nbsp; <br/><code>trojan://maradona_vpn@185.174.138.209:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn</code><br/>&nbsp;<br/>trojan://maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
-  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/ZabrZoTAn2HoT-KZcl3ZfgLxKHAxhCNhwgjC27fZfxODapn9h_cnugTHfQDNNrLQ7ASxVyPjMUbnbDMFpXGqhpefF4EZr7EhE4ZhOqG7Lvw3_MkhNj7d2rwwe63h2-9H5-Mp65Byx9wTE8r1cJbB32ioeWCLEfSUa69qvlrgyklihs3BzFa1IPcNlQfgHa9Grs9t0HOpwbLqvFVPUMB--FpbimS0fHTf85WY2yX_dD3ldoclUySZOXn9rCcMCYBEa5GORJeRV8NeINOMZiP6WKYFnFFSQu8rWyoWSBBKRCGfMIksskxRFbkIvtSmeJh_BIZuOVHGaE3PF73vjuKLpQ.jpg')"></i>
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <b>امشب با مارادونا فیلترچی رو دریبل بزن</b><br/>&nbsp;&nbsp;&nbsp; <br/><code>trojan://maradona_vpn@185.174.138.209:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn</code><br/>&nbsp;<br/>trojan://maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/T6FvioGU9lJWgMiThUfXWfBJiXa6z_SwP9rToGei1BwMToec_F7C2BzFJgqnJbD6BUwFWL6LOuiHFhx2Q4sX68TLNTVFkMIHzSDLuhQiBDdylTnueA1ZezRKoVBJUGnFxZeMB2E-yrj9ri0SuSqBvvY1fElQH2DffATfCBvBBwXwO5NJJ4YzVdwPPQ1R0qaKRVhuhakDAGG_LyWRSRkSvt4EyF4EIwKQC80fN6WB3iZDEdAJbO4bVWchVrEz4nExFk9P3enubykxI-v1XcgNaNQ_MC_1v7B4Gqfkrge4J2-odKXxcwK4ov43LdZnE_Mm_tJuBGTyluxVjXsbZrrBTA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Maradona_vpn</div>
   <div class="link_preview_description" dir="auto">مارادونا از هر فیلتری رد میشه<br/>ارتباط با ادمین @vpn_server2022</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">27</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/maradona_vpn/10"><time datetime="2023-09-30T17:59:49+00:00" class="time">17:59</time></a></span>
@@ -370,7 +469,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/11" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTEsInQiOjE3NTE5NzYyMDEsImgiOiJhYzAwNTEyNTRhOGI0ZmZhMGUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/11" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTEsInQiOjE3NTE5ODEzMDQsImgiOiJkYjI4MjdjZjkzNGU0YjNhMWIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -387,9 +486,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>غیرفعال شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/>trojan://maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn1.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn2.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn3.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn4.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn5.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn6.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn7.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn8.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn10.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn9.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn11.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn13.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn12.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/>trojan://maradona_vpn@maradona_vpn14.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>غیرفعال شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -398,7 +495,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/12" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTIsInQiOjE3NTE5NzYyMDEsImgiOiI1YmI5ZTZmMDRmYTExYWQ5MzEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/12" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTIsInQiOjE3NTE5ODEzMDQsImgiOiJlODdhZmM0NWM1NTg3MWQ3N2QifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -414,16 +511,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/maradona_vpn/11" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/maradona_vpn/11" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Maradona_vpn</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>غیرفعال شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>  trojan://maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=http%2F1.1&amp;fp=chrome&amp;type=ws&amp;host=teo.history-paint.art&amp;path=%2Fwss24142%3Fed%3D2048#maradona-maradona_vpn trojan://maradona_vpn@maradona_vpn1.history…</div>
 </a>
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <b>امشب با مارادونا فیلترچی رو دریبل بزن</b><br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>لیست بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
-  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/SvrY8ejReEVy2KcoqqmOIyakJmKrZvFHUkvl9hvSD7qmEixP8IAAjB4IwR2J1MDkAMFYayM-vzzv2wloYTVM8knPDxqymhV2HqZ8A89I97VOksOdY83Zv7yf2mv63T8y3Vv_lT40T8gh-mrryvMaW9q2y_bGsASX-q5tuFZZ_gs0amvW6_jN5jDNam6hV7PtsKlikdAik-nSAwFsPVgYiGgudJN_k2FCvRBKkWhH7yNIgYI0aEzLNGwfwdXYkcJ5GKnaeJKWokrZR0TjajiWT3Dx47X_E-o6B6JlmFQiFtJ88Ta24RP7tzWAebXRqvlQRcsLWneaiD9iI158K984-A.jpg')"></i>
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <b>امشب با مارادونا فیلترچی رو دریبل بزن</b><br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>لیست بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/rKfqDEDsST3NkuLCPrqMEmbxdreSTH0K4OIx_9sAjWfvOS783ScHRlN88RqtYpj2kbUTVMhzmJ1trAnOapQtXMlw76UDyB-r1Fwatb1SUxi4EnMJ2zVkt0CmmV_RIL_xcyxdGKp2sr00bVdhMo2BFQK50gzQpTOg9zLOk3cr9RBSqSpCVfo0V60L1Hyfxn5ikV-37Rhi6THU0-_ic9p-_oXDkxVSapqnyXCS6m7qpO5FsV1EK-wraS6CgwrYxWO3hGe7rGAvahTJ59Ngp6vh7-KsyhJas6hOjJA7tgfrz1DL9-1pTgAPJmXfYrXFZtbre0KLeGpX-3A66sSSHOINZQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Maradona_vpn</div>
@@ -437,7 +532,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/13" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTMsInQiOjE3NTE5NzYyMDEsImgiOiI2YjRlMWNkOWZlZTFjNjVhM2UifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/13" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTMsInQiOjE3NTE5ODEzMDQsImgiOiI0MjdkYWIzNzM0MDUyMjdmMTgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -454,9 +549,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرور های پرسرعت<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین سرعت و کیفیت سرور <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین تا روز پایان سرورتون<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>انلاک کردن:اسپاتیفی،نتفلیکس،چت جی پی تی<br/><br/> تعرفه سرور های گیگی (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> 10 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 35 تومان <br/> 20 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 55 تومان <br/> 30 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 70 تومان <br/> 40 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 90 تومان <br/><br/>تعرفه سرویس های نامحدود (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 120 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i>کاربر قیمت : 180 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3⃣</b></i>کاربر قیمت : 240 تومان <br/><br/><br/> جهت خرید سرور و پشتیبانی فوری :<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><br/>PV <a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/>CH <a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -465,7 +558,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/14" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTQsInQiOjE3NTE5NzYyMDEsImgiOiJkMmNmZDYxMGMyNTI3MmQxZjQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/14" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTQsInQiOjE3NTE5ODEzMDQsImgiOiIxYjM2YmYxZTc1ZDg2MzU4YjAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -482,10 +575,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>  مارادونا  پا به توپ میشه :<br/><br/>trojan://maradona_vpn@maradona_vpn14.history-paint.art:443?path=%2Fwss24142%3Fed%3D2048&amp;security=tls&amp;alpn=http/1.1&amp;host=teo.history-paint.art&amp;fp=chrome&amp;type=ws&amp;sni=teo.history-paint.art#maradona-maradona_vpn<br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
-  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/ljODZwap_gXa2HtkREaY2YevAlzqE3vN25fGr6hLGi1XDDHMr4q223gpuZKyE6YdSfl0gZjieolj1-QfAi2eaZLlQhVjreYHXA5dWLzR3_MM9RoREur7MgTW-jZOg-Xu2lXupoANnHHR-MWpIPDihMwmtXFIYzoskLU90WEvPvVGY2308MXlurKQiK6Cz6k6p7EZ5xsR6dora8pRvzVpAwr5UA0fQUMOntixIdHiWAZALQ_ly574bkxCLY-hEQnUScSY6oXGnhoYFgv3xnJQL7_WF_8bYYEEaI_Pi9rJpaPA34Yd9JUwpOXdlwxtUJ1QZd_9YRKKAFrV5lQtVyqCFA.jpg')"></i>
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>  مارادونا  پا به توپ میشه :<br/><br/>trojan://maradona_vpn@maradona_vpn14.history-paint.art:443?path=%2Fwss24142%3Fed%3D2048&amp;security=tls&amp;alpn=http/1.1&amp;host=teo.history-paint.art&amp;fp=chrome&amp;type=ws&amp;sni=teo.history-paint.art#maradona-maradona_vpn<br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/hQ80_wE4xxw2WntGNGoYDK_JoOZrRTTw0GyS-Z9MM8bL3Rt_ZGYSyeAsrqT-8PvEdKVxPimJAkX1x2OcB0-tQapCqtGrbn1XDy7Vr6GnSsBl77eYAyLX8BoMs_LDWgR9eLBTb2qC7kRlEYTxHxt9oLPacpOxkSgYzhLTDjDaLNGJspXUxfJswqYKWeZ3vVee6fjhIQahGJ9kfvfIt_76t0mZ_wA5cO60htHGIhpvOXl45tGB0htXiTXykXTiLbTRI6IZI4hg1GKxWRBiXrnYAAbRbK0z5tdFp_nApDXWlryzcWhAiVD8wZj5X-YXa_oAqCppkiDVX3pQOtz_eLaokQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Maradona_vpn</div>
@@ -499,7 +590,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/15" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTUsInQiOjE3NTE5NzYyMDEsImgiOiJiYTYxOGVhNDM3MzIxZDRmNWYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/15" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTUsInQiOjE3NTE5ODEzMDQsImgiOiJjMTRkOGY4MzljNDAxZDZlZjQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -516,10 +607,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; به عشق شماره <b>10</b> ارژانتین :<br/><br/>trojan://maradona_vpn@maradona_vpn10.history-paint.art:443?path=%2Fwss24142%3Fed%3D2048&amp;security=tls&amp;alpn=http/1.1&amp;host=teo.history-paint.art&amp;fp=chrome&amp;type=ws&amp;sni=teo.history-paint.art#maradona-maradona_vpn<br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
-  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/YKjRRXcL1BIZKNlToAtP6o02Q6ogBIIII1XqslQ48jBnVXpJhgFu2lfh3n_0aC6wxiZSHEVm0xRDOSHKE3mmw9ttSGZy23mrjDGue45qFhGatFlnAF6XzUPNW3HVG8wGEUsFQOYW-0Iobt246HPNXxUZx-Gf-swDj6ME1qjqe8z5vC-6deUBAJEEsjAd6zCMU6eGCK7AEbU3xqLth-yv9sQL2IvvLgB9mF1WnjTs0YT76vwhZjTsiyL6Dc8zCyDmixhtrOJhR7B8KMW54hoZD-zuv4KXgLxlLX-YYJynmNKLmdK2FpXCm6YtHM7ke0-GiwJ4Wq_ofDugDJiXYNHVVQ.jpg')"></i>
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; به عشق شماره <b>10</b> ارژانتین :<br/><br/>trojan://maradona_vpn@maradona_vpn10.history-paint.art:443?path=%2Fwss24142%3Fed%3D2048&amp;security=tls&amp;alpn=http/1.1&amp;host=teo.history-paint.art&amp;fp=chrome&amp;type=ws&amp;sni=teo.history-paint.art#maradona-maradona_vpn<br/><br/>&nbsp;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ بالا کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/lI8SopLLvQ_zkFyAKZt3I_5JPS9RwfTelFbqFfLwPhwRrY3rfdxtrHfjnTtAbrvf8ypnCWBl-DlArZMxq0CJnib8dv3msWLIfX9EjEL7PDLRnpGDhUoXh29a5bsFS6vrTQa2T982RIHlv2SLkXyheyct8ZzJBQzfBnHrHRa__v3Bx8rVkspAMI6x2hhTI1bw6x8d_uO_MQhyUTwz6Bn4h5uo3LY22O-z01LCIdyE72ROLlOl-DfJXEL42mdRb-a9MzAH4kdOUYh5n_Cucl2tPD8m7q6tSUjAzr9UFAwGkcKXueXqaIkbPhk2wehzsPqCh9ZDmEE0_-g6zCqAbiGjCA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Maradona_vpn</div>
@@ -533,7 +622,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/16" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTYsInQiOjE3NTE5NzYyMDEsImgiOiIyYzczZWMxNTFlYmM4MTg2NjUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/16" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTYsInQiOjE3NTE5ODEzMDQsImgiOiIxZGM4NWE4Nzk5ZTE1YmFlZTUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -550,10 +639,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; لیست زیر فقط به عشق <b>کوکایینی</b> که آقا <b>مارادونا</b>  مصرف می‌کرد میزارم.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> البته چشات<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9889.png')"><b>😉</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>۱۵ سرور: لیست پایین کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/>trojan://Maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn1.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn2.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn3.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn4.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn5.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn6.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn7.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn8.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn9.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn10.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn11.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn12.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn13.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn14.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
-  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/RrYfNe2ICzJsTyftgoWtEgi_eJgvRTlCCKPWGeBMg95jF33A8_-cHMNIieUnRHUeoGmB6l4NIYxn3pyTA7lDMObIAm7QhCAOl5yf-lfCJF01rmfEomzggKhTN_o26cd1Sw7DinkyW12VrqbPovOE05iRKvT2jbM49Zc9jPP2EoIHn6FmRe7rAzbDubHDbkVphbtxWUBk_eCmIxfDHGjoab2Nt80h4YJmxkbUz1z0_4Bqw1ssvyqLUOJVlC8fRYzDF_-yOVRal1_qi6Qa8_IaNdUPb7IwaPivtuejeQUZDCFn6wDLzyCUFqbojiMAVP0KJXngIWS3eMGfStcibtVLfA.jpg')"></i>
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; لیست زیر فقط به عشق <b>کوکایینی</b> که آقا <b>مارادونا</b>  مصرف می‌کرد میزارم.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> البته چشات<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9889.png')"><b>😉</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>۱۵ سرور: لیست پایین کپی پیست کنید و لذت ببرید از سرعت و تکنیک مارادونا<br/><br/>trojan://Maradona_vpn@maradona_vpn.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn1.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn2.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn3.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn4.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn5.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn6.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn7.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn8.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn9.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn10.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn11.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn12.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn13.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/>trojan://Maradona_vpn@maradona_vpn14.history-paint.art:443?security=tls&amp;sni=teo.history-paint.art&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=grpc20337&amp;mode=multi#maradona_vpn<br/><br/><br/><a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a><br/><a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/><br/><a href="https://t.me/maradona_vpn" target="_blank" rel="noopener">https://t.me/maradona_vpn</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/maradona_vpn">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/UD2JMvHuvxg-TM5Jq3eHnFkSsehlyCsB1ZR4F45YHt-bZUWe1UeAOuCIc2iZnzyy5DwNntNaR8b4VeFhtgAeiJoKs66vtviSGA1BM3HbxZmLfMjrsjVPHrLhAW91rVu1Jgn6Ev3YsYPVzsLUa5o9SJQwzrf81riWAY0Jr7oM_BpF1iYLxJtICgkrxsNWSoctUhissz5nM-Z2dPBo5hxMjMFO6J81OyFsrqG5xTJsdCHGmj4kC7iI56FIrbEhNOEi03LmqWyrUi5pFkjngxAfb-O3hB70hshFbtYwJRj-BjdL-gUIFxaq17gmU04iTLJIWWOunnIRq0cxGBxcpkhuUA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Maradona_vpn</div>
@@ -567,7 +654,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/18" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTgsInQiOjE3NTE5NzYyMDEsImgiOiI1ZTViMmFjOTI4NTkyMWRiYTkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="maradona_vpn/18" data-view="eyJjIjotMTkyMzUzNjYxMiwicCI6MTgsInQiOjE3NTE5ODEzMDQsImgiOiI0YzVlZDYzZDNkYmZmN2RlZmEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/maradona_vpn"><i class="tgme_widget_message_user_photo bgcolor4" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/vUc-4c-thx3dhk-NtEvmsW6pC7ttcnPZocTDZE-e1X8qYtpA_AXnI47LKg3txzeAE99MPzscB-oysrN1FUs9-M73cC0q_bHxsoSh2QIr-YpUk23U22ykzpUhcgBO48Kz-XkqyT6ui1xmyuHaJlD07p6RiL4m7YK8nuuwM1NubRiuCJn_FUD7rsFnJsg9rDPucmXsDAZJVfAr5Sviu6nawJFaDGYr_xbu4OEPN8C8lXkCGIET5rdgvmGMtK8IOoFFENRknuLdowueXI5gtDMPvIIRq2D2GW-WAMLLrpOq-NyxH_jam1Q16zZvX5zJDPYTwN-d9K4xqK42bsDSg5_pdw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -584,10 +671,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/maradona_vpn"><span dir="auto">Maradona_vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرور های پرسرعت<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین سرعت و کیفیت سرور <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>تضمین تا روز پایان سرورتون<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>انلاک کردن:اسپاتیفی،نتفلیکس،چت جی پی تی<br/><br/> تعرفه سرور های گیگی (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> 10 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 35 تومان <br/> 20 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 55 تومان <br/> 30 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 70 تومان <br/> 40 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 90 تومان <br/><br/>تعرفه سرویس های نامحدود (<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>ماه ) <br/><br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1⃣</b></i>کاربر قیمت : 120 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2⃣</b></i>کاربر قیمت : 180 تومان <br/> نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3⃣</b></i>کاربر قیمت : 240 تومان <br/><br/><br/> جهت خرید سرور و پشتیبانی فوری :<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i><br/>PV <a href="https://t.me/vpn_server2022" target="_blank">@vpn_server2022</a><br/>CH <a href="https://t.me/maradona_vpn" target="_blank">@maradona_vpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">44</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/maradona_vpn/18"><time datetime="2023-10-02T15:26:51+00:00" class="time">15:26</time></a></span>
@@ -604,11 +689,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 70.97ms -->
+<!-- page generated in 62.4ms -->

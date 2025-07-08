@@ -52,9 +52,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -83,7 +200,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">4.63K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">75</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">51</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">46</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">کاهش پینگ اینترنت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i><br/>اتصال به اینترنت جهانی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87AAF09F87BA.png')"><b>🇪🇺</b></i><br/>کانفیگ های سرعتی v2ray<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998B.png')"><b>🙋</b></i>ادمین سفارش:<br/><a href="https://t.me/zedping_admin3" target="_blank">@zedping_admin3</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=1712b0cdc6ef5c6998_1254305805289091313">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=241f70b0484c2bf632_775901143465459359">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -104,7 +221,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=1712b0cdc6ef5c6998_1254305805289091313">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=241f70b0484c2bf632_775901143465459359">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/zedping">
@@ -121,7 +238,7 @@
 <main class="tgme_main" data-url="/zedping">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/zedping?before=1236" class="tme_messages_more js-messages_more" data-before="1236"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1236" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzNiwidCI6MTc1MTk3NjIwMiwiaCI6IjdjZTRlZjBhNTU4ZjY2YmY4OSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/zedping?before=1236" class="tme_messages_more js-messages_more" data-before="1236"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1236" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzNiwidCI6MTc1MTk4MTMwNCwiaCI6ImQ2Nzc2Nzk5MTc4OTMyMmM2NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -136,20 +253,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">اینترنت هم در حال نابود شدنه احتمالا <br/><br/>وضعیت خوبی نیست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E83.png')"><b>🎃</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1236"><time datetime="2025-06-23T19:42:20+00:00" class="time">19:42</time></a></span>
+    <span class="tgme_widget_message_views">1.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1236"><time datetime="2025-06-23T19:42:20+00:00" class="time">19:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1237" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzNywidCI6MTc1MTk3NjIwMiwiaCI6IjhjZDcxMzZhZmEwNDFhNjkwYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1237" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzNywidCI6MTc1MTk4MTMwNCwiaCI6ImJiZGM1OTgwZjMyZTkzM2MwNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -164,20 +279,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرورا دچار مشکل شدن <br/>دارم پیگیری میکنم <br/><br/>اوکی بشه خودشون وصل میشن دیگه پی وی نمیگم وصل شده<br/><br/>خودکار وصل میشن لینکها</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E83.png')"><b>🎃</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1237"><time datetime="2025-06-24T20:53:51+00:00" class="time">20:53</time></a></span>
+    <span class="tgme_widget_message_views">1.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1237"><time datetime="2025-06-24T20:53:51+00:00" class="time">20:53</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1238" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzOCwidCI6MTc1MTk3NjIwMiwiaCI6Ijg0Y2VmZjc5NjBlMWE4MzVmOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1238" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzOCwidCI6MTc1MTk4MTMwNCwiaCI6Ijk2YWVkNzBhOGViZjFiMTM3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -194,23 +307,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/zedping/1238" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>دوستان تا الان داشتیم مشکل سرورها روحل میکردیم که خدارو شکر اوکی شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>دوستانی که لینک اشتراک رو از قبل وارد کردن تو گوشیشون این  کانفیگ ها الان براشون کار میکنه <br/><br/><blockquote><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i> xhttp تمامی اوپراتور ها <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i> xhttp تمامی اوپراتور ها <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i> xhttp تمامی اوپراتور ها </blockquote><br/><br/>بعد از اتصال ب یکی  این کانفیگ ها لینک اشتراک رو از داخل برنامه اگه اپدیت بزنید<br/>کانفیگ:<br/><blockquote><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87B7.png')"><b>🇫🇷</b></i> xhttp تمامی اوپراتور ها </blockquote><br/><br/>در دسترستون قرار میگیره<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>سرویس اظطراری هم وصله بهش میتونین وصل بشین<br/><br/>دوستانی هم که مشکل دارن پی وی پیام بدن حل میکنیم،فقط پیامها زیاده صبور باشین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1238"><time datetime="2025-06-25T00:24:08+00:00" class="time">00:24</time></a></span>
+    <span class="tgme_widget_message_views">1.47K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1238"><time datetime="2025-06-25T00:24:08+00:00" class="time">00:24</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1239" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzOSwidCI6MTc1MTk3NjIwMiwiaCI6ImIwMDlmMGM2YTkyMzI5ZGRlMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1239" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTIzOSwidCI6MTc1MTk4MTMwNCwiaCI6IjU0NmRhNDI2MjNlYWM4Y2M2MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -225,20 +331,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">فروش جدید هم بازه میتونین خرید کنین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1239"><time datetime="2025-06-25T01:05:16+00:00" class="time">01:05</time></a></span>
+    <span class="tgme_widget_message_views">1.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1239"><time datetime="2025-06-25T01:05:16+00:00" class="time">01:05</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1240" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MCwidCI6MTc1MTk3NjIwMiwiaCI6ImU1NzAxMmIyOGFlMjY4MzcxZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1240" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MCwidCI6MTc1MTk4MTMwNCwiaCI6IjQ1ZTQ0ODI1ZjliNTZiYTk2MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -253,20 +357,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان تو اشتراکتون 15 تا کانفیگ هست <br/><br/>این کانفیگ ها برای خوشگلی نیست ک<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><br/><br/>یکیش اگه کار نکرد بقیه رو چک کنید<br/><br/>میاین پیوی میپرسید جواب بقیه رو که واقعا مشکل دارن نمیشه داد <br/><br/>لطفا یکم دقت کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1240"><time datetime="2025-06-25T17:55:46+00:00" class="time">17:55</time></a></span>
+    <span class="tgme_widget_message_views">1.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1240"><time datetime="2025-06-25T17:55:46+00:00" class="time">17:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1241" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MSwidCI6MTc1MTk3NjIwMiwiaCI6IjUzOWIxMzcwNGE1MTUwNDBkYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1241" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MSwidCI6MTc1MTk4MTMwNCwiaCI6ImM0NzY3NGMzMGUxOWQzMDg1MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -281,20 +383,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">آقا وصله ها بخرین دیگه قطع میکنما همه رو<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><br/><br/>بخرین ضرر کردیما این ماه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E83.png')"><b>🎃</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1241"><time datetime="2025-06-26T14:52:41+00:00" class="time">14:52</time></a></span>
+    <span class="tgme_widget_message_views">1.09K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1241"><time datetime="2025-06-26T14:52:41+00:00" class="time">14:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1242" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MiwidCI6MTc1MTk3NjIwMiwiaCI6ImM0ZDc5MDdmZGU4YTlmMmQ5OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1242" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MiwidCI6MTc1MTk4MTMwNCwiaCI6IjlhMDc5MzAyZWVhYTQxMjYyYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -309,20 +409,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><b>اطلاعیه<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> دوستان عزیز <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>لینک اشتراک خودتون رو آپدیت کنید <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA0.png')"><b>🟠</b></i>یا لینک اشتراک رو دوباره وارد کنید <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>همه سرورهای زیر فعال هستن</b><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i> | پیشنهادی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8FB4F3A081A7F3A081A2F3A081A5F3A081AEF3A081A7F3A081BF.png')"><b>🏴󠁧󠁢󠁥󠁮󠁧󠁿</b></i> | پیشنهادی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i> | پیشنهادی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87B7.png')"><b>🇫🇷</b></i> | پیشنهادی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>• <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87AEF09F87B7.png')"><b>🇮🇷</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>• <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87B7.png')"><b>🇫🇷</b></i>فرانسه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87AEF09F87B7.png')"><b>🇮🇷</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i><b>خرید از ربات:<br/></b><a href="https://t.me/Zedpingvpn1bot" target="_blank"><b>@Zedpingvpn1bot</b></a><b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A9E2808DF09F92BB.png')"><b>👩‍💻</b></i>خرید از پشتیبانی:<br/></b><a href="https://t.me/zedping" target="_blank"><b>@zedping</b></a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1242"><time datetime="2025-06-27T22:22:02+00:00" class="time">22:22</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1242"><time datetime="2025-06-27T22:22:02+00:00" class="time">22:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1243" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MywidCI6MTc1MTk3NjIwMiwiaCI6ImI1NjkwNzU4Yzk1ZmFiYjY1NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1243" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0MywidCI6MTc1MTk4MTMwNCwiaCI6ImJkZWVhNTZlYmZkYmQyNzgxMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -337,20 +435,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور رایگان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>200 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><code><br/>vless://fbebc3cc-2d1a-4568-8d3c-3293d3ce4883@speedtest.net:80?mode=auto&amp;path=%2Fzedping%3Fed%3D2650&amp;security=none&amp;encryption=none&amp;host=Netherlands23.global.ssl.fastly.net&amp;type=xhttp#zedping-vpn</code><br/><br/><br/>بفرستین برای دوستانتون تا استفاده کنند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1243"><time datetime="2025-06-29T09:02:33+00:00" class="time">09:02</time></a></span>
+    <span class="tgme_widget_message_views">1.07K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1243"><time datetime="2025-06-29T09:02:33+00:00" class="time">09:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1244" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NCwidCI6MTc1MTk3NjIwMiwiaCI6IjQyNTBlNjU2OWNmYTYwNzZiZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1244" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NCwidCI6MTc1MTk4MTMwNCwiaCI6ImMyYTNlNWIyOTM5NDk3NTg2NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -367,10 +463,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان عزیزم <br/><br/>توی لینک اشتراک ها کانفیگ های متفاوتی وجود داره که متاسب با شرایط اینترنت مختلف طراحی شده<br/><br/>لطفا اگه کانفیگی براتون کنده لطفا لینکهای دیگه رو امتحان کنید <br/><br/>البته همه کانفیگ ها و سرورها الان بهینه شده و با همه اپراتور ها کار میکنه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">807</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1244"><time datetime="2025-06-30T12:39:06+00:00" class="time">12:39</time></a></span>
@@ -378,7 +472,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1245" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NSwidCI6MTc1MTk3NjIwMiwiaCI6ImM5YTA3YjZjOTdmMmM4ZmViNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1245" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NSwidCI6MTc1MTk4MTMwNCwiaCI6ImYyODA3MWU3ZGJiNzI4MTE4ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -395,10 +489,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>ارسال کد ورود به شبکه‌های اجتماعی خارجی (تلگرام، واتساپ، اینستا و فیسبوک)<br/>برای همراه اول و ایرانسل مسدود شد <br/><br/>به هیچ وجه از اکانت تلگرامتون لاگ اوت نکنید <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> - <a href="https://t.me/zedping" target="_blank">@zedping</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">784</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1245"><time datetime="2025-06-30T15:20:42+00:00" class="time">15:20</time></a></span>
@@ -406,7 +498,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1246" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NiwidCI6MTc1MTk3NjIwMiwiaCI6ImQwOTIzNDFiNmNmOWY4ZmJiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1246" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NiwidCI6MTc1MTk4MTMwNCwiaCI6IjZhZTk2ZjI4M2M1ZDRmMDNiMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -429,9 +521,7 @@
     <a href="https://t.me/zedping/1246" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">772</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1246"><time datetime="2025-07-01T06:52:34+00:00" class="time">06:52</time></a></span>
@@ -439,7 +529,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1247" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NywidCI6MTc1MTk3NjIwMiwiaCI6Ijk4NzBmM2QwZTJiYjUzOGQ5YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1247" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0NywidCI6MTc1MTk4MTMwNCwiaCI6ImE5MmFhYjQwZTA0MmIyNjc5YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -456,10 +546,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان پلن نامحدود  خیلی وقته حذف شده<br/><br/>پس اون اشتراک تمدید نمیشه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>لطفا دقت کنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">864</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1247"><time datetime="2025-07-02T05:33:25+00:00" class="time">05:33</time></a></span>
@@ -467,7 +555,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1248" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0OCwidCI6MTc1MTk3NjIwMiwiaCI6IjUxNmFjODY0ZmY4YjMwNzY0MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1248" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0OCwidCI6MTc1MTk4MTMwNCwiaCI6ImJmYmY2ZTc1MmE3NTA3ZGIyMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -484,10 +572,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ی نکته دیگه بگم<br/><br/>اینکه سرعت اینترنت در بعضی جاها پایینه به وی پی ان ربطی نداره لطفا اینو در نظر داشته باشین<br/><br/>ی تعداد اومدن گفتن ضعیفه ،تست سرعت گرفتیم زده 450 کیلوبایت&#33;<br/><br/>با این اینترنت انتظار سرعت ژاپن رو نداشته باشین لطفا ،اینترنت خوب باشه سرعت وی پی ان هم خوبه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">909</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1248"><time datetime="2025-07-02T06:54:36+00:00" class="time">06:54</time></a></span>
@@ -495,7 +581,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1249" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0OSwidCI6MTc1MTk3NjIwMiwiaCI6IjhiYzMyMGQ4NTEzZTdiZDM0NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1249" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI0OSwidCI6MTc1MTk4MTMwNCwiaCI6IjRiYzM2M2JhZjQ4NjVkMjYzYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -512,10 +598,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">احتمال داره اینترنت در همین حالت بمونه<br/><br/>تقریبا ملی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i><br/><br/>اتصال ها ب بین‌الملل خیلی سخت<br/><br/>پهنای باند کم<br/><br/>نشونه هاش داریم میبینم،خیلی سرعت اینترنت پایین اومده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E83.png')"><b>🎃</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">883</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1249"><time datetime="2025-07-02T18:33:50+00:00" class="time">18:33</time></a></span>
@@ -523,7 +607,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1250" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MCwidCI6MTc1MTk3NjIwMiwiaCI6IjVmY2UwYzA5ZTQ2ODRlOGQzNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1250" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MCwidCI6MTc1MTk4MTMwNCwiaCI6ImJhNjE3NGY0NWJjYTNiZjRkYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -538,20 +622,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>همه سرورهای زیر فعال هستن</b><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i> | پیشنهادی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i> | پیشنهادی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>•<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87B7.png')"><b>🇫🇷</b></i> | پیشنهادی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8D.png')"><b>🌍</b></i>• <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87AEF09F87B7.png')"><b>🇮🇷</b></i>    <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i><b>خرید از ربات:<br/></b><a href="https://t.me/Zedpingvpn1bot" target="_blank">@Zedpingvpn1bot</a><b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A9E2808DF09F92BB.png')"><b>👩‍💻</b></i>خرید از پشتیبانی:<br/></b><a href="https://t.me/zedping" target="_blank">@zedping</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">746</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1250"><time datetime="2025-07-03T11:24:20+00:00" class="time">11:24</time></a></span>
+    <span class="tgme_widget_message_views">747</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1250"><time datetime="2025-07-03T11:24:20+00:00" class="time">11:24</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1251" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MSwidCI6MTc1MTk3NjIwMiwiaCI6IjQ2MTEzOWNlN2UwNWM0NjczNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1251" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MSwidCI6MTc1MTk4MTMwNCwiaCI6ImY5YzE1ZDVlMWFlYWI4MTcyZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -566,20 +648,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i> اینترنت به‌ شکل سراسری اعم از همه اوپراتورها با اختلال شدید همراهه.<br/><br/><br/>سرور  متصل در حال حاضر<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87AEF09F87B7.png')"><b>🇮🇷</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">561</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1251"><time datetime="2025-07-05T21:30:27+00:00" class="time">21:30</time></a></span>
+    <span class="tgme_widget_message_views">562</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1251"><time datetime="2025-07-05T21:30:27+00:00" class="time">21:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1252" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MiwidCI6MTc1MTk3NjIwMiwiaCI6ImI5ZTliMWVkYWJkYzEyYmMzNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1252" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MiwidCI6MTc1MTk4MTMwNCwiaCI6IjFmMTVhYTYwMTViNTQ4MzJhNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -596,18 +676,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ممکنه اتصال کلا قطع شه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">529</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1252"><time datetime="2025-07-05T21:49:55+00:00" class="time">21:49</time></a></span>
+    <span class="tgme_widget_message_views">530</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1252"><time datetime="2025-07-05T21:49:55+00:00" class="time">21:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1253" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MywidCI6MTc1MTk3NjIwMiwiaCI6IjhhMDc5NDM3ZjdlNjI1NWE5MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1253" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1MywidCI6MTc1MTk4MTMwNCwiaCI6IjI3OGNjZjYyMGU1ODg2YmUyOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -626,18 +704,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6003416037384636844 1397779220_456247724" href="https://t.me/zedping/1253" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/J8FEK-83doPaLYulb2DIZ9x1p0BzM1pGVQF8O3Vc97_gTMouvglr3PyqRru8_L6eTu6BBEFtXOuDZ28eP8lbxHBfYH-t5rjv1-YoUzpUMWw8PD-74Auh447zAWpWAAUWJYQ-Q2dtMV9I2JG3v7aB2JK9R7mmtBq0h5N-jNuUK3CdqUudCaf14-nGWLVZBrbpFUu4rMFNePz7jn60IWs3GYPkpTaM_zK11_PQGxdzmDOu-SQbK_0H6DwT5bGSkW0WKSJrHNrgVQPLTzX31MPR3RGFoLQ6VavyxWdKY9JEYxWb0fp7GQs6QIZOJZTKpi5S9nVx4oqxFzwY1G0_yFMg8Q.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">85 درصد  ملت قطعن</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">85 درصد  ملت قطعن</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">529</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1253"><time datetime="2025-07-05T22:38:06+00:00" class="time">22:38</time></a></span>
+    <span class="tgme_widget_message_views">531</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1253"><time datetime="2025-07-05T22:38:06+00:00" class="time">22:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1254" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1NCwidCI6MTc1MTk3NjIwMiwiaCI6ImI5NDEzOTUxZWIwZjQzNDI1ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1254" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1NCwidCI6MTc1MTk4MTMwNCwiaCI6ImM4NDhhNjZkNWU5NzZiZDVlYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -654,18 +730,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/zedping"><span dir="auto">ZED PING | وی پی ان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">فعلا به حالت عادی برگشته همه سرورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">478</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1254"><time datetime="2025-07-05T23:40:48+00:00" class="time">23:40</time></a></span>
+    <span class="tgme_widget_message_views">480</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/zedping/1254"><time datetime="2025-07-05T23:40:48+00:00" class="time">23:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1255" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1NSwidCI6MTc1MTk3NjIwMiwiaCI6Ijg2YjI0OGZmNTcyYWU0YmM2ZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="zedping/1255" data-view="eyJjIjotMTc4MzkwOTU2NCwicCI6MTI1NSwidCI6MTc1MTk4MTMwNCwiaCI6IjFjMTA5NjdkNTM1MDdlMTA1MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/zedping"><i class="tgme_widget_message_user_photo bgcolor3" data-content="Z"><img src="https://cdn5.cdn-telegram.org/file/J_OuFY4Bi8tkKtyCTQGSzW8dd9fewL5Tia_42icXT-vYTbNpuubnrvwpcG2stnywgSBhAL_-Iz7Y2EQME_lHMWbyoY4qpsLe4cHRiiybRxPX6IUbiym95F_OvQL2knvYOmAdEVTKTn76H3BuWYma2L14Uq2dnFFbsrokMTcy1Mzf_tQYOweYnB-jmtUqzGtK52yoSPz4B0kcz7x7mVx80650p42-AgVHEQ_XLaDfyCDUpkvQEUhw9cckzL1CPY-C_-ZmvLmOLcSlEflgvV6KIIWBP7L39sHSq2oVoKDO1jt_CEkiWufvjhrWUo8qFK_ZQ1Z8vucq7uy1vjS_JGpNUA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -688,9 +762,7 @@
     <a href="https://t.me/zedping/1255" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">213</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/zedping/1255"><time datetime="2025-07-06T21:25:58+00:00" class="time">21:25</time></a></span>
@@ -707,11 +779,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 72.37ms -->
+<!-- page generated in 58.95ms -->

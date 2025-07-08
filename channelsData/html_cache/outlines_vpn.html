@@ -41,9 +41,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -72,7 +189,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">76</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">photos</span></div></div>
           <div class="tgme_channel_info_description">Бесплатные и доступные ключи для Outline.</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a85ae1027be78a9e6a_12567686242302508228">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=731349b9067743f668_927687117347524313">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -93,7 +210,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a85ae1027be78a9e6a_12567686242302508228">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=731349b9067743f668_927687117347524313">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/outlines_vpn">
@@ -110,7 +227,7 @@
 <main class="tgme_main" data-url="/outlines_vpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="outlines_vpn/1" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MSwidCI6MTc1MTk3NjIwMSwiaCI6IjRlNTkwNzg5N2U5NzYzOWI5NSJ9">
+      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="outlines_vpn/1" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MSwidCI6MTc1MTk4MTMwNCwiaCI6IjllMmQwNmIyYzhjNjBiMmU2ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -127,9 +244,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/outlines_vpn"><span dir="auto">Outline VPN &amp; v2rayNG Прокси сервер</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel created</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -138,7 +253,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/7" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6NywidCI6MTc1MTk3NjIwMSwiaCI6IjRlY2M2Njk4MjhlMTExMzBhYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/7" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6NywidCI6MTc1MTk4MTMwNCwiaCI6IjFjN2JhYzIxODk3NDhjMTU5ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -157,10 +272,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/7" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/MYTo6Dt-9JMDWVOHID1TkP_vU4NWU8GT69rLPS6_wlru-k6G3DQVhWeoqi6AvBuxMvJ4uQpCA6T_NFrGGjLYlnOw0E2HHbDjmEsC3x_kZqsXPH6535sEBlGaxxxRmp1lODDzO0ximusIp62uNTYAvGNDkSpR8DiocOKVN_CyFQNzaaZpiEO1HvcqUzsjW95TPPpWPjOmBrSeFSb0uoAGXqStpgagtKrn_eeWwSSLZTJYVV_-8IcG08T7tF7-Y2_QXRuuwsZWMaHLNL7zdHqbk1L5ovfgj7bjwUTMNi707cR_Wvtya1akvajOYTSTcK7odsM-3pFxhALqhOWK9Jd8Lg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">Привет, мои маленькие любители VPN&#33;<br/>Для использования Outline VPN Установите одну из следующих версий в своей операционной системе, затем подключитесь к серверу, используя ключи доступа.<br/>Загрузите VPN-клиенты Outline</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Привет, мои маленькие любители VPN&#33;<br/>Для использования Outline VPN Установите одну из следующих версий в своей операционной системе, затем подключитесь к серверу, используя ключи доступа.<br/>Загрузите VPN-клиенты Outline</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">342</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/7"><time datetime="2023-10-11T15:46:43+00:00" class="time">15:46</time></a></span>
@@ -168,7 +281,7 @@
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://outline.network/download/outline-client-1.10.0.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Android</span></a><a class="tgme_widget_message_inline_button url_button" href="https://itunes.apple.com/us/app/outline-app/id1356177741" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">iOS</span></a><a class="tgme_widget_message_inline_button url_button" href="https://outline.network/download/outline-client-1.10.0.exe" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Windows</span></a><a class="tgme_widget_message_inline_button url_button" href="https://outline.network/download/outline-client-1.10.0.AppImage" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Linux</span></a><a class="tgme_widget_message_inline_button url_button" href="https://itunes.apple.com/us/app/outline-app/id1356178125" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">MacOS</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/8" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6OCwidCI6MTc1MTk3NjIwMSwiaCI6IjBkN2ZlYjljYTdiM2QwMmY4YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/8" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6OCwidCI6MTc1MTk4MTMwNCwiaCI6IjI2Zjk0ZGVmODU4MjVjYjNmYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -187,9 +300,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/8" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/IT101gd5KyUtG16XUWDBxGN_4xHToQ6EblZTrt348BViIva8N9RrkFZ1vgZH2yjZG1njYwc4nhwucJTdNhoGrmOIzf905P_WvFrAAOdbaJ4oPBmw3D57faGJ5pFIpUEeSEbt4noacw3f-ItW6aLTfVtMhysnYWYFC9elbQ3HMmyjEsQcPJnsD0kM6tO0FmgInHZDfJ3HXVTUdUO5mK2kKYoAvxjhhwIXBgnVbJtUALBBxmKtko4gYezTz0NdwWzkDBTybuBKtRkJktUfZWHwDq4aqJ3AC4A6GPHEoRcqlyJuWrD2ZjL3Z0XjppW6peemw7S8g_mqVJ1Or0yJ2VtykQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Canada">#Canada</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: Cray Computer Corporation<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 98.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@134.195.196.178:805#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i>%20Canada%20#139%20/%20Outlinekeys.com</code></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Canada">#Canada</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: Cray Computer Corporation<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 98.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8=@134.195.196.178:805#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i>%20Canada%20#139%20/%20Outlinekeys.com</code></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -198,7 +309,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/9" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6OSwidCI6MTc1MTk3NjIwMSwiaCI6IjkxNmMzMGVmYzk3YzE3NDljMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/9" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6OSwidCI6MTc1MTk4MTMwNCwiaCI6IjkxNWY2OTE5ZmM0YjQwZmExYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -217,9 +328,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/9" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Y1BrVOlodZn2eBgLvzhQD9_dqfzZH2zTne3m_3YA6KTjkKa_9koUN1kCMIf8Nii4n7IshIPHWlsIUcIeYr0RKPsDcyuVYoMceqmSbVv0Fu0DbFovYmFaYtyDww0-gCQeq-RMgvXTskcgSoUqFRmELTMEi-LLibRs-5sLVfVBACQHfgDCUW4XDkZWI3pWP0Te7oTOjtvW-KQbqqYL58WpWDfovFg3QvlZSbVyM5XjZyY0R9h-MZ8x6nuYg0giHBB-uUGjGFB34lcd1JEdh7-TqEWzojd8ZbihmIKLQkzCIUjWPit0kJ7Ic5N4wIZsRSNKw9E93jWuhpmhqU1ijsvj6A.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Netherlands">#Netherlands</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 2.36ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqblNQeVdFWU4yQ1BydzRVSzhLNG52@45.8.144.34:16959#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i>%20Netherlands%20#192%20/%20Outlinekeys.com</code></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Netherlands">#Netherlands</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 2.36ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqblNQeVdFWU4yQ1BydzRVSzhLNG52@45.8.144.34:16959#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i>%20Netherlands%20#192%20/%20Outlinekeys.com</code></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -228,7 +337,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/10" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTAsInQiOjE3NTE5NzYyMDEsImgiOiIyZjc3OWMyYmJhMGY0YjMwNjMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/10" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTAsInQiOjE3NTE5ODEzMDQsImgiOiJlYTUyNGJhMDI2ZWQwMjMwNGEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -247,9 +356,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/10" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/rVWfAIEH5Sp8fxffauisH27T6CnWYzwfupn8lnkyJrQG8kY0fDBQKeAlXXUk83mtAs70ss5Mb9RG7VXZuSfki9uJYNMTvaghXcySzeNghxjbcPls0Yz9sBjs4HPtaLC8JXc-y_uq_LRE6YMtKFCwE3kbJxMK6jdbfdwnAhcGuNv8jnE_m8kBxflYANjycVbjIoc3y4IlwrUecPVv9Pjb_y9R52u_GoeLBHQDr5HrZAkRvSdDagSlB6ToXrN27MVsZ-HIver1Lp5E4JnVo_zwpEvfW_H_Qx0CL0mxxfFT67mDfv2bNjdQAWYDHH_EswCQHKprGZG1_zLP9kEu6RsuUA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Turkey">#Turkey</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: kvidex<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 61.0ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4bWI0MFFrcFFqWHNWRW9NcUFwZk1I@193.124.45.21:9961#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B9F09F87B7.png')"><b>🇹🇷</b></i>%20Turkey%20#187%20/%20Outlinekeys.com</code></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Turkey">#Turkey</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: kvidex<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 61.0ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4bWI0MFFrcFFqWHNWRW9NcUFwZk1I@193.124.45.21:9961#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B9F09F87B7.png')"><b>🇹🇷</b></i>%20Turkey%20#187%20/%20Outlinekeys.com</code></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -258,7 +365,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/11" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTEsInQiOjE3NTE5NzYyMDEsImgiOiI4YTg2NGFiMzQ1NGMyN2VlNDUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/11" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTEsInQiOjE3NTE5ODEzMDQsImgiOiIyMjM4MDAzZmQwMDFiNTk5YTAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -277,10 +384,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/11" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/dEQwK0raBkwIthVhgr25Tu-jahQsbc_ISQGV8RMLlCj9QsoyFipn59NjGviag4P4p17rubAAbLkg4HTIyOCeAhpP3Z8yTtH6tU4I_KbdiRoW6_mvtIePhahTIeIKV3Dog70UgKpDGakRIGBLurllmR-s3RNzi6IChbW8OAyTmkL3higqloAuJ5E5wrZwHGHTgXlmbcxLNOWEs8w3_UF6F1iLt9xyrNq8TjvAfhvqptsfh6x_pvW9PB0Nmo_bc7v2J0-RcpS1cegG27dxj2cMOgzUdwwXJ5-bjXICcQCmdhOsedsJCbSXjnyGuu4dPJvvXtrzmo8sg-HWlezlBDuXFA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23UnitedKingdom">#UnitedKingdom</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: Datacamp Limited<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 17.2ms<br/><br/><br/><code>ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@212.102.53.80:443#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i>%20UK%20#183%20/%20Outlinekeys.com</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23UnitedKingdom">#UnitedKingdom</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: Datacamp Limited<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 17.2ms<br/><br/><br/><code>ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@212.102.53.80:443#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i>%20UK%20#183%20/%20Outlinekeys.com</code></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">866</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/11"><time datetime="2023-10-11T16:14:21+00:00" class="time">16:14</time></a></span>
@@ -288,7 +393,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/12" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTIsInQiOjE3NTE5NzYyMDEsImgiOiI2ODhjMDhjMDcxYTM0MjQ3MjkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/12" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTIsInQiOjE3NTE5ODEzMDQsImgiOiI3YjUwM2QxZmMyMDE4NGFiOTkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -307,18 +412,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/12" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/C6Ks1GGNXPnvmWglLS2rbMChsoms6jEO4WGaYvx8Zee7YPvOq_4THgD-V9U2Gd04Jrmc38gmwtlWKBB0vnlgy_zaBLsoji-LkxzSngMWlu4w9s115cm2bt8xX1xOJNbL1ewBWvMiEK2-noYhuZ6voft1WGx66VgQirVQ4rmEREDI8Cmas9jPkQOfNAVeNFaNyd6caURvYYFDZ8xlhaVcZQZk9b9nJmAqZu5dhRNhOrW-kXsX68OA_01Tqt_nmx6_ahsF1ET-Yj9pFAC5LEFhSBwgCC-g7kcX8l3aengIzYxSR_puE6T_b1osLRh4WPquq2Nxyht6wJ--I813tDg0Ew.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Denmark">#Denmark</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 14.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYd1dWUm1PMmtLdTZxSzFYbGloM0xmZTZMaDNSUmE5cg@213.183.44.17:8388#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87B0.png')"><b>🇩🇰</b></i>%20Denmark%20#169%20/%20Outlinekeys.com</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23Denmark">#Denmark</a>&nbsp;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 14.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYd1dWUm1PMmtLdTZxSzFYbGloM0xmZTZMaDNSUmE5cg@213.183.44.17:8388#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87B0.png')"><b>🇩🇰</b></i>%20Denmark%20#169%20/%20Outlinekeys.com</code></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/12"><time datetime="2023-10-11T16:25:34+00:00" class="time">16:25</time></a></span>
+    <span class="tgme_widget_message_views">1.26K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/12"><time datetime="2023-10-11T16:25:34+00:00" class="time">16:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/13" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTMsInQiOjE3NTE5NzYyMDEsImgiOiJlM2RhMzc5ZDMzNWE0MzEwM2YifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="outlines_vpn/13" data-view="eyJjIjotMTk3NTk1MDcxMCwicCI6MTMsInQiOjE3NTE5ODEzMDQsImgiOiIwNTNhYmFlZWM1NTMzNzY1MjQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/outlines_vpn"><i class="tgme_widget_message_user_photo bgcolor6" data-content="O"><img src="https://cdn4.cdn-telegram.org/file/JG9RW6djvLtwCGTVG56qA6wCMO2ke3SJcHRsVohHC-MXQrfT49Asy6siAFAf8vfrtUWrXo-N2JJ_w-72-W1L2e8dKu40jVPSNkE9bTbEumYoh2r1pa77qafDRHlfU1JI0xYm_aW5NCZ7OS6iUOU4LaDIdF-e40b7wbtTwxaF33UCkBQnhllS9yAde-B27tO8hTCHtAuwutXaPdAXe3fXuWmaCcbkFopXptV7vAmbhENKOXTZc7Tl1SCuQvN74m7HXQofoemAeOdyZlU9xlO9KApNNSWB0T9FTIZUJU7PYDHfKyDY-o57cYdWJUuc9OqrYEJsb1YTEGgnrroF-i2vSQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -337,13 +440,11 @@
 
 <a class="tgme_widget_message_photo_wrap 5276180848997160321 1228456583_456250753" href="https://t.me/outlines_vpn/13" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/e_OOzjbqrw0HW8HWqag2rbKnjTe2t3JOXQwIuwr-FpUWLtNmkRf2pgVq3OJ2W4yAQE-fxbqy-bBxOJaN14qBTZx70UTiMg9dDVduZn2S0fTgcZ36s2aPzcTmpFfW3D-XBwzew4gvHkdzTR9v5vcIgCOQ0ZnfiCZw8_R9YlWgwz70RJoKex8z4-NakDxTkZ4J-o1oD1W6_FJZoidKgXnPuBX3ko4GR5OxM6-dNULe59_fz5-X6UgrWtLmNTmjxj6AbhWkvgZCxq-cXJQmeb7gJe0YaXQPXCGpr-qLgNWVdRmBFjFGPJFmq3YOswM2lp66uDeEK6uZBBuE7V29_a_3aA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23USA">#USA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 28.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOVGRrWg==@www.outline.network.ak1915.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:8388#t.me%2Foutlines_vpn%20%7C%20%281915%29%20US</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> Outline VPN <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8F.png')"><b>🌏</b></i> Location: <a href="?q=%23USA">#USA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i> Хостинг: OVH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Тип ключа: Free<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A8.png')"><b>💨</b></i> Пинг: 28.1ms<br/><br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOVGRrWg==@www.outline.network.ak1915.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:8388#t.me%2Foutlines_vpn%20%7C%20%281915%29%20US</code></div>
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/13"><time datetime="2023-10-11T16:39:40+00:00" class="time">16:39</time></a></span>
+    <span class="tgme_widget_message_views">1.56K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/outlines_vpn/13"><time datetime="2023-10-11T16:39:40+00:00" class="time">16:39</time></a></span>
   </div>
 </div>
   </div>
@@ -357,11 +458,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 42.31ms -->
+<!-- page generated in 40.62ms -->

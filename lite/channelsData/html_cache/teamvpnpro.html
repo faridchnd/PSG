@@ -60,9 +60,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -91,7 +208,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">123</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">105</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">64</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">205</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">169</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">فروش سرور های پرسرعت<br/>بدون قطعی و افت سرعت<br/>تضمین سرور تا سرور اخر ماهانه سرورتون<br/>پشتیبانی عالی<br/>امینت بالا سرور<br/>برای تمام سیم کارت ها و مدل گوشی ها و کامپیوتر<br/>تست رایگان<br/>آموزش وصل شدن به سرور ها هم به گوشی هم کامپیتور <br/>تجربه کاری ۲ساله<br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=cd1a93a831ac7c34ca_7760940808476015267">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=5556a5dbc1b62fa143_12614143886623796744">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -112,7 +229,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=cd1a93a831ac7c34ca_7760940808476015267">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=5556a5dbc1b62fa143_12614143886623796744">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/teamvpnpro">
@@ -129,7 +246,7 @@
 <main class="tgme_main" data-url="/teamvpnpro">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/teamvpnpro?before=1331" class="tme_messages_more js-messages_more" data-before="1331"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1331" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMSwidCI6MTc1MTk3NjQ1OSwiaCI6IjRhNGM2ZWFkZDE4YjdiOWMyZSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/teamvpnpro?before=1331" class="tme_messages_more js-messages_more" data-before="1331"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1331" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMSwidCI6MTc1MTk4MTU1OSwiaCI6IjFiMTlkMzQyOTBiYmEyNjA5NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -152,9 +269,7 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">com.netmod.syna.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">32.7 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">NetMod VPN Client (V2Ray/SSH) by NetSyna<br/>com.netmod.syna<br/>Version: 2.0.2(345)<br/>Updated: Nov 19, 2023<br/><br/>دوستان عزیز چت باز تیم این فیلترشکنت رو نصب کنید همه چیش مثل <br/>v2rayNG<br/>و‌تمام سرور ها رو ساپورت میکنه و دیگه نیازی به <br/>ARMOD <br/>نیست<br/>دیگه راحتتون کردم حالشو ببرید<br/>تمام سرور های ما ر‌و ساپورت میکنه<br/><br/><code>trojan://22f86840-bcac-11ee-abea-1239d0255272@chatbuzzteambhm.chatbuzzt7150.workers.dev:443?security=tls&amp;type=ws&amp;headerType=none&amp;path=%252Fhowdy&amp;sni=de1.test3.net&amp;host=de1.test3.net#@chatbuzzteam</code><br/>ایرانسل رایتل همراه اول وای فای<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><br/><br/><code>trojan://78f9bf50-bce8-11ee-8913-1239d0255272@de1.test3.net:443/chatbuzzteambhm.chatbuzzt7150.workers.dev?sni=chatbuzzteambhm.chatbuzzt7150.workers.dev#@chatbuzzteam</code><br/>ایرانسل رایتل<br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">NetMod VPN Client (V2Ray/SSH) by NetSyna<br/>com.netmod.syna<br/>Version: 2.0.2(345)<br/>Updated: Nov 19, 2023<br/><br/>دوستان عزیز چت باز تیم این فیلترشکنت رو نصب کنید همه چیش مثل <br/>v2rayNG<br/>و‌تمام سرور ها رو ساپورت میکنه و دیگه نیازی به <br/>ARMOD <br/>نیست<br/>دیگه راحتتون کردم حالشو ببرید<br/>تمام سرور های ما ر‌و ساپورت میکنه<br/><br/><code>trojan://22f86840-bcac-11ee-abea-1239d0255272@chatbuzzteambhm.chatbuzzt7150.workers.dev:443?security=tls&amp;type=ws&amp;headerType=none&amp;path=%252Fhowdy&amp;sni=de1.test3.net&amp;host=de1.test3.net#@chatbuzzteam</code><br/>ایرانسل رایتل همراه اول وای فای<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><br/><br/><code>trojan://78f9bf50-bce8-11ee-8913-1239d0255272@de1.test3.net:443/chatbuzzteambhm.chatbuzzt7150.workers.dev?sni=chatbuzzteambhm.chatbuzzt7150.workers.dev#@chatbuzzteam</code><br/>ایرانسل رایتل<br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -163,7 +278,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1332" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMiwidCI6MTc1MTk3NjQ1OSwiaCI6IjU3OTMxMmVmYTA2NjQ2M2Q4NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1332" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMiwidCI6MTc1MTk4MTU1OSwiaCI6IjY0MDczNDllYzdiY2E3YjM2NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -192,9 +307,7 @@
     <div class="message_media_not_supported_label">Media is too big</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/teamvpnpro/1332" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش وصل کردن سرور روی فیلترشکن<br/>netmod</a><br/>خیلی خیلیی خفنه<br/>روی فیلترشکن<br/>v2rayNG<br/>گفته بودیم باید برید توی تنظیمات گزینه <br/>allowed رو روشن کنید تا سرور کار کنه<br/>یا سرور مخصوص گذاشتیم  گفته بودیم حتما روی<br/>armod  باید وصل کنید<br/><br/>خیر خوب اینه کنه دیگه نیازی نیست<br/>این فیلترشکن جای همه خدمات میده و فوق العاده است<br/>به نظرم دیگه فیلترشکن v2rayNG  رو‌ پاک کنید که دیگه بدرد نمیخوره<br/>از این به بعد برای اندروید از این فیلترشکن استفاده کنید<br/><br/> <a href="https://t.me/teamvpnpro/1331" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">دانلود فیلترشکن NETMOD</a><br/>دیگه فیلترشکن v2rayNG  رو پاک کنید نیازی دیگه نیست<br/>این فیلترشکن جای همه کار میکنه و تمام سرور ها رپ ساپورت میکنه<br/><br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/teamvpnpro/1332" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش وصل کردن سرور روی فیلترشکن<br/>netmod</a><br/>خیلی خیلیی خفنه<br/>روی فیلترشکن<br/>v2rayNG<br/>گفته بودیم باید برید توی تنظیمات گزینه <br/>allowed رو روشن کنید تا سرور کار کنه<br/>یا سرور مخصوص گذاشتیم  گفته بودیم حتما روی<br/>armod  باید وصل کنید<br/><br/>خیر خوب اینه کنه دیگه نیازی نیست<br/>این فیلترشکن جای همه خدمات میده و فوق العاده است<br/>به نظرم دیگه فیلترشکن v2rayNG  رو‌ پاک کنید که دیگه بدرد نمیخوره<br/>از این به بعد برای اندروید از این فیلترشکن استفاده کنید<br/><br/> <a href="https://t.me/teamvpnpro/1331" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">دانلود فیلترشکن NETMOD</a><br/>دیگه فیلترشکن v2rayNG  رو پاک کنید نیازی دیگه نیست<br/>این فیلترشکن جای همه کار میکنه و تمام سرور ها رپ ساپورت میکنه<br/><br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -203,7 +316,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1333" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMywidCI6MTc1MTk3NjQ1OSwiaCI6ImY3NTI2NzJmZjAwZDA0ZjQyZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1333" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzMywidCI6MTc1MTk4MTU1OSwiaCI6IjAxYTJkODAyNjVlZTRjMzE3OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -220,9 +333,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">همیشه با خبر های خوب میام ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9884.png')"><b>😄</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9884.png')"><b>😄</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i><br/>همه این فیلترشکن رو نصب کنن<br/>تمام سرور های رو میسازم <br/>از trojan go<br/>تا <br/>shadow socks<br/>رو ساپورت میکنه<br/>دیگه نیازی به v2rayNG نیست دوستان<br/>کسایی که میخوان از سرور های ما چه سرور های شخصی<br/>چه سرور های رایگان استفاده کنن این برنامه رو برای اندروید نصب کنن <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA499.png')"><b>🤙</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA499.png')"><b>🤙</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA499.png')"><b>🤙</b></i><br/><br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -231,7 +342,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1334" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNCwidCI6MTc1MTk3NjQ1OSwiaCI6ImZkYzkxY2ZkMDZjNzFkZjExYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1334" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNCwidCI6MTc1MTk4MTU1OSwiaCI6ImI0MTY1YjA5MmY3YTkwN2NjMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -248,9 +359,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">یعنی حالشو ببرید دیگه</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -259,7 +368,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1335" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNSwidCI6MTc1MTk3NjQ1OSwiaCI6ImJiMWY3NmQxYjZiOWIzNmZhYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1335" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNSwidCI6MTc1MTk4MTU1OSwiaCI6ImM0ZWY5YzM2OTBiMWIzNGQ1NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -276,9 +385,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a> pinned a file</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -287,7 +394,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1336" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNiwidCI6MTc1MTk3NjQ1OSwiaCI6IjdlMTIzNDhjYTk0MzA1MTBhNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1336" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNiwidCI6MTc1MTk4MTU1OSwiaCI6IjE1OWRmODk1YTZiZWY4Nzg3YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -304,9 +411,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a> pinned a video</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -315,7 +420,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1337" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNywidCI6MTc1MTk3NjQ1OSwiaCI6ImRlNzU2ODRhNWIxM2E3YmNiZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1337" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzNywidCI6MTc1MTk4MTU1OSwiaCI6IjlhZWFjZWFlMTNiMTg3NTc2MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -331,15 +436,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/teamvpnpro/1331" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/teamvpnpro/1331" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">com.netmod.syna.apk</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">com.netmod.syna.apk</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">نصب کنید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -348,7 +451,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1338" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzOCwidCI6MTc1MTk3NjQ1OSwiaCI6IjM4OTVmZmY2ODUyYTUwMmEyNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1338" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzOCwidCI6MTc1MTk4MTU1OSwiaCI6IjRhYzlhMTg1MDRjMWM5NWU2ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -382,8 +485,6 @@
     </div>
   </div></a>
 </div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -392,7 +493,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1339" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzOSwidCI6MTc1MTk3NjQ1OSwiaCI6IjU3MzQzODQyYWU1NGM3NDdlNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1339" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTMzOSwidCI6MTc1MTk4MTU1OSwiaCI6ImNlY2JkYTBhZWQyMTdlYTdmYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -411,9 +512,7 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5893397138677810182 1372163449_456246278" href="https://t.me/teamvpnpro/1339" style="width:369px;background-image:url('https://cdn4.cdn-telegram.org/file/sHXslFAnSMk-BRBG5ucFYcydUIz6K3lQaGXETVeYXVYjcuGCOiIZXNVxrnaQXALlAyfKTRsmrsEI_jyQ0bOqPg3r3CCh0_nUa3UwLWZC5J12-B4WK0hQY410F2L5VDNcilUyvUH1Dj5jzotTt_qvrHqpK5pd8gkyOB2ubZMTCvaOzsh0_sIWQI5uO57CM8luckyTcgGY2TMMQWQ0mAHecvy5LfJjP5ETZOKis_8HYidg_SRCsMSPS3L66GM9ycUuTizZp6foIQ5gxoCHWgRtaA9CGLe6lUZldKIL9a_MGyvozSRavLhJQSfF46lbucqWEqRCQzsfciru2siMqisrZQ.jpg')">
   <div class="tgme_widget_message_photo" style="width:61.5%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">Streisand <br/>ایفون ها این فیلترشکن رو نصب کنن سرور امارات فقط و‌فقط روی این فیلترشکن وصل میشه<br/>نمیدونم چطوری ایفون دست میگیرید هزارتومن ارزش نداره هزارتا دردسر داره اصلا نمی ارزه<br/><br/><br/>برای اندروید روی هرفیلترشکنی وصل میشه<br/><br/><br/><code>vless://05a458e1-bc26-476a-dcf1-156a17a6a27b@uae.speedvip.fun:51436?type=tcp&amp;path=%2F&amp;host=speedtest.net&amp;headerType=http&amp;security=none#Em52-%40chatbuzzteam%20test</code><br/>سرور‌تست حالشو‌ببرید سرعت امارات لذت ببرید<br/>محدوده ای پنل اگر میخواین از این سرور سریع درخواست بدین چون خیلی قویه زود تموم میشه<br/>وصل روی همه اپراتورها+وای فای<br/><br/>اموزش وصل شدن به فیلترشکن<br/><a href="https://t.me/chatbuzzteam/13635?single" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Streisand</a><br/>تاچ کن <br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Streisand <br/>ایفون ها این فیلترشکن رو نصب کنن سرور امارات فقط و‌فقط روی این فیلترشکن وصل میشه<br/>نمیدونم چطوری ایفون دست میگیرید هزارتومن ارزش نداره هزارتا دردسر داره اصلا نمی ارزه<br/><br/><br/>برای اندروید روی هرفیلترشکنی وصل میشه<br/><br/><br/><code>vless://05a458e1-bc26-476a-dcf1-156a17a6a27b@uae.speedvip.fun:51436?type=tcp&amp;path=%2F&amp;host=speedtest.net&amp;headerType=http&amp;security=none#Em52-%40chatbuzzteam%20test</code><br/>سرور‌تست حالشو‌ببرید سرعت امارات لذت ببرید<br/>محدوده ای پنل اگر میخواین از این سرور سریع درخواست بدین چون خیلی قویه زود تموم میشه<br/>وصل روی همه اپراتورها+وای فای<br/><br/>اموزش وصل شدن به فیلترشکن<br/><a href="https://t.me/chatbuzzteam/13635?single" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Streisand</a><br/>تاچ کن <br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -422,7 +521,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1340" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MCwidCI6MTc1MTk3NjQ1OSwiaCI6IjVkZDg1ODViZDhiZTJkNzlkMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1340" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MCwidCI6MTc1MTk4MTU1OSwiaCI6IjVhNjBkZWM0ZDJlMzM2ZWFkMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -439,9 +538,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/chatbuzzteam/13649"><span dir="auto">chatbuzzteam <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i></span></a></div>
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i> |- تعداد کل کاربران:&nbsp; 349<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F83E2808DE29982.png')"><b>🏃‍♂️</b></i> |- تعداد کاربران فعال: 188 (54%)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F95B0.png')"><b>🕰</b></i> |- آخرین آپدیت در: 01:52:34 31-01-2024<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A5.png')"><b>👥</b></i> |- تعداد کاربران جدید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F959B.png')"><b>🕛</b></i> |- امروز: 0 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9385.png')"><b>📅</b></i> |- 7 روز گذشته: 9 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i> |- 31 روز گذشته: 34 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9381.png')"><b>📁</b></i> |- تعداد کل فایل های اپلود شده: 16 عدد<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i> |- <a href="https://t.me/UranusCreatorBot?start=bstat6293443420" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">تصدیق آمار</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F93.png')"><b>🏓</b></i> |- پینگ 22ms<br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>دوستان عضو بشید لطفا توی ربات تیم<br/>۳۴۹ نفر عضو هستن<br/>تا ۴۰۰ نفر برسونید<br/>این ربات خیلی به شما کمک میکنه<br/>جهت اصلاع رسانی تخفیف ها سرور های جدید افرهای ‌ویژه سرور رایگان لیست قیمت های جدید و خیلی چیز های دیگه مرسی از حمایت شما<br/>پس عضو این ربات حتما بشید<br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><br/>این ربات هم برای اصلاعات کامل قیمت های سرورهاست<br/><a href="https://t.me/chatbuzz_serverbot" target="_blank">@chatbuzz_serverbot</a><br/>کلا ۱ثانیه هم طول نمیشکه عضو بشید<br/>بزنید روی رباتو کلمه استارت رو بزنید<br/>مرسی از همتون دمتون گرم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/UranusCreatorBot?start=bstat6293443420">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i> |- تعداد کل کاربران:&nbsp; 349<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F83E2808DE29982.png')"><b>🏃‍♂️</b></i> |- تعداد کاربران فعال: 188 (54%)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F95B0.png')"><b>🕰</b></i> |- آخرین آپدیت در: 01:52:34 31-01-2024<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A5.png')"><b>👥</b></i> |- تعداد کاربران جدید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F959B.png')"><b>🕛</b></i> |- امروز: 0 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9385.png')"><b>📅</b></i> |- 7 روز گذشته: 9 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i> |- 31 روز گذشته: 34 نفر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9381.png')"><b>📁</b></i> |- تعداد کل فایل های اپلود شده: 16 عدد<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9497.png')"><b>🔗</b></i> |- <a href="https://t.me/UranusCreatorBot?start=bstat6293443420" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">تصدیق آمار</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F93.png')"><b>🏓</b></i> |- پینگ 22ms<br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>⁪⁬⁮⁮⁮⁮<a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/>دوستان عضو بشید لطفا توی ربات تیم<br/>۳۴۹ نفر عضو هستن<br/>تا ۴۰۰ نفر برسونید<br/>این ربات خیلی به شما کمک میکنه<br/>جهت اصلاع رسانی تخفیف ها سرور های جدید افرهای ‌ویژه سرور رایگان لیست قیمت های جدید و خیلی چیز های دیگه مرسی از حمایت شما<br/>پس عضو این ربات حتما بشید<br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a><br/><br/>این ربات هم برای اصلاعات کامل قیمت های سرورهاست<br/><a href="https://t.me/chatbuzz_serverbot" target="_blank">@chatbuzz_serverbot</a><br/>کلا ۱ثانیه هم طول نمیشکه عضو بشید<br/>بزنید روی رباتو کلمه استارت رو بزنید<br/>مرسی از همتون دمتون گرم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i></div><a class="tgme_widget_message_link_preview" href="https://t.me/UranusCreatorBot?start=bstat6293443420">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/Ujip359hQmhKlBtZMBgfAlWnFZ5rBrFa1Nnm1dyCPZEDrKMaKGM5FU5tHpf0sv7XuoTx_FRwfaw8XJjJ7TZl5JMZpeU9XnHf9XK0GbjKsSyzc_Cc4hhSrCQmK4YiNlKOZAXk2UEo_CzlgxVSzyIZjJWkClmutj-U-T3PY45fHPXe7tRSO_MMon5ZivzzI4nfMHnRBPkN_tpR33y0VBHW0FR96x96FibIYRGhhE4MtORlBQXVBOx4IqwVulW9uH_N721nMe1iSNquziMkDojgmOa34mFXuqxcDjxItcjquGLc8znAenjWS5NHuC7xV5DGvqwAblm5WSMHlnARdcZsVg.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
@@ -456,7 +553,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1341" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MSwidCI6MTc1MTk3NjQ1OSwiaCI6IjA4NTUyMGM3MjNjNDIzYTkzYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1341" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MSwidCI6MTc1MTk4MTU1OSwiaCI6IjQwMTFjYzQ2YTE1MWE4ZDljMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -473,9 +570,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/chatbuzzteam/13648"><span dir="auto">chatbuzzteam <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i></span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>trojan://c7f9b8f0-bfdb-11ee-a15c-1239d0255272@chatbuzzteambhm.chatbuzzt7150.workers.dev:443?security=tls&amp;type=ws&amp;headerType=none&amp;path=%252Fhowdy&amp;sni=de1.test3.net&amp;host=de1.test3.net#@chatbuzzteam</code><br/>برای اندروید<br/>تمام اپراتورها+‌وای فای<br/>فیلترشکن مورد نیاز<br/>Netmod<br/>ARMODVPN<br/>جز این ۲تا روی هیچی وصل نمیشه<br/><br/><a href="https://t.me/chatbuzzteam" target="_blank">@chatbuzzteam</a><br/><a href="https://t.me/chatbuzz_serverbot" target="_blank">@chatbuzz_serverbot</a><br/><a href="https://t.me/chatbuzzteam_bot" target="_blank">@chatbuzzteam_bot</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -484,7 +579,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1342" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MiwidCI6MTc1MTk3NjQ1OSwiaCI6ImM1MzU0NzVlOGU2NzIyODE3NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1342" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MiwidCI6MTc1MTk4MTU1OSwiaCI6IjE0MzFiMjE1Y2JjYTZlYjZkNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -501,10 +596,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://a5368290-9ce5-4fc4-9652-06221e6689fa@iran4.yasinvps.sbs:8880?type=ws&amp;path=%2F&amp;host=cdn1.yasinvps.sbs#V2PN-0rxvqzjvq_chatbuzzteam</code><br/>تمام اپراتورها (ایرانسل رایتل همراه <br/>روی بعضی از وای فای ها کار میکنه<br/>ایفون اندروید کامپیوتر مک بوک<br/>سرعتی پایدار ۳ روز وصل<br/><br/>خوب تست کنید سرور رو<br/><br/>برای سفارش سرور پیام بدین<br/><a href="https://t.me/MelorinR" target="_blank">@MelorinR</a><br/><br/><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">177</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝕥𝕙𝕖 𝕤𝕙𝕒𝕕𝕠𝕨</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/teamvpnpro/1342"><time datetime="2024-01-31T12:53:46+00:00" class="time">12:53</time></a></span>
@@ -512,7 +605,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1343" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MywidCI6MTc1MTk3NjQ1OSwiaCI6IjI4NDdjZmI4YmY3MmM5NDU4YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1343" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0MywidCI6MTc1MTk4MTU1OSwiaCI6ImYwMmZmOTUxYTZlNWJjZTRjMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -529,9 +622,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">vless://a5368290-9ce5-4fc4-9652-06221e6689fa@iran4.yasinvps.sbs:8880?type=ws&amp;path=%2F&amp;host=cdn1.yasinvps.sbs#V2PN-0rxvqzjvq_chatbuzzteam تمام اپراتورها (ایرانسل رایتل همراه  روی بعضی از وای فای ها کار میکنه ایفون اندروید کامپیوتر مک بوک سرعتی پایدار ۳ روز…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -540,7 +631,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1344" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NCwidCI6MTc1MTk3NjQ1OSwiaCI6IjE0NzY0M2MxYTI1NmU3ZDE2ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1344" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NCwidCI6MTc1MTk4MTU1OSwiaCI6IjBiZDAwNWMxOGI2MTk1OWMzMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -567,10 +658,8 @@
     </div>
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:01</time>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">فدات وظیفه تیم ما اینه شما راضی باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">فدات وظیفه تیم ما اینه شما راضی باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">162</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">the best</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/teamvpnpro/1344"><time datetime="2024-01-31T13:34:53+00:00" class="time">13:34</time></a></span>
@@ -578,7 +667,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1346" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NiwidCI6MTc1MTk3NjQ1OSwiaCI6IjU0YmNiZjFkYzNiZWEwOWVlNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1346" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NiwidCI6MTc1MTk4MTU1OSwiaCI6IjYyMzQxYjkwM2FiYzY2MGI4YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -605,10 +694,8 @@
     </div>
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:11</time>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">رضایت مشتری ثابتون از سرور های جدید ما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">رضایت مشتری ثابتون از سرور های جدید ما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6.png')"><b>🫶</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">175</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝕥𝕙𝕖 𝕤𝕙𝕒𝕕𝕠𝕨</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/teamvpnpro/1346"><time datetime="2024-01-31T17:07:19+00:00" class="time">17:07</time></a></span>
@@ -616,7 +703,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1347" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NywidCI6MTc1MTk3NjQ1OSwiaCI6ImZhODM0OGJkZGMzNjg3NDAxMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1347" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0NywidCI6MTc1MTk4MTU1OSwiaCI6ImRhM2E1NGYxNmYzNDYyZTFhYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -633,9 +720,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">قیمت <u>سرور های امارات<br/>سرعت فوق‌العادست<br/>امنیت خیلییی بالا<br/>قطعی خیلیییییی کم<br/>۱۰گیگ </u>۷۰<u>تومن<br/>۲۰گیگ </u>۱۰۰<u>تومن<br/>۳۰گیگ </u>۱۲۰<u><br/>۴۰گیگ </u>۱۴۰<u><br/>نامحدود ۱کاربر </u>۱۹۰<u><br/>نامحدود ۲کاربر </u>۲۲۰<u><br/>نامحدود ۳کاربر </u>۲۵۰<u><br/>۱ماه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA499.png')"><b>🤙</b></i><br/>۲ماه نامحدود تک کاربر </u>۲۹۰<u><br/>نامحدود ۲کاربر </u>۳۲۰<u><br/>نامحدود ۳کاربر </u>۳۵۰<u><br/>سرور فوق‌العادست سرعت بالا برای همین قیمت هاشم فرق داره<br/>خیلی ارزش داره واقعا حرف نداره<br/>سرور ها محدود هستن اگر‌ این سرور رو میخواین هرچی سریع تر درخواست بدین بهتره چون تموم میشه و به علت قیمت بالای پنل احتمالا همین یک بار داشته باشیم<br/>برای درخواست سرور به این ایدی پیام بدین<br/></u><a href="https://t.me/MelorinR" target="_blank">@MelorinR</a><u><br/> و </u>قیمت <u>سرور های امارات<br/>سرعت فوق‌العادست<br/>امنیت خیلییی بالا<br/>قطعی خیلیییییی کم</u><br/><br/><a href="https://t.me/teamvpnpro" target="_blank">@teamvpnpro</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -644,7 +729,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1348" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjkxOWRhMmI1YzJmNDBiMWEyMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="teamvpnpro/1348" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0OCwidCI6MTc1MTk4MTU1OSwiaCI6ImUwYmIwNzQ0YjhjMmU0NDczYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -661,9 +746,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">قیمت سرور های امارات سرعت فوق‌العادست امنیت خیلییی بالا قطعی خیلیییییی کم ۱۰گیگ ۷۰تومن ۲۰گیگ ۱۰۰تومن ۳۰گیگ ۱۲۰ ۴۰گیگ ۱۴۰ نامحدود ۱کاربر ۱۹۰ نامحدود ۲کاربر ۲۲۰ نامحدود ۳کاربر ۲۵۰ ۱ماه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA499.png')"><b>🤙</b></i> ۲ماه نامحدود تک کاربر ۲۹۰ نامحدود ۲کاربر ۳۲۰ نامحدود ۳کاربر ۳۵۰ سرور فوق‌العادست…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -672,7 +755,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1349" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjI5YTI3NWQwOWM5MjEyNDY0ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1349" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM0OSwidCI6MTc1MTk4MTU1OSwiaCI6ImY3MmZhNTNlZDY2MWI5YmRhZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -689,10 +772,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/teamvpnpro"><span dir="auto">VPN<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i>TEAMPRO</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/chatbuzzteam/13741"><span dir="auto">chatbuzzteam <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i></span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>trojan://b8841c50-c3ad-11ee-9be0-1239d0255272@de1.test3.net:443/chatbuzzteambhm.chatbuzzt7150.workers.dev?sni=chatbuzzteambhm.chatbuzzt7150.workers.dev#@chatbuzz_serverbot</code><br/>ایرانسل رایتل مودم ایرانسل<br/><br/><code>trojan-go://de3e5aa0-c3ad-11ee-8a94-1239d0255272@chatbuzzteambhm.chatbuzzt7150.workers.dev:443/?sni=de1.test3.net&amp;type=ws&amp;host=de1.test3.net&amp;path=%2Fhowdy#@chatbuzz_serverbot</code><br/>تمام اپراتور ها+وای فای<br/>فقط برای<br/>ARMOD<br/>netmod <br/>روی چیزی دیگه وصل نمیشه اصلا شناسایی نمیکنه<br/><br/><a href="https://t.me/chatbuzz_serverbot" target="_blank">@chatbuzz_serverbot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">207</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">𝕥𝕙𝕖 𝕤𝕙𝕒𝕕𝕠𝕨</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/teamvpnpro/1349"><time datetime="2024-02-04T22:38:04+00:00" class="time">22:38</time></a></span>
@@ -700,7 +781,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1350" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM1MCwidCI6MTc1MTk3NjQ1OSwiaCI6ImRkN2Y1NDU2YzZhMTM1MmM3NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1350" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM1MCwidCI6MTc1MTk4MTU1OSwiaCI6ImJhM2VhMTIwMjFjNzc2ZDY0ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -729,8 +810,6 @@
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
 </div></a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -739,7 +818,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1351" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM1MSwidCI6MTc1MTk3NjQ1OSwiaCI6IjhlMTBmNTM4OWZmMzJhZjdiNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="teamvpnpro/1351" data-view="eyJjIjotMTg2MjczMTA3NSwicCI6MTM1MSwidCI6MTc1MTk4MTU1OSwiaCI6ImI3NjAwNmI2MTBhYTc5YTBlOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/teamvpnpro"><i class="tgme_widget_message_user_photo bgcolor2" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/U2BOzebxcE_3ztxqqz0CSOdWbYbYYS3UcA8Ttdv4FBwccV75kpzFBfLyArRzbzXTVlQdYLQdvOBs-SwhOtX-ML4Ik7Zxp10TUdbyG7aYrmJmhBCxEo5YTx7e_kRQ6IGOyzXW0VOnA__MXoASWqOee4imPPJ4muvCjrdykEz3-1Kzqut1KgGnZLmdpYXGgxhf8jy_OQdgHPtEx2R91rVC9Fg2qneWuOXQTM0NMk9EQPyc_PBe1NghKMZnWeOl98GanbMNocZc5pzqhOLL1bipBwnUyUx6y9hcDVZX9-jABq4MYV94sb9LK6cBWLo1GcCHNQAEjSeZn4tk5W8wH_m8Pw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -767,10 +846,8 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">تست و آموزش کار کردن و وصل با فیلترشکن<br/>ARMOD<br/>سرعت روی یوتیوب رو‌ببنید<br/>و تست سرعت روی اسپید تست<br/>حتما نگاه کنید حتما<br/>فروش این سرور برای شما<br/>۱ماهه نامحدود بدون ثانیه قطعی و افت سرعت<br/>۱۵۰هزار تومن<br/>۲کاربر<br/>ارزش داره خیلی<br/>قیمت هم کف گذاشتم که بتونید استفاده کنید<br/>هیچ کجا همچین سرور رو با همچین سرعت دانلود و اپلودی رو به شما ۱۵۰‌نمیدن فقط و فقط چت باز تیم<br/><br/><a href="https://t.me/chatbuzzteampower" target="_blank">@chatbuzzteampower</a><br/>حتما سفارش بدین خیلی ارزش داره<br/>امنیت فوق العاده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">تست و آموزش کار کردن و وصل با فیلترشکن<br/>ARMOD<br/>سرعت روی یوتیوب رو‌ببنید<br/>و تست سرعت روی اسپید تست<br/>حتما نگاه کنید حتما<br/>فروش این سرور برای شما<br/>۱ماهه نامحدود بدون ثانیه قطعی و افت سرعت<br/>۱۵۰هزار تومن<br/>۲کاربر<br/>ارزش داره خیلی<br/>قیمت هم کف گذاشتم که بتونید استفاده کنید<br/>هیچ کجا همچین سرور رو با همچین سرعت دانلود و اپلودی رو به شما ۱۵۰‌نمیدن فقط و فقط چت باز تیم<br/><br/><a href="https://t.me/chatbuzzteampower" target="_blank">@chatbuzzteampower</a><br/>حتما سفارش بدین خیلی ارزش داره<br/>امنیت فوق العاده</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">127</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">the best</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/teamvpnpro/1351"><time datetime="2024-03-24T04:32:54+00:00" class="time">04:32</time></a></span>
@@ -787,11 +864,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 56.72ms -->
+<!-- page generated in 67.85ms -->

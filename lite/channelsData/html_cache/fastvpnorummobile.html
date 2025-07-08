@@ -54,9 +54,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -85,7 +202,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.92K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">50</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">41</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">- Welcome To Fastvpn<br/>فروش فیلترشکن سریع و بدون قطعی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AA.png')"><b>💪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i> همراه با تست رایگان<br/>√ قابل استفاده در تمامی پلتفرم‌ها ( ویندوز - اندروید - iOS )<br/><br/>- پشتبیانی :V2RAYADD@<br/>- خرید خدمات:V2ray2admin@</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=eb6af93bf21948ba35_6734253176633875456">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=2ee846e35b00ef83b9_722210501196241944">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -106,7 +223,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=eb6af93bf21948ba35_6734253176633875456">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=2ee846e35b00ef83b9_722210501196241944">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/fastvpnorummobile">
@@ -123,7 +240,7 @@
 <main class="tgme_main" data-url="/fastvpnorummobile">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/fastvpnorummobile?before=875" class="tme_messages_more js-messages_more" data-before="875"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/875" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjBlNTY2MDM5YTQxY2NlZDY3In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/fastvpnorummobile?before=875" class="tme_messages_more js-messages_more" data-before="875"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/875" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMzU0MmRlMTFkZjUwYTc1M2VjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -139,16 +256,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/fastvpnorummobile/874" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/fastvpnorummobile/874" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفینگ های V2rayNG</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7   vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=no…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">روی همه نت ها فعالهو پر سرعت کار میکنه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">856</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/875"><time datetime="2025-06-15T14:34:19+00:00" class="time">14:34</time></a></span>
@@ -156,7 +271,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="fastvpnorummobile/876" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTgzY2ViOWJhYTE0MzkwN2NkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="fastvpnorummobile/876" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzAwNTliNjA2NDM4YWJhMzFiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -173,9 +288,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7   vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=no…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -184,7 +297,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/877" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmU3ZWQ4NTQxNDkyYmIxM2EwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/877" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZTg3MTMwNjI2NWFlMGI3ZWQzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -200,16 +313,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/fastvpnorummobile/874" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/fastvpnorummobile/874" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفینگ های V2rayNG</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7   vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=no…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تمدید شد</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">726</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/877"><time datetime="2025-06-15T21:01:05+00:00" class="time">21:01</time></a></span>
@@ -217,7 +328,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/878" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTMzMjU3YmU1YzcwYTExYTMzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/878" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTBlM2RmMzk0MzE2ZjMxMDkxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -237,9 +348,7 @@
 <a class="tgme_widget_message_photo_wrap blured 5942600876726274483 1383619587_456247731" href="https://t.me/fastvpnorummobile/878" style="width:450px;background-image:url('https://cdn4.cdn-telegram.org/file/ccPL33_nS4GjeyKRJpbXBv0vJ51l1r9UcnyR30D0eyLo1cHu_8fdMBwFRz3sdLKietEN5NVSiOSLwpeTmuUwewgL8bzv-j4SVIa9qs0RQhsTmLad-niwbqxpR2ZgMA0Fp9qDPxj0_L96s33UmvB8z5pSFai1f6hLVDKEzFlqYKBXyHh9GyZAtIrS86rDeGjybHW_w-GBP9R-3L6ci4OKtweEa5SAG4coE_l0TStFbjJWHmVMXd_6wzcZxp2vCylgxUcmbu9VbzkWge9-V6RMtAgBNd9cuulYJiSo8s4h6Njos2xGC2QdYu_CnsXKxKl08jgHukVkZfr8nVLFLtCTxg.jpg')">
   <div class="tgme_widget_message_photo" style="width:75%;padding-top:133.33333333333%"></div>
 </a>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">776</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/878"><time datetime="2025-06-15T22:00:07+00:00" class="time">22:00</time></a></span>
@@ -247,7 +356,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/879" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmFmNGM0OTQ2ZmU0NWUwZTAxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/879" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODc5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNDZjMzRiZjViODExMDEyMTA1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -264,10 +373,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.varzesh360.co:443#%F0%9F%87%AE%F0%9F%87%B7%F0%9F%87%AE%F0%9F%87%B7%F0%9F%87%AE%F0%9F%87%B7%40fastvpnorummobile</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">938</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/879"><time datetime="2025-06-17T11:14:44+00:00" class="time">11:14</time></a></span>
@@ -275,7 +382,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/880" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTE4M2JiYTUxNGQyMGE0YzZiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/880" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGE5OWRkYTRhOGVkZTQ3NWM3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -292,10 +399,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i>پروکسی ضد فیلتر و پر سرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><a href="https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA</a>&nbsp; <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9498.png')"><b>🔘</b></i>لطفا پروکسی ها را برای دوستان خود هم ارسال کنید تا استفاده کنند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i>پروکسی ضد فیلتر و پر سرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><a href="https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA</a>&nbsp; <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9498.png')"><b>🔘</b></i>لطفا پروکسی ها را برای دوستان خود هم ارسال کنید تا استفاده کنند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i>پروکسی ضد فیلتر و پر سرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><a href="https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA</a>&nbsp; <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9498.png')"><b>🔘</b></i>لطفا پروکسی ها را برای دوستان خود هم ارسال کنید تا استفاده کنند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29891.png')"><b>☑️</b></i>پروکسی ضد فیلتر و پر سرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><a href="https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=asiatech.email&amp;port=443&amp;secret=3QAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9498.png')"><b>🔘</b></i>لطفا پروکسی ها را برای دوستان خود هم ارسال کنید تا استفاده کنند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">783</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/880"><time datetime="2025-06-17T12:41:56+00:00" class="time">12:41</time></a></span>
@@ -303,7 +408,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/881" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOWI4NDQzY2NlNTI2NDNiN2ZjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/881" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNmJjMGEyODk4Yjk4MGRkN2NmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -320,18 +425,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/fastvpnorummobile/874"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7<br/><br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%A9%F0%9F%87%AA<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@France.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AB%F0%9F%87%B7<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@England.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%8F%B4%F3%A0%81%A7%F3%A0%81%A2%F3%A0%81%A5%F3%A0%81%AE%F3%A0%81%A7%F3%A0%81%BF<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@Turkiye.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%B9%F0%9F%87%B7</code><br/><br/><a href="?q=%23Vpn">#Vpn</a><br/><a href="?q=%23v2ray">#v2ray</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>لینک رایگان اختصاصی کانال فست VPN<br/>حمایت یادتون نره <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>Channel <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> <a href="https://t.me/fastvpnorummobile" target="_blank">@fastvpnorummobile</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>Admin&nbsp;&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> <a href="https://t.me/V2RAYADD" target="_blank">@V2RAYADD</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">651</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/881"><time datetime="2025-06-17T18:54:07+00:00" class="time">18:54</time></a></span>
+    <span class="tgme_widget_message_views">652</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/881"><time datetime="2025-06-17T18:54:07+00:00" class="time">18:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/882" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOGFlYmRmYjBlMWRlYTZmZjQ5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/882" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMTBkYjc0ZDgzNjY3OTkxY2QzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -347,24 +450,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/fastvpnorummobile/881" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/fastvpnorummobile/881" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفینگ های V2rayNG</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7   vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=no…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">چجوری ۲۰۰ گیگ رو تو ۱ساعت نابود میکنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/882"><time datetime="2025-06-17T21:29:03+00:00" class="time">21:29</time></a></span>
+    <span class="tgme_widget_message_views">1.03K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/882"><time datetime="2025-06-17T21:29:03+00:00" class="time">21:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/883" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjU2NzFkNWM4MTBmNDA5Nzk4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/883" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODgzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjdhNTQzNmNiYTZhNWM0MDVmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -379,20 +480,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">به لطف امام (ره) وصل شدیم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9886.png')"><b>😆</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">954</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/883"><time datetime="2025-06-18T18:25:28+00:00" class="time">18:25</time></a></span>
+    <span class="tgme_widget_message_views">955</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/883"><time datetime="2025-06-18T18:25:28+00:00" class="time">18:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/884" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTVjZGJiMTNhZjg3ZjFhNGM4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/884" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzVhM2ZjY2YxNjdiNjhjZjNjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -407,20 +506,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">پروکسیای فعال :<br/><a href="https://t.me/proxy?server=151.244.85.38&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a> / <a href="https://t.me/proxy?server=65.109.170.104&amp;amp;port=100&amp;amp;secret=c862057ba49a7ecdf0ad4eb44cd5bb11" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a> / <a href="https://t.me/proxy?server=65.21.177.171&amp;amp;port=100&amp;amp;secret=c862057ba49a7ecdf0ad4eb44cd5bb11" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a><br/><a href="https://t.me/proxy?server=151.244.44.2&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a> / <a href="https://t.me/hariim_amn" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a> / <a href="https://t.me/proxy?server=151.244.44.8&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">PROXY</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/884"><time datetime="2025-06-19T15:20:48+00:00" class="time">15:20</time></a></span>
+    <span class="tgme_widget_message_views">1.02K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/884"><time datetime="2025-06-19T15:20:48+00:00" class="time">15:20</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/885" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZjZiNTdhMWYxMzY4M2M2ZWE4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/885" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiODBkZDE1MDkwNTdjMmQ4MDkzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -437,18 +534,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">۲۴ ساعت از آغاز قطعی نت گذشت. <br/><br/>برخلاف دفعات گذشته، این بار حتی سرورها هم قطع شدند و امکان ساخت پروکسی ملی نیست؛ تنها در برخی نقاط ایران با برخی اپراتورهای محدود امکان دسترسی به اینترنت فراهمه. اگه جزو اون دسته محدودید، پروکسی های ما کار میکنن :) <br/><br/>از اکثر شهرها خبر داریم، وضعیت تقریبا اروم هست. امیدوارم این خبر از نگرانی‌هاتون کم کنه. <br/><br/><a href="https://t.me/proxy?server=151.244.85.38&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی موقت</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/885"><time datetime="2025-06-19T16:12:29+00:00" class="time">16:12</time></a></span>
+    <span class="tgme_widget_message_views">1.06K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/885"><time datetime="2025-06-19T16:12:29+00:00" class="time">16:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/887" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjhjODQ0ZWRhOWI0NTg5NzQ4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/887" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjIyYTEzOTczMWFhOWZjZTI2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -465,10 +560,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/fastvpnorummobile/874"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@croatia.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AD%F0%9F%87%B7<br/><br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@alman.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%A9%F0%9F%87%AA<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@France.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%AB%F0%9F%87%B7<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@England.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%8F%B4%F3%A0%81%A7%F3%A0%81%A2%F3%A0%81%A5%F3%A0%81%AE%F3%A0%81%A7%F3%A0%81%BF<br/><br/>vless://fbde8f25-fbee-49ef-9b47-d4441f2bba03@Turkiye.netblocksir.ir:6556?security=none&amp;type=tcp&amp;headerType=http&amp;path=%2F&amp;host=api.wheather.com#Vip%F0%9F%87%B9%F0%9F%87%B7</code><br/><br/><a href="?q=%23Vpn">#Vpn</a><br/><a href="?q=%23v2ray">#v2ray</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>لینک رایگان اختصاصی کانال فست VPN<br/>حمایت یادتون نره <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>Channel <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> <a href="https://t.me/fastvpnorummobile" target="_blank">@fastvpnorummobile</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>Admin&nbsp;&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> <a href="https://t.me/V2RAYADD" target="_blank">@V2RAYADD</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">279</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/887"><time datetime="2025-06-25T21:08:09+00:00" class="time">21:08</time></a></span>
@@ -476,7 +569,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/888" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMDk2ZDM5MDZkZjg5MDViYzExIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/888" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjRiYzRmNDAxZjNlYzgwYWE0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -493,18 +586,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/fastvpnorummobile/860"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9494.png')"><b>🔔</b></i><b>فروش ویژه اکانتهای vless با سرعت حرفه ای مناسب برای<br/></b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> مدیریت کسب و کار <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> ترافیک بالا<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>&nbsp; آیپی ثابت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>&nbsp; پشتیبانی همیشگی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938E.png')"><b>📎</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>تعرفه&nbsp; اکانت‌های <b>حجمی</b> <b>1 ماهه</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB3.png')"><b>⏳</b></i> :<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 10 گیگ <b>تک</b> کاربره: 60 تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 15 گیگ <b>تک</b> کاربره: 80 تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 20 گیگ <b>تک</b> کاربره: 90 تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 20 گیگ <b>دو</b> کاربره: 110 تومان<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 40 گیگ <b>تک</b> کاربره: 150 تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 40 گیگ <b>دو</b> کاربره: 170 تومان<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 60 گیگ <b>تک</b> کاربره: 200 تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اکانت 60 گیگ <b>دو</b> کاربره: 220 تومان<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296B6.png')"><b>▶️</b></i>تعرفه اکانت‌های های غیر حجمی* <b>مصرف</b> <b>منصفانه</b>*<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> ماه:<br/><b>تک</b> کاربر:&nbsp;&nbsp; 180 <br/><b>دو</b> کاربر:&nbsp;&nbsp;&nbsp; 310 <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i>ماه:<br/><b>تک</b> کاربر:&nbsp;&nbsp; 450<br/><b>دو</b> کاربر:&nbsp;&nbsp;&nbsp;&nbsp; 750<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/36E283A3.png')"><b>6️⃣</b></i>ماه:<br/><b>تک</b> کاربر:&nbsp;&nbsp;&nbsp;&nbsp; 800<br/><b>دو</b> کاربر:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1300 <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> اکانت های <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> ساله(<b>نامحدود مصرف منصفانه</b>)<br/><b>تک</b> کاربره: 1100 تومان&nbsp; <br/><b>دو</b> کاربره: 1900 تومان<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙</b></i><b>قابل استفاده در:</b><br/>&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>اندروید<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i> آیفون<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i>ویندوز <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29884.png')"><b>☄️</b></i><b>سازگار با تمام خطوط:</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929C.png')"><b>💜</b></i><br/><br/>لوکیشین های آلمان انتخابی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i> اوکراین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87A6.png')"><b>🇺🇦</b></i> انگلیس<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8FB4.png')"><b>🏴</b></i>󐁧󐁢󐁥󐁮󐁧󐁿 ترکیه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B9F09F87B7.png')"><b>🇹🇷</b></i><br/><br/>مناسب برای <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')"><b>🖥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')"><b>🖥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EB6.png')"><b>🎶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAE.png')"><b>🎮</b></i><br/><br/>تضمین تا آخرین دقیقه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9596.png')"><b>🕖</b></i><br/><br/>برای سفارش و کسب اطلاعات بیشتر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>برای خرید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187F09F8FBB.png')"><b>👇🏻</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i> <a href="https://t.me/V2RAYADD" target="_blank">@V2RAYADD</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">437</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/888"><time datetime="2025-06-26T10:19:28+00:00" class="time">10:19</time></a></span>
+    <span class="tgme_widget_message_views">438</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/888"><time datetime="2025-06-26T10:19:28+00:00" class="time">10:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/889" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjE5MGI4OThlNjA5ZWUyZmUyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/889" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODg5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMTZlZDc4Y2M4MTRmYmEyNzA2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -521,18 +612,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تمامی اشتراک های اختصاصی فیکس شدن و استیبل شدن <br/>عزیزانی که مشکل قطعی یا کندی دارن دایرکت بدن راهنمایی کنیم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i><br/><a href="https://t.me/V2RAYADD" target="_blank">@V2RAYADD</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">374</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/889"><time datetime="2025-06-27T18:16:29+00:00" class="time">18:16</time></a></span>
+    <span class="tgme_widget_message_views">375</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/889"><time datetime="2025-06-27T18:16:29+00:00" class="time">18:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/890" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTc2ZjM0MWQ5MDJjMjY5MDEzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/890" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGVhZjA5MTVjYTEwOWE2MTBiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -551,18 +640,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5980841818125878968 1392523250_456246968" href="https://t.me/fastvpnorummobile/890" style="width:389px;background-image:url('https://cdn4.cdn-telegram.org/file/YrBaRdh8lbBq98Qk-Lj8ukdoK4KWZ4QqDBkj6WW3xs4nO0L89ABPDymlgq3uPqTdrST4znA52i2wRu1Qw3_IZkwmdgB0Hm-3MdrdA6NgwdRooY2jXNMpwzeBN_goAlcEw2O3UWdr2dJqiCN5G16NMo2egaOx0aMlYkhcuUFBY8biF30nypLZwUUKWPcpASVp2Jm1-NdaAxrx5smjUFShUq3Sxq-dq-mk_xq_d3dqxCP-TcDGqaVrxYibMoJtzRrPJzrM-IAtxGysgrWG0gt5Xx3H5jXG_PVMJGBGs1V1fzM2ch0JApR0zgDyFQKJAGgWQ--i8xCYhg7OdR859zVTWg.jpg')">
   <div class="tgme_widget_message_photo" style="width:64.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت همراه اول</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت همراه اول</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">358</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/890"><time datetime="2025-06-28T15:37:57+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">360</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/890"><time datetime="2025-06-28T15:37:57+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/891" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDVhYjM1ODg0OGQ0OWFhOGY3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/891" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDE1ODRjMjNjNDAzM2NkZjMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -581,18 +668,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5980841818125878966 1392523250_456246966" href="https://t.me/fastvpnorummobile/891" style="width:389px;background-image:url('https://cdn4.cdn-telegram.org/file/YzH0j-7YOcfm7GCSzJY2qewXTtcFn8Fyw923FHf5wQsXmTveN0ED1ogdmo5XgHnpFuoYaNPI0Q82cf--8dcQ4PVaNvm5TIVZ0_kjzX6MT7VszHk22kApRDEECnxXdJo04-emMp4BpaCwkJIWI2NXW2ix1m5IPtM6DIKEJZWuurmHZaZSV15HaStyleeR9kH3TEoHHxa9kBzKsb7MjIiVZKZofqWaHpwGcq3tffPsk6erhr6qeaqAJnUBzyVDIbgLjhyoX_gygIdA8pQiVQHo_pUXkWKylCqF3xjGvdUg0NHIn-90FSN8_w3NKFlPlnk80hIxGzMsWBn9TH50BLWJAA.jpg')">
   <div class="tgme_widget_message_photo" style="width:64.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت وایفا خانگی مخابرات</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت وایفا خانگی مخابرات</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">415</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/891"><time datetime="2025-06-28T15:38:23+00:00" class="time">15:38</time></a></span>
+    <span class="tgme_widget_message_views">418</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/891"><time datetime="2025-06-28T15:38:23+00:00" class="time">15:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/892" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTFhNzI1YjcwZjY2OTEyMDUwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/892" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODkyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDAyZjdlOWU3NmU5NjdkNTA2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -611,18 +696,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5980841818125878967 1392523250_456246967" href="https://t.me/fastvpnorummobile/892" style="width:389px;background-image:url('https://cdn4.cdn-telegram.org/file/uhAvoK3qo9Kzrp9ECOCZIowdBChJMt2MtVNK5N-iwTk85dT8X17p8rt2oONe6BNgotH71hOSCWrGGo_uhs4v_gluDBgiWooB5z3-Qv7e01H3Y5ezFNNTgCfH9EkkJTZhwXkqofPEs7AoJW608stztdtgQB3RdD12of_FTYTv55voO4V5a6zK9zFRp5lM8B4L8_FSXy_P4I3GQZdkQ58xN2tua7fcA6a3nZSIoj4pYR9KKHvAnJDXWbJi5ECqwPuAWBuzNAQeu0dqCkB0mbasGwcJtoQdI3n8e_ahPwXm6698_Qh1gqdM-maekAGyXJMhosIpiuXP87m3lxXC86ituw.jpg')">
   <div class="tgme_widget_message_photo" style="width:64.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت ایرانسل</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">سرعت با نت ایرانسل</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">457</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/892"><time datetime="2025-06-28T15:38:36+00:00" class="time">15:38</time></a></span>
+    <span class="tgme_widget_message_views">459</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/892"><time datetime="2025-06-28T15:38:36+00:00" class="time">15:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/894" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjVjODM4ZDY3ODM3NmUxYjNjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/894" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiOGY1ODNjZGYwMjJiZjQ3MzBmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -637,20 +720,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=87.248.132.21&amp;port=70&amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener">https://t.me/proxy?server=87.248.132.21&amp;port=70&amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">186</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/894"><time datetime="2025-07-05T21:38:21+00:00" class="time">21:38</time></a></span>
+    <span class="tgme_widget_message_views">188</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/894"><time datetime="2025-07-05T21:38:21+00:00" class="time">21:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/895" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYWQzMzU4NThmYzQwZDI0NzFjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/895" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzk4M2M0NGMyOGYxMGEwZWUzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -667,18 +748,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/fastvpnorummobile"><span dir="auto">کانفینگ های V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سعی میکنیم تعداد پروکسی هارو سریعا افزایش بدیم ، فعلا به همین لیست وصل شید<br/><br/><a href="https://t.me/proxy?server=87.248.132.44&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.177&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=87.248.132.53&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.42&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.33&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=87.248.132.55&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.199&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.31&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">171</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/895"><time datetime="2025-07-05T22:11:22+00:00" class="time">22:11</time></a></span>
+    <span class="tgme_widget_message_views">173</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/895"><time datetime="2025-07-05T22:11:22+00:00" class="time">22:11</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/896" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMzg1NTFiYzJhY2YwNmM3YmQ2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="fastvpnorummobile/896" data-view="eyJjIjotMTA4NjAyMDM2NywicCI6ODk2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiODZkYTI4YjNlZmQ5MmU5NjcyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/fastvpnorummobile"><i class="tgme_widget_message_user_photo bgcolor5" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/mTHnW_2lU9xAKyZxMlCV8W3I6e_1-1W5to7zY_N9aLtaoExWuBiBrPNJSXF4jE50p-v7dYwtkAQ2ExArFnkK12s-A9Od-0DsFNPelg8Ljf2ceEBUG6Vf0oJXxIwegf5R-_jsWnkQsVhW5XxfTfGkfBEJex4Yf-X_scj7Z4V_-HHv3MFF7UU_SlG-Uo4j-bAwnY3H7oUZWGD-v0gfKTD0n_Neh5x1B4d792wY1c4liM-7giXVUXYPn0fHE8A2MDB0BvOoIMV8lCh7cqw-4Rsr6CFGI8YMDj3mvK5qbepXKoMZAycyC5doB9IecKYxvmr2y3bGH8_6Xth59l6QuvhTBQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -697,13 +776,11 @@
 
 <a class="tgme_widget_message_photo_wrap 6003850945773029972 1397880480_456247892" href="https://t.me/fastvpnorummobile/896" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/jIU1aLxkUPTUw2YEbt3KiLplQI8l-Gq3ia7S5BqMzUVbwrq4CY2ar0VD4_Vu4dE802A9Hh5ayIhpV4QMCakL72ivGV-_evwRXDlwDv7s05MWBu1Yb_adYb7Vhkg6nkcJKDxwOaA1vEs9FVjBvegO4SaAsV1u4vE1gcjIfDsS2xmG5KHTp0b9KA9UB7F_DqoJG96sETo8JQYHq8royB0NBQ3OuWJ94nXeozbb34xYkgN1AGMsO9MrT6_XnS5qPSaOUDphDhiaEKaxlzzrMJvMXDUxsiRSHWDraoZYmtQa4PK80lXknXW7_aXG4y2QL63inRXskosVOYZ_Wax8KnsLZQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> Confirmed: Live network data show a major disruption to internet connectivity in <a href="?q=%23Iran">#Iran</a>, corroborating widespread user reports of issues reaching the global internet; the incident comes just weeks after authorities shut down telecoms during the war with Israel <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9389.png')"><b>📉</b></i></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> Confirmed: Live network data show a major disruption to internet connectivity in <a href="?q=%23Iran">#Iran</a>, corroborating widespread user reports of issues reaching the global internet; the incident comes just weeks after authorities shut down telecoms during the war with Israel <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9389.png')"><b>📉</b></i></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">149</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/896"><time datetime="2025-07-05T22:30:08+00:00" class="time">22:30</time></a></span>
+    <span class="tgme_widget_message_views">151</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/fastvpnorummobile/896"><time datetime="2025-07-05T22:30:08+00:00" class="time">22:30</time></a></span>
   </div>
 </div>
   </div>
@@ -717,11 +794,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 92.75ms -->
+<!-- page generated in 69.26ms -->

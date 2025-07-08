@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">link</span></div></div>
           
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=be601a6a2d823385df_2369170307060339402">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=221a8bda8ae3facb0d_4520009551347212360">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=be601a6a2d823385df_2369170307060339402">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=221a8bda8ae3facb0d_4520009551347212360">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/v2rng_free1">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/v2rng_free1">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2rng_free1?before=4" class="tme_messages_more js-messages_more" data-before="4"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/4" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NCwidCI6MTc1MTk3NjIwMSwiaCI6IjhiNTg5NTRhNjdlZWVlMmRiMyJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2rng_free1?before=4" class="tme_messages_more js-messages_more" data-before="4"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/4" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NCwidCI6MTc1MTk4MTMwNCwiaCI6ImU1ZjA3Nzc5NDMwY2QwZTY5YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://05f7cef3-d6e0-4b89-85f4-687568c98207@xio.vpnxw.eu.org:2052?path=%2F%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=sweden.vpnxw.eu.org&amp;type=ws#%40v2rayng_free1</code><br/><br/>سرعتش عالیه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>وضعیت فعال <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/>مخصوص همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/5" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NSwidCI6MTc1MTk3NjIwMSwiaCI6IjMwOWU1N2FmMWM1NjY0N2E1YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/5" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NSwidCI6MTc1MTk4MTMwNCwiaCI6IjNlMzQ5Mjc3YmZkYjVkMWUyNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,9 +271,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://e28bb3f8-e64a-4419-9496-33c46220354b@104.21.57.240:443?path=%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;host=sdgf.bdfstt.sbs&amp;type=ws&amp;sni=sdgf.bdfstt.sbs#%40v2rayng_free1</code><br/><br/>برای همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>زمان: تا یه هفته<br/><br/>حجم: نامحدود<br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/6" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NiwidCI6MTc1MTk3NjIwMSwiaCI6IjYyZTRkNTYwYjM4N2Q4NWM3ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/6" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NiwidCI6MTc1MTk4MTMwNCwiaCI6IjVlNmI2YTFiNzkwYzNmNzA4NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,9 +297,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@172.67.170.103:443?path=%2F%3F&amp;security=tls&amp;encryption=none&amp;host=3k.pureboy.eu.org&amp;type=ws&amp;sni=3k.pureboy.eu.org#%40v2rayng_free1</code><br/><br/>مخصوص همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>زمان: محدوده<br/><br/>حجم: محدوده<br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/7" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NywidCI6MTc1MTk3NjIwMSwiaCI6ImVhMzdiNjI1ZWZlYmZlMTM3MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/7" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6NywidCI6MTc1MTk4MTMwNCwiaCI6IjViYmI4MzJlNTY0MWQ3MWE1MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,9 +323,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiIxMDQuMjcuMTAyLjEwNSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0Ijoiam9pbi1zaG8tdG8uZnJlZXYyYWxwaGEuY2ZkIiwiaWQiOiJUZWxlZ3JhbS1WMnJheV9hbHBoYSIsIm5ldCI6IndzIiwicGF0aCI6Ii8/ZWRcdTAwM2QyMDQ4IiwicG9ydCI6IjgwODAiLCJwcyI6IkB2MnJheW5nX2ZyZWUxIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9</code><br/><br/>مخصوص بعضی اپراتور ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>زمان : نامشخص<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i><br/><br/>حجم: نامشخص <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/8" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6OCwidCI6MTc1MTk3NjIwMSwiaCI6IjUyMjU5Y2VlZjQwZjMzNjRhOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/8" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6OCwidCI6MTc1MTk4MTMwNCwiaCI6Ijc4YWJkYmIwYzNmZDk5Yzk3NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://376b9861-2fc6-4647-959c-18185cd9c95a@104.31.16.36:443?path=%2Ffflsws&amp;security=tls&amp;encryption=none&amp;host=lmn39.sbs&amp;type=ws&amp;sni=lmn39.sbs#%40v2rayng_free1</code><br/><br/>مخصوص همه اپراتور ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حجم: نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/>زمان: معلوم نیست <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/9" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6OSwidCI6MTc1MTk3NjIwMSwiaCI6ImQzOTIxODJkZDU4NjRkMTlkMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/9" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6OSwidCI6MTc1MTk4MTMwNCwiaCI6ImYwZjMxNTQ2MjEzNGNjN2EwMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,9 +375,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://962a733d-2614-0b9b-7ffe-9ac92ffea8eb@kitab.fun:443?path=%2Fcurrent_time&amp;security=tls&amp;encryption=none&amp;type=ws#%40v2rayng_free1</code><br/><br/>مخصوص ایرانسل و....<br/><br/>سرعت: عالی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><br/>وضعیت: فعال<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/10" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTAsInQiOjE3NTE5NzYyMDEsImgiOiI5NjA3M2U3NzI2NmQwZGUwNDMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/10" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTAsInQiOjE3NTE5ODEzMDQsImgiOiI5YjljYjNhMTQwYmU2ODU2NTcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,9 +401,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://9cdeda66-ca8e-4e94-a3ff-3ad6d739f6a1@All.SHHPROXY.monster:443?mode=multi&amp;security=tls&amp;encryption=none&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=@Shh_Proxy,@Shh_Proxy&amp;sni=FreeV2rayng.SHHPROXY.motorcycles#%40v2rayng_free1</code><br/><br/>لوکیشن: آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/>مخصوص نت های : ایرانسل. همراه اول.رایتل<br/><br/>حجم: نامعلوم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>زمان: تا فردا<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -307,7 +410,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/11" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTEsInQiOjE3NTE5NzYyMDEsImgiOiIyMWIzMWM3MGFmYmFlOWI1ZjcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/11" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTEsInQiOjE3NTE5ODEzMDQsImgiOiIwMjQ4ZTZkZjFhZWMyMjMzNTUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -324,9 +427,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiJkbzIuc2luaXhjaGkuY29tIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJkaXZhcmNkbi5jb20iLCJpZCI6IjAzNjllZGJhLTE1MzEtNGFjNS05YjA0LWYyYjdlMGUzMjY1MCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjM1NzI4IiwicHMiOiJAdjJyYXluZ19mcmVlMSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=</code><br/><br/><br/>حجم: نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><br/><br/>تایم: فردا شب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -335,7 +436,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/12" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTIsInQiOjE3NTE5NzYyMDEsImgiOiI3NTc4YWQyYTk1YzY3ZTVhNmQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/12" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTIsInQiOjE3NTE5ODEzMDQsImgiOiJhZTc2NDdhYjJmYmI2NDdmYzYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,9 +453,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://4efcf3f8-e19b-4491-96e1-ef2a3129eedc@on.v2shop.fun:12425?security=reality&amp;encryption=none&amp;pbk=RYPDfFM-9fl2qTWsZA7dIAFXtWQqeDJ_fwUtheCBhWg&amp;headerType=none&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=yahoo.com&amp;sid=b78bf4b6#%40v2rayng_free17</code><br/><br/>حجم:100 گیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>تایم: امشب ساعت 23<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/>شاید یه خرده اذیت کنه ولی کارت راه می اندازه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -363,7 +462,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/13" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTMsInQiOjE3NTE5NzYyMDEsImgiOiI2MTI4OGIzYzM4OWU4NDllN2EifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/13" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTMsInQiOjE3NTE5ODEzMDQsImgiOiJkYTZjZmU3YWFkNGJhMjU3NjUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -380,9 +479,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443?path=%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;host=3k.pureboy.eu.org&amp;type=ws&amp;sni=3k.pureboy.eu.org#%40v2rayng_free1</code><br/><br/>تست شده رو همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>حجم: نامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>تایم: محدوده</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -391,7 +488,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/14" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTQsInQiOjE3NTE5NzYyMDEsImgiOiI2YjkwMTExNjBiZjE5YzAzYzYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/14" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTQsInQiOjE3NTE5ODEzMDQsImgiOiI3ZTI0NTIyMWQ1NjM4ZjJiMGMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -408,9 +505,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://de7f93fa-7c18-42ad-9a8c-c34fb9101287@V2ray.motorcycles:2087?path=%2F&amp;security=tls&amp;encryption=none&amp;host=FreeV2rayng.SHHPROXY.monster&amp;type=ws&amp;sni=FreeV2rayng.SHHPROXY.monster#%40v2rayng_free1</code><br/><br/>نتت قوی باشه عالیه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i><br/><br/>حمایت کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -419,7 +514,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/17" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTcsInQiOjE3NTE5NzYyMDEsImgiOiJhMjY4YTMyYzdjNWI5ODkwNWQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/17" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTcsInQiOjE3NTE5ODEzMDQsImgiOiIyNmQ1NjkzNWRjODFiYTliNjAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -436,9 +531,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://SvnTeamm@mtn.vpnprosec.com:2087?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=http/1.1,h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=&amp;sni=V2rayFnLnd.Mmdnet.Online#FinLand<br/><br/>vless://SvnTeamm@mtn.vpnprosec.com:2087?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=http/1.1,h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=&amp;sni=V2rayDvid.Mmdnet.Online#USA<br/><br/>vless://SvnTeamm@mtn.vpnprosec.com:2087?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=http/1.1,h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=&amp;sni=V2rayGrmnl.MmdNet.Online#GerMany<br/><br/><br/><br/>3سرور اختصاصی نامحدود هدیده ی شب یلدای من به شما عزیزان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D89.png')"><b>🍉</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -447,7 +540,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/18" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTgsInQiOjE3NTE5NzYyMDEsImgiOiI3ZDBjMDM3Y2ZiNGQyNzM5YWEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/18" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTgsInQiOjE3NTE5ODEzMDQsImgiOiJlMGUzN2YxMjIwYzE2N2VlMjIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -464,9 +557,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://4291f2c0-887c-4a39-b74c-aa8c0b755650@104.18.202.232:443/?type=grpc&amp;encryption=none&amp;serviceName=%40vmesskhodam&amp;security=tls&amp;sni=pr.valivali.top&amp;alpn=h2%2Chttp%2F1.1&amp;fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%40FreakConfig%20new<br/>زمان۳روز<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -475,7 +566,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/19" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTksInQiOjE3NTE5NzYyMDEsImgiOiIyOTRiMjRmZWNlMjQxMGYxNDkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/19" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MTksInQiOjE3NTE5ODEzMDQsImgiOiI1MDc2OTAxODg4YWZhOTRlMGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -492,9 +583,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://9be4a1b8-c28f-40fd-954a-29b076c8d832@channel.zedmodeon.lat:443?mode=multi&amp;security=tls&amp;encryption=none&amp;alpn=h2&amp;fp=chrome&amp;type=grpc&amp;serviceName=@ZEDMODEON&amp;sni=kanale.zedmodeon.lat#%F0%9F%87%A9%F0%9F%87%AA+%28%40ZEDMODEON%29</code><br/><br/>همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/>(در صورت قطعی یکبار قطع و وصل کنید)</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -503,7 +592,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/20" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjAsInQiOjE3NTE5NzYyMDEsImgiOiJkNTZlNmQ0YjQzNTcxOGY5YjkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/20" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjAsInQiOjE3NTE5ODEzMDQsImgiOiJjOWFlMmMyNGFkM2IzZWVjYWIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -520,9 +609,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://eyJhZGQiOiJoZWxlbmVza2kucmF2ZW54ZXIudG9wIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6ImNocm9tZSIsImhvc3QiOiIiLCJpZCI6Ijc5ZDc0OTAyLWFmY2UtNGU0OS1iMzA5LTU1MWY0YjVmYjg1MCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNDQzIiwicHMiOiJAcmF2ZW54ZXIg2YLYt9i5INi02K8g2LPYsdqGINqp2YYg2KjbjNinIiwic2N5IjoiYXV0byIsInNuaSI6ImhlbGVuZXNraS5yYXZlbnhlci50b3AiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==<br/>بدون در نظر گرفتن پینگ وصل بشید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -531,7 +618,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/21" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjEsInQiOjE3NTE5NzYyMDEsImgiOiJiMzcxNDg2NjI4MzU3MmFiNzkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/21" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjEsInQiOjE3NTE5ODEzMDQsImgiOiJjYTdiNjY0OTEzNWNiNWNhZmQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -548,9 +635,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://2f4c1431-903f-4594-bac5-6698887640cd@c.blueberrynetwork.icu:2087?path=%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;host=bb.blueberrynetwork.icu&amp;fp=chrome&amp;type=ws&amp;sni=bb.blueberrynetwork.icu#%40Gp_Proxy_VPN%20%F0%9F%91%88%DA%AF%D8%B1%D9%88%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF<br/><br/>vless://2f4c1431-903f-4594-bac5-6698887640cd@b.blueberrynetwork.icu:2087?path=%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;host=bb.blueberrynetwork.icu&amp;fp=chrome&amp;type=ws&amp;sni=bb.blueberrynetwork.icu#%40Gp_Proxy_VPN%20%F0%9F%91%88%DA%AF%D8%B1%D9%88%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF<br/><br/>vless://2f4c1431-903f-4594-bac5-6698887640cd@a.blueberrynetwork.icu:2087?path=%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork+%7C+%40BlueberryNetWork&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;host=bb.blueberrynetwork.icu&amp;fp=chrome&amp;type=ws&amp;sni=bb.blueberrynetwork.icu#%40Gp_Proxy_VPN%20%F0%9F%91%88%DA%AF%D8%B1%D9%88%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF<br/><br/>vless://2179abfc-2435-4b64-8c96-cb39184a4348@german.vp22ray.site:2087?security=reality&amp;encryption=none&amp;pbk=54z0hCTglWDmCFnDBU4JmzqjJtFgbhM3x45l-B5If1I&amp;headerType=http&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=Ftp.debian.org&amp;sid=32c43ca1#%40Gp_Proxy_VPN%20%F0%9F%91%88%DA%AF%D8%B1%D9%88%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRcDQxbEoxT0JmY0Y0YVRSS29Ma1JV@195.2.85.32:56901#%40Gp_Proxy_VPN%20%F0%9F%91%88%DA%AF%D8%B1%D9%88%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -559,7 +644,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/22" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjIsInQiOjE3NTE5NzYyMDEsImgiOiJlYmM4Y2QzODE4Y2RiMTRkNDkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/22" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjIsInQiOjE3NTE5ODEzMDQsImgiOiI0ODFkYmEwZGMxMGFkMzViZjAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -576,9 +661,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://9b5dd301-e7f0-45d9-b098-5d8da184664f@all.vipxali.cfd:2083?mode=gun&amp;security=tls&amp;encryption=none&amp;fp=safari&amp;type=grpc&amp;serviceName=@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray,@XsV2ray&amp;sni=fe.XsV2ray.cfd#%40v2rayng_free1</code><br/><br/>سرور به این خوبی ندیدی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>مخصوص بعضی اپراتور ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -587,7 +670,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/23" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjMsInQiOjE3NTE5NzYyMDEsImgiOiI4OTFlZDU4NGU4Zjk3ZmU5MTkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/23" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjMsInQiOjE3NTE5ODEzMDQsImgiOiIwMzg3NWI1MjBlMjc5MmYwZGYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -604,14 +687,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/v2rng_free1/23" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/v2rayng_free1?boost" target="_blank" rel="noopener">https://t.me/v2rayng_free1?boost</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/v2rayng_free1?boost">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/sJxGffnrVmfjzExKcG-frRpZZqFepKXz0VQfT0rPntH5ohqt-obv3cuzYLoT8fad19o_Hlf7czkKGNOOHjQL-pGNCxjn2XT2AGZG4guja7nwCOCQOaLpBxMRuTuDUNHSubsPZjsjeiwC3OovtV044GPqbbjiRYkMvwswYYG5j0yEwsnOXaxCyKe-rAhYQdepqfqnXx31HOvlrDd0VQt8LXGEfhtlG-cCgX-tMCLtZDjqdW1FhqSbkoSVnIvBBP9AwfGU0gm3BfcmUH3qjKvalIfr5TbdD6g5qQPQMulWte_LNBhaf6bBKiJ6CilYrBFJmdc9QoTgNDAhLEAcXXkRYw.jpg')"></i>
+  <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
+  
+  <div class="link_preview_title" dir="auto">سرور رایگان v2rayNG</div>
+  <div class="link_preview_description" dir="auto">Boost this channel to enable it to post stories.</div>
+</a>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -620,7 +702,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/24" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjQsInQiOjE3NTE5NzYyMDEsImgiOiI5ZmM4N2RjMzkyYWIxYTBkOWYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/24" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjQsInQiOjE3NTE5ODEzMDQsImgiOiJjMjA2NzU4MTAwNTZjNWU3YjUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -637,9 +719,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">لطفاً جوین بدید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -648,7 +728,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/25" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjUsInQiOjE3NTE5NzYyMDEsImgiOiIyOGI3ZWI3MjEwNjdiODBhMDAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rng_free1/25" data-view="eyJjIjotMTk5MDQyODE3MCwicCI6MjUsInQiOjE3NTE5ODEzMDQsImgiOiI2MzQ3ZjJhMjdmYmE2YTkxN2UifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rng_free1"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Lk0OPxORrNkzgNGcnsfpyuDmS5iULrW6LcCKRc9x0w7xXxfCCLxIJ5HkECwAxSQCdfSo_Ia669lCEtCDSPfJgBrmuhRCIVvzP2A95-6zXsvNPj5JFK9mDxdKFo2E06viwsWHt8iDssda1-QQR8QeFSlS6MzjO3wonmTbwWrhEh5hqQ9U3Ig8CRxLId-LZ96cvSRiVJZ_VhUI32jQnYKTK5MFTzl2s3hgf8qTwDk7EUklR-Byw_8xooPxrHu6z31vfC8FCIk0NAhavFAWUjg4FeAXnkDq9QkybnLLc13AJTYLh9sjUNrONAvbMttuP72oNAdWmS4b0xdC4lCMM8PzRg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -665,9 +745,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rng_free1"><span dir="auto">V2RNG free</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://b0107817-029c-432c-ad4d-bd1e9e1c3471@65.108.58.248:443?mode=gun&amp;security=reality&amp;encryption=none&amp;pbk=RL6RJY-vbjYIUpDulvSJ8LHI9zCsJ0ICWWY5I-coWwE&amp;fp=firefox&amp;spx=%2F&amp;type=grpc&amp;serviceName=@VPNwedbaz--@vpnwedbaz&amp;sni=greenpepper.ir&amp;sid=cac59972#v2rng_free1</code><br/><br/>سرور هفت روزه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i><br/><br/>حجم: نامعلوم<br/><br/>حمایت فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA3.png')"><b>❣</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -685,11 +763,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 43.15ms -->
+<!-- page generated in 42.52ms -->

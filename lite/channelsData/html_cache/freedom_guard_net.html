@@ -52,9 +52,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -83,7 +200,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.05K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">74</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">6</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">6</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">246</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">گارد آزادی در جهت دسترسی همگان به اینترنت آزاد ایجاد شده و ادامه میدهد.<br/>فیلتر شکن<br/>ابزار های دور زدن سانسور اینترنت<br/>اطلاع رسانی برنامه گارد آزادی<br/>برای آزادی<br/>راه ارتباطی: <a href="http://x.com/Freedom_Guard_N" target="_blank" rel="noopener">x.com/Freedom_Guard_N</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=98ad879e37f69dc98f_14838901924615810089">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=8f0e8e9895248dd24f_2207254746876878068">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -104,7 +221,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=98ad879e37f69dc98f_14838901924615810089">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=8f0e8e9895248dd24f_2207254746876878068">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/freedom_guard_net">
@@ -121,7 +238,7 @@
 <main class="tgme_main" data-url="/freedom_guard_net">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freedom_guard_net?before=587" class="tme_messages_more js-messages_more" data-before="587"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/587" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmRiYmJhNTNiMzE2MWExZTFlIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freedom_guard_net?before=587" class="tme_messages_more js-messages_more" data-before="587"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/587" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiOWIzYWZiNjM0Y2JhYjVkNTU0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -137,24 +254,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freedom_guard_net/586" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freedom_guard_net/586" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">گارد آزادی | Freedom Guard</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">طبق گزارش‌ها، بعضی از اپراتورهای اینترنت (ISP) پیامک‌های OTP (کد احراز هویت یک‌بارمصرف) رو مسدود کرده اند. اگه برنامه‌های شبکه‌های اجتماعی رو از گوشیتون پاک کنید، ممکنه تا مدتی که این محدودیت از بین برود، نتونید به حساب‌هاتون دسترسی پیدا کنید. برای اینکه به…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">واتساپ هم امکان اضافه کردن ایمیل رو فراهم کرده؛ می‌تونید از مسیر Settings &gt; Account ایمیلتون رو اضافه کنید تا در صورت مسدود بودن otp، دسترسی به حسابتون داشته باشید.<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/587"><time datetime="2025-06-30T05:44:59+00:00" class="time">05:44</time></a></span>
+    <span class="tgme_widget_message_views">1.58K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/587"><time datetime="2025-06-30T05:44:59+00:00" class="time">05:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/588" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMDY0ZWEwYWU5NjMyZWY1NzAwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/588" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzEwNGZhYTlhYTM3ZjI0N2Q4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -169,20 +284,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=Iran.harcibasheokeye.ir&amp;port=9841&amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener">https://t.me/proxy?server=Iran.harcibasheokeye.ir&amp;port=9841&amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t</a><br/><a href="?q=%23%D9%BE%D8%B1%D9%88%DA%A9%D8%B3%DB%8C">#پروکسی</a> برای تلگرام<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/588"><time datetime="2025-06-30T08:51:40+00:00" class="time">08:51</time></a></span>
+    <span class="tgme_widget_message_views">1.56K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/588"><time datetime="2025-06-30T08:51:40+00:00" class="time">08:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/589" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTc1NzZhNzVlMmY0YTEzZjUzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/589" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTg5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiY2E5OTA5ZDViMDQ5YjEwZWFkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -197,20 +310,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>vless://debf2a42-1ff4-4ea6-92a4-f6ac49595cc7@abzartun2.divartehran.online:23737?mode=gun&amp;security=reality&amp;encryption=none&amp;authority=&amp;pbk=i5nssGunCVG0W2CI3OM-wGXJwCn9W5Xvm0-tQw_SgEQ&amp;fp=chrome&amp;spx=%2F&amp;type=grpc&amp;serviceName=&amp;sni=varzesh3.com&amp;sid=7c0b6c88fe5c#FLC</pre><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> برای گارد آزادی<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/589"><time datetime="2025-06-30T20:02:16+00:00" class="time">20:02</time></a></span>
+    <span class="tgme_widget_message_views">1.51K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/589"><time datetime="2025-06-30T20:02:16+00:00" class="time">20:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/590" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMDFmNjc0NWY4NGE5YjBjMTYzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/590" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZmJkMTRhYzU4OTJmMGFjZDRkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -225,20 +336,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>vless://2eaef053-5fd6-4def-b234-d760690355ff@91.99.122.47:443?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=http&amp;host=zula.ir#FG</pre><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> برای گارد آزادی<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/590"><time datetime="2025-07-01T06:29:28+00:00" class="time">06:29</time></a></span>
+    <span class="tgme_widget_message_views">1.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/590"><time datetime="2025-07-01T06:29:28+00:00" class="time">06:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/591" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYmZkNzQ4MjY1YTk3NjFjM2M3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/591" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjVmMmFjMzBlYWU0MjAxOGY4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -253,20 +362,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">نظرات خود را درباره تغییرات و بهبودهای مورد نیاز در نسخه 8 گارد آزادی با ما در میان بگذارید. چه ویژگی‌هایی را دوست دارید اضافه شود یا چه چیزهایی بهتر شود؟ <br/>(همین زیر میتونید بنویسید)<br/>— تیم گارد آزادی<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/591"><time datetime="2025-07-01T20:08:56+00:00" class="time">20:08</time></a></span>
+    <span class="tgme_widget_message_views">1.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/591"><time datetime="2025-07-01T20:08:56+00:00" class="time">20:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/592" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiN2JlZGU3YTY1MTRhZWI0N2ZjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/592" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzRlOTA0NGQ4MmVmZTAzY2YwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -281,20 +388,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>vless://89b3cbba-e6ac-485a-9481-976a0415eab9@31.43.179.145:80?path=Telegram%40V2ray_Alpha%2F%3Fed%3D2560&amp;security=none&amp;encryption=none&amp;host=uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz&amp;type=ws#FG</pre><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> برای گارد آزادی<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/592"><time datetime="2025-07-01T21:32:59+00:00" class="time">21:32</time></a></span>
+    <span class="tgme_widget_message_views">1.57K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/592"><time datetime="2025-07-01T21:32:59+00:00" class="time">21:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/593" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiODkyN2E2Nzc3MTdiM2M4ODExIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/593" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTkzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiOGE0YWQ4NTNkZjM3ZjgyMzI2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -309,20 +414,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانال پیوند آزادی راه اندازی شد:<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a> <br/>در این کانال کانفیگ v2ray(xray) و پروکسی برای تلگرام قرار میگیرد.<br/>پیوند آزادی یک سرویس از گارد آزادی است که در نرم افزار گارد آزادی ادغام شده و کمک میکند کاربران کانفیگ های جدید را زودتر و بهتر دریافت کنند. <br/>دلیل این اقدام جدا شدن محتوای کانال گارد آزادی (اطلاع رسانی و روش های جدید) از کانفیگ و پروکسی است.<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/593"><time datetime="2025-07-01T22:04:09+00:00" class="time">22:04</time></a></span>
+    <span class="tgme_widget_message_views">1.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/593"><time datetime="2025-07-01T22:04:09+00:00" class="time">22:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freedom_guard_net/594" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmUzODI5MmI5OGMyZmQyMDNmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freedom_guard_net/594" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzgxNjJhY2U2ODBjMzZhODYxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -339,9 +442,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">کانال پیوند آزادی راه اندازی شد: @FG_Link  در این کانال کانفیگ v2ray(xray) و پروکسی برای تلگرام قرار میگیرد. پیوند آزادی یک سرویس از گارد آزادی است که در نرم افزار گارد آزادی ادغام شده و کمک میکند کاربران کانفیگ های جدید را زودتر و بهتر دریافت کنند.  دلیل…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -350,7 +451,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/595" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMzZlYmE4ZGY4NDhjYzZjNDEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/595" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiY2VkN2JjOTA1ODcwYzdhYmNjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -369,18 +470,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5994301030155799018 1395656967_456247786" href="https://t.me/freedom_guard_net/595" style="width:350px;background-image:url('https://cdn4.cdn-telegram.org/file/C4OY6_YCsZys7R_FXWemw4NIj_0FdC3SNxxRZaZeH0sku9g0O0gDcT0pxVe4Yqqesv_SSGeh8qm-1Mjk2YIcgyGm0TVAEFDSiuRH2I-4P63apXk8pzn9q8x4hfxuBs11SAiWSEdfBMCXPIJpk_wHw1xTpKYcM8lIjxFFj6VR5sp-v7dtUQkcNyduL5MvE73dI3jBuQ8W5Fwec3rFyl1yFHD-0AKQFaR7kU9ze9n5uC0Cikl4Dq2aZN1v7hJObdFl8twOzQh_BHdCR1YFKeZx93UzXaufse3voXswikYXRKqiLzQaTnEmSmzeNrFG2ghaxh9B2TD7FOkq5vsEZq4tsQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:128.57142857143%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i><br/>11 تیر تولد سارینا اسماعیل زاده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i><br/>11 تیر تولد سارینا اسماعیل زاده</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>34</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i>27</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9695.png')"><b>🖕</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/595"><time datetime="2025-07-02T19:34:23+00:00" class="time">19:34</time></a></span>
+    <span class="tgme_widget_message_views">1.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/595"><time datetime="2025-07-02T19:34:23+00:00" class="time">19:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/596" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTIzOTQzZDM4MjdlZWU1NjQxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/596" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzFmM2I3NjBiMjIwNjRlMTQzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -399,18 +498,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5998863470835124702 1396719243_456247774" href="https://t.me/freedom_guard_net/596" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/C5uzK9lluAV66F7cdFEo5VKbpONZZYgZTgqsdmwtrNIBoKiqwic7cF8Gpl36ZOJwBv461R3j9QsTlL6BPO3QrIFJ1glDR4DXOkS8I3hRPE8819Zclhu9IZD1YAUW79yDL4q6l6stER2EYh80DUI5agT_9U0ZPNutTLmtxEJP6Qg65kv0mZHdOdP0q9VDD_c81j5C-jSCvxrgkBtAn5lpU2uugJ8fJhmRQL7Y96Jw64GPxEBe8kT5itMS-4RfilDyF9Pam-HHYs0SmrVbB1nPRIgCAv7TbC4I7qPkIN0_BnEk5peW2GMQk291KDyo-sHNOqPYyE9AIlBJFB-ItnbV0A.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">نسخه ۸ گارد آزادی منتشر شد&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/>امکان تنظیم DNS و تم برنامه، حالت Proxy در موبایل، جستجوی سرورها، بخش CFG در موبایل و TUN برای Warp در دسکتاپ، از جمله تغییرات این نسخه هستند.<br/>برای تجربه‌ای بهتر، همین حالا به‌روز کنید. <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i><br/><br/><a href="https://freedom-guard.github.io/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">وبسایت گارد آزادی (دانلود)</a><br/><br/>لیست تغییرات گارد آزادی نسخه ۸:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i> موارد جدید<br/>تنظیمات DNS سفارشی (موبایل و دسکتاپ)<br/>حالت پروکسی (Proxy Mode) در موبایل<br/>بخش مدیریت کانفیگ از لینک (CFG) در موبایل<br/>مسدودسازی تبلیغات در دسکتاپ (از طریق هسته Vibe)<br/>اتصال سریع (Quick Connect) در دسکتاپ<br/>بررسی سازگاری سیستم (System Check) در دسکتاپ<br/>پشتیبانی از تم های جدید (موبایل و دسکتاپ)<br/>....<br/><br/><a href="https://github.com/Freedom-Guard/FG_MOBILE/releases" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i> دانلود از GitHub (موبایل)</a><br/><a href="http://github.com/Freedom-Guard/Freedom-Guard/releases" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"> دانلود از GitHub (دسکتاپ)</a><br/><a href="https://freedom-guard.github.io/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"> وبسایت رسمی گارد آزادی</a><br/>گارد آزادی، آزادی در دستان توست...  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">نسخه ۸ گارد آزادی منتشر شد&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/>امکان تنظیم DNS و تم برنامه، حالت Proxy در موبایل، جستجوی سرورها، بخش CFG در موبایل و TUN برای Warp در دسکتاپ، از جمله تغییرات این نسخه هستند.<br/>برای تجربه‌ای بهتر، همین حالا به‌روز کنید. <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i><br/><br/><a href="https://freedom-guard.github.io/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">وبسایت گارد آزادی (دانلود)</a><br/><br/>لیست تغییرات گارد آزادی نسخه ۸:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i> موارد جدید<br/>تنظیمات DNS سفارشی (موبایل و دسکتاپ)<br/>حالت پروکسی (Proxy Mode) در موبایل<br/>بخش مدیریت کانفیگ از لینک (CFG) در موبایل<br/>مسدودسازی تبلیغات در دسکتاپ (از طریق هسته Vibe)<br/>اتصال سریع (Quick Connect) در دسکتاپ<br/>بررسی سازگاری سیستم (System Check) در دسکتاپ<br/>پشتیبانی از تم های جدید (موبایل و دسکتاپ)<br/>....<br/><br/><a href="https://github.com/Freedom-Guard/FG_MOBILE/releases" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i> دانلود از GitHub (موبایل)</a><br/><a href="http://github.com/Freedom-Guard/Freedom-Guard/releases" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"> دانلود از GitHub (دسکتاپ)</a><br/><a href="https://freedom-guard.github.io/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"> وبسایت رسمی گارد آزادی</a><br/>گارد آزادی، آزادی در دستان توست...  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>19</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/596"><time datetime="2025-07-04T18:09:06+00:00" class="time">18:09</time></a></span>
+    <span class="tgme_widget_message_views">1.15K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/596"><time datetime="2025-07-04T18:09:06+00:00" class="time">18:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freedom_guard_net/597" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDhiM2ZhYmRjN2IzZTI4YTMzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freedom_guard_net/597" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjdmMzM4Zjc3MmE4YTI3NTIzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -427,9 +524,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -438,7 +533,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/598" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTc1MjI1Mjg0YmZiMTg0NTYzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/598" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNThlNTczNTQzOTQ1MmI3YjliIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -454,11 +549,11 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freedom_guard_net/596" ><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/lpqIqSbRaXVq4oGMGPVYThse8w7jz9CNW-YOYPb08PHWvS80up0gjDT5c3i3KWWnp56aXnNdb3lo0c-LngvNeq_Gxpn0THL88IYEnW234YKT8mwllQvEI-DFlrfBK6k6T-aMfBhP-Zw7lgKLpVhU2KdJlPOPvQstf8zCZNPJD9c0bKi-fvPEd89giQCzvmvBmG06j6W5c25tD_0TXdy5jxhoHlHa6TUMrQGgN1uwTjE1Nm48_VfJf_6Z7ulaBAoUF_0RtyaSslkURaKL3iYDHHUbamjP5wc1PIuG54ICcQQGeBY0O5qdog-TRZNU1iUuUKO4R_aTv72ftQsQUksmCA.jpg')"></i>
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freedom_guard_net/596" "><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/lpqIqSbRaXVq4oGMGPVYThse8w7jz9CNW-YOYPb08PHWvS80up0gjDT5c3i3KWWnp56aXnNdb3lo0c-LngvNeq_Gxpn0THL88IYEnW234YKT8mwllQvEI-DFlrfBK6k6T-aMfBhP-Zw7lgKLpVhU2KdJlPOPvQstf8zCZNPJD9c0bKi-fvPEd89giQCzvmvBmG06j6W5c25tD_0TXdy5jxhoHlHa6TUMrQGgN1uwTjE1Nm48_VfJf_6Z7ulaBAoUF_0RtyaSslkURaKL3iYDHHUbamjP5wc1PIuG54ICcQQGeBY0O5qdog-TRZNU1iUuUKO4R_aTv72ftQsQUksmCA.jpg')"></i>
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">گارد آزادی | Freedom Guard</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">نسخه ۸ گارد آزادی منتشر شد&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> امکان تنظیم DNS و تم برنامه، حالت Proxy در موبایل، جستجوی سرورها، بخش CFG در موبایل و TUN برای Warp در دسکتاپ، از جمله تغییرات این نسخه هستند. برای تجربه‌ای بهتر، همین حالا به‌روز کنید. <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i>  وبسایت گارد آزادی (دانلود)  لیست تغییرات…</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">نسخه ۸ گارد آزادی منتشر شد&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> امکان تنظیم DNS و تم برنامه، حالت Proxy در موبایل، جستجوی سرورها، بخش CFG در موبایل و TUN برای Warp در دسکتاپ، از جمله تغییرات این نسخه هستند. برای تجربه‌ای بهتر، همین حالا به‌روز کنید. <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A99.png')"><b>⚙️</b></i>  وبسایت گارد آزادی (دانلود)  لیست تغییرات…</div>
 </a>
 <a class="tgme_widget_message_document_wrap" href="https://t.me/freedom_guard_net/598">
   <div class="tgme_widget_message_document_icon accent_bg"></div>
@@ -466,18 +561,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">app-release.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">81.9 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a><br/>فایل نصبی نسخه 8 گارد آزادی برای اندروید<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a><br/>فایل نصبی نسخه 8 گارد آزادی برای اندروید<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/598"><time datetime="2025-07-04T18:22:29+00:00" class="time">18:22</time></a></span>
+    <span class="tgme_widget_message_views">1.32K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/598"><time datetime="2025-07-04T18:22:29+00:00" class="time">18:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/599" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMWY2YWZhOWY1ZjdhY2FiZDEwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/599" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NTk5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzY2MDA1M2ZhNzdlMTQzNDVkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -494,18 +587,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/FG_Link/47"><span dir="auto">پیوند آزادی | Freedom Link</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>freedom-guard://testUrl=https://x.com#FIX Desktop</pre><br/>اگر در نسخه دسکتاپ مشکل اتصال دارید کانفیگ بالا رو وارد برنامه کنید و سپس از بخش سرور ها بر روی Auto Server بگذارید.<br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">885</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/599"><time datetime="2025-07-05T16:14:58+00:00" class="time">16:14</time></a></span>
+    <span class="tgme_widget_message_views">888</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/599"><time datetime="2025-07-05T16:14:58+00:00" class="time">16:14</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/600" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYmI2YmNlYWY3MDI5NmMzOGY2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/600" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDRjYTNlM2JlZDIxNzNmMTdmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -520,20 +611,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">اگر نت شما هم ملی شده و گارد آزادی کار نمیکنه میتونید از کانفیگ های کانال پیوند آزادی در گارد آزادی موبایل و دسکتاپ استفاده کنید و متصل بمانید:<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AE.png')"><b>🤮</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">901</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/600"><time datetime="2025-07-05T22:42:31+00:00" class="time">22:42</time></a></span>
+    <span class="tgme_widget_message_views">905</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/600"><time datetime="2025-07-05T22:42:31+00:00" class="time">22:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/601" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiM2FlMjI2OGFlMGUwZTc2ZjBiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/601" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWM5NGUwMmZkZjc1M2YxNmY3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -549,29 +638,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freedom_guard_net/600" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freedom_guard_net/600" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">گارد آزادی | Freedom Guard</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">اگر نت شما هم ملی شده و گارد آزادی کار نمیکنه میتونید از کانفیگ های کانال پیوند آزادی در گارد آزادی موبایل و دسکتاپ استفاده کنید و متصل بمانید: @FG_Link</div>
 </a>
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/freedom_guard_net/601" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote>بعد از اتصال توسط این کانفیگ ها در صفحه سرور ها دوباره بر روی auto server بگذارید.<br/>Quick connect در تنظیمات فعال شود.</blockquote><br/><br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">910</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/601"><time datetime="2025-07-05T22:43:50+00:00" class="time">22:43</time></a></span>
+    <span class="tgme_widget_message_views">914</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/601"><time datetime="2025-07-05T22:43:50+00:00" class="time">22:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/602" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTUwOTE5NjNhNzYzMWY5NDM4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/602" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNWI4MWI2Y2MwN2JjZDU3NDcxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -590,18 +672,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5136641858380869250 1195967630_456240770" href="https://t.me/freedom_guard_net/602" style="width:403px;background-image:url('https://cdn1.cdn-telegram.org/file/ozdxkyMEeFgXDE8qtDuxjq9S76Qih6pM5ImhKWPHpn9NhIZ2AcV3yt9AfsusfDQZU61DsGfSPy4m6IM33SgtFLL1LjZGf30Hkjx4wTJgOfm-yqoKsTYEdT0fC0xnCaThI1j7JZdd_v47pSW_0r_pOGKIcPhWTE8LByuAzl0rUhUfhsnpK3lFyqZbtw4fLZw7rYZzxOoyncbZP8PAv7An2bXa1JcWcNmWQchqar9XxkU6Axs2FRMCSTdSa8J_wejZXSPNpkesJVoF1NBQGUVnlsWhmss040YD7VzLjIMmF8fd4KXyAynoSTpEBk3gICnFI2D2fA0rv8Be9Z2XD326IQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:131.01736972705%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">بر اساس آخرین آمار ذکر شده در نمودار نت‌بلاکس، حداقل و میزان فعلی اتصال به <a href="?q=%23%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA">#اینترنت</a> بین‌الملل در کشور، هر دو برابر با ۵٪ ذکر شده‌اند. <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">بر اساس آخرین آمار ذکر شده در نمودار نت‌بلاکس، حداقل و میزان فعلی اتصال به <a href="?q=%23%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA">#اینترنت</a> بین‌الملل در کشور، هر دو برابر با ۵٪ ذکر شده‌اند. <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">666</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/602"><time datetime="2025-07-05T23:18:26+00:00" class="time">23:18</time></a></span>
+    <span class="tgme_widget_message_views">670</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/602"><time datetime="2025-07-05T23:18:26+00:00" class="time">23:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/603" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTQ5ZDliZDQxMGQ3NThkZWQ5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/603" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjAzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYThhOGQ0OWVjYmMyNWQ0ZmY3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -620,18 +700,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5136641858380869253 1195967630_456240773" href="https://t.me/freedom_guard_net/603" style="width:758px;background-image:url('https://cdn1.cdn-telegram.org/file/TYbcpHYtEX4HCqKewzQgDJekC2jai-0xsS-329NtNMSZZOAPL6lBlqQhGSe4EQNM7BRMqesfaka9LlEQgAfF4619OAjM5EU9aiHgcAPbVRgcbqodu6CR3bC2X4aRyDo8MReDwuGBNGLeRmIpcjMxgBu2rDIV0vkLYFjiagkfmZGNcI7FrqY8RuWGdW17L3CR6sEjn-Gd4HxbPMx3fBCAitZzoRoi5IlNryk3pXhwgYv239IhqRq1yMe39_hpfcLbcvN3S8hk31zQsCrP1L0wspTfwqz45ICYbyV2twtepHY8ME4vsNEkzgN6I6YC6ffSWJPTo4-rJu9Qu9gj2CsjPg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:105.54089709763%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">گند زنندگان به اینترنت مدادرنگی‌هاشونو زمین گذاشتن و انگار اختلال کم شده&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">گند زنندگان به اینترنت مدادرنگی‌هاشونو زمین گذاشتن و انگار اختلال کم شده&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">558</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/603"><time datetime="2025-07-06T08:11:06+00:00" class="time">08:11</time></a></span>
+    <span class="tgme_widget_message_views">563</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/603"><time datetime="2025-07-06T08:11:06+00:00" class="time">08:11</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/604" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiM2M0MTljYWI3ZjVkMjNkM2M2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/604" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGMxZjk3NGQwZWNmNzA0NmVmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -648,23 +726,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freedom_guard_net"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/freedom_guard_net/491"><span dir="auto">گارد آزادی | Freedom Guard</span></a></div>
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/freedom_guard_net/604" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><code>ssconf://ainita.s3.eu-north-1.amazonaws.com/AinitaServer-2.csv<br/></code>(کلیک کنید، کپی میشه)<br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> outline<br/>متصل هست چند بار تلاش کنید.<br/>نرم افزار outline رو میتونید از گوگل پلی نصب کنید:<br/><a href="https://play.google.com/store/apps/details?id=org.outline.android.client" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک دانلود از گوگل پلی</a><br/><br/><blockquote>اگر متصل شد با دیگران به اشتراک بگذارید</blockquote><br/><br/><a href="https://t.me/Freedom_Guard_Net" target="_blank">@Freedom_Guard_Net</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">655</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/604"><time datetime="2025-07-06T11:18:08+00:00" class="time">11:18</time></a></span>
+    <span class="tgme_widget_message_views">666</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/604"><time datetime="2025-07-06T11:18:08+00:00" class="time">11:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/605" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMzRiYmUwMTg1ZTAwYzFkMThlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/605" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDg2ODg0ZTcwMWQ0M2Y1NTk3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -683,18 +754,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6007968195912254669 1398839102_456246477" href="https://t.me/freedom_guard_net/605" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/nKWDRKbEHntS1aqrvFSxQmLP1KbrvNTXMPj3gz7K9hWxHV4yq5HxsWIYh5ltITAuPOIgJWJgW306__2qNX_CQHjpwVIWgcF8SkRg4GeYRiMDjzqHSDh0Uw1MEML1y3Nuku0TC4DvM1UCHN4pOy8vCXs56J_XZIO6RRZRwjBBYQblDdZlTTUdW6xLIecm_0f4umkGuiCgsi3c0tvl6X_I9hMZGml6VXngOPk7-fseRRmp4_TllrnbL3Y1V_DmJ4eBvUe1hXdQr6d9rXmDvU_I9kTcaUaf_FpbPNFX5EuxKCOxH2RbVw2tJpMynWtveJhRppQob8z-XBpKgs5pfUDBbQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i> ابزار دریافت پروکسی تلگرام (FL Proxy) منتشر شد&#33;<br/>کافیه وارد وب‌سایت بشید و با یک کلیک پروکسی‌های امن تلگرام رو دریافت کنید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i> ویژگی‌های ابزار:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> لیست لحظه‌ای و عمومی پروکسی‌ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> انتخاب تصادفی پروکسی با یک کلیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> کاملاً رایگان، بدون نیاز به نصب یا فیلترشکن<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> طراحی شده با رابط کاربری سبک و سریع<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> دسترسی مستقیم از مرورگر:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9189.png')"><b>👉</b></i> <a href="http://freedom-guard.github.io/Proxy" target="_blank" rel="noopener">freedom-guard.github.io/Proxy</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA0.png')"><b>🛠</b></i> ساخته شده توسط<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a> / گارد آزادی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A1.png')"><b>📡</b></i> منبع پروکسی‌ها: گروه mahsanet در تلگرام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> برای دسترسی آزادتر، سریع‌تر و راحت‌تر به تلگرام<br/>از FL Proxy استفاده کنید.<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i> ابزار دریافت پروکسی تلگرام (FL Proxy) منتشر شد&#33;<br/>کافیه وارد وب‌سایت بشید و با یک کلیک پروکسی‌های امن تلگرام رو دریافت کنید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i> ویژگی‌های ابزار:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> لیست لحظه‌ای و عمومی پروکسی‌ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> انتخاب تصادفی پروکسی با یک کلیک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> کاملاً رایگان، بدون نیاز به نصب یا فیلترشکن<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> طراحی شده با رابط کاربری سبک و سریع<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> دسترسی مستقیم از مرورگر:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9189.png')"><b>👉</b></i> <a href="http://freedom-guard.github.io/Proxy" target="_blank" rel="noopener">freedom-guard.github.io/Proxy</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA0.png')"><b>🛠</b></i> ساخته شده توسط<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a> / گارد آزادی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A1.png')"><b>📡</b></i> منبع پروکسی‌ها: گروه mahsanet در تلگرام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> برای دسترسی آزادتر، سریع‌تر و راحت‌تر به تلگرام<br/>از FL Proxy استفاده کنید.<br/><a href="https://t.me/FG_Link" target="_blank">@FG_Link</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">550</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/605"><time datetime="2025-07-07T09:52:12+00:00" class="time">09:52</time></a></span>
+    <span class="tgme_widget_message_views">564</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/605"><time datetime="2025-07-07T09:52:12+00:00" class="time">09:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/606" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiODcxZTdlNmIyOThmNzlhNGMzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freedom_guard_net/606" data-view="eyJjIjotMjIxMjM2NTk2NiwicCI6NjA2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjljYjcxNWIzYWUzNGYxZGMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freedom_guard_net"><i class="tgme_widget_message_user_photo bgcolor6" data-content="گ"><img src="https://cdn4.cdn-telegram.org/file/XXhraDW5Vyw97glpVwEYuFgxZ6NvEHNm_oBDEXi8oHw5K8FDiHZOVrfHSAEgFokCfAp4Qd1aO3PlU3mzTFtTkV0gi5UPF0cT1YZETaiQY12vUx1q4Uj4gILJpfBxQnzz7ht3SDKOvJqKokC3O1mseGo8oAuWezHN1AQB-JqPCCtXifzUKkNzpaKePcUX9jOfgXFASGNKwroz2y3EeWq7X8NbmcDSg4x_mNM_akf-inrY3wVp1DUSgxZHJ2RBIH9TNOpjBSnLfju49iwNLmek4DqstKcPhzjyUaE-M-YXEOV2NhhlutdwWhUFWTBhzazrlbNPnDDC1ywOjufsgrM54w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -713,13 +782,11 @@
 
 <a class="tgme_widget_message_photo_wrap blured 6010281246254548855 1399377651_456247159" href="https://t.me/freedom_guard_net/606" style="width:389px;background-image:url('https://cdn4.cdn-telegram.org/file/MMOId3liTJzzrixToWf_IuV3hWhyOzePdFuyeCyKa7s6dylRK9rEgTZ97yy1joAwjhKm5cTFBzY3OgMZl4z18Pqg4bNZLxdDzyZStX9dP3eDXh2p-AmUkGOBYqqGrtiMrTfJlu3VxVPBWuiqNxaKIumefn74owM23CAJqLL0zescIYoCMTOqqEn9aoODBlb02WQzKEOVcbvwSo-yaUL2wrKgr0GNtkh3UAsTFOFWZ0zuUytSs8EYUSbQLDxNerlGTQ4KRKPQIzDK1YtGpEY9vueM7K7h34xbBHOOU0ZShHri8IENxFrJlQ2jjtdbNagCtQbyr7w5-kSSIrtNMx-aoA.jpg')">
   <div class="tgme_widget_message_photo" style="width:64.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">از این بخش در صفحه تنظیمات می‌تونید تم گارد آزادی را تغییر دهید.<br/>در نسخه دسکتاپ هم در تنظیمات انتخاب تم هست و میتونید تست کنید.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">از این بخش در صفحه تنظیمات می‌تونید تم گارد آزادی را تغییر دهید.<br/>در نسخه دسکتاپ هم در تنظیمات انتخاب تم هست و میتونید تست کنید.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8C.png')"><b>🍌</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">462</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/606"><time datetime="2025-07-07T22:04:47+00:00" class="time">22:04</time></a></span>
+    <span class="tgme_widget_message_views">483</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freedom_guard_net/606"><time datetime="2025-07-07T22:04:47+00:00" class="time">22:04</time></a></span>
   </div>
 </div>
   </div>
@@ -733,11 +800,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 64.47ms -->
+<!-- page generated in 71.61ms -->

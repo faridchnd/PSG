@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -71,9 +188,9 @@
             </div>
             <div class="tgme_channel_info_header_username"><a href="https://t.me/shahedtec">@shahedtec</a></div>
           </div>
-          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">203</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">202</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">پروکسی اختصاصی تلگرام - بدون قطعی با یوزر پس - پروتکل ساکس 5 - تانل شده - فیلتر شکن نامحدود موجود سیسکو</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=b6324b3c8c3ded52a1_8185995308758333613">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=e8d902d9f7486396a5_16346389083645646563">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=b6324b3c8c3ded52a1_8185995308758333613">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=e8d902d9f7486396a5_16346389083645646563">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/shahedtec">
@@ -103,7 +220,7 @@
           <div class="tgme_header_title"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></div>
           <div class="tgme_header_labels"></div>
         </div>
-        <div class="tgme_header_counter">203 subscribers</div>
+        <div class="tgme_header_counter">202 subscribers</div>
       </a>
     </div>
   </div>
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/shahedtec">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/shahedtec?before=11" class="tme_messages_more js-messages_more" data-before="11"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/11" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTEsInQiOjE3NTE5NzY0NTksImgiOiI0ZjczNTE2YWE2YjU4MmM4MTUifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/shahedtec?before=11" class="tme_messages_more js-messages_more" data-before="11"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/11" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTEsInQiOjE3NTE5ODE1NTksImgiOiI3NjUyYTg2ODIwNTI0OTg5N2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -126,20 +243,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=82.153.35.206&amp;port=20&amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=82.153.35.206&amp;port=20&amp;secret=eeNEgYdJvXrFGRMCIMJdCQ</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/11"><time datetime="2024-11-22T18:08:00+00:00" class="time">18:08</time></a></span>
+    <span class="tgme_widget_message_views">1.97K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/11"><time datetime="2024-11-22T18:08:00+00:00" class="time">18:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/12" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTIsInQiOjE3NTE5NzY0NTksImgiOiJiNGZmZWExMjZmYTYzOTZkZjIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/12" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTIsInQiOjE3NTE5ODE1NTksImgiOiJiZmZmYTgyOGU0ODEzYTAzMTQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -154,20 +269,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://85f1516e-688b-40db-997a-05c7c25e0e93@shahed2.novintecc.org:8080?type=ws&amp;path=%2F&amp;host=shahed2.novintecc.org&amp;security=none#@@<a href="https://t.me/shahedtec" target="_blank">@shahedtec</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/12"><time datetime="2024-11-22T18:08:11+00:00" class="time">18:08</time></a></span>
+    <span class="tgme_widget_message_views">2.04K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/12"><time datetime="2024-11-22T18:08:11+00:00" class="time">18:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/13" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTMsInQiOjE3NTE5NzY0NTksImgiOiI2ZjY5NDBkM2U5YTVlYWRmMzYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/13" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTMsInQiOjE3NTE5ODE1NTksImgiOiI5M2YyNTM1YTkzZGUyZDQxODAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -183,7 +296,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/shahedtec/12" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/shahedtec/12" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span>
 </div>
@@ -195,17 +308,15 @@
     <a href="https://t.me/shahedtec/13" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/13"><time datetime="2024-11-22T18:09:02+00:00" class="time">18:09</time></a></span>
+    <span class="tgme_widget_message_views">2.08K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/13"><time datetime="2024-11-22T18:09:02+00:00" class="time">18:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/14" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTQsInQiOjE3NTE5NzY0NTksImgiOiJlZTVhNzlkODJjNmE5NTU1NmEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/14" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTQsInQiOjE3NTE5ODE1NTksImgiOiI1NTIxNTIwNmFjMzAyMjA1YjYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -220,20 +331,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://2688e821-1600-488d-a49a-e8a9956e96ee@zula.ir:2095?type=httpupgrade&amp;path=%2F%3Fed%3D2048&amp;host=ShAhEd2.NovInTeCc.OrG.&amp;security=none#@@<a href="https://t.me/shahedtec" target="_blank">@shahedtec</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shahedtec/14"><time datetime="2024-11-22T19:35:08+00:00" class="time">19:35</time></a></span>
+    <span class="tgme_widget_message_views">1.58K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shahedtec/14"><time datetime="2024-11-22T19:35:08+00:00" class="time">19:35</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/15" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTUsInQiOjE3NTE5NzY0NTksImgiOiI4MWE3ODc3M2I4YzM1NzAxNmIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/15" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTUsInQiOjE3NTE5ODE1NTksImgiOiIyMTQyMGIwMGFlY2E0MTdjZDIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -249,7 +358,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/shahedtec/14" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/shahedtec/14" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span>
 </div>
@@ -261,17 +370,15 @@
     <a href="https://t.me/shahedtec/15" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/15"><time datetime="2024-11-22T19:37:22+00:00" class="time">19:37</time></a></span>
+    <span class="tgme_widget_message_views">1.56K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shahedtec/15"><time datetime="2024-11-22T19:37:22+00:00" class="time">19:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/16" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTYsInQiOjE3NTE5NzY0NTksImgiOiIzZGRkNmJmMzU5ZjRkZjBmNzIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/16" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTYsInQiOjE3NTE5ODE1NTksImgiOiI5N2MwNTkyZmExOTA2ZjAyY2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -288,9 +395,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=82.153.35.206&amp;port=20&amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=82.153.35.206&amp;port=20&amp;secret=eeNEgYdJvXrFGRMCIMJdCQ</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -299,7 +404,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/17" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTcsInQiOjE3NTE5NzY0NTksImgiOiI4YWNmYTEwOTEyMTA5NDAzM2EifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/17" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTcsInQiOjE3NTE5ODE1NTksImgiOiIwMDc4YWYwNzkxM2VlYmQ3ZGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -316,9 +421,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://2688e821-1600-488d-a49a-e8a9956e96ee@zula.ir:2095?type=httpupgrade&amp;path=%2F%3Fed%3D2048&amp;host=ShAhEd2.NovInTeCc.OrG.&amp;security=none#@@<a href="https://t.me/shahedtec" target="_blank">@shahedtec</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -327,7 +430,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/18" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTgsInQiOjE3NTE5NzY0NTksImgiOiI1OWUyMzlhZWJjZmIyNWE4YmYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/18" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTgsInQiOjE3NTE5ODE1NTksImgiOiJmYzg3MmYzNGQ5YWM3MmY0M2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -343,7 +446,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/shahedtec/17" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/shahedtec/17" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span>
 </div>
@@ -355,8 +458,6 @@
     <a href="https://t.me/shahedtec/18" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -365,7 +466,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/19" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTksInQiOjE3NTE5NzY0NTksImgiOiJiNzgxZjNmODM2OWM0MDQ5YmMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/19" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MTksInQiOjE3NTE5ODE1NTksImgiOiJlODQxOGRhYzU0OWNiZmY0ZGMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -382,9 +483,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://85f1516e-688b-40db-997a-05c7c25e0e93@shahed2.novintecc.org:8080?type=ws&amp;path=%2F&amp;host=shahed2.novintecc.org&amp;security=none#@@<a href="https://t.me/shahedtec" target="_blank">@shahedtec</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -393,7 +492,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/20" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjAsInQiOjE3NTE5NzY0NTksImgiOiIzYjEwZmM2NzFhNzEwNzJmYWUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/20" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjAsInQiOjE3NTE5ODE1NTksImgiOiI2MDg0YzIwOTQwYTlhMGQzOGMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -410,9 +509,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://a04be978-3b21-42cf-a80c-4832894d26f0@shahed2.novintecc.org:8080?type=ws&amp;path=%2F&amp;host=shahed2.novintecc.org&amp;security=none#m9p5hrp6</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -421,7 +518,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/21" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjEsInQiOjE3NTE5NzY0NTksImgiOiI1NzU5NmU3YjA0YmZiMTdlN2EifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/21" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjEsInQiOjE3NTE5ODE1NTksImgiOiIzOGUzOTRjMWQ0MWEwMTNhNjMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -437,7 +534,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/shahedtec/20" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/shahedtec/20" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span>
 </div>
@@ -446,8 +543,6 @@
 <a class="tgme_widget_message_photo_wrap 5827962109332407544 1356928169_456246520" href="https://t.me/shahedtec/21" style="width:482px;background-image:url('https://cdn4.cdn-telegram.org/file/VI54xmBEX4iyuc0S_GsQ7Ask4EhWx7LBnsymKvGDgVeXLw1CMlGsv4C6z_tV5KW4LGh7HXUaiGmyF4bfcOFK0JqZ6ysOgXU0cMAHmrnzO1fLi9tB_9JrgG6lnpipFZeeBQ6ML44vLyn-gLimOwb5TlPN7Mm0cqsHZu8JKqq2J4is7t0S4um76-p2UTdBjLqFno2Qmc1rTtEVR_7n8J45pXGx1xvlprW80wkZjehVSy56QmlAkl3Y8HVgjAwGlfQQroe2C-wY8rtLmFvJsL-X16TC-RcURV3dSE5cfE85qp0eGmayydTDbvHrJY9asyHrr8pt8LhDty1PGOV9qEO3Dw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:98.96265560166%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -456,7 +551,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/22" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjIsInQiOjE3NTE5NzY0NTksImgiOiI4MGFjZjcwN2NkNjliOTZjMTEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/22" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjIsInQiOjE3NTE5ODE1NTksImgiOiIyMGE2ZWQ1M2EyYTA3NjEyNWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -481,8 +576,6 @@
     <a href="https://t.me/shahedtec/22" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -491,7 +584,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/24" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjQsInQiOjE3NTE5NzY0NTksImgiOiI0Yjk3ZDdlYWM0MTIwZDc2ZmIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/24" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjQsInQiOjE3NTE5ODE1NTksImgiOiJhMTIxYjM4MDdlMDg0YjNiNjAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -516,8 +609,6 @@
     <a href="https://t.me/shahedtec/24" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -526,7 +617,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/27" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjcsInQiOjE3NTE5NzY0NTksImgiOiI0OWEyMDQ3MTBlZGZkMjgwODYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/27" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjcsInQiOjE3NTE5ODE1NTksImgiOiJiNTE5NGYwOGNmZjlmZmYxYzQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -545,9 +636,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5821165177557600014 1355345635_456247054" href="https://t.me/shahedtec/27" style="width:578px;background-image:url('https://cdn4.cdn-telegram.org/file/Bsenn8rtiAEZ7_kXMn2Go9EEUd3VKNf207F_AVWDQn5VkH1phkPnOEeO9KYztP0shCSON39CD5VRjDNTSkSUaYnwpW7kbiUmCn8NzDfJ3g3Q44I12ehaFUey1ce1IfDxhQe6svQnjHXJsDLfH_xVhp7tJh4Rx9monuZPmi5hp9x_nJfm931UOjkz4tCRWLe1hJj7vOeAhBDdwc_T692541w6J_8IPswn4J2yGilJ-QVkhfHI92SYe2htfs5bh01i_oPGan9H5LMOSJEaoaKbfQwB6HvX-yV2xCKPEp9TxilbDySKa634iG4AX6ejLZio8_-DFWjPDdKPswd-dEWPLw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:99.480968858131%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>کاهش استفاده باطری با استفاده از پروکسی (بدون فیلتر شکن)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>کاهش مصرف حجم اینترنت (چون تمامی فیلتر شکن رایگان حجم زیادی مصرف میکنن) <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>بدون قطعی حتی 1 دقیقه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>بدون هیچ کانال اسپانسری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>سرعت بالا برای دانلود عکس و فیلم<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>دارای یوزر پس اختصاصی<br/>پشتیبانی 24 ساعته <br/>براي خريد به ايدي زير پيام دهيد (كليك كنيد)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><a href="https://t.me/shahed8008" target="_blank">@shahed8008</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>کاهش استفاده باطری با استفاده از پروکسی (بدون فیلتر شکن)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>کاهش مصرف حجم اینترنت (چون تمامی فیلتر شکن رایگان حجم زیادی مصرف میکنن) <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>بدون قطعی حتی 1 دقیقه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>بدون هیچ کانال اسپانسری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>سرعت بالا برای دانلود عکس و فیلم<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>دارای یوزر پس اختصاصی<br/>پشتیبانی 24 ساعته <br/>براي خريد به ايدي زير پيام دهيد (كليك كنيد)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><a href="https://t.me/shahed8008" target="_blank">@shahed8008</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -556,7 +645,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/29" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjksInQiOjE3NTE5NzY0NTksImgiOiI0YTBkZWFhMzZmZDliMGU0NmQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/29" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MjksInQiOjE3NTE5ODE1NTksImgiOiI5NmYwYTJkNGJhZjU5MGZiMGQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -581,8 +670,6 @@
     <a href="https://t.me/shahedtec/29" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -591,7 +678,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/30" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzAsInQiOjE3NTE5NzY0NTksImgiOiI3YWJlODcxYmRmYmU3YThlYTcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/30" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzAsInQiOjE3NTE5ODE1NTksImgiOiI0ZWRkN2UwMjA4ZGM4YjIxNWUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -616,8 +703,6 @@
     <a href="https://t.me/shahedtec/30" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -626,7 +711,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/31" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzEsInQiOjE3NTE5NzY0NTksImgiOiJiYWMxOWRmNmVjNWRkMmQ1MmMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/31" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzEsInQiOjE3NTE5ODE1NTksImgiOiI2MzRjNjQ3MDE3NzY5MjgyMGMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -651,9 +736,7 @@
     <a href="https://t.me/shahedtec/31" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">224</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shahedtec/31"><time datetime="2025-01-29T00:34:58+00:00" class="time">00:34</time></a></span>
@@ -661,7 +744,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/34" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzQsInQiOjE3NTE5NzY0NTksImgiOiI2YzYxZDE4Yjk5N2Y3NThiZDUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/34" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzQsInQiOjE3NTE5ODE1NTksImgiOiJkZDYzNGFiM2QzNjRkODIzYTkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -686,8 +769,6 @@
     <a href="https://t.me/shahedtec/34" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -696,7 +777,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="shahedtec/35" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzUsInQiOjE3NTE5NzY0NTksImgiOiJlZWNhMWQxYzE2OTk1MmE4ZWIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="shahedtec/35" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzUsInQiOjE3NTE5ODE1NTksImgiOiI0MTVlZWQ2MzAxZTM0MGU2YWQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -713,9 +794,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/shahedtec"><span dir="auto">پروکسی اختصاصی تلگرام - پروکسی شخصی شاهد</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -724,7 +803,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/36" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzYsInQiOjE3NTE5NzY0NTksImgiOiIwMTJhZDRhMmNhYTE5MTM3YTUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shahedtec/36" data-view="eyJjIjotMjMyMjEyOTU3MywicCI6MzYsInQiOjE3NTE5ODE1NTksImgiOiIxOTFiOWNjOWQ5Njc1YzFjNmMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/shahedtec"><i class="tgme_widget_message_user_photo bgcolor1" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/bE6m-AoytML1VcENzzq3_cJxEcAW3wegVppO09v3KeuwN3MsWRzbEbVFoDvPfo61cYG3FXN5Kc95HFwQkDWXOr2j1pUrosMuo58mNVWhFmdTWCPn85fYrLzDQlkarMk-Z79Es12FbaU_44v6X4dnguDZ3n0kwVtsoRwlz66mNijRTkqA5brnUQJOj3QOVwzRpa2L0xM29P7RDODSVm3GFZWM3jk0P4hrOG2IBIUoKGaQmaKlyV2ECUEoJX20KDSeltfRxOrfsOWkEZ8Q0mW1gAHj93elnD4OJmSC2o6bhISnjBR0D3wq5LJi1ySMcfzzAFPJlxNFINq0d9pthor5Ag.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -749,9 +828,7 @@
     <a href="https://t.me/shahedtec/36" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">251</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shahedtec/36"><time datetime="2025-01-30T17:51:30+00:00" class="time">17:51</time></a></span>
@@ -768,11 +845,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 67.94ms -->
+<!-- page generated in 62.86ms -->

@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">37</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">photo</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">link</span></div></div>
           
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=e1a8292591b8fe4821_14105475109963056756">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=cee77ffd03aa58b6af_2505846069860335460">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=e1a8292591b8fe4821_14105475109963056756">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=cee77ffd03aa58b6af_2505846069860335460">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/v2rayngb">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/v2rayngb">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2rayngb?before=10" class="tme_messages_more js-messages_more" data-before="10"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/10" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTAsInQiOjE3NTE5NzY0NTksImgiOiI0ZDkzZTc0MmFjNTRlZmFlMzAifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2rayngb?before=10" class="tme_messages_more js-messages_more" data-before="10"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/10" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTAsInQiOjE3NTE5ODE1NTksImgiOiIzNWRhMjFlYzUzZDIwNDVhZGYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور جدید V2ray:<br/><br/><br/>اپراتور: <br/><br/><code>vless://96ad7e7f-59db-4a7b-bda6-d6c9a18598c8@mci.backshop.cf:2053?type=ws&amp;security=tls&amp;path=/&amp;host=imsurn.backshop.cf&amp;sni=mci.backshop.cf&amp;flow=#@V2RAY_VMES</code><br/><br/>اپراتور: <br/><br/><code>vless://96ad7e7f-59db-4a7b-bda6-d6c9a18598c8@irancell.backshop.cf:2053?type=ws&amp;security=tls&amp;path=/&amp;host=imsurn.backshop.cf&amp;sni=irancell.backshop.cf&amp;flow=#@V2RAY_VMES</code><br/><br/>اپراتور:ADSL <br/><br/><code>vless://96ad7e7f-59db-4a7b-bda6-d6c9a18598c8@adsl.backshop.cf:2053?type=ws&amp;security=tls&amp;path=/&amp;host=imsurn.backshop.cf&amp;sni=adsl.backshop.cf&amp;flow=#@V2RAY_VMES<br/><br/></code><a href="https://t.me/V2rayngb" target="_blank">@V2rayngb</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/12" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTIsInQiOjE3NTE5NzY0NTksImgiOiIyNjFhYjEzZDI5NmRkYzI5NzgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/12" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTIsInQiOjE3NTE5ODE1NTksImgiOiJiNDQ3YmFkYmM1MDZlMWIyMjUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,9 +271,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i>سرور جدید V2ray:<br/><br/><br/><br/>vless://00e82199-4878-49f0-b4b0-0e0eb13921f4@0916.globalingredients.pe:2053?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=&amp;sni=khj.mvclife.website#@V2R<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐</b></i><a href="https://t.me/V2RAY_VMES" target="_blank">@V2RAY_VMES</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2rayngb/13" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTMsInQiOjE3NTE5NzY0NTksImgiOiI3OWY4MTk5N2UyMDJiODhiZWUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2rayngb/13" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTMsInQiOjE3NTE5ODE1NTksImgiOiJjMzU4M2EzNzc5NWM4N2Y4MTYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,9 +297,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a> pinned Deleted message</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/15" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTUsInQiOjE3NTE5NzY0NTksImgiOiI3YzBjZDE5OTIwNmRjNDBlNDcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/15" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTUsInQiOjE3NTE5ODE1NTksImgiOiIxZDFjODBlMTg1ZWE0ODBkNDQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,9 +323,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<span class="tgme_widget_message_forwarded_from_name">Sasan</span></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://534273a6-288f-4e09-fae3-c705f5bc3f89@ge2.aban88.monster:11972?security=none&amp;encryption=none&amp;host=aparat.com&amp;headerType=http&amp;type=tcp#%40v2ray_donya</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/16" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTYsInQiOjE3NTE5NzY0NTksImgiOiJkMGRlNTFhNjJjNTdjNzhlZmIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/16" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTYsInQiOjE3NTE5ODE1NTksImgiOiI3MGNkNDk0NWMxNWNiZGNmNDYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://3c9eaed0-5bee-4376-ddab-f64fd6c8b520@mci-MsV2ray.ddns.net:2096?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=<a href="https://t.me/MsV2ray" target="_blank">@MsV2ray</a>&amp;sni=join.MsV2ray.fun#%40V2RAYNGNET+%D8%A8%DB%8C%D8%A7+%DA%A9%D8%A7%D9%86%D8%A7%D9%84</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/17" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTcsInQiOjE3NTE5NzY0NTksImgiOiIwZjFmYmU4ZTEzODNiMGJkNGEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/17" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTcsInQiOjE3NTE5ODE1NTksImgiOiI2ZWQ5MjA5ZjU4ODhjNWU4ZTMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,9 +375,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://eyJhZGQiOiJzb2JpeC5kZG5zLm5ldCIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiIyZjkxNDFiYS04NTA3LTRhZjgtZTM0Yy0xNjQ2ZWQ3M2I2YjgiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjUyOTI3IiwicHMiOiJcdTA2YTlcdTA2MjdcdTA2NDZcdTA2MjdcdTA2NDQ6VjJSQVlfVk1FU0AiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/18" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTgsInQiOjE3NTE5NzY0NTksImgiOiJkODBmN2ZmZjliYmE3NTFjZWQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/18" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTgsInQiOjE3NTE5ODE1NTksImgiOiIxYzBlYzZmMzVkOTBmNzhlNWEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,10 +401,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://eyJhZGQiOiI1MS44OS43NC4yNDEiLCJhaWQiOiI2NCIsImhvc3QiOiIiLCJpZCI6IjQxODA0OGFmLWEyOTMtNGI5OS05YjBjLTk4Y2EzNTgwZGQyNCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiNTExMDIiLCJwcyI6Ilx1MDZhOVx1MDYyN1x1MDY0Nlx1MDYyN1x1MDY0NDpWMlJBWV9WTUVTQCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">215</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2rayngb/18"><time datetime="2023-05-14T07:57:38+00:00" class="time">07:57</time></a></span>
@@ -307,7 +410,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/19" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTksInQiOjE3NTE5NzY0NTksImgiOiJmYWVkZDliNTRhNzQ4ODI0ZDIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/19" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MTksInQiOjE3NTE5ODE1NTksImgiOiIwNDIzNjU5YWEzYWFlNGE2MjQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -324,9 +427,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://eyJhZGQiOiJjcGFuZWwudGFqc3ViLmNvbSIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiIxZmY0YTI2YS05YzdkLTRkY2MtODQ5Ny1jZmNlNTA0OTk4NTIiLCJuZXQiOiJ3cyIsInBhdGgiOiJcLyIsInBvcnQiOiIyMDgyIiwicHMiOiJcdTA2YTlcdTA2MjdcdTA2NDZcdTA2MjdcdTA2NDQ6VjJSQVlfVk1FU0AiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -335,7 +436,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/20" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjAsInQiOjE3NTE5NzY0NTksImgiOiI5MmIxZWIwNDNiMmViMmE0M2MifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/20" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjAsInQiOjE3NTE5ODE1NTksImgiOiIyMGE0YzlmMzljODJhZGYzMWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,9 +453,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://eyJ2IjoiMiIsInBzIjoiXHUwNmE5XHUwNjI3XHUwNjQ2XHUwNjI3XHUwNjQ0OlYyUkFZX1ZNRVNAIiwiYWRkIjoiMjAuMjAzLjk4LjE2NyIsInBvcnQiOjgwODAsImlkIjoiNTUyYjFmMDMtMzcxYS00ZmI1LWQ1MTItMjg0NGE0NzdhNGI0IiwiYWlkIjowLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwidGxzIjoibm9uZSIsInBhdGgiOiJcLyJ9</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -363,7 +462,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/22" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjIsInQiOjE3NTE5NzY0NTksImgiOiIwMDYyNTUzZDQ0ODA5YWVjOGQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/22" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjIsInQiOjE3NTE5ODE1NTksImgiOiI2YTAzMWNlMWRlNDAzZDUwZGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -380,9 +479,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://d0dbb539-fa34-4043-f96d-31e0fd1e3b43@join2.vpnfreesec.shop:53972?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -391,7 +488,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/23" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjMsInQiOjE3NTE5NzY0NTksImgiOiJiZTUyYWEyNDc0NTg2OGI5NjIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/23" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjMsInQiOjE3NTE5ODE1NTksImgiOiJhMDgwMjYwNTc0ODZiNDA5ZGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -408,9 +505,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://f568998a-28ba-4e72-e215-2061f4c7a860@MTN.Telegram.TimingVPN.Store:11228?security=none&amp;encryption=none&amp;host=zulaoyun.com&amp;headerType=http&amp;type=tcp#%F0%9F%87%B3%F0%9F%87%B1+MTN+%7C+%40V2RAYNGn</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -419,7 +514,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/24" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjQsInQiOjE3NTE5NzY0NTksImgiOiIxYWJkY2VlNzc0ZWIyYzU2YmMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/24" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjQsInQiOjE3NTE5ODE1NTksImgiOiJhMzcwZGE2MTMzNzFmN2Y3MWEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -436,9 +531,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://86d22529-b92a-40de-86c2-591d195a2d55@mtn.MsV2ray.space:2083?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=<a href="https://t.me/MsV2ray" target="_blank">@MsV2ray</a>&amp;sni=tm.MsV2ray.cfd#%40V2RAYNGNET+%D8%A8%DB%8C%D8%A7+%DA%A9%D8%A7%D9%86%D8%A7%D9%84<br/>ایرانسل ورایتل</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -447,7 +540,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/25" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjUsInQiOjE3NTE5NzY0NTksImgiOiJiYWQzYWMyOWYxODM4Y2M0MDcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/25" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjUsInQiOjE3NTE5ODE1NTksImgiOiJlN2M2ZDZkNWMyZTQ1ZmFhZGEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -464,9 +557,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://0ed5d08c-571d-414a-9a76-135cfddc9de5@49.13.10.167:57242?type=tcp&amp;security=none&amp;path=/&amp;host=bmi.ir&amp;headerType=http#<a href="https://t.me/V2RAY_VMES" target="_blank">@V2RAY_VMES</a><br/><br/><br/>برای ایرانسل وهمراه</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -475,7 +566,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/26" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjYsInQiOjE3NTE5NzY0NTksImgiOiI4YzE0ZjAwMjRhZWZiNmYyYmQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/26" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjYsInQiOjE3NTE5ODE1NTksImgiOiI0M2M3MzdkZTNjYmEzMWRhZTYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -492,9 +583,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprUXBhREpkRlBubHRZY2JCWUY0S3RL@40.113.153.173:45160#%40V2RAYNGn+%D8%AC%D9%88%DB%8C%D9%86</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -503,7 +592,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/27" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjcsInQiOjE3NTE5NzY0NTksImgiOiJlYTBhNTBjMGQwY2IyNjI1ZjYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/27" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjcsInQiOjE3NTE5ODE1NTksImgiOiJlYjljODQzYTZmMTQ0YzE0MTYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -522,10 +611,8 @@
 
 <a class="tgme_widget_message_photo_wrap 6005944102379699608 1398367831_456244632" href="https://t.me/v2rayngb/27" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Je9MWdvipNGOH7d8xrANQzQaEtKidUG1lZJBPCNJiRWkseDLYuqW5-9_hTNedD5nYDSo6GcRU-k-cO_M_6psqHcEZUuQZT6XcJOCAjnxobTk0H1TwFuqhagJoZvY7sAPV_9Kr61masPW5Ebcqgrp_Gj7y1GzP6DmryZSAUxfYS0XPAtBNnZRePxqWrTV9CYfvjt2IE6UkeGTYtwOtYUIBNYNYOqCjS9Tb4o5nlQ_38fuAr7_Y4HHvjW4SN0mvDU6fy3QEeno62-QJOvj5b2Yf3E7FM6gpyNGosXmBt312uQhDptiA1WExzypvGabio8Sp5OPu1DpbfCL83FhwW9-0w.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:62.5%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">راهنمای خرید VPN + لیست قیمت ها<br/>پشتیبانی تا روز اخر برای همراه اول ایرانسل وایفای و رایتل&nbsp; موجوده<br/>خرید و مشاوره:<br/><br/><a href="https://t.me/mosa2010" target="_blank">@mosa2010</a><br/><br/>آدرس کانال:<br/><br/><a href="https://t.me/V2rayngb" target="_blank">@V2rayngb</a><br/><br/>&nbsp; کانال رضایت مشتری<br/><br/><a href="https://t.me/vpn_customer" target="_blank">@vpn_customer</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">راهنمای خرید VPN + لیست قیمت ها<br/>پشتیبانی تا روز اخر برای همراه اول ایرانسل وایفای و رایتل&nbsp; موجوده<br/>خرید و مشاوره:<br/><br/><a href="https://t.me/mosa2010" target="_blank">@mosa2010</a><br/><br/>آدرس کانال:<br/><br/><a href="https://t.me/V2rayngb" target="_blank">@V2rayngb</a><br/><br/>&nbsp; کانال رضایت مشتری<br/><br/><a href="https://t.me/vpn_customer" target="_blank">@vpn_customer</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">447</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/v2rayngb/27"><time datetime="2023-05-22T06:45:27+00:00" class="time">06:45</time></a></span>
@@ -533,7 +620,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/28" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjgsInQiOjE3NTE5NzY0NTksImgiOiIwMGUzYmEzMDhkOTczMGIyMmUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/28" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjgsInQiOjE3NTE5ODE1NTksImgiOiIwZGNkODk1Zjc3ZDQxNDdmMTMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -550,9 +637,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://76d22529-b92a-40de-86c2-591d195a2d55@mtn.MsV2ray.space:2083?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=<a href="https://t.me/MsV2ray" target="_blank">@MsV2ray</a>&amp;sni=tm.MsV2ray.cfd#%40V2RAYNGNET+%D8%A8%DB%8C%D8%A7+%DA%A9%D8%A7%D9%86%D8%A7%D9%84 ایرانسل ورایتل</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -561,7 +646,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/29" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjksInQiOjE3NTE5NzY0NTksImgiOiJkYzVmMjY4MWIyYjM3MGVmZTEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/29" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MjksInQiOjE3NTE5ODE1NTksImgiOiJkNjJmNTcxMDE4NmJjODIwYmIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -578,10 +663,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICLaqdin2YbYp9mEOlYyUkFZX1ZNRVNAIiwKICAiYWRkIjogIjQ5LjEzLjcuMTQ2IiwKICAicG9ydCI6IDU2Mjg1LAogICJpZCI6ICI4OTI0ZDE4ZS1kOGZmLTQ3NzQtYjUxMS03NWUwY2JhZGFkZGYiLAogICJhaWQiOiAwLAogICJuZXQiOiAidGNwIiwKICAidHlwZSI6ICJodHRwIiwKICAiaG9zdCI6ICJ0ZWxld2ViaW9uLmNvbSIsCiAgInBhdGgiOiAiLyIsCiAgInRscyI6ICJub25lIgp9<br/>ایرانسل</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">662</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/v2rayngb/29"><time datetime="2023-05-25T10:52:43+00:00" class="time">10:52</time></a></span>
@@ -589,7 +672,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/31" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MzEsInQiOjE3NTE5NzY0NTksImgiOiI1ZjM5OWU5YzZjYzNmMjI2ZjgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/31" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MzEsInQiOjE3NTE5ODE1NTksImgiOiJhNDRmMDY3ZTAyZWExZDIwYjAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -606,9 +689,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://7153877e-dab2-4525-fa40-7e3f71dca814@91.107.254.105:2053?security=none&amp;encryption=none&amp;host=fast.com&amp;headerType=http&amp;type=tcp#@V2RAY_VMESتمام اپراتورها</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -617,7 +698,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/32" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MzIsInQiOjE3NTE5NzY0NTksImgiOiIzNjE1ZDc2NzEyOGEzOGQzYzUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/32" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6MzIsInQiOjE3NTE5ODE1NTksImgiOiJmMzQ0NDE1N2FjMDUxYWY2ZGYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -634,9 +715,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2rayngb"><span dir="auto">فیلتر شکن | V2rayNg | کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اینجا جوین بشید<br/><br/><br/><a href="https://t.me/V2rayngn" target="_blank">@V2rayngn</a>  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i><br/><a href="https://t.me/V2rayngn" target="_blank">@V2rayngn</a><br/><a href="https://t.me/V2rayngn" target="_blank">@V2rayngn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -645,7 +724,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/42" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6NDIsInQiOjE3NTE5NzY0NTksImgiOiJiMTdjNTViMDA4NWZkZTJiYTIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2rayngb/42" data-view="eyJjIjotMTgwNDM3ODgwMSwicCI6NDIsInQiOjE3NTE5ODE1NTksImgiOiJkN2NhNWJlMTdjMjMwZTFiMzkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2rayngb"><i class="tgme_widget_message_user_photo bgcolor1" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/sKg_EH_vjD-zjuasAbgpSFXrB1atfyr_AXg0yMm5xi_sEPDEj_j_jYimu9cXcpT7v03gN9YW-HTq5UCGaFxZhMyQTefJY2wp_MpRUjJrD3nlLBA7yzAzM-8JnuDBIinvhb0KjJ4noMNGiZ6-9rZluvXJabp4yvgI0_SIdSaVxuJBqGh4YEyVLoPMGoBcf343kkSQy8wDbKxK3ZWsQ1Gs3rkspNyoeEUc_rM4fnkQUCjbX3-phfuQIoY9ZyQ9aKTZt_GM0eBnzvQyGH2MbGOlvmuz7ZaAHFvix5aqrQlkGqWmUhjzgTIr_eOrMjPLA1i8U-XVeexa147fUrKruWrrMA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -668,8 +747,6 @@
     <a href="https://t.me/v2rayngb/42" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -687,11 +764,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 47.29ms -->
+<!-- page generated in 47.79ms -->

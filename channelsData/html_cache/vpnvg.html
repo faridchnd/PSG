@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">124</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">36</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">344</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Admin: <a href="https://t.me/AvalinNam" target="_blank">@AvalinNam</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=4407d43e9c0c07193a_17600325427259273370">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=8bcafff203a1713720_6773138917284030366">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=4407d43e9c0c07193a_17600325427259273370">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=8bcafff203a1713720_6773138917284030366">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vpnvg">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/vpnvg">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnvg?before=713" class="tme_messages_more js-messages_more" data-before="713"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/713" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzEzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjU3OTIxNWQyMmRlZWE3MTJkIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnvg?before=713" class="tme_messages_more js-messages_more" data-before="713"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/713" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzEzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMGJjMGUxNzY5YWI2ZTQ0NjQ3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://7f95f302-945c-4348-8fde-ddeb340b1f33@channel.digiv2ray.fun:443?security=none&amp;encryption=none&amp;host=xbox.com&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/714" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjI2MTY0NjYzYTEwYTk0NmQyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/714" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNWNkNzZiMmE0ZGIwMDI1OWUwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,10 +271,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiJjZG5qcy5jb20iLCJhaWQiOiIwIiwiYWxwbiI6ImgyLGh0dHAvMS4xIiwiZnAiOiJlZGdlIiwiaG9zdCI6IkFtc3RlcmRhbS5rb3RpY2suc2l0ZSIsImlkIjoiQjg1RkNBOTAtRTJDMC00OTJFLTkwNjYtOEQyMzYwN0YwMEExIiwibmV0Ijoid3MiLCJwYXRoIjoiL3NwZWVkdGVzdCIsInBvcnQiOiI0NDMiLCJwcyI6IkB2cG5WRyIsInNjeSI6ImF1dG8iLCJzbmkiOiJBbXN0ZXJkYW0ua290aWNrLnNpdGUiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">352</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/714"><time datetime="2023-07-07T09:35:14+00:00" class="time">09:35</time></a></span>
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/715" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiM2Q5YWEyZTJmZDU0OThhYTMwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/715" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiN2Q5NDlkZjI5YmM5MGNiNzNhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,10 +297,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://7f95f302-945c-4348-8fde-ddeb340b1f39@channel.digiv2ray.fun:443?security=none&amp;encryption=none&amp;host=xbox.com&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">469</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/715"><time datetime="2023-07-08T13:27:18+00:00" class="time">13:27</time></a></span>
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/716" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzVkNmEwOTYyMmRjZjBlY2I1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/716" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjU2N2ZlZGNmMzYxNDNhYjUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,9 +323,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://5e082e92-fce3-42d0-b015-aeec99515ca4@VpnCustomize.oyoha.site:8443?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=@VPNCUSTOMIZE&amp;sni=ch.TrV2ray.cfd#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/717" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjQwMWYwMjc5M2IxZWY0NDg1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/717" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNTA3YmZkNTRjZTZlODI3YzJhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://7f95f302-945c-4348-8fde-ddeb340b1f00@channel.digiv2ray.fun:443?security=none&amp;encryption=none&amp;host=xbox.com&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/718" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOWZlOThjZTcwMDkxZWY2MWM0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/718" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzk1YTJjMWQ1MTJjNWE5OTQ3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,10 +375,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://7f95f302-945c-4348-8fde-ddeb340b1f03@channel.digiv2ray.fun:443?security=none&amp;encryption=none&amp;host=xbox.com&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">486</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/718"><time datetime="2023-07-09T11:33:08+00:00" class="time">11:33</time></a></span>
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/719" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOWE4NTg4M2I5OWU0NGFmOTg4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/719" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzE5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzk2YTIxNDgyMTYyMmFmMzlmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,10 +401,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://3ae2d20d-2354-47da-9ce9-b921f8793164@tmd.digiv2ray.store:443?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">357</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnVG/719"><time datetime="2023-08-13T19:55:40+00:00" class="time">19:55</time></a></span>
@@ -307,7 +410,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/720" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjE4MTRmYzEwNjlmYzlhMjMwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/720" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYmYwMzFmZWQxZjg2M2NjYjYwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -324,10 +427,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://3ae2d20d-2354-47da-9ce9-b921f8793164@65.109.241.5:443?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">392</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/720"><time datetime="2023-08-14T13:19:54+00:00" class="time">13:19</time></a></span>
@@ -335,7 +436,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/721" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzdkMDAyNDQwOTA4Y2Q5NWQ2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/721" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOWJmOWU2NTU1NjdiM2E5Y2Q2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,9 +453,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://3ae2d20d-2354-47da-9ce9-b921f8793164@65.109.241.5:443?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -363,7 +462,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/722" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMDM2N2MwNjI3MGI1NzkxOTNlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/722" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZGNlZDliNzUxZmJjY2Y0OGJlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -380,9 +479,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">بسته هدیه دوشنبه سوری همراه اول <br/>*100*64#<br/><br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -391,7 +488,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/723" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWI3ZWQ4ZTIyZmM0ZGQwYjU4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/723" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzIzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWZiMzYzNGUyYzU1YzE2ZTA1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -408,9 +505,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://8b9c14c3-d15e-4063-a9a2-1fdd894a49ef@vmesskhodammci1.ddns.net:2096?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=@vmesskhodam&amp;sni=V2ray.Vmesskhodam.top#%40vpnVG</code><br/><br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -419,7 +514,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/724" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjQxYjc3M2RkNjhiZDNmYjAyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/724" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiODkyODMyODdiYWRjMGQyM2U4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -436,9 +531,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://67fff5a6-52fe-4247-969e-122a50c37df8@116.203.0.138:2053?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -447,7 +540,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/725" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjJkYmMzYTVlMGI1MDAyNzJlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/725" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiY2E3YTNlZmU3MTk2ODhhNDk4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -464,9 +557,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://5a0beb93-56ae-4390-b5c2-8ed92f5f591d@[2a01:4f8:1c17:cadc::1]:2083?mode=gun&amp;security=reality&amp;encryption=none&amp;pbk=Qa9ePuwo1TY2uVN8143Sh3YAiVqdDj9VIZcQK20DTzc&amp;fp=firefox&amp;spx=%2F&amp;type=grpc&amp;serviceName=@Digiv2ray&amp;sni=www.speedtest.net&amp;sid=5654bc18#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -475,7 +566,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/726" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzU3Nzg3NGIwMDZjMmY0YzAwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/726" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTFmOGJhY2UxYzYwZDQ0Zjk3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -492,10 +583,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://67fff5a6-52fe-4247-969e-122a50c37df7@65.109.241.121:2053?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">621</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/726"><time datetime="2023-08-26T20:27:04+00:00" class="time">20:27</time></a></span>
@@ -503,7 +592,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/727" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOWU0NDQ2ZDExODZmMjlmMzg2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/727" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzc5NDI5ZjdmZDIzMDJmMTA0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -520,10 +609,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://67fff5a6-52fe-4247-969e-122a50c37df8@65.109.241.121:2053?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>Irancell<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">677</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/727"><time datetime="2023-08-28T10:07:44+00:00" class="time">10:07</time></a></span>
@@ -531,7 +618,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/728" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOWNmZTFiMmE3YWZiMjViOGM4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/728" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzRjZWI1ZDdjYzQ5YjQ3NTM4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -548,9 +635,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://0ca56b7e-89a6-4658-b943-1ef0978c3c00@159.69.102.125:2096?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40vpnVG</code><br/><br/>ایرانسل<br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -559,7 +644,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/729" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjRiMGM4ZmExMzhjNGMwMjYwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/729" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzI5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmVmYzUwNWM4MzU3NGIwOTIxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -576,10 +661,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://4c6fcb3d-334c-46ab-a62b-c8e56d7f776b@49.13.74.158:22069?mode=gun&amp;security=reality&amp;encryption=none&amp;pbk=VeRff9ggzWtCJTGoMbOlqQ15cr1V3fu7jWpfONeV53c&amp;fp=chrome&amp;spx=%2F&amp;type=grpc&amp;serviceName=--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------telegram:funza--------------&amp;sni=greenpepper.ir&amp;sid=c052cef8#%40vpnVG</code><br/><br/><a href="https://t.me/vpnVG" target="_blank">@vpnVG</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">811</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/729"><time datetime="2023-09-01T16:00:06+00:00" class="time">16:00</time></a></span>
@@ -587,7 +670,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/730" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNGYyYmQ2ZTNiOTliMDg0M2ViIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/730" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzJkZjk2MWZjMmEyODA1OWQ5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -604,10 +687,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرویس vpn یه تعداد محدودی شارژ شده<br/><br/>برای خرید vpn پر سرعت با حجم نامحدود و قیمت عالی میتونید به این ایدی پیام بدین:<br/><a href="https://t.me/AvalinNam" target="_blank">@AvalinNam</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">740</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/730"><time datetime="2023-10-02T09:50:03+00:00" class="time">09:50</time></a></span>
@@ -615,7 +696,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/732" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNmNlMWIyOTcxODY0ODgxNGNjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/732" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYTA4NjdhNzJiYzcwMTY3M2YyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -632,16 +713,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/haMster_kombat_bot/start?startapp=kentId947867599" target="_blank" rel="noopener">https://t.me/haMster_kombat_bot/start?startapp=kentId947867599</a><br/>Play with me, become cryptoexchange CEO and get a token airdrop&#33;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i>  2k Coins as a first-time gift<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>  25k Coins if you have Telegram Premium</div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/haMster_kombat_bot/start?startapp=kentId947867599">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/haMster_kombat_bot/start?startapp=kentId947867599" target="_blank" rel="noopener">https://t.me/haMster_kombat_bot/start?startapp=kentId947867599</a><br/>Play with me, become cryptoexchange CEO and get a token airdrop&#33;<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i>  2k Coins as a first-time gift<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>  25k Coins if you have Telegram Premium</div><a class="tgme_widget_message_link_preview" href="https://t.me/haMster_kombat_bot/start?startapp=kentId947867599">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/aYo0fa-RbXsQKIrqQx7H9rSGhuz6vE-XjA6m9NZBQgEzyl6O6lRIZlCn1PxyvUfRLE_Ygs9kQBwEQCLe_lz_S4k64coZw2TFoDSe71li-Z06IHprLaC43FpG7rxBsO41sPefCQFm1QeJ-p4oCzrba6nmjh1sdxIxgo5CZE_pUfQuC3iK2oMUvPAoT8HDZRlX2Fuo7UlIG5PAVXkl_mOwrVPowT7CCWAybm2OJHV8iZZWCE09Z06eFgqcianKFSz6VQqWzJyTyzo2VuIwHtO7bek9M4j9_UXwtG5R_Wxw4cuDQ1ik5bNPeQ0WJwPrmMbE94GcZb2BYelDY5WCzrma4g.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Hamster Kombat</div>
   <div class="link_preview_description" dir="auto">Just for you, we have developed an unrealistically cool application in the clicker genre, and no hamster was harmed&#33; Perform simple tasks that take very little time and get the opportunity to earn money&#33;</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">370</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/732"><time datetime="2024-06-04T11:17:07+00:00" class="time">11:17</time></a></span>
@@ -649,7 +728,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/733" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjQzMjNkNDNkNDdkMmQwMmZmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnVG/733" data-view="eyJjIjotMTE5MjI4NjMyNCwicCI6NzMzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZDg1OTU3ZmY5ZDljYmQ1ZGE3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnVG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="v"><img src="https://cdn4.cdn-telegram.org/file/Li1_dxMi1M9wBC03c10dWU7ZiBdiepps3Fric_hcZVaDb63csr4Mv6ZfPSChVb0Eyqn2KbzY9N3dWzeNDt051CELR01EWCH7emnWvyO0pz7SUzyd_4I0RAGZZxUJBCXB79A1lzGAbVcvPljaSrpYZDAKrUEdackAP5EOxTh05kaMa71tiWwp8ZzZip4BkW7v9IhLSYpD6uHebx2BJ5O7O7vPfncVhJli4xp-qgBCaujZmcEoIhi1M6RsopaC3yu1PW8cdn18mm8qiYA9NuyiNHTmpzSsaBEBpRAb2vIjxR2mRvSvEaAFvFYm885YDb05QpBbf9nPRxwLU_BeoM0tAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -665,16 +744,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnVG"><span dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpnVG/732" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpnVG/732" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">vpn | V2ray |Nord | کانفیگ | کد تخفیف اسنپ</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">https://t.me/haMster_kombat_bot/start?startapp=kentId947867599 Play with me, become cryptoexchange CEO and get a token airdrop&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i>  2k Coins as a first-time gift <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>  25k Coins if you have Telegram Premium</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">لینک بازی همستر <br/><br/>استارت کنید قراره لانچ بشه <br/>میتونه یک درامد جانبی براتون باشه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">372</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnVG/733"><time datetime="2024-06-04T11:18:02+00:00" class="time">11:18</time></a></span>
@@ -691,11 +768,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 53.63ms -->
+<!-- page generated in 46.01ms -->

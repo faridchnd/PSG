@@ -50,9 +50,126 @@ open for the whole world
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -81,7 +198,7 @@ open for the whole world
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">32.5K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">416</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">106</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">668</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">白嫖机场，节点，VPN免费，代理，梯子，ss，ssr，vmess，trojan，vless，订阅，clash，v2ray，apk，科学上网，订阅，奈飞，Disney，dazn，流媒体账号apk 破解软件,support Iran 吃瓜<br/>open for the whole world<br/><br/>广告位招商联系<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9189.png')"><b>👉</b></i> <a href="https://t.me/tougao_test_bot" target="_blank">@tougao_test_bot</a> （机场广告位已满）<br/>投稿<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9189.png')"><b>👉</b></i> <a href="https://t.me/tougao_test_bot" target="_blank">@tougao_test_bot</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=dab9c4703fea0f00d1_7474792544368498826">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=9b969a2bcd24f2d757_4998045144575660080">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -102,7 +219,7 @@ open for the whole world
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=dab9c4703fea0f00d1_7474792544368498826">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=9b969a2bcd24f2d757_4998045144575660080">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/zdyz2">
@@ -119,7 +236,7 @@ open for the whole world
 <main class="tgme_main" data-url="/zdyz2">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/zdyz2?before=5469" class="tme_messages_more js-messages_more" data-before="5469"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5469" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ2OSwidCI6MTc1MTk3NjIwMiwiaCI6Ijk5NTE1MGFiMTEzYWQ5YmVmZCJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/zdyz2?before=5469" class="tme_messages_more js-messages_more" data-before="5469"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5469" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ2OSwidCI6MTc1MTk4MTMwNCwiaCI6IjI1MTg1ZjM5NTlmYzhjYWE2MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -136,10 +253,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><br/><code>hy2://a914681a-8dda-4c98-8468-c313f5539b14@sg3.eyucdn.xyz:2056/?insecure=1&amp;sni=sg3.eyucdn.xyz#%E6%96%B0%E5%8A%A0%E5%9D%A1<br/><br/>vless://4f337d83-969e-4438-bb17-aa88e7b17cb0@13.214.184.4:443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.apple.com.cn&amp;fp=chrome&amp;security=reality&amp;pbk=geXtlGNYBAQKgRseZd_iesJeU92z7fY2koG-knCXoWU&amp;sid=e76b7d4e#%F0%9F%87%B8%F0%9F%87%AC%E6%96%B0%E5%8A%A0%E5%9D%A1%20-%20AWS<br/></code><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>30</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">25.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5469"><time datetime="2025-04-02T05:08:59+00:00" class="time">05:08</time></a></span>
@@ -147,7 +262,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5472" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3MiwidCI6MTc1MTk3NjIwMiwiaCI6IjJmMGYyZTMwYzVlZGU3ZjM2MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5472" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3MiwidCI6MTc1MTk4MTMwNCwiaCI6IjVkODRlMDNkMTE3OGEzNjBhYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -170,10 +285,8 @@ open for the whole world
     <div class="tgme_widget_message_document_title accent_color" dir="auto">4月13.yaml</div>
     <div class="tgme_widget_message_document_extra" dir="auto">416.5 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">14.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5472"><time datetime="2025-04-13T09:41:49+00:00" class="time">09:41</time></a></span>
@@ -181,7 +294,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5473" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3MywidCI6MTc1MTk3NjIwMiwiaCI6IjJiYzIzYzlmZmE2ZDNmMjYxYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5473" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3MywidCI6MTc1MTk4MTMwNCwiaCI6IjU5Nzk5Nzg4NWUwYjhkYTE1ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -198,10 +311,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><br/><code>vless://ee6774c0-9b19-4ff1-8b30-2da4b71977e2@221.144.200.91:12527/?type=ws&amp;encryption=none&amp;flow=&amp;host=edccr.ambercc.filegear-sg.me&amp;path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&amp;security=tls&amp;sni=edccr.ambercc.filegear-sg.me&amp;fp=chrome&amp;packetEncoding=xudp#%F0%9F%87%B9%F0%9F%87%BC%E5%8F%B0%E6%B9%BE<br/><br/>vmess://eyJhZGQiOiJjbG91ZGdldHNlcnZpY2UubWNsb3Vkc2VydmljZS5zaXRlIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJNQXhuRVRWaVAtY2EyLm1BeE5FVENsb3Vkc0VSVkljRS5jb00iLCJpZCI6IjE2NGQ3NjE5LWI0NTAtNDRhMy1iNDg4LTUxNzU4MjNiZmE1NiIsIm5ldCI6IndzIiwicGF0aCI6Ii9saW5rd3MiLCJwb3J0IjoiNDQzIiwicHMiOiLwn4eo8J+HpuWKoOaLv+WkpyIsInNjeSI6ImF1dG8iLCJzbmkiOiJNQXhuRVRWaVAtY2EyLm1BeE5FVENsb3Vkc0VSVkljRS5jb00iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==<br/></code><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">16.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5473"><time datetime="2025-04-13T09:45:05+00:00" class="time">09:45</time></a></span>
@@ -209,7 +320,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5474" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3NCwidCI6MTc1MTk3NjIwMiwiaCI6IjBmODA1ZWE2YzRhMTI3MjU1ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5474" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3NCwidCI6MTc1MTk4MTMwNCwiaCI6IjQzYTVkODQ0NzM3ZjM1ODQ4NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -226,10 +337,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><br/><code>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@csuzhou01.1cooldns.com:41279/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.nvidia.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=&amp;packetEncoding=xudp#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/><br/>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@shenzhou05.mysynology.net:17278/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.yahoo.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=&amp;packetEncoding=xudp#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC<br/></code><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>22</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA497.png')"><b>🤗</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9298.png')"><b>💘</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">19.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5474"><time datetime="2025-04-13T09:48:39+00:00" class="time">09:48</time></a></span>
@@ -237,7 +346,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5477" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3NywidCI6MTc1MTk3NjIwMiwiaCI6IjM3MWNjMjIwN2Y1NzAwMjU5NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5477" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3NywidCI6MTc1MTk4MTMwNCwiaCI6ImU2NGM0ZmQ4OTRhYzA4ZTk0YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -260,10 +369,8 @@ open for the whole world
     <div class="tgme_widget_message_document_title accent_color" dir="auto">4月21.yaml</div>
     <div class="tgme_widget_message_document_extra" dir="auto">416.5 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">19.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5477"><time datetime="2025-04-21T04:43:16+00:00" class="time">04:43</time></a></span>
@@ -271,7 +378,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5478" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3OCwidCI6MTc1MTk3NjIwMiwiaCI6IjkzMmUxMzgwN2FlNzI3MzNjMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5478" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3OCwidCI6MTc1MTk4MTMwNCwiaCI6IjEyMTg1NjQwYTMzNTVkYzc0MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -288,10 +395,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><br/><code>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@agaungzhou01.bumbleshrimp.com:31800/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.nvidia.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/><br/>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@agaungzhou01.bumbleshrimp.com:56127/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.yahoo.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=#%F0%9F%87%B8%F0%9F%87%AC%E6%96%B0%E5%8A%A0%E5%9D%A1<br/></code><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>18</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9898.png')"><b>😘</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">22.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5478"><time datetime="2025-04-21T04:51:39+00:00" class="time">04:51</time></a></span>
@@ -299,7 +404,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5479" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3OSwidCI6MTc1MTk3NjIwMiwiaCI6IjlkZGQyMGY1ZDQwN2Q4OTVmOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5479" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ3OSwidCI6MTc1MTk4MTMwNCwiaCI6IjQzYjRhYmJmMzM4MzRhMDExZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -316,10 +421,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><br/><code>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@bsuqian01.dynu.net:40387/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.nvidia.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/><br/>vless://459b4a80-bd61-4ecd-a26b-e9c1809d9e45@bsuqian01.dynu.net:47531/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=gateway.icloud.com&amp;fp=chrome&amp;security=reality&amp;pbk=qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY&amp;sid=#%F0%9F%87%B9%F0%9F%87%BC%E5%8F%B0%E6%B9%BE<br/></code><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>55</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">27.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5479"><time datetime="2025-04-21T04:54:33+00:00" class="time">04:54</time></a></span>
@@ -327,7 +430,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5481" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MSwidCI6MTc1MTk3NjIwMiwiaCI6IjRmYzU1ZTk2NjJiMjZlYmM0ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5481" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MSwidCI6MTc1MTk4MTMwNCwiaCI6Ijc4MDM0ODA4YzI2MzI4MDgyYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -350,10 +453,8 @@ open for the whole world
     <div class="tgme_widget_message_document_title accent_color" dir="auto">5月8.yaml</div>
     <div class="tgme_widget_message_document_extra" dir="auto">416.5 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>&nbsp; <br/><br/>感谢群友投稿的节点<br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">18.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5481"><time datetime="2025-05-08T05:53:59+00:00" class="time">05:53</time></a></span>
@@ -361,7 +462,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5482" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MiwidCI6MTc1MTk3NjIwMiwiaCI6Ijg2MDhlOTU3Zjk0Nzg2NmQ3NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5482" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MiwidCI6MTc1MTk4MTMwNCwiaCI6IjNkMzhlNDgyMjM0YTM0MGYwOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -378,10 +479,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/>http://sub.crosswall.org/s/021b85643def8ae6b8ec4e2c8de11425<br/><br/>http://sub.crosswall.org/s/07d1e5fd9a58f89c08b6116eb151aaad<br/><br/>http://sub.crosswall.org/s/8c11f4e723a29a8ec0b8a958a1ef4709</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>25</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">21.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5482"><time datetime="2025-05-08T05:54:29+00:00" class="time">05:54</time></a></span>
@@ -389,7 +488,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5483" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MywidCI6MTc1MTk3NjIwMiwiaCI6Ijg2YmRhNGI3ZmI1ZTYyOWNkNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5483" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4MywidCI6MTc1MTk4MTMwNCwiaCI6ImQ3YTFmZjYwZWJkMWRlNDE3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -406,10 +505,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/>vless://ee6774c0-9b19-4ff1-8b30-2da4b71977e2@8.216.121.234:51922/?type=ws&amp;encryption=none&amp;flow=&amp;host=edcck.ambercc.filegear-sg.me&amp;path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&amp;security=tls&amp;sni=edcck.ambercc.filegear-sg.me&amp;allowInsecure=1&amp;packetEncoding=xudp#JP</code><br/><br/><code>vless://ee6774c0-9b19-4ff1-8b30-2da4b71977e2@101.32.15.176:26657/?type=ws&amp;encryption=none&amp;flow=&amp;host=edccj.ambercc.filegear-sg.me&amp;path=%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw&amp;security=tls&amp;sni=edccj.ambercc.filegear-sg.me&amp;allowInsecure=1&amp;packetEncoding=xudp#HK</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>33</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B4.png')"><b>🥴</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8D.png')"><b>✍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">24.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5483"><time datetime="2025-05-08T05:58:00+00:00" class="time">05:58</time></a></span>
@@ -417,7 +514,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5486" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4NiwidCI6MTc1MTk3NjIwMiwiaCI6ImJkYzc5ZWEyYmUzMTc1N2ExYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5486" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4NiwidCI6MTc1MTk4MTMwNCwiaCI6IjM1MTkzZmJiNTMyNDBiNTQ0NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -434,18 +531,16 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>hy2://5d110f18-5a37-4db3-8cf6-f0bced38a1ae@89.185.27.133:443/?mport=55000-56000&amp;insecure=1&amp;sni=www.bing.com#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF2<br/><br/>vless://5d110f18-5a37-4db3-8cf6-f0bced38a1ae@89.185.27.133:443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.apple.com.cn&amp;fp=chrome&amp;security=reality&amp;pbk=geXtlGNYBAQKgRseZd_iesJeU92z7fY2koG-knCXoWU&amp;sid=e76b7d4e#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/><br/>hy2://5d110f18-5a37-4db3-8cf6-f0bced38a1ae@154.85.18.233:443/?mport=55000-56000&amp;insecure=1&amp;sni=www.bing.com#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC2<br/><br/>vless://5d110f18-5a37-4db3-8cf6-f0bced38a1ae@154.85.18.233:443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.apple.com.cn&amp;fp=chrome&amp;security=reality&amp;pbk=7yeqj7p-b9BqubE629PrgvcYf4MBV593Ssd7v7l8EBg&amp;sid=83a5b6cd#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">17.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5486"><time datetime="2025-05-31T10:23:21+00:00" class="time">10:23</time></a></span>
+    <span class="tgme_widget_message_views">17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5486"><time datetime="2025-05-31T10:23:21+00:00" class="time">10:23</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5487" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4NywidCI6MTc1MTk3NjIwMiwiaCI6ImE4MWRhNjE5YzBmOTNhZTVjNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5487" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4NywidCI6MTc1MTk4MTMwNCwiaCI6IjIyZGNhNTQwNWMwZGQ3MTQ4NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -462,10 +557,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>http://sub3.127665.xyz/s/3a7eb1a548d4f667b18ecbc9ed4ba051</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>31</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A8.png')"><b>🤨</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">18.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5487"><time datetime="2025-05-31T10:29:03+00:00" class="time">10:29</time></a></span>
@@ -473,7 +566,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5489" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4OSwidCI6MTc1MTk3NjIwMiwiaCI6ImM0YWY4OWE3ODFjOGM4ZTIwMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5489" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ4OSwidCI6MTc1MTk4MTMwNCwiaCI6ImQyYWEyYmI1YTU4ZGZmNTFhNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -490,10 +583,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>hy2://b866d83a-d301-4270-b699-40f322bf52fb@154.85.19.63:443/?mport=55000-56000&amp;insecure=1&amp;sni=www.bing.com#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC<br/><br/>vless://b866d83a-d301-4270-b699-40f322bf52fb@154.85.19.63:443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.apple.com.cn&amp;fp=chrome&amp;security=reality&amp;pbk=geXtlGNYBAQKgRseZd_iesJeU92z7fY2koG-knCXoWU&amp;sid=e76b7d4e#%F0%9F%87%AF%F0%9F%87%B5%E6%97%A5%E6%9C%AC%E4%B8%9C%E4%BA%AC3<br/><br/>vless://b866d83a-d301-4270-b699-40f322bf52fb@89.185.27.133:443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.apple.com.cn&amp;fp=chrome&amp;security=reality&amp;pbk=geXtlGNYBAQKgRseZd_iesJeU92z7fY2koG-knCXoWU&amp;sid=e76b7d4e#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/><br/>hy2://b866d83a-d301-4270-b699-40f322bf52fb@89.185.27.133:443/?mport=55000-56000&amp;insecure=1&amp;sni=www.bing.com#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF2</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>16</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">10.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5489"><time datetime="2025-06-15T05:08:30+00:00" class="time">05:08</time></a></span>
@@ -501,7 +592,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5490" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MCwidCI6MTc1MTk3NjIwMiwiaCI6IjYwZjE0MTgzYjIzZTNkMjYxZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5490" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MCwidCI6MTc1MTk4MTMwNCwiaCI6IjNkNmY3NjZhOGU3ZjQxYTRkNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -518,10 +609,8 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>hy2://e6d8d743-a9bc-48c9-be99-8f3cc94d16e1@asg.pagate.top:10086/#%E6%9C%AA%E7%9F%A5%E8%8A%82%E7%82%B9</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">11.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5490"><time datetime="2025-06-15T05:12:50+00:00" class="time">05:12</time></a></span>
@@ -529,7 +618,7 @@ open for the whole world
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5492" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MiwidCI6MTc1MTk3NjIwMiwiaCI6ImQxMzI1NzA4YzljYTdmZDBmNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5492" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MiwidCI6MTc1MTk4MTMwNCwiaCI6IjU4YTNmY2NiMDYzYzhlZWNiZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -548,18 +637,16 @@ open for the whole world
 
 <a class="tgme_widget_message_photo_wrap 6253394571509746735 1455981883_456248367" href="https://t.me/ZDYZ2/5492" style="width:800px;background-image:url('https://cdn5.cdn-telegram.org/file/bKrnXNHslyIinOH-eK0-xCiJncCv-UiQPCqrcaL92Ojw69XTnGG8wwy4M6chwHafjqfNdcXHFVwePkSJplTACcMAxb2o0jW5ypUyk2fSCAkQn2AYpvQ9A0Mrc3AMTv8xt74eVJ-QkyqxSMX5y_j6nSiqSAU5sUbIUYSwDfe0AUqpYzsCqx5-s25lb7dM6cI4UhRM6M9NKsmjp7wdvnU_S-GCQiZkN1x9hv3H2lkA9-ErhNiO-ET1VvOSLbFDuSODjCE-A1MaV-i_l5bHpJTgQ4weW5rCL2sOp2A2rFOWxt6Z-_rqu2Zp0iSKTtfdwlZRO0756Bllfw_7yS3y-ft5sw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:68.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9880.png')"><b>😀</b></i>你还在为看片迟迟缓存打不开而烦恼吗？(测速图只测了移动)<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i> 超高速&nbsp; 不卡顿&nbsp; 不限速 畅游外网 1Gbps 带宽保证 <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C88.png')"><b>✈️</b></i>&nbsp; M5加速 <a href="https://m5js.top/register?code=aBrKjqCG" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">【全中转线路】</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i>安全跨境，无日志审计<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i> 高速科学上网，看片不卡顿<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i>GPT、Netfilx、Disney、TK等流媒体全解锁<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i> 节点1倍率无套路，低至￥13.5 / 100G，平均0.45元一天<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i>九折优惠码：<code>HelloWorld</code>&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97A3.png')"><b>🗣</b></i> <br/><a href="https://m5js.top/register?code=aBrKjqCG" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">点击注册</a> ←使用注册码注册享更多优惠<br/><br/>不稳定我会狠狠抽打机场主<br/><br/><b>你们的每次购买都是对落魄频道主的支持</b></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9880.png')"><b>😀</b></i>你还在为看片迟迟缓存打不开而烦恼吗？(测速图只测了移动)<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i> 超高速&nbsp; 不卡顿&nbsp; 不限速 畅游外网 1Gbps 带宽保证 <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C88.png')"><b>✈️</b></i>&nbsp; M5加速 <a href="https://m5js.top/register?code=aBrKjqCG" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">【全中转线路】</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i>安全跨境，无日志审计<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i> 高速科学上网，看片不卡顿<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i>GPT、Netfilx、Disney、TK等流媒体全解锁<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A4.png')"><b>🔤</b></i> 节点1倍率无套路，低至￥13.5 / 100G，平均0.45元一天<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i>九折优惠码：<code>HelloWorld</code>&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97A3.png')"><b>🗣</b></i> <br/><a href="https://m5js.top/register?code=aBrKjqCG" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">点击注册</a> ←使用注册码注册享更多优惠<br/><br/>不稳定我会狠狠抽打机场主<br/><br/><b>你们的每次购买都是对落魄频道主的支持</b></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5492"><time datetime="2025-06-29T09:48:19+00:00" class="time">09:48</time></a></span>
+    <span class="tgme_widget_message_views">4.03K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5492"><time datetime="2025-06-29T09:48:19+00:00" class="time">09:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5493" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MywidCI6MTc1MTk3NjIwMiwiaCI6ImVjNDhjOTQ5MTExNWY3ZDYyNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5493" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5MywidCI6MTc1MTk4MTMwNCwiaCI6IjJhYjhlN2NlZWMwNjg0YWFmNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -574,20 +661,18 @@ open for the whole world
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>hy2://Wo9rLCYw6gzcfTgIu11mhBVciVs@47.74.34.102:29282/?insecure=1#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/>hy2://b57bbf70-8958-4ae5-b6fd-bcf39b81900c@ovo.5188666.xyz:63518/?insecure=1#%F0%9F%87%AD%F0%9F%87%B0%E9%A6%99%E6%B8%AF<br/>hy2://37d19f09-5fa4-4ad0-8484-55050b582a29@zp1.eyucdn.xyz:2056/?insecure=1&amp;sni=zp1.eyujichang.xyz#%E4%B8%9C%E4%BA%AC<br/>hy2://37d19f09-5fa4-4ad0-8484-55050b582a29@zp2.eyucdn.xyz:2056/?insecure=1&amp;sni=zp2.eyujichang.xyz#%E4%B8%9C%E4%BA%AC</code><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5493"><time datetime="2025-06-29T09:48:25+00:00" class="time">09:48</time></a></span>
+    <span class="tgme_widget_message_views">4.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5493"><time datetime="2025-06-29T09:48:25+00:00" class="time">09:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5494" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NCwidCI6MTc1MTk3NjIwMiwiaCI6IjJkNTM5ZmQ4NTRkMDJlZDg2NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5494" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NCwidCI6MTc1MTk4MTMwNCwiaCI6IjhjYzkxMjNjZjM3MjIyMzk0ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -602,20 +687,18 @@ open for the whole world
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><code>hy2://vlJbyJEtcNjHvV6dnkZ1Z4VjpI@13.212.75.22:10264/?insecure=1&amp;sni=bing.com#%E6%96%B0%E5%8A%A0%E5%9D%A1<br/>hy2://RKrGw4dSUwK3YAvqdQI8tcqNl0@35.94.124.236:34060/?insecure=1&amp;sni=bing.com#%E7%BE%8E%E5%9B%BD%F0%9F%87%BA%F0%9F%87%B8</code><br/><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5494"><time datetime="2025-06-29T09:51:53+00:00" class="time">09:51</time></a></span>
+    <span class="tgme_widget_message_views">4.92K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5494"><time datetime="2025-06-29T09:51:53+00:00" class="time">09:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5495" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NSwidCI6MTc1MTk3NjIwMiwiaCI6IjBlYjk3Yjg5NWFmMzE3NGMyOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5495" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NSwidCI6MTc1MTk4MTMwNCwiaCI6ImRlMGQ0OTdkMWRjNjMzYmE5YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -632,23 +715,16 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/ZDYZ2/5495" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><blockquote expandable><code>vmess://eyJhZGQiOiIxMTguMTA3LjI0NC44MCIsImFpZCI6IjY0IiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNDE4MDQ4YWYtYTI5My00Yjk5LTliMGMtOThjYTM1ODBkZDI0IiwibmV0Ijoid3MiLCJwYXRoIjoiL3BhdGgvMTcwNzMzMTMyMjMzIiwicG9ydCI6IjQ0MyIsInBzIjoi6aaZ5riv8J+HrfCfh7AiLCJzY3kiOiJhdXRvIiwic25pIjoid3d3LjE3NTkxMzAxLnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/>vmess://eyJhZGQiOiIxMzQuMTIyLjE4NC4xMTciLCJhaWQiOiI2NCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjQxODA0OGFmLWEyOTMtNGI5OS05YjBjLTk4Y2EzNTgwZGQyNCIsIm5ldCI6IndzIiwicGF0aCI6Ii9wYXRoLzE3MDczMzEzMjIzMyIsInBvcnQiOiIzMDAwNCIsInBzIjoi6aaZ5riv8J+HrfCfh7AiLCJzY3kiOiJhdXRvIiwic25pIjoid3d3LjE3Mjg0MDc3Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/>vmess://eyJhZGQiOiIxMzQuMTIyLjE4NC4xMDUiLCJhaWQiOiI2NCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjQxODA0OGFmLWEyOTMtNGI5OS05YjBjLTk4Y2EzNTgwZGQyNCIsIm5ldCI6IndzIiwicGF0aCI6Ii9wYXRoLzE3MDczMzEzMjIzMyIsInBvcnQiOiI0ODg4NSIsInBzIjoi5pel5pysIiwic2N5IjoiYXV0byIsInNuaSI6Ind3dy4xMzE0NjE2NS54eXoiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ==<br/>vmess://eyJhZGQiOiIxMzQuMTIyLjE5Ni42MiIsImFpZCI6IjY0IiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNDE4MDQ4YWYtYTI5My00Yjk5LTliMGMtOThjYTM1ODBkZDI0IiwibmV0Ijoid3MiLCJwYXRoIjoiL3BhdGgvMTcwNzMzMTMyMjMzIiwicG9ydCI6IjMwMDA0IiwicHMiOiLpppnmuK/wn4et8J+HsCIsInNjeSI6ImF1dG8iLCJzbmkiOiJ3d3cuNTM0MDYwOTYueHl6IiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=<br/>vmess://eyJhZGQiOiIxMTguMTA3LjI0NC44MCIsImFpZCI6IjY0IiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNDE4MDQ4YWYtYTI5My00Yjk5LTliMGMtOThjYTM1ODBkZDI0IiwibmV0Ijoid3MiLCJwYXRoIjoiL3BhdGgvMTcwNzMzMTMyMjMzIiwicG9ydCI6IjQ0MyIsInBzIjoi6aaZ5riv8J+HrfCfh7AiLCJzY3kiOiJhdXRvIiwic25pIjoid3d3LjE3NTkxMzAxLnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9</code></blockquote><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5495"><time datetime="2025-06-29T09:55:47+00:00" class="time">09:55</time></a></span>
+    <span class="tgme_widget_message_views">5.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5495"><time datetime="2025-06-29T09:55:47+00:00" class="time">09:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5496" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NiwidCI6MTc1MTk3NjIwMiwiaCI6ImUzZDAzNmMyZjEwNWEwYmRkYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5496" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NiwidCI6MTc1MTk4MTMwNCwiaCI6ImE0MjZlNzM3MWFjOTdiODI2ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -665,23 +741,16 @@ open for the whole world
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/ZDYZ2/5496" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%E8%AE%A2%E9%98%85">#订阅</a> <a href="?q=%23%E7%99%BD%E5%AB%96">#白嫖</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9">#免费节点</a> <a href="?q=%23Clash">#Clash</a> <a href="?q=%23%E5%85%8D%E8%B4%B9%E5%88%86%E4%BA%AB">#免费分享</a> <a href="?q=%23%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85">#机场订阅</a>  <br/><br/>感谢群友投稿的节点<br/><code><br/></code><blockquote expandable><code>trojan://9c3c38d0-8637-4c94-a790-61f3202a943a@f10011.flyflylflyflysbs.sbs:19949/?type=tcp&amp;security=tls&amp;sni=tw01.ckcloud.info&amp;allowInsecure=1&amp;fp=chrome#TW<br/>trojan://9c3c38d0-8637-4c94-a790-61f3202a943a@f10011.flyflylflyflysbs.sbs:10187/?type=tcp&amp;security=tls&amp;sni=hk04.ckcloud.info&amp;allowInsecure=1&amp;fp=chrome#HK<br/>trojan://9c3c38d0-8637-4c94-a790-61f3202a943a@f10011.flyflylflyflysbs.sbs:29496/?type=tcp&amp;security=tls&amp;sni=jp01.ckcloud.info&amp;allowInsecure=1&amp;fp=cJKRHK#JP<br/>trojan://9c3c38d0-8637-4c94-a790-61f3202a943a@f10011.flyflylflyflysbs.sbs:19013/?type=tcp&amp;security=tls&amp;sni=sg02.ckcloud.info&amp;allowInsecure=1&amp;fp=chrome#SG<br/>trojan://9c3c38d0-8637-4c94-a790-61f3202a943a@f10021.flyflylflyflysbs.sbs:55474/?type=tcp&amp;security=tls&amp;sni=vn01.ckcloud.info&amp;allowInsecure=1&amp;fp=chrome#VN<br/>ss://cmM0LW1kNTppRkRFMFo@sg17.fjk.wtf:20353#HK<br/>ss://cmM0LW1kNTppRkRFMFo@kraz01.fjk.wtf:20353#KR<br/>ss://YWVzLTEyOC1nY206NDA2ZTRlYTYtODQ0My00NWUyLWEzOTctNDk0MzY1Y2ExYmY4@bit-jp.03ezhg0qsa.download:12061#JP<br/>vless://5c183802-747d-4d2f-a6f1-aff2d5d78401@47.238.40.144:443/?type=tcp&amp;encryption=none&amp;flow=&amp;sni=cdn77.api.userway.org&amp;fp=chrome&amp;security=reality&amp;pbk=DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw&amp;sid=6ba85179e30d4fc2#%E9%A6%99%E6%B8%AF<br/>vless://3e7f67de-648e-4871-b51a-a225214d41ee@47.239.205.13:443/?type=tcp&amp;encryption=none&amp;flow=&amp;sni=cdn.userway.org&amp;fp=chrome&amp;security=reality&amp;pbk=TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw&amp;sid=#%E9%A6%99%E6%B8%AF<br/>vless://5c183802-747d-4d2f-a6f1-aff2d5d78401@8.213.149.42:443/?type=tcp&amp;encryption=none&amp;flow=&amp;sni=wwwimages2.adobe.com&amp;fp=chrome&amp;security=reality&amp;pbk=DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw&amp;sid=Z<br/>vless://461558c5-425f-49de-9dad-5a9184e092f9@38.246.249.90:60589/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.cisco.com&amp;fp=chrome&amp;security=reality&amp;pbk=g_56k7ui9UrIxf6FL4bc5JJ4tYQ0wwENzddsybcRNHo&amp;sid=11aa857ce52a1392#Reality%28by%E5%B0%8F%E4%BC%81%E9%B9%85%29<br/>trojan://6927305290f4e972cdd3575433bbc5f1@36.151.251.24:32765/?type=tcp&amp;security=tls&amp;sni=www.baidu.com&amp;allowInsecure=1#%E6%96%B0%E5%8A%A0%E5%9D%A1<br/>vless://1a18e79a-ff9c-43b5-90e1-1c43561364f2@172.235.251.52:321/?type=tcp&amp;encryption=none&amp;flow=#%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A<br/>vless://3853de25-1a63-417c-8f14-7940cec3a44f@152.53.192.96:30552/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=www.paypal.com&amp;fp=chrome&amp;security=reality&amp;pbk=dQycD6FwvCnnjxTTkikO0Bd4F4ksBV291vvO0GjdAnc&amp;sid=Z<br/>vmess://eyJhZGQiOiIxMjAuMjM2LjU2LjE3MSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmZTI1YzkwMC0xYTUyLTRkZDUtODlhMi05YTM5ZDdmY2RlMzgiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjQ4NTA2IiwicHMiOiJma/Cfh63wn4ewIOmmmea4r+mrmOe6py0yIHgzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/>vmess://eyJhZGQiOiIxMjAuMjM2LjU2LjE3MSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmZTI1YzkwMC0xYTUyLTRkZDUtODlhMi05YTM5ZDdmY2RlMzgiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjMyMTQ3IiwicHMiOiJma/Cfh63wn4ewIOmmmea4r+mrmOe6py0zIHgzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/>vmess://eyJhZGQiOiIxODMuMjM3LjkxLjIwNSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmZTI1YzkwMC0xYTUyLTRkZDUtODlhMi05YTM5ZDdmY2RlMzgiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjYwOTgzIiwicHMiOiJma/Cfh63wn4ewIOmmmea4r+mrmOe6py00IHgzIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9<br/>ss://YWVzLTEyOC1nY206dG1kODQyNw@120.233.71.140:52251#%F0%9F%84%B5%F0%9F%84%BA%20%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF-03<br/>ss://YWVzLTEyOC1nY206dG1kODQyNw@120.233.71.140:52252#%F0%9F%84%B5%F0%9F%84%BA%20%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF-04<br/>trojan://7fec5d9d-4a06-377f-9fc3-6c1fef6a7f4b@111.47.212.170:63985/?type=tcp&amp;security=tls&amp;sni=x74.flybar.work&amp;alpn=h2#%F0%9F%84%B5%F0%9F%84%BA%20gy.58n.net%3A63985<br/>trojan://7fec5d9d-4a06-377f-9fc3-6c1fef6a7f4b@111.47.212.170:20139/?type=tcp&amp;security=tls&amp;sni=z139.hongkongnode.top#%F0%9F%84%B5%F0%9F%84%BA%20%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%E2%80%A2%E9%AB%98%E9%80%9F139%E2%80%A2%E9%93%82%E9%87%91</code></blockquote><br/><br/>转发请带来源 <a href="https://t.me/ZDYZ2" target="_blank">@ZDYZ2</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E85.png')"><b>🎅</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5496"><time datetime="2025-06-29T10:02:44+00:00" class="time">10:02</time></a></span>
+    <span class="tgme_widget_message_views">6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5496"><time datetime="2025-06-29T10:02:44+00:00" class="time">10:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5497" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NywidCI6MTc1MTk3NjIwMiwiaCI6IjYzNTU1NGYwMzk5YTJiOGZmOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="ZDYZ2/5497" data-view="eyJjIjotMTc5MDU1NzM1OSwicCI6NTQ5NywidCI6MTc1MTk4MTMwNCwiaCI6IjM3ODg4ZjdkZTZhZjFmYzgxYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/ZDYZ2"><i class="tgme_widget_message_user_photo bgcolor3" data-content="白"><img src="https://cdn5.cdn-telegram.org/file/KKleYPQz_oxpiRfjSGUgDDaQFNe-QlA5-cBGurkzgDVl9FiG3bnnHEYQgGZcC_nUKEzj9PXNSXHbCjUbyKWJl0ZL3if1gDQYSlOvGUcNMPa0CdDBZrNkoimtWx6wNitnZIblcWK84wlhPHCBEB3P_HNycBol-EQCFGMlGAbhbAyYIRJ8nNX6BAlzCTeg7FBhv3RBa_LccDM5EYSMCfF6c0MEWDOFT98npwLJqxe6ckj8sNXLQwk1fXETcknogTTz-GNVWCO2B-VhZqYwmKujazUBKYGTuSvLmkmoJnJxXX926fVbGSir9wu81ZWt7QtUjt2JfPZhu12qMn5XzpShnw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -696,15 +765,13 @@ open for the whole world
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/ZDYZ2"><span dir="auto">白嫖のHome｜节点｜VPN｜订阅｜资源分享</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>云安云——全中转机场<br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> 官网&nbsp; </b><a href="https://yunanyun.app/#/register?code=FgB6dzZ7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">yunanyun.app</a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>70+ 全球节点、倍率X1<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>四端支持、不限制设备使用<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>解锁Netflix Disney+ ChatGPT等<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>优质线路、4K秒开、无视晚高峰<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i> 推广佣金30%循环 提款秒到</b><br/><b>88元【尊享优惠】199G 流量/月 （12个月）<br/>118元【尊享优惠】299G 流量/月 （12个月）</b><br/>关注云安云频道 每周免费抽得流量<br/><br/>&nbsp;&nbsp;<a href="https://yunanyun.app/#/register?code=FgB6dzZ7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">点击注册①</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://yunanyun.app/#/register?code=FgB6dzZ7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">点击注册②</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i> <a href="https://yunanyun.app/#/register?code=FgB6dzZ7" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">官网</a> ｜ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> <a href="https://t.me/yunanyun138" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">群组</a> ｜ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i> <a href="https://t.me/yunanyu" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">频道</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5497"><time datetime="2025-06-29T15:47:02+00:00" class="time">15:47</time></a></span>
+    <span class="tgme_widget_message_views">5.88K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/ZDYZ2/5497"><time datetime="2025-06-29T15:47:02+00:00" class="time">15:47</time></a></span>
   </div>
 </div>
   </div>
@@ -718,11 +785,11 @@ open for the whole world
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 120.27ms -->
+<!-- page generated in 89.19ms -->

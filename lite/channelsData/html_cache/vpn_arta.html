@@ -44,9 +44,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -75,7 +192,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.59K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">14</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">20</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">جهت خرید و پشتیبانی<br/><a href="https://t.me/izmez" target="_blank">@izmez</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=56af091d390f8c0237_15518363859028400884">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a3741843cdb067dce5_15722583366220258778">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -96,7 +213,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=56af091d390f8c0237_15518363859028400884">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a3741843cdb067dce5_15722583366220258778">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vpn_arta">
@@ -113,7 +230,7 @@
 <main class="tgme_main" data-url="/vpn_arta">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpn_arta?before=763" class="tme_messages_more js-messages_more" data-before="763"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/763" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzYzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNzY0MDMxMTJjNGY4ODJjMjQ0In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpn_arta?before=763" class="tme_messages_more js-messages_more" data-before="763"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/763" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzYzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMGUyMjQxMTllNzY5ODBlMWQ1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -136,17 +253,15 @@
     <a href="https://t.me/vpn_arta/763" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/763"><time datetime="2024-11-12T06:25:08+00:00" class="time">06:25</time></a></span>
+    <span class="tgme_widget_message_views">4.66K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/763"><time datetime="2024-11-12T06:25:08+00:00" class="time">06:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/764" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiODllNmZlZjE5ODJmMjYzY2E1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/764" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiODUyYWJhODBlNzVjZGE5NTNiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -169,17 +284,15 @@
     <a href="https://t.me/vpn_arta/764" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/764"><time datetime="2024-12-16T14:48:38+00:00" class="time">14:48</time></a></span>
+    <span class="tgme_widget_message_views">2.45K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/764"><time datetime="2024-12-16T14:48:38+00:00" class="time">14:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/766" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDBlYjM0NTMxNDEwMjc5MDUyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/766" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjMwN2ExMjYzZjBlOWQyMGI0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -202,17 +315,15 @@
     <a href="https://t.me/vpn_arta/766" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/766"><time datetime="2025-01-03T11:48:33+00:00" class="time">11:48</time></a></span>
+    <span class="tgme_widget_message_views">4.59K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/766"><time datetime="2025-01-03T11:48:33+00:00" class="time">11:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/767" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjY1MzI1MGQ3MDkzMTljZTE3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/767" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzY3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNDkyODcyZWNiNTg1ZDljZGJhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -228,24 +339,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpn_arta"><span dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpn_arta/766" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpn_arta/766" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانفیگ رایگان <tg-emoji emoji-id="5305417940760273444"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i></tg-emoji><tg-emoji emoji-id="6021347065827691977"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i></tg-emoji>  vless://c35b94f0-3057-4251-82c7-34356dc0e796@srv05.pcbot.online:1410?security=&amp;encryption=none&amp;host=rubika.ir%2Cigap.net%2Csplus.ir&amp;headerType=http&amp;type=tcp#@vpn_arta   - این اشتراک مخصوص مجموعه <tg-emoji emoji-id="5332312390312668778"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332703618883663337"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332722168847413749"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332312390312668778"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji> میباشد   - رایگان { اختصاصی ما } <tg-emoji emoji-id="5305482811946312759"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A5.png')"><b>♥️</b></i></tg-emoji>  …</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>اتمام حجم کانفیگ تست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/>جهت سفارش و پشتیبانی</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187F09F8FBD.png')"><b>👇🏽</b></i><br/><br/><a href="https://t.me/izmez" target="_blank">@izmez</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/767"><time datetime="2025-01-03T16:36:50+00:00" class="time">16:36</time></a></span>
+    <span class="tgme_widget_message_views">6.67K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/767"><time datetime="2025-01-03T16:36:50+00:00" class="time">16:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/770" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzcwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDcxY2Q5NzI1MjNmZDk0MjFiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/770" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzcwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiN2QzZGU4ZGU3OWNjMWI4NzRhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,17 +377,15 @@
     <a href="https://t.me/vpn_arta/770" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/770"><time datetime="2025-01-06T10:54:42+00:00" class="time">10:54</time></a></span>
+    <span class="tgme_widget_message_views">7.09K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/770"><time datetime="2025-01-06T10:54:42+00:00" class="time">10:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/772" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzcyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDM1NmM5ZTUyMDdhYzk1N2VkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/772" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzcyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYmVhZTk0M2UzMWI1MTA1Mzc1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -301,17 +408,15 @@
     <a href="https://t.me/vpn_arta/772" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">27.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/772"><time datetime="2025-01-09T11:43:32+00:00" class="time">11:43</time></a></span>
+    <span class="tgme_widget_message_views">28K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/772"><time datetime="2025-01-09T11:43:32+00:00" class="time">11:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/773" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzczLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMThlZWY4NzI5MDJhYjc0Yzg5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/773" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzczLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGRhYzU3NTExMjNmZDllNWQ5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -334,17 +439,15 @@
     <a href="https://t.me/vpn_arta/773" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/773"><time datetime="2025-01-09T11:43:32+00:00" class="time">11:43</time></a></span>
+    <span class="tgme_widget_message_views">5.63K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/773"><time datetime="2025-01-09T11:43:32+00:00" class="time">11:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/774" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzc0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmQwYTM5ZDQ5YTkyNjJlMWU4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/774" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzc0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiODUyZTcxMWJhNjQ4MGQwZmViIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -360,9 +463,9 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpn_arta"><span dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpn_arta/773" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpn_arta/773" ">
 <div class="tgme_widget_message_author accent_color">
-  <span class="tgme_widget_message_author_name" dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span>
+  <span class="tgme_widget_message_author_name" dir="auto">کانفیگ وی تو ری ویتوری نیم بها پروکسی فیلترشکن رایگان خرید سرور وی پی ان ترید سیسکو آیپی ثابت vpn v2rayng vless vmess l2tp cisco</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5220226955206467824"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F93.png')"><b>🏓</b></i></tg-emoji>بهترین VPN با سرعت بالا موجود شد وایرگارد<tg-emoji emoji-id="5861561131226632101"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>  <tg-emoji emoji-id="5776185930230535182"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A1.png')"><b>🔡</b></i></tg-emoji><tg-emoji emoji-id="5775947696984558787"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A1.png')"><b>🔡</b></i></tg-emoji><tg-emoji emoji-id="5775969365094568088"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5776417222809357746"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5775952966909431143"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5776046416807858259"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5775969365094568088"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5776269527473984208"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji>   ( IOS <tg-emoji emoji-id="5893501458682220781"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>,ANDROID<tg-emoji emoji-id="5893480348917961171"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5AC.png')"><b>🥬</b></i></tg-emoji>,  PC<tg-emoji emoji-id="5440501770390350005"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9299.png')"><b>💙</b></i></tg-emoji> ,MAC<tg-emoji emoji-id="6327656239228519658"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></tg-emoji>)  <tg-emoji emoji-id="4967853603151676186"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i></tg-emoji>یک ماهه تک کاربر نامحدود :160 تومان <tg-emoji emoji-id="4967853603151676186"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i></tg-emoji>یک ماهه دوکاربر نامحدود :280 تومان  <tg-emoji emoji-id="4967853603151676186"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i></tg-emoji>دوماهه تک کاربر نامحدود :280 تومان <tg-emoji emoji-id="4967853603151676186"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i></tg-emoji>دوماهه دوکاربر نامحدود :480 تومان  <tg-emoji emoji-id="4967853603151676186"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9496.png')"><b>🔖</b></i></tg-emoji>سه ماهه تک کاربر نامحدود…</div>
 </a>
@@ -372,17 +475,15 @@
     <a href="https://t.me/vpn_arta/774" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/774"><time datetime="2025-01-09T11:44:03+00:00" class="time">11:44</time></a></span>
+    <span class="tgme_widget_message_views">6.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/774"><time datetime="2025-01-09T11:44:03+00:00" class="time">11:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/780" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiY2E3MDBiYjBmMjRmZmMwMDNmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/780" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDdjNDY1YTc4YTUzNjgzYjMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -405,8 +506,6 @@
     <a href="https://t.me/vpn_arta/780" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -415,7 +514,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/781" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZmJiZGFmNzhmMzM5ZjY5MWM1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/781" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZTdhZDVlYTY3YjE0MTE0YjlmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -438,17 +537,15 @@
     <a href="https://t.me/vpn_arta/781" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/781"><time datetime="2025-02-12T07:55:06+00:00" class="time">07:55</time></a></span>
+    <span class="tgme_widget_message_views">6.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/781"><time datetime="2025-02-12T07:55:06+00:00" class="time">07:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/783" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMWZkNTkyMjVkZjcyODU0YzVhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/783" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzgzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMzBmMzc2YTMwNGI3ZjRjZDUzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -464,24 +561,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpn_arta"><span dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpn_arta/781" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpn_arta/781" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانفیگ رایگان <tg-emoji emoji-id="5305417940760273444"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i></tg-emoji><tg-emoji emoji-id="6021347065827691977"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i></tg-emoji>  vless://51909ba1-3a0c-4dff-a8f1-73ce64c4b10a@2.189.85.177:53369?security=none&amp;encryption=none&amp;host=fast.com&amp;headerType=http&amp;type=tcp#@vpn_arta  - این اشتراک مخصوص مجموعه <tg-emoji emoji-id="5332312390312668778"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332703618883663337"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332722168847413749"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji><tg-emoji emoji-id="5332312390312668778"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A0.png')"><b>🔠</b></i></tg-emoji> میباشد   - رایگان { اختصاصی ما } <tg-emoji emoji-id="5305482811946312759"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A5.png')"><b>♥️</b></i></tg-emoji>  - سازگار با تمامی اینترنت…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>اتمام حجم کانفیگ تست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/>جهت سفارش و پشتیبانی</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187F09F8FBD.png')"><b>👇🏽</b></i><br/><br/><a href="https://t.me/izmez" target="_blank">@izmez</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/783"><time datetime="2025-02-13T07:58:35+00:00" class="time">07:58</time></a></span>
+    <span class="tgme_widget_message_views">6.79K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/783"><time datetime="2025-02-13T07:58:35+00:00" class="time">07:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/784" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDlkNmE2NmE0NDFjMDdiNjVlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/784" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjNhNGFhZTA2NjYwMTMwYmI2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -496,20 +591,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpn_arta"><span dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">درود وقتتون بخیر<br/>برنامه npv واس ایفون بروز شده کمی فرق کرده با نسخه قبلی باید کانفیگو دوباره اد کنید داخلش اگه کسی اپدیت کرد طبق اموزش زیر که میگم پیش بره اد کنه<br/>کانفیگو کپی کنید برید قسمت کانفیگ برنامه + وسط رو بزنید گزینه سوم ایمپورت کنید و سلکت کنید(بزنید رو کانفیگ ابی بشه) و برید هوم کانکت بشید<br/><br/>(حتما اپدیت کنید)</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/784"><time datetime="2025-02-18T12:32:31+00:00" class="time">12:32</time></a></span>
+    <span class="tgme_widget_message_views">7.37K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/784"><time datetime="2025-02-18T12:32:31+00:00" class="time">12:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/785" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYWYxYTY4NTkzMGUzNWMzZDJkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/785" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTcyYmQ1OWJjZjU0Y2MxODYwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -525,24 +618,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpn_arta"><span dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpn_arta/784" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpn_arta/784" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانال فیلترشکن کانفیگ نیم بها سرور وایرگارد وی تو ری سیسکو نامحدود حجمی artavpn vpn l2tp v2ray openvpn pptp cisco sstp wireguard</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">درود وقتتون بخیر برنامه npv واس ایفون بروز شده کمی فرق کرده با نسخه قبلی باید کانفیگو دوباره اد کنید داخلش اگه کسی اپدیت کرد طبق اموزش زیر که میگم پیش بره اد کنه کانفیگو کپی کنید برید قسمت کانفیگ برنامه + وسط رو بزنید گزینه سوم ایمپورت کنید و سلکت کنید(بزنید…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کاربران اندروید هم v2rayng رو حتما به نسخه اخر اپدیت کنن از گوگل پلی</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/785"><time datetime="2025-03-05T08:40:29+00:00" class="time">08:40</time></a></span>
+    <span class="tgme_widget_message_views">7.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/785"><time datetime="2025-03-05T08:40:29+00:00" class="time">08:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/787" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZjllY2EwNGQ2ODVjMjkwZjFjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/787" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzg3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDA5NWZmMDQwM2I4Y2M4ZDFjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -565,17 +656,15 @@
     <a href="https://t.me/vpn_arta/787" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/787"><time datetime="2025-04-04T17:00:02+00:00" class="time">17:00</time></a></span>
+    <span class="tgme_widget_message_views">9.51K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpn_arta/787"><time datetime="2025-04-04T17:00:02+00:00" class="time">17:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/790" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDU3ZWNiZDhkNjJmYzczOGM0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/790" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTI2YTgzMTI1MjY0MTRmMjgzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -598,17 +687,15 @@
     <a href="https://t.me/vpn_arta/790" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">37.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/790"><time datetime="2025-04-21T14:25:26+00:00" class="time">14:25</time></a></span>
+    <span class="tgme_widget_message_views">37K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/790"><time datetime="2025-04-21T14:25:26+00:00" class="time">14:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/791" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTcxNmI1YmQzODY0OWIwZWIzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/791" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTYzOWUzMzU2NTM4OGExYzJkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -633,8 +720,6 @@
     <a href="https://t.me/vpn_arta/791" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -643,7 +728,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/793" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOGRmYTQ1MDc3ODNiY2JlMTIwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/793" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6NzkzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDU0OTUyZDYwOGVhZmUzMjNlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -668,8 +753,6 @@
     <a href="https://t.me/vpn_arta/793" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -678,7 +761,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/795" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzk1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMGQ1ZTZkYTgxYjZmZjU1OThjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/795" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzk1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTM0MDA3MDAxYmM5ZGE2MDY2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -701,8 +784,6 @@
     <a href="https://t.me/vpn_arta/795" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -711,7 +792,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/796" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzk2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZmEyNjkwMzJhODI5MGY5ZDVkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/796" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6Nzk2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiODk4ZTQ0NjYwMzY0YjBiMWMyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -734,8 +815,6 @@
     <a href="https://t.me/vpn_arta/796" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -744,7 +823,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/804" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6ODA0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTIyMWZmZmJiNDk3NjQ0YTA2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpn_arta/804" data-view="eyJjIjotMTY1NzYxNTQ0OSwicCI6ODA0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjM4NmJmZDUyMmFkYjgxMTk4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpn_arta"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ک"><img src="https://cdn4.cdn-telegram.org/file/aQch1q91MFgJFRr6WNWqbzz6HRGE-9UZKt8tkpLLgx3HKt7Uaw6Z6FbetGifNSIkwiOMpwNogbXlohs6OI627Amh1CrGv1Dm6PXjyPFk7jVm7htvYRZmP0lNpLo-WrK1l42S2o-wdGE9R-DS09vVw3XsnIoHaxaOdrjt8B1UyIAtWT7auW9Xj5OILGQG7m-m_dkKFL5T9q5oYxOR9IJ5qxTu_RvUqpXp_BjPE33jWU0QWN50G1tsdIzzc8JDa1et4mM8-IkHjKiNChjENfXEZukpJQzUPoW4OOjJv8irMzWFbUJ5F_wKgVfa5Tapvg-pkPx2R310bOAm-_T4zOv-gg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -767,7 +846,7 @@
   <video src="https://cdn4.cdn-telegram.org/file/4b5c38dfd5.mp4?token=IBA_esR8e_qJgBPo07dUiXuENt7Iivl0fdfBYtBvQodBmzsDwBkIjlQ4wN1id1JBIHkEQUJgjAvqOmTvoZw3QPRpdLW9D0QJyjrVQAA2oPt4M7hPwC0LxsKOykOSgqRqrDXGXwsnx0uyS7Bx1uZYTiX2DGfEegPsOWjfwCQacWjhFfEd-QS1yZ8Li1kTkVL7rWyVcIdAtGHHzus2O2vGB8ZKcufGoFSJVCdVlGXYOKChXl9ffuhiZ-ecgxYGTHGbDzagrbNN9izFn5Ar0OHo6VFYUqj_5ip0H9v9T2-DGQCa33N0qpZkSA9hLWx2HIBKH0-1SUkq-On2b70JnNPOVg" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:07</time>
+<time class="message_video_duration js-message_video_duration">0:06</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
@@ -779,12 +858,10 @@
     <a href="https://t.me/vpn_arta/804" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/804"><time datetime="2025-06-27T10:34:47+00:00" class="time">10:34</time></a></span>
+    <span class="tgme_widget_message_views">1.08K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpn_arta/804"><time datetime="2025-06-27T10:34:47+00:00" class="time">10:34</time></a></span>
   </div>
 </div>
   </div>
@@ -798,11 +875,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 65.78ms -->
+<!-- page generated in 73.46ms -->

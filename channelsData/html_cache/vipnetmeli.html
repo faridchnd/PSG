@@ -54,9 +54,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -85,7 +202,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.54K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">106</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">فروش کانفیگ vless  اختصاصی برای دور <br/>زدن نت ملی در تمامی ساعت ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>مشاوره و سوالات شما <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i>   <br/><a href="https://t.me/ali_sudo_of" target="_blank">@ali_sudo_of</a><br/><br/>ربات خرید کانفیگ اتوماتیک: <a href="https://t.me/vipnetmelishop_bot" target="_blank">@vipnetmelishop_bot</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=7784f35344af7e4fac_1610377086280872497">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a8d8e5b0f3b3465ba7_7855165088831723482">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -106,7 +223,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=7784f35344af7e4fac_1610377086280872497">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a8d8e5b0f3b3465ba7_7855165088831723482">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vipnetmeli">
@@ -123,7 +240,7 @@
 <main class="tgme_main" data-url="/vipnetmeli">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vipnetmeli?before=344" class="tme_messages_more js-messages_more" data-before="344"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/344" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2RhOTY1Y2NmZGRjMTIxNjFiIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vipnetmeli?before=344" class="tme_messages_more js-messages_more" data-before="344"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/344" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzkzMDJmN2EyZWEzZTMyZDRhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -140,18 +257,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کد مورس مخفی شده امروز همستر برای بدست آوردن یک میلیون سکه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FAA99.png')"><b>🪙</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i><br/><br/> <br/>{FARM}<br/><br/>F:&nbsp;&nbsp; • • — •<br/>A:&nbsp;&nbsp; • —<br/>R:&nbsp;&nbsp; • — •<br/>M:&nbsp;&nbsp; — —</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/344"><time datetime="2024-06-22T09:41:17+00:00" class="time">09:41</time></a></span>
+    <span class="tgme_widget_message_views">1.04K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/344"><time datetime="2024-06-22T09:41:17+00:00" class="time">09:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/345" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiY2JlMmEzODE4ZWYyMzNkMTVhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/345" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNDFhZjkxZDQ4MTZlZDdhMWNmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -170,18 +285,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5168426965718381846 1203368177_456242454" href="https://t.me/vipnetmeli/345" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/SxFaX-jCYr83tuSO0Zd7yiycc-NAIsoECu0SmJ5skCC1oxOAtSiVaar4lkn7mUPCYyyQE2ULmoiOn73xpKgT3yobCaVqmk0An3qQIGRmIhJwoUKkFfjpKEQLtK5TR__AtuGmndXCxraXn9uDUXYKCAoTiRgO3fbsz7BVkuFV7g6UDhcQzKDDd8IFM742p3P90BkPEkFdfgps73AaQQYJ3q7XnIKMrSb_H83nrUdMZ8TkQ7CAqxhRtBZLX857rl32mq5_glJMB-aRhf-pLA3kiLgrXJhifxaRBLGn3zsvyiKbXhhJm8mFt_zzFBas5-ELhxrlyzRUmFk7KS7SETw9Zw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:46.375%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/345"><time datetime="2024-06-22T12:18:50+00:00" class="time">12:18</time></a></span>
+    <span class="tgme_widget_message_views">1.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/345"><time datetime="2024-06-22T12:18:50+00:00" class="time">12:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/346" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOGJjOWU1M2VhNWNmZDhjNDhhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/346" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOWU0MTI2ZTE3OWE3OGRmMGY0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -198,18 +311,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کد مورس :<br/><br/>[ POOL ] <br/><br/>P: • - - •<br/>O: - - -<br/>O: - - -<br/>L: • - • •</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/346"><time datetime="2024-06-23T11:52:39+00:00" class="time">11:52</time></a></span>
+    <span class="tgme_widget_message_views">1.03K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/346"><time datetime="2024-06-23T11:52:39+00:00" class="time">11:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/347" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMDIyM2NlM2M0N2E2YTY0M2ZiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/347" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMGIyNTI5YzU5MjRhYzMwYzA0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -228,18 +339,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5170542928601394084 1203860838_456240036" href="https://t.me/vipnetmeli/347" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/PaSLrq9BuX1CkxRH6_uh0Kgh8ybDPRNa15HvbVJTkpJaE2mgq0Dkja-E7qN2wmWCQmvEcnIWI6x9XE1MqRmY5pLHx2gStbFkdz5itXvWpN2_97Ju-QdvXeKbRpB-nJQh3NYb4voWUjrNI2L1oBauWe8MqDSFOMih4Z--sk6xiHpALtE3Kxvfgmoqr3DjNB0ZdNhYSC3fZdKMjx_aeTlj-7xctQd2U6lrGj3sxMN1F8tgVgf8Qo8WF92iehDFIGtaWH5bvyrjcvuToBZFd08UD1QkCJRPbsWGim3jpzl2Vgkj-R82u8cyQF35TrQ_cnWxKyV7Yg7yygAHF-u4-Yiqlg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:45.625%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/347"><time datetime="2024-06-23T12:19:37+00:00" class="time">12:19</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/347"><time datetime="2024-06-23T12:19:37+00:00" class="time">12:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/348" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzJiM2U0MGNmOTgzNDJkZGM3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/348" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNGM3MjkwOTIzODAzOWI4Mzc2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -255,24 +364,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vipnetmeli/319" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vipnetmeli/319" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://5da27733-3527-479e-bb81-4c5a9c75d83f@viphamester.wolfmoon.ir:443?mode=multi&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;authority=&amp;type=grpc&amp;serviceName=okala.com&amp;sni=viphamester.wolfmoon.ir#opsadigvf</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>کد مورس امشب همستر:<br/>S:&nbsp;&nbsp; • • •<br/>W:&nbsp;&nbsp; • — —<br/>A:&nbsp;&nbsp; • —<br/>P:&nbsp;&nbsp; • — — •</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/348"><time datetime="2024-06-23T21:33:31+00:00" class="time">21:33</time></a></span>
+    <span class="tgme_widget_message_views">1.09K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/348"><time datetime="2024-06-23T21:33:31+00:00" class="time">21:33</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/349" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNGY0NzVhYjQ4N2Q5ZmE2ZDJhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/349" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzQ5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmUyMWZjN2Q3ZjEyNzllNmIxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -291,18 +398,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5172721447683075304 1204368064_456240360" href="https://t.me/vipnetmeli/349" style="width:570px;background-image:url('https://cdn1.cdn-telegram.org/file/C8fRr6ZcjjIJM9E_T7u6GH-4wD4xDkfBJ_u1BA7QxoFeIfaEUQJ21rp7o1ovQAC61zvW07oRSA7IorY9BaUPeKwPISfhS5ki-K9hQsrLBd4tEZqw_Ddh5n_GCGhHuG8uzF6YIYjR4YitAlcyIIyd1KSCyuENCjXKf1geYGPPqkh9rJ13hCbKaOx6CkjOGdEuoj6aBTINDvGy6QxAlUQy51w6WXqguTlmikn0IGxLbLcN6xCi0mY-5u0CEOSP5StZzK1M9IoV5IbiGzZ4l3tO_s_69TXBZGDoT5YWa9pyAkVN21ttss8_Nueux5Md_oX_szdKb1BHqJpXocolYL13Fw.jpg')">
   <div class="tgme_widget_message_photo" style="width:95%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">کارت جدید اومد قسمت special پروفیت خوبی میده<br/><br/>اشتراک گذاری کنید بزنن همه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">کارت جدید اومد قسمت special پروفیت خوبی میده<br/><br/>اشتراک گذاری کنید بزنن همه</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/349"><time datetime="2024-06-24T11:52:26+00:00" class="time">11:52</time></a></span>
+    <span class="tgme_widget_message_views">1.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/349"><time datetime="2024-06-24T11:52:26+00:00" class="time">11:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/350" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiODljMTEwYjllNTIwN2M1NDk0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/350" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNThhZmVhMWI5ZDRjNWMwNDIzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -321,18 +426,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5172721447683075306 1204368064_456240362" href="https://t.me/vipnetmeli/350" style="width:468px;background-image:url('https://cdn1.cdn-telegram.org/file/Ifc6hKDDIQnbxrKft9jFI5bdxipxlX7A1YUW0If1fu1bKewV-Pcqt4ahNa3fnQNEoKPfgP-TNgwosymZog1R8nwe9Q-t8ra-ZeJtGbIrqnNX0Y-CNxET-SZ25tVY8yyFGe2OJxR50B5Gl8A6J0uV6haj_9FJkEzUfPy_jpEhuTqQCQ8jY4revDNxGQ1q1nHs567QqHxs1arPX4PnEAc5GZXwQhnuykXOy6JM410WwmulNqft7hSbZ-HcJqN9rzvLdoRrwC3Lbv1X6e2qANPZuFHrtC7kZMNTUUD5rTqVg6u_ciH5w26eiVn577Tf8bw0fLEq2es6beXKZdVS758e9w.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:57.478632478632%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/350"><time datetime="2024-06-24T12:11:40+00:00" class="time">12:11</time></a></span>
+    <span class="tgme_widget_message_views">1.27K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/350"><time datetime="2024-06-24T12:11:40+00:00" class="time">12:11</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/351" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWNiNGExNjY3OGI0OTYzZjhhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/351" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOTNhY2ZmOTc1NTBiNjNkNzc0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -349,18 +452,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i><a href="?q=%23hamster_kombat">#hamster_kombat</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i><br/><br/>کد مورس  4 تیر<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>رمز&nbsp;&nbsp; مخفی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/>آموزش دریافت جایزه 1M&nbsp; <br/><br/>&nbsp; برای هر حرف&nbsp; کمی مکث کنید.<br/><br/>نگه دارید = خط فاصله -<br/>ضربه بزنید= نقطه ●<br/><br/>کد مورس امشب:(ALT)<br/><br/>A : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/>L : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><br/>T : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/351"><time datetime="2024-06-25T03:19:24+00:00" class="time">03:19</time></a></span>
+    <span class="tgme_widget_message_views">1.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/351"><time datetime="2024-06-25T03:19:24+00:00" class="time">03:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/352" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmYzMDY2MDYzMGIwYzQ2ZWMwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/352" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNWI5ODJjOTQwODQzNzRkNmE0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -379,18 +480,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5177225047310445557 1205416640_456240117" href="https://t.me/vipnetmeli/352" style="width:500px;background-image:url('https://cdn1.cdn-telegram.org/file/ZHPeHs3m4Db0BtJ0_szzC_ofJidrxJuXZIeSN0mOagrMvAd-m12Bu2qdvr_k1TXHVpyETAp7WpjXoEbGn7yXlWm7GshvJHAgyA31N9WGRDIp6zm6yDaeBR3U4ccc-19sDtMP5Hck9cHwGP0gJ_xqQ-CGelU3cGzZ7kzdyvmO2Rg9rUtc04pQuEtUr1UdksCF8711p9x3WRBYg0GjQR0jAGX9hSk-frVNu42uwWBVGLymu0-D4OeQbGw549f4IiAIjrxpvptdSw_aEl1itfFspFZ724VvuaZbwexlP3uoSnQNFvDi8gYGrfKwUULuHhoGz7BhvJzOBylzwqfargh_TA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:36%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E95.png')"><b>➕</b></i>کارت های امروز برای دریافت 5 میلیون سکه رایگان همستر<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>سه کارت مشخص شده رو ارتقاع بدید 5 میلیون سکه پاداش میگیرید.</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E95.png')"><b>➕</b></i>کارت های امروز برای دریافت 5 میلیون سکه رایگان همستر<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>سه کارت مشخص شده رو ارتقاع بدید 5 میلیون سکه پاداش میگیرید.</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/352"><time datetime="2024-06-25T12:19:03+00:00" class="time">12:19</time></a></span>
+    <span class="tgme_widget_message_views">1.75K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/352"><time datetime="2024-06-25T12:19:03+00:00" class="time">12:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/353" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWU3OTgwOTEyYjU3YjZhMzEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/353" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzUzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzk4Y2I4MTAxNTJkZGNhODk1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -407,18 +506,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅️</b></i><a href="?q=%23hamster_kombat">#hamster_kombat</a> <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9283.png')"><b>💃</b></i>کد مورس امشب<br/><br/><br/>FOMO<br/>F: • • - • <br/>O: - - - <br/>M: - -<br/>O: - - -<br/><br/><br/>لطفا با دوستاتون به اشتراک بزارید <br/>تا اونا هم سهیم بشن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9283.png')"><b>💃</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/353"><time datetime="2024-06-26T14:49:57+00:00" class="time">14:49</time></a></span>
+    <span class="tgme_widget_message_views">1.76K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/353"><time datetime="2024-06-26T14:49:57+00:00" class="time">14:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/354" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZWQ1N2VjYTM3ZDA3MTY0ZmEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/354" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYWM1Y2UyNTFlNzUyMTA0ZmZhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -437,18 +534,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5179444944107056253 1205933500_456240253" href="https://t.me/vipnetmeli/354" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/eFX97I0PLyS7HMR_3v0xWwDbdymuU8ty9Jf1WoqTKcmGGWaE0bZg4CQfHXr7N2F2pBGd3efY3RMaCw8KVwris4BLiH80OGBGZSS9khx_roGK1JkLrcUnoi3WSbhbH71pQBiUcv72mxjL5gHTNbZclgvxgxhpmHECSraNH49d-_cbtZ6g128fCEADPo7YN-QiBUtYVh4hcaLTtNLOJh6BycyfX-7aWSt-q6GNIoOXWls-5lk7J_lUGPAiVRMDsaRUKqaezTmavPOa8JvA6Cfbj23guhs4W5uLzGinHeTbz96nb4fVAN1wmgnaHCiC7PLGAlXGPIFgByxGmHUdO_4jaA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:44.125%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B9.png')"><b>🐹</b></i> کارت‌های جدید کمبوی امروز همستر  و دریافت پنج میلیون سکه رايگان<br/><br/>اشتراک گذاری کنید</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/354"><time datetime="2024-06-26T14:50:49+00:00" class="time">14:50</time></a></span>
+    <span class="tgme_widget_message_views">2.05K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/354"><time datetime="2024-06-26T14:50:49+00:00" class="time">14:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/355" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZTQyY2FhZDJmN2VkMWVlOTY1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/355" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiM2M1NDg1Y2JjMWYwOTRjMmE3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -465,10 +560,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://c9e4f683-ee36-47cf-9c30-f751f1c118b5@194.113.106.139:24984?security=reality&amp;encryption=none&amp;pbk=bM_ol-LozWiGNhEGFm8xkaf4TiaOBzrG8R3kybOn2no&amp;headerType=none&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=zula.ir&amp;sid=5292cb10#kp8tcxn0</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">890</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/355"><time datetime="2024-09-08T20:27:34+00:00" class="time">20:27</time></a></span>
@@ -476,7 +569,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/356" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWIzZWUyZDFhMjAwNWM4OGVmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/356" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGUwZDNhYmViMDhmNTQxZmMxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -492,15 +585,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vipnetmeli/355" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vipnetmeli/355" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://c9e4f683-ee36-47cf-9c30-f751f1c118b5@194.113.106.139:24984?security=reality&amp;encryption=none&amp;pbk=bM_ol-LozWiGNhEGFm8xkaf4TiaOBzrG8R3kybOn2no&amp;headerType=none&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=zula.ir&amp;sid=5292cb10#kp8tcxn0</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ  اختصاصی برای شما دوستان عزیز. <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i> گیگ  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -509,7 +600,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/357" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGYzNDg4NDEyOTYwMGM5YjlhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/357" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYWM5NDBlNzc1ZGJjYWU5MWI1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -526,10 +617,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://dab8ab46-5071-4d95-ac9b-bb469d6599fc@128.140.35.236:50713?security=reality&amp;encryption=none&amp;pbk=03oIukhEmNzMAGZWqcNLAHHjcVX0jLqRSa3ocMuskQY&amp;headerType=&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=nobitex.ir&amp;sid=88417bc4#vm5qbly4</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">641</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/357"><time datetime="2024-12-07T14:02:06+00:00" class="time">14:02</time></a></span>
@@ -537,7 +626,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/358" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGZjYWRjYjgzNzM0N2FmM2U0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/358" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzU4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzE3MTJiZjhlZGE2MTcxNWE0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -553,15 +642,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vipnetmeli/357" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vipnetmeli/357" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://dab8ab46-5071-4d95-ac9b-bb469d6599fc@128.140.35.236:50713?security=reality&amp;encryption=none&amp;pbk=03oIukhEmNzMAGZWqcNLAHHjcVX0jLqRSa3ocMuskQY&amp;headerType=&amp;fp=firefox&amp;spx=%2F&amp;type=tcp&amp;sni=nobitex.ir&amp;sid=88417bc4#vm5qbly4</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ  اختصاصی برای شما دوستان عزیز. <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i> گیگ  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i> مخصوص تمامی نت ها</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -570,7 +657,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/360" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzhiN2JkY2E1M2MxMTI5YWQ3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/360" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZGEyOWYzNzAxN2Q0MzQzNDUwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -587,9 +674,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/wolft_rade/20"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90BA.png')"><b>🐺</b></i> Wolf Trade | قدرت بازار</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام دوستان آماده سیگنال فارکس ساعت پنج به بعد باشید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -598,7 +683,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/361" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjIwNzdhN2YwZDFiNmJhYzFhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/361" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzY2ODIyNGMyZDQ4YjcwN2IxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -614,16 +699,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vipnetmeli/360" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vipnetmeli/360" ">
 <div class="tgme_widget_message_author accent_color">
-  <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span>
+  <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90BA.png')"><b>🐺</b></i> Wolf Trade | قدرت بازار</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">سلام دوستان آماده سیگنال فارکس ساعت پنج به بعد باشید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانال دومون در جهت فارکس  و تحلیل های معاملاتی میتونین عضو شید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">848</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/361"><time datetime="2024-12-11T11:11:44+00:00" class="time">11:11</time></a></span>
@@ -631,7 +714,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/362" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNTE3NGM0MDUyNDEwOGVmNThhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/362" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzYyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZGUxMGU3M2JhYjM2OTA3ZjMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -648,9 +731,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/wolft_rade/27"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90BA.png')"><b>🐺</b></i> Wolf Trade | قدرت بازار</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E84.png')"><b>🎄</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i> <b>کریسمس مبارک از تیم Wolf Trade&#33;</b> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CA8.png')"><b>✨</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E84.png')"><b>🎄</b></i>  <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> آرزو می‌کنیم سال 2025 پر از حساب‌های سبز <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9388.png')"><b>📈</b></i>، تارگت‌های دقیق <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i>، و موفقیت‌های چشمگیر براتون باشه&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i>  <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E8A.png')"><b>🎊</b></i> <b>به سالی پر از رشد و سود خوش آمدید&#33;</b> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>  <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i> <b>با احترام، تیم Wolf Trade</b></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -659,7 +740,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/365" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzY1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiM2YyYjg3NzNjNzNlN2YxYWU3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/365" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzY1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzAzNWJmMDI5YmMzMDMyNzdlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -676,10 +757,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB8.png')"><b>🌸</b></i> نوروز ۱۴۰۴ مبارک&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB8.png')"><b>🌸</b></i>  <br/>با <code>vipnetmeli</code> از روی محدودیت‌ها بپرید و به دنیای آزاد اینترنت سلام کنید&#33;  <br/>سال نو، اتصال نو، آزادی نو&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">514</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">#A</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vipnetmeli/365"><time datetime="2025-03-20T09:34:19+00:00" class="time">09:34</time></a></span>
@@ -687,7 +766,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/366" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMWI3YThlYmRmNDM2N2YyNThlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vipnetmeli/366" data-view="eyJjIjotMTg2MTUwMTM0NSwicCI6MzY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTMwMmI0N2Q0N2VmODBiODNiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vipnetmeli"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn1.cdn-telegram.org/file/nqkmEd6j3eqjVsuqzZ6k0sUv6afp9KB27vNCMJB7uIRmKMxb0xrCCmiF7FTlnZu99ndAHW4hgQv57NxQ3OtmMu0CXFUO1JOl6jp-AMLpjfdRwGvoExLb9aUpgc6muDJYFrsqtROW5_lV_KHSejm4n1Tz5OPxAI1y_GgpXgSSoy85aP_MtObg6fWPeX4ZybYM_yC5-MNjkXsyMw6P_kQcqvztvAnD2tl4eaWjWInE0qPYVP9d_6U13rW2Mnb7W4pp0pnVoHDQk6OcDiyZcQmaCb2gpLKT9NuCXj9It5paTRHiZ0VNmoo_69B4bNenOd05v7da2wihvaQqOa9Oxt6CrQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -704,9 +783,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vipnetmeli"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>Vip internet<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/TMv2rayngVPN/211"><span dir="auto">𝗠𝗔𝗦𝗛𝗧𝗜vpn | V2rayNG</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">𝗠𝗔𝗦𝗛𝗧𝗜</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA0.png')"><b>🟠</b></i> در حال حاضر، دسترسی بزرگ‌ترین و شناخته‌شده‌ترین دیتاسنترهای کشور از جمله آسیاتک، شاتل، رسپینا، افرانت، پیشگامان، پارس‌آنلاین، مبین‌نت، مخابرات، زیتل و دیگر مراکز مشابه به اینترنت بین‌الملل به‌طور کامل قطع شده است و هیچ‌گونه ارتباط مستقیمی با سرورهای خارجی ندارند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9982.png')"><b>🙂</b></i> در این میان، تنها برخی از آدرس‌های IP خاص از دو دیتاسنتر نامشخص و گمنام که تا پیش از این، صرفاً میزبان سرورهای سازمان‌های دولتی بوده‌اند، دسترسی محدودی به اینترنت بین‌الملل دارند.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> این دیتاسنترها نیز به هیچ‌وجه خدماتی به کاربران حقیقی یا شرکت‌های خصوصی ارائه نمی‌دهند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9982.png')"><b>🙂</b></i> نکته قابل‌تأمل این است که چگونه تنها یک ارائه‌دهنده VPN در سطح کشور، توانسته از هر دوی این دیتاسنترها، سرور اختصاصی دریافت کند؛ سؤالی که پاسخ آن، برای بسیاری از افراد واضح است&#33; <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> در این شرایط، از میان هزاران IP مختلف، شاید تنها دو یا سه سرور امکان اتصال به خارج از کشور را داشته باشند، آن‌هم به‌صورت کاملاً ناپایدار.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> با افزایش تعداد کاربران و مصرف پهنای باند، این مسیرها نیز به‌سرعت مسدود می‌شوند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> متأسفانه، برخی افراد سودجو با فروش کانفیگ‌هایی تحت عنوان &quot;اختصاصی برای خط همراه اول&quot; یا &quot;فقط مخصوص ایرانسل&quot; با قیمت‌های گزاف، سعی در سوءاستفاده از این شرایط دارند.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> این اتصال‌ها هیچ‌گونه تضمینی ندارند و در کمتر از چند ساعت قطع می‌شوند.</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -724,11 +801,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 65.06ms -->
+<!-- page generated in 60.86ms -->

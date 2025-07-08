@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">3.04K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">18</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">video</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">17</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">دسترسی به اینترنت آزاد  رایگان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AB6.png')"><b>🚶</b></i></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=712834cacceea7a312_11259346058458911685">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=45ad72257db26e2324_6417096924598104530">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=712834cacceea7a312_11259346058458911685">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=45ad72257db26e2324_6417096924598104530">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/redfree8">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/redfree8">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/redfree8?before=352" class="tme_messages_more js-messages_more" data-before="352"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/352" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzUyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjYwZGY1YTY4YTJmNGNmZmVhIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/redfree8?before=352" class="tme_messages_more js-messages_more" data-before="352"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/352" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzUyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiN2QzNWRjMDcyMWQ0MzdjZTg0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/353" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzUzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTQ1MTI2ZTg5NGRlZDlhNzc1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/353" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzUzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMzAzZWFjYjhhMzA0NzkzMWUzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,23 +271,18 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/new_folder_revil/3408"><span dir="auto">New Folder</span></a></div>
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/redfree8/353" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<a class="tgme_widget_message_photo_wrap 5870855526810765047 1366915071_456247031" href="https://t.me/redfree8/353" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/k9YipwsMkyI_inmpesRAiC7Ag4TiU2ga-rc7fICMAywaXvIL-Kp0f1AUozN0bXQ1G8O4ymjOrMstwgD_obmgz_l4fH7fr16I0_g7owYy8MDoIAiVZ5qwUwNmisqrzk9Hfpsyyu0fhlqtMp63d86Vs8M4jsJ4wmveSkTbaROL9asYwEsDA_V_R_ceGyIA9CM8LtapoUtuYKi-Idll2JEw43eRbWny-AD-enCNY5zY-WHXfciPVrqUScoH2kPgPhefUnv2YYgxyHACE84TBMKt3lk6ZMrBo-LZSHkDdEG03YHCXSTZ8ICCcpXx8-Q0eZeMfVEivyK2aFLjC62DYZWYQw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote><a href="http://one.google.com/join/ai-student" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Gemini pro for free</a></blockquote><br/><br/>بچه ها اینو بگیرید تا طرحش تموم نشده، جمنای پرو 100&#036; پونزده ماهه رایگان<br/>با آی‌پی آمریکا وارد این لینک بشید<br/><br/><a href="http://one.google.com/join/ai-student" target="_blank" rel="noopener">http://one.google.com/join/ai-student</a><br/><br/>  و روی گزینه Get student offer کلیک کنید تا تایید بشه، بعد اگه وارد سایت جمنای یا اپلیکیشن اون بشید میبینید که پرو شده.<br/><blockquote>طرح برای آمریکاست پس آی‌پی آمریکا یادتون نره</blockquote><br/><br/><a href="https://gemini.google.com/app" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک سایت Gemini</a><br/><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک گوگل پلی استور</a><br/><a href="https://apps.apple.com/us/app/google-gemini/id6477489729" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک اپل استور</a><br/><br/><blockquote expandable>Google AI Pro includes access to the following features and benefits:<br/>Gemini app with 2.5 Pro and Veo 2<br/>Flow with Veo 2 (US only)<br/>Whisk with Veo 2<br/>NotebookLM with higher limits<br/>Gemini in Gmail, Docs, Vids, and more<br/>2 TB Storage</blockquote></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/353"><time datetime="2025-05-22T12:34:45+00:00" class="time">12:34</time></a></span>
+    <span class="tgme_widget_message_views">1.78K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/353"><time datetime="2025-05-22T12:34:45+00:00" class="time">12:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/354" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiOThlZDdiYjU2ZjM4MzFkZWFmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/354" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDg1ZjU0NTk4YTYzMGNhZjg5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -191,18 +301,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5870640825690605548 1366865082_456247276" href="https://t.me/redfree8/354" style="width:389px;background-image:url('https://cdn4.cdn-telegram.org/file/QeutJowOy4y8IFtByyAs-1HinMx8KlYQCbZNLceJbc94ZSnICngBZzeUm941X6OFVJ1y_37O6huF06H9wjj-CkSPBe4fsMqJKmnB_J1MI7-EYbowg0Trhu589iavDKmuc4cMGBKG-08AFH0LoE8VQ2wBnBs-XXIK_SfQ7MHat7fKS068Uk_hZtXYNz2SmHyzW7XrxrFRcgwe3YLFxRVsdVbCnVyNwT1FDF1egrMEUZyp-ObZ-ZHa1uUPap5mjRHYvr568gpBakUj_T55QAwv1GYTg-UPrXC5aHDOb9Y5TiUe-__xpZGejzMyz4lrrvFw8DUgG6twL85mhLppWOa6KQ.jpg')">
   <div class="tgme_widget_message_photo" style="width:64.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">وقتی اوکی شد دور عکس پروفایل اکانت گوگل خودتون رو چک کنید رنگین کمون شده و داخل اپلیکیشن یا نسخه وب هم اون بالا می‌نویسه Gemini advanced یعنی اوکی بوده پروسه.<br/><br/>چندتا مدل بی نظیر داره واسه استفاده، برای کارهای روتین، تحقیقاتی و دیپ سرچ و غیره مدل 2.5 flash خیلی خوبه و برای وظایف تحلیلی، معادلات، محاسبات و برنامه نویسی قطعا مدل 2.5 pro فوق العادست، بدون هیچ محدودیتی نه لیمیت context window نه تعداد کاراکتر نه توکن نه تعداد پیام در چت یا تعداد پیام در روز هیچی هیچی.<br/><br/>ذاتا چند وقتی بود همینو از داخل <a href="https://ai.dev/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">گوگل استودیو</a> استفاده می‌کردیم، الان هم که اومد داخل اپلیکیشن بهتر تر شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48CF09F8FBC.png')"><b>🤌🏼</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">وقتی اوکی شد دور عکس پروفایل اکانت گوگل خودتون رو چک کنید رنگین کمون شده و داخل اپلیکیشن یا نسخه وب هم اون بالا می‌نویسه Gemini advanced یعنی اوکی بوده پروسه.<br/><br/>چندتا مدل بی نظیر داره واسه استفاده، برای کارهای روتین، تحقیقاتی و دیپ سرچ و غیره مدل 2.5 flash خیلی خوبه و برای وظایف تحلیلی، معادلات، محاسبات و برنامه نویسی قطعا مدل 2.5 pro فوق العادست، بدون هیچ محدودیتی نه لیمیت context window نه تعداد کاراکتر نه توکن نه تعداد پیام در چت یا تعداد پیام در روز هیچی هیچی.<br/><br/>ذاتا چند وقتی بود همینو از داخل <a href="https://ai.dev/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">گوگل استودیو</a> استفاده می‌کردیم، الان هم که اومد داخل اپلیکیشن بهتر تر شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48CF09F8FBC.png')"><b>🤌🏼</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/354"><time datetime="2025-05-22T12:34:58+00:00" class="time">12:34</time></a></span>
+    <span class="tgme_widget_message_views">2.09K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/354"><time datetime="2025-05-22T12:34:58+00:00" class="time">12:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/355" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDU4MWIwMTg2MzkxNGM5YzMwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/355" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTI2ZjRkMmJkNzIyNDMxMjdmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -217,20 +325,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i>فقط عجله کنید تا مهلتش تموم نشده<br/><br/>تایم استفاده از کانفیگ های پایین محدوده اگه وصل نشد بگید عوض کنم فعلا که وصله <br/><br/>برای وصل شدن به ایپی امریکا از این استفاده کنید <br/>تو هیدیفای هم میتونید بزنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://raw.githubusercontent.com/NiREvil/vless/refs/heads/main/hiddify/H2%20SINGBOX%20HOSS" target="_blank" rel="noopener">https://raw.githubusercontent.com/NiREvil/vless/refs/heads/main/hiddify/H2%20SINGBOX%20HOSS</a><br/><br/><a href="https://t.me/Redfree8" target="_blank">@Redfree8</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/355"><time datetime="2025-05-22T12:36:29+00:00" class="time">12:36</time></a></span>
+    <span class="tgme_widget_message_views">2.54K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/355"><time datetime="2025-05-22T12:36:29+00:00" class="time">12:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/356" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjY2OGM0ZDBlZGViZDkyNjg1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/356" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNjc5MTEyMjg1ZmQzZWYzMjhiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -247,9 +353,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i>فقط عجله کنید تا مهلتش تموم نشده  تایم استفاده از کانفیگ های پایین محدوده اگه وصل نشد بگید عوض کنم فعلا که وصله   برای وصل شدن به ایپی امریکا از این استفاده کنید  تو هیدیفای هم میتونید بزنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i>  https://raw.githubusercontent.com/NiREvil/vless/refs/heads/…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -258,7 +362,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/357" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYmZkMzcyYzk4MjIxNGVkYzU0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/357" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWFmMjU4YjNmYmMxOGZjMjAyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -277,18 +381,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5895506753599161735 1372654632_456246663" href="https://t.me/redfree8/357" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/pwsrj3R1dYSDQZMUC6wYC_e0EFwEBqbu1yp7E_7UqlQ83aTIuZhSbRCON5sE6lFlObFuwvWII5PBVgZLkODSLwlBHY_qLfURX_-mFXDNZk22oqasFrmnUk3Ae3Ho80rXnpF4rrr1qvE8NLRa2HIena3eEi99_Dr0Uq6AkaMriSgxSXz_mWXtQCA-Kk1WRhYwTXWyTkNDBnbSX3W2I669XmOhrUcznfG_9O6kG-merukSxmCpWZjrYpi3CyCEI6i8e5jjvb5HSn8qUBDqTAHxrhFdS0OAQxIuYmf6gy8-lfQ989LmXABqws-z2As0NChx0TPvTeiMOS9C0-uOYspP4Q.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:55.375%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948E.png')"><b>🔎</b></i> معرفی ابزار OSINT<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> ربات <a href="https://t.me/SearchLogsRobot?start=01016180052900000000" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">https://t.me/SearchLogsRobot?start=0101C2A32C3600000000</a><br/> یکی از ابزارهای جالب برای بررسی و تحلیل پیام‌های عمومی در گروه‌های بزرگ تلگرامه.<br/>این ربات توسط پروژه‌ی <a href="https://teletype.in/@telelog/legal_rus" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Telelog</a> ساخته شده و هدفش <b>ثبت و جستجوی پیام‌های عمومی</b> منتشرشده در گروه‌های پرجمعیت تلگرامه — بدون دسترسی به چت‌های خصوصی یا داده‌های شخصی.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A0.png')"><b>🧠</b></i> کاربردها: <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> بررسی پیام‌های یک کاربر خاص در گروه‌های عمومی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> مشاهده اینکه یک آیدی در چه گروه‌هایی پیام داده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> استخراج پیام‌هایی که اون کاربر با اون آیدی منتشر کرده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> در مواردی، بررسی اینکه از چه کانال‌هایی پیام فوروارد کرده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> ردیابی ترندها و کلمات پرکاربرد در چت‌های عمومی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> فقط کافیه آیدی تلگرام یه کاربر (مثل <a href="https://t.me/example" target="_blank">@example</a>) رو به ربات بدید، تا لیست پیام‌ها و گروه‌هایی که اون آیدی درش فعال بوده رو نشون بده.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> توجه:<br/>این ربات فقط به <b>داده‌های عمومی</b> دسترسی داره. نه پیام‌های خصوصی، نه گروه‌های بسته، و نه چت‌های شخصی. با این حال، برای تحلیل OSINT خیلی کاربردیه.<br/><a href="?q=%23osint">#osint</a> #</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948E.png')"><b>🔎</b></i> معرفی ابزار OSINT<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> ربات <a href="https://t.me/SearchLogsRobot?start=01016180052900000000" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">https://t.me/SearchLogsRobot?start=0101C2A32C3600000000</a><br/> یکی از ابزارهای جالب برای بررسی و تحلیل پیام‌های عمومی در گروه‌های بزرگ تلگرامه.<br/>این ربات توسط پروژه‌ی <a href="https://teletype.in/@telelog/legal_rus" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Telelog</a> ساخته شده و هدفش <b>ثبت و جستجوی پیام‌های عمومی</b> منتشرشده در گروه‌های پرجمعیت تلگرامه — بدون دسترسی به چت‌های خصوصی یا داده‌های شخصی.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A0.png')"><b>🧠</b></i> کاربردها: <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> بررسی پیام‌های یک کاربر خاص در گروه‌های عمومی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> مشاهده اینکه یک آیدی در چه گروه‌هایی پیام داده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> استخراج پیام‌هایی که اون کاربر با اون آیدی منتشر کرده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> در مواردی، بررسی اینکه از چه کانال‌هایی پیام فوروارد کرده<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i> ردیابی ترندها و کلمات پرکاربرد در چت‌های عمومی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> فقط کافیه آیدی تلگرام یه کاربر (مثل <a href="https://t.me/example" target="_blank">@example</a>) رو به ربات بدید، تا لیست پیام‌ها و گروه‌هایی که اون آیدی درش فعال بوده رو نشون بده.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> توجه:<br/>این ربات فقط به <b>داده‌های عمومی</b> دسترسی داره. نه پیام‌های خصوصی، نه گروه‌های بسته، و نه چت‌های شخصی. با این حال، برای تحلیل OSINT خیلی کاربردیه.<br/><a href="?q=%23osint">#osint</a> #</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/357"><time datetime="2025-05-30T08:46:18+00:00" class="time">08:46</time></a></span>
+    <span class="tgme_widget_message_views">2.01K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/357"><time datetime="2025-05-30T08:46:18+00:00" class="time">08:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/358" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiODMzNDJhMDkzYjc1MzcyZTU5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/358" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzU4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjA4OWYxNzFiODhkZTA2ZDAyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -304,18 +406,16 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/redfree8/357" ><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/SSFGoZJtS15yOwlLeMOG5gT7EP9-qaPmPkiX_Hc6R6EHJAhLi629-EkaQ2G5ZDnybWr4IaLhLrohEDXHQ7AlcPeZAh72PkNirEXmkHorzLR6C1jRW6iiASGArHoRPLco4a_clrppFsSOVcrjrQqrY2Tn2Hkz069iJsqUsFSzGy35rLs2YyhDuNcCfZWfO-48JgQ28yZf6KT6FUiTB3excQRFZMCepyyDq2-rjy6oTu1EWOhfTuA4MwPsMA-L7IUMSHdEpdUa_tGkaLbJItg0o4GGfzGui1LDbiJryM44sBa01zi3PTBKU8WLcyefZL-t0CXb4Kk0vVEmKSGS_sOniQ.jpg')"></i>
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/redfree8/357" "><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/SSFGoZJtS15yOwlLeMOG5gT7EP9-qaPmPkiX_Hc6R6EHJAhLi629-EkaQ2G5ZDnybWr4IaLhLrohEDXHQ7AlcPeZAh72PkNirEXmkHorzLR6C1jRW6iiASGArHoRPLco4a_clrppFsSOVcrjrQqrY2Tn2Hkz069iJsqUsFSzGy35rLs2YyhDuNcCfZWfO-48JgQ28yZf6KT6FUiTB3excQRFZMCepyyDq2-rjy6oTu1EWOhfTuA4MwPsMA-L7IUMSHdEpdUa_tGkaLbJItg0o4GGfzGui1LDbiJryM44sBa01zi3PTBKU8WLcyefZL-t0CXb4Kk0vVEmKSGS_sOniQ.jpg')"></i>
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">redfree8</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948E.png')"><b>🔎</b></i> معرفی ابزار OSINT <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> ربات https://t.me/SearchLogsRobot?start=0101C2A32C3600000000  یکی از ابزارهای جالب برای بررسی و تحلیل پیام‌های عمومی در گروه‌های بزرگ تلگرامه. این ربات توسط پروژه‌ی Telelog ساخته شده و هدفش ثبت و جستجوی پیام‌های عمومی منتشرشده در گروه‌های…</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948E.png')"><b>🔎</b></i> معرفی ابزار OSINT <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> ربات https://t.me/SearchLogsRobot?start=0101C2A32C3600000000  یکی از ابزارهای جالب برای بررسی و تحلیل پیام‌های عمومی در گروه‌های بزرگ تلگرامه. این ربات توسط پروژه‌ی Telelog ساخته شده و هدفش ثبت و جستجوی پیام‌های عمومی منتشرشده در گروه‌های…</div>
 </a>
 <a class="tgme_widget_message_photo_wrap blured 5895506753599161736 1372654632_456246664" href="https://t.me/redfree8/358" style="width:482px;background-image:url('https://cdn4.cdn-telegram.org/file/OdnFd1yHXUxoigndmB91G7HFxmFf3V8oj4VEAcaxIdrFpmzL_uSzJmmGrpSV7q1i1Ie1MAJxflfkk-qApIFE7FkSbIJFVDu7J7dl8jfSIYY6rA4zIHcW384c34VdCS8eWEjwJEdZLCLHFskYQ48IoMyNqJSf7yynC6ai9Qd94gwYWudfSHvTQ_4l5F_m194ThRzrqUuyJgZXfRth6q5B770ARJVfZN9W4mqItAN4Tz0vjYaXPtuMaHMvrxHqGIcNRdh1FIbBSqRCzhILMMwry0vl_Ne1WfZTn0eqKmhEZu83fItCUofX4eerdYm_Buz7-Z23rLUKAh34QuW7j2LRbg.jpg')">
   <div class="tgme_widget_message_photo" style="width:80.333333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">ببینید اینجا حتی تک تک پیامهایی که تو هر گروه عمومی گذاشتید برای همه قابل مشاهده س ، تو هر کانالی که باشید همه میتونن ببینن <br/><br/>فقط هم با آیدی کار میکنه نه شماره تلفن نه اسم<br/><br/>راستش مردد بودم  تو معرفی این بات ، ولی بهرحال چیزیکه هست&nbsp; اگر در گروه عمومی پیامی دارید که فکر میکنید برای شما دردسرساز میشه سریع پاک کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B7.png')"><b>🥷</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">ببینید اینجا حتی تک تک پیامهایی که تو هر گروه عمومی گذاشتید برای همه قابل مشاهده س ، تو هر کانالی که باشید همه میتونن ببینن <br/><br/>فقط هم با آیدی کار میکنه نه شماره تلفن نه اسم<br/><br/>راستش مردد بودم  تو معرفی این بات ، ولی بهرحال چیزیکه هست&nbsp; اگر در گروه عمومی پیامی دارید که فکر میکنید برای شما دردسرساز میشه سریع پاک کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B7.png')"><b>🥷</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/358"><time datetime="2025-05-30T08:47:16+00:00" class="time">08:47</time></a></span>
@@ -323,7 +423,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/361" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYWQ4NGEyZDQwMzc5ZmMzMGRkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/361" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTM5MzY3ZTM1MjRmMDQ2OTU1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -340,9 +440,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a> pinned Deleted message</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -351,7 +449,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/362" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjgyYTE5NzI2YTU3N2MyYzViIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/362" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNmZjMDc2NGVkMTg5MzYzYTBlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -368,18 +466,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A4.png')"><b>🖤</b></i>فقط ۵ ثانیه برای نجات ؛ به یاد الهه حسین‌ نژاد<br/><br/>&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>با شنیدن خبر تلخ قتل الهه عزیز، تصمیم گرفتیم یه آموزش فوری و کاربردی براتون بذاریم؛ چون شاید همین تنظیمات ساده، یه روز جون کسی رو نجات بده…<br/><br/><a href="https://t.me/redfree8" target="_blank">@redfree8</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i> فعالسازی تماس اضطراری توی گوشی‌ها:<br/><br/>&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i> آیفون :<br/><br/>&rlm;Settings &gt; Emergency SOS &gt; Call with Side Button<br/><br/>&rlm;+ فشردن پاور + ولوم = تماس با 110 + ارسال لوکیشن<br/>————————————————<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i> سامسونگ :<br/><br/>&rlm;Settings &gt; Safety &amp; emergency &gt; Send SOS messages<br/><br/>&rlm;+ بعد از انتخاب مخاطب اضطراری با 3 بار زدن پاور : پیام + لوکیشن واسه مخاطبتون فرستاده میشه.<br/>———————————————<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/C2AE.png')"><b>®️</b></i> شیائومی :<br/><br/>&rlm;Settings &gt; Passwords &amp; Security &gt; Emergency SOS<br/><br/>&rlm;+ بعد از وارد کردن شماره‌های اضطراری ، با 5 بار زدن پاور پیام و لوکیشن ارسال میشه...<br/><br/><a href="https://t.me/redfree8" target="_blank">@redfree8</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/362"><time datetime="2025-06-09T10:13:51+00:00" class="time">10:13</time></a></span>
+    <span class="tgme_widget_message_views">1.89K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/362"><time datetime="2025-06-09T10:13:51+00:00" class="time">10:13</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/363" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiY2ZjODAxOWM0OWIxYzJhZTU2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/363" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzYzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiY2NjY2U0MzE1NjQ5ZTcyZTA3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -396,9 +492,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">این گروه به منظور ارسال پروکسی و ارسال کانفیگ ساخته شده. <br/>چت و فعالیت های غیر ارسال پروکسی و فیلترشکن ممنوع است<br/><br/>لینک گروه : <a href="https://t.me/+xvfXWNVnIeU0OTQ0" target="_blank" rel="noopener">https://t.me/+xvfXWNVnIeU0OTQ0</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/+xvfXWNVnIeU0OTQ0">
+<div class="tgme_widget_message_text js-message_text" dir="auto">این گروه به منظور ارسال پروکسی و ارسال کانفیگ ساخته شده. <br/>چت و فعالیت های غیر ارسال پروکسی و فیلترشکن ممنوع است<br/><br/>لینک گروه : <a href="https://t.me/+xvfXWNVnIeU0OTQ0" target="_blank" rel="noopener">https://t.me/+xvfXWNVnIeU0OTQ0</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/+xvfXWNVnIeU0OTQ0">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/rVrUKleMQWkW9jl25mcujBMwuJBnbGqi-pBt4uoTVxqPRaWtGH2XmXE3BFrd6oEDR6CMc6tPQY0AGB1BqpPPSzGu0VJkjTPlV8Ct441pqyV7gbumHEgmxu6BOK3XP3DTJ2dniMkjEZdZd5_f1AO5ys6mvwyhYoiZFCk7jbPo-SD-p1XrpqpVz0VxxDvzmD7F-BlUddXuF-LL3RdXaicOzP5jmrjzCf-OIVe04uh8TEN0LORlpfbDnbN_4i7HAEJB6WohwruTQm_1Vt44BnSn_O381rzF42fJ5UgC-RJ8MHwHKKMjWzTw6MY-jTAIvzukJmlwh5M0Us5_SsHrzPClMA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
@@ -413,7 +507,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/364" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiY2Y4ZDEzN2I5NDc1ZDQ0NzMyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/364" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzllODhjZTZlZGRiNDZjMmY2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -428,20 +522,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=hk.laoyoutiao.link&amp;path=/TelegramU0001F1E8U0001F1F3#1</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/364"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.22K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/364"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/365" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmUzN2I2ZWVmMjMwNWRiMjE0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/365" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjljNjU0NzJmMTNlOTM1Y2JkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -456,20 +548,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=hk.laoyoutiao.link&amp;path=%252FTelegramU0001F1E8U0001F1F3#2</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/365"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.24K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/365"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/366" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNzcwNzIzYmIyMjZmZWVlY2IzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/366" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMzA2YTY0ZTY0YzdhOTE0MDZlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -484,20 +574,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=hk.laoyoutiao.link&amp;path=/TelegramU0001F1E8U0001F1F3#3</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/366"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.33K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/366"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/367" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiOWVlNTBmYmZiN2VjMmU3Y2UwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/367" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMWVjZWU4YTIwNDJjYjI4MjI4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -514,10 +602,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.176.213:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=jp.laoyoutiao.link&amp;path=/#4</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/367"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
@@ -525,7 +611,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/368" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNGUyMjk3NTQ1NjM5NjFlN2ZmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/368" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNmMzNTA4ZTUwMGI2Mzc4OWZmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -540,20 +626,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.176.213:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=jp.laoyoutiao.link&amp;path=/#5</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/368"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.43K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/368"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/369" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDI2YzYyNzIzOWI1YjBmNmQ4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/369" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzY5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMGJiODk5YTQ1ZjM1ODM4MjllIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -568,20 +652,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=hk.laoyoutiao.link&amp;path=/TelegramU0001F1E8U0001F1F3#6</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/369"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.45K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/369"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/370" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzcwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmZjZTA5YTMxYzJjOWU3M2FlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/370" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzcwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDEyYzgxYjEzNWJkZWFmZjQ2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -596,20 +678,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><tg-spoiler><b>vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.176.213:8880?security=none&amp;encryption=none&amp;type=ws&amp;host=jp.laoyoutiao.link&amp;path=/#7</b></tg-spoiler></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/370"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">1.57K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/370"><time datetime="2025-06-21T08:17:26+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/372" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzcyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiODNiZTA2ZTYzNjkyYWE5ZmQwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/372" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzcyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDI5N2IyNDZkY2EzNWUzYTU2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -626,24 +706,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29880.png')"><b>☀️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>تبلیغات نیست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29880.png')"><b>☀️</b></i><br/><br/>اکانت تست هم داره  اول اکانت تست رو بگیرید <br/>بعد برید تمدیدش کنید <br/>خودم چندتایی گرفتم <br/><br/><br/><br/>تنها کمکی که فعلا ازم بر میاد معرفی vpn فروشایی هستن که سروراشون اوکین<br/><br/><br/>شمام اگه ربات خرید vpn میشناسین که ازشون خرید کردین و اوکین تو ربات بفرستین<br/><br/>کمک کنین به همدیگه<br/><br/>خودم سرور کانفیگ میکردم که رایگان بزارم چنل استفاده کنین ولی نامردا <br/>بستن<br/><br/><a href="https://t.me/vpntogo_bot?start=908895170" target="_blank" rel="noopener"><tg-spoiler>https://t.me/vpntogo_bot?start=908895170</tg-spoiler></a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/vpntogo_bot?start=908895170">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29880.png')"><b>☀️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>تبلیغات نیست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29880.png')"><b>☀️</b></i><br/><br/>اکانت تست هم داره  اول اکانت تست رو بگیرید <br/>بعد برید تمدیدش کنید <br/>خودم چندتایی گرفتم <br/><br/><br/><br/>تنها کمکی که فعلا ازم بر میاد معرفی vpn فروشایی هستن که سروراشون اوکین<br/><br/><br/>شمام اگه ربات خرید vpn میشناسین که ازشون خرید کردین و اوکین تو ربات بفرستین<br/><br/>کمک کنین به همدیگه<br/><br/>خودم سرور کانفیگ میکردم که رایگان بزارم چنل استفاده کنین ولی نامردا <br/>بستن<br/><br/><a href="https://t.me/vpntogo_bot?start=908895170" target="_blank" rel="noopener"><tg-spoiler>https://t.me/vpntogo_bot?start=908895170</tg-spoiler></a></div><a class="tgme_widget_message_link_preview" href="https://t.me/vpntogo_bot?start=908895170">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/NLaREqKcjLuC6FicgW_KXWkVv-W0pJNWtzU1u4kKiGe2DOFp9GWLdqEbpu99eFHXstm-XDOFU4wzxEjPegZpI5Ekfzua74wonvQINb1PN9Sgv2rCIYUvPr_2NNas4yZ49wwIucF4Xp5vFDjdNc13pwm5ikp6rBOkjZE9s1nCjoxWm6pYZ1rbHGD_kjQuh87RCPF6I3t8I5EcfzZFu-V8GBIkofli8lx7FAxpugcOEPRG_kpZtvoKteQtjRrIFuzReAtXphp58B-xL0g-8rUOlVe9KUOEouNvOXqmAgFQu7Wjxv_NUQRv6pMHs4QvkaD424q5tKD2WU0wuqSjgMfvjA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">ToGo</div>
   <div class="link_preview_description" dir="auto">وی‌پی‌ان با ۹ کشور <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87B7.png')"><b>🇫🇷</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87AD.png')"><b>🇨🇭</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B8F09F87AC.png')"><b>🇸🇬</b></i>، آی‌پی ثابت، سرور نیم‌بها، پشتیبانی تا روز آخر، سابقه ۲+ سال، مناسب ترید</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/372"><time datetime="2025-06-25T05:28:03+00:00" class="time">05:28</time></a></span>
+    <span class="tgme_widget_message_views">1.04K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/redfree8/372"><time datetime="2025-06-25T05:28:03+00:00" class="time">05:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/373" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzczLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOWEzNTYxN2I4NGU0M2M1N2ExIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="redfree8/373" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6MzczLCJ0IjoxNzUxOTgxNTU5LCJoIjoiOWU1NjZkMDUzZDAzNGEyNWIyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -660,9 +738,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -671,7 +747,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/374" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6Mzc0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTFkYjEwZTI2Njk3ZDY2NWI2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="redfree8/374" data-view="eyJjIjotMTU1NTMwMDcwNiwicCI6Mzc0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjk1NjQ5ZDM3YzRiMTE4YTVmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/redfree8"><i class="tgme_widget_message_user_photo bgcolor1" data-content="r"><img src="https://cdn4.cdn-telegram.org/file/UfG1HWJeHghDeuyMH8a8GIDS-Glafy8er_2Pt0UyNZjHEabTRy0-XijWWuqdT9pKS7AMM1F-4OOVU5HYwqOdONk4VWxwmoXmyDMiHhOQssctGjF5VyTAlWQhMZgs4ZZnKSP8KqLd4bGXHpG4xTZFi3mQnMDzyuywqVrz67SvJbHeBU2XQlogZQdw8UT1H6mNuAV8AsuUvx4rml5tGp_aFFuLsJR6mgVKJx38-mNojuRqrM_OvceySugqYvmwPyJoqTOJQI2EKYSehfIX6jIgEcm_2l97VYF4lUvLheYxmfvVCq2URTygQnPVvgTbqeCtYmAOk3f5EHRC46I86VZUXQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -687,25 +763,23 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/redfree8"><span dir="auto">redfree8</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/redfree8/331" ><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/ZlBNq1cz_v2QDgEndNUM9Y4J6wusgwIGtqqo81R08ez_pbEYS0ICEa3tx90AKrbM5oj2vV2rmKcchffnUqUNOzV_e1RxSr1o3HAKy-BXhsiKYuiQp2iU7pq1a6lT1vEB_OUBe4ITHJmIMIzp13_830J2o8KJdAK0fv6SmHFX2JNRdmZPSSKDJVvYu-fJpky-sc9cKro1lq0L3FQwNjO_NUW9CvZD8MLoA2T1iY-eBE8cg2LMIIkw7mEOOU8_ZjhG6pPZ1tX2ea839WC6pR8IxJx5Hm5bjV6Zd3Qe6qLkwbmwOwJc_qD50V-IzGB8-0nMLnRl-VE91KTCRicWFkreQw.jpg')"></i>
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/redfree8/331" "><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/ZlBNq1cz_v2QDgEndNUM9Y4J6wusgwIGtqqo81R08ez_pbEYS0ICEa3tx90AKrbM5oj2vV2rmKcchffnUqUNOzV_e1RxSr1o3HAKy-BXhsiKYuiQp2iU7pq1a6lT1vEB_OUBe4ITHJmIMIzp13_830J2o8KJdAK0fv6SmHFX2JNRdmZPSSKDJVvYu-fJpky-sc9cKro1lq0L3FQwNjO_NUW9CvZD8MLoA2T1iY-eBE8cg2LMIIkw7mEOOU8_ZjhG6pPZ1tX2ea839WC6pR8IxJx5Hm5bjV6Zd3Qe6qLkwbmwOwJc_qD50V-IzGB8-0nMLnRl-VE91KTCRicWFkreQw.jpg')"></i>
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">redfree8</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i>لینک ساب جدید  shadowsocks مخصوص برنامه هیدیفای  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>پر سرعت و پینگ پایین لذت ببرید   <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791F09F8FBBE2808DF09F92BB.png')"><b>🧑🏻‍💻</b></i>(shadowsocks)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791F09F8FBBE2808DF09F92BB.png')"><b>🧑🏻‍💻</b></i>  HIDDYFY(هیدیفای)مخصوص اندروید  لینک دانلود مستقیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i> #hiddify  https://github.com/hiddify/hiddify-next/releases/download/v2.5.7/Hiddify-Android-arm7.apk…</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i>لینک ساب جدید  shadowsocks مخصوص برنامه هیدیفای  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>پر سرعت و پینگ پایین لذت ببرید   <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791F09F8FBBE2808DF09F92BB.png')"><b>🧑🏻‍💻</b></i>(shadowsocks)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA791F09F8FBBE2808DF09F92BB.png')"><b>🧑🏻‍💻</b></i>  HIDDYFY(هیدیفای)مخصوص اندروید  لینک دانلود مستقیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i> #hiddify  https://github.com/hiddify/hiddify-next/releases/download/v2.5.7/Hiddify-Android-arm7.apk…</div>
 </a>
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">تو برنامه کارینگ سرعت خیلی خوبی میگیرید <br/>رو حالت خودکار بذارید <br/>هم برنامش برا ایفون هست  هم اندروید<br/><br/><br/>ایفون<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://apps.apple.com/app/id6472431552" target="_blank" rel="noopener">https://apps.apple.com/app/id6472431552</a><br/><br/>اندروید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://github.com/KaringX/karing/releases/download/v1.1.4.730/karing_1.1.4.730_android_armeabi-v7a.apk" target="_blank" rel="noopener">https://github.com/KaringX/karing/releases/download/v1.1.4.730/karing_1.1.4.730_android_armeabi-v7a.apk</a><br/><br/><br/><br/>اینم لینک ساب بزنید تو برنامه کارینگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://zaya.io/redfree8_pooria_red" target="_blank" rel="noopener">https://zaya.io/redfree8_pooria_red</a><br/><br/><br/><a href="https://t.me/redfree8" target="_blank">@redfree8</a></div>
-<a class="tgme_widget_message_link_preview" href="https://apps.apple.com/app/id6472431552">
+<div class="tgme_widget_message_text js-message_text" dir="auto">تو برنامه کارینگ سرعت خیلی خوبی میگیرید <br/>رو حالت خودکار بذارید <br/>هم برنامش برا ایفون هست  هم اندروید<br/><br/><br/>ایفون<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://apps.apple.com/app/id6472431552" target="_blank" rel="noopener">https://apps.apple.com/app/id6472431552</a><br/><br/>اندروید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://github.com/KaringX/karing/releases/download/v1.1.4.730/karing_1.1.4.730_android_armeabi-v7a.apk" target="_blank" rel="noopener">https://github.com/KaringX/karing/releases/download/v1.1.4.730/karing_1.1.4.730_android_armeabi-v7a.apk</a><br/><br/><br/><br/>اینم لینک ساب بزنید تو برنامه کارینگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://zaya.io/redfree8_pooria_red" target="_blank" rel="noopener">https://zaya.io/redfree8_pooria_red</a><br/><br/><br/><a href="https://t.me/redfree8" target="_blank">@redfree8</a></div><a class="tgme_widget_message_link_preview" href="https://apps.apple.com/app/id6472431552">
   
   <div class="link_preview_site_name accent_color" dir="auto">App Store</div>
   <i class="link_preview_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/RXvTFCybHfbo1LIw1eYzZSSKi5Pw56eKSjDi_svXRGkgRrKhJiXJuYWOQI0p2PYsfy6O2n7vaszpvBXmTJfjT8YG1XLj4Tjf6fYnbw6JVNSK8nO_l4V1sIalukgae_92oOz5QaDbvpyIJwaoyeiTe-J9UX1__F2rgf_ItYqSQcnaLm8urqdFveZl3LJS1is36QCLShivaG_tyNNcI40LemZYApR7onQC_ZQcxJvrKHhJS5F1Fup_HJ04MFFi1rRn6fZzi-lHd9rDal1UpNrUjbbH6JtblfZxmpPNPcFg_ssw9OsilbTTuAhG6wtMaHrc6Pm5YveoesyxKNgaross8g.jpg');padding-top:50%"></i>
   <div class="link_preview_title" dir="auto">&lrm;Karing</div>
   <div class="link_preview_description" dir="auto">&lrm;1. Compatible with Clash, V2ray/V2fly, Sing-box, Shadowsocks, Sub, Github Subscriptions.<br/>2. Full clash config supported, Partial clash.meta config supported.<br/>3. A set of routing rules applied to multiple subscription sources automatically selects efficient…</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">299</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/374"><time datetime="2025-07-06T23:16:18+00:00" class="time">23:16</time></a></span>
+    <span class="tgme_widget_message_views">304</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/redfree8/374"><time datetime="2025-07-06T23:16:18+00:00" class="time">23:16</time></a></span>
   </div>
 </div>
   </div>
@@ -719,11 +793,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 77.27ms -->
+<!-- page generated in 73.17ms -->

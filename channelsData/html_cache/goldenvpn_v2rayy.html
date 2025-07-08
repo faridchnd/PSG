@@ -44,9 +44,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -75,7 +192,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">229</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">30</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">26</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=8f3e6a40eae1d6fc4b_7727194581548702134">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d999aa5001bffaa3a9_5711711227683241960">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -96,7 +213,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=8f3e6a40eae1d6fc4b_7727194581548702134">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d999aa5001bffaa3a9_5711711227683241960">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/goldenvpn_v2rayy">
@@ -113,7 +230,7 @@
 <main class="tgme_main" data-url="/goldenvpn_v2rayy">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/goldenvpn_v2rayy?before=162" class="tme_messages_more js-messages_more" data-before="162"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/162" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTYyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzFlOTY1YmY2Y2YzNDU0Njk3In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/goldenvpn_v2rayy?before=162" class="tme_messages_more js-messages_more" data-before="162"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/162" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTYyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYmNkODU1MGE0ZmI4MDZiNWQ0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -132,18 +249,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5994401132958564932 1395680274_456245828" href="https://t.me/Goldenvpn_v2rayy/162" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/VD6-GRUEXa6MFDvaqUH_atLoCDJnytIuwmm4zr-UHK9B48bdggJJCwNU7mB4HHo1hCGzsj0e71fIVWku_9yT2j9fIIsgWZTkE7-0rp5StO1UzglfFdWNfz2IxQ-4I9SiZ3SKokoulncJAqZfd1N6OBdKUKpzbXW_MF-ACl2gheA8de4lk_TVCe-JL0U4L2ox7KZ-hPyaVZgQurR9KHtZE8oFiiZPjPKcR_2GPhopaN3INEefQFpHbf5Xqgk7oy2yqYfFtLuQOiZc_5W2D1ungmT8rKUh7yYFITU9Gi9K7zxyfghByfhM9ln2zjOg2ZbIU1dplzDb46m9d97ppYu7gw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">حجم کل 1 ترابایت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن سرور ترکیه<br/><br/><br/>vless://001bb217-4cf2-4b8a-b48d-b80ac72b116a@v2proxy.v2p.top:443?type=tcp&amp;path=%2F&amp;host=speedtest.net&amp;headerType=http&amp;security=none#V2Proxy-Turkey%20%F0%9F%87%B9%F0%9F%87%B7<br/><br/><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">حجم کل 1 ترابایت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن سرور ترکیه<br/><br/><br/>vless://001bb217-4cf2-4b8a-b48d-b80ac72b116a@v2proxy.v2p.top:443?type=tcp&amp;path=%2F&amp;host=speedtest.net&amp;headerType=http&amp;security=none#V2Proxy-Turkey%20%F0%9F%87%B9%F0%9F%87%B7<br/><br/><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">571</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/162"><time datetime="2024-03-04T17:13:57+00:00" class="time">17:13</time></a></span>
+    <span class="tgme_widget_message_views">572</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/162"><time datetime="2024-03-04T17:13:57+00:00" class="time">17:13</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/163" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTYzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZWNhYjUxZmJhMDU0NTQ2NDBlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/163" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTYzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMTM1ZjYzM2Y3OTdjMzFiYzkzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -160,9 +275,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -171,7 +284,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/164" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWE4MWJlZDY2YTU5ZWY2MmZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/164" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNjIyZmVhM2M0MTJlMTJmYTBjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -188,9 +301,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i> <a href="?q=%23%D8%A7%D8%B7%D9%84%D8%A7%D8%B9_%D8%B1%D8%B3%D8%A7%D9%86%DB%8C">#اطلاع_رسانی</a><br/><br/>در حال حاضر اینستاگرام با اختلال و قطعی جهانی رو به رو شده است و تمامی سرویس های مرتبط با اینستاگرام تا لحظه ی برگشتن اینستاگرام موقتا اختلال دارند، <br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> به دوستانتان هم اطلاع دهید.<br/><br/>گلدن وی پی ان<br/><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/Goldenvpn_v2rayy">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i> <a href="?q=%23%D8%A7%D8%B7%D9%84%D8%A7%D8%B9_%D8%B1%D8%B3%D8%A7%D9%86%DB%8C">#اطلاع_رسانی</a><br/><br/>در حال حاضر اینستاگرام با اختلال و قطعی جهانی رو به رو شده است و تمامی سرویس های مرتبط با اینستاگرام تا لحظه ی برگشتن اینستاگرام موقتا اختلال دارند، <br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> به دوستانتان هم اطلاع دهید.<br/><br/>گلدن وی پی ان<br/><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/Goldenvpn_v2rayy">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/qKIWidoEIj-YDnIvVrUjUL-4_2SLeNpwB8nT__XrmiEIziiuUnH14a_yq3_EDFnDaC0gYh7SuZIL8wnbllh-qPW9gdclYgWUdv5FfB8RE-w7NJFG73nGPc8SUZEPM2nHXNoDarvfSZN554G_bK7C4_FlNuE6wjwpXQtbq2Xb3pK73jOVccG1ukHj6BIiNwEzTj04Cam5WFR2kMWSaKfimsKJlv_XrXRHg5EdRb3dhJVJVsd62vMc0CK7oSn7xS3LfCwtk_ZwkUyrXWQqPcGOa7mVEl3RKVq9uDqXMa5TCqqW-_UAVRHnV7dJgor5g8KmpJFwnsf6G6gjPxRN-OXbcQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
@@ -205,7 +316,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/165" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWFiZDk2MzNhZGJlY2UyNDBiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/165" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTA1MjY2MjUxMGQyZGEzOWU2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -222,9 +333,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i> #اطلاع_رسانی  در حال حاضر اینستاگرام با اختلال و قطعی جهانی رو به رو شده است و تمامی سرویس های مرتبط با اینستاگرام تا لحظه ی برگشتن اینستاگرام موقتا اختلال دارند،    <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> به دوستانتان هم اطلاع دهید.  گلدن وی پی ان   https://t.me/Goldenvpn_v2rayy  برای خرید…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -233,7 +342,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/166" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZDIzZjgxMTcwZDI5Yjk0OWZmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/166" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWZlNThjNzA4MmJlM2ViYjU3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -250,24 +359,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">سلام عزیزای دلم سال نوتون مبارک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/>امیدوارم امسال بهترین و قشنگ ترین سال زندگیتون باشه و همیشه در کنار خانواده باشید<br/>امیدوارم به هرچیزی تا الان با رویاش زندگی کردید امسال بهش برسید و لذت ببرید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i><br/><br/><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/Goldenvpn_v2rayy">
+<div class="tgme_widget_message_text js-message_text" dir="auto">سلام عزیزای دلم سال نوتون مبارک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/>امیدوارم امسال بهترین و قشنگ ترین سال زندگیتون باشه و همیشه در کنار خانواده باشید<br/>امیدوارم به هرچیزی تا الان با رویاش زندگی کردید امسال بهش برسید و لذت ببرید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i><br/><br/><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/Goldenvpn_v2rayy">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/dWoBkASwTg_piCK28gV20V388hZf1WyuK1Iap4vJ7QVF0wYsFXQqT7b8zqJgXKtWfsBXOdGnoRLFON31Jil020lrTEdE1BGhbvlr5yMkNlWuWUWectJpR8oN60MdKXtnu2-YHxj5EQ6aNqhul4rWEfKJK_-_ZpGBkSw90g5ao3qOyxoJEDfdQ1yi1cQmSfbsbRLleI1JR3U1hAMC0XLKkScaVZf8q3cafvXt_ooeRXTGwzYvnAIwPwB-4hOqNk3TwOEr8vFJB8sWZNHEF5TiZuDDDCxgqU40CTfXQBFZc_68I85KHM-F1dzxn9oAKFzIF1b9XFfCipJJEbpxomhyEA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Goldenvpn_v2ray</div>
   <div class="link_preview_description" dir="auto">برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: @Goldenvpn_v2ray</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">671</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/166"><time datetime="2024-03-21T08:03:42+00:00" class="time">08:03</time></a></span>
+    <span class="tgme_widget_message_views">672</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/166"><time datetime="2024-03-21T08:03:42+00:00" class="time">08:03</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/167" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2JlNmE2YTM3ZGRlZTVmNjhmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/167" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiY2I1OTZlMzNkM2NiNDA0MGNmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -284,9 +391,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">سلام عزیزای دلم سال نوتون مبارک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i> امیدوارم امسال بهترین و قشنگ ترین سال زندگیتون باشه و همیشه در کنار خانواده باشید امیدوارم به هرچیزی تا الان با رویاش زندگی کردید امسال بهش برسید و لذت ببرید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>    https://t.me/Goldenvpn_v2rayy</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -295,7 +400,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/168" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWY4NjQzODk0ZTJjZWZiNTBkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/168" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNDIwMWFlMTcxMjMyZjIxNGI4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -314,10 +419,8 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5801085440944619709 1350670457_456245437" href="https://t.me/Goldenvpn_v2rayy/168" style="width:450px;background-image:url('https://cdn4.cdn-telegram.org/file/Rkgsa6k9mVb75Ee2S_nNtNTuQpgO1EY6mwq1OZcreT2LMLyXu1u9NXn3dg4dqLnUGepYDcM4D8DkvJ9eJlxy6NSpzKCzdE_fS6JvkoYYStiNgD8dIzSZx8bYe8Zh_xkvMhk4iDcwukf2GooPRyFEcYDPHLlLpNL4Pvp2cRNR-tFBlnb3QV3N1xzkeufWrHR_7gXNc6FW41fglD0PjKvpHLtEls05Q-3wkvire0ulVn6Mxq36mKVj0VrudhOXnqZxbL4U-uklg95Onbjm9J5UNiXXrHUrVqqDmnpbB4ZFqSEMrYRYjXMHcpVPuwjvDOKxyVFXY3VbB9c3pTiYp143CA.jpg')">
   <div class="tgme_widget_message_photo" style="width:75%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a><br/><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a><br/><br/><br/>برای خرید سرور و ارتباط با ادمین به ایدی زیر پیام بدید<br/>&rlm;Admin: <a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">994</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/168"><time datetime="2024-04-05T13:13:37+00:00" class="time">13:13</time></a></span>
@@ -325,7 +428,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/169" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNDRmZDk5ZTliNTE4NjU1MTZiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/169" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTY5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDQ5ZGYyMzgyNjIxNzEwOGZmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -342,9 +445,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -353,7 +454,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/170" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiODgyMjM0MDdhNjQzOWE2ZWIyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/170" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOWJjNmM3MjY3NmIwNDFjODVjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -370,9 +471,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام دوستان روزتون بخیر<br/>یه اختلالی پیش اومده توی همه پنل ها لطفاً صبوری کنید تا برطرف بشه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -381,7 +480,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/171" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjgwMmZkNTM0ZmM4MmJjNDZiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/171" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMjQxNjgwNTEwNjIzZTgzZjBlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -398,9 +497,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اختلال ها برطرف شدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB9.png')"><b>🌹</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -409,7 +506,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/172" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjA4MTQ5Y2NiMGU3NzYyNzkxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/172" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTcyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZWY5NmQ4ZDdhYjI0NTdmNzUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -426,18 +523,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>اطلاعیه<br/>متاسفانه در حال حاضر روی شبکه دیتاسنتر ترکیه اختلال داریم.<br/>تا انجام رفع مشكل ب اكانت موقت زير متصل شويد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>همراه شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i>                   <br/><a href="https://t.me/Goldenvpn_v2ray" target="_blank">@Goldenvpn_v2ray</a><br/><br/><br/><br/><br/><br/><br/><br/><br/>vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJWUE4tdm1lc3MtRW1lcmdlbmN5IPCfmqgiLAogICJhZGQiOiAibXJnb2xkLmlyYW5tYW4uc2hvcCIsCiAgInBvcnQiOiA1MjA2NSwKICAiaWQiOiAiZjI5ZWE3N2MtNjg0Mi00ZWUwLTlmYzEtOWM3YTg3MTU2NmIyIiwKICAibmV0IjogInRjcCIsCiAgInR5cGUiOiAiaHR0cCIsCiAgInRscyI6ICJub25lIiwKICAicGF0aCI6ICIvIiwKICAiaG9zdCI6ICJid20uY29tIgp9</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">918</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/172"><time datetime="2024-04-21T05:04:14+00:00" class="time">05:04</time></a></span>
+    <span class="tgme_widget_message_views">919</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/172"><time datetime="2024-04-21T05:04:14+00:00" class="time">05:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/173" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTczLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjMzODE3N2IyMDdkYzdjMTY5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/173" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTczLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMThjYzNiNDg0OTM1MDVlYzE1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -454,9 +549,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>اطلاعیه متاسفانه در حال حاضر روی شبکه دیتاسنتر ترکیه اختلال داریم. تا انجام رفع مشكل ب اكانت موقت زير متصل شويد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>همراه شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i>                    @Goldenvpn_v2ray         vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJWUE4tdm1lc3MtRW1lcmdlbmN5IPCfmqgiLAogICJhZGQ…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -465,7 +558,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/174" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNTE1MjA0YzYwZDllNjIyNzA3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/174" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDdmYjgyYTE0NzdjNjc4MjUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -482,18 +575,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان اپدیت تموم شده لطفاً به لینک های خودتون وصل بشید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">786</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/174"><time datetime="2024-05-27T08:42:53+00:00" class="time">08:42</time></a></span>
+    <span class="tgme_widget_message_views">787</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/174"><time datetime="2024-05-27T08:42:53+00:00" class="time">08:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/175" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYTBmM2ExM2RmNzc2M2I4NmQwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/175" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMmI5ZWMxYmVjYjE4YjE3OWM2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -521,17 +612,15 @@
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:06</time>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">738</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/175"><time datetime="2024-06-07T14:51:21+00:00" class="time">14:51</time></a></span>
+    <span class="tgme_widget_message_views">739</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/175"><time datetime="2024-06-07T14:51:21+00:00" class="time">14:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/176" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzgyMDU3NmQ1YWI3MjIwNDcyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/176" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOTFjNzYwM2VlMmFkNWFmZTJhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -546,20 +635,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام مجدد شب همگی بخیر دوستان من تازه از بیمارستان مرخص شدم لطفاً صبور باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><br/><a href="https://t.me/Goldenvpn_v2rayy" target="_blank" rel="noopener">https://t.me/Goldenvpn_v2rayy</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">736</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/176"><time datetime="2024-06-07T16:46:07+00:00" class="time">16:46</time></a></span>
+    <span class="tgme_widget_message_views">737</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/176"><time datetime="2024-06-07T16:46:07+00:00" class="time">16:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/177" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWNjNDVmYzZmNDYxNjhmN2JhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Goldenvpn_v2rayy/177" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiY2ViNjU1NWMyODA1NzY5ODlmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -576,9 +663,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">سلام مجدد شب همگی بخیر دوستان من تازه از بیمارستان مرخص شدم لطفاً صبور باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>  https://t.me/Goldenvpn_v2rayy</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -587,7 +672,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/178" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMDg5ODQ3YTA0NDZkMDc0MTI5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/178" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZjEwNmY4NWE0NDgzNWEyY2VlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -604,18 +689,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Goldenvpn_v2rayy"><span dir="auto">Goldenvpn_v2ray</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://acda7cb1-54f5-4852-b296-5dbe49261f19@85.133.200.76:443?type=tcp&amp;path=%2F&amp;host=speedtest.net&amp;headerType=http&amp;security=none#Ger-ny-Emergency</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">693</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/178"><time datetime="2024-06-30T05:56:08+00:00" class="time">05:56</time></a></span>
+    <span class="tgme_widget_message_views">694</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/178"><time datetime="2024-06-30T05:56:08+00:00" class="time">05:56</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/179" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGFkNTE4NzNiZGQxMTQ0YzI1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/179" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTc5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWRkNzliOTcxYmJkY2I3MDcyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -643,17 +726,15 @@
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:05</time>
   </div>
 </a>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">692</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/179"><time datetime="2024-06-30T05:57:26+00:00" class="time">05:57</time></a></span>
+    <span class="tgme_widget_message_views">693</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/179"><time datetime="2024-06-30T05:57:26+00:00" class="time">05:57</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/180" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTgwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZTE2YTEwMTNmNGJiYWQ3M2VjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/180" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTgwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYTJhZGU0MDMxNTFkNGQyMzkyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -681,17 +762,15 @@
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:05</time>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">570</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/180"><time datetime="2024-07-05T10:52:24+00:00" class="time">10:52</time></a></span>
+    <span class="tgme_widget_message_views">571</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/180"><time datetime="2024-07-05T10:52:24+00:00" class="time">10:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/181" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTgxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWQwNDE5OTBkMDUxYTMwODFkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Goldenvpn_v2rayy/181" data-view="eyJjIjotMTg1NDY4OTA5NywicCI6MTgxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGRhNDNjNTVhZDE1MmI0ZjAzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Goldenvpn_v2rayy"><i class="tgme_widget_message_user_photo bgcolor2" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/WLrI8YqRCmzfxExJibZHBFWE6o5sk_HF6XZ7L-BZoPR8qUCmKsLs0aPLPQ5Dxz_lyF2Mg1advU6NveilFndrmlIxWjA7E2V7za8CgI7rewC6peWiWANxWNiU1HkX3B5VbwmdkJupcovjIL32Co30CvBTUMkVExWEII2G-NqAmfLymL6bf4a3ucbeLz-nY4lETy3I9N_e6iKt4-HF0zWc3h8a4QUnW2MiyA9cSTQ2tBY7TgksYWLpo-6wrLM9GqHXFisCyYGUDdlSN6apn1Tgo4UBd9XMU5-jtebIbCd3-772ci5bf_7r3ZUnV6cofIZRunU3shbiT5MHTNwFC9abig.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -719,12 +798,10 @@
     <time class="tgme_widget_message_voice_duration js-message_voice_duration">0:06</time>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">571</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/181"><time datetime="2024-07-05T19:14:43+00:00" class="time">19:14</time></a></span>
+    <span class="tgme_widget_message_views">572</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A.s</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Goldenvpn_v2rayy/181"><time datetime="2024-07-05T19:14:43+00:00" class="time">19:14</time></a></span>
   </div>
 </div>
   </div>
@@ -738,11 +815,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 50.35ms -->
+<!-- page generated in 49.96ms -->

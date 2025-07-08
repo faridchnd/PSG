@@ -44,9 +44,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -75,7 +192,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">7.82K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">114</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">10</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">114</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">اینترنت آزاد حق همه ماست <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>Ready to 18k<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=4989ab12743dc90838_2245282940947224539">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=fd28f7b15da44b8b9c_13669103080428231028">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -96,7 +213,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=4989ab12743dc90838_2245282940947224539">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=fd28f7b15da44b8b9c_13669103080428231028">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/mester_v2ray">
@@ -113,7 +230,7 @@
 <main class="tgme_main" data-url="/mester_v2ray">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/mester_v2ray?before=5947" class="tme_messages_more js-messages_more" data-before="5947"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5947" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0NywidCI6MTc1MTk3NjIwMSwiaCI6IjZkNjc4NmFjZjQzZDhlOWE1OSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/mester_v2ray?before=5947" class="tme_messages_more js-messages_more" data-before="5947"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5947" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0NywidCI6MTc1MTk4MTMwNCwiaCI6ImEwY2FiZmIyZjdlYmZhNDJkYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -136,17 +253,15 @@
     <a href="https://t.me/Mester_v2ray/5947" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5947"><time datetime="2024-10-12T05:05:48+00:00" class="time">05:05</time></a></span>
+    <span class="tgme_widget_message_views">2.82K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5947"><time datetime="2024-10-12T05:05:48+00:00" class="time">05:05</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5948" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0OCwidCI6MTc1MTk3NjIwMSwiaCI6ImI5OWMzZmRiYTA2MmQ3MDFiNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5948" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0OCwidCI6MTc1MTk4MTMwNCwiaCI6IjY2MGZhZTEwNWZhNmQ5MmI2NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -169,17 +284,15 @@
     <a href="https://t.me/Mester_v2ray/5948" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5948"><time datetime="2024-10-12T14:28:10+00:00" class="time">14:28</time></a></span>
+    <span class="tgme_widget_message_views">2.68K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5948"><time datetime="2024-10-12T14:28:10+00:00" class="time">14:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5949" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0OSwidCI6MTc1MTk3NjIwMSwiaCI6ImJjOGEwYzZkODg1Yjc4YmIzZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5949" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk0OSwidCI6MTc1MTk4MTMwNCwiaCI6IjVkMGNkY2U0MTM3Y2ZlOTA4NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -202,17 +315,15 @@
     <a href="https://t.me/Mester_v2ray/5949" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5949"><time datetime="2024-10-13T04:56:20+00:00" class="time">04:56</time></a></span>
+    <span class="tgme_widget_message_views">2.79K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5949"><time datetime="2024-10-13T04:56:20+00:00" class="time">04:56</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5950" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MCwidCI6MTc1MTk3NjIwMSwiaCI6ImVmZWE5NWUxZGJkZmVmZTRlNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5950" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MCwidCI6MTc1MTk4MTMwNCwiaCI6IjE1NmNmNWU1N2Q1NTUxN2NhMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -235,17 +346,15 @@
     <a href="https://t.me/Mester_v2ray/5950" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5950"><time datetime="2024-10-13T15:34:41+00:00" class="time">15:34</time></a></span>
+    <span class="tgme_widget_message_views">3.77K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5950"><time datetime="2024-10-13T15:34:41+00:00" class="time">15:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5951" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MSwidCI6MTc1MTk3NjIwMSwiaCI6ImFmMmZhNmIwMGY5YzkyOGU0MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5951" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MSwidCI6MTc1MTk4MTMwNCwiaCI6IjQ1YTUwNzdhYWFmOTcyOGU4OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,17 +377,15 @@
     <a href="https://t.me/Mester_v2ray/5951" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5951"><time datetime="2024-10-14T04:46:26+00:00" class="time">04:46</time></a></span>
+    <span class="tgme_widget_message_views">5.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5951"><time datetime="2024-10-14T04:46:26+00:00" class="time">04:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5952" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MiwidCI6MTc1MTk3NjIwMSwiaCI6ImVmNzI2ZWU0YmQ5YWI2YzUwYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5952" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MiwidCI6MTc1MTk4MTMwNCwiaCI6Ijg0OTA3Mjg5MThjMmI3NDliNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -301,17 +408,15 @@
     <a href="https://t.me/Mester_v2ray/5952" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5952"><time datetime="2024-10-15T10:38:23+00:00" class="time">10:38</time></a></span>
+    <span class="tgme_widget_message_views">2.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5952"><time datetime="2024-10-15T10:38:23+00:00" class="time">10:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5953" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MywidCI6MTc1MTk3NjIwMSwiaCI6Ijk0ZGQ3MWVlM2EwZGYxMzAzMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5953" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1MywidCI6MTc1MTk4MTMwNCwiaCI6IjVjNjQ3NGU5M2RjMWMyM2QxYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -334,17 +439,15 @@
     <a href="https://t.me/Mester_v2ray/5953" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5953"><time datetime="2024-10-16T04:45:20+00:00" class="time">04:45</time></a></span>
+    <span class="tgme_widget_message_views">2.99K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5953"><time datetime="2024-10-16T04:45:20+00:00" class="time">04:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5954" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NCwidCI6MTc1MTk3NjIwMSwiaCI6ImQ0YWE0NmY4ZWU1M2U5ZjVhNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5954" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NCwidCI6MTc1MTk4MTMwNCwiaCI6ImEyYjQ3ZjNhNGY1ZjIwMzQ1OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -367,17 +470,15 @@
     <a href="https://t.me/Mester_v2ray/5954" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5954"><time datetime="2024-10-17T12:23:36+00:00" class="time">12:23</time></a></span>
+    <span class="tgme_widget_message_views">3.37K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5954"><time datetime="2024-10-17T12:23:36+00:00" class="time">12:23</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5955" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NSwidCI6MTc1MTk3NjIwMSwiaCI6ImVjMjE2MWFjNTUyMGRmNGJlZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5955" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NSwidCI6MTc1MTk4MTMwNCwiaCI6ImM4ZmU2YmFkMmFkMWFkNmIwOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -400,17 +501,15 @@
     <a href="https://t.me/Mester_v2ray/5955" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5955"><time datetime="2024-10-19T04:54:00+00:00" class="time">04:54</time></a></span>
+    <span class="tgme_widget_message_views">4.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5955"><time datetime="2024-10-19T04:54:00+00:00" class="time">04:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5956" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NiwidCI6MTc1MTk3NjIwMSwiaCI6ImUxN2FmOGM0NWIwZTRiMmQ4MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5956" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk1NiwidCI6MTc1MTk4MTMwNCwiaCI6ImM0ODEzMWQzOTY1NzM3ZTBmMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -433,17 +532,15 @@
     <a href="https://t.me/Mester_v2ray/5956" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5956"><time datetime="2024-10-20T04:35:12+00:00" class="time">04:35</time></a></span>
+    <span class="tgme_widget_message_views">5.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5956"><time datetime="2024-10-20T04:35:12+00:00" class="time">04:35</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5965" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NSwidCI6MTc1MTk3NjIwMSwiaCI6IjFjMTkzNTA5Nzk2MzJkMjEwMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5965" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NSwidCI6MTc1MTk4MTMwNCwiaCI6IjRiMzdiZTE1M2I1YzU0ZGYwYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -466,17 +563,15 @@
     <a href="https://t.me/Mester_v2ray/5965" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5965"><time datetime="2024-12-09T10:57:26+00:00" class="time">10:57</time></a></span>
+    <span class="tgme_widget_message_views">4.91K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5965"><time datetime="2024-12-09T10:57:26+00:00" class="time">10:57</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5966" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NiwidCI6MTc1MTk3NjIwMSwiaCI6ImMzMTg3NjRiZDQyMzAwOGU1MSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5966" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NiwidCI6MTc1MTk4MTMwNCwiaCI6IjI4NzNlODk0NDU5OGEwMjc2YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -493,23 +588,21 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Mester_v2ray"><span dir="auto">𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 | نات پیکسل</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><b>همه اپراتورها از کف برزیل</b><tg-emoji emoji-id="5224688610183228070"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A7F09F87B7.png')"><b>🇧🇷</b></i></tg-emoji><br/><br/><blockquote><code>vless://dfc1a9ab-6241-4b73-92f7-b299fc6b7751@162.159.153.2:80?path=%2Fxmlrpc.php%3Fed%3D1080%26id%3Ddfc1a9ab-6241-4b73-92f7-b299fc6b7751&amp;security=none&amp;encryption=none&amp;host=csgo.mozilla.5.0.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.tor.rubika.cloudns.ch.&amp;type=ws#@Mester_V2ray<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1MTdUM0J2cFlhYWl1VzJj@api.namasha.co:443#@V2rayi_net<br/><br/>ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M%3D@156.146.38.169:443#@V2rayi_net<br/></code></blockquote>﻿<br/><b>Join ➣</b><a href="https://t.me/Mester_V2ray" target="_blank"><b>@Mester_V2ray</b></a><tg-emoji emoji-id="5224688610183228070"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A7F09F87B7.png')"><b>🇧🇷</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/Mester_v2ray/5966" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
+</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5966"><time datetime="2024-12-10T11:43:00+00:00" class="time">11:43</time></a></span>
+    <span class="tgme_widget_message_views">5.14K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5966"><time datetime="2024-12-10T11:43:00+00:00" class="time">11:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5967" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NywidCI6MTc1MTk3NjIwMSwiaCI6ImJiMDk0NWQ2ZjBiN2E3MGUzMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5967" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2NywidCI6MTc1MTk4MTMwNCwiaCI6IjAzMmFkODZkY2Y5ZWIzMzY0NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -532,17 +625,15 @@
     <a href="https://t.me/Mester_v2ray/5967" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5967"><time datetime="2024-12-11T11:41:15+00:00" class="time">11:41</time></a></span>
+    <span class="tgme_widget_message_views">4.24K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5967"><time datetime="2024-12-11T11:41:15+00:00" class="time">11:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5968" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2OCwidCI6MTc1MTk3NjIwMSwiaCI6Ijk5MTAyNDQ4MzExMDBkN2YzZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5968" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2OCwidCI6MTc1MTk4MTMwNCwiaCI6ImFlZDU1MDRlMzU4NDhjNzk4YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -565,17 +656,15 @@
     <a href="https://t.me/Mester_v2ray/5968" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5968"><time datetime="2024-12-12T12:59:08+00:00" class="time">12:59</time></a></span>
+    <span class="tgme_widget_message_views">3.94K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5968"><time datetime="2024-12-12T12:59:08+00:00" class="time">12:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5969" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2OSwidCI6MTc1MTk3NjIwMSwiaCI6Ijk0YmEzNTIxYjM3NDVlNzk5MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5969" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk2OSwidCI6MTc1MTk4MTMwNCwiaCI6IjBkYjhmNWMxZTJkN2Q1YWUzNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -598,17 +687,15 @@
     <a href="https://t.me/Mester_v2ray/5969" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5969"><time datetime="2024-12-14T11:43:44+00:00" class="time">11:43</time></a></span>
+    <span class="tgme_widget_message_views">3.72K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5969"><time datetime="2024-12-14T11:43:44+00:00" class="time">11:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5970" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MCwidCI6MTc1MTk3NjIwMSwiaCI6ImU4ODg3MzhmZWI3Y2Y5MzVjYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5970" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MCwidCI6MTc1MTk4MTMwNCwiaCI6IjE5MmM2NTU4OTNhOTMzNjBiOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -631,17 +718,15 @@
     <a href="https://t.me/Mester_v2ray/5970" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5970"><time datetime="2024-12-15T10:45:48+00:00" class="time">10:45</time></a></span>
+    <span class="tgme_widget_message_views">4.07K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5970"><time datetime="2024-12-15T10:45:48+00:00" class="time">10:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5971" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MSwidCI6MTc1MTk3NjIwMSwiaCI6IjYyYWVjNTk5MzhkMjFlYzBjYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5971" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MSwidCI6MTc1MTk4MTMwNCwiaCI6IjRhZmJlNDZhNDliMWRkNjU2OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -664,17 +749,15 @@
     <a href="https://t.me/Mester_v2ray/5971" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5971"><time datetime="2024-12-16T11:12:05+00:00" class="time">11:12</time></a></span>
+    <span class="tgme_widget_message_views">3.73K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5971"><time datetime="2024-12-16T11:12:05+00:00" class="time">11:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5972" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MiwidCI6MTc1MTk3NjIwMSwiaCI6IjUyNWY2MDQ5NTRhYWNhNTE3NiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5972" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MiwidCI6MTc1MTk4MTMwNCwiaCI6IjJiNmIxYTkzMWMyMjk2ZmRlNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -697,17 +780,15 @@
     <a href="https://t.me/Mester_v2ray/5972" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5972"><time datetime="2024-12-17T11:16:00+00:00" class="time">11:16</time></a></span>
+    <span class="tgme_widget_message_views">5.31K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5972"><time datetime="2024-12-17T11:16:00+00:00" class="time">11:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5973" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MywidCI6MTc1MTk3NjIwMSwiaCI6IjJkZTllOTU0MDY2MjEyNmI5MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5973" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3MywidCI6MTc1MTk4MTMwNCwiaCI6IjAzZDQ4M2FiYjQzNDZiNTg4NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -730,17 +811,15 @@
     <a href="https://t.me/Mester_v2ray/5973" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5973"><time datetime="2024-12-21T11:19:49+00:00" class="time">11:19</time></a></span>
+    <span class="tgme_widget_message_views">5.96K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5973"><time datetime="2024-12-21T11:19:49+00:00" class="time">11:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5974" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3NCwidCI6MTc1MTk3NjIwMSwiaCI6IjdhOWVmMjE2OTQ1NTkxZTRhZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Mester_v2ray/5974" data-view="eyJjIjotMTY3MTY4NzI5NCwicCI6NTk3NCwidCI6MTc1MTk4MTMwNCwiaCI6ImQzNGRkYzM3ZDIwYWY0NGYzNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Mester_v2ray"><i class="tgme_widget_message_user_photo bgcolor4" data-content="𝐌"><img src="https://cdn4.cdn-telegram.org/file/GzXUjU7NqMylabtZa1XJKKoPlDSLudpJa6tpOrTrJWWNPRMrwc3ow7I97I57kqRglYh6304DUgDwsZxWyDz21NIdXoen30ZXecdhnoT3nc8ZtAYkOyavruTFtZU3Gz99tsn0lbojcNEQv1m7oD8bdDCaW-KufkKtbL2cKS0qxBuvfpxNicW7jikrII37IECIe6YzMlCblUWtd0yyADHWAGMhFPUq7V7nHu0CBuON6s31byD1-QIJTanV7Vf8UQm_KcRtkXBZ_tRN6mHW7NndxaeERCUqij7cthu8uzAS9HYPKPu7Daplbp-Du0I-THQ7KVkEDI-XQfiUtsJVKDLoyQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -757,13 +836,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Mester_v2ray"><span dir="auto">𝐌𝐞𝐬𝐭𝐞𝐫.𝐯𝟐𝐫𝐚𝐲 | نات پیکسل</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">۲۴ ساعته پرسرعت<br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@45.87.175.192:8080#@Mester_V2ray<br/><br/>vless://1c8ea5a2-e986-42d6-9039-867aed7ca528@178.128.236.252:443?security=reality&amp;encryption=none&amp;pbk=MM2ZuhIbjaM6h7NOhWQZM8R8hkSE7Qc0uaEwzZ9YuQ0&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;sni=isna.ir&amp;sid=15bf9cd93a696bc5#@Mester_V2ray</code><br/><br/><b>Join ➣</b><a href="https://t.me/Mester_V2ray" target="_blank"><b>@Mester_V2ray</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5974"><time datetime="2025-01-13T08:34:04+00:00" class="time">08:34</time></a></span>
+    <span class="tgme_widget_message_views">4.57K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Mester_v2ray/5974"><time datetime="2025-01-13T08:34:04+00:00" class="time">08:34</time></a></span>
   </div>
 </div>
   </div>
@@ -777,11 +854,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 51.99ms -->
+<!-- page generated in 52.13ms -->

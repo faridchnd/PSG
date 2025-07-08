@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">947</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">17</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">video</span></div><div class="tgme_channel_info_counter"><span class="counter_value">57</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">24</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Admin : <a href="https://t.me/Elaehi" target="_blank">@Elaehi</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=0cac3b6af56b20436b_5907354478140684869">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=5362be5f1a2d3cc070_6386881198910403124">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=0cac3b6af56b20436b_5907354478140684869">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=5362be5f1a2d3cc070_6386881198910403124">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/iranvipnet">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/iranvipnet">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/iranvipnet?before=912" class="tme_messages_more js-messages_more" data-before="912"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/912" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6IjkxMmciLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYzRiZGQ4ZDIzNzliYjYyZTY2In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/iranvipnet?before=912" class="tme_messages_more js-messages_more" data-before="912"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/912" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6IjkxMmciLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZmFhNDBlYWQyOTc3ZTRlYzA0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -159,8 +276,6 @@
     <div class="tgme_widget_message_document_extra" dir="auto">30.7 MB</div>
   </div>
 </a></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -169,7 +284,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/917" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6IjkxN2ciLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmMwZGMzOTVhYjczNGRlODliIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/917" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6IjkxN2ciLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjA2Y2E2Nzg4ZGY2NDJkMTExIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -186,10 +301,40 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:363px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:166.391%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:363px;height:604px">
+      <a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:0px;width:271px;height:604px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.cdn-telegram.org/file/emSUgHROTkHP1HVSCaVZJDYLfX6pD67ZfCgXYSYFDxzZxCF5VTKrr_TZRA7Qy8_skUpoyI0uVvyZ3wGLMNm_IkYiIKeXyary_hYF_r95t4Zk_VyFJuROvoD8KxRu7Rfp2i4BzvxHl1tcJJ1ar1_d7s44wJqE7knJyWLmwi5FhqM1RtCpTKen7LwAnLw9JuKFrIGFnOVig3WJZZrO9Ak2PLDzOguGwYG3k_Udairo4xX2sRuuBp1wK9SiTscS_DJPNVgrta8464iXYMpY-hD6ZFajtJOdmzPzQdQCIo5e_hRgOZ6wA52O5vBn50c79k5k0uWCRtR4C9kYHxaY2zGdig.jpg')" data-ratio="0.45" href="https://t.me/iranvipnet/917?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:45px;right:46px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-1px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:273px;top:0px;width:90px;height:200px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/Cl1fS0xTUVx7Hunclvmzsp64oVjpZsg9povwzIVuS1Lb1A5UWlM3xvCvydEjvSdTK473IzaZ8tsjeDeT6sOvAM-mAo2MLaCP9cv64fMJhRyySSks_Dp3tIDmIZlsYWqCnHQe29LX6nJp-tBqN4l2i9DEMfInd1tnRJtWsvz2v8L4ZnrHO4sE_9Od-KPG5b-0JX1V-pIHu88KZtBIAqEFMxUQofRD3pM17mDn2k5n4PgM1SivwoNrRpSyl6jAlqzCuLjn4lCR6cuiSfbB1xkF4sBNGoU3DGs9z4edJmylOukD-N9j9IsvI0-Mv6GSuTpuwXuJau5wm2y4fTBShLKIJQ.jpg')" data-ratio="0.45" href="https://t.me/iranvipnet/918?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:45px;right:46px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:273px;top:202px;width:90px;height:200px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.cdn-telegram.org/file/KstnBnkr7VOOYip5JL2-U7GMOwK9DFngzSDyqT8arq6MvafU-mV96PcKLklB39cJMG08b_xmiQH0-qLT-tDGhtidSZtTgwO_DL1Ir7r-KVK-iTl5hSq_QR753Yxrwmcrsg0Nvc_1vhiJiLl_oTci_5JLcWCd92977BupoMIO2K73pfuK0Uim2mMNUwz2ASjImScU35sXHuAFUAFzgrzqYlWqgM2tEDStkiqQ_I1GydaURqqTQXUbWXChLe1u7R_asei5uAs0RgZqwB_pzCB-_Nt6zHmrVEcZNzhdmpg28E8Ly43meWV7CBLyrbpJSmzPxNyiOa6xQOahBxRxfubnSg.jpg')" data-ratio="0.45" href="https://t.me/iranvipnet/919?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:45px;right:46px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:273px;top:404px;width:90px;height:200px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.cdn-telegram.org/file/aifhKw3oQ6URigLVPvjzpzYbwuJ3VABzWkrwI8J1FSAI5m85H1jqcbfGY1uDAGthqA28AnzMMD9b7G5-JLLfkxf8D-iFYcmvnqjV3TfWHq1hCRnGjOkaV1vgLam1WvUD-EbSxtCl_UPB7hO-EAzo6U0LapHGiJPIeFPbU_WFtUR1iLC2DGZyqFqSugoaEvWBAa_6NEaQ5Zb9b52w823XEU-RegTwQ_uuxQjZBcqXlNZvDHqQpxXSK5r7mSFmBIvZt-nYgMPcI5VN7NBB38w_X1VMRIHUxrgEs25aY1S7vcUMAnpfFgyB1QyxtDSew_-XdcpRZbQv8YmSNrYin-uKDA.jpg')" data-ratio="0.45" href="https://t.me/iranvipnet/920?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:45px;right:46px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:0px;right:0px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">تنظیماتی که برای پینگ پایین تر و کیفیت بهتر اتصال در V2rayNG <tg-emoji emoji-id="5807799243171173196"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji> وارد و اعمال کنید <tg-emoji emoji-id="5938482101417414197"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><b><br/><br/>وارد قسمت  تنظیمات V2rayNG </b><b><tg-emoji emoji-id="5807799243171173196"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></b><b> بشید و </b>بقیه مراحل رو مثل تصاویر پیش برید و در اخر یکی از ادرس های زیر رو در قسمت : True delay test url وارد کنید <br/><br/><tg-emoji emoji-id="4956533765871502190"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i></tg-emoji><br/><blockquote><code>http://cp.cloudflare.com</code></blockquote><br/><tg-emoji emoji-id="4958580468111901760"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i></tg-emoji><br/><blockquote><code>http://detectportal.firefox.com</code></blockquote><code><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i><br/></code><blockquote><code>http://captive.apple.com/hotspot-detect.htm</code></blockquote><br/><br/><tg-emoji emoji-id="4956382999634511284"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> حتما از نسخه اخر v2rayNG برای اتصال و متصل شدن به کانفیگ ها استفاده کنید.</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/iranvipnet/917?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/iranvipnet/917" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">320</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/917"><time datetime="2024-12-07T06:58:25+00:00" class="time">06:58</time></a></span>
@@ -197,7 +342,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/922" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTIyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjZkYTdlYmJjMDBlOTlkZjk5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/922" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTIyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMWMxNTk4NWJkMzBlNWFjMDlhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -214,14 +359,12 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Status</i> : <b><i>A</i>CTIV<i>E</i></b> <tg-emoji emoji-id="5438539112070002676"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187F09F8FBB.png')"><b>👇🏻</b></i><br/><br/><blockquote expandable><code>vless://19d13bed-b8c5-4443-920e-12f833fed576@join.VPNCUSTOMIZE.com:80?path=/xmlrpc.php/Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE?ed%3D1080&amp;security=none&amp;encryption=none&amp;host=csgo.mozilla.5.0.xn--2b5baaa.127.0.0.1.offlinespeedtest.netdown.user.xn--2b5baaa.0.2.1.xn--j9h1028mqmaoytii00aha21hfjrd.xn--m39h.ajab.iP-ddns.com&amp;type=ws#VPN</code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/922" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
+</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -230,7 +373,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/923" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTIzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTEwMjBiNDAxNjVkODk3ZjBmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/923" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTIzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZWZiOWNlYThmOWFjMjljMzcxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -247,9 +390,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">چالش اختصاصی امروز<br/>نفر یک عدد کامنت بزارین رندوم یکیو انتخاب میکنم</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -258,7 +399,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/924" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTI0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMGYzMWIxYWFiNjljNGQ2MmJiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/924" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTI0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNWNkMTkyYjI4ZWEyMzM0MjZmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -275,9 +416,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">معاون پزشکیان: «نمی‌گذارند فیلترینگ اینترنت رفع شود»<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i> معاون امور اجرایی رئیس‌جمهوری نظام ایران، در یک نشست دانشجویی گفت به‌دلیل مخالفت اکثریت شورای عالی فضای مجازی با رفع فیلترینگ، وعده انتخاباتی پزشکیان در این حوزه اجرایی نخواهد شد.&#33;<br/><br/>پ ن : فضای مجازی میشه بحث امنیت ملی و اینجا نهاد های بالا دستی وارد قضیه میشن و هر کاندیدی که در این زمینه ها به مردم وعده داده پوچ و الکیه چون قدرت تصمیم گیری تو این زمینه دست دولت نیست&#33;&#33;&#33; همینطور که تو دولت های قبلیم نبوده&#33;&#33;<br/>ما امیدواریم تلاششون رو بکنن برای ازادی اینترنت و بهبود پهنای باند ولی قبل انتخاباتم تو کانال نوشتم اگر میخواین به خاطر رفع فیلتر به کسی رای بدین بهتره شرکت نکنید حتی&#33;&#33;&#33;</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -286,7 +425,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/930" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTMwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDM3ZWI4OTA1MjJhMDEzNzRjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/930" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTMwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNDYyMzMyNGMyYzdmMjJiNmZjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -303,15 +442,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Status</i> : <b><i>O</i></b>N <tg-emoji emoji-id="5449874033275321211"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji> <br/><i>Traffic</i> : <b><i>10TB</i></b> <tg-emoji emoji-id="5447328049676700229"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://dfc1a9ab-6241-4b73-92f7-b299fc6b7751@visa.org:2052?security=&amp;type=ws&amp;path=/VPNCUSTOMIZE,VPNCUSTOMIZE?ed%3D1080&amp;host=aparat.com.bing.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.trepaspeedtest.netrag.com.px.com.s95017.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.h99.ddns-ip.net.&amp;encryption=none#VPN</code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/930" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">304</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/930"><time datetime="2024-12-15T11:01:05+00:00" class="time">11:01</time></a></span>
@@ -319,7 +456,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/932" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTMyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTZiZjc0MmNhMDM3YjM4Njg1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/932" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTMyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjBkNmUzZWZlNTI2YmMyZTY5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -336,10 +473,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>میگن دختر ها عاشق پسر های موفقند<br/>خب<br/>ولی بدون شک پسر ها با دختری می مونن که<br/>تو لحظه به لحظه رسیدن به او موفقیته <br/>کنارشون باشه:)<br/></b><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">262</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/932"><time datetime="2024-12-17T14:02:05+00:00" class="time">14:02</time></a></span>
@@ -347,7 +482,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/934" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNzRkNmYyODUyMGVmODYwNDEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/934" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjFmZjg2YWUzZDhkNmYzMDMxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -364,15 +499,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5440447791241376978"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AD.png')"><b>💭</b></i></tg-emoji><br/><i>Time</i> : <b><i>8 PM</i></b> <tg-emoji emoji-id="5994365346834812778"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C91.png')"><b>🌑</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Telegram-VPNCUSTOMIZE@hajlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;encryption=none&amp;host=JoinBedeeee--VPNCUSTOMIZE.ir&amp;fp=randomized&amp;type=ws&amp;sni=hajlab.ucdavis.edu#ALL </code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/934" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">273</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/934"><time datetime="2024-12-18T08:37:00+00:00" class="time">08:37</time></a></span>
@@ -380,7 +513,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/936" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZWIyNDc0MzJiYjg1MmYyOTg1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/936" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzQ3NmQ2N2RmODJiODJjNDYxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -397,14 +530,12 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Traffic</i> : <b><i>10TB</i></b> <tg-emoji emoji-id="5440447791241376978"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AD.png')"><b>💭</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Telegram-VPNCUSTOMIZE@hajlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;encryption=none&amp;host=6.fidsxss16x.ir&amp;fp=randomized&amp;type=ws&amp;sni=hajlab.ucdavis.edu#ALL</code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/936" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
+</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -413,7 +544,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/937" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMWVjYjc2MzE4N2YwNGY3Y2Y0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/937" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDU3ODBmYTA1MWZhNzNiZDE4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -436,8 +567,6 @@
     <a href="https://t.me/iranvipnet/937" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -446,7 +575,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/938" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMWI3NjA1NTAxYmI1ZjA2OGU3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/938" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGZhODk3ODQwNWRmNTk2Y2Q0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -463,15 +592,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Telegram-VPNCUSTOMIZE-@151.101.1.6:80?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=auto&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;fp=randomized&amp;type=ws&amp;sni=hajlab.ucdavis.edu#All</code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/938" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">391</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/938"><time datetime="2024-12-22T08:26:56+00:00" class="time">08:26</time></a></span>
@@ -479,7 +606,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/939" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTk5NTljODcxNjEwYjhiOTBlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/939" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTM5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjJkYTgyMzVmYmYxNWFlZjVmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -496,15 +623,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Channel-VPNCUSTOMIZE@fishlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;type=ws&amp;sni=fishlab.ucdavis.edu#All</code></blockquote><br/><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/939" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">510</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/939"><time datetime="2024-12-23T09:04:47+00:00" class="time">09:04</time></a></span>
@@ -512,7 +637,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/940" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTQwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiODViOGQzMTgwYzE4NTg2ZDBiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="iranvipnet/940" data-view="eyJjIjotMTY5NTA3ODgyNSwicCI6OTQwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiODQyOTBiZjA2M2VkNTZjYmUzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/iranvipnet"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/szUAnk36i64x7ITfUFQ61Thfkw4c909LlMhxmqSzO5E0ivc2E2_BVvGTaIVdFTH8uIpI2RloZz2Sb87fBuFnWplsAYGF7xqPNYZcGWIgClzkOMy52myrftmKxuAE9yFXNL6FORz89TZgqfxKAddDkcuYczhJJ_9RMe8sKSxWkUEdZLtXWxrVc5r8C94o-I2cc8n0n1qnlSfasYVMiWqR8HEqidRj7gnW_YXbayHAMaBR4NRopKqrTVxtZ9PR63M1ksnlfMoIxzQIW88nkaHsXX0kP-hsoM4v3XWSq-J_8VBgiqUWW8opU5BABlYEthEN1WZ-9lv772wAy2VNlUSgVQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -529,15 +654,13 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/iranvipnet"><span dir="auto">VIP_V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://-VPNCUSTOMIZE-@fishlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;type=ws&amp;sni=fishlab.ucdavis.edu#All</code></blockquote><br/><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/iranvipnet/940" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">550</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/iranvipnet/940"><time datetime="2024-12-24T09:46:03+00:00" class="time">09:46</time></a></span>
@@ -554,11 +677,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 72.61ms -->
+<!-- page generated in 129.67ms -->

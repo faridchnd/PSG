@@ -56,9 +56,126 @@ GAP : @FOXNT_GAP
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -87,7 +204,7 @@ GAP : @FOXNT_GAP
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.15K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">174</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">23</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">15</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">369</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">﷽<br/>به صورت روزانه کانفیگ های رایگان داخل چنل قرار میگیره<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E8A.png')"><b>🎊</b></i><br/>                   <br/>ADMIN1 : <a href="https://t.me/mobofarous_admin" target="_blank">@mobofarous_admin</a><br/><br/>BOT : <a href="https://t.me/Farousbot" target="_blank">@Farousbot</a><br/><br/>GAP : <a href="https://t.me/FOXNT_GAP" target="_blank">@FOXNT_GAP</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=e490a79fc3c013010e_2624827230867977414">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=4437b9c272adee2c15_9064903808187538254">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -108,7 +225,7 @@ GAP : @FOXNT_GAP
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=e490a79fc3c013010e_2624827230867977414">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=4437b9c272adee2c15_9064903808187538254">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/foxnt">
@@ -125,7 +242,7 @@ GAP : @FOXNT_GAP
 <main class="tgme_main" data-url="/foxnt">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/foxnt?before=3714" class="tme_messages_more js-messages_more" data-before="3714"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3714" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNCwidCI6MTc1MTk3NjIwMSwiaCI6IjcyZDhmY2MxNDEwZmYxZTFmYiJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/foxnt?before=3714" class="tme_messages_more js-messages_more" data-before="3714"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3714" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNCwidCI6MTc1MTk4MTMwNCwiaCI6IjIxOWZhYWRhYjU0ZmQwM2RhYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -142,9 +259,7 @@ GAP : @FOXNT_GAP
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/notcoin_bot?start=r_573790_12577070" target="_blank" rel="noopener">https://t.me/notcoin_bot?start=r_573790_12577070</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +25k Notcoin as a first-time gift<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +500k Notcoin if you have Telegram Premium <a href="https://t.me/PremiumBot" target="_blank">@PremiumBot</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/notcoin_bot?start=r_573790_12577070">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/notcoin_bot?start=r_573790_12577070" target="_blank" rel="noopener">https://t.me/notcoin_bot?start=r_573790_12577070</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +25k Notcoin as a first-time gift<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +500k Notcoin if you have Telegram Premium <a href="https://t.me/PremiumBot" target="_blank">@PremiumBot</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/notcoin_bot?start=r_573790_12577070">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/oTH4e9bdiZlLN_HVyM8mqSLamj92cQFK6CgQUd8k0YN_jc7o22SsCsbIyQncEELt6XceyA8R8nBpZVSlYg2598PPwece-rJ0nNJFg9a9340CF1vZY6AhmJzdCqJVOV2rxaYLsjFEy5QBd1S_svumsqx5pdLIXlfqeqBRO4iQFpVmtpS_KTd5u2nsPdB3G3V7R7jCVlHI0vmYOb4N7h30M3RGLmH7OjCNdKwmatPA8GSvSmp3IImRd9oW616sCVCcwKmYN09EphyY7O4dlGV_75BfszUZ2l3StBk90nN-sJwYWlb5ehC1b_UkWP2e81E8mw7-ah91FMuKZrkJBWFk0g.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
@@ -154,12 +269,12 @@ GAP : @FOXNT_GAP
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3714"><time datetime="2024-01-14T19:04:10+00:00" class="time">19:04</time></a></span>
+    <span class="tgme_widget_message_views">1.23K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3714"><time datetime="2024-01-14T19:04:10+00:00" class="time">19:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3715" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNSwidCI6MTc1MTk3NjIwMSwiaCI6IjUxMGRkOTg1ZGNhZTkxMWViMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3715" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNSwidCI6MTc1MTk4MTMwNCwiaCI6IjZmOTQ2NGM4ZmU2MjU2Y2RhNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -175,7 +290,7 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3714" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3714" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
@@ -187,17 +302,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3715" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3715"><time datetime="2024-01-14T19:18:11+00:00" class="time">19:18</time></a></span>
+    <span class="tgme_widget_message_views">1.32K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3715"><time datetime="2024-01-14T19:18:11+00:00" class="time">19:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="FOXNT/3716" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNiwidCI6MTc1MTk3NjIwMSwiaCI6IjhkMjEwNzdjOTFhNTk2YWZjNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="FOXNT/3716" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNiwidCI6MTc1MTk4MTMwNCwiaCI6ImEyZTczMzIyNjEyZThhNzA4MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -214,9 +327,7 @@ GAP : @FOXNT_GAP
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">https://t.me/notcoin_bot?start=r_573790_12577070  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +25k Notcoin as a first-time gift <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> +500k Notcoin if you have Telegram Premium @PremiumBot</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -225,7 +336,7 @@ GAP : @FOXNT_GAP
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3717" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNywidCI6MTc1MTk3NjIwMSwiaCI6ImZkOGY5ZDU4ZmYzMGE5NWUxOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3717" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxNywidCI6MTc1MTk4MTMwNCwiaCI6IjZmMDA5NTgwOTI0NmYyNDRhMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -241,7 +352,7 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3714" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3714" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
@@ -253,17 +364,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3717" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3717"><time datetime="2024-01-14T19:40:33+00:00" class="time">19:40</time></a></span>
+    <span class="tgme_widget_message_views">1.22K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3717"><time datetime="2024-01-14T19:40:33+00:00" class="time">19:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3718" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxOCwidCI6MTc1MTk3NjIwMSwiaCI6IjI5Y2UzNjM4ZmM0ZWFmZjJlOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3718" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxOCwidCI6MTc1MTk4MTMwNCwiaCI6IjZiZTU5Y2Y3MTZmZTA1MGNjMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -286,17 +395,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3718" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>16</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91BE.png')"><b>👾</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3718"><time datetime="2024-01-14T20:32:20+00:00" class="time">20:32</time></a></span>
+    <span class="tgme_widget_message_views">1.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3718"><time datetime="2024-01-14T20:32:20+00:00" class="time">20:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3719" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxOSwidCI6MTc1MTk3NjIwMSwiaCI6IjMwZDkwYjU4MzdhOGIxMGNiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3719" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcxOSwidCI6MTc1MTk4MTMwNCwiaCI6ImE1YWMxOTZjM2QzZDBmMTRhNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -312,24 +419,22 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3718" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3718" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5145917376671253418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> دوباره برگشتیم با یه کانفیگ رایگان دیگه که قول دادم <tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>  <tg-emoji emoji-id="5213446125264055603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> تمام نت ها <tg-emoji emoji-id="6005550352206663509"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005605392212562348"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005691188479266486"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6008326717851046274"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji>   vless://788c24fa-af91-4b0d-a589-48381b07101a@168.119.107.162:35448/?type=tcp&amp;security=none#-Channel%3A%20%40VPNLime  <tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji><tg-emoji emoji-id="5972210698636234017"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i></tg-emoji>  vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICItQ2hh…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اتمام حجم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3719"><time datetime="2024-01-15T19:06:49+00:00" class="time">19:06</time></a></span>
+    <span class="tgme_widget_message_views">1.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3719"><time datetime="2024-01-15T19:06:49+00:00" class="time">19:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3720" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMCwidCI6MTc1MTk3NjIwMSwiaCI6ImZmMzM1NGI3ZjFmZDA2MDhiNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3720" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMCwidCI6MTc1MTk4MTMwNCwiaCI6ImIzYjFhMDE0NDc4YWJkZGIwYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,17 +457,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3720" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3720"><time datetime="2024-01-15T20:06:22+00:00" class="time">20:06</time></a></span>
+    <span class="tgme_widget_message_views">1.46K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3720"><time datetime="2024-01-15T20:06:22+00:00" class="time">20:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3721" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMSwidCI6MTc1MTk3NjIwMSwiaCI6IjMyMDE3Nzc2ZTc5NDMwNmRhNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3721" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMSwidCI6MTc1MTk4MTMwNCwiaCI6ImM2YTJhYTEwMGI0NjYyZDE4MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -378,24 +481,22 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3720" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3720" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5145917376671253418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> یه کانفیگ رایگان 1000G براتون میزارم استفاده کنید<tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>    <tg-emoji emoji-id="5213446125264055603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> تمام نت ها <tg-emoji emoji-id="6005550352206663509"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005605392212562348"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005691188479266486"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6008326717851046274"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji>   vless://19f143e1-95dc-42f6-f4b4-0554988e876d@37.32.10.174:33269/?type=ws&amp;path=%2F%40VPNlime&amp;security=none#Channel%3A%20%40VPNLime  ری اکشن بالا باشه انرژی بگیریم <tg-emoji emoji-id="5145740707486499780"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5145740707486499780"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8B.png')"><b>🍋</b></i>@vpnlime</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اتمام حجم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3721"><time datetime="2024-01-16T21:21:36+00:00" class="time">21:21</time></a></span>
+    <span class="tgme_widget_message_views">1.14K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3721"><time datetime="2024-01-16T21:21:36+00:00" class="time">21:21</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3722" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMiwidCI6MTc1MTk3NjIwMSwiaCI6ImY1ZjkyZmRkMDNkZDMzZWQzMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3722" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMiwidCI6MTc1MTk4MTMwNCwiaCI6IjUxYjQ2MTU0ZmQ5OGZmYjdmMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -418,17 +519,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3722" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3722"><time datetime="2024-01-17T11:22:11+00:00" class="time">11:22</time></a></span>
+    <span class="tgme_widget_message_views">1.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3722"><time datetime="2024-01-17T11:22:11+00:00" class="time">11:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3723" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMywidCI6MTc1MTk3NjIwMSwiaCI6IjQ5NTBhM2U5YmVmZTVkNzEyYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3723" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyMywidCI6MTc1MTk4MTMwNCwiaCI6IjkzYzQ0ZWJmN2I2N2VkOGFmNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -451,17 +550,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3723" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3723"><time datetime="2024-01-17T11:25:13+00:00" class="time">11:25</time></a></span>
+    <span class="tgme_widget_message_views">1.71K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3723"><time datetime="2024-01-17T11:25:13+00:00" class="time">11:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3724" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNCwidCI6MTc1MTk3NjIwMSwiaCI6ImU2YmU2ZjkyMzRkY2YzYTJmZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3724" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNCwidCI6MTc1MTk4MTMwNCwiaCI6IjkzMWQ4ZmI4Y2ZiNjI5ZmEzOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -484,17 +581,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3724" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>48</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F958A.png')"><b>🕊</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91BB.png')"><b>👻</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3724"><time datetime="2024-01-17T20:51:52+00:00" class="time">20:51</time></a></span>
+    <span class="tgme_widget_message_views">2.27K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3724"><time datetime="2024-01-17T20:51:52+00:00" class="time">20:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3725" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNSwidCI6MTc1MTk3NjIwMSwiaCI6ImJhNjdmYjU3YzBlM2I2NzhiYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3725" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNSwidCI6MTc1MTk4MTMwNCwiaCI6ImI3ZjQ2MmYzNTljN2ZjNTg4ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -510,7 +605,7 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3724" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3724" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
@@ -518,18 +613,16 @@ GAP : @FOXNT_GAP
 </a>
 <a class="tgme_widget_message_photo_wrap 5861536388376281701 1364745290_456245861" href="https://t.me/FOXNT/3725" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/T4alpCYgg6X8pK-Db748W6EgqPCKYMhlxCQDo6UvPZFbZkW6X5sY-SZaFuqeRm3v0SwHdSKpvho4MU2yupnW0Ks4G8IEYIEYq849HI-BfEmdhyyIJnQga55fR_Vs8ghFRcmU6f_kkKslL_NXEKyplptKVbKLXy0VrUav42PJ3-l6N7B3oLzJePm6A218lsrYujTuGaGx-Af3Int3xye1nyUoWohExEOa-uKPBFBFNyZQil7qUWWPI1VIBI5iu7NDCAf7pUX7lvD-swH5b72LejGRkw9V1bmZGgKVRZ2oD_QUGrEqAkHe6k_KTwL0BR3XUCorbmizUIfOgzPH_SHTPQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:44.5%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">تانل گذاشتم براتون بدون قطعی همینقدر ری اکشن؟؟؟ ری اکشن بزنید حال کنیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">تانل گذاشتم براتون بدون قطعی همینقدر ری اکشن؟؟؟ ری اکشن بزنید حال کنیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9887.png')"><b>😇</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>28</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3725"><time datetime="2024-01-19T20:25:55+00:00" class="time">20:25</time></a></span>
+    <span class="tgme_widget_message_views">2.02K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3725"><time datetime="2024-01-19T20:25:55+00:00" class="time">20:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3726" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNiwidCI6MTc1MTk3NjIwMSwiaCI6IjFiNDlmZTRkZTliMGEyNGU1ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3726" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyNiwidCI6MTc1MTk4MTMwNCwiaCI6IjdmY2I5ODkyOTJhOTY3NjBlMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -545,24 +638,22 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3724" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3724" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5145917376671253418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> یه کانفیگ رایگان 1000G براتون میزارم استفاده کنید<tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>    <tg-emoji emoji-id="5213446125264055603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> تمام نت ها <tg-emoji emoji-id="6005550352206663509"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005605392212562348"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005691188479266486"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6008326717851046274"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji>   vless://cbe7aa50-5755-4971-f1ac-a5d3bfc0f363@95.38.153.33:33269/?type=ws&amp;path=%2F%40VPNlime&amp;security=none#Channel%3A%20%40VPNLime  ری اکشن بالا باشه انرژی بگیریم <tg-emoji emoji-id="5145740707486499780"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5145740707486499780"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8B.png')"><b>🍋</b></i>@vpnlime</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اتمام حجم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3726"><time datetime="2024-01-20T22:49:58+00:00" class="time">22:49</time></a></span>
+    <span class="tgme_widget_message_views">1.68K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3726"><time datetime="2024-01-20T22:49:58+00:00" class="time">22:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="FOXNT/3728" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyOCwidCI6MTc1MTk3NjIwMSwiaCI6IjM5ODhmNDQ3ZmQzOGVlMjQzOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="FOXNT/3728" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzcyOCwidCI6MTc1MTk4MTMwNCwiaCI6IjJmNDJmZWRmYTIwOTc5NDZkNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -579,9 +670,7 @@ GAP : @FOXNT_GAP
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a> pinned Deleted message</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -590,7 +679,7 @@ GAP : @FOXNT_GAP
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3730" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMCwidCI6MTc1MTk3NjIwMSwiaCI6Ijc1N2FkNDdlMWU3NjhiNjA1ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3730" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMCwidCI6MTc1MTk4MTMwNCwiaCI6IjI2YzFlZDcxN2FhMGU4OWZjNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -613,17 +702,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3730" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3730"><time datetime="2024-01-25T10:41:02+00:00" class="time">10:41</time></a></span>
+    <span class="tgme_widget_message_views">3.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3730"><time datetime="2024-01-25T10:41:02+00:00" class="time">10:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3731" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMSwidCI6MTc1MTk3NjIwMSwiaCI6IjA3N2RlMzkyNmUwYmNhZWNiMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3731" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMSwidCI6MTc1MTk4MTMwNCwiaCI6ImE5YWMxYTg3YjljMDIyOTlkOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -646,17 +733,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3731" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>31</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9888.png')"><b>😈</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3731"><time datetime="2024-01-25T11:35:10+00:00" class="time">11:35</time></a></span>
+    <span class="tgme_widget_message_views">3.79K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3731"><time datetime="2024-01-25T11:35:10+00:00" class="time">11:35</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3733" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMywidCI6MTc1MTk3NjIwMSwiaCI6IjZhY2Y5MDY1Y2ZiZWE5ZWJmNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3733" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczMywidCI6MTc1MTk4MTMwNCwiaCI6ImZhMzY1ODUwYzkwMjgxNzg5OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -672,24 +757,22 @@ GAP : @FOXNT_GAP
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FOXNT"><span dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FOXNT/3731" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FOXNT/3731" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA68A.png')"><b>🦊</b></i>𝙁𝙊𝙓𝙉𝙏 | 𝘾𝙊𝙉𝙁𝙄𝙂<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C8E.png')"><b>🌎</b></i></span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5145917376671253418"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> یه کانفیگ رایگان 1000G براتون میزارم استفاده کنید<tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><tg-emoji emoji-id="5156883789682574093"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji>  کانفیگ قبلی مشکل فنی داشت برطرف شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>    <tg-emoji emoji-id="5213446125264055603"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></tg-emoji> تمام نت ها <tg-emoji emoji-id="6005550352206663509"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005605392212562348"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6005691188479266486"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji><tg-emoji emoji-id="6008326717851046274"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i></tg-emoji>   vless://7cd6adff-8849-4fad-b3b3-857721c81477@49.13.74.174:8080?type=ws&amp;path=%2F%40VPNLime&amp;host=fast.com&amp;security=none#Channel%3A%20%40VPNLime…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اتمام حجم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A8.png')"><b>🤨</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3733"><time datetime="2024-01-31T07:32:20+00:00" class="time">07:32</time></a></span>
+    <span class="tgme_widget_message_views">3.34K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Support</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3733"><time datetime="2024-01-31T07:32:20+00:00" class="time">07:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3734" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNCwidCI6MTc1MTk3NjIwMSwiaCI6IjlhYzM4MjEzOGUzY2JjMzdhZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3734" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNCwidCI6MTc1MTk4MTMwNCwiaCI6IjdlNzdmNmE0YTQwYjYzNGJmZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -712,17 +795,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3734" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97BF.png')"><b>🗿</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3734"><time datetime="2024-02-18T22:41:32+00:00" class="time">22:41</time></a></span>
+    <span class="tgme_widget_message_views">4.47K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3734"><time datetime="2024-02-18T22:41:32+00:00" class="time">22:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3735" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNSwidCI6MTc1MTk3NjIwMSwiaCI6IjYzMmUxMjYwZjdkOTFkYmU5NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3735" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNSwidCI6MTc1MTk4MTMwNCwiaCI6ImI0OTk5ZWQyYWYwZGM0NGQ3YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -745,17 +826,15 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3735" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3735"><time datetime="2024-03-21T09:15:47+00:00" class="time">09:15</time></a></span>
+    <span class="tgme_widget_message_views">2.38K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3735"><time datetime="2024-03-21T09:15:47+00:00" class="time">09:15</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3736" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNiwidCI6MTc1MTk3NjIwMSwiaCI6ImViZWI2MmZjZmQxMmFjODUyZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FOXNT/3736" data-view="eyJjIjotMTkxNTU3NDAzNCwicCI6MzczNiwidCI6MTc1MTk4MTMwNCwiaCI6ImRjNjZjZDI5YzlhODlkNzY0NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FOXNT"><i class="tgme_widget_message_user_photo bgcolor3" data-content="𝙁"><img src="https://cdn1.cdn-telegram.org/file/t5Oi9YGNrmamxlbC1xt6ueFnd5EAFv48k9iotUhWo4Ya3FgcZMaTlCxCEQCWEpSaLDw_y0p1x9A-YS2wUfa5zlEmf1C2go8BDMy7nT1BFarmhdWkyGJEh-qUDVwsQyiAWr03x7comyqJPcGD_o_nWqGiL2SKONeKbbM0uGK2RvACHSrrwI3STuhfKifjLeM2fzZpMIPUW7zpCRK2HnZelDZeLbmqUDUOmh_JuVt46f_mlHP0xLHghTCBr3rcy6eIM2wKKSWDLcFU5vsFxIwKdFV6vAMlWDkFwC7vw5RrXygU9m7btmDayRlr2bUAx0hhdo08zuV9FMlEJVcsNx_wnA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -778,12 +857,10 @@ GAP : @FOXNT_GAP
     <a href="https://t.me/FOXNT/3736" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3736"><time datetime="2024-03-21T09:15:57+00:00" class="time">09:15</time></a></span>
+    <span class="tgme_widget_message_views">2.46K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">MoboFarous</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/FOXNT/3736"><time datetime="2024-03-21T09:15:57+00:00" class="time">09:15</time></a></span>
   </div>
 </div>
   </div>
@@ -797,11 +874,11 @@ GAP : @FOXNT_GAP
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 80.63ms -->
+<!-- page generated in 75.44ms -->

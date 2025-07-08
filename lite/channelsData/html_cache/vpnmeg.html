@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -71,9 +188,9 @@
             </div>
             <div class="tgme_channel_info_header_username"><a href="https://t.me/vpnmeg">@vpnmeg</a></div>
           </div>
-          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">6.02K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">370</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">37</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">734</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3.02K</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">6.01K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">370</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">37</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">734</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3.02K</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><a href="https://t.me/VIPVPNSIAOFFER" target="_blank" rel="noopener">https://t.me/VIPVPNSIAOFFER</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=53c24352330d5dfe50_16485510828042331801">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=b028b33084d828b48c_6879892261046087009">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=53c24352330d5dfe50_16485510828042331801">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=b028b33084d828b48c_6879892261046087009">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vpnmeg">
@@ -103,7 +220,7 @@
           <div class="tgme_header_title"><span dir="auto">MeGaVPN</span></div>
           <div class="tgme_header_labels"></div>
         </div>
-        <div class="tgme_header_counter">6.02K subscribers</div>
+        <div class="tgme_header_counter">6.01K subscribers</div>
       </a>
     </div>
   </div>
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/vpnmeg">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnmeg?before=5889" class="tme_messages_more js-messages_more" data-before="5889"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5889" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg4OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjA3NWRmZjk1N2MzNGZlZWI4YSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnmeg?before=5889" class="tme_messages_more js-messages_more" data-before="5889"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5889" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg4OSwidCI6MTc1MTk4MTU1OSwiaCI6ImQxMWZkMWExODFkN2UyZGFkOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -134,17 +251,15 @@
     <a href="https://t.me/VpnMeG/5889" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5889"><time datetime="2024-12-21T07:51:07+00:00" class="time">07:51</time></a></span>
+    <span class="tgme_widget_message_views">1.84K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5889"><time datetime="2024-12-21T07:51:07+00:00" class="time">07:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5890" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MCwidCI6MTc1MTk3NjQ1OSwiaCI6ImFlNGY5MDJlZWVmNmI0YzhmMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5890" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MCwidCI6MTc1MTk4MTU1OSwiaCI6ImQ0Yzg0MjQ5NTJiODRmNGEzNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -173,17 +288,15 @@
     <a href="https://t.me/VpnMeG/5890" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5890"><time datetime="2024-12-21T13:44:49+00:00" class="time">13:44</time></a></span>
+    <span class="tgme_widget_message_views">1.98K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5890"><time datetime="2024-12-21T13:44:49+00:00" class="time">13:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5891" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MSwidCI6MTc1MTk3NjQ1OSwiaCI6ImVmMjZmNGFmYWM1MDBkOTc1OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5891" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MSwidCI6MTc1MTk4MTU1OSwiaCI6IjgyNmQ5NWIwNTdjZWEwZjYzOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -202,18 +315,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5996717967167047173 1396219704_456246789" href="https://t.me/VpnMeG/5891" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/oaqA1bgR8DjrZ2ng4rOlgPB4qnDYJB7xA1Gy_kvXvejcKVsKBYbxj5BZzQAu964oIEri0sBIKN7ULKLHYnlHNUD8UagrP4euFlsYA-LUQZvbbfHxEMzv9oNhuYqWBV1ViuJLXYeRsFYn4Bz2RDWbBG8Ypq5tZA6dDWVp3h7c-NQHnaJQRqXpyuO_zEhZD-at09fWCisotmIgWKc74BKVC7klSXg51JcXaRTN-zaPTnfQsL-m-ywtjhDnvAa4oydWNDKwDbuxnQy1UUBl9KtdtK7Q-xB5WU07r1UJdMoL_fSY7DBg2oIBHPfQ0qChG4p9wi-ahUMrygIYpqM7qNtByQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">دیشب رفته بود کمک پدرش که کارش زودتر تموم بشه و شب‌ چله کنار هم باشن<br/><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">دیشب رفته بود کمک پدرش که کارش زودتر تموم بشه و شب‌ چله کنار هم باشن<br/><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.96&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=185.222.28.29&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5891"><time datetime="2024-12-22T07:43:56+00:00" class="time">07:43</time></a></span>
+    <span class="tgme_widget_message_views">1.77K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5891"><time datetime="2024-12-22T07:43:56+00:00" class="time">07:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5892" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MiwidCI6MTc1MTk3NjQ1OSwiaCI6ImU4MTYxN2M4NTRlMDY0NzAxZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5892" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MiwidCI6MTc1MTk4MTU1OSwiaCI6ImQyYTY1YmUxM2Y4ZmQwNjM3NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -230,14 +341,12 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Telegram-VPNCUSTOMIZE-@151.101.1.6:80?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=auto&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;fp=randomized&amp;type=ws&amp;sni=hajlab.ucdavis.edu#All</code></blockquote><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/VpnMeG/5892" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
+</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -246,7 +355,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5893" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MywidCI6MTc1MTk3NjQ1OSwiaCI6IjkyM2I2NGViYWY4NzQ4ODcyYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5893" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5MywidCI6MTc1MTk4MTU1OSwiaCI6IjdlYzgyM2VlZTRmYzZhYjMzYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -269,18 +378,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">MxTunnel v34 Mod.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">35.4 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C80.png')"><b>🌀</b></i> <b>Mx Tunnel PRO </b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C80.png')"><b>🌀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')"><b>💡</b></i>v34 | <a href="?q=%23Android">#Android</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i> <b>نسخه مود شده [MOD]<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> متـصل با همه اپراتورها <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i> اندروید پیش نیاز:</b> 5.0 و بالاتر <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i><b>امکانات</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>بدون محدودیت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>تبلیغات حذف شد <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>دارای ۷۰ سرور از ۴۰ کشور&nbsp; <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>پشتیبانی از پروتکل V2ray <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>مناسب اینستا ، وب گردی و...<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>- در صورت مشکل در اتصال سرورهای دیگه رو تست کنید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>- در صورت مشکل در نصب، نسخه‌ی فعلی را حذف و سپس نسخه‌ی جدید را نصب کنید.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C80.png')"><b>🌀</b></i> <b>Mx Tunnel PRO </b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C80.png')"><b>🌀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')"><b>💡</b></i>v34 | <a href="?q=%23Android">#Android</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i> <b>نسخه مود شده [MOD]<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> متـصل با همه اپراتورها <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i> اندروید پیش نیاز:</b> 5.0 و بالاتر <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i><b>امکانات</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>بدون محدودیت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>تبلیغات حذف شد <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>دارای ۷۰ سرور از ۴۰ کشور&nbsp; <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>پشتیبانی از پروتکل V2ray <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>مناسب اینستا ، وب گردی و...<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>- در صورت مشکل در اتصال سرورهای دیگه رو تست کنید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>- در صورت مشکل در نصب، نسخه‌ی فعلی را حذف و سپس نسخه‌ی جدید را نصب کنید.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5893"><time datetime="2024-12-22T09:33:40+00:00" class="time">09:33</time></a></span>
+    <span class="tgme_widget_message_views">2.45K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5893"><time datetime="2024-12-22T09:33:40+00:00" class="time">09:33</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5894" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NCwidCI6MTc1MTk3NjQ1OSwiaCI6ImNjZDRmYTEzNThlNjZkZTM3ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5894" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NCwidCI6MTc1MTk4MTU1OSwiaCI6IjVkNWIyOTMzYWVjNGQ5MjJlZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -297,23 +404,21 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://Channel-VPNCUSTOMIZE@fishlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;type=ws&amp;sni=fishlab.ucdavis.edu#All</code></blockquote><br/><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/VpnMeG/5894" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
+</div></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5894"><time datetime="2024-12-23T09:04:55+00:00" class="time">09:04</time></a></span>
+    <span class="tgme_widget_message_views">2.94K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5894"><time datetime="2024-12-23T09:04:55+00:00" class="time">09:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5895" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NSwidCI6MTc1MTk3NjQ1OSwiaCI6ImE2MTk1ZjE0MjY4Mjg5OWUwYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5895" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NSwidCI6MTc1MTk4MTU1OSwiaCI6ImYxZjExMTBjYWE0NDhhMWQ5NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -332,18 +437,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6000047043562813153 1396994815_456242913" href="https://t.me/VpnMeG/5895" style="width:653px;background-image:url('https://cdn4.cdn-telegram.org/file/F54Kk6_5_N67kmdcufHWM-8qTITXcocOmNWPOmVj5whlA9ScHFa3LpSmsQx_1-Qz3cDbKPZ0lYIT0ZPXBBcv8hqb4jBRS_Z3KwFXLwwrgcxkb3mXedP7n8MtjRJRdqQStKiWoRUnH_WPpvMFgvNlEeiJ3xOgf5c8BxYjFwOeqb8xDVeF2UmXi2PQ3COYLYGqJ1LOFlC5fQUBGFvbJ4J3gUjP-Nr4wGMMM6yn1MjhmVuy0vw2544HtRLp8d99SwO5R8699K1X5XsmoaJ1DKL45Dey6Xq1I6qDqNXVtM9yB5VaYkcuviL49u4bjcmJviIJR-dnn7WToggSxQRyRbLeAQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:122.51148545176%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">آخرین نفسهای پاییز  در زمستانِ جنگلهای هیرکانی<br/>ثبت از مجتبی دری.<br/><br/><a href="https://t.me/proxy?server=78.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.63.tooranian1.ir.javan1.ir&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی جدید</a><br/><a href="https://t.me/proxy?server=93.95.115.223&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJwAAAAAAAAAAAAAAAAAAAAkIicxgcZ0hcMsAAAA0hcMsAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=78.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.63.tooranian1.ir.rangers6.ir&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">آخرین نفسهای پاییز  در زمستانِ جنگلهای هیرکانی<br/>ثبت از مجتبی دری.<br/><br/><a href="https://t.me/proxy?server=78.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.63.tooranian1.ir.javan1.ir&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی جدید</a><br/><a href="https://t.me/proxy?server=93.95.115.223&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJwAAAAAAAAAAAAAAAAAAAAkIicxgcZ0hcMsAAAA0hcMsAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=78.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.6378.47.88.63.tooranian1.ir.rangers6.ir&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5895"><time datetime="2024-12-24T09:31:36+00:00" class="time">09:31</time></a></span>
+    <span class="tgme_widget_message_views">3.44K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5895"><time datetime="2024-12-24T09:31:36+00:00" class="time">09:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5896" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NiwidCI6MTc1MTk3NjQ1OSwiaCI6IjFkNzE2ZjI1MzlkZDdjOGQxMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5896" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NiwidCI6MTc1MTk4MTU1OSwiaCI6ImFlZjQ2OTcxYmUxMjNhNGQ4ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -360,23 +463,21 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><i>Free Config</i>&nbsp;<tg-emoji emoji-id="5902093867175384065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i></tg-emoji><br/><br/><i>location</i> : <tg-emoji emoji-id="5994529509074800468"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i></tg-emoji> <br/><i>Time</i> :&nbsp; <b><i>11PM</i></b> <tg-emoji emoji-id="5188420746694633417"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C97.png')"><b>🌗</b></i></tg-emoji><br/><i>Traffic</i> : <b><i>UNLIMITED</i></b> <tg-emoji emoji-id="5373315485309870642"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299BE.png')"><b>♾</b></i></tg-emoji><br/><i>Type</i> : <b><i>WS</i></b><br/><i>Configs :</i> <tg-emoji emoji-id="5470177992950946662"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><br/><blockquote expandable><code>vless://-VPNCUSTOMIZE-@fishlab.ucdavis.edu:443?path=/@VPNCUSTOMIZE-----@VPNCUSTOMIZE-----@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE---@VPNCUSTOMIZE%3Fed%3D2560&amp;security=tls&amp;host=JoinBedeeeeee--VPNCUSTOMIZE.ir.&amp;type=ws&amp;sni=fishlab.ucdavis.edu#All</code></blockquote><br/><br/><tg-emoji emoji-id="5949361713139683377"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> یک بار بزنید روی کانفیگ‌ <b>کپی</b> میشه <tg-emoji emoji-id="6034969813032374911"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9384.png')"><b>📄</b></i></tg-emoji> <br/><br/>‌<tg-emoji emoji-id="5951677112829088371"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i></tg-emoji> از داخل تنظیمات <b>MUX</b> و <b>Fragment</b> رو خاموش کنید <tg-emoji emoji-id="5364250321176505463"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i></tg-emoji><br/><br/><a href="?q=%23%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF">#کانفیگ</a> <a href="?q=%23%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%D8%B1">#اکسپلور</a> <a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D8%B4%DA%A9%D9%86">#فیلترشکن</a> <a href="?q=%23%D8%B3%D8%B1%D9%88%D8%B1">#سرور</a><br/><a href="?q=%23V2ray">#V2ray</a> <a href="?q=%23vpn">#vpn</a>&nbsp;&nbsp;</div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/VpnMeG/5896" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5896"><time datetime="2024-12-24T09:46:10+00:00" class="time">09:46</time></a></span>
+    <span class="tgme_widget_message_views">4.43K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5896"><time datetime="2024-12-24T09:46:10+00:00" class="time">09:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5897" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NywidCI6MTc1MTk3NjQ1OSwiaCI6ImI5MmUyN2UzZjY3ZGFhOTFiNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5897" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5NywidCI6MTc1MTk4MTU1OSwiaCI6IjdmMjY5MzNmZmM1MGJhMGYyZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -399,17 +500,15 @@
     <a href="https://t.me/VpnMeG/5897" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>12</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5897"><time datetime="2024-12-24T13:54:05+00:00" class="time">13:54</time></a></span>
+    <span class="tgme_widget_message_views">4.88K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5897"><time datetime="2024-12-24T13:54:05+00:00" class="time">13:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5898" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjU0NWE1NWZhYzc3OTNlNzIwMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5898" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5OCwidCI6MTc1MTk4MTU1OSwiaCI6Ijk3MmFjNmMyZjhhMWJhMWQxMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -428,18 +527,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5985302700008520166 1393561880_456243686" href="https://t.me/VpnMeG/5898" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/IGs1Ymjnmi_TRDF3-nrkK83v707mYEuDcQHTIPvyFZJ40xp3zLK1VOAsVl2wBsLztv3WXM9P54k2FwFpVoCQ-y3LiZ9jafKc3bXseLY7fvBSCrJk-cD9E-F3zZUltohtakHVUntVZIS-fyYDlYhcVojVpdV7meXG2F6UZ404Ir1BOFFXTfUYKzkDuXNX1iCMwe8rY--YnPxpsyI6KNkIoC-xBSGx9Jt5PFJ4idL7H-RuXGYyoN9Tu7lDGRmt1XPkJ14PcCLAmNKx_5FwPnR6N4C3YMQaDCmBluMrNGIHQxmpyH9Cg5omrRIoYIcIsCrc-yWRQmq2CP_0fvDplLbJnw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:66.75%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i> فیلترشکن Mega VPN</b> برای اندروید <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>دانلود مستقیم فایل Mega vpn از سایت<br/><a href="http://net2vip.com/up/app-megavpn-vipvpnsia-v2.apk" target="_blank" rel="noopener">http://net2vip.com/up/app-megavpn-vipvpnsia-v2.apk</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>فایل mega vpn <br/><a href="https://t.me/megavpnvipvpnsia/6" target="_blank" rel="noopener">https://t.me/megavpnvipvpnsia/6</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>لینک جهت تغییر یوزر و پسورد <br/><a href="https://t.me/megavpnvipvpnsia/18" target="_blank" rel="noopener">https://t.me/megavpnvipvpnsia/18</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i>ربات جهت خرید اشتراک (یوزر و پسورد ) <br/> <a href="https://t.me/vipvpnsiabot" target="_blank">@vipvpnsiabot</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>با ما همراه باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> <a href="https://t.me/vipvpnsia" target="_blank">@vipvpnsia</a><br/>━━━━━━━━━━━━━━━<br/>♡ ㅤ &nbsp;❍ㅤ&nbsp;&nbsp; &nbsp;⎙ㅤ&nbsp;&nbsp;⌲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>ˡᶦᵏᵉ&nbsp; ᶜᵒᵐᵐᵉⁿᵗ&nbsp; ˢᵃᵛᵉ&nbsp; ˢʰᵃʳᵉ</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i> فیلترشکن Mega VPN</b> برای اندروید <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>دانلود مستقیم فایل Mega vpn از سایت<br/><a href="http://net2vip.com/up/app-megavpn-vipvpnsia-v2.apk" target="_blank" rel="noopener">http://net2vip.com/up/app-megavpn-vipvpnsia-v2.apk</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>فایل mega vpn <br/><a href="https://t.me/megavpnvipvpnsia/6" target="_blank" rel="noopener">https://t.me/megavpnvipvpnsia/6</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>لینک جهت تغییر یوزر و پسورد <br/><a href="https://t.me/megavpnvipvpnsia/18" target="_blank" rel="noopener">https://t.me/megavpnvipvpnsia/18</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i>ربات جهت خرید اشتراک (یوزر و پسورد ) <br/> <a href="https://t.me/vipvpnsiabot" target="_blank">@vipvpnsiabot</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>با ما همراه باشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i> <a href="https://t.me/vipvpnsia" target="_blank">@vipvpnsia</a><br/>━━━━━━━━━━━━━━━<br/>♡ ㅤ &nbsp;❍ㅤ&nbsp;&nbsp; &nbsp;⎙ㅤ&nbsp;&nbsp;⌲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br/>ˡᶦᵏᵉ&nbsp; ᶜᵒᵐᵐᵉⁿᵗ&nbsp; ˢᵃᵛᵉ&nbsp; ˢʰᵃʳᵉ</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5898"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">1.75K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5898"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5899" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjUyYTBlZWI2OTY2OGY0MDVkZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5899" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTg5OSwidCI6MTc1MTk4MTU1OSwiaCI6IjZhMTczNzFmNGI2MzAyNTY3ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -463,17 +560,15 @@
     <div class="tgme_widget_message_document_extra" dir="auto">89.7 MB</div>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5899"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">1.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5899"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5900" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMCwidCI6MTc1MTk3NjQ1OSwiaCI6ImFlMTA3ZjQ3MDFiZDgxNzJjZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5900" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMCwidCI6MTc1MTk4MTU1OSwiaCI6IjRiZjAwNTFlMzM3ZWY3NDMzZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -493,17 +588,15 @@
 <a class="tgme_widget_message_photo_wrap blured 5850455377047570078 1362165291_456246942" href="https://t.me/VpnMeG/5900" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/UjPOUG7JFTPOWV2rh7DLE5Vkonnx9iR7vOZTT2lNGLP_sjT5ZznP23kyjgEQXpyTpswzwew68NKsLB6yb1wcdQOX1TgC3K072FJso5Wm1PUUR_Q_kFGgf62dtHZC-8Qc4fzn9BZaSmnIiPvoJk-1pKZHDWWCnHlG_MCfF-U05mMNdEntQcy5unLtSq3-y9S6h95yh9w_Gme7ul52mizFb8PEeQwMm6NxHSEkEHeBgEeNEIFRNatSXhmFjnRSRZnzl74Pd7GsPfvwe64d-jw4LNPqhfchMFN--vEQmGq1ry6y7SpF-JCCI--I2j63QM2NNPHucMGcy_izs2ybqmwj9w.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5900"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">1.37K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5900"><time datetime="2025-05-16T11:47:09+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5901" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMSwidCI6MTc1MTk3NjQ1OSwiaCI6Ijc5NzljM2YxYzNhMjExN2FiNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5901" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMSwidCI6MTc1MTk4MTU1OSwiaCI6IjVhNzFmYjYwOTVhYjMzMjUwNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -523,17 +616,15 @@
 <a class="tgme_widget_message_photo_wrap blured 5850455377047570079 1362165291_456246943" href="https://t.me/VpnMeG/5901" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/shQ9Phf4DtwMHOuLHo0W9HK0dyh_J9HpT65RBvf6-78b2mYd_gSmNV1P7j5MepBgrQnX_61LQ0hZVm6r-Ee0Amt6C3Ip3-7lqF-aVgkQ7y1yZHlsjC1g2uhvy5bHtGAAIPVDnW4iaxoIi8FQdZnWLbY2B7-swohu2bBppJMo0il9OCtUOqYvGZVacthLvRJ2TPz8Ll8pJDedcRWo53_375rp53xxg1l8zRVwMlnfdlbvmhllWjQbGofqZSSrg2-6qbsto1BfvnaAPou6vabIcUhamfGRdj7a-RYkC4hT4iPWf3nQmh1rhaoutLaggD3nxoRqNLeVUSEkmnsyWKoV5A.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5901"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">1.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5901"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5902" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMiwidCI6MTc1MTk3NjQ1OSwiaCI6ImU2YTJiZTg0YzU3MmI3MDVkNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5902" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMiwidCI6MTc1MTk4MTU1OSwiaCI6IjJjNmZlN2Q3ZGFkNTRmMmRmOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -553,17 +644,15 @@
 <a class="tgme_widget_message_photo_wrap blured 5850455377047570080 1362165291_456246944" href="https://t.me/VpnMeG/5902" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/BIh0FM3b3PPMaD3UO0latQ1Kc769peUptcWLNqkHZZ4nQU9NA2ZPg_EI12V-UZFTXWr5wSykWww7KWVEVIhAVMs97m39mhzQSwn4PtmNf0mgQKMbm-6lJmNjFn_Z2ssZNNDBaSBP-e9d82i_DrvjG696O4gee4yY3RPjiTPQH7jOiwhT6Yv_ljDE4wtSG0vk6QZ3zvln8t265tSXd0yjQHIC4S3DAS37rbOzhU966ZXGcl_EPsIOfNWXRscDaf_CHQUmB7uhJoowgqtVygHflJsbjDsgbgcKCTizjnZApX3gDZQblaKMVmpQzAAxikrr4DtHGt8zSik7djQ3kvLo3w.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5902"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">1.67K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5902"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5903" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMywidCI6MTc1MTk3NjQ1OSwiaCI6IjlmMmQwNjc4YzBkNWNhZjU0YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5903" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwMywidCI6MTc1MTk4MTU1OSwiaCI6IjUyODYzNGYwMTMxNzYzODkwNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -583,17 +672,15 @@
 <a class="tgme_widget_message_photo_wrap blured 5850455377047570081 1362165291_456246945" href="https://t.me/VpnMeG/5903" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/BVxJg9wn8jgfPQh8zpvtZobEino9NYw-26ryCM1p10rPdqB1SiF_bCtvnKpxsLBdMYThqum14qAP5Ma3ZZetASu9zy6WLvyBEHXO3ahUg9hH9Yzk3mhtc5K78xelR0H3lYOTSdKecQZMkJn5JFTYir0d1-eObQfQ_1KzYnIn0dbRDCWc_u1D09F18TK-c0zIz3k6cD_gbVrtsY9je_EYUBTlpj2DjJXhwi0FaSMnzx0NVflukNR6s0EKTiuFhDIwcREWAnZI7OIiZWhfkzC7_fussLTUy_nIh86DEWfAH-l9bFHyh9un0GN1GnlB23mJau_7FMDmAp1MpvF_M9KvMA.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5903"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
+    <span class="tgme_widget_message_views">2.18K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5903"><time datetime="2025-05-16T11:47:10+00:00" class="time">11:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5904" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNCwidCI6MTc1MTk3NjQ1OSwiaCI6ImJkOTQ5ZWE0YTUwNGY4MjNiNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5904" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNCwidCI6MTc1MTk4MTU1OSwiaCI6ImZjMGM1MjM2YmFmNmZmNWE3NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -608,20 +695,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">خرید<br/><a href="https://t.me/siamakadmin" target="_blank">@siamakadmin</a><br/>تست رایگان <br/><a href="https://t.me/vipvpnsiabot" target="_blank">@vipvpnsiabot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5904"><time datetime="2025-05-16T18:38:29+00:00" class="time">18:38</time></a></span>
+    <span class="tgme_widget_message_views">2.29K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5904"><time datetime="2025-05-16T18:38:29+00:00" class="time">18:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5905" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNSwidCI6MTc1MTk3NjQ1OSwiaCI6IjE3MTRhNzYzNzliM2NhMDA2YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5905" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNSwidCI6MTc1MTk4MTU1OSwiaCI6IjE1MmQ2NGEzMzhiZTBlMzY0ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -638,24 +723,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VIPVPNSIAOFFER" target="_blank" rel="noopener">https://t.me/VIPVPNSIAOFFER</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/VIPVPNSIAOFFER">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VIPVPNSIAOFFER" target="_blank" rel="noopener">https://t.me/VIPVPNSIAOFFER</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/VIPVPNSIAOFFER">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/heSsUFi3KEMTFf9-3BvZc674uM528kgBPw_NkuQilNdzb6PwX1Vp-qRpDMREfnTGhuNHE4S45bUDcAcwHIT9cra-NzX1lEiXGv5O2WTm93Ut0PlCMesAuuIvUJddHv6wlSckxKxBStlTgnyHwU14hvcirzqyqvTkV-lWmCFCdnLWm7njKE2KBgOFT3Bqx4FzC8XRjfkSk_a0JO7KRNGGqkx4k9hCmI-U3BB88lCNcyMcc3ql9LL_lGRoquHRkjHY9NxV1wsjWdYHrtLApyuL34BCLukC-QGcuQpdweSgUIrnB0dnf_vyoX6bgRvSycRe2oXHuSKEfFpvGY010kCSDA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">VIPVPNSIA-OFFER</div>
   <div class="link_preview_description" dir="auto">آفر های خفن <br/>یهویی    PPTP-L2TP-SSTP-OPEN VPN-CISCO-V2RAY<br/>تخفیف دلی<br/>پول داشته باش چون تایم داره       @siamakadmin</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5905"><time datetime="2025-05-19T14:51:14+00:00" class="time">14:51</time></a></span>
+    <span class="tgme_widget_message_views">2.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5905"><time datetime="2025-05-19T14:51:14+00:00" class="time">14:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5906" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNiwidCI6MTc1MTk3NjQ1OSwiaCI6ImI3NzkxNzVhOTM0NTJlZjY1YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5906" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNiwidCI6MTc1MTk4MTU1OSwiaCI6IjJjYmJiZWFmNDdiNjliNGFlMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -672,24 +755,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/karenforouharmusic/70" target="_blank" rel="noopener">https://t.me/karenforouharmusic/70</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/karenforouharmusic/70">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/karenforouharmusic/70" target="_blank" rel="noopener">https://t.me/karenforouharmusic/70</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/karenforouharmusic/70">
   
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Karenforouhar</div>
   <div class="link_preview_description" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94AE.png')"><b>🔮</b></i>میکس دیپ هاوس ایرانی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D80.png')"><b>🍀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB5.png')"><b>🫵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7BF.png')"><b>🧿</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i></div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5906"><time datetime="2025-05-22T23:52:21+00:00" class="time">23:52</time></a></span>
+    <span class="tgme_widget_message_views">2.16K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5906"><time datetime="2025-05-22T23:52:21+00:00" class="time">23:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5907" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNywidCI6MTc1MTk3NjQ1OSwiaCI6IjA2OTQ1MzgxYTk5N2QwNDliNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5907" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwNywidCI6MTc1MTk4MTU1OSwiaCI6Ijc3M2M0MzVlNDIxYzRmNjhiNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -712,24 +793,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/67381104d5.mp4?token=mSMZkhd7I3N3lMg4y9NQv8q_ylRU2jNjFwDfVFn-PMYQj0-keI3kexGzK78uK28c-kR4CEdKMS0rSsw852tSxpL4r-Pn6Ll62_LdGqsM0loJHNhPBDaT6G81CKk4vzQ52HAD0nQYYFhUmbNIV5ifBLjxhT6fcfOWJ5vKuR2O0Hs3w5qgD7jOsVuXIKCZAhE2an5Y6YDwkjx1orsNlDEaSpXn1xQmIcMU2EL8Fw82Q526aqiCUQqxbblPL1fRRMrdtflW7cD7txb_ay_UQeMh-gh5OYChIByR349EE4SjSXP-T9deALa35sVVuImGi8HzVnKsCPBXLpA5A0aPf38XU43LZ6gg7ZdTngJZaHljm0sQcRflAa2mvH7BZBPKcwrFaJgrRzFqiJVaH7zVzuDpsgEtE2C_ePnJgH360HzbuOAogli-D_GciI6so_KF1BqDeWWzmLMUjg4Szbr9HlqFsB8wG_Pc7uZk1hKVZVF_ksTJZ8lJiMTkWFub3mCwOy4wuAwAW4zaCkZVYZ2JB13neaSlb3pTvguM9pa2nF-E1bJNBexa6ALAgNnpQlDCHv2hAMuwHzAkBZDbtq2c3cUTr0R81IF-9yaxAgDo2xMiePj9GEJIF4DdIHw9otV60hSwvc41VFH5w9rdX0DxQjXh2HGl7XOJt6uekbM-8nGRzFw" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:29</time>
+<time class="message_video_duration js-message_video_duration">0:28</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>مسابقه ی بزرگ برند مانتو و شلوار نوبل (مزون نوبل هفت تیر )<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i>فقط تا 24 خرداد با بیش از 500 مدل مانتو <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i>بیشترین تگ ها جایزه دریافت میکنن <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i>هر اکانت اینستاگرام یک شانس<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر اول مانتو و شلوار و شومیز برند نوبل کد های <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر دوم مانتو&nbsp; شلوار برند نوبل کد های <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر سوم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر چهارم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر پنجم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر ششم تا پانزدهم شلوار یا شومیز برند نوبل<br/><a href="https://www.instagram.com/p/DKkLR3xOj5y/?igsh=MXBjYWQxMjF4aXBhaw==" target="_blank" rel="noopener">https://www.instagram.com/p/DKkLR3xOj5y/?igsh=MXBjYWQxMjF4aXBhaw==</a><br/>همین حالا شروع کن تا یادت نرفته</div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i>مسابقه ی بزرگ برند مانتو و شلوار نوبل (مزون نوبل هفت تیر )<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i>فقط تا 24 خرداد با بیش از 500 مدل مانتو <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i>بیشترین تگ ها جایزه دریافت میکنن <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B3.png')"><b>😳</b></i>هر اکانت اینستاگرام یک شانس<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر اول مانتو و شلوار و شومیز برند نوبل کد های <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر دوم مانتو&nbsp; شلوار برند نوبل کد های <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر سوم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر چهارم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر پنجم شلوار و شومیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>بیشترین تگ نفر ششم تا پانزدهم شلوار یا شومیز برند نوبل<br/><a href="https://www.instagram.com/p/DKkLR3xOj5y/?igsh=MXBjYWQxMjF4aXBhaw==" target="_blank" rel="noopener">https://www.instagram.com/p/DKkLR3xOj5y/?igsh=MXBjYWQxMjF4aXBhaw==</a><br/>همین حالا شروع کن تا یادت نرفته</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5907"><time datetime="2025-06-09T16:30:35+00:00" class="time">16:30</time></a></span>
+    <span class="tgme_widget_message_views">1.87K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5907"><time datetime="2025-06-09T16:30:35+00:00" class="time">16:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5908" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwOCwidCI6MTc1MTk3NjQ1OSwiaCI6Ijk2MTVmZjY0M2RjYmY2MTZkNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="VpnMeG/5908" data-view="eyJjIjotMTg1OTk3MjI1MiwicCI6NTkwOCwidCI6MTc1MTk4MTU1OSwiaCI6ImNlN2Q3ZTg4MjIxOTE2MjVjYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/VpnMeG"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/hdAXz78wzNd5mYOJ9v4nfJXTnboXZw9ZiNjoOm7Fb5ALw9-y3qqhdqCQ4XnDaQGGR-zsDkoYr9XCXCDncoDB0eA9VpFD7iBGPRkH9bYbqAAFZmPcXcWTmhHUSMtcpizd25HKKB75IAhUPnKC0dUetgsdTLr00gEIq17d4rKCmTJZ-C4juOKNl36zHSZAPLYRdwGEXoMCVUVau6_ZkKN4WMWYPMA1nNBqHCaJuODekGW9rGLZLcRhZdcnAgWphGRr0utASiGhjBN-tjMDnhLptvessedX7zm4XXqrvXJNbqD3PkPXfEgc4uwOl_sKGpnCGpsfjAdNTORsLH00xLWJvw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -746,9 +825,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/VpnMeG"><span dir="auto">MeGaVPN</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/vipvpnsia/4391" target="_blank" rel="noopener">https://t.me/vipvpnsia/4391</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/vipvpnsia/4391">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/vipvpnsia/4391" target="_blank" rel="noopener">https://t.me/vipvpnsia/4391</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/vipvpnsia/4391">
   
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
@@ -758,7 +835,7 @@
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5908"><time datetime="2025-06-15T13:51:41+00:00" class="time">13:51</time></a></span>
+    <span class="tgme_widget_message_views">1.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/VpnMeG/5908"><time datetime="2025-06-15T13:51:41+00:00" class="time">13:51</time></a></span>
   </div>
 </div>
   </div>
@@ -772,11 +849,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 74.47ms -->
+<!-- page generated in 67.95ms -->

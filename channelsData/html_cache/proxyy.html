@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">39.8K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1.17K</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">356</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">175</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4.55K</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">FAST MTPROTO PROXIES FOR TELEGRAM</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=2d0d1f70b343cd51bf_7257146218987956884">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=5ec3e61eda05d66836_7345216493230353003">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=2d0d1f70b343cd51bf_7257146218987956884">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=5ec3e61eda05d66836_7345216493230353003">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/proxyy">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/proxyy">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/proxyy?before=8083" class="tme_messages_more js-messages_more" data-before="8083"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8083" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4MywidCI6MTc1MTk3NjIwMSwiaCI6IjhmZmMwYmZmYjY5MmU5NTQ1MyJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/proxyy?before=8083" class="tme_messages_more js-messages_more" data-before="8083"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8083" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4MywidCI6MTc1MTk4MTMwNCwiaCI6IjU4NWQ3MWI4ZDkwZWVkZTA1NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,10 +245,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://ab9df429-7130-4dde-9dd7-991636bafea8@manager.centralstoree.eu:2014?encryption=none&amp;flow=xtls-rprx-vision&amp;security=reality&amp;sni=www.speedtest.net&amp;fp=firefox&amp;pbk=LTWOvgF70MIQf-unHKEMhJkmJzGjCZtM8a9XF1UySXY&amp;sid=187f7d36&amp;spx=%2F&amp;type=tcp&amp;headerType=none#Za4145</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">8.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8083"><time datetime="2025-06-25T09:40:37+00:00" class="time">09:40</time></a></span>
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8084" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NCwidCI6MTc1MTk3NjIwMSwiaCI6IjRlMjZkMDk2ZDQ3ZGJjM2Y3NiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8084" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NCwidCI6MTc1MTk4MTMwNCwiaCI6IjBlOWU1NGNhY2RmY2I4ZjdiZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -158,18 +273,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5971809321513765508 1390420208_456247940" href="https://t.me/proxyy/8084" style="width:722px;background-image:url('https://cdn4.cdn-telegram.org/file/W-CDdgqr6Yg_kJ1xpIw2k1anOnrjXUNHC6QHX-XTpDlWUVo3gQmm1XsKPDKz2lNP8-90pguoj0d5o7iEUBKcThhxU1_ZMrteBOd0PBn-jCSoO9MkXrnnpCJJNkpWS3j917UcypvvHK8lHnrE-Zbr9igcrJ7nkFHpSZwS_EYhMSiJoIlZBqqqBJgmf2LFy1GS7kB1bgkHNFffhQAXXJUowAMN9zLr5HNC7OOSSieDTZbz9zJEk879-7fJOxBW5lbcmaqtQ9TqzSPYtqqQeLHbg6lUjKYQctiiqF2PNPwvn_TTCo_nxb_Yt9bgaadRawBl1HrbNbM71M3x6mSMU4uREg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:106.09418282548%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>ادعایی که به شدت فضای مجازی را تحت تاثیر قرارداده&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>همزمان با قطع اینترنت در ایران، ۵ درصد ماین بیتکوین در دنیا کاهش پیدا کرده است&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>یعنی ممکن است ۵ درصد از ماینینگ بیت‌کوین در جهان متعلق به ایرانی باشد که از شدت کمبود برق، روزانه تا ۳ ساعت برق شهروندانش قطع می‌شود؟&#33;</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>ادعایی که به شدت فضای مجازی را تحت تاثیر قرارداده&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>همزمان با قطع اینترنت در ایران، ۵ درصد ماین بیتکوین در دنیا کاهش پیدا کرده است&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>یعنی ممکن است ۵ درصد از ماینینگ بیت‌کوین در جهان متعلق به ایرانی باشد که از شدت کمبود برق، روزانه تا ۳ ساعت برق شهروندانش قطع می‌شود؟&#33;</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>18</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8084"><time datetime="2025-06-25T14:16:11+00:00" class="time">14:16</time></a></span>
+    <span class="tgme_widget_message_views">9.19K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8084"><time datetime="2025-06-25T14:16:11+00:00" class="time">14:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8085" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NSwidCI6MTc1MTk3NjIwMSwiaCI6IjVhZDExOGQ1OTk0YTZiOTRkMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8085" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NSwidCI6MTc1MTk4MTMwNCwiaCI6IjA4NDYwOTNhYzVhZTVmM2NmOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -186,30 +299,28 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-<a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/proxyy/8085"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/Gd3MA09e5OAmLjCmbU3SACFZLvitLcxZVcVwQc4TTf6LdRATXqptoHOm77DvP-bsudLDHSurU1oXwDJYLNI3pFi6VRhLICGJNHliQWBsVMttI8jBBZfA6jLTMyAWIkZMqdSEixQcMLtNQCs8qJ5kzS-6nhkICVrVgKMC69FbACevq0VpzurWF0xpQgiffZ4N-sn9AqdFXWM9PmPduG2RChOVmHyxbUuwDfUxv8kaOIKX9Q9Rt4afTAP70O8_RUamCnRCq2s8JEp4aXsutK9nqMcWLGSiZxkdzzW8yjFgHBPSeRrMrkp8bt6kenfmTS5Tgq2dM7xyTT8Lh82msG05Zw')"></i>
+<a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/proxyy/8085"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/dNGIxlJNBWa4H_I8hVSjysTiurqHnU-wjfYuzVL9zgKzSkPqjHt-fDqrpjkrZmz-PUm_q-Kb1IYx4Zq9JHREOFVztd9NdSJcsUK9jP57oRpKChuZMm5_Eu9-PBiebrL_g8zjhNSo6g7NnknZsSsWlHLo_3Vruj-V3jDRqEFgidfL8jk54nWhqZ5LXPVueno32eP6VdmpAbC5sgTOS_KxeQ5czqOwnMqjTUP1YmBOjiQ6Uoc3NvGj31U_p4H4Wp3gAtMPczaOy7tGwm4D-ceXpQwaRoXTkKRPdi7jvRd9b2orItKJYw6k5e-C5FsxhqOmpF1-x6s9V6hIRxDDnLC5IQ')"></i>
 
 <div class="tgme_widget_message_video_wrap" style="width:616px;padding-top:77.272727272727%">
-  <video src="https://cdn4.cdn-telegram.org/file/cb2518cbae.mp4?token=I_cBRGqehyrk5U36Sd5xgMEaO5SiEEP4difOMZ4op389n8_8FHJXrtmHfNMFImlHOyIkXo1o0OXbaCkjoowBHajHlgK6A16e9TF7sx-PZDwzyDu0CjQ8JCfYlRt-Wc4dSD51fgYyqxu_514-Ea_1gsatQfRuDdqjV3U8SvBZGnC5jlcW5U16XtS3n2fOHP1eJlZWr5lOm9D0xZlk4u1zQ4U78BjqloUN8vnxna01CQqACU07g_vWRtwsqbTIVP1vnvsIFb5OwK1m3GgBqddolMx99Tf8ZBqhgtN0PHx3LSR848NGErqnaseT2eiRuj8ogupxQCI9X_8-oLmluwGYug" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  <video src="https://cdn4.cdn-telegram.org/file/cb2518cbae.mp4?token=Q_353QaFcnmFnd9wA59shz2BWCLuaLFN3QXqETEsZnrUEmBBdQoGugDfv85bOXyUfXb8LL6LXCWEt7ruevWkeOT68kUj2r62c2F-m3Ov3wpdSq95gPnxq9k142cGAJw5j8FGxFopMttp1QJADqg0KgdfsnEhqfu3K70zcaNZEkzsyQviCRzk8KfpUAg73w1x2RMy3eLLzoUQVd3EWbWO5hKJq3xeVOnkW2_MBjAhi4Rgt_JR2w48FEH0iQJVe6g5N9Qn6rrRzhwdXP0qMDDQEDy_tyBVBH8CqTVtvOp3ijutHHYqhb0AIpHwclASYz5NlORPCwaEsHfEzUpjxMhBcw" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:08</time>
+<time class="message_video_duration js-message_video_duration">0:07</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>فوری/وزیر دفاع به چین رفت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E280BC.png')"><b>‼️</b></i> احتمالا برای خرید جنگنده و تجهیزات راداری</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>فوری/وزیر دفاع به چین رفت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E280BC.png')"><b>‼️</b></i> احتمالا برای خرید جنگنده و تجهیزات راداری</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">8.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8085"><time datetime="2025-06-25T15:54:10+00:00" class="time">15:54</time></a></span>
+    <span class="tgme_widget_message_views">8.43K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8085"><time datetime="2025-06-25T15:54:10+00:00" class="time">15:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8086" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NiwidCI6MTc1MTk3NjIwMSwiaCI6ImEwNTQwODNlYjE5NjkxYzQ2YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8086" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NiwidCI6MTc1MTk4MTMwNCwiaCI6ImU1ZjhhNDJkZTI5Nzc4YmJhMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -226,30 +337,28 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-<a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/proxyy/8086"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/SgQrvo5pZHD-MdwH3IbkG25D3KNmXSkyle5UtoIf_jxSNDF6AJfoDJyc5r8HdjwbKeisGxeeOhYFM55Ebda7xoWeoesJftISetVpXN6G9yRYAsqynwdfMkn6vbCHdsv5beVYxWuKSYuz1dtsqFCAPx6wdrJa4Z7kZK93nEBKdhBxHf7v9-OA84KWodOBopmOh22D8kegZbCcwp7-Baypho4rGCbuA0t4T6A8iPPJaevD6MlAoJzqYTsIeA-odECeA2QRwRipgenrSr4I59EgmxrzvFHLi2A2UBa9BAc_4-dftJYy6YD3u1nTQqIWt-XCey0IaucvlK2pCHVt_yJwEA')"></i>
+<a class="tgme_widget_message_video_player js-message_video_player" href="https://t.me/proxyy/8086"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/TParVFPn2FAHNhA9ZSZNcdVP0H4wvdTGDM02UMa1QydFepXbcBxQOUNDQL_yZ80geOTbXawB45zeDEgTxV0cUjy9p8AadC5WZeRw0i4zzC3JdMBiAt11_ekTHb5nze_sS4C8zCksMcT3TNBX9xSkW3gnCy14Eo7bEHjFyRJlATsS3E8ALUwvzxdyWJMzMHXB2b8UJw6sMk4i35XJc9oDKP4edOgZgTnma5BmlZ6k8qnt5RCRD-9h2KF69VNEVPXfuUjAXKKACo8oUGD7oZCyVOHwAr6th-hirnVVVJbbViKNXslciGFwfyGflVZZxtRwUHnao6GwMb9wxSy8mc4QGw')"></i>
 
 <div class="tgme_widget_message_video_wrap" style="width:478px;padding-top:44.769874476987%">
-  <video src="https://cdn4.cdn-telegram.org/file/1dedfeec00.mp4?token=ijq4RrjTqQ1ngm3lhNL4vBIg6lMemLZd9hf6zNXYt-lWIjHYHQZFw6isK77Bm7KTvWErv0kl3sQPLGtgcqIFs9EzN5FFBwrme_4Hea7yKN9o7Um-sGOsahhHDw90Lfpiv6Ut7-jVm2Bb-M12NqhlTpPbgHDXR72pSIb5derWZZG0eq3RJ2yXjSui13TBVPxRpgTPgPMMB-vBlPK8s5OeHQGOO3ulaPBEhJtiAmz5InM4Uwc6WPI508gqJh0_qrRRuYmpgMNEU63GgCMvl3Fw58lB6xZ3V4giRXyXhxK02SGyirYZvebBLgk4j6hjfNIuTNN9DrF6R8StRvhn6HtwYg" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  <video src="https://cdn4.cdn-telegram.org/file/1dedfeec00.mp4?token=QrhazjlCS46dmN4nTwWuUP6jZuitz97HcwJXidikTipd62XMXfmHyaISeJVyu54ASXaQXVxQtOQWz6c6ehB3eRZ8T4s-2fSFz-ywQN0lp8TB2VP80L_JkwQE19_SKpCVRC_RRJSp4gtr6dWyIiC9BXXYkUpz3Af-QRipklTahx-wjx2BQ3y0LF6UWsJfB7cxJl9vLfKgr0OX0Wy9zFsngKAOIXRaTrbVItu2nkU_91aPe3_J8nkzCgJE_lKl1ucJPtQ18AMJLj6Qzk5fx7PmOJWWm-3HCfRCZo5UXNRgZgT2pyp-SsnnJEsCHrWZmUbBrqtqrqtf7ZOq-JpNniyUjA" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:10</time>
+<time class="message_video_duration js-message_video_duration">0:09</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i> ترامپ: &quot;اسرائیل ضربه خیلی سختی خورد. خصوصاً در روزهای آخر، اسرائیل واقعاً ضربه سختی خورد. وای پسر، اون موشک‌های بالستیک خیلی از ساختمان‌ها رو نابود کردند.&quot;</b></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i> ترامپ: &quot;اسرائیل ضربه خیلی سختی خورد. خصوصاً در روزهای آخر، اسرائیل واقعاً ضربه سختی خورد. وای پسر، اون موشک‌های بالستیک خیلی از ساختمان‌ها رو نابود کردند.&quot;</b></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">8.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8086"><time datetime="2025-06-25T15:54:36+00:00" class="time">15:54</time></a></span>
+    <span class="tgme_widget_message_views">8.84K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8086"><time datetime="2025-06-25T15:54:36+00:00" class="time">15:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8087" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NywidCI6MTc1MTk3NjIwMSwiaCI6IjdiZTUxNmY2ZjEyMmFlNDJiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8087" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4NywidCI6MTc1MTk4MTMwNCwiaCI6IjNjMTViMDUxOWRlNTM4MTc3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -264,20 +373,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://e93f923b-92b1-4009-aaeb-3691001347bd@104.17.147.22:80?mode=auto&amp;path=%2F%40Mr_Amirr_00%2F%3Fed%3D443&amp;security=none&amp;encryption=none&amp;host=de.tunnel.irangroupz.ir&amp;type=xhttp#%40Free_NetPlus</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8087"><time datetime="2025-06-25T15:55:00+00:00" class="time">15:55</time></a></span>
+    <span class="tgme_widget_message_views">9.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8087"><time datetime="2025-06-25T15:55:00+00:00" class="time">15:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8088" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4OCwidCI6MTc1MTk3NjIwMSwiaCI6IjliMDZjYzAxMzUzMzQ4M2ZiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8088" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4OCwidCI6MTc1MTk4MTMwNCwiaCI6ImI4NmJhYjQyMTJlNmRhMThkNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -294,18 +401,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://e93f923b-92b1-4009-aaeb-3691001347bd@104.17.223.18:80?mode=auto&amp;path=%2F%40Mr_Amirr_00%2F%3Fed%3D443&amp;security=none&amp;encryption=none&amp;host=de.tunnel.irangroupz.ir&amp;type=xhttp#%40Free_NetPlus</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8088"><time datetime="2025-06-25T16:44:45+00:00" class="time">16:44</time></a></span>
+    <span class="tgme_widget_message_views">9.45K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8088"><time datetime="2025-06-25T16:44:45+00:00" class="time">16:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8089" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4OSwidCI6MTc1MTk3NjIwMSwiaCI6ImIxMzRiN2UzNTQ2NGVlYWFiYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8089" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA4OSwidCI6MTc1MTk4MTMwNCwiaCI6ImE3MTkzOGEyMWEwNTE2Mjc2MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -322,10 +427,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://e93f923b-92b1-4009-aaeb-3691001347bd@104.17.223.18:80?mode=auto&amp;path=%2F%40Mr_Amirr_00%2F%3Fed%3D443&amp;security=none&amp;encryption=none&amp;host=de.tunnel.irangroupz.ir&amp;type=xhttp#%40Free_NetPlus</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">8.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8089"><time datetime="2025-06-25T20:04:43+00:00" class="time">20:04</time></a></span>
@@ -333,7 +436,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8090" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MCwidCI6MTc1MTk3NjIwMSwiaCI6ImZiNzYzOGFlOWYzOTI3ZTNlZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8090" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MCwidCI6MTc1MTk4MTMwNCwiaCI6IjE3OGMxNDFhNTkwOWNkNDZiOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -350,23 +453,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/proxyy/8090" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ متصل نامحدود <br/><blockquote>trojan://6gZh2JbfhQ@104.248.18.1:1935?security=tls&amp;headerType=none&amp;type=tcp&amp;sni=x1-germany-digitalocean-v2.devefun.org#Free_Netplus</blockquote></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">8.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8090"><time datetime="2025-06-25T20:04:57+00:00" class="time">20:04</time></a></span>
+    <span class="tgme_widget_message_views">8.58K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8090"><time datetime="2025-06-25T20:04:57+00:00" class="time">20:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8091" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MSwidCI6MTc1MTk3NjIwMSwiaCI6IjA0MTVmMGY1NGQzOWUyMmM4MSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8091" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MSwidCI6MTc1MTk4MTMwNCwiaCI6IjliNTg5MjIzNjBlMzBhNTMxZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -381,20 +477,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#Telegram%20%40free_netplus%20%E2%9A%A1%EF%B8%8F</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8091"><time datetime="2025-06-26T14:18:10+00:00" class="time">14:18</time></a></span>
+    <span class="tgme_widget_message_views">6.72K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8091"><time datetime="2025-06-26T14:18:10+00:00" class="time">14:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8092" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MiwidCI6MTc1MTk3NjIwMSwiaCI6IjVjOWQ0OTYxODA3ZGJkMDRhMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8092" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MiwidCI6MTc1MTk4MTMwNCwiaCI6IjIxODhiYTgwNTI2M2M2NzhjYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -411,18 +505,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ جدید تست شده روی مخابرات و خانگی&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB1.png')"><b>🌱</b></i><br/><br/>vmess://eyJhZGQiOiIxNTEuMTAxLjMuOCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoibG9naW4uc2luYWJhbmsuaXIiLCJpZCI6IjFmN2UyOTQ3LWM0YTUtNGUzYy1iMjg0LTc3N2ZmNzNhMDg2ZSIsIm5ldCI6InhodHRwIiwicGF0aCI6Ii8iLCJwb3J0IjoiODAiLCJwcyI6IlRlbGVncmFtIHwgQEZyZWVfTmV0UGx1c/Cfk7EiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiJ9<br/><br/>vless://542f694b-e8bd-4b9e-858c-ccb1c46a3316@104.17.147.22:80?security=none&amp;encryption=none&amp;host=pamchall.com.&amp;type=ws#Telegram+%7C+%40Free_NetPlus%F0%9F%93%B1</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>12</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8092"><time datetime="2025-06-26T14:18:18+00:00" class="time">14:18</time></a></span>
+    <span class="tgme_widget_message_views">7.79K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8092"><time datetime="2025-06-26T14:18:18+00:00" class="time">14:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8093" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MywidCI6MTc1MTk3NjIwMSwiaCI6IjY0NWI4ZDExODk1YTBmN2FiYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8093" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5MywidCI6MTc1MTk4MTMwNCwiaCI6ImQyMjZhNzlkMjRmYWIzNDJlOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -445,24 +537,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/555249dcd9.mp4?token=UKxTbeQ4SMDR1GAbxse_IIaJ4T2swLV1kNIWItEoyOR9MM429u-VCK-iknfjlnbNvQyd3u2-PmiMKvw3kjOAq9KaxtAdbII-yXhKR19VeWDeqJd39Gd2y9cvtDqPWTfhmIf0vbdRQnu0d5sSt2PhtT9xTgkg9VDyjCN0_d_lSwTnCyn7Fp9jqttuHnrcM45cqCypNnwustixn-mrrcu5b6mIcNReNOAyBDMXt-w-uBjPudHjQjbTficiR_1Wiuioz1ikFo5bxQV-a-hrQNVv1EwxmheectKYQzyjZTGTKK072JsryI3aqyp9eUoeCUBQwp2Tqe_JvWUOZZhgtglFnw" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:09</time>
+<time class="message_video_duration js-message_video_duration">0:08</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>  پس از واکنش ترامپ درباره ورود کماندوهای اسراییلی به فردو؛ فیلمی محرمانه از این عملیات منتشر شده است<br/>در این تصاویر، گروهی از نیروهای مسلح با تجهیزات پیشرفته و در سکوت کامل، وارد یک مجموعه زیرزمینی می‌شوند که گفته می‌شود سایت هسته‌ای فردو در نزدیکی شهر قم است. هنوز منابع مستقل صحت این مکان را تأیید نکرده‌اند، اما رسانه‌های اسراییلی آن را بخشی از عملیات مشترک با ایالات متحده توصیف کرده‌اند که در جریان حملات فردو انجام شد</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>  پس از واکنش ترامپ درباره ورود کماندوهای اسراییلی به فردو؛ فیلمی محرمانه از این عملیات منتشر شده است<br/>در این تصاویر، گروهی از نیروهای مسلح با تجهیزات پیشرفته و در سکوت کامل، وارد یک مجموعه زیرزمینی می‌شوند که گفته می‌شود سایت هسته‌ای فردو در نزدیکی شهر قم است. هنوز منابع مستقل صحت این مکان را تأیید نکرده‌اند، اما رسانه‌های اسراییلی آن را بخشی از عملیات مشترک با ایالات متحده توصیف کرده‌اند که در جریان حملات فردو انجام شد</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">8.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8093"><time datetime="2025-06-26T14:20:06+00:00" class="time">14:20</time></a></span>
+    <span class="tgme_widget_message_views">8.16K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8093"><time datetime="2025-06-26T14:20:06+00:00" class="time">14:20</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8094" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NCwidCI6MTc1MTk3NjIwMSwiaCI6IjgyMmJlYTk4NGJiY2YwOTVmYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8094" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NCwidCI6MTc1MTk4MTMwNCwiaCI6IjNlYzNiMGIzYjIzMTJkZGNlNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -485,24 +575,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/f8eb80ac35.mp4?token=rYqB7Kk7TBbn727cfx_uDaErDutooQafgLC77vPzRrG5hlMVClmibU4vn8F0PJYVPI9IV79Fkr27QxrWRs38CuOQPSuiTOppq_PNMLnlumAFZYmKuETVNhowz5asR_2bjDETc-g7lHHdXeQbUmnXNZOlI0qcvOndM8sfneqcVH1gu9pDpMOawD_ObTsFEtX41qd1wBJ_CwEg_Cs2Ob56l9bnr7ZlqgLxbXoDA264qeWVzF2Zt04px4fEsA5TgEMuE09LYFUhxh87_Sn0KECF_JMMxBenTdG-v-GsHoXn1-UVOdRBYuaXTTzSshw2v8p2lv8iucPl-plaHNuJTenR1g" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:09</time>
+<time class="message_video_duration js-message_video_duration">0:08</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>طالبان :دیروز بالای 30 هزار افغان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A6F09F87AB.png')"><b>🇦🇫</b></i> از ایران به کشورشون برگشتن.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>طالبان :دیروز بالای 30 هزار افغان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A6F09F87AB.png')"><b>🇦🇫</b></i> از ایران به کشورشون برگشتن.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>42</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8094"><time datetime="2025-06-26T14:20:38+00:00" class="time">14:20</time></a></span>
+    <span class="tgme_widget_message_views">9.67K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8094"><time datetime="2025-06-26T14:20:38+00:00" class="time">14:20</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8095" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NSwidCI6MTc1MTk3NjIwMSwiaCI6ImY2M2MwYTA3ZDY0ZGFmNDIwYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8095" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NSwidCI6MTc1MTk4MTMwNCwiaCI6ImFhMGVlMjE4NmJiNzM0ZWQzZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -525,24 +613,22 @@
   
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">13:00</time>
+<time class="message_video_duration js-message_video_duration">12:59</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Media is too big</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">سومين پيام رهبر</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">سومين پيام رهبر</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>165</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>34</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">11.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8095"><time datetime="2025-06-26T14:22:35+00:00" class="time">14:22</time></a></span>
+    <span class="tgme_widget_message_views">11.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8095"><time datetime="2025-06-26T14:22:35+00:00" class="time">14:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8096" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NiwidCI6MTc1MTk3NjIwMSwiaCI6IjVjMTdiMDIyYzE1Mjg3YjM1MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8096" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NiwidCI6MTc1MTk4MTMwNCwiaCI6ImY0MGY1YTkwY2RkZDU3Yjk5NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -557,20 +643,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>چجوریه که میفهمید تغییر کردیم <br/>اما نمیفهمید چیکار کردین که اینجوری شدیم؟</b><br/><br/><a href="https://t.me/proxy?server=bomb.abineirn4.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.135&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=140.233.187.111&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.88&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.77&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.66&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=vip.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a> | <a href="https://t.me/proxy?server=newvip.abineirn2.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> <br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8096"><time datetime="2025-07-02T07:15:57+00:00" class="time">07:15</time></a></span>
+    <span class="tgme_widget_message_views">5.08K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8096"><time datetime="2025-07-02T07:15:57+00:00" class="time">07:15</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8097" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NywidCI6MTc1MTk3NjIwMSwiaCI6IjRkMmFjNDQzNzUyYzUyY2ZjOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8097" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5NywidCI6MTc1MTk4MTMwNCwiaCI6IjU5NjJmMGFiZDk0MDRjOGJiOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -587,18 +671,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">+آدم اصیل؟<br/>-کسی که وقتی بهش ارزش میدی عوض نشه.<br/><br/><a href="https://t.me/proxy?server=bomb.abineirn4.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.135&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=140.233.187.111&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.88&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.77&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.66&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=vip.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a> | <a href="https://t.me/proxy?server=newvip.abineirn2.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> <br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8097"><time datetime="2025-07-02T07:17:38+00:00" class="time">07:17</time></a></span>
+    <span class="tgme_widget_message_views">5.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8097"><time datetime="2025-07-02T07:17:38+00:00" class="time">07:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8098" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5OCwidCI6MTc1MTk3NjIwMSwiaCI6IjU3OTAzYjc3MGZhZmQ1ZjBmNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8098" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5OCwidCI6MTc1MTk4MTMwNCwiaCI6IjhlNDZiYjQzYjRkZWE2MzE0NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -621,24 +703,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/661d7fd0d5.mp4?token=hVhL-7_BGrbTKnrnRsDABnEIyKZ-H0J5H0NExjvcwZLASF8juVnRtILbS7Z9l9eKyd5S9GRW5tfuo9ieaj_X_cy2PQ1MuCzc6ebkl7m8uFD7Op3J9pxs_a_m7R6c11sTySewMzl4AraVRm6cyB78OV4sc5q7Cgd5ZaDLcjyLhT-X_rx6F4PHR-ND2rQMi-9AX0TfgiMQ6gh1IzUHhy2Q4bhQERQAK8txC6TgIbHeKGL6Qdfq3vSyVOWGoFNZr3F2gICh9s60hlSjrkVVvmxs1uA8QOKsG6vUpOp3R3lBRf-UGAlw8n3R098L9A7TYIgJz1L9KcO4faJcpRSqaYVkLw" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:44</time>
+<time class="message_video_duration js-message_video_duration">0:43</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">الهی دانایی ده که در راه نیفتیم<br/><br/><a href="https://t.me/proxy?server=bomb.abineirn4.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.135&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=140.233.187.111&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.88&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.77&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.66&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=vip.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a> | <a href="https://t.me/proxy?server=newvip.abineirn2.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> <br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">الهی دانایی ده که در راه نیفتیم<br/><br/><a href="https://t.me/proxy?server=bomb.abineirn4.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.135&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=140.233.187.111&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.88&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.77&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=140.233.187.66&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |<br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=vip.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a> | <a href="https://t.me/proxy?server=newvip.abineirn2.ir&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> <br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>13</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">6.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8098"><time datetime="2025-07-02T07:23:43+00:00" class="time">07:23</time></a></span>
+    <span class="tgme_widget_message_views">6.65K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8098"><time datetime="2025-07-02T07:23:43+00:00" class="time">07:23</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8099" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5OSwidCI6MTc1MTk3NjIwMSwiaCI6IjE2MTlhYTdjZjE1NGRlOTkwNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8099" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODA5OSwidCI6MTc1MTk4MTMwNCwiaCI6IjA4NmU5NTBlNjFhZmM1N2Y0OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -655,18 +735,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>اگه تو کارت گره افتاده <br/>پیشنهاد میکنم حتما به پشت گوش نندازی و یه سری به اسناد بزنی شاید اصلا طبیعی نیست بد بیاریات</b><br/><a href="https://t.me/khoda_khda" target="_blank">@khoda_khda</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8099"><time datetime="2025-07-03T23:47:06+00:00" class="time">23:47</time></a></span>
+    <span class="tgme_widget_message_views">5.06K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8099"><time datetime="2025-07-03T23:47:06+00:00" class="time">23:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8100" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMCwidCI6MTc1MTk3NjIwMSwiaCI6ImQzOTgwZWJmOTJiM2E3MGEyYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8100" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMCwidCI6MTc1MTk4MTMwNCwiaCI6ImIzZTYyMWIwMzVhODQ4NWIxNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -685,18 +763,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 6007209618788432398 1398662482_456243726" href="https://t.me/proxyy/8100" style="width:500px;background-image:url('https://cdn4.cdn-telegram.org/file/GAbk7HYQvYy_aKTo2kMuUrXa2byzLX2wyWetRA6x78SsNqjOFXSqT2DdhO--GBxBfFguqpvC4g7a0zNgBmBWDmiK58iulocYKhmzbaQO51ZGX__1p3v9rXgfieieN7s9wq-LQp6gyBFp2qEKCC7hAH9RuaSMyyKSsYY6w_lX3vMEqXI1ICBKlFZ0f5W8rRLxwIVBig3zWvGpJWyOlB0T5iubmPspKWGdrQDZs70I-2eWiWrH-px6muxGE0FLw9Yv3bNWTDGVrwV8IeY4tPgTko49sBLkCiKLfQX9rqg-n2-wz0LSJNeZZNul1QL-RGwp_fXnw9FMpaIb002zScJxuQ.jpg')">
   <div class="tgme_widget_message_photo" style="width:96.899224806202%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">+ قول میدی هیچوقت تنهام نزاری ؟؟<br/>- خفه شو بیا بغلم:<br/><br/><a href="https://t.me/proxy?server=87.248.132.36&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.37&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.39&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.38&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.34&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">+ قول میدی هیچوقت تنهام نزاری ؟؟<br/>- خفه شو بیا بغلم:<br/><br/><a href="https://t.me/proxy?server=87.248.132.36&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.37&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.39&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.38&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.34&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">556</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8100"><time datetime="2025-07-08T09:52:24+00:00" class="time">09:52</time></a></span>
+    <span class="tgme_widget_message_views">736</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8100"><time datetime="2025-07-08T09:52:24+00:00" class="time">09:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8101" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMSwidCI6MTc1MTk3NjIwMSwiaCI6ImUyZmNlZDBlN2M1NGU4YmEwMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8101" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMSwidCI6MTc1MTk4MTMwNCwiaCI6IjRlMDVlZTgyNmM5ZWJjZWY5MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -713,18 +789,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/proxyy"><span dir="auto">پروکسی پرسرعت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>proxy</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">موفقیت ، از شکست های متوالی تشکیل شده ؛ بدون از دست دادن اشتیاق&#33;<br/><br/><a href="https://t.me/proxy?server=87.248.132.36&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.37&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.39&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.38&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.34&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">551</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8101"><time datetime="2025-07-08T09:52:50+00:00" class="time">09:52</time></a></span>
+    <span class="tgme_widget_message_views">741</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8101"><time datetime="2025-07-08T09:52:50+00:00" class="time">09:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8102" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMiwidCI6MTc1MTk3NjIwMSwiaCI6ImUwZTlmYWI5OTkwNDEzMjRjNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="proxyy/8102" data-view="eyJjIjotMTE2MDY5Mzg3MywicCI6ODEwMiwidCI6MTc1MTk4MTMwNCwiaCI6ImRkZDcwNDM2OWE5YmIwNzJiZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/proxyy"><i class="tgme_widget_message_user_photo bgcolor3" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/Iu_XB9q-AmQcrFJphmq54Jo1h6cT3T0Juq8e4hf9jDKs_-jYZpO6edUB71GIP0cAjzksd6JZifg_a0HvthHvOX-qhKI9qf2_w2Zckld1f0VAOtyITA9Su_jcFN9y3Am8JTNKBpkQ33QP_tQ4L5RX2SToTW3lBU-EapIut7jBNd1wZ1C8dcRf7iN1gOdwszP_y0EQYQ6tk4vhltRtTwyc0cVO1hSjt1EBtnwf84FiTemmAHyFxoXWMEFPZ2KEn5t2q-j1S-9iIZj9qqDKqXrwL90wHJ5wPP2BqumXJ-MXjddqOPgJfR3jiVAA1S_EGhHH0aO2TDdrinOHjyyuzls8dw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -743,13 +817,11 @@
 
 <a class="tgme_widget_message_photo_wrap 6003537533419506246 1397807508_456247878" href="https://t.me/proxyy/8102" style="width:749px;background-image:url('https://cdn4.cdn-telegram.org/file/Jfg_rfzNKsnW-dT9vqAwTb1BYcVLuWJAaswSnRjRPsUZ574oKHBeVWnevniW2I6HJhD97EwnGxW-KmVo1uQeFZDWEhxPXZelwMbeS6yHTnyzO8utTxi15dh9Rk0WZE5u-gKLUmLxiY5ElqEOHCoL89tLWS5HxQRUdfE0Mu1ePCY_N-NYiw9zTusNI9MbRhbmr0TvOnDhOpDpD2pJglcxz4fOHnh-sFg9bfc2BRNQ-d-ZzyATRLmoHXa1lPyWEwjEyfv5IgnP6tNsuD-YvdMRYsPuQG9SXfLhJvWMZHLe66Sgkw15qS-QBghQsnjCk0Ca7yHHbtgj52pR75jDxptC2A.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:106.8090787717%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">همان درخت است اما در فصل متفاوت، به یاد داشته باشید همه چیز موقتی است.<br/><br/><a href="https://t.me/proxy?server=87.248.132.36&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.37&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.39&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.38&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.34&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">همان درخت است اما در فصل متفاوت، به یاد داشته باشید همه چیز موقتی است.<br/><br/><a href="https://t.me/proxy?server=87.248.132.36&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.37&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.39&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.38&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.34&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=vip2.abanol1.info&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/>_<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA580.png')"><b>🥀</b></i></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98A2.png')"><b>😢</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">584</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8102"><time datetime="2025-07-08T09:53:05+00:00" class="time">09:53</time></a></span>
+    <span class="tgme_widget_message_views">782</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">️️𝑴𝑹 ₒₖ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49EF09F8FBB.png')"><b>🤞🏻</b></i></span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/proxyy/8102"><time datetime="2025-07-08T09:53:05+00:00" class="time">09:53</time></a></span>
   </div>
 </div>
   </div>
@@ -763,11 +835,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 59.18ms -->
+<!-- page generated in 56.16ms -->

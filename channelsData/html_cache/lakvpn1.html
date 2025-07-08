@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">21</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">file</span></div><div class="tgme_channel_info_counter"><span class="counter_value">8</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">کانال پشتیبانی LKVPN</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ace9a06bb2e6eefb7c_16652411003184961520">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=1cdf530c15e95f4b77_5804237407285153586">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ace9a06bb2e6eefb7c_16652411003184961520">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=1cdf530c15e95f4b77_5804237407285153586">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/lakvpn1">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/lakvpn1">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/lakvpn1?before=5" class="tme_messages_more js-messages_more" data-before="5"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/5" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NSwidCI6MTc1MTk3NjIwMSwiaCI6IjMyZTc5MWU2ZTQ0YjBiNjgyOSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/lakvpn1?before=5" class="tme_messages_more js-messages_more" data-before="5"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/5" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NSwidCI6MTc1MTk4MTMwNCwiaCI6IjBlYmJjZmEwNjc2YThjZDk5ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -134,9 +251,7 @@
     <a href="https://t.me/LAKVPN1/5" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">686</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/5"><time datetime="2023-11-25T18:51:25+00:00" class="time">18:51</time></a></span>
@@ -144,7 +259,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/6" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NiwidCI6MTc1MTk3NjIwMSwiaCI6ImZlNWNmZDlmZDE2MGU3YjkxMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/6" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NiwidCI6MTc1MTk4MTMwNCwiaCI6ImQwZDQ4ZTFlZTUyYmRiZjA0OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -161,16 +276,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://c78067fe-4e53-4dd5-8346-b9b11f42581d@all.funlifea.shop:8443?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#%40LAKVPN1-n729sgbd<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://c78067fe-4e53-4dd5-8346-b9b11f42581d@all.funlifea.shop:8443?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#%40LAKVPN1-n729sgbd<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/llWA6yqYGArEeOjK7nZEL7d97tf9xV7Wxi4Ps-ahkE6QU1rDuM987odoLoah2ZHUIH7n9vTZTRyW_OXTstyeGKfmIeOqQrf8B5OGe7rxWZcTQRKjr8dh8BZWDrDECyF24ZZDe9l3M_FoIlbdKWywKY78qBpyLSgyPUkyMYoHW9C4wTTnSghFogEStVMlBsFCfQ3ylV1Yn45KEJ_IUURcpPdGu6SNSkGC9AvUkZAGRkH22YGSMOH_NAkqkKbIuK64B5XvAoxNzWz6TmSI8l8QN0KZUspM541GRzA9lu_2ii6hXWd_p_0CsElmm5uEVxLK-WwcmNLchRTHmHStr92uuQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">141</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/6"><time datetime="2023-12-06T21:26:27+00:00" class="time">21:26</time></a></span>
@@ -178,7 +291,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/7" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NywidCI6MTc1MTk3NjIwMSwiaCI6IjBhMTdmN2I1N2MyZWI5NDRjNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/7" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6NywidCI6MTc1MTk4MTMwNCwiaCI6Ijg5ODEyNWQ4NWU1Yjc3YTM3YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -195,16 +308,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://5e3527b9-e220-4049-8caf-ebb2dca593f4@all.funlifea.shop:8443?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#%40LAKVPN1-lakvpn_Deadhacker<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://5e3527b9-e220-4049-8caf-ebb2dca593f4@all.funlifea.shop:8443?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#%40LAKVPN1-lakvpn_Deadhacker<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/gdgA61WAR9TXiEDcTdh9mFwoTeV9NRooyR9g_eMwMsYoe7tDc4KXaTdBuLPbORsRfMq4OHssk9ooy-nhnsVQZQP-81TNRUDAtJT_LEAHoTaeI3lzjsASDA-a1OakaTH6s94ejhRHC-WpodBFI6oQ4UUz2AHi5SqXtjXNlv4x9FE7IiJrqifU-S2EYFd2hpju07uUbuEcoRAp6nbixH_nbEei1y18DpCNaUd441wTELeJb3S8NUAEuVHQf8D-bWjQ0WcvPjuZRBcLhx67_rLvAppm_0itSpjTHl3Cb1Kevn7QZtrGRYpOu-Qxk6LZOzSHwyydK91cv3C8ZSarbCOUwg.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">553</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/7"><time datetime="2023-12-12T00:02:36+00:00" class="time">00:02</time></a></span>
@@ -212,7 +323,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/8" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6OCwidCI6MTc1MTk3NjIwMSwiaCI6Ijg1ZjVlNmMzMDgwZDlkZGQ4NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/8" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6OCwidCI6MTc1MTk4MTMwNCwiaCI6ImNhY2RlOTI2OTc3ZTc2ZTZlMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -229,16 +340,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://12c39772-94bd-49f5-b0ae-ca7b45eeb583@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#4bagllnt<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://12c39772-94bd-49f5-b0ae-ca7b45eeb583@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#4bagllnt<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/FMf6ZjBJhnDyFTSdznIh4BUauOJzPKi-SH0joEL5tJvE7GFc9yCG8f6rYMdKR7CbX4_J5DxiYkg-9RHtIjMGyGqDncdaWItj-RVzLBc0pE_ShmNVX03cHPZi2GVr6EgeaFIdPOuqn2BvCyQSjkTA4ENDe7MRrXm0dOOdkr694l-pv2b0s6PfppOfSWtFxBcvx8gZEJ2vVRts3mC5kpU5LV76X1_H8_qI2FtXkaFRRv-5isp7oOFyXoNJcljZqwklvD9-JkbNq1BspzCWN04fkZbT3nwzaVnlkFuEgG52OUO-gznOCGSLVgNug12GCpA9ph7i75ITZcjn6iVMe7ddtQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">108</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/8"><time datetime="2023-12-30T23:44:01+00:00" class="time">23:44</time></a></span>
@@ -246,7 +355,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/9" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6OSwidCI6MTc1MTk3NjIwMSwiaCI6ImNmZjE4NWY3ZTUyZTFmNzExNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/9" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6OSwidCI6MTc1MTk4MTMwNCwiaCI6IjNmMTgwNzZjZDQwOGQ1NTU5OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -263,16 +372,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://d1c39c87-0ce1-497f-ba7a-59672b005a49@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#bzbbao1b<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://d1c39c87-0ce1-497f-ba7a-59672b005a49@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#bzbbao1b<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/dGM-O2tQdhNMr727CNfm_o0t2uWorUQ2tXNbYNPtDssJQNfXgCBav_oz3-APRbwfTm7jfGHrG3o4lF31rI1udKLcHWU2z5hY5Ik5UVDtGnJOIcI1jrBLZK0c3DN9m45PkgnGVZcHmqtVyBdvJJ7XWFWoaqqFxnU18npAfTOG7ZxCXJT76JQfK20-Gba5NFy--rMIiFAJoiZ97NzlIcsbccE3PQvOQddyi9-9BBpUAWGKrBXe3RhY8cF5m28IhuOKnDx3r_FnHdYHsaS2F3QBpstj7GfvdukPOXd-d6VsdyT2Cgrw7zw16MPQXPGa0wd6r3PShb1XRrOL4FhosTa3cQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">101</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/9"><time datetime="2024-01-04T19:09:21+00:00" class="time">19:09</time></a></span>
@@ -280,7 +387,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/10" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTAsInQiOjE3NTE5NzYyMDEsImgiOiJhMDgwODFiYmU5MjQ0YWFjZDUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/10" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTAsInQiOjE3NTE5ODEzMDQsImgiOiI0MTI2MzcxNTAyMWNiYTdlNjIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -303,9 +410,7 @@
     <a href="https://t.me/LAKVPN1/10" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">360</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/10"><time datetime="2024-01-06T20:09:07+00:00" class="time">20:09</time></a></span>
@@ -313,7 +418,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/11" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTEsInQiOjE3NTE5NzYyMDEsImgiOiJkYjRlMDEwMjAyODk3MzJlODYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/11" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTEsInQiOjE3NTE5ODEzMDQsImgiOiI1ZjQ0MTFkZjU0YTg1YWRiNTkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -330,16 +435,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://1089c9ea-330f-4896-abaf-70c160cee6c8@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#kvo6i5fo<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://1089c9ea-330f-4896-abaf-70c160cee6c8@all.funlifea.shop:2053?type=grpc&amp;serviceName=&amp;security=tls&amp;fp=chrome&amp;alpn=http%2F1.1%2Ch2%2Ch3&amp;sni=t5.funlifea.shop#kvo6i5fo<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/I4Pre89GyF9rQlb0LN1SViQ7Xl8OcD9TfcIAhG7bLD68zlvjZUnGsszvu9t1TAT5b1UbA_VzjQbcQmlcmz1MwqJqJpxvib5A-wBxNHUbxSbFj7MLsIykMR5Ejak1D4tarPgY3cOi6HqY0kM-rsKDpMWgAqCt3JMnz4BM70oU5-nntOM9IL5b0h-1jg2935rd2VKp2r2v8HVSgir6EifNKlCChaeCjTdxbE-z8B7iryqz0Hmuf_UbfKkEYVXEE4eR8fv3SpXsR1ofJlJ_WnZEnORb0_4PdaA7vVWm3_JFWojniDgiF4D-Ot7K0JJA27BhWpc67xz3PCgL9bErC4Fd4g.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">361</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/11"><time datetime="2024-01-09T15:49:16+00:00" class="time">15:49</time></a></span>
@@ -347,7 +450,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/12" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTIsInQiOjE3NTE5NzYyMDEsImgiOiIxZDJiMjNkMWQyMjQ4MTcwNmQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/12" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTIsInQiOjE3NTE5ODEzMDQsImgiOiI5YzNkMmQ2YTk2OGI5ZjA5YmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -372,9 +475,7 @@
     <a href="https://t.me/LAKVPN1/12" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">774</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/12"><time datetime="2024-02-17T15:08:12+00:00" class="time">15:08</time></a></span>
@@ -382,7 +483,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/13" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTMsInQiOjE3NTE5NzYyMDEsImgiOiI3NmNkNzQzNjJmOWUyNTE0NGEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/13" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTMsInQiOjE3NTE5ODEzMDQsImgiOiIwMzJjYmYzYjljOTQxMzM2N2IifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -411,9 +512,7 @@
     <a href="https://t.me/LAKVPN1/13" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">118</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/13"><time datetime="2024-02-17T15:13:08+00:00" class="time">15:13</time></a></span>
@@ -421,7 +520,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/14" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTQsInQiOjE3NTE5NzYyMDEsImgiOiIwMDZlZTkyZmZhYzE1NjYzNTIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/14" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTQsInQiOjE3NTE5ODEzMDQsImgiOiI4ZTNjZjcxZDRhYThlYTZmMzEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -444,9 +543,7 @@
     <a href="https://t.me/LAKVPN1/14" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">200</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/14"><time datetime="2024-02-17T15:16:09+00:00" class="time">15:16</time></a></span>
@@ -454,7 +551,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/15" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTUsInQiOjE3NTE5NzYyMDEsImgiOiI1OGQxMTNjYTM4ZjMxN2ViMGIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/15" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTUsInQiOjE3NTE5ODEzMDQsImgiOiJmYmI3NWMxNmJiODU1N2NjNDMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -482,10 +579,8 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">نحوه اتصال به سرویس در ویندوز<br/><a href="?q=%23%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%D9%8A">#درخواستي</a> <br/>برنامه موردنباز<br/><a href="https://t.me/LAKVPN1/13" target="_blank" rel="noopener">https://t.me/LAKVPN1/13</a><br/><a href="https://t.me/lakvpn1" target="_blank">@lakvpn1</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">نحوه اتصال به سرویس در ویندوز<br/><a href="?q=%23%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%D9%8A">#درخواستي</a> <br/>برنامه موردنباز<br/><a href="https://t.me/LAKVPN1/13" target="_blank" rel="noopener">https://t.me/LAKVPN1/13</a><br/><a href="https://t.me/lakvpn1" target="_blank">@lakvpn1</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">910</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/15"><time datetime="2024-02-17T15:21:33+00:00" class="time">15:21</time></a></span>
@@ -493,7 +588,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/16" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTYsInQiOjE3NTE5NzYyMDEsImgiOiIxYjAyMjJhOWZlNTAyMTI1OTEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/16" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTYsInQiOjE3NTE5ODEzMDQsImgiOiJkNjc0ZjE1M2UxM2Y1YzQ1MmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -510,10 +605,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> نسخه جدید برنامه اصلی V2rayNG <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i><br/><br/>V1.8.5 <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9891.png')"><b>😑</b></i><br/><br/>حتما نصبش کنید<br/>حتماً نسخه قبلی را حذف کنید بعد این نسخه را نصب کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/>(اندروید بالا ۱۰)<br/><br/><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_arm64-v8a.apk" target="_blank" rel="noopener">https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_arm64-v8a.apk</a><br/><br/>(اندروید زیر ۱۰)<br/><br/><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_armeabi-v7a.apk" target="_blank" rel="noopener">https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5_armeabi-v7a.apk</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i>@lak.vpn1</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">159</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/16"><time datetime="2024-02-25T09:18:40+00:00" class="time">09:18</time></a></span>
@@ -521,7 +614,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/17" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTcsInQiOjE3NTE5NzYyMDEsImgiOiIwYWJkYzNhZjllODQ1ZDVjNDgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/17" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTcsInQiOjE3NTE5ODEzMDQsImgiOiJlYmE0YTRhNzY2NGM5MTY4YWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -538,16 +631,14 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://5ba34c00-22be-4362-844c-389d608c2fc8@bn1.iranman.shop:33375?type=tcp&amp;path=%2F&amp;host=telewebion.com&amp;headerType=http&amp;security=none#%40lakvpn1-lak.vpnn<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/>vless://5ba34c00-22be-4362-844c-389d608c2fc8@bn1.iranman.shop:33375?type=tcp&amp;path=%2F&amp;host=telewebion.com&amp;headerType=http&amp;security=none#%40lakvpn1-lak.vpnn<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B1.png')"><b>🔱</b></i><br/><br/><a href="https://t.me/LAKVPN1" target="_blank" rel="noopener">https://t.me/LAKVPN1</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/LAKVPN1">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/WpF9tl2Q01T-hBHn6-CXzQ0-xPbLt3tIvusXQuu9Z8UFwMmc2cTBpBeF7SbWF8oSOA6x72zEfEiaUQK4u0_B44k-zRePo3oVTp64dh2wJPCJUdp_L7H1Un5dZsAYsDPtWmOKKQnCoE_eNnDCLbJTLRClmkTEdZ_VVbIz27a3EWtRcNXGSkBgzMGbAMIcDoT5FEt5EdLhSlT8WNgBFKIvjSVH2-l74ZPi216aEyJREc-JO1L8-c8kh6k56avg2jaXdZ13EQcvDNp62h7M37vFqnm-AH98IlT-dlTj-U1z5fnOHn69s9u2dZZodGmnj5xJ2-YZdh9cpi7KkmqF3ANykA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Lakvpn</div>
   <div class="link_preview_description" dir="auto">کانال پیشتیبانی LKVPN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">106</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/17"><time datetime="2024-03-24T17:36:06+00:00" class="time">17:36</time></a></span>
@@ -555,7 +646,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/18" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTgsInQiOjE3NTE5NzYyMDEsImgiOiJiMDlmMWU4NmRhYTliM2M3NjQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/18" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTgsInQiOjE3NTE5ODEzMDQsImgiOiIwMmJjZjY4OWM0NWJhYmY5MTQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -580,9 +671,7 @@
     <a href="https://t.me/LAKVPN1/18" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">310</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/18"><time datetime="2024-04-06T11:49:03+00:00" class="time">11:49</time></a></span>
@@ -590,7 +679,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/19" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTksInQiOjE3NTE5NzYyMDEsImgiOiI2NWYzOGEyY2JhY2I4YWU5YzAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/19" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MTksInQiOjE3NTE5ODEzMDQsImgiOiIxNTU1N2NiZjVjZTA5ZTc2NWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -607,23 +696,21 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><blockquote>vless://abaaff2a-a66d-40cb-bfdf-9b6c3762789b@31.14.118.226:24100?security=none&amp;encryption=none&amp;host=fast.com&amp;headerType=http&amp;type=tcp#%D9%87%D9%85%D9%87+%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA%D9%88%D8%B1+%D9%87%D8%A7%F0%9F%87%A9%F0%9F%87%AA.+%40lak.vpn</blockquote><br/><br/><br/><br/><tg-emoji emoji-id="5242734542342595995"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9191.png')"><b>👑</b></i></tg-emoji><br/><tg-emoji emoji-id="5289825079172015104"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></tg-emoji><tg-emoji emoji-id="5289680325889237907"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i></tg-emoji><tg-emoji emoji-id="5287305608406508065"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><tg-emoji emoji-id="5289889731314720579"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/LAKVPN1/19" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/19"><time datetime="2024-04-21T08:12:45+00:00" class="time">08:12</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/19"><time datetime="2024-04-21T08:12:45+00:00" class="time">08:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/20" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjAsInQiOjE3NTE5NzYyMDEsImgiOiI1YWI5MjZiNGM2YzgwY2U0ZTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/20" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjAsInQiOjE3NTE5ODEzMDQsImgiOiIxZWFmZGVmMTRkNjJjZDZhM2UifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -640,9 +727,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')"><b>🖥</b></i> فروش پنل وی پی ان |VPN| پرسرعت و بدون قطعی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> برای مغازه دار ها و فروشنده های غیر حضوری <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i> مناسب فروش حضوری و غیرحضوری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28CA8.png')"><b>⌨️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>قابل استفاده در اندروید ، آیفون ، ویندوز&nbsp; <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i> قابل استفاده با تمامی اپراتور ها <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>قابلیت بکاپ<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>آیپی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>ساخت تست<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>اضافه کردن کاربر و حذف کاربر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>تنظیم تاریخ <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>تنظیم تعداد کاربر <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>تنظیم حجم<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>امکان ساخت ۲۰۰ الی ۶۰۰ سرور با توجه به نیاز شما<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>پشتیبانی از تمامی برنامه ها <br/><br/>دارای پروتکل های<br/>vmess | vless | trojan | shadowsocks | dokodemo | socks | http ...<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8FAA.png')"><b>🏪</b></i> پشتیبانی ۲۴ ساعته تا پایان اشتراک<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BF.png')"><b>💿</b></i>اموزش ساخت کانفینگ(رایگان)<br/>—— - - - - - - - - - - - - - ——<br/>Support : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A0.png')"><b>💠</b></i> <a href="https://t.me/boxmmm" target="_blank">@boxmmm</a><br/>—— - - - - - - - - - - - - - <br/>—— - - - - - - - - - - - - - ——</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -651,7 +736,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/21" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjEsInQiOjE3NTE5NzYyMDEsImgiOiJmN2RhMjg1YTE2MmVjY2U5NTkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/21" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjEsInQiOjE3NTE5ODEzMDQsImgiOiIwOGNjYTQ3YWQwNGIwMmE5MmUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -668,9 +753,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>فروش‌سرور‌هایV2rayNG<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/><br/><br/><br/>سرعت آپلود و دانلود بالا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/><br/>مناسب برای:<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> و .....<br/><br/><br/>لوکیشن <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/>آیپی ثابت<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>تضمین پشتیبانی تا آخرین قطره حجم سرورتون <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>تعدادکاربرنامحدود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>10گیگ فقط 40 تومان  <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> 20گیگ فقط 80 تومان <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> 30گیگ فقط 90 تومان <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>50گیگ فقط 100 تومان <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>100گیگ فقط 150 تومان <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>نامحدود یک ماه تک کاربر 150 تومن <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>حجم های بالاتر هم موجود <br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>مناسب برای تمام اپراتورها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>سرور تست موجود<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>مناسب برای <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i>windows <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i> android <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> IOS <br/><br/>همه‌ی سرور ها بدون محدودیت زمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/>و بدون محدودیت کاربر هستن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i>جهت مشاوره و خرید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B8D.png')"><b>🛍</b></i><br/><a href="https://t.me/boxmmm" target="_blank">@boxmmm</a><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -679,7 +762,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/22" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjIsInQiOjE3NTE5NzYyMDEsImgiOiI3YzRmZjlkN2Q4NTEyYjMxN2UifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/22" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjIsInQiOjE3NTE5ODEzMDQsImgiOiI3MmZiYTYyNjRiOWRjOTFkZjEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -702,8 +785,6 @@
     <a href="https://t.me/LAKVPN1/22" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -712,7 +793,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/23" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjMsInQiOjE3NTE5NzYyMDEsImgiOiI2NWViMGNmNjQ5ZGJiMzM0YTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/23" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjMsInQiOjE3NTE5ODEzMDQsImgiOiI4ZTc1NmE2OTgxYzAyNmQ2ZDgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -735,9 +816,7 @@
     <a href="https://t.me/LAKVPN1/23" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">11</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/LAKVPN1/23"><time datetime="2025-03-22T08:07:07+00:00" class="time">08:07</time></a></span>
@@ -745,7 +824,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/24" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjQsInQiOjE3NTE5NzYyMDEsImgiOiJjNjA1YWQwMmEzMmY5ZTg0MzgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="LAKVPN1/24" data-view="eyJjIjotMjExODQ3OTA3MCwicCI6MjQsInQiOjE3NTE5ODEzMDQsImgiOiJlNzQ0OWNjOGFiNjk1MmM4MWUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/LAKVPN1"><i class="tgme_widget_message_user_photo bgcolor1" data-content="L"><img src="https://cdn4.cdn-telegram.org/file/utWnqRBS8-DD2eby1grvvl6T9ADuUb6jW6o1TBXFQnLRfvojre_CGpD8IVo7kml4gO_l_CTuhiROU5TNVelxxi7vdKG0GNdI-8sQ_yCfgjZR1XBJIhsYF9M-94jG6PAXS0T1L8VITVbNGvb5YjCxyqWYJCftIDXUbIA2-cfvYZKZVR-v_qJa2nDzojuHdyo9l_TYeBqvIk5F4eNJ2rnwAh8DbQe2asrCmHTs0Wa9TFPlgNFlR5yjbFpQ3Hs8DpXu3Aiu-e1-mHGtFGXjmfb_ogfbABywWDDmI1XMFBJvD-c0zK3LrRo_DOOKmKTPKBG9k1ITj-ul_2pEqoU8Xn05nw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -762,9 +841,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/LAKVPN1"><span dir="auto">Lakvpn</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/rezaetvpn/313"><span dir="auto">پشتیبانی</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">پشتیبانی</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://d7f38b65-c27c-4483-b14e-2e6d13728476@all.yasharteam.com:500?security=none&amp;encryption=none&amp;host=speedtest.net&amp;headerType=http&amp;type=tcp#%40proxse11</code><br/><br/>تمامی سرویس ها با سرعت بالا وصلن اینم گذاشتیم برای کسایی که از ما خرید نمیکنن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><br/><br/><b>ایرانسل رایتل تست شده</b></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -782,11 +859,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 112.2ms -->
+<!-- page generated in 122.52ms -->

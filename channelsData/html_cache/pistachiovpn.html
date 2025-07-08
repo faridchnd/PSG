@@ -48,9 +48,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -79,7 +196,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.25K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">164</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">41</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">24</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">88</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Pistachio Vpn <br/>پشتیبانی <a href="https://t.me/pistachiovpn_admin" target="_blank">@pistachiovpn_admin</a><br/>کانال <a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA_%D9%85%D8%B4%D8%AA%D8%B1%DB%8C%D8%A7%D9%86">#رضایت_مشتریان</a> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/> <a href="https://t.me/pistachiovpn_rezayat" target="_blank">@pistachiovpn_rezayat</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=217095f6f2d443bb1b_1004176617659678285">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=5b86453424a87cb148_3387303006872958548">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -100,7 +217,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=217095f6f2d443bb1b_1004176617659678285">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=5b86453424a87cb148_3387303006872958548">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/pistachiovpn">
@@ -117,7 +234,7 @@
 <main class="tgme_main" data-url="/pistachiovpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/pistachiovpn?before=775" class="tme_messages_more js-messages_more" data-before="775"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/775" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzUwNThkZDk2NzRmNDdlZmZiIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/pistachiovpn?before=775" class="tme_messages_more js-messages_more" data-before="775"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/775" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjRkOGE3MjY5MzQ2Zjg2MTU2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -134,10 +251,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">فعلا فروش باز شد <br/><a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a><br/><br/>قیمت ها رو متاسفانه مجبور‌ شدیم افزایش بدیم که با توجه به افزایش هزینه های دیتاسنتر و سرور ها و قطعی ها هستش <br/><br/>در آینده که شرایط بهتر بشه تمام قیمت ها کاهش پیدا میکنه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">328</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/775"><time datetime="2025-06-25T07:03:46+00:00" class="time">07:03</time></a></span>
@@ -145,7 +260,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/776" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjljY2NiY2NiMmZkODc4MTdhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/776" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYmQyNTYxOWY5YWVhZTljYjFkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -162,10 +277,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><s>vless://e766c326-69fc-4f8e-b62e-0b8308999d52@91.99.156.174:58382?type=tcp&amp;security=reality&amp;pbk=Cnofk5A5RVK2iDxlBkZY72er8JY-VdRjya8920MvsFg&amp;fp=chrome&amp;sni=tgju.org&amp;sid=cfdee2f6c5a3a6&amp;spx=%2F#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C88.png')"><b>✈️</b></i></s><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FAAAB.png')"><b>🪫</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">320</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/776"><time datetime="2025-06-25T10:08:37+00:00" class="time">10:08</time></a></span>
@@ -173,7 +286,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/778" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOGE0Y2RiMDNjOGZkNTQ3NTAzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/778" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjk0MTY3NmJjMTlmZTcxYWQ0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -192,10 +305,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5971832484272392933 1390425601_456248037" href="https://t.me/pistachiovpn/778" style="width:703px;background-image:url('https://cdn4.cdn-telegram.org/file/pTae2zhNm36F3vERUdP9jdyD2rCS9LjNOc2HtaCI5YUygOA9-ok732aPX_SNujlzhasBlBdieHNcc-HjuxGwD5ooMzbUAqPc2HtO9yZ3GkFuZuPChEaVCUJAH_bOdnPQlB96YvSzb1YwLYupZuPTPzM_6KVeDvfciWDwlhv84-2YRgulabKMyUiJdKv4t6UmRExY5nJQ7PyPcmu36_4YrIFHfmARjtde5wk67hmWB1QSF79vrsNYcXGyAR3LdPDyrUF0j9HXXbr_mVwWsAxzYdXiwWqLJCUZGUpDQlzsV77eb7g0sK3NyDR3RFqXcK4oOoxGU-HTSG9-aSwHaW19-Q.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:113.79800853485%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">کماکان شبکه با اختلال مواجه است و با قطعی و وصلی مکرر رو به روست.<br/>گفتنی‌ست محدودیت های اینچنینی از سمت زیرساخت به صورت دستی و توسط اوپراتور انجام می‌شود و چندین نیروی انسانی همزمان روی آن کار می‌کنند، برای رفع کامل زمان زیادی نیاز است و با آزمون و خطا انجام میشود.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">کماکان شبکه با اختلال مواجه است و با قطعی و وصلی مکرر رو به روست.<br/>گفتنی‌ست محدودیت های اینچنینی از سمت زیرساخت به صورت دستی و توسط اوپراتور انجام می‌شود و چندین نیروی انسانی همزمان روی آن کار می‌کنند، برای رفع کامل زمان زیادی نیاز است و با آزمون و خطا انجام میشود.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">367</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/778"><time datetime="2025-06-25T12:04:07+00:00" class="time">12:04</time></a></span>
@@ -203,7 +314,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/779" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMTI4NTRhZTZmNzYyYWM5NDk4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/779" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzc5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYTRiMWFhZjU0YmY2ZmVmYzY0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -220,10 +331,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>اکانت های vip با سرعت عالی وصله<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/>ممنون که این مدت اختلال ها رو تحمل کردید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> <br/><br/><a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">267</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/779"><time datetime="2025-06-27T06:00:15+00:00" class="time">06:00</time></a></span>
@@ -231,7 +340,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/780" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGNlZTlhMzAyMjQwOWRhOWQxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/780" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNGJmODVmZmJhMGFlNzJhMGYzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -260,10 +369,8 @@
     <div class="message_media_not_supported_label">Media is too big</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i> تست سرعت اکانت های vip<br/>۱۴۰۴/۴/۶<br/><a href="https://t.me/pistachiovpn" target="_blank">@pistachiovpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i> تست سرعت اکانت های vip<br/>۱۴۰۴/۴/۶<br/><a href="https://t.me/pistachiovpn" target="_blank">@pistachiovpn</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">345</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/780"><time datetime="2025-06-27T06:47:20+00:00" class="time">06:47</time></a></span>
@@ -271,7 +378,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/781" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWY1ZDYxZGRkY2E2OWUyYmNkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/781" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZGQwZjdiNTkyMjFjYjVkODg0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -288,10 +395,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">عرض پوزش بابت چند دقیقه تعمیرات سرور <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">331</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/781"><time datetime="2025-06-27T14:30:52+00:00" class="time">14:30</time></a></span>
@@ -299,7 +404,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/782" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjgyMTNkNWRjY2NjZDAwZDg5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/782" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZDgzOTkwMGRiMTA2NjUyOTlmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -316,10 +421,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">قیمت ها کاهش یافت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">313</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/782"><time datetime="2025-06-27T17:31:59+00:00" class="time">17:31</time></a></span>
@@ -327,7 +430,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/783" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmNiYjRhYzFiYzRkN2Q5ZWVmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/783" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzgzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiY2MxNDEwY2E1MmJjMTZiZjBhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -344,10 +447,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i> به زودی اکانت های قدرتمند لایت کانکت و بلو لایت با حجم نامحدود و قیمت مناسب موجود میشه داخل ربات<br/><br/><a href="https://t.me/pistachiovpn" target="_blank">@pistachiovpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">241</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/783"><time datetime="2025-06-28T17:48:26+00:00" class="time">17:48</time></a></span>
@@ -355,7 +456,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/784" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2JiZTliZDI3OGViMTU5NWY2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/784" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMTY1MzJmZDhjNTRlMDQ2YWQzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -372,10 +473,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><s><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>اختلال موقت <br/>چند دقیقه تعمیرات دیتاسنتر <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></s><br/><br/><br/>مشکل‌کامل حل شد با سرعت فضایی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91BD.png')"><b>👽</b></i> اکانت های vip متصل هستند</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">229</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/784"><time datetime="2025-06-29T05:08:58+00:00" class="time">05:08</time></a></span>
@@ -383,7 +482,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/785" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjQzODE2ZGUyZWY2NWE0N2YxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/785" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzkxNWFjMDBkMTI2NjYyZGVkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -400,9 +499,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستانی که از تلگرام و واتساپ استفاده می کنند <br/>در صورت حذف این برنامه ها ، کد ورود مجدد براتون پیامک نمیشه .<br/><br/>پس حواستون باشه حذف نکنید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -411,7 +508,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/786" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMWRmMjE2ZGFkOGM2MzFmNjgyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/786" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZWE0MzI2NjM5YzM2MWZjYjA4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -430,10 +527,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5407123123268089171 1258943957_456258899" href="https://t.me/pistachiovpn/786" style="width:596px;background-image:url('https://cdn4.cdn-telegram.org/file/s4gV1BjYHN6bLuh13MJr_QraZKKDeYfmoUgNItkg_jC4VJ4mJelHJBLH6MtLiOAXYCUEGcG9riPtMcc3ARTudPPmtcEe7yROJN7MhRA4RiRrehdNmpacu6qb2e9q36H7-NQHattmirXU1P2UHVlijBcq9pP1fkn98rktPeAemsuSueqnScjhWlLpQnI0318acIlnYXy8Ob5sGDvj4rP3MffWHlXQEb6CLnszTi5aHUljbuER_vJ8Gweuq5TBSYZHQIHuxQvIe_5uE43l3v82tCBwQilxKwHIJjv-cXQfZjDOmPTXX25h5DYzQVhrcrMUqNUYJ8q1r5ii78Mg998MIw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:53.020134228188%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">V2rayng <br/>رو آپدیت کنید و با پینگ جدید شگفت زده بشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><br/><br/><br/>خرید کانفیگ جدید <a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a><br/><a href="https://t.me/pistachiovpnbot" target="_blank">@pistachiovpnbot</a><br/><br/> پشتیبانی <br/><a href="https://t.me/pistachiovpn_admin" target="_blank">@pistachiovpn_admin</a><br/><br/><br/><br/><br/><br/>دانلود از لینک رسمی‌ گیتهاب v2rayng:<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://github.com/2dust/v2rayNG/releases/download/1.10.7/v2rayNG_1.10.7_universal.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">v2rayNG_1.10.7_universal.apk</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">V2rayng <br/>رو آپدیت کنید و با پینگ جدید شگفت زده بشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><br/><br/><br/>خرید کانفیگ جدید <a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a><br/><a href="https://t.me/pistachiovpnbot" target="_blank">@pistachiovpnbot</a><br/><br/> پشتیبانی <br/><a href="https://t.me/pistachiovpn_admin" target="_blank">@pistachiovpn_admin</a><br/><br/><br/><br/><br/><br/>دانلود از لینک رسمی‌ گیتهاب v2rayng:<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://github.com/2dust/v2rayNG/releases/download/1.10.7/v2rayNG_1.10.7_universal.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">v2rayNG_1.10.7_universal.apk</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">260</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/786"><time datetime="2025-06-29T11:23:15+00:00" class="time">11:23</time></a></span>
@@ -441,7 +536,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/787" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNDQ0NWU4OGUwMzc2OWFkYzhhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/787" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNDBmNGQ4N2M4MDc1MDMwY2E4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -458,10 +553,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><s><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i> اختلال موقت :<br/>دیتاسنتر ایران به طور ناگهانی دچار مشکل شد<br/>ولی از اونجایی که ما دیتاسنتر های جایگزین داریم تونستیم منتقل بشیم <br/>تا چند دقیقه دیگه همه وصل میشن <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></s><br/><br/>مشکل حل شد و اکانت ها با سرعت بالا متصل هستند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">234</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/787"><time datetime="2025-06-30T14:50:44+00:00" class="time">14:50</time></a></span>
@@ -469,7 +562,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/788" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjA0NGM0NjhkYzAyYWYyMTZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/788" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMmRmZTNkNDVkYjQxYjMyYmZhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -492,24 +585,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/303d20602e.mp4?token=HOgjjuzxuvF8Xqpayz9eagEjZIvgB8rq-p51UHBHBjQClFYoCuNFXQE5vdKFoxiQqJ3ToSzJK8DDxGBBoGRbmKtPjOxEj0mw8VXWdCzYE8sywjOOxU68veDj5NJVVbYwYuylMZVTy9NnwYPa0BLI9JUzX102Iux5eHrEELPypkcxhqM4aQgHFBemKJlQneSpTYJmmMi7NdeT5Pajus80tff-zzdmzwkhPXCOpxJbFENRJCbmCf9UoW5Da2bGS4hgPPmvhDheHom47impYJRiHSHEjKlLq3UZU76WdAHAMbk3G2RUIVo-JhQ6Pdlk_Ip618a7G8HFV57bGoizbXbpUg" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:25</time>
+<time class="message_video_duration js-message_video_duration">0:24</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i> نحوه دسترسی به اپ‌استور iOS از طریق اتصال وای‌فای ...<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> <a href="http://1.1.1.1/" target="_blank" rel="noopener">1.1.1.1</a> / <a href="http://1.0.0.1/" target="_blank" rel="noopener">1.0.0.1</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> <a href="http://8.8.8.8/" target="_blank" rel="noopener">8.8.8.8</a> / <a href="http://8.8.4.4/" target="_blank" rel="noopener">8.8.4.4</a><br/><br/>برای تهیه اشتراک پرسرعت کلیک کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2A4B5.png')"><b>⤵️</b></i><br/><br/><a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a> / <a href="https://t.me/pistachiovpnbot" target="_blank">@pistachiovpnbot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i> نحوه دسترسی به اپ‌استور iOS از طریق اتصال وای‌فای ...<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> <a href="http://1.1.1.1/" target="_blank" rel="noopener">1.1.1.1</a> / <a href="http://1.0.0.1/" target="_blank" rel="noopener">1.0.0.1</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AB.png')"><b>▫️</b></i> <a href="http://8.8.8.8/" target="_blank" rel="noopener">8.8.8.8</a> / <a href="http://8.8.4.4/" target="_blank" rel="noopener">8.8.4.4</a><br/><br/>برای تهیه اشتراک پرسرعت کلیک کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2A4B5.png')"><b>⤵️</b></i><br/><br/><a href="https://t.me/pistachiovpn0bot" target="_blank">@pistachiovpn0bot</a> / <a href="https://t.me/pistachiovpnbot" target="_blank">@pistachiovpnbot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">267</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/788"><time datetime="2025-06-30T17:34:46+00:00" class="time">17:34</time></a></span>
+    <span class="tgme_widget_message_views">268</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/788"><time datetime="2025-06-30T17:34:46+00:00" class="time">17:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/789" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjBkODRkNzYxNTIzMjcyMmI0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/789" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzg5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOTU4NzQ2YmRmMWI0MmFmYjljIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -524,20 +615,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F97AF.png')"><b>🗯</b></i>در حالی که اکثر دیتاسنترها همچنان با قطعی کامل مواجه هستن و بسیاری از سرویس‌دهنده‌ها نتونستن به وضعیت پایدار برگردن،<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948C.png')"><b>🔌</b></i> خوشبختانه سرویس‌های ما کاملاً فعال و پایدار هستن و بدون اختلال در حال سرویس‌دهی‌اند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A1.png')"><b>💡</b></i> همچنین برای شرایط خاص و حساس، امکان تهیه‌ی سرویس‌های اضطراری ویژه هم فراهم شده که در سخت‌ترین شرایط فیلترینگ هم قابل استفاده‌ان.<br/><br/>برای دریافت اطلاعات بیشتر، با پشتیبانی در ارتباط باشید یا از طریق کانال ما پیگیر باشید.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i><a href="https://t.me/pistachiovpn" target="_blank"><b>@pistachiovpn</b></a> <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/pistachiovpn_admin" target="_blank"><b>@pistachiovpn_admin</b></a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i><a href="https://t.me/pistachiovpn0bot" target="_blank"><b>@pistachiovpn0bot</b></a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i><a href="https://t.me/pistachiovpnbot" target="_blank"><b>@pistachiovpnbot</b></a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">285</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/789"><time datetime="2025-07-01T15:32:20+00:00" class="time">15:32</time></a></span>
+    <span class="tgme_widget_message_views">286</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/789"><time datetime="2025-07-01T15:32:20+00:00" class="time">15:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/792" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzkyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmRiZWVkMjgxM2VmMTE1NzM5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/792" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6NzkyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmI5YTBhYjk4YzM4N2NhYWYwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -552,20 +641,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور ها بدون مشکل متصل می‌باشند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">168</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/792"><time datetime="2025-07-05T04:47:35+00:00" class="time">04:47</time></a></span>
+    <span class="tgme_widget_message_views">169</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/792"><time datetime="2025-07-05T04:47:35+00:00" class="time">04:47</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/794" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZWI3OGZjMjE3MDE5YWM0ZjZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/794" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNjFjODRhMDdlYWZhN2FjZWUyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -582,10 +669,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i> هم اکنون اختلال در اینترنت و شبکه دیتاسنترها<br/><br/>براساس گزارش‌های دریافتی، از ساعت ۱۲:۳۰ اختلالاتی در شبکه اینترنت کشور و دیتاسنترها آغاز شده است. این اختلال موجب قطع و وصل و ناپایداری در دسترسی به سرویس‌های داخلی و بین‌المللی شده و عملکرد بسیاری از خدمات میزبانی‌شده را تحت تأثیر قرار داده است.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">150</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/794"><time datetime="2025-07-05T21:42:18+00:00" class="time">21:42</time></a></span>
@@ -593,7 +678,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/795" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWVhMWQyMzkxNjdkYzI5NGM0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/795" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMjE5YjRmNTFmNWViNjhmY2IzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -610,10 +695,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">به لطف خدا این پروکسیا وصلن تو تلگرام ممکنه اینارم بزنن <br/><br/>فعلا که وصلن داشته باشیدشون.<br/><br/><a href="https://t.me/proxy?server=87.248.132.27&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروكسي موقت</a><br/><a href="https://t.me/proxy?server=87.248.132.21&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.17&amp;amp;port=343&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه |</a> <a href="https://t.me/proxy?server=87.248.132.18&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.19&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">143</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/795"><time datetime="2025-07-05T21:55:55+00:00" class="time">21:55</time></a></span>
@@ -621,7 +704,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/796" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOWFkYjBiYThjODFjZjMyMWZlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/796" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiY2M2YzJkM2NkMjE4YTNmZmI2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -638,10 +721,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">وضعیت : سرور ها با قدرت متصل می‌باشند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">117</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/796"><time datetime="2025-07-06T05:47:13+00:00" class="time">05:47</time></a></span>
@@ -649,7 +730,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/797" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmQyZWZkNGQ4ZDRlNmYxMTcxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/797" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTM3MDZmMjAzOGI2MjkzYjFiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -672,10 +753,8 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">v2rayNG_1.10.7_universal.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">86.4 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">حتما از آخرین ورژن نرم افزار V2rayNg برای اندروید استنفاده کنید<br/><br/><a href="https://myket.ir/app/com.v2ray.ang" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک مایکت (استور ایرانی) برای آپدیت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/pistachiovpn" target="_blank">@pistachiovpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">حتما از آخرین ورژن نرم افزار V2rayNg برای اندروید استنفاده کنید<br/><br/><a href="https://myket.ir/app/com.v2ray.ang" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لینک مایکت (استور ایرانی) برای آپدیت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/pistachiovpn" target="_blank">@pistachiovpn</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">97</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/797"><time datetime="2025-07-06T15:12:47+00:00" class="time">15:12</time></a></span>
@@ -683,7 +762,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/798" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNmMxYzM2Nzg3OTAyMzM0MGYxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="pistachiovpn/798" data-view="eyJjIjotMTg2MTQ5MDU3NywicCI6Nzk4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmFmOTAyZmEyZDRhMDM5MzU3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/pistachiovpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="P"><img src="https://cdn4.cdn-telegram.org/file/ipETeFrdhooE2ueD6fgEE26riUsWrsj2i7tHKz8zB4tfvqzou-Otj3-R3WS_Jr92JwInR9dEZjhk3KVuHqB4rgrHJZado7Q1-jMNDt8EuIF3bTc14DweiNeX6aHiFSpJG--sjTpqhrZBp9oOF-owa7jfj9ut-RKAGd-eDqz7ee4e7QoxIKtrw32ZHOBQgjoDxKR0gtUxc82q5OaWBOfgIxCgYsi0FrtNjFkeE63hOA3LpeVbcjbDlMWJCL2BppraTynH-hiW0dvJpMyZwxwFdTYrZmHOx7WxUfbVGjRLwcFn3A5BnEH5CTToAiEyOd5A8bMZpCyoAd0-oKsh-4CqwA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -700,10 +779,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/pistachiovpn"><span dir="auto">PistachioVpn | فیلتر شکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> کانفیگ رایگان</b><br/><br/> لطفا استفاده سنگین نکنید <br/><br/><br/><code>vmess://eyJhZGQiOiJkZS5zcGVlZGh1bnRlci50b3AiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNjkyY2Y5NDktYmNmMi00Y2FkLTgwNjctMjc2MmI4ZTI0ODc0IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMTI1NyIsInBzIjoi2LHYp9uM2q/Yp9mGIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">97</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/pistachiovpn/798"><time datetime="2025-07-06T15:18:09+00:00" class="time">15:18</time></a></span>
@@ -720,11 +797,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 65.67ms -->
+<!-- page generated in 57.07ms -->

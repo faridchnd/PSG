@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">456</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">23</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">241</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Internet for all</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=cf7e78741efb2f8467_16008988061807736508">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a2dd901b6f64e9138e_3549908834594241949">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=cf7e78741efb2f8467_16008988061807736508">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a2dd901b6f64e9138e_3549908834594241949">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/netfreedom0">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/netfreedom0">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/netfreedom0?before=1104" class="tme_messages_more js-messages_more" data-before="1104"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1104" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNCwidCI6MTc1MTk3NjQ1OSwiaCI6IjhiYTRhY2NjNTQ2ZTViZTIzNyJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/netfreedom0?before=1104" class="tme_messages_more js-messages_more" data-before="1104"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1104" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNCwidCI6MTc1MTk4MTU1OSwiaCI6IjNhOWJiMzBhZjBjNGI4MWFmMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,10 +245,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><code>vmess://eyJhZGQiOiI5OS4xOTkuNzMuNTMiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ind3dy5zcGVlZHRlc3QubmV0IiwiaWQiOiI4ZTMyYjVjZS1mZjI0LTQwNWEtOTkzMi00OGRmNWE1OTE4M2QiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOiIzNzMzMyIsInBzIjoi8J+HqPCfh6YgMDUzLU5ldEZyZWVkb20wIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==</code><br/><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">214</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1104"><time datetime="2025-06-25T07:48:36+00:00" class="time">07:48</time></a></span>
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1105" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNSwidCI6MTc1MTk3NjQ1OSwiaCI6ImI4OWJkOGYwOTJlYjgyNWQ0NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1105" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNSwidCI6MTc1MTk4MTU1OSwiaCI6ImFmZDgzMTNhNjg1ZWYyY2E3MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,10 +271,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><code>vmess://eyJhZGQiOiIxOTIuNTMuMTEzLjE1NiIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiIwMzZhMjhjMy01YzhkLTRkZjMtYTc5Yi05ZGE2MjI2NDBmMmIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjEwMDAyIiwicHMiOiIg8J+HuPCfh6wxNTYtTmV0RnJlZWRvbTAiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=</code><br/>ایرانسل <br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">223</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1105"><time datetime="2025-06-25T09:41:18+00:00" class="time">09:41</time></a></span>
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1106" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNiwidCI6MTc1MTk3NjQ1OSwiaCI6IjQ1M2NkZDJkZWNjZDc5YjI4OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1106" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNiwidCI6MTc1MTk4MTU1OSwiaCI6Ijk2ZDNkZWViZTcyYzAzZjQyNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,9 +297,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><code>vmess://eyJhZGQiOiI5OS4xOTkuNzMuNTMiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ind3dy5zcGVlZHRlc3QubmV0IiwiaWQiOiIxYWE0MGFkZi1iNGIwLTQxYjgtYmQ5OC1mYWZhYWRmNDIzZWIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOiIzMzY0MSIsInBzIjoi8J+HqPCfh6YgMDUzLU5ldEZyZWVkb20wIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==</code><br/><br/>همراه اول<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1107" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNywidCI6MTc1MTk3NjQ1OSwiaCI6IjEzMjRmY2QyMTMwYWQwZWQzZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1107" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwNywidCI6MTc1MTk4MTU1OSwiaCI6IjJkNWFhZDIxZjczZGQ5YzAzMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,10 +323,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><br/><code>vless://512c8ed7-13dc-9d8d-039a-d0d47c84a0be@81.29.255.187:699/?type=ws&amp;encryption=none&amp;flow=&amp;host=telewebion.com%2Cuser.telewebion.com%2Cplus.telewebion.com%2Capi.telewebion.com&amp;path=%2Fws%3Fed%3D2048#255-NetFreedom0</code><br/><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">227</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1107"><time datetime="2025-06-25T14:13:46+00:00" class="time">14:13</time></a></span>
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1109" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwOSwidCI6MTc1MTk3NjQ1OSwiaCI6ImYyNTllZDQ0YTk5N2NhNjkzOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1109" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEwOSwidCI6MTc1MTk4MTU1OSwiaCI6ImU4OTFmMGJkMzM4YWM2ZWIzNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><code>vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.17.147.22:80/?type=ws&amp;encryption=none&amp;flow=&amp;host=redfree8mahsang6.redfree8.ir&amp;path=%2F%3Fed%3D2560#086-NetFreedom0<br/>vless://5459f68e-d914-4b31-93a3-ecdf638b7a5b@172.66.132.44:80/?type=ws&amp;encryption=none&amp;host=abcd.taraneh.dpdns.org&amp;path=%2F%3Fed%3D2560#025-NetFreedom0</code><br/><br/>ایرانسل<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1110" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMCwidCI6MTc1MTk3NjQ1OSwiaCI6IjcxMjVkYjM3OWMwOTA1Y2FkZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1110" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMCwidCI6MTc1MTk4MTU1OSwiaCI6ImE3OTVkOThiYTBmNjQ1NjYyZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -266,20 +373,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@4.250.141.14:443#%F0%9F%87%AC%F0%9F%87%A7GB-014-NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCb2cwRUxtTU05RFN4RGRR@131.145.13.94:443#%F0%9F%87%AC%F0%9F%87%A7GB-094-NetFreedom0</code><br/><br/>همراه اول <br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">220</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1110"><time datetime="2025-06-26T19:17:33+00:00" class="time">19:17</time></a></span>
+    <span class="tgme_widget_message_views">221</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1110"><time datetime="2025-06-26T19:17:33+00:00" class="time">19:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1111" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMSwidCI6MTc1MTk3NjQ1OSwiaCI6IjA0Y2I4NTQ2YzUxOWMyYmVkOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1111" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMSwidCI6MTc1MTk4MTU1OSwiaCI6IjM2MTQ4NTQ4NmJjMmE0ZDkzOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -294,20 +399,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@131.145.82.136:443#%F0%9F%87%AC%F0%9F%87%A7GB-0300%D9%80NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjdklJODVUclc2bjBPR3lmcEhWUzF1@45.158.171.136:8080#%F0%9F%87%AB%F0%9F%87%B7FR-5044-NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@62.133.63.212:57456#%F0%9F%87%B9%F0%9F%87%B7TR-0378-NetFreedom0</code><br/><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">172</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1111"><time datetime="2025-06-28T18:40:47+00:00" class="time">18:40</time></a></span>
+    <span class="tgme_widget_message_views">173</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1111"><time datetime="2025-06-28T18:40:47+00:00" class="time">18:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1112" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMiwidCI6MTc1MTk3NjQ1OSwiaCI6ImI3NTYyZGRkYmY0YjRlYmMzZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1112" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMiwidCI6MTc1MTk4MTU1OSwiaCI6ImI5NzE5NjljYjBiNWVkNTUwZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -322,20 +425,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMTVNOaDIxVHJYalIyb2syNVEybkU4RU5UMnpvQm1QdmthM1JDQ1VBSFpFTENuV29la1ZqdmFmODlxd2NSa2RieEVmZXAyYmMyYVV0bW54cXZGMWF5UVJlejFKSGpVTGo@141.98.4.67:52952#%F0%9F%87%B3%F0%9F%87%B1NL-5096-NetFreedom0<br/>vless://91a5d5b3-4b88-4359-aeec-e1532f535fd6@91.99.195.6:80/?type=grpc&amp;encryption=none&amp;flow=&amp;serviceName=refersion.com&amp;sni=refersion.com&amp;fp=chrome&amp;security=reality&amp;pbk=ZO276Z5WXIqCmNLXT8Lewzjhhgm365JUJXAKyKq8Rz4&amp;sid=bc063769cb#%F0%9F%87%A9%F0%9F%87%AA%20DE-006-NetFreedom0</code><br/><br/>همراه اول<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">192</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1112"><time datetime="2025-06-28T18:55:02+00:00" class="time">18:55</time></a></span>
+    <span class="tgme_widget_message_views">193</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1112"><time datetime="2025-06-28T18:55:02+00:00" class="time">18:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1113" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMywidCI6MTc1MTk3NjQ1OSwiaCI6ImYyMjA1YjcwMWQ1MTFlNWQ3YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1113" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExMywidCI6MTc1MTk4MTU1OSwiaCI6ImE2MTRmZTkwZTAwYmFiNmM5MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -350,20 +451,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@45.87.175.10:8080#%F0%9F%87%B1%F0%9F%87%B9LT-0262-NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.158.171.151:8080#%F0%9F%87%AB%F0%9F%87%B7FR-0253-NetFreedom0</code><br/><br/>ایرانسل<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">180</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1113"><time datetime="2025-06-29T06:06:45+00:00" class="time">06:06</time></a></span>
+    <span class="tgme_widget_message_views">181</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1113"><time datetime="2025-06-29T06:06:45+00:00" class="time">06:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1114" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNCwidCI6MTc1MTk3NjQ1OSwiaCI6IjQxOWNlM2Y3NDgwY2M2MGVhZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1114" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNCwidCI6MTc1MTk4MTU1OSwiaCI6IjIzYjFkOGZlMzNiOWQzOTQ4ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -378,20 +477,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxc2NhdkY1VXZpSUwtOFYtRTRyYUJB@185.21.14.103:2222#%F0%9F%87%B3%F0%9F%87%B1NL-0280-NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@62.133.63.212:57456#%F0%9F%87%B9%F0%9F%87%B7TR-0415-NetFreedom0</code><br/><br/>همراه اول <br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">173</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1114"><time datetime="2025-06-30T06:45:32+00:00" class="time">06:45</time></a></span>
+    <span class="tgme_widget_message_views">175</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1114"><time datetime="2025-06-30T06:45:32+00:00" class="time">06:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1115" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNSwidCI6MTc1MTk3NjQ1OSwiaCI6ImIwMWYwMWQxODAyZDc4NGYwOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1115" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNSwidCI6MTc1MTk4MTU1OSwiaCI6IjA5MTU2MDU2OTQ3NmI5ODBjNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -406,20 +503,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@131.145.100.35:443#%F0%9F%87%AC%F0%9F%87%A7GB-0318-NetFreedom0</code><br/><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">169</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1115"><time datetime="2025-06-30T21:46:45+00:00" class="time">21:46</time></a></span>
+    <span class="tgme_widget_message_views">170</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1115"><time datetime="2025-06-30T21:46:45+00:00" class="time">21:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1116" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNiwidCI6MTc1MTk3NjQ1OSwiaCI6IjU3MWVhZGRjNzk5MzlkOGJkOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1116" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNiwidCI6MTc1MTk4MTU1OSwiaCI6IjU3NmNhYjAyM2ZjYThhZjQ0ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -436,10 +531,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><pre>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@45.87.175.192:8080#%F0%9F%87%B1%F0%9F%87%B9LT-0382-NetFreedom0<br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.158.171.151:8080#%F0%9F%87%AB%F0%9F%87%B7FR-0272-NetFreedom0</pre><br/>ایرانسل<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">171</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1116"><time datetime="2025-07-01T09:11:31+00:00" class="time">09:11</time></a></span>
@@ -447,7 +540,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1117" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNywidCI6MTc1MTk3NjQ1OSwiaCI6ImVkMWQ5YWY1OGZmZjczNTMxOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1117" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExNywidCI6MTc1MTk4MTU1OSwiaCI6ImEzYWUyZTQzZDllNWRiZjJmMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -464,10 +557,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><br/><pre>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series<br/>ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA@185.189.160.98:64759#%F0%9F%87%B9%F0%9F%87%BCTW-4820-NetFreedom0</pre><br/>مخابرات <br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">156</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1117"><time datetime="2025-07-01T20:19:43+00:00" class="time">20:19</time></a></span>
@@ -475,7 +566,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1118" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExOCwidCI6MTc1MTk3NjQ1OSwiaCI6IjI5NTk2OWY2ODcyOTQ5OThjYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1118" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExOCwidCI6MTc1MTk4MTU1OSwiaCI6IjhhZjAxNGFhZTYzODg4ZTVhYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -490,20 +581,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><pre>vmess://eyJhZGQiOiI3OTNlNTNlMy1zdjJzZzAtdGJudWNyLTF0aGZ2LmhrLnA1cHYuY29tIiwiYWlkIjoiMiIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiI3OTNlNTNlMy1zdjJzZzAtdGJudWNyLTF0aGZ2LmhrLnA1cHYuY29tIiwiaWQiOiIwYTRkMWM4OC1mYjNhLTExZWYtOGMzZi1mMjNjOTEzYzhkMmIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjgwIiwicHMiOiLwn4et8J+HsEhLLTUyODgtTmV0RnJlZWRvbTAiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=<br/>ss://YWVzLTI1Ni1jZmI6R0E5S3plRWd2ZnhOcmdtTQ@217.30.10.18:9019#%F0%9F%87%B5%F0%9F%87%B1PL-5022-NetFreedom0<br/>trojan://6gZh2JbfhQ@104.248.18.1:1935/?type=tcp&amp;security=tls&amp;sni=x1-germany-digitalocean-v2.devefun.org#%F0%9F%87%A9%F0%9F%87%AADE-0406-NetFreedom0</pre><br/>همراه اول<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">149</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1118"><time datetime="2025-07-02T14:51:01+00:00" class="time">14:51</time></a></span>
+    <span class="tgme_widget_message_views">151</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1118"><time datetime="2025-07-02T14:51:01+00:00" class="time">14:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1119" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExOSwidCI6MTc1MTk3NjQ1OSwiaCI6ImQ1MDVlYjViOTAyMmQ3NDYwMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1119" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTExOSwidCI6MTc1MTk4MTU1OSwiaCI6IjQ1YTViY2I3MDU2NmNjZGRhMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -518,20 +607,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><code>vless://4eff2388-2092-4b0a-aa74-0e464889ffaf@109.73.206.90:443/?type=tcp&amp;encryption=none&amp;sni=google.com&amp;fp=chrome&amp;security=reality&amp;pbk=cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c&amp;sid=#%F0%9F%87%B7%F0%9F%87%BA090-NetFreedom0<br/>vless://3ab9cb9a-4ed8-426c-b42d-b3079c89df84@46.62.154.63:55555/?type=tcp&amp;encryption=none&amp;sni=stackoverflow.com&amp;fp=chrome&amp;security=reality&amp;pbk=iN6Mxm-XgB9_nfgRHxdE3QX9XJpAY-EHv-EtvAIkYx4&amp;sid=ea83a8b0#%F0%9F%87%AB%F0%9F%87%AE%20063-NetFreedom0</code><br/><br/>ایرانسل<br/><a href="https://t.me/NetFreedom" target="_blank">@NetFreedom</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">119</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1119"><time datetime="2025-07-04T15:55:22+00:00" class="time">15:55</time></a></span>
+    <span class="tgme_widget_message_views">121</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1119"><time datetime="2025-07-04T15:55:22+00:00" class="time">15:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1120" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMCwidCI6MTc1MTk3NjQ1OSwiaCI6IjI1NDRlOGUwM2ViMjRlMzU1YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1120" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMCwidCI6MTc1MTk4MTU1OSwiaCI6IjJkNzBkNjY0ZWRkNGJmNDgzMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -546,20 +633,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><pre>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.231.233.112:989#%F0%9F%87%B5%F0%9F%87%B9PT-5341-NetFreedom0<br/>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@171.22.254.17:989#%F0%9F%87%B2%F0%9F%87%B9MT-5028-NetFreedom0</pre><br/>همراه اول <br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">87</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1120"><time datetime="2025-07-06T12:14:13+00:00" class="time">12:14</time></a></span>
+    <span class="tgme_widget_message_views">88</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1120"><time datetime="2025-07-06T12:14:13+00:00" class="time">12:14</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1121" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMSwidCI6MTc1MTk3NjQ1OSwiaCI6IjU5MzFiZDM1OWZkMWM2M2MyOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1121" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMSwidCI6MTc1MTk4MTU1OSwiaCI6ImMzZmJiODkxNzU1YTM4ZDk5OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -574,20 +659,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><br/><pre>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.158.171.136:8080#%F0%9F%87%AB%F0%9F%87%B7FR-0406-NetFreedom0<br/>ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA@125.141.31.76:15098#%F0%9F%87%B0%F0%9F%87%B7KR-0338-NetFreedom0</pre><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">84</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1121"><time datetime="2025-07-06T15:37:58+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">87</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1121"><time datetime="2025-07-06T15:37:58+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1122" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMiwidCI6MTc1MTk3NjQ1OSwiaCI6IjJmYzg4ZDA4MWJiNzg3NmM4ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1122" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMiwidCI6MTc1MTk4MTU1OSwiaCI6ImIwODAxYTBhMmFlOGRjNzAzNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -602,20 +685,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%B3%D9%84">#ایرانسل</a> <br/><br/><pre>vmess://eyJhZGQiOiJlNGZhYzg1NC1zdW00ZzAtc3gxY3h4LTF0ZmprLmhrLnA1cHYuY29tIiwiYWlkIjoiMiIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJlNGZhYzg1NC1zdW00ZzAtc3gxY3h4LTF0ZmprLmhrLnA1cHYuY29tIiwiaWQiOiI0OTM5NmQ5OC1mNGI0LTExZWYtOGMzZi1mMjNjOTEzYzhkMmIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjgwIiwicHMiOiLwn4et8J+HsEhLLTUwNTItTmV0RnJlZWRvbTAiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=<br/>vmess://eyJhZGQiOiI2ZGU0YjlkNC1zdWs5czAtdDhybzd0LTFleTA3LmhrMy5wNXB2LmNvbSIsImFpZCI6IjIiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiNmRlNGI5ZDQtc3VrOXMwLXQ4cm83dC0xZXkwNy5oazMucDVwdi5jb20iLCJpZCI6IjIwM2QxZDY0LTMzMTMtMTFlZC1iYjc0LWYyM2M5MTY0Y2E1ZCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiODAiLCJwcyI6IvCfh63wn4ewSEstMDQ1NC1OZXRGcmVlZG9tMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==</pre><br/>ایرانسل<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">80</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1122"><time datetime="2025-07-07T05:16:35+00:00" class="time">05:16</time></a></span>
+    <span class="tgme_widget_message_views">83</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1122"><time datetime="2025-07-07T05:16:35+00:00" class="time">05:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1123" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMywidCI6MTc1MTk3NjQ1OSwiaCI6IjdkOWQ5ODBjZmQ3NWRhOWRkNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1123" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyMywidCI6MTc1MTk4MTU1OSwiaCI6ImE5OGE1YjQwNTFkMmU1MzQwZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -630,20 +711,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%85%D8%AE%D8%A7%D8%A8%D8%B1%D8%A7%D8%AA">#مخابرات</a> <br/><pre>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@38.54.57.90:989#%F0%9F%87%A7%F0%9F%87%B7BR-0262-NetFreedom0<br/>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.231.233.112:989#%F0%9F%87%B5%F0%9F%87%B9PT-5190-NetFreedom0</pre><br/><br/>مخابرات<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">77</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1123"><time datetime="2025-07-07T08:56:33+00:00" class="time">08:56</time></a></span>
+    <span class="tgme_widget_message_views">80</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1123"><time datetime="2025-07-07T08:56:33+00:00" class="time">08:56</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1124" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyNCwidCI6MTc1MTk3NjQ1OSwiaCI6ImY0ZjgyZmE2NGE5MzExODFkZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="NetFreedom0/1124" data-view="eyJjIjotMTkwNTEyMjMyOCwicCI6MTEyNCwidCI6MTc1MTk4MTU1OSwiaCI6IjUzZmI3NTAzODMzNTMyOWZlMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/NetFreedom0"><i class="tgme_widget_message_user_photo bgcolor4" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qYoatNInauwPc_5ZlCfBTx0ZlGHW6VYbdEHPEmQFVmrqDWADbkMMjJnAAAxRp63ckMRR_DbRiaG5yxxmGg85xyKNqeuDmy1c-sCN4zI4b9O3ZhPF76d90w-C4-FGfhloQVu70QgdAHwmPDwVEApE1FhZ0M0mIfavygaeuuQvPMWlS6uKyL6wS_fmHPds0jmPgVF9co07ZEmyZ-yKCXUQAwjxhA8xy23PWMFW2x_-0R1et8jIduoa9z5IqhPvjsAAa9478Y-czMhoTygG6ZW-xmAZQu-ePg9Uf8iwpFjQ_gp5Mr63iiYw4mKboWIuavFXUJyRTp_9ca-0RhyJEMBaCQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -660,13 +739,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/NetFreedom0"><span dir="auto">NetFreedom</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%87%D9%85%D8%B1%D8%A7%D9%87_%D8%A7%D9%88%D9%84">#همراه_اول</a> <br/><br/><pre>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@171.22.254.17:989#%F0%9F%87%B2%F0%9F%87%B9MT-0426-NetFreedom0<br/>ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw@185.231.233.112:989#%F0%9F%87%B5%F0%9F%87%B9PT-5178-NetFreedom0</pre><br/>همراه اول<br/><a href="https://t.me/NetFreedom0" target="_blank">@NetFreedom0</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">31</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1124"><time datetime="2025-07-08T07:00:05+00:00" class="time">07:00</time></a></span>
+    <span class="tgme_widget_message_views">38</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/NetFreedom0/1124"><time datetime="2025-07-08T07:00:05+00:00" class="time">07:00</time></a></span>
   </div>
 </div>
   </div>
@@ -680,11 +757,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 41.75ms -->
+<!-- page generated in 45.26ms -->

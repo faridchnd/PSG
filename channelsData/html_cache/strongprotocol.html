@@ -62,9 +62,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -93,7 +210,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">3.88K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">81</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">video</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">file</span></div><div class="tgme_channel_info_counter"><span class="counter_value">31</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>خرید سرور پرسرعت: <a href="https://t.me/StrongProtocolAdmin" target="_blank">@StrongProtocolAdmin</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>لیست قیمت: <a href="https://t.me/vpn_Saless" target="_blank">@vpn_Saless</a><br/><br/>فروش سرورهای اختصاصی پرسرعت<br/><br/>کانفیگ و پروکسی رایگان برای تمامی اپراتورهای اینترنتی<br/><br/>کانال دریافت فایلها و اموزش: <a href="https://t.me/Fileslists" target="_blank">@Fileslists</a><br/><br/><a href="?q=%23%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA">#اطلاعات</a> <a href="?q=%23%D8%A7%D9%85%D9%88%D8%B2%D8%B4">#اموزش</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=31ae5b1ff9c3824292_6603365619739349669">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=169b0d6542b841ae05_14865954309680114139">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -114,7 +231,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=31ae5b1ff9c3824292_6603365619739349669">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=169b0d6542b841ae05_14865954309680114139">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/strongprotocol">
@@ -131,7 +248,7 @@
 <main class="tgme_main" data-url="/strongprotocol">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/strongprotocol?before=161" class="tme_messages_more js-messages_more" data-before="161"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/161" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTYxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGE5M2U2ZjI3ZjAzNTAyY2U4In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/strongprotocol?before=161" class="tme_messages_more js-messages_more" data-before="161"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/161" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTYxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYTA2Y2QxODI2YmIyY2M4YWE5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -148,18 +265,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/StrongProtocol"><span dir="auto">پروکسی VPN سرور v2ray openvpn فیلترشکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>این کانفیگ، فعلا فیلتر نشده و همچنان فعال میباشد<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/161"><time datetime="2024-11-04T16:46:08+00:00" class="time">16:46</time></a></span>
+    <span class="tgme_widget_message_views">1.24K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/161"><time datetime="2024-11-04T16:46:08+00:00" class="time">16:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/163" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTYzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMWI1MDc3YzkzNTM2YTA2OGM4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/163" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTYzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTdjYTlmM2UwNjEyZDcyMGRiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -178,18 +293,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5868543730598922102 1366376814_456247158" href="https://t.me/StrongProtocol/163" style="width:440px;background-image:url('https://cdn4.cdn-telegram.org/file/C0q98g-s9gaBzC060A2RWzWVqjsD1WZfK_KIDHjlyMNSm1qfpM3MhfgOn2p8loB6I9qPF4LXnakO2I0NhCMv4CS4XaBZ0Gvc9JKqgBFH5zvWwGEef9mfOP_HBLZqeDZQdw70h7zgR5z1JjMLxczIPagPttzhX3G0AoaXAAaQHjYMoAfWkkq4mojesl_fAPeOQ0vXNq4OYsFaBBPWKWIVd3qMw782L357d4tq9LYd_0F0Xd9DyDkY-8qLERsAlCx_TofgA_ZgjO_tddE9qewKHll46YGznUly5HGV-M3bh_nBcaW08WMPNMaxNidI_K0yoXZDTjqalhWZFCWZZuv5jQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:123.18181818182%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray (تست شده روی نت مخابرات و همراه اول)<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3a0pRczJSWUhoVmlUWVdhZjFSb2JC@77.246.97.187:7749#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray (تست شده روی نت مخابرات و همراه اول)<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3a0pRczJSWUhoVmlUWVdhZjFSb2JC@77.246.97.187:7749#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/163"><time datetime="2024-11-08T13:39:01+00:00" class="time">13:39</time></a></span>
+    <span class="tgme_widget_message_views">1.06K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/163"><time datetime="2024-11-08T13:39:01+00:00" class="time">13:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/164" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWQzYjgxNWEzZGM4ZDlhZjE2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/164" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiM2Q1ZjQ1ODY0OWQ2M2JiY2M4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -208,18 +321,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5870569310190158899 1366848431_456246323" href="https://t.me/StrongProtocol/164" style="width:549px;background-image:url('https://cdn4.cdn-telegram.org/file/oh44tnGEkciSkQ_oGbDVOCU3pDcRmQ-Q_LrG-qa8ztZpKEVYO9kFRNVWhZlTfxuqqV8jc2sz6X13r5IuyvsB-mHdPxHwtEvRp94idFxtPUxuq0ekEZ15B8EYMOZWEZcW6e-mxnZr_nZWavpaAKJeniPyEKljLc_wlKpYtiNHLwHMnF06084ZDRhkSVDHxezHUyOSQrm_s8PEr-tppYgRL9zlmSxn7JwJgFHkSQivpfBeK9Bmi7faK--h0DRYYx5yccCG_-Fu0ePp4YQ0KMKOXCBtOblT2nYxw4ptlzI1qsbZ2B9QL6Bs_aOjLYCqVHOysGTvMUzjhCjYXFMga2qgXw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:77.049180327869%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان v2ray (تست شده روی نت مخابرات)<br/><br/><s>trojan://auto@162.159.135.232:8443?path=%2F&amp;security=tls&amp;host=e9464f45.trauma-2r4.pages.dev&amp;type=ws&amp;sni=e9464f45.trauma-2r4.pages.dev#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان v2ray (تست شده روی نت مخابرات)<br/><br/><s>trojan://auto@162.159.135.232:8443?path=%2F&amp;security=tls&amp;host=e9464f45.trauma-2r4.pages.dev&amp;type=ws&amp;sni=e9464f45.trauma-2r4.pages.dev#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/164"><time datetime="2024-11-09T04:54:42+00:00" class="time">04:54</time></a></span>
+    <span class="tgme_widget_message_views">1.19K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/164"><time datetime="2024-11-09T04:54:42+00:00" class="time">04:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/165" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMTRkMWFhYjNlNjViNzQwNjk5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/165" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGIwZTdlMjhkNGY1NGNhNzIwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -238,18 +349,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5888755988427818281 1371082847_456246569" href="https://t.me/StrongProtocol/165" style="width:750px;background-image:url('https://cdn4.cdn-telegram.org/file/P-d9NlSwhhS0S4KoMWc3UWkgdPWtRPiLLeWYL4Xdlz4ZRFGDl7kPsClSRbcIpHaRwCzhkFvLz7SAKMP8JbT8c7rXpy_E8MGSxezKkvUagHIMDkhn0N8zO7jGRbJLurWnx8CQf_PMcSyHlo72-ohDeTsMkL8YpQ4FbNidZrs2IiDMKkG1BbeR2vxH4KdTkpVI5ZECJ8Cj9PZQzir1i_i029W2XkNDN664TauGL9ZDZVJtK_WMapjWhI1fQDvOmGabbbHSXrh1Oz2ApahW4KQ8rSJQz1OeqU6iLaAnqaoY8-DquyUxs9zuF091B_24kixiH88MDC4ttYhnhDv6JUnARA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:52.8%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVMkVJT0hTNUNNRm1zMXZPNUloYkpX@195.74.86.162:443#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVMkVJT0hTNUNNRm1zMXZPNUloYkpX@195.74.86.162:443#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/165"><time datetime="2024-11-16T13:38:37+00:00" class="time">13:38</time></a></span>
+    <span class="tgme_widget_message_views">1.07K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/165"><time datetime="2024-11-16T13:38:37+00:00" class="time">13:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/166" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiODNmNGViMDgwNjFjMDExZDc4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/166" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNGU1MzViMDcyYmE4NmNmZWZjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,18 +377,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5906803389466002708 1375284835_456246548" href="https://t.me/StrongProtocol/166" style="width:485px;background-image:url('https://cdn4.cdn-telegram.org/file/sscbLupc742zijQjpPvKYrZLyawQSx2OFRT-ZqHUanmlr2TvodSfMPS9jBdSZ6H5dCWr64iip9I6EDWpmxjuEM2vP8Ycf9snissEJDVKizAuEKrHLmdmv51t7DudlmynBoU_H96huQ87xKef-O-p59VrA4frGdw3WrljhSbjPG7u6IB5pFVXmSz81Q0uue4RVaQ2DiC0jJEwxuASQzqjNGxaYypuDfnnvoyy20k1NiOoNnpSVLRL2EQq4UZrRwfhddtymFpxSpBHMnYg1eTEj3llQNYk6IRvbdGjsckW_YvUf7Gqn8MCTcafw24QqDGFDgC4sqWVoc24y7IS2iC9RA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:115.46391752577%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت v2ray <br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQSXRPUWw3VEx0cmI5RGN3U0tscGFt@85.239.248.94:14976#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت v2ray <br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQSXRPUWw3VEx0cmI5RGN3U0tscGFt@85.239.248.94:14976#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/166"><time datetime="2024-11-21T17:28:46+00:00" class="time">17:28</time></a></span>
+    <span class="tgme_widget_message_views">1.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/166"><time datetime="2024-11-21T17:28:46+00:00" class="time">17:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/167" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNDQzOTQ3MWQwZmJmMTI0ZTEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/167" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzkwYmY1ZDRiN2UxNmJiNzhhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -298,18 +405,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5922496568605394386 1378938688_456246738" href="https://t.me/StrongProtocol/167" style="width:381px;background-image:url('https://cdn4.cdn-telegram.org/file/hvh08HINuEO62PjLuDJrQJ6J7l3FMabIuqE0WB6Emk4JaGJSOuLBhcfeUzbWGH2tcssyFBgR5p4MJsGfH2rhd4TF-Pdf73CPfXY_Jnzg7oU_nj_8sJPDCJSHfFFlhMhDCdbWm-X66nBnwxKglxaWbZtMsgeql6du5aoSbK8uydWD7rlKl6Y88hcjsppi479nEyX3D5OKzY7b-O1vUsHU-9Uk3cHuM4aJ3pgtdSxLglgEuQsXWr5NAnYDRoUzQLkway9ZyAc_0--xomENXP5hi8BYtL2WaqN-KDsYg2h78sWuYxeLlFutHBlsHHoZfmGlTeajChpMl30kHPwWzTYyJg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:112.86089238845%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت v2ray<br/><br/><s>vless://26721978-890e-4946-bafa-cb03c9ff7f4a@fi.zytro.su:38142?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت v2ray<br/><br/><s>vless://26721978-890e-4946-bafa-cb03c9ff7f4a@fi.zytro.su:38142?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/167"><time datetime="2024-11-26T10:45:08+00:00" class="time">10:45</time></a></span>
+    <span class="tgme_widget_message_views">1.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/167"><time datetime="2024-11-26T10:45:08+00:00" class="time">10:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/168" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjllODZmNjUyYTYyZWM3YzFlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/168" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDNkZWEwNDU3YzdmY2ZmYzU4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -328,18 +433,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5931762874647167862 1381096168_456246134" href="https://t.me/StrongProtocol/168" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Wek49j1x2PKRGaajBe-GZhcxpK2LZuplTuwN4TduqnqCKYD2NJ9ZoptXxFL9mPb6UMEo5KtXF__O8nYuMUyyUazLNzRvuQclL0o5VPmt0iXRXZsJ_dDZBLIgP3n1AiJ3atmaG_LC4cPXAHhMP99Hz9D4KEOlqwsl8SZo_A9uPmdLwmlBU_P5iZ9LEgH_cdNpEpXAcaqVHQ3DWslVWAhOL2xpas4NB5Suizxb8tIWa0qblS8UUvVsjmVvsA7pFcGkYHXjh3mx8vvjXt_dyMFZXhSqqoF856GCxiSqPXverhNbK7JYjAp5SBHkY2lWg4dNvUE9ImHpEPrsKpFU7zxHdg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:66.625%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>فیلترینگ در سه مرحله و تا پایان سال برداشته می‌شود</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>مجید فراهانی، رئیس شورای مرکزی حزب ندای ایرانیان و معاون هماهنگی و پیگیری معاون اجرایی رئیس‌جمهور در کنگره این تشکل اصلاح‌طلب گفت: فیلترینگ تا پایان سال جاری و در سه مرحله اجرایی به طور کامل برداشته خواهد شد./ایرنا<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>فیلترینگ در سه مرحله و تا پایان سال برداشته می‌شود</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B8.png')"><b>🔸</b></i>مجید فراهانی، رئیس شورای مرکزی حزب ندای ایرانیان و معاون هماهنگی و پیگیری معاون اجرایی رئیس‌جمهور در کنگره این تشکل اصلاح‌طلب گفت: فیلترینگ تا پایان سال جاری و در سه مرحله اجرایی به طور کامل برداشته خواهد شد./ایرنا<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/168"><time datetime="2024-11-29T09:18:12+00:00" class="time">09:18</time></a></span>
+    <span class="tgme_widget_message_views">1.15K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/168"><time datetime="2024-11-29T09:18:12+00:00" class="time">09:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/169" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiODlhYjllZGI3NDg2MTlhZDFhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/169" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTY5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzg1MWU5ZTQ1YjVlZDY0YWNjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -358,18 +461,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5931762874647168111 1381096168_456246383" href="https://t.me/StrongProtocol/169" style="width:420px;background-image:url('https://cdn4.cdn-telegram.org/file/h5PNWGFU-yM2-89t3q_JPi_FHPi9pcXYFj_IThi9kFGrjN0VyVy433_DMhDjFjxMpGyVYoB0xPp2TvRTFz7QBU9mqKp9nf9sSkhatZv-okFfFLz3a9YYZbZ2pDIUxOyPsJWQmPURNk3SOjXWhdSn90dz9iHG0cb_9RIcga1JC25uU0GcEJukS8te7cWVHjam6fo3OI8qY5OLEsiP_24jS8SEg3m0XIAhM-RkGGTm3I-bE-mX5Gi8T9co4GDM1DPl7RNgLbFBtrYhPD7Ubuz40w9CHdqFg3eQd-ForoqIo2F57By05jd3QpxOpbvSEublfevcJy608plHl1s7MjFozg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:129.04761904762%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت 24 ساعته v2ray <br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppcVZUemNVQjA1RzRkc0tNTFhwTmdH@194.58.40.9:14073#StrongProtocol</s><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان موقت 24 ساعته v2ray <br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppcVZUemNVQjA1RzRkc0tNTFhwTmdH@194.58.40.9:14073#StrongProtocol</s><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/169"><time datetime="2024-11-29T18:49:50+00:00" class="time">18:49</time></a></span>
+    <span class="tgme_widget_message_views">1.28K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/169"><time datetime="2024-11-29T18:49:50+00:00" class="time">18:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/170" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjQ2YjQ2MzUxOGU4Y2MwZjE0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/170" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGRkOTA1MmQzMWQ1MTEyMTE2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -388,18 +489,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5956535223808280135 1386863930_456246855" href="https://t.me/StrongProtocol/170" style="width:600px;background-image:url('https://cdn4.cdn-telegram.org/file/M4n7FxpuHVF7QFi4oJd6LdzGKf6x0Y6h45odE5H2fTvPoovjFhZdvqugDb6d4jEfYsOnt2X4Xf6UTxQJBe7ADa5zuTay2IXqjjmNDDtF6SNMk0GDw5K2Dh9D4AOgk52w1-LiOE2ZnClGcN2-mPo7xJ7zAFjgWT500Lzhm_bZjuHTYbxlTF0ndwALKzBOAJICnyy2ABCD6Z4raP2UTeVkBoXehiUN_bF_7o2EXuBqa6v5l2DCi_4lyTa7LSS2jPMq75FrSnjIUvvIbh3SZCI59nIH_ol7AaqXgt8BLDtoYoTKW-cJrtcNkxz2m068no1a5t99BqIbbkc9UYn48EGDnA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>همسایگان ایران در صدر فهرست پرسرعت‌ترین اینترنت‌ها در جهان<br/></b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>بالاترین سرعت‌ اینترنت جهان عمدتاً در خاورمیانه و آسیا متمرکز شده و به طور قابل توجهی از میانگین سرعت‌ دانلود موبایل در آمریکا پیشی گرفته است.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>امارات متحده عربی با سریع‌ترین سرعت‌ دانلود موبایل در جهان صدرنشین است. این کشور از سال ۲۰۱۲ سرمایه‌گذاری گسترده‌ای در زیرساخت‌های دیجیتال انجام داده است.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>همسایگان ایران در صدر فهرست پرسرعت‌ترین اینترنت‌ها در جهان<br/></b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>بالاترین سرعت‌ اینترنت جهان عمدتاً در خاورمیانه و آسیا متمرکز شده و به طور قابل توجهی از میانگین سرعت‌ دانلود موبایل در آمریکا پیشی گرفته است.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E296AA.png')"><b>▪️</b></i>امارات متحده عربی با سریع‌ترین سرعت‌ دانلود موبایل در جهان صدرنشین است. این کشور از سال ۲۰۱۲ سرمایه‌گذاری گسترده‌ای در زیرساخت‌های دیجیتال انجام داده است.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/170"><time datetime="2024-12-07T19:32:43+00:00" class="time">19:32</time></a></span>
+    <span class="tgme_widget_message_views">1.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/170"><time datetime="2024-12-07T19:32:43+00:00" class="time">19:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/171" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiOTQzNjE0OTBiMTA3OGNlNmEzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/171" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzU0NmUwMDBiNGNlYmM2ZDg4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -418,18 +517,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5965139400511833669 1388867246_456246853" href="https://t.me/StrongProtocol/171" style="width:444px;background-image:url('https://cdn4.cdn-telegram.org/file/n0iewC3KfL2diwiRGLKZ5QmOsFDF_t1Ljf6AtodYE5qN__eZzTpSzTU3c-TRJlra25fV3QmNLBCN1EJ_13VZkGAWoc6pLdFfXNmAGVsLXJQZOMqAET3XIpl9tTDIzREK4lKiMzX0vZQ9rwQ9Dr7EBysyTDzbufuhRS1_wxvcNWyJg_JDxo6DDl1IlKlm458J54NIiR_3bgdCB1yNr7U6P3d8oyzkxvLiRzWJF59NlOMJhqLNSk2xL0TxxAlf_kCDWypNFX2uMWYgavCJFz9Ldxr87Klcxx0DwFCxJremSJpDL8urp23C_bjtufZacoqB4io1wv51c12WOl5qtu8-6g.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:127.7027027027%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmbW9RcXpMUzdRMjZWWHZFdXo0VlVz@77.91.70.76:443#StrongProtocol</s><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmbW9RcXpMUzdRMjZWWHZFdXo0VlVz@77.91.70.76:443#StrongProtocol</s><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/171"><time datetime="2024-12-11T17:25:35+00:00" class="time">17:25</time></a></span>
+    <span class="tgme_widget_message_views">1.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/171"><time datetime="2024-12-11T17:25:35+00:00" class="time">17:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/172" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMDhjMGJiNjEyZTI3MDJkNjUyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/172" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTcyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNDhmMjg3ODEwOGQzNzljYWQyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -448,18 +545,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5972293342853186976 1390532903_456246688" href="https://t.me/StrongProtocol/172" style="width:413px;background-image:url('https://cdn4.cdn-telegram.org/file/hi6ANPHzGwTzofy2j8DIDGG2zhecDZNiGDSwp9QVNPdUK3tArIJjkFQ9d4vWBt8etemTBqZUrstEPnizeALoGSM-Ys1d7iGoNCDYkm7PQH3yHOzmuBw9JsmkTuTdbXABY6hlAboR4Uq-VbM5OlCaf5KFig27-q0KDuj5FfK3mDQIcEHFT9YSU83FX45dZ6QWKl_KEzXrueBAGHcnZxMWsUy2HCLhiEWl25T9HWUwkq9iwIznwpkIf4Z6I1YHF4YAdTo_x0Mf5k-p_BtDUwCWl1XhyeaeSC2dNZygf8X7GammTsZoyBesGoCSFs7cHa4jZSXWyInS8r_2G3eBBbSvbQ.jpg')">
   <div class="tgme_widget_message_photo" style="width:97.463126843658%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxVTVNVXdacVZzRmtER1hRZmFiSlA5@push4.p-ko.ru:39448#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxVTVNVXdacVZzRmtER1hRZmFiSlA5@push4.p-ko.ru:39448#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/172"><time datetime="2024-12-13T08:01:03+00:00" class="time">08:01</time></a></span>
+    <span class="tgme_widget_message_views">1.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/172"><time datetime="2024-12-13T08:01:03+00:00" class="time">08:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/173" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTczLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmFiZTkwYTNhZTQ4YzEzODJkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/173" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTczLCJ0IjoxNzUxOTgxMzA0LCJoIjoiOWVkN2I4M2UzZDllOGQyZWMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -478,18 +573,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5994368851984370184 1395672758_456247816" href="https://t.me/StrongProtocol/173" style="width:471px;background-image:url('https://cdn4.cdn-telegram.org/file/SXc2cgKnKk2yfx1l-thTOCOtmXRjkEEkJ7tTBetXGCUwfIio8-3DEB4PyzaCAdGg9qVeOWf9HNdi-DhogEvKDoK93OwK4jnD27uESNRy-lVJdHn2CBzx1IKKYdkCxwXxTLMEypnNk55lUqbzKlOg8wtdOjuWjeS3Rsv0_XyGLf4IeVAs4ZnF7Z_ZpYBJwyIZLQKOOptZeN4zJDsd5jLF9no4_SvEZGCekH5c-nD1xVEqj6eIheOQbrAW7V71XNynALrXLitRU-OIdyHx9uELKWp5AKsSJrkCv-3iQwTSqFU5RoHnUBJOo3hUPG2w_G47jQcZ1awIR9QE7VN8jhpLuA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:110.82802547771%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>vless://64a1796c-95f8-40e4-9a56-825823212648@tr-s.xor-vpn.ru:443?security=tls&amp;encryption=none&amp;headerType=none&amp;type=tcp#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>vless://64a1796c-95f8-40e4-9a56-825823212648@tr-s.xor-vpn.ru:443?security=tls&amp;encryption=none&amp;headerType=none&amp;type=tcp#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/173"><time datetime="2024-12-20T14:39:41+00:00" class="time">14:39</time></a></span>
+    <span class="tgme_widget_message_views">1.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/173"><time datetime="2024-12-20T14:39:41+00:00" class="time">14:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/174" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZDA1MGU5ZTZhMzE5YTQ2MTEwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/174" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiN2UxNzg4YzRmZDZkZmFhNzVmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -508,18 +601,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6035210666664641771 1405181984_456246507" href="https://t.me/StrongProtocol/174" style="width:439px;background-image:url('https://cdn4.cdn-telegram.org/file/l1sT16KB_tbYs5u5Q2CLU0WdFzifEYlpXZRA1jyAruKT9dbFGxeXTm5qnPyg6LE3dWpyKUch7pZ9GdkLtE-hsSuyx_RInl8cQ1lf2Z6nJnV2mAGD4J8h-TPiyRM6LU0jXug5DcUDljuVdnqvVp_yhC1rkJha8BcLNiTMYZX7y8uK0W9ZVhpWTjQegoKkVzkfu5DFebMP40rnit_FnBF0AFx2QZhzfXPF1ddda9-n_81G6vKcyxGcz6CJoI5IKHLmCr8BExt3ltDOVvW2Na6WuwWZM9T_zO8s72XNcR3y1tYG09-_9LgIrkduZCU_z5VoYOvDwjKHUKiiDoOD6tBl7Q.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:124.37357630979%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5TVg5V0dQZ1VFY1JabWxhYTBZSEhD@103.106.1.92:23492#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ رایگان v2ray<br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5TVg5V0dQZ1VFY1JabWxhYTBZSEhD@103.106.1.92:23492#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/174"><time datetime="2025-01-03T10:39:34+00:00" class="time">10:39</time></a></span>
+    <span class="tgme_widget_message_views">1.92K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/174"><time datetime="2025-01-03T10:39:34+00:00" class="time">10:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/175" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWZkMmZkZTNjYzNmNzFkZTljIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/175" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNmQ2NGZjYmFhMWYyNGViMWRkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -536,18 +627,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/StrongProtocol"><span dir="auto">پروکسی VPN سرور v2ray openvpn فیلترشکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> اطلاعیه:<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> اکانت قبلی ادمین، دیلیت شده و دوستانی که قبلا اشتراک خریدند جهت پشتیبانی یا تمدید به ایدی اکانت در بیو چنل مراجعه کنند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> تا اطلاع ثانوی، تمام پرداختها صرفا با رمزارز دیجیتال امکانپذیر میباشد و دریافت اشتراک ریالی نداریم.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/175"><time datetime="2025-01-10T18:06:35+00:00" class="time">18:06</time></a></span>
+    <span class="tgme_widget_message_views">1.96K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/175"><time datetime="2025-01-10T18:06:35+00:00" class="time">18:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/176" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmQ0MWYzZDc2YmE5ZGFhZDcxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/176" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYWY4NDJiNjhlNDkwM2RiNGRhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -566,18 +655,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5798835049880207790 1350146497_456245678" href="https://t.me/StrongProtocol/176" style="width:508px;background-image:url('https://cdn4.cdn-telegram.org/file/ap9mzQCKWf8LRFccQ_kE0b93XylTDok-qorsxzETYtzC55jfaVIuyvRHelupNQIJAqtzTqjgVI6RSulHKVtUMJ423R4WhvWLsGQqCXtRUWUZs0BQQ8CYbEcmaj5KtSQX2ttxtnOIm7LG4Hew0Y0CEAVph4X4oN9UWxPkLACKAuFoJafqbEIpmEmYXWqLBtPQhfe_-9ME8uGEvsQS834Rl68F-B_i4skoE4xe24QsrjhqOcJdjKjSYrTy_r6ofDSJRd13q2coHrNgZG7SXCp6PxZrAavEWtllCALY7j7WxxuUao1uYJHISW82Z48rJWOZsOEYG3ZEYb9CBd2ehRF4LA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:103.74015748031%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray کشور فنلاند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXck5Bc2J0Y3VvZUVFUWRvU09jUGdP@45.12.135.36:47076#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>کانفیگ موقت رایگان v2ray کشور فنلاند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><a href="https://t.me/FilesLists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></a><a href="https://t.me/Fileslists/28" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اتصال و استفاده از کانفیگ v2ray</a><br/><br/><s>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXck5Bc2J0Y3VvZUVFUWRvU09jUGdP@45.12.135.36:47076#</s><a href="https://t.me/StrongProtocol" target="_blank"><s>@StrongProtocol</s></a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/176"><time datetime="2025-01-21T19:01:10+00:00" class="time">19:01</time></a></span>
+    <span class="tgme_widget_message_views">2.01K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/176"><time datetime="2025-01-21T19:01:10+00:00" class="time">19:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/177" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZThhNmQ5NzM2YzY3ODQwYjZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/177" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiN2U1MGFiNDkyZmI3Mjg0NzdlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -594,18 +681,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/StrongProtocol"><span dir="auto">پروکسی VPN سرور v2ray openvpn فیلترشکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>کانفیگ v2ray و openvpn بصورت تانل ایران به خارج موجود شد&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>دقت کنید وقتی نت کل کشور ملی میشود، تمام دیتاسنتر های اصلی مانند شاتل، مخابرات، اسیاتک، پیشگامان و .... دسترسی اصلی خود به اینترنت را از دست میدهد و امکان هیچگونه ارتباطی با خارج از کشور میسر نمیشود.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>پس برقراری سرویس شما هم امکانپذیر نخواهد بود؛ حتی برای خود ما.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>بنابراین هیچگونه تضمینی بابت ارتباط در زمان نت ملی امکانپذیر نمیباشد و هرکسی چنین ادعایی داشت از 2 حالت خارج نیست :<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> کلاهبرداری<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> دسترسی ویژه به دیتاسنترهای دولتی که اینترنت بدون فیلتر دارند<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>جفت این گزینه ها، برای کانال ما امکانپذیر نبوده و نیست.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> با علم و اگاهی از این مهم، نسبت به خرید سرویس از ما و دیگران اقدام فرمایید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E280BC.png')"><b>‼️</b></i> تمام پرداختها صرفا با رمزارز دیجیتال (ترون،لایتکوین و ...) امکانپذیر میباشد و دریافت اشتراک ریالی نداریم.<br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">527</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/177"><time datetime="2025-06-23T19:55:06+00:00" class="time">19:55</time></a></span>
+    <span class="tgme_widget_message_views">528</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/177"><time datetime="2025-06-23T19:55:06+00:00" class="time">19:55</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/178" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmNjODMyMDFkYTNhM2RjMGNkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/178" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTc4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDRkNmVjNDYzNmM5YzQyMmVhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -624,18 +709,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5983075360033590969 1393043287_456249017" href="https://t.me/StrongProtocol/178" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/XqbB1O9Z8gIe9UShPL0wOe7NviaGcQsjGkXZdeuUGDd52rM8Vz5g27fA4bzmBzu69y16R6DkMCSFlzLOFIeR7n3hghPbVTIzAfbumxrTGMWQpjarUBpsbbo5-OMYci_YFocJnekRLLUcSnVB0IlwiFQeyoityW8BBg25LT85OPyBC2zC2sTK8oBiRGsNJL-Sc1kaxCwn7jM1GY96dZNP7PtbnKjXZW3lh5CsbcHxnM2KFPlTz4ueJib1uRAeF60HLMzBjMixvLp9tPfbc6AdrHMXEj-T78aDcxo_BslHHUaeYUI2gkxhkm1W3ssgBE_4jwkCqShk20_K3LimA0O0YA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:84.5%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>اگه این‌روزها شارژ گوشیتون زود خالی میشه بخاطر کلاینت v2ray و مصرف زیاد مودم گوشیه که همه اینا از کاهش شدید کیفیت اینترنت میاد. با بی‌کیفیت‌ترین اینترنت تاریخ ایران روبرو هستیم.<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>اگه این‌روزها شارژ گوشیتون زود خالی میشه بخاطر کلاینت v2ray و مصرف زیاد مودم گوشیه که همه اینا از کاهش شدید کیفیت اینترنت میاد. با بی‌کیفیت‌ترین اینترنت تاریخ ایران روبرو هستیم.<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">202</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/178"><time datetime="2025-06-29T08:57:09+00:00" class="time">08:57</time></a></span>
+    <span class="tgme_widget_message_views">203</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/178"><time datetime="2025-06-29T08:57:09+00:00" class="time">08:57</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/180" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYTk4YjVmY2E2NTAyMmQzNDZiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/180" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMGFjMzIxYmZjNTg1Y2EwYzFkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -654,18 +737,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5983229433395397906 1393079160_456246546" href="https://t.me/StrongProtocol/180" style="width:640px;background-image:url('https://cdn4.cdn-telegram.org/file/N8AqZqPa1Tjr5ZLV-uk5-LckVk8ceTL-Yj7xo1NFRV5fAvaGWRUOUi0sxgEjeUXkyAy-g3fKule45BhwLTvoG_bPaVAJRSt0umPfRRd07reanBgO9J_Cm9jj3ezRK7N7HOScX-0VTU00CXTi7uNNUWF0WYT6BYm2O5HB4XRYa7PwbpN1Bzt84hy0v5At5dDvjTvvXgTqnhB9j5mGNNtWmuxdF5MrZPJexpddHLHspVp-t8Qv2kqcyUgiTMsFeLnWYVeiaCFAwlBsIpQ_H1Q3DAsnM8SYUhGABLFsRGKjBhKZHc4t2HiWeLHQzGBMonHZIAMXdstke87b-_fDIWwTCw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:66.71875%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>ممنوعیت استفاده از استارلینک / مجازات اعدام برای همکاری‌کنندگان با دول خارجی متخاصم</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>نمایندگان مجلس ضمن اعمال ممنوعیت برای استفاده از ابزارهای الکترونیکی ارتباطی اینترنتی فاقد مجوز از قبیل استارلینک، تصویب کردند که هرگونه فعالیت اطلاعاتی و جاسوسی و اقدام عملیاتی برای رژیم صهیونیستی یا دولت‌های متخاصم مصداق افساد فی‌الارض است. <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> <a href="https://t.me/Khabar_Fouri" target="_blank">@Khabar_Fouri</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>ممنوعیت استفاده از استارلینک / مجازات اعدام برای همکاری‌کنندگان با دول خارجی متخاصم</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>نمایندگان مجلس ضمن اعمال ممنوعیت برای استفاده از ابزارهای الکترونیکی ارتباطی اینترنتی فاقد مجوز از قبیل استارلینک، تصویب کردند که هرگونه فعالیت اطلاعاتی و جاسوسی و اقدام عملیاتی برای رژیم صهیونیستی یا دولت‌های متخاصم مصداق افساد فی‌الارض است. <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> <a href="https://t.me/Khabar_Fouri" target="_blank">@Khabar_Fouri</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">198</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/180"><time datetime="2025-06-29T12:28:22+00:00" class="time">12:28</time></a></span>
+    <span class="tgme_widget_message_views">199</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/180"><time datetime="2025-06-29T12:28:22+00:00" class="time">12:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/181" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmU1ODAyZDhlYWRhNmQ0NjI1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/181" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWY4NjFlM2NlZTQ1MTYwN2E1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -682,18 +763,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/StrongProtocol"><span dir="auto">پروکسی VPN سرور v2ray openvpn فیلترشکن</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E280BC.png')"><b>‼️</b></i>به هیچ‌وجه از نرم افزار های غیر رسمی ایرانی v2ray همانند mahsang ویا hiddify برای اتصال به کانفیگ ها استفاده نکنید، اخیرا این نرم افزار ها کانفیگ هایی که کار میکنند را با گزارش به سرور مابین همه کاربران به اشتراک میگذارند و باعث مصرف حجم شما و به پایان رسیدن سریع آن می شوند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i>پسورد خود را بصورت دوره ای تغییر دهید و فقط مابین افرادی که به آنان اطمینان دارید به اشتراک بگذارید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">187</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/181"><time datetime="2025-06-29T20:54:03+00:00" class="time">20:54</time></a></span>
+    <span class="tgme_widget_message_views">188</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/181"><time datetime="2025-06-29T20:54:03+00:00" class="time">20:54</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/182" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMDQzMzM1ZWVlNjMzODBjNGFkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="StrongProtocol/182" data-view="eyJjIjotMTA0NjY0Mjk0NywicCI6MTgyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZjY2YzUwYWI5NDc5MWE1MTNkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/StrongProtocol"><i class="tgme_widget_message_user_photo bgcolor0" data-content="پ"><img src="https://cdn4.cdn-telegram.org/file/MuMofb_4fb29JEU-NHcT7wSs1iPlN0f0LTycqqtnJtY-2ggK80zORJwKDgnxHVTHsiF1nuzp15ANUsr9F9TWqmGAdZPnAVWBG9oT-HWbamuLaaanJHX_l8gO1F8RSGq-eWmpd1XwHxtUvFoDre1uLJapOwWY7yS3SzXb9YWO7rZshEu0HPudhFn-NNnxee1bQIxAw2HIrGTwSImE6TwxeyoE_vWJp1YyY90ZBkELTosrhPcGUyyLY3hnPphcSfWLOB1RAKTB4kF3JtRd-jBEHKfiwRvgxNHzMSMDKX0mXmyRv2qR7tANrcdR9_m5sYzVeds0HzG3enM-uGv9f2KMkA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -712,13 +791,11 @@
 
 <a class="tgme_widget_message_photo_wrap 5985302416540681860 1393561814_456246916" href="https://t.me/StrongProtocol/182" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/oqF22xdF5d-jF4kXFboKpg5KWChNC-Jx7ll22nEOBLqgtot_Jh_MRel5hPqpDAdaYRKZZNf5jSziUdxIxckT7355A-YwdZLN3V23_4p36ZdmCcwyMBNcOx005fVOeJqHgtlsSFcy68VJamaNJHe2wDpUJtdmYsuE5iHrkt3n4U2iW7phVOZQ76et2sgo75ZGSMj1sk4zRv4_YqcnGFB-krDvzjkRHYQVpVn11nZfGddjM-HKPkC8jTIMpdQglIH5JKYr5fWQwmuTyoV9OtbyWJNREEzatA2kciVcY4DDtWZ-Pq_WYHpOmo-OOilWqmStcnRAF0QCyMb7DGYRojxniA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:66.625%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i><b>اختلالات اینترنت قاتل خاموش باتری گوشی‌های هوشمند در ایران</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>تخلیه سریع باتری گوشی‌ها در ایران، پدیده‌ای فراگیر است که ریشه در کیفیت باتری ندارد. کارشناسان علت اصلی را فشار چندلایه ناشی از اختلالات اینترنت، استفاده از VPN، گرمای محیط و مشکلات GPS می‌دانند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>اختلال شبکه و استفاده از ابزارهای فیلترشکن، پردازنده (CPU) را وادار به پردازش و رمزنگاری مضاعف داده‌ها می‌کند. این فرآیند مصرف انرژی را به شدت بالا می‌برد و گرمای زیادی تولید می‌کند. این مشکل هنگام استفاده از اینترنت موبایل (4G/5G) تشدید می‌شود، زیرا مودم دستگاه فرصت استراحت پیدا نمی‌کند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>گرمای بالای هوا و اختلال در سرویس‌های موقعیت‌یابی (GPS) نیز بار پردازشی پنهانی به سیستم‌عامل تحمیل می‌کنند. مجموع این عوامل نه تنها باعث تخلیه سریع شارژ می‌شود، بلکه به سلامت و عمر مفید باتری‌ها در بلندمدت آسیب جدی می‌زند./ زومیت<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i><b>اختلالات اینترنت قاتل خاموش باتری گوشی‌های هوشمند در ایران</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>تخلیه سریع باتری گوشی‌ها در ایران، پدیده‌ای فراگیر است که ریشه در کیفیت باتری ندارد. کارشناسان علت اصلی را فشار چندلایه ناشی از اختلالات اینترنت، استفاده از VPN، گرمای محیط و مشکلات GPS می‌دانند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>اختلال شبکه و استفاده از ابزارهای فیلترشکن، پردازنده (CPU) را وادار به پردازش و رمزنگاری مضاعف داده‌ها می‌کند. این فرآیند مصرف انرژی را به شدت بالا می‌برد و گرمای زیادی تولید می‌کند. این مشکل هنگام استفاده از اینترنت موبایل (4G/5G) تشدید می‌شود، زیرا مودم دستگاه فرصت استراحت پیدا نمی‌کند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>گرمای بالای هوا و اختلال در سرویس‌های موقعیت‌یابی (GPS) نیز بار پردازشی پنهانی به سیستم‌عامل تحمیل می‌کنند. مجموع این عوامل نه تنها باعث تخلیه سریع شارژ می‌شود، بلکه به سلامت و عمر مفید باتری‌ها در بلندمدت آسیب جدی می‌زند./ زومیت<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><a href="https://t.me/StrongProtocol" target="_blank">@StrongProtocol</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">159</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/182"><time datetime="2025-06-30T12:17:02+00:00" class="time">12:17</time></a></span>
+    <span class="tgme_widget_message_views">161</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/StrongProtocol/182"><time datetime="2025-06-30T12:17:02+00:00" class="time">12:17</time></a></span>
   </div>
 </div>
   </div>
@@ -732,11 +809,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 110.79ms -->
+<!-- page generated in 58.23ms -->

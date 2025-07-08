@@ -52,9 +52,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -83,7 +200,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">51</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">104</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">اینترنت آزاد با Grizzly VPN <br/><br/>پشتیبانی:<br/><br/><a href="https://t.me/Addmin_GrizzlyVPNN" target="_blank">@Addmin_GrizzlyVPNN</a><br/>‌</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ebf49f41ec68f61dd2_5628051036134698293">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=eed54a19a3711f9cd4_5456029572836363889">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -104,7 +221,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ebf49f41ec68f61dd2_5628051036134698293">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=eed54a19a3711f9cd4_5456029572836363889">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/grizzlyvpn">
@@ -121,7 +238,7 @@
 <main class="tgme_main" data-url="/grizzlyvpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/grizzlyvpn?before=1243" class="tme_messages_more js-messages_more" data-before="1243"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1243" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0MywidCI6MTc1MTk3NjQ1OSwiaCI6Ijg2ODI3MWQ3OWY2ZDAzOGE5ZiJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/grizzlyvpn?before=1243" class="tme_messages_more js-messages_more" data-before="1243"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1243" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0MywidCI6MTc1MTk4MTU1OSwiaCI6ImFlOTkzZmUzYWUwNjEwMTdiNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -137,7 +254,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1242" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1242" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
@@ -146,17 +263,15 @@
 <a class="tgme_widget_message_photo_wrap blured 6003464557630179919 1397790517_456247887" href="https://t.me/GrizzlyVPN/1243" style="width:369px;background-image:url('https://cdn4.cdn-telegram.org/file/iUFrpPKS4_C1tSETqwaJsBjloHd2QyQUS19Sw4okUMC4OJkVU4Cxtpgktn-gfhuPNK-GbySBxgV0nQi4XpTTdW1ZQ_FkFRs8IWZVestwigvmBcK1fS2_jj2MSnhwSbiKV2JJV-YOJtDGrp_7w0vN5u8_M16NFrAWu9BiyITacYyZ42crvcudKEAnxHSomERpVgDKrtmeArFpV-FK4Whu81D4r1ne9GF2MzbC6fUc79lLQi82qnepf0VBn5MDYtebwmgiKce_sCA2ryvqBNlmKYaXYlA5ATysRY4eq2jCkcFKefU4MQVgHKM0kCc7ErwQTR-vhO9Ik0Sqz6WwT1y23Q.jpg')">
   <div class="tgme_widget_message_photo" style="width:61.5%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">404</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1243"><time datetime="2025-07-05T23:40:32+00:00" class="time">23:40</time></a></span>
+    <span class="tgme_widget_message_views">405</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1243"><time datetime="2025-07-05T23:40:32+00:00" class="time">23:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1244" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NCwidCI6MTc1MTk3NjQ1OSwiaCI6IjdmMTM2OWQyOGYyNTQ5NjVlMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1244" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NCwidCI6MTc1MTk4MTU1OSwiaCI6IjA3YWYyMTM0MTQ5OWRhMWQ5ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -171,20 +286,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">بازم میگم همیشه وصل نیستیم ولی قطع بشیم تلاشمو میکنم زودی وصل بشیم</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">370</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1244"><time datetime="2025-07-05T23:43:54+00:00" class="time">23:43</time></a></span>
+    <span class="tgme_widget_message_views">371</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1244"><time datetime="2025-07-05T23:43:54+00:00" class="time">23:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1245" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NSwidCI6MTc1MTk3NjQ1OSwiaCI6IjZjYjNkNmI1Zjc1ZmMwYzY3ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1245" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NSwidCI6MTc1MTk4MTU1OSwiaCI6ImY3M2MwMGFmNjJmNTE0ZDhmNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -199,20 +312,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">اینترنت هم کم کم داره درست میشه</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">379</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1245"><time datetime="2025-07-05T23:44:29+00:00" class="time">23:44</time></a></span>
+    <span class="tgme_widget_message_views">380</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1245"><time datetime="2025-07-05T23:44:29+00:00" class="time">23:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1246" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NiwidCI6MTc1MTk3NjQ1OSwiaCI6ImIzZGIzOWZkOGFlOGRkOWY5ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1246" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NiwidCI6MTc1MTk4MTU1OSwiaCI6IjE2OWE0OTcwMjJhNjc5Y2QwYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -227,20 +338,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ بزارم یا وصلید؟</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9298.png')"><b>💘</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">320</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1246"><time datetime="2025-07-06T11:31:13+00:00" class="time">11:31</time></a></span>
+    <span class="tgme_widget_message_views">322</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1246"><time datetime="2025-07-06T11:31:13+00:00" class="time">11:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1247" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NywidCI6MTc1MTk3NjQ1OSwiaCI6ImUyZjMzN2ViYjMwNWY4ZTA0NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1247" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0NywidCI6MTc1MTk4MTU1OSwiaCI6ImM3NjA0MDA2ZmNhNzI3Yzk5YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -255,20 +364,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">همه اینترنتا <br/><br/><pre>vless://331de0c9-ed97-4a92-9a60-7c22b98531e9@62.60.192.166:2001?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none&amp;host=speedtest%2Cnet#%40GrizzlyVPN</pre><br/><br/><br/>لایک شما موجب دلگرمی ماست <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/grizzlyVPN" target="_blank">@grizzlyVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">362</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1247"><time datetime="2025-07-06T12:28:37+00:00" class="time">12:28</time></a></span>
+    <span class="tgme_widget_message_views">365</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1247"><time datetime="2025-07-06T12:28:37+00:00" class="time">12:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1248" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjMxNWY3NTM1ZTFkZTY4YTBhOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1248" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0OCwidCI6MTc1MTk4MTU1OSwiaCI6IjNkMTdiOWNiZWMwNWFlNzM2MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -283,20 +390,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">اگه حمایت کنید دوباره کانفیگ رایگان رو شروع میکنم</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">345</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1248"><time datetime="2025-07-06T12:31:10+00:00" class="time">12:31</time></a></span>
+    <span class="tgme_widget_message_views">347</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1248"><time datetime="2025-07-06T12:31:10+00:00" class="time">12:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1249" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0OSwidCI6MTc1MTk3NjQ1OSwiaCI6ImVhM2Y0NzdiYjIzNmFjNDE4NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1249" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI0OSwidCI6MTc1MTk4MTU1OSwiaCI6IjUyMTc3OWM0OTdiM2Q1ZDFiOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -312,24 +417,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1247" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1247" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">همه اینترنتا   vless://331de0c9-ed97-4a92-9a60-7c22b98531e9@62.60.192.166:2001?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none&amp;host=speedtest%2Cnet#%40GrizzlyVPN   لایک شما موجب دلگرمی ماست <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i>  @grizzlyVPN</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">زیادی پخش شد الان جدید میزارم اینو قطع میکنم</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">329</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1249"><time datetime="2025-07-06T13:26:18+00:00" class="time">13:26</time></a></span>
+    <span class="tgme_widget_message_views">331</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1249"><time datetime="2025-07-06T13:26:18+00:00" class="time">13:26</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1250" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MCwidCI6MTc1MTk3NjQ1OSwiaCI6Ijc4MjdkNjJjYjdiM2NkZjkyOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1250" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MCwidCI6MTc1MTk4MTU1OSwiaCI6ImQ5Mzg2NTZkNDcyODg5NTJkOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -344,20 +447,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">همه نتا <br/><br/><pre>vless://a671b069-6e09-49dd-8a36-4179e47881dd@62.60.192.166:2001?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none#%40GrizzlyVPN</pre><br/><br/><br/>لایک شما موجب دلگرمی ماست <br/><br/><a href="https://t.me/GrizzlyVPN" target="_blank">@GrizzlyVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>13</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">962</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1250"><time datetime="2025-07-06T13:28:08+00:00" class="time">13:28</time></a></span>
+    <span class="tgme_widget_message_views">964</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1250"><time datetime="2025-07-06T13:28:08+00:00" class="time">13:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1251" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MSwidCI6MTc1MTk3NjQ1OSwiaCI6ImQ3N2NmMWRiNTMxM2VhYTY3ZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1251" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MSwidCI6MTc1MTk4MTU1OSwiaCI6ImM0ZjAzYTkxMmEzMTQ2NjExMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -373,24 +474,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1087" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1087" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>کانفیگ اقتصادی با آی‌پی ثابت مولتی لوکیشن و تانل شده  + نیم بها لوکیشن ها : آمریکا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i>    آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>  کانادا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i> هلند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i> روسیه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B7F09F87BA.png')"><b>🇷🇺</b></i>   <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB0.png')"><b>⏰</b></i> پلن‌های یک ماهه بدون محدودیت کاربر:  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۱۰ گیگابایتی: ۳۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۲۰ گیگابایتی: ۶۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۳۰ گیگابایتی: ۸۰ هزار تومان…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور نیم بها هم خریدم دیگه کم کم اونم اضافه میکنم که اینترنتتون دیرتر تموم بشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">326</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1251"><time datetime="2025-07-06T13:49:55+00:00" class="time">13:49</time></a></span>
+    <span class="tgme_widget_message_views">328</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1251"><time datetime="2025-07-06T13:49:55+00:00" class="time">13:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1252" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MiwidCI6MTc1MTk3NjQ1OSwiaCI6IjY5MGMyN2RlNTVmY2YxZjc4NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1252" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MiwidCI6MTc1MTk4MTU1OSwiaCI6ImMxOTY0NGZlZTYyYWEyMTU5MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -405,20 +504,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://ipcloudflaretamiz@test.fast.hosting-ip.com:80?mode=auto&amp;path=%2F&amp;security=none&amp;encryption=none&amp;host=ipcloudflaretamiz.io&amp;type=xhttp#%40GrizzlyVPN</code><br/><br/>لایک فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i> <br/><br/><a href="https://t.me/GrizzlyVPN" target="_blank">@GrizzlyVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">341</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1252"><time datetime="2025-07-06T16:30:12+00:00" class="time">16:30</time></a></span>
+    <span class="tgme_widget_message_views">344</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1252"><time datetime="2025-07-06T16:30:12+00:00" class="time">16:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1253" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MywidCI6MTc1MTk3NjQ1OSwiaCI6ImRmZGFiYzFlODI4YmUxN2I1NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1253" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1MywidCI6MTc1MTk4MTU1OSwiaCI6IjEzNjc3MzQyZTIzMzFiMzVlMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -434,24 +531,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1252" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1252" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">vless://ipcloudflaretamiz@test.fast.hosting-ip.com:80?mode=auto&amp;path=%2F&amp;security=none&amp;encryption=none&amp;host=ipcloudflaretamiz.io&amp;type=xhttp#%40GrizzlyVPN  لایک فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i>   @GrizzlyVPN</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">هنوز وصله قطع شد جدید میزارم <br/>یه لایک به ما نمیرسه؟</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">323</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1253"><time datetime="2025-07-06T18:17:36+00:00" class="time">18:17</time></a></span>
+    <span class="tgme_widget_message_views">327</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1253"><time datetime="2025-07-06T18:17:36+00:00" class="time">18:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1254" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NCwidCI6MTc1MTk3NjQ1OSwiaCI6IjI0YmE3NWE4N2RiN2I4M2E3YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1254" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NCwidCI6MTc1MTk4MTU1OSwiaCI6IjVjNjRmNjA0OTI3M2RhNTJjMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -467,24 +562,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1087" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1087" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>کانفیگ اقتصادی با آی‌پی ثابت مولتی لوکیشن و تانل شده  + نیم بها لوکیشن ها : آمریکا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i>    آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>  کانادا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i> هلند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i> روسیه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B7F09F87BA.png')"><b>🇷🇺</b></i>   <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB0.png')"><b>⏰</b></i> پلن‌های یک ماهه بدون محدودیت کاربر:  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۱۰ گیگابایتی: ۳۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۲۰ گیگابایتی: ۶۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۳۰ گیگابایتی: ۸۰ هزار تومان…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اپدیت سابسکریپشن بزنید یه کانفیگ نیم بها اضافه شده <br/>برای همراه اول یک سوم بهاست و برای ایرانسل نیم بها</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">303</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1254"><time datetime="2025-07-06T20:06:27+00:00" class="time">20:06</time></a></span>
+    <span class="tgme_widget_message_views">308</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1254"><time datetime="2025-07-06T20:06:27+00:00" class="time">20:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1255" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NSwidCI6MTc1MTk3NjQ1OSwiaCI6ImJiMzcyOWYyODRmOGNkYTVkNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1255" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NSwidCI6MTc1MTk4MTU1OSwiaCI6ImY5YzRjYWJiYTg1YmM0ZTY4OCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -499,20 +592,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>vless://e8598597-15af-4a69-8c64-229be3652356@62.60.192.166:2001?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=none#%40grizzlyvpn</pre><br/><br/>مناسب همه اپراتورها<br/><br/>لایک فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/grizzlyvpn" target="_blank">@grizzlyvpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">326</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1255"><time datetime="2025-07-06T20:08:35+00:00" class="time">20:08</time></a></span>
+    <span class="tgme_widget_message_views">329</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1255"><time datetime="2025-07-06T20:08:35+00:00" class="time">20:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1256" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NiwidCI6MTc1MTk3NjQ1OSwiaCI6ImU4YmJhODJlYzQxZjFjYWM4NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1256" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NiwidCI6MTc1MTk4MTU1OSwiaCI6IjM4MTU3NGU2YWM3YzE5NWM5MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -527,20 +618,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>کانفیگ اقتصادی با آی‌پی ثابت مولتی لوکیشن و تانل شده  + نیم بها<br/>لوکیشن ها : آمریکا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i>    آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>  کانادا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i> هلند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i> روسیه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B7F09F87BA.png')"><b>🇷🇺</b></i><br/><br/> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB0.png')"><b>⏰</b></i> پلن‌های یک ماهه بدون محدودیت کاربر:<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۱۰ گیگابایتی: ۳۰ هزار تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۲۰ گیگابایتی: ۶۰ هزار تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۳۰ گیگابایتی: ۸۰ هزار تومان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۱۰۰ گیگابایتی: ۲۵۰ هزار تومان<br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i> سفارش و دریافت تست:<br/><br/><a href="https://t.me/Addmin_GrizzlyVPNN" target="_blank">@Addmin_GrizzlyVPNN</a><br/><br/><br/><a href="https://t.me/GrizzlyVPN" target="_blank">@GrizzlyVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9298.png')"><b>💘</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">340</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1256"><time datetime="2025-07-06T20:09:44+00:00" class="time">20:09</time></a></span>
+    <span class="tgme_widget_message_views">343</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1256"><time datetime="2025-07-06T20:09:44+00:00" class="time">20:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1257" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NywidCI6MTc1MTk3NjQ1OSwiaCI6IjNjN2Q1Y2Q4YmU1NTJkOTA0YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1257" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1NywidCI6MTc1MTk4MTU1OSwiaCI6IjhlMDI4Mzk1MmIwNTMzYTQ3ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -556,24 +645,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1254" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1254" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">اپدیت سابسکریپشن بزنید یه کانفیگ نیم بها اضافه شده  برای همراه اول یک سوم بهاست و برای ایرانسل نیم بها</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">همراه اول رو دارم برسی میکنم ولی ایرانسل نیم بهاست</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">341</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1257"><time datetime="2025-07-06T20:44:04+00:00" class="time">20:44</time></a></span>
+    <span class="tgme_widget_message_views">343</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1257"><time datetime="2025-07-06T20:44:04+00:00" class="time">20:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1258" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1OCwidCI6MTc1MTk3NjQ1OSwiaCI6IjZmYTJkMjdjZjFiYzU2NDk5MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1258" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1OCwidCI6MTc1MTk4MTU1OSwiaCI6IjYwZTQzMGE0YzA3N2Q4ZGI2OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -592,18 +679,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 6006025105462904302 1398386691_456246766" href="https://t.me/GrizzlyVPN/1258" style="width:503px;background-image:url('https://cdn4.cdn-telegram.org/file/c5UdImar8AO6WgYCtVrSRUIicIY_JWNZDkD0v2k7164yO5ceY0k8wt3ShS6IZJmJuJslUjjpNpyL8h-CXuX5M2rs4l7dXeFaCTubkJ9tYLCsKhSeALeJjNkTSptEXyYX9H5f2jPUD0ppxjC1pxWVAj8aTKovv_pQW1nUUlUb5xXmlq50uOyHVKvkLHLS8yJvgCEAAUOEipEKee0E3DagOHclljA_R6dY_bJPCNVVr77x8CaEMNBTwuypVieA9_QSG_zsoOtqncbnP6h8DrD_xORbhzZQJXTJRYmQ55mTobo8RUrXRcMtiSUAWcPNPqXfd6F3Qm14Li_Jq3AjL69sDg.jpg')">
   <div class="tgme_widget_message_photo" style="width:83.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">ربات دریافت گیفت تلگرام<br/><br/>از طریق این ربات میتونین از این گیفت های تلگرام برنده بشید<br/><br/>اگه از طریق اینوایت گیفت ببرید ۲۱ روز طول میکشه ک بیاد رو پروفایلتون<br/>اگه از طریق اسپین و فراگمنت گیفت ببرید همون لحظه میشینه رو پروفایلتون<br/><br/><br/>برای شروع استارت بزنید و دکمه Spin رو بزنید<br/><br/><a href="https://t.me/giftbox_official_bot/app?startapp=ref_ODiYEaUT" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Start</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">ربات دریافت گیفت تلگرام<br/><br/>از طریق این ربات میتونین از این گیفت های تلگرام برنده بشید<br/><br/>اگه از طریق اینوایت گیفت ببرید ۲۱ روز طول میکشه ک بیاد رو پروفایلتون<br/>اگه از طریق اسپین و فراگمنت گیفت ببرید همون لحظه میشینه رو پروفایلتون<br/><br/><br/>برای شروع استارت بزنید و دکمه Spin رو بزنید<br/><br/><a href="https://t.me/giftbox_official_bot/app?startapp=ref_ODiYEaUT" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Start</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">358</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1258"><time datetime="2025-07-07T00:16:31+00:00" class="time">00:16</time></a></span>
+    <span class="tgme_widget_message_views">363</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1258"><time datetime="2025-07-07T00:16:31+00:00" class="time">00:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1259" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1OSwidCI6MTc1MTk3NjQ1OSwiaCI6IjExYjVhNGIwNTFlY2NmNjdhNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1259" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI1OSwidCI6MTc1MTk4MTU1OSwiaCI6IjlmMGI3Njg5NDlkNDFiYzkzZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -619,24 +704,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1258" ><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/jTZO3cxqLyKu6L_j0b8-nsvMjkiJWNeNtqB13wZ71AopCwyD5qtLP6_OnDH-DFOPTKmw0xNazYT_WYgwOSc1goMzW3kBwsW3Zqr2qMVMOLOUeheY9p9v6t1fBcEmreRJIWxg9U6m84xxDiLh62j7cbqwmh2p4725EPvbfZ1qzMpE_-T8eiqkIK2BPlDdgoxQgO_nmhfUGaRAWxc37cjNL3L8BfgdwE8Rix3LYWiEZzeG-aanZCuUDuBserxePihLLJw4XYa8fJE8EW-bNM6Gc4W2ui7Uq9WP8qkBM1Iv6OGk_niQBhh02CttOixYLmQmzbs0_dPcQyO8QXka0KozuQ.jpg')"></i>
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1258" "><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/jTZO3cxqLyKu6L_j0b8-nsvMjkiJWNeNtqB13wZ71AopCwyD5qtLP6_OnDH-DFOPTKmw0xNazYT_WYgwOSc1goMzW3kBwsW3Zqr2qMVMOLOUeheY9p9v6t1fBcEmreRJIWxg9U6m84xxDiLh62j7cbqwmh2p4725EPvbfZ1qzMpE_-T8eiqkIK2BPlDdgoxQgO_nmhfUGaRAWxc37cjNL3L8BfgdwE8Rix3LYWiEZzeG-aanZCuUDuBserxePihLLJw4XYa8fJE8EW-bNM6Gc4W2ui7Uq9WP8qkBM1Iv6OGk_niQBhh02CttOixYLmQmzbs0_dPcQyO8QXka0KozuQ.jpg')"></i>
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">ربات دریافت گیفت تلگرام  از طریق این ربات میتونین از این گیفت های تلگرام برنده بشید  اگه از طریق اینوایت گیفت ببرید ۲۱ روز طول میکشه ک بیاد رو پروفایلتون اگه از طریق اسپین و فراگمنت گیفت ببرید همون لحظه میشینه رو پروفایلتون   برای شروع استارت بزنید و دکمه…</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">ربات دریافت گیفت تلگرام  از طریق این ربات میتونین از این گیفت های تلگرام برنده بشید  اگه از طریق اینوایت گیفت ببرید ۲۱ روز طول میکشه ک بیاد رو پروفایلتون اگه از طریق اسپین و فراگمنت گیفت ببرید همون لحظه میشینه رو پروفایلتون   برای شروع استارت بزنید و دکمه…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">با لینک من بزنید حداقل حمایت بشه ازم چیزی از شما کسر نمیشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">253</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1259"><time datetime="2025-07-07T14:36:11+00:00" class="time">14:36</time></a></span>
+    <span class="tgme_widget_message_views">258</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1259"><time datetime="2025-07-07T14:36:11+00:00" class="time">14:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1260" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MCwidCI6MTc1MTk3NjQ1OSwiaCI6IjZlMDFjZmJjNTUxNWQ5ODI0MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1260" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MCwidCI6MTc1MTk4MTU1OSwiaCI6IjkxZGM4YmE2NmM5MjY5MjY3YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -651,20 +734,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ تانل مناسب همه اپراتور ها <br/><br/><code>vless://1b4ef214-4fd0-41c1-8694-c0f92b803652@62.60.192.166:2001?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#%40GrizzlyVPN</code><br/><br/>لایک فراموش نشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i> <br/><br/><a href="https://t.me/GrizzlyVPN" target="_blank">@GrizzlyVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">270</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1260"><time datetime="2025-07-07T14:43:07+00:00" class="time">14:43</time></a></span>
+    <span class="tgme_widget_message_views">275</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1260"><time datetime="2025-07-07T14:43:07+00:00" class="time">14:43</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1261" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MSwidCI6MTc1MTk3NjQ1OSwiaCI6ImJkMDExOTZiZjQzNzU5YzNhNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1261" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MSwidCI6MTc1MTk4MTU1OSwiaCI6ImUzMDZhZWVkZWExOWVmYTE4MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -680,24 +761,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/GrizzlyVPN/1087" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/GrizzlyVPN/1087" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>کانفیگ اقتصادی با آی‌پی ثابت مولتی لوکیشن و تانل شده  + نیم بها لوکیشن ها : آمریکا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87BAF09F87B8.png')"><b>🇺🇸</b></i>    آلمان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i>  کانادا <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A8F09F87A6.png')"><b>🇨🇦</b></i> هلند <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B3F09F87B1.png')"><b>🇳🇱</b></i> روسیه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B7F09F87BA.png')"><b>🇷🇺</b></i>   <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB0.png')"><b>⏰</b></i> پلن‌های یک ماهه بدون محدودیت کاربر:  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۱۰ گیگابایتی: ۳۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۲۰ گیگابایتی: ۶۰ هزار تومان  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i> ۳۰ گیگابایتی: ۸۰ هزار تومان…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اپدیت سابسکریپشن بزنید یه کانفیگ اضافه شده به اسم اینترنت ملی وقتی که نت ملی شد اون وصل میشه<br/>الان وصل نمیشه اون موقع وصل میشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">208</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1261"><time datetime="2025-07-07T20:29:49+00:00" class="time">20:29</time></a></span>
+    <span class="tgme_widget_message_views">216</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1261"><time datetime="2025-07-07T20:29:49+00:00" class="time">20:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1262" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MiwidCI6MTc1MTk3NjQ1OSwiaCI6ImY0NGY1ZGZkYjRhZTIxZDA5NiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="GrizzlyVPN/1262" data-view="eyJjIjotMTk5NTgzMDY4OSwicCI6MTI2MiwidCI6MTc1MTk4MTU1OSwiaCI6IjZjNzg1NmRlMTBjMTZkYTk1NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/GrizzlyVPN"><i class="tgme_widget_message_user_photo bgcolor6" data-content="G"><img src="https://cdn4.cdn-telegram.org/file/ImUpnIDI9JiWzti1DO5VU3KedX-fUBl7YglFqvZwAOK9TM7vZ7xbhjPiMRS_G5g1_JGNgDYZ9KoRgC3y00f4PDSYkQjrQ8gcQu0aXJiwSO5zIoa4xKtTUa2P8VmHNW8uiE2-dK_93KEtiipiNvrVrnjyrkWankm_9dPRXMzd4VLEbn2I5EyuRTRY3l7ZyyfOitGhB8QU2ssu1T2SVg-zKTCZrSPuVvF7vCE0JF741e_ZQRlQLj0eU9JEduTP0gPq5wQPzF138iSlv45j2K95Tk_DFO7Ci_Zxntahns9AdhKr1C8F3fG8-SN4Qt8wadRCVHbXB75mvHVvqI3aqH02Ow.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -714,13 +793,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/GrizzlyVPN"><span dir="auto">Grizzly VPN فیلتر شکن |پروکسی رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiI4NS4xMzMuMTk1Ljg0IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6ImQzZmI1MDUxLTg0NjktNDZiMC04MjA4LTRiODNhMzFkYWRiYiIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjM1MzAiLCJwcyI6IkBHcml6emx5VlBOIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==</code><br/><br/><a href="https://t.me/grizzlyVPN" target="_blank">@grizzlyVPN</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">163</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1262"><time datetime="2025-07-07T23:02:20+00:00" class="time">23:02</time></a></span>
+    <span class="tgme_widget_message_views">173</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/GrizzlyVPN/1262"><time datetime="2025-07-07T23:02:20+00:00" class="time">23:02</time></a></span>
   </div>
 </div>
   </div>
@@ -734,11 +811,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 52.81ms -->
+<!-- page generated in 69.73ms -->

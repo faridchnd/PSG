@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -71,9 +188,9 @@
             </div>
             <div class="tgme_channel_info_header_username"><a href="https://t.me/vistav2ray">@vistav2ray</a></div>
           </div>
-          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">9.79K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">90</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">18</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3.21K</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1.77K</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">9.8K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">90</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">18</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3.21K</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1.77K</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i> Support : <a href="https://t.me/vistav2rray" target="_blank">@vistav2rray</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d6fe555aaff9533cc7_16739696429113876173">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=33a12468ce4369dbac_5305755075056460558">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d6fe555aaff9533cc7_16739696429113876173">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=33a12468ce4369dbac_5305755075056460558">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vistav2ray">
@@ -103,7 +220,7 @@
           <div class="tgme_header_title"><span dir="auto">Vista Pc (It _ja)</span></div>
           <div class="tgme_header_labels"></div>
         </div>
-        <div class="tgme_header_counter">9.79K subscribers</div>
+        <div class="tgme_header_counter">9.8K subscribers</div>
       </a>
     </div>
   </div>
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/vistav2ray">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vistav2ray?before=26207" class="tme_messages_more js-messages_more" data-before="26207"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26207" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDcsInQiOjE3NTE5NzYyMDEsImgiOiJlNTIyZjNiMWIwZTYyZjlhNDEifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vistav2ray?before=26207" class="tme_messages_more js-messages_more" data-before="26207"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26207" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDcsInQiOjE3NTE5ODEzMDQsImgiOiJjMzhmMDA1YzJkNDczZWQ4YzYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -126,20 +243,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> <b>فروش کانفیگ اختصاصی</b> <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i><b>اندروید / آیفون / ویندوز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>مدت 30 روز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>کاربر نامحدود<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>ترافیک های موجود 100/80/60/40&nbsp; گیگ <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i></b>پشتیبانی تا آخرین روز و ترافیک ، اشتراک<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> <b>آیـــــــــــــــــــــــدی خریـــــــــــــــــــد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/></b><br/><a href="https://t.me/vistav2rray" target="_blank">@vistav2rray</a><br/><br/>.....................................</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26207"><time datetime="2025-07-06T10:59:05+00:00" class="time">10:59</time></a></span>
+    <span class="tgme_widget_message_views">1.32K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26207"><time datetime="2025-07-06T10:59:05+00:00" class="time">10:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26208" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDgsInQiOjE3NTE5NzYyMDEsImgiOiJmMTNjODIzYjQ2Zjk2ZGRjYjcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26208" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDgsInQiOjE3NTE5ODEzMDQsImgiOiI0MWNmMTNjN2M0MDMxMTE3ZDUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -154,20 +269,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=sibilkoloft.technote.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sibilkoloft.technote.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daemi-pr.shesh-station.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daemi-pr.shesh-station.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=systemfull.gjesus.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=phyzyk.nokande.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=iran-vatan.magalaiash.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=chernobill.technote.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=ryzen-gold.shesh-station.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=leveldaemi.fiziotr.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=aval.fsaremi.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=syczleck.itemag.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=silvermantain.cinere.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=wait.fiziotr.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=algortim.sayaair.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=halftime.parsintalk.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sebro.sheshko.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=wait.fiziotr.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=halftime.parsintalk.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=algortim.sayaair.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sadra.mygrade.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=silvermantain.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daem.fsaremi.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=leveldaemi.fiziotr.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=syczleck.itemag.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=sadra.mygrade.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=aval.fsaremi.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daem.fsaremi.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26208"><time datetime="2025-07-06T14:39:52+00:00" class="time">14:39</time></a></span>
+    <span class="tgme_widget_message_views">1.19K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26208"><time datetime="2025-07-06T14:39:52+00:00" class="time">14:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26209" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDksInQiOjE3NTE5NzYyMDEsImgiOiJhMzI3YmFiMjU1MjllODY4YjQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26209" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMDksInQiOjE3NTE5ODEzMDQsImgiOiI3NzE0ZDEzNTU4Y2M1NGIxZjIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -182,20 +295,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=sibilkoloft.technote.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sibilkoloft.technote.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daemi-pr.shesh-station.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daemi-pr.shesh-station.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=systemfull.gjesus.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=phyzyk.nokande.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=iran-vatan.magalaiash.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=chernobill.technote.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=ryzen-gold.shesh-station.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=leveldaemi.fiziotr.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=aval.fsaremi.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=syczleck.itemag.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=silvermantain.cinere.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=wait.fiziotr.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=algortim.sayaair.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=halftime.parsintalk.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sebro.sheshko.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=wait.fiziotr.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=halftime.parsintalk.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=response.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=algortim.sayaair.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=sadra.mygrade.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=silvermantain.cinere.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daem.fsaremi.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=leveldaemi.fiziotr.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=syczleck.itemag.ir&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=sadra.mygrade.ir&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=aval.fsaremi.info&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=daem.fsaremi.info&amp;amp;port=443&amp;amp;secret=7hYDAQIAAQAB_AMDhuJMOt1tZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26209"><time datetime="2025-07-06T17:32:14+00:00" class="time">17:32</time></a></span>
+    <span class="tgme_widget_message_views">1.09K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26209"><time datetime="2025-07-06T17:32:14+00:00" class="time">17:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26210" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTAsInQiOjE3NTE5NzYyMDEsImgiOiIyYTg2MGY1MTQ3ZjFiZmRiNDYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26210" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTAsInQiOjE3NTE5ODEzMDQsImgiOiI0YzJkMzYyMWI5YTcyN2NmNzkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -210,20 +321,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://b1061a7b-c92c-42a6-826b-aa1f19554089@161.35.17.146:6775?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26210"><time datetime="2025-07-06T17:40:57+00:00" class="time">17:40</time></a></span>
+    <span class="tgme_widget_message_views">1.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26210"><time datetime="2025-07-06T17:40:57+00:00" class="time">17:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26211" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTEsInQiOjE3NTE5NzYyMDEsImgiOiI4Nzc2ZmQ4M2E5NmJlOTAwZGQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26211" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTEsInQiOjE3NTE5ODEzMDQsImgiOiJmNzQ5ZDBlNmE1Y2YzMWI1ZjUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -238,20 +347,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?path=%2F%3Fed%3D2560%2F%3FJOKERRVPNBIA_CHANNEL%40JOKERRVPN&amp;security=none&amp;encryption=none&amp;host=sib.sibzamini.dpdns.org&amp;type=ws#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26211"><time datetime="2025-07-06T17:44:26+00:00" class="time">17:44</time></a></span>
+    <span class="tgme_widget_message_views">1.26K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26211"><time datetime="2025-07-06T17:44:26+00:00" class="time">17:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26212" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTIsInQiOjE3NTE5NzYyMDEsImgiOiIxMjFjZWY0NmJjY2I5Njc4MGUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26212" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTIsInQiOjE3NTE5ODEzMDQsImgiOiIwMTU2MmY1ZTUwMDA0NDc0MWMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,10 +375,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://f051c346-59d1-4cd9-9c8a-3603e535d65c@193.162.129.71:2080?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26212"><time datetime="2025-07-06T17:44:42+00:00" class="time">17:44</time></a></span>
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26213" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTMsInQiOjE3NTE5NzYyMDEsImgiOiIyNWFhZDVmYjVkYWIzMzgyMjUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26213" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTMsInQiOjE3NTE5ODEzMDQsImgiOiIwNzA0ZTk1NDZmNTNmZWUxYWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,18 +401,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2F%3Fed%3D2590&amp;security=none&amp;encryption=none&amp;host=dw.alibichareh.dpdns.org&amp;type=ws#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26213"><time datetime="2025-07-06T17:44:58+00:00" class="time">17:44</time></a></span>
+    <span class="tgme_widget_message_views">1.31K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26213"><time datetime="2025-07-06T17:44:58+00:00" class="time">17:44</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26214" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTQsInQiOjE3NTE5NzYyMDEsImgiOiJlYmQ0ZjI3Y2U4ZDA4YjRlMTMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26214" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTQsInQiOjE3NTE5ODEzMDQsImgiOiIyYmNkOGVmYWJmYmRmOWQwMmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -322,20 +425,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMXJQSVJYekVxbXhwbWpBeE9nY2VZ@45.150.32.13:14628#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26214"><time datetime="2025-07-06T17:45:23+00:00" class="time">17:45</time></a></span>
+    <span class="tgme_widget_message_views">1.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26214"><time datetime="2025-07-06T17:45:23+00:00" class="time">17:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26215" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTUsInQiOjE3NTE5NzYyMDEsImgiOiI3OTM4ZThkZmU0MDk1OWE4YmYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26215" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTUsInQiOjE3NTE5ODEzMDQsImgiOiJmYzBlODRhYTI0MzIzMmNiZjcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -350,20 +451,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://5edcc3f4-92bc-4aa8-a1c4-4e7982cd8be5@My.bickio.xyz:2072?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26215"><time datetime="2025-07-06T20:57:20+00:00" class="time">20:57</time></a></span>
+    <span class="tgme_widget_message_views">1.32K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26215"><time datetime="2025-07-06T20:57:20+00:00" class="time">20:57</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26216" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTYsInQiOjE3NTE5NzYyMDEsImgiOiJlZjkyZGE2Y2JlNGRmNWM1MzIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26216" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTYsInQiOjE3NTE5ODEzMDQsImgiOiI4MjA2ZmIyZTk0YzYzZjBiYmQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -378,20 +477,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://c844d15f-3f69-43ee-8b26-54b69b2cf473@star.fastsoft98.ir:80?mode=auto&amp;path=%2Fscer&amp;security=none&amp;encryption=none&amp;host=netstar-name.global.ssl.fastly.net&amp;type=xhttp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26216"><time datetime="2025-07-07T05:39:28+00:00" class="time">05:39</time></a></span>
+    <span class="tgme_widget_message_views">1.28K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26216"><time datetime="2025-07-07T05:39:28+00:00" class="time">05:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26217" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTcsInQiOjE3NTE5NzYyMDEsImgiOiIxMjAwZDIwYWIzM2M1NDc4NDcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26217" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTcsInQiOjE3NTE5ODEzMDQsImgiOiIwZDRiMGNkNjdmZDllOTNlMzgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -406,20 +503,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://c844d15f-3f69-43ee-8b26-54b69b2cf473@dnc.fastsoft98.ir:80?mode=auto&amp;path=%2Fscer&amp;security=none&amp;encryption=none&amp;host=test.soft98speedtest.ir&amp;type=xhttp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26217"><time datetime="2025-07-07T05:39:40+00:00" class="time">05:39</time></a></span>
+    <span class="tgme_widget_message_views">1.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26217"><time datetime="2025-07-07T05:39:40+00:00" class="time">05:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26218" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTgsInQiOjE3NTE5NzYyMDEsImgiOiIxZDE5YWRlMjY4ZDQyZGE0ODcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26218" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTgsInQiOjE3NTE5ODEzMDQsImgiOiI3NTlhODc4OTA3NmFmYWNjZDQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -434,20 +529,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://c844d15f-3f69-43ee-8b26-54b69b2cf473@tunell.mov.soft98speedtest.ir:2080?security=none&amp;encryption=none&amp;host=http%3A%2F%2FSpaceNetwork.divarcdn.com&amp;headerType=http&amp;type=tcp#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26218"><time datetime="2025-07-07T05:39:58+00:00" class="time">05:39</time></a></span>
+    <span class="tgme_widget_message_views">1.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26218"><time datetime="2025-07-07T05:39:58+00:00" class="time">05:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26219" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTksInQiOjE3NTE5NzYyMDEsImgiOiJkYzNlMDVjY2ExNzQ5NGJjNzcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26219" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMTksInQiOjE3NTE5ODEzMDQsImgiOiJjM2ZmYzhmMjZkNjZlZjhlMDkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -462,20 +555,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1VFpud1BiMjNwUVMzOWxJdWNzcEp3@89.35.119.87:5904#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26219"><time datetime="2025-07-07T14:50:07+00:00" class="time">14:50</time></a></span>
+    <span class="tgme_widget_message_views">1.07K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26219"><time datetime="2025-07-07T14:50:07+00:00" class="time">14:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26220" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjAsInQiOjE3NTE5NzYyMDEsImgiOiI2OTA1NTdhZmQ1Mzc0MGVkODQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26220" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjAsInQiOjE3NTE5ODEzMDQsImgiOiIzZWE2MWMyZjM3OWEwNzBjODgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -490,20 +581,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://b1a8ceea-6601-45b5-a674-7e5b64ab6f6f@162.159.129.11:2053?path=%2F%3Fed%3D2560&amp;security=tls&amp;encryption=none&amp;host=sub.divib.dynv6.net&amp;fp=chrome&amp;type=ws&amp;sni=sub.divib.dynv6.net#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26220"><time datetime="2025-07-07T14:50:23+00:00" class="time">14:50</time></a></span>
+    <span class="tgme_widget_message_views">1.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26220"><time datetime="2025-07-07T14:50:23+00:00" class="time">14:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26221" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjEsInQiOjE3NTE5NzYyMDEsImgiOiIxODc0MDcxNTBkZDkzYWNkYjgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26221" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjEsInQiOjE3NTE5ODEzMDQsImgiOiIzM2Y5M2UzYTZmYjRkNjM1ZjgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -518,20 +607,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?path=%2F%3Fed%3D2560%2F&amp;security=none&amp;encryption=none&amp;host=sib.sibzamini.dpdns.org&amp;type=ws#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26221"><time datetime="2025-07-07T14:50:34+00:00" class="time">14:50</time></a></span>
+    <span class="tgme_widget_message_views">1.23K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26221"><time datetime="2025-07-07T14:50:34+00:00" class="time">14:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26222" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjIsInQiOjE3NTE5NzYyMDEsImgiOiI0ODU1YjkyZTgwNThiMmNiZDUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26222" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjIsInQiOjE3NTE5ODEzMDQsImgiOiI4ZDZkMTMzYTBkNDlkNjUyYjEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -546,20 +633,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://92f481b6-ad92-43e4-a683-2bb0aeaa9846@104.18.26.90:80?path=%2F%3Fed%3D2590&amp;security=none&amp;encryption=none&amp;host=dw.alibichareh.dpdns.org&amp;type=ws#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26222"><time datetime="2025-07-07T14:50:45+00:00" class="time">14:50</time></a></span>
+    <span class="tgme_widget_message_views">1.29K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26222"><time datetime="2025-07-07T14:50:45+00:00" class="time">14:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26223" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjMsInQiOjE3NTE5NzYyMDEsImgiOiJmNjhkOWQxZTRjNmMzZWQ5MWQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26223" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjMsInQiOjE3NTE5ODEzMDQsImgiOiJiM2FiNWE2ZDY3YjgwZDlhY2MifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -574,20 +659,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiJuZXR0OTEuc2VydmVybmV0dC5zaG9wIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJ2YXJ6ZXNoMy5jb20iLCJpZCI6IjBiNjFjOTVjLTNhNzAtNDY1Mi04NGE4LTgzZDIxZjJiMWI4ZCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjEwMTkwIiwicHMiOiLinIUgQHZpc3RhdjJyYXkgIPCfkYjwn5GI2qnYp9mG2KfZhCDZhdinIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIifQ==</code></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26223"><time datetime="2025-07-07T14:51:47+00:00" class="time">14:51</time></a></span>
+    <span class="tgme_widget_message_views">1.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26223"><time datetime="2025-07-07T14:51:47+00:00" class="time">14:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26225" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjUsInQiOjE3NTE5NzYyMDEsImgiOiI1NjY4MjAxZGI5ODM1ZWNkNzMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26225" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjUsInQiOjE3NTE5ODEzMDQsImgiOiJkODE1NzU4ZDQxMjlkZDc2YzMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -602,20 +685,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=87.248.132.74&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.85&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.88&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=87.248.132.84&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.95&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.132.94&amp;amp;port=200&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=87.248.132.73&amp;amp;port=200&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.71&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=87.248.132.72&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.53&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.96&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=87.248.132.55&amp;amp;port=200&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.44&amp;amp;port=200&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |‌ <a href="https://t.me/proxy?server=87.248.132.177&amp;amp;port=200&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> <br/><a href="https://t.me/proxy?server=87.248.132.42&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=87.248.132.33&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> |‌ <a href="https://t.me/proxy?server=87.248.132.199&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26225"><time datetime="2025-07-07T17:02:39+00:00" class="time">17:02</time></a></span>
+    <span class="tgme_widget_message_views">1.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26225"><time datetime="2025-07-07T17:02:39+00:00" class="time">17:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26226" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjYsInQiOjE3NTE5NzYyMDEsImgiOiI5ZGJjMTY0MzkxYTJmM2EzM2YifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26226" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjYsInQiOjE3NTE5ODEzMDQsImgiOiIyNDZkNmIzMzQ2MjdhYjRhNTYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -630,20 +711,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>vless://6f690965-3be3-43bb-9331-3ead6efb20aa@104.18.26.90:80?encryption=none&amp;security=none&amp;type=ws&amp;host=sib.sibzamini.dpdns.org&amp;path=%2F%3Fed%3D2560#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7<br/>vless://6683e519-99b1-4df8-9d20-f39a2a7ed1b0@217.60.236.41:3134?encryption=none&amp;security=none&amp;type=ws&amp;path=%2F#%E2%9C%85%20%40vistav2ray%20%20%F0%9F%91%88%F0%9F%91%88%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%D9%85%D8%A7</pre></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">655</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26226"><time datetime="2025-07-08T07:22:50+00:00" class="time">07:22</time></a></span>
+    <span class="tgme_widget_message_views">745</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26226"><time datetime="2025-07-08T07:22:50+00:00" class="time">07:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26227" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjcsInQiOjE3NTE5NzYyMDEsImgiOiI5NzM2YWM2YWI2ZGZmZDRiYjYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vistav2ray/26227" data-view="eyJjIjotMTYyNDc3MzUzMSwicCI6MjYyMjcsInQiOjE3NTE5ODEzMDQsImgiOiIwZjQ1MmE0NDcyNTc0MDNmZmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/vistav2ray"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/Bf64C1OAOdm4JvOXlp33COOf4uWZSsDPooNXSGqra5V_aFwPjz42JGeu0wNVDZWbj2_p8h1mbFKMXyEWBdNdgXeaSLcj2L3Rv6KYaIAfDmlXlzesuGKJrFtkMFswPIOxL5hWuCUBMVchRQgNgnvhN4_p9lqCODIPbWEtKWKGnm6g3CHSiBHyOgWyWpujT4YuCYf-St-eo99IDo50rgSQaHA1xzbxP0Cr0jNegyAoEN3tHHhNT_k2AJrD76f5RuJ6ZAvzoDCVUNCfplVMzukItpNsj_dwygMmpZRSWNrep5CLUfnzMRLQB4uA-3dFbSbzeBIAXS0LWh5ya0Zd3Hs_Kw.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -660,13 +739,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vistav2ray"><span dir="auto">Vista Pc (It _ja)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=87.248.134.170&amp;amp;port=443&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=87.248.134.170&amp;amp;port=443&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=176.65.135.63&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a> | <a href="https://t.me/proxy?server=176.65.135.64&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><a href="https://t.me/proxy?server=87.248.134.172&amp;amp;port=443&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ایرانسل</a> | <a href="https://t.me/proxy?server=87.248.134.173&amp;amp;port=443&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ایرانسل</a><br/><a href="https://t.me/proxy?server=176.65.135.41&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ایرانسل</a> | <a href="https://t.me/proxy?server=176.65.135.42&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">ایرانسل</a><br/><a href="https://t.me/proxy?server=91.99.150.26&amp;amp;port=443&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=62.60.179.118&amp;amp;port=443&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">653</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26227"><time datetime="2025-07-08T07:23:09+00:00" class="time">07:23</time></a></span>
+    <span class="tgme_widget_message_views">745</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Roham</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/vistav2ray/26227"><time datetime="2025-07-08T07:23:09+00:00" class="time">07:23</time></a></span>
   </div>
 </div>
   </div>
@@ -680,11 +757,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 48.8ms -->
+<!-- page generated in 56.45ms -->

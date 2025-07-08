@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">75</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">14</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">6</span> <span class="counter_type">links</span></div></div>
           
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=0ea03599a06d274866_12650958302685190955">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=e8b2ea5c27266cdbda_7901906440049875141">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=0ea03599a06d274866_12650958302685190955">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=e8b2ea5c27266cdbda_7901906440049875141">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/sinamobail">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/sinamobail">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/sinamobail?before=221" class="tme_messages_more js-messages_more" data-before="221"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/221" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjIxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjIwNzFiOGMwOTM3ZDQwMTkwIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/sinamobail?before=221" class="tme_messages_more js-messages_more" data-before="221"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/221" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjIxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNjNiZDU1ZWMxZTAyN2U0NDBjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -127,18 +244,16 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/sinamobail/219" ><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/Ai0S2BGjLOhkLxMl_kw4cd7RRl2-49CIgwdkgXyPg0tQPNlX92BL6fJhCSWEZGv9zGsaUwCL8p0Nfxeqkdd9-AW-y7VgoNrg1qv2h-nXPFg7MIpXcrV56pydlHVK1onZ0AourNyo1_mmsttGF7_7OgWDovid13PHYiMYOxgH0TciM7lO9UzwPRlJt3YyMPryDIfAJRUO48pordrAqAiR5zMICaJM_Af6H5dMhVOrHYy-aOLoEA3D59nV2YgwWiVOiHbE-NBpVhonMXyJHTWFBuxdGzDxjWcnwu5cLi2MsXIPNzsUl_iu3LObmUcdyxp9MjYX0qTQnsDxqYF5uebngA.jpg')"></i>
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/sinamobail/219" "><i class="tgme_widget_message_reply_thumb" style="background-image:url('https://cdn4.cdn-telegram.org/file/Ai0S2BGjLOhkLxMl_kw4cd7RRl2-49CIgwdkgXyPg0tQPNlX92BL6fJhCSWEZGv9zGsaUwCL8p0Nfxeqkdd9-AW-y7VgoNrg1qv2h-nXPFg7MIpXcrV56pydlHVK1onZ0AourNyo1_mmsttGF7_7OgWDovid13PHYiMYOxgH0TciM7lO9UzwPRlJt3YyMPryDIfAJRUO48pordrAqAiR5zMICaJM_Af6H5dMhVOrHYy-aOLoEA3D59nV2YgwWiVOiHbE-NBpVhonMXyJHTWFBuxdGzDxjWcnwu5cLi2MsXIPNzsUl_iu3LObmUcdyxp9MjYX0qTQnsDxqYF5uebngA.jpg')"></i>
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">سینا موبایل|sinamobail</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">کانال تلگرام :  https://t.me/sinamobail آدرس اینستاگرام ما :sina__mobail@ تلفن ثابت :  08736300325 شماره واتس آپ: 09186747986</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانال تلگرام :  https://t.me/sinamobail آدرس اینستاگرام ما :sina__mobail@ تلفن ثابت :  08736300325 شماره واتس آپ: 09186747986</div>
 </a>
 <a class="tgme_widget_message_photo_wrap 5909067691929485369 1375812034_456245305" href="https://t.me/sinamobail/221" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/JiiiJFVrhD3JP-YRjhcm-8udiTUy4aQLCjn2MGCp8RlNrNoc_qunwKirMqyvXLzEx8lNXYdjMmQSzzdfWoiEbln5YtQ2oGpVNzdWzfeoMxmOjM6ODYGYruF0_gjngxGX2uNveKjsSfTTLYY4XzfKE2vfMyhyO6Aq8XsOHgFZbaGeNN1OZ_wAP6Kx7Vy7JKkyplz72PHoGQ1iACjWLWArLlhiauLti-5gp90m_lmzK4TGDLDjCBqPGAB4_NB7wDnw9rIsHUHJXDkVJLZ-hhPalJfjWxEplr-LZv1jGH8zXMAzR2OcXtnogLcqDOIRU8cjakkqdrRSe_fkMJ8VljBDWg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:55.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">اصلاحیه<br/>ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما :sina__mobail@<br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">اصلاحیه<br/>ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما :sina__mobail@<br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">303</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/221"><time datetime="2024-02-04T14:57:40+00:00" class="time">14:57</time></a></span>
@@ -146,7 +261,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/223" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjIzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDFiNjc5OTc5NTNjOTY5YWIzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/223" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjIzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZTllNmI1ZDI1ZGI2NzFkNDllIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -163,10 +278,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://3081a654-de9b-4d7c-b415-70779f1a4e84@b.sinamobail.sbs:443?security=none&amp;encryption=none&amp;host=telewebion.com&amp;headerType=http&amp;type=tcp#%40sinamobail%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%DB%8C+%D9%85%D8%A7</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">302</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/sinamobail/223"><time datetime="2024-02-04T17:18:02+00:00" class="time">17:18</time></a></span>
@@ -174,7 +287,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap sticker_media no_bubble js-widget_message" data-post="sinamobail/225" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmRmYmZmZGE0NmRhMGRmMWE4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap sticker_media no_bubble js-widget_message" data-post="sinamobail/225" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMGY2MzNlNGVlN2RiMTIxNjk0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -198,8 +311,6 @@
   </div>
 </div>
 <div class="tgme_widget_message_sticker_wrap media_supported_cont"><i class="tgme_widget_message_sticker js-sticker_image" style="background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iLTMwMCUiIHgyPSItMjAwJSIgeTE9IjAiIHkyPSIwIj48c3RvcCBvZmZzZXQ9Ii0xMCUiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1vcGFjaXR5PSIuMDciLz48c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1vcGFjaXR5PSIuMDciLz48c3RvcCBvZmZzZXQ9IjExMCUiIHN0b3Atb3BhY2l0eT0iLjEiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJ4MSIgZnJvbT0iLTMwMCUiIHRvPSIxMjAwJSIgZHVyPSIzcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJ4MiIgZnJvbT0iLTIwMCUiIHRvPSIxMzAwJSIgZHVyPSIzcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI2cpIiBkPSJNOTMsMjcxaC03OWwtNCwxLTMsMS0yLTMtMS0zLDAtMTI0LDAtMTI0LDEtMywxLTQsMy0yLDMtMmg4MCw4MWwzLDIsMiwyLDEsMywxLDR2MTIyLDEyMmwtMSw0LTEsNC0yLDItMywxaC03OXoiLz48L3N2Zz4=');width:170px;" data-webp="https://cdn4.cdn-telegram.org/file/c8e1adbc79.webp?token=MJbWSOACJdU2hm79Iu8Q2xr3YbjDo0pY0T6615QB9q4NUD827-gXu1NJYpAywO47Iwt11e8MDtxb_jY5l2KpWJhLn81LilPHWSjaKN8UZRzhq__zRgAoCaA-nHnBvraFvwgjyMgk7XzMNExonhj6pcoT_PGDcYKFqyJOZaZFbctJtdWNndBz9b5DYZp59Xv7mxt2LGb0X7NH0IyqUlL95BJ_O-4T4IPX8MPoP0mqkMdgF_z0GS22WW8ouIpPtwou_RyX8IJBXMtEiMAycUIMyKQPP0Ah2mQxPRbo_qYr69PpdGS-h3rRjfHsNWECiayWEPBScfbCcE9Rchi07Sw6_w"><div style="padding-top:150.27322404372%"></div></i></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -208,7 +319,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="sinamobail/226" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZmY1MjMzOWYyZmFiZmZmNzRhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="sinamobail/226" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiN2I1OGNmN2VjYWYwODM4NzQwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -225,9 +336,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a> pinned a photo</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -236,7 +345,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/227" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDRhZTFhZTA5NmRjZjcxNmJjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/227" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMTA5ZDEyNzJiNzM5NmE2ZmZkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -255,10 +364,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5911306134394880480 1376333212_456245728" href="https://t.me/sinamobail/227" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Y5m-wZAX0KRbeCucakBEA_CDf50ATUJn2t_W4p9Eufagce5mOo6p5KRJWMvmTJ5lGtKIU1OKnxfUVS87-hsqEaIQrqza-1OqaFGbZ19yr1B_B2Xg0Y2Ooik0ivLN7x5PDmOW9yMscaHZsGeduWpJOR2HPkYv6r58tBH9AzrhHtEBiFMkEPa6tZGGYhNiLx7u04LgLsjLV5Xtelkmj7yL5oHlK08Iw-XgoVuPPMkehryNTGK5xbZAl1Bk9VbqwL-AcL3UVLhOgLz7Dv3-QK_aRHyB-nfUGyg0VJZ2rd1ru8RNKBsAeYuIXN4_XHLwtM1BrQe5g-zsO8SXeRAb_1oCOQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:55.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما :sina__mobail@<br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما :sina__mobail@<br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">287</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/227"><time datetime="2024-02-05T09:24:13+00:00" class="time">09:24</time></a></span>
@@ -266,7 +373,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/228" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjhkYTczZmRmYWU5YTUzMzAzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/228" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWRkYWE1N2VlOGFhNjk2YWVjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -283,9 +390,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">لیست قیمت آیفون:<br/>-------------------------------<br/>15 pro max (1T) natural : 96<br/>15 pro max (1T) black : 96<br/>15 pro max (1T) silver : 97<br/>15 pro max (1T) blue : 94<br/>----------------------------<br/>15 pro max (512) natural : 86<br/>15 pro max (512) black : 86<br/>15 pro max (512) silver : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/>15 pro max (512) blue : 83<br/>----------------------------<br/>15 pro max (256) natural : 71,6<br/>15 pro max (256) black : 71,6<br/>15 pro max (256) silver : 71,6<br/>15 pro max (256) blue : 70,7<br/>----------------------------<br/>15 pro&nbsp; (256) natural : 67<br/>15 pro&nbsp; (256) black : 67<br/>15 pro&nbsp; (256) silver : 68<br/>15 pro&nbsp; (256) blue : 66<br/>----------------------------<br/>15&nbsp;&nbsp; (128) black : 40<br/>15&nbsp;&nbsp; (128) blue : 40<br/>15&nbsp;&nbsp; (128) green : 39<br/>15&nbsp;&nbsp; (128) pink : 39<br/>----------------------------<br/>13&nbsp;&nbsp; (256) black : 45,5<br/>13&nbsp;&nbsp; (256) silver : 45,8<br/>----------------------------<br/>13&nbsp;&nbsp; (128) black : 35,7<br/>13&nbsp;&nbsp; (128) silver : 36,1<br/>13&nbsp;&nbsp; (128) green : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/>13&nbsp;&nbsp; (128) pink : 37<br/>13&nbsp;&nbsp; (128) blue : 37<br/>----------------------------<br/>&lrm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>مهم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/>به دلیل بالا بودن تنوع در سری 13 pro max، لطفا برای استعلام قیمت این مدل تماس بگیرید.<br/>09186747986</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -294,7 +399,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/229" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNzA0YzQ4ODIzZTdmZjk3YTlmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/229" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjI5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjNlYzljNjY1MzFlZGFmOWNiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -311,10 +416,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://ebd8da44-8ec2-43b9-9e46-7189f26f351e@sinamobail.sbs:443?type=tcp&amp;path=%2F&amp;host=telewebion.com&amp;headerType=http&amp;security=none#super%20vip%20Hamrah-Siiinamobail</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">337</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/229"><time datetime="2024-02-07T15:49:56+00:00" class="time">15:49</time></a></span>
@@ -322,7 +425,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/230" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjMwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTNmOWYzNTlkNWNkMTg2NDIxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/230" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjMwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMWUyNzM3ODJkOWRiYjdhNWUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -339,9 +442,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">20گیگ vipمخصوص تمامی نت ها</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -350,7 +451,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/231" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjMxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMzNlNTRkMzdjYTBlZDZmZmI2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/231" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjMxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTBiOTRiMTI2YjY4NTVmOTM3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -367,10 +468,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">لیست قیمت آیفون:<br/>-------------------------------<br/>15 pro max (1T) natural : 98,5<br/>15 pro max (1T) black : 98,5<br/>15 pro max (1T) silver : 99,2<br/>15 pro max (1T) blue : 96,6<br/>----------------------------<br/>15 pro max (512) natural : 89,2<br/>15 pro max (512) black : 89,2<br/>15 pro max (512) silver : 92<br/>15 pro max (512) blue : 85,7<br/>----------------------------<br/>15 pro max (256) natural : 73,2<br/>15 pro max (256) black : 72,9<br/>15 pro max (256) silver : 73,8<br/>15 pro max (256) blue : 72<br/>----------------------------<br/>15 pro&nbsp; (256) natural : 67<br/>15 pro&nbsp; (256) black : 66,5<br/>15 pro&nbsp; (256) silver : 68<br/>15 pro&nbsp; (256) blue : 66,5<br/>----------------------------<br/>15&nbsp;&nbsp; (128) black : 41,2<br/>15&nbsp;&nbsp; (128) blue : 40,7<br/>15&nbsp;&nbsp; (128) green : 39,6<br/>15&nbsp;&nbsp; (128) pink : 40,7<br/>----------------------------<br/>13&nbsp;&nbsp; (256) black : 44,4<br/>13&nbsp;&nbsp; (256) silver : 45<br/>----------------------------<br/>13&nbsp;&nbsp; (128) black : 36<br/>13&nbsp;&nbsp; (128) silver : 36,9<br/>13&nbsp;&nbsp; (128) green : <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/>13&nbsp;&nbsp; (128) pink : 38<br/>13&nbsp;&nbsp; (128) blue : 37<br/>----------------------------<br/>&lrm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>مهم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/>به دلیل بالا بودن تنوع در سری 13 pro max، لطفا برای استعلام قیمت این مدل تماس بگیرید.<br/>09186747986</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">403</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/231"><time datetime="2024-02-08T16:14:22+00:00" class="time">16:14</time></a></span>
@@ -378,7 +477,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/244" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiOWYyNGFkYTZiMmQyMzc3MWRmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/244" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjJhMDkwYmExNWQzNDMyZGExIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -395,9 +494,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i>کانفینگ جدید راس ساعت 8میزارم<br/>کانفینگ 40گیگ 24ساعت مهلت استفاده <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -406,7 +503,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/245" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiODgyZGUxNTg5YWU2MWRkYmUzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/245" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMWYzOTFhYmRhYjA3ZTRhNGY2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -429,10 +526,8 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">v2rayNG_1.8.12.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">57.1 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">برنامه فیلتر شکن v2ray<br/><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">برنامه فیلتر شکن v2ray<br/><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">235</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/245"><time datetime="2024-02-16T16:58:13+00:00" class="time">16:58</time></a></span>
@@ -440,7 +535,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/246" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTFmY2IyMjc1YWY5YTBmMTJmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/246" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjQ2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzdjZWZjMTgzM2FlYTBkMjZkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -469,10 +564,8 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">اموزش نحوه وصل شدن به  (فیلترشکن)کانفینگ ها در برنامه v2rayng<br/><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">اموزش نحوه وصل شدن به  (فیلترشکن)کانفینگ ها در برنامه v2rayng<br/><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">262</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/246"><time datetime="2024-02-16T16:58:26+00:00" class="time">16:58</time></a></span>
@@ -480,7 +573,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/251" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmVlNjg1ZDMzYzlhMjcyMjk2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/251" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTFjMjY1NGViNWY4ZTNhODA1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -497,9 +590,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">واسه دوستانتون بفرستید که پرسرعت متصل بشن <br/><br/><br/>کانفینگ تمامی اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a><br/><br/>vless://b3ead971-5ed2-468a-bfeb-ce64ebe5b066@b.sinamobail.sbs:443?type=tcp&amp;path=%2F&amp;host=telewebion.com&amp;headerType=http&amp;security=none#super%20vip%20Hamrah-%DA%A9%D8%A7%D9%86%D8%A7%D9%84%20%3A%40sinamobail</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -508,7 +599,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/252" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTJkYjhiMWI3YTA1ZTI0MTMyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/252" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiODk0YTY4MWRkOTRlN2NhOWQ1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -531,15 +622,13 @@
   <video src="https://cdn4.cdn-telegram.org/file/9550ad4c60.mp4?token=Cwz-NgkUwF1bZdrb3LOQ2qtjy8DF7x0T4uxH_ieYMmoER-rxisJD7g2IF6OpwgwQm_YZbbsTZFG8OA12Iw_vnNjucOyX3tFgZKJh1kS7Tjfr8cX1YZQn-MxzyuUYXPX8TQI-pTm3cnxL-4faXnAqSEelAqFXd8SvgPWADc7f5EegacUjyJ74zOlYG_VckkSwb5sTGwoZB0V3XM5_RieRGHJYvQtI97x3jqb4tZYbVV-1ORpkhB741Mg6BSaEr3Jnpj0AuaYmc2hND0HqQupF1rd1SWjJStjxuSCl3bYPiDUPkWOGakWxP3mv9RV69NxkieAzGw5u2CXRmFnLVDpXMQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:20</time>
+<time class="message_video_duration js-message_video_duration">0:19</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما <br/>:<a href="https://www.instagram.com/sinamobaile?igsh=MWQxNnEzMmsyZ2VlMg==" target="_blank" rel="noopener">https://www.instagram.com/sinamobaile?igsh=MWQxNnEzMmsyZ2VlMg==</a><br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">ارتباط با ما:<a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/>کانال تلگرام : <br/><a href="https://t.me/sinamobail" target="_blank" rel="noopener">https://t.me/sinamobail</a><br/>آدرس اینستاگرام ما <br/>:<a href="https://www.instagram.com/sinamobaile?igsh=MWQxNnEzMmsyZ2VlMg==" target="_blank" rel="noopener">https://www.instagram.com/sinamobaile?igsh=MWQxNnEzMmsyZ2VlMg==</a><br/>تلفن ثابت : <br/>08736300325<br/>شماره واتس آپ:<br/>09186747986</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -548,7 +637,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/253" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDU3MDMyMDFhZDBlYzUyZmZlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/253" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjUzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWJiYjZiM2M5M2QxZjYyN2UxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -565,10 +654,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939C.png')"><b>📜</b></i> لیست قیمت با ورودی جدید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i>1402/12/05<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i>لطفا برای استعلام قیمت دقیق تماس حاصل فرمایید<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28189.png')"><b>⁉️</b></i>تمامی گوشیهای این فروشگاه گلوبال و دارای گارانتی شرکتی ۱۸ ماهه<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>XIAOMI<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T Pro 12/256...29950<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T 8/256..18600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12 8/128...17300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>POCO<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 12/256..12850<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 12/512..11200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 8/256..9900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 Pro 6/128..12750<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 Pro 8/256..13600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X4 Pro 8/256..10800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> NOTE <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..16500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..14400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 8/256..11650<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 8/256..8600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 Pro 8/256..10650<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12s 8/256...7900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;6/128..5400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;8/256..5700<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>SAMSUNG<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i>M05s 4/128...5200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/64...5300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/128..6100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 6/128..6900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A15 8/256..8100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A24 8/128..9400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 6/128...8900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 8/256...10600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/256...11900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/256...15300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S23 FE 8/256...22800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 8/128...47500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/256..67600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/>=========================<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>برای دریافت قیمت لطفا تماس حاصل فرمایید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/>09186747986</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">148</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">سینا موبایل</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/sinamobail/253"><time datetime="2024-02-25T07:51:31+00:00" class="time">07:51</time></a></span>
@@ -576,7 +663,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/254" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNDhiNzg0Mjk1MjU2YTViNjBkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/254" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNDhiMWE2Yzc3MTQyYjI4NzQyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -593,9 +680,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939C.png')"><b>📜</b></i> لیست قیمت با ورودی جدید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i>1402/12/07<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i>لطفا برای استعلام قیمت دقیق تماس حاصل فرمایید<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28189.png')"><b>⁉️</b></i>تمامی گوشیهای این فروشگاه گلوبال و دارای گارانتی شرکتی 18ماه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>XIAOMI<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T Pro 12/256...31200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T 8/256..18600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12 8/128...16950<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>POCO<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 12/256..13100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 12/512..10900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 8/256..9900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 Pro 6/128..12750<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 Pro 8/256..13600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X4 Pro 8/256..10800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> NOTE <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..16350<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..14200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 8/256..11650<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 8/256..8600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 Pro 8/256..10550<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12s 8/256...7800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;6/128..5350<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;8/256..5800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>SAMSUNG<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i>M05s 4/128...5200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/64...5300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 6/128..6900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A15 4/128..6100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A15 6/128..7200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A15 8/256..8200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A24 8/128..9400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 6/128...8750<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 8/256...10600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/128..10250<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/256...11900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/128..13500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/256...15350<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 8/128...47500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/256..68100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/>=========================<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>برای دریافت قیمت لطفا تماس حاصل فرمایید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i>09186747986<br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -604,7 +689,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/255" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjU3YTllODUzZTBlY2Q3ZDVlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/255" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNGE1NzYxMGIwZjNjMWU5ZjFjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -621,9 +706,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939C.png')"><b>📜</b></i> لیست قیمت با ورودی جدید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i>1402/12/23<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i>لطفا برای استعلام قیمت دقیق تماس حاصل فرمایید<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28189.png')"><b>⁉️</b></i>تمامی گوشیهای این فروشگاه گلوبال و دارای گارانتی شرکتی ۱۸ ماه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>XIAOMI<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>13T Pro 12/512..31600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T 8/256..18600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>POCO<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 Pro 12/512..17600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 12/512..15100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 12/512..10300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 8/256..8900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 Pro 8/256..13700<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X5 8/256..8950<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> NOTE <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..15500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..13200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 8/256..11200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 8/256..8100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 Pro 8/256..10100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 8/256..9800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12s 8/256...7800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;6/128..5500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;8/256..6100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>SAMSUNG<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i>M05s 4/128...5200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/64...5650<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/128..6300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 6/128..7300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A24 8/128..9400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 6/128...8500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/128...10600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/256..12100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/128..13500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/256...15750<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S23 FE 8/256..24550<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 8/128..47900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/256..71400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/1T..97100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>ویتنام <br/>=========================<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>برای دریافت قیمت لطفا تماس حاصل فرمایید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -632,7 +715,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/256" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMDFjMzhiMTI4ZWRjMzYxMTZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/256" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZmE4MTdlZTk0MDFmM2EzNGQyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -649,9 +732,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/sinamobail"><span dir="auto">سینا موبایل|sinamobail</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939C.png')"><b>📜</b></i> لیست قیمت با ورودی جدید<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9793.png')"><b>🗓</b></i>1402/12/24<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i>لطفا برای استعلام قیمت دقیق تماس حاصل فرمایید<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28189.png')"><b>⁉️</b></i>تمامی گوشیهای این فروشگاه گلوبال و دارای گارانتی شرکتی ۱۸ ماهه<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939E.png')"><b>📞</b></i>09186747986<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>XIAOMI<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>13T Pro 12/512..31400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>12T 8/256..18600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>POCO<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 Pro 12/512..17600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA1.png')"><b>🟡</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;X6 12/512..15100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 12/512..10300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Poco&nbsp;M6 Pro 8/256..8900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i> NOTE <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..15500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>5G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 12/512..13100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 Pro 8/256..10900<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 13 8/256..8100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 Pro 8/256..10100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12 8/256..9700<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i>Note 12s 8/256...7700<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;6/128..5500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>Redmi 13C&nbsp;8/256..6100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i>SAMSUNG<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29382.png')"><b>Ⓜ️</b></i>M05s 4/128...5200<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>4G<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/64...5600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A14 4/128..6300<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A24 8/128..9400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A25 6/128...8500<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/128...10800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A34 8/256..13550<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/128..13600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F85B0.png')"><b>🅰️</b></i>A54 8/256...15800<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 8/128..48600<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/256..71400<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AAB.png')"><b>⚫️</b></i>ویتنام<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i>S24 Ultra 12/1T..97100<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>ویتنام <br/>=========================<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>برای دریافت قیمت لطفا تماس حاصل فرمایید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i><a href="https://t.me/Tnhay_tnham" target="_blank">@Tnhay_tnham</a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i><a href="https://t.me/sinamobail" target="_blank">@sinamobail</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -660,7 +741,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/257" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZjIyNDI0YTllZmMxY2Y1ZDRiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/257" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDQzYTQ3NzI1ODEzZjU4NWZiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -680,8 +761,6 @@
 <a class="tgme_widget_message_photo_wrap blured 6037257025307656734 1405658439_456245790" href="https://t.me/sinamobail/257" style="width:450px;background-image:url('https://cdn4.cdn-telegram.org/file/lWE5VyW99c4HYOS91gyeY7b0bxrxXuOKod2Zwf48uJSQ47K2xIRKNGpD5yDCO5a2J3OoGvkcXDubuGWJqIZxonLd9E6vApQLQU7n_lRYbAZCFKHIrvJTpAgVOI6bN5PLEdsiv_j9bOez3C6s8VqAasLcrf__Ev1yFLZU3MAEsX6m9CxeLfFF9oj250OQCkzeSMcFfBIAFg8PaTOOFGDVrfcavQQP692gCSD30AahVB_l92hHdg3vQ5-xd-hENRqgoRRqLXlQx4jrqy5gKpof_AWAJWBt7cFeu9F0pafjO1ttjYvTEtIVfJZtl_o9jaeJKRr7vVnNXNfA6uIRKZ7d7A.jpg')">
   <div class="tgme_widget_message_photo" style="width:75%;padding-top:133.33333333333%"></div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -690,7 +769,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/258" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMWM1NTQ3MmMyNzhkYjI3OGFmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="sinamobail/258" data-view="eyJjIjotMTQwMTgzMzI2NiwicCI6MjU4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNWE0MjE4MDJkYjk2Njg0Mjg5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/sinamobail"><i class="tgme_widget_message_user_photo bgcolor1" data-content="س"><img src="https://cdn4.cdn-telegram.org/file/kN3WZp4icOms2xfKyIHNgimWfj7oj3y_cPu6GHmuOcwfGus_34GJ3Ctf0U5HCv3boe5KNcYG-6-I50clIPuoFpoY7accScS8Lc6YDZE8yAcxswLzEKeVhG2W1FOqOLV9yyYuu_bbhnxyU6bCYhTLu9kBv6gMeCjTiOrZ7LTI6kA5r4Cwe74h4_OwJI4hbgrKnF99PAQUSFsWtT9lQjuq6Wk_A5UTpw8eF9BZF87O_ckzfiQzFprhW6ilQT8636dsNlBU88sCbuj6JiT_JaXTGVvGyDQsWDq_MdrEjwXepql0BCQa5hcVuwbLVmiRASwZgAbjQ-D69Kw8hBzJsx77yQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -713,15 +792,13 @@
   <video src="https://cdn4.cdn-telegram.org/file/0dcb87e71c.mp4?token=sePO4hZtXgoZx4owWvVeLJ22WaX2gvEVHoNQ3zP0h8A1PgZDagKtT8bAOvwZhzPwA7hawyZif0Kbi2JFESks0onTrH_Me9WDQI2VD8XuwDPus-W8sJIObhekucqa8bVtYe4j1jF7hkMaHDDQUAVKcCG8euaJpweQXurrAYnIvqXhYVvY1lCGXG9oujNmQBE22cggwuUJmb3966UM4eDEojSE8NMtCUElmA3vbo6V4sUJN78injSiPM2RVcZzkv_4-dNJV6QSWioM9Y12ZjkAqxmly3tKO74V9auO-0Tk-BH2QivEGdRk-uxKQbm2TD74bFbRDIvT0RfiQ54_lQ9Agg" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:10</time>
+<time class="message_video_duration js-message_video_duration">0:09</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
 </div></a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -739,11 +816,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 96.1ms -->
+<!-- page generated in 103.56ms -->

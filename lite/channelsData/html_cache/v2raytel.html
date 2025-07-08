@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">50</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">J</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ad934a313a70232066_4333425502393188261">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=1bd3bf393a04fc4646_2485305889287836932">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ad934a313a70232066_4333425502393188261">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=1bd3bf393a04fc4646_2485305889287836932">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/v2raytel">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/v2raytel">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2raytel?before=27" class="tme_messages_more js-messages_more" data-before="27"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/27" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MjcsInQiOjE3NTE5NzY0NTksImgiOiI3ZTI5MjdhNmRmNDMzYzg1MTEifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/v2raytel?before=27" class="tme_messages_more js-messages_more" data-before="27"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/27" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MjcsInQiOjE3NTE5ODE1NTksImgiOiJkMDBiZGViN2JiNjVhMDU5OWIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">بسم الله</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/28" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MjgsInQiOjE3NTE5NzY0NTksImgiOiJkM2MwZGVkZGVkMGM0MmYwMzYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/28" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MjgsInQiOjE3NTE5ODE1NTksImgiOiIwYjBhZjZkM2Q0ZWRlMGViYTMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,10 +271,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اینجا کانال جدیدمون هست که کانفیگ و پروکسی های مخصوص همراه اول رو میزارم(پروکسی هم تو چند روز آینده اضافه میشه)...<br/><br/>لطفا لفت ندید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">209</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/28"><time datetime="2024-07-27T16:55:58+00:00" class="time">16:55</time></a></span>
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/30" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzAsInQiOjE3NTE5NzY0NTksImgiOiI4ZTc1MmI1MTdjNDk0MDY3YWMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/30" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzAsInQiOjE3NTE5ODE1NTksImgiOiJiNTkxZTc5YmFiNWY5YjlkZWIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,9 +297,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel name was changed to «<span class="tgme_widget_service_strong_text" dir="auto">V2raytel(خدمات‌ همراه اول)</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/31" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzEsInQiOjE3NTE5NzY0NTksImgiOiJlZWYwZWU3YmI4MGVjYThiMGIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/31" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzEsInQiOjE3NTE5ODE1NTksImgiOiI3NWE2ZjZjMjlhOTEwZmFhMmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,10 +323,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">پروکسی پر سرعت <br/><br/><a href="https://t.me/proxy?server=188.245.84.53&amp;port=443&amp;secret=7HQighJPBNMYVRNB6tdkVw" target="_blank" rel="noopener">https://t.me/proxy?server=188.245.84.53&amp;port=443&amp;secret=7HQighJPBNMYVRNB6tdkVw</a><br/><br/>دوستان ی تست بزنید ببینید خوبه یا نه <br/>اگه خوب بود ریکشن <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>بزنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">210</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/31"><time datetime="2024-08-07T15:13:41+00:00" class="time">15:13</time></a></span>
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/32" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzIsInQiOjE3NTE5NzY0NTksImgiOiJkZTI0N2I3NjVhN2MyMmZkN2QifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/32" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzIsInQiOjE3NTE5ODE1NTksImgiOiIzNmIzNmE3ZGY3Y2UzZTFlOTIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">ریکشنو حتما بزنید اگه خوبه دوبار میزنم میزارم چنل</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/33" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzMsInQiOjE3NTE5NzY0NTksImgiOiIzZTE2NjUxMmI4MTA3Yzk1OTMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/33" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzMsInQiOjE3NTE5ODE1NTksImgiOiI4MTZjNjQzNWRjNWVkMDA4ZWQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,9 +375,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">فقط حمایت کنید دیگه</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/34" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzQsInQiOjE3NTE5NzY0NTksImgiOiI4YmZjMWQwODI3ZDYxZTA3YWIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/34" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzQsInQiOjE3NTE5ODE1NTksImgiOiJiMzA3NjIwYWUyMmI5MDU5OWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,10 +401,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>لیست پروکسیهای پرسرعت مخصوص <u>همراه</u></b><br/><br/><a href="https://t.me/proxy?server=yalda.yalda.yalda.yalda.yalda.yalda.ylda.yalda-bood.info&amp;amp;port=443&amp;amp;secret=1603010200010001fc030386e24c3add" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=Tabrik.shabeyalda.cfd&amp;amp;port=1320&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJwAAAAAAAAAAAAAAAAAAAAkIicxgcZ0hcMsAAAA0hcMsAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=176.65.135.32&amp;amp;port=69&amp;amp;secret=7gD_AA___wD_9VVf______VmLmtvLS0%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=176.65.135.28&amp;amp;port=69&amp;amp;secret=7gD_AA___wD_9VVf______VmLmtvLS0%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><br/><a href="https://t.me/proxy?server=91.132.132.92&amp;amp;port=443&amp;amp;secret=ee398b03519e77ace1d35d689a126b821f73332e616d617a6f6e6177732e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=93.95.115.11&amp;amp;port=7&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=176.65.135.28&amp;amp;port=69&amp;amp;secret=7gD_AA___wD_9VVf______VmLmtvLS0%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=88.99.199.95&amp;amp;port=1460&amp;amp;secret=DDBighLLvXrFGRMCBVJdFQRueWVrdGFuZXQuY29tZmFyYTrhdi5jb212YZ6ubmFqXeEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=148.251.132.179&amp;amp;port=7343&amp;amp;secret=7gggggggggggggggggggggh0cmFuc2xhdGUuZ29v" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=ee.eeeeeeeeeeeeeeeppp.mmmeeeeeeeeeeeeeeeeeeeeeeeeheeeeeeeeeee.eeddddddddddeeeeeeeeeeee.hammaliya.shop.&amp;amp;ut.ac.ir&amp;amp;port=15&amp;amp;secret=%61%43%55%36%59%74%5A%6C%79%64%4B%76%4F%57%65%78%38%5A%30%79%51%41" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <br/><a href="https://t.me/proxy?server=ee.eeeeeeeeeeeeeeebbb.mmmeeeeeeeeeeeeeeeeeeeeeeeehhheeeeeeeeeee.eeddddddddddeeeeeeeeeeee.babaliya.shop.&amp;amp;ut.ac.ir&amp;amp;port=15&amp;amp;secret=%61%43%55%36%59%74%5A%6C%79%64%4B%76%4F%57%65%78%38%5A%30%79%51%41" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a> | <a href="https://t.me/proxy?server=ee.eeeeeeeeeeeeeeeppp.mmmeeeeeeeeeeeeeeeeeeeeeeeeheeeeeeeeeee.eeddddddddddeeeeeeeeeeee.hammaliya.shop.&amp;amp;ut.ac.ir&amp;amp;port=15&amp;amp;secret=%61%43%55%36%59%74%5A%6C%79%64%4B%76%4F%57%65%78%38%5A%30%79%51%41" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی</a><b> |</b></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">153</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/34"><time datetime="2024-12-23T20:32:41+00:00" class="time">20:32</time></a></span>
@@ -307,7 +410,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/38" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzgsInQiOjE3NTE5NzY0NTksImgiOiI3YzkxYmI5ZDJmMjRjZTc3NzIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/38" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzgsInQiOjE3NTE5ODE1NTksImgiOiJiZWQxMzIxNjM0YmQ4NzI1ZDgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -324,14 +427,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/v2raytel/38" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
+<div class="tgme_widget_message_text js-message_text" dir="auto">کانفینگ وارپ(guardwire) متصل به Mci <br/><blockquote>روی کانفیگ ضربه بزنید تا کپی شه</blockquote><br/><br/><br/><code>wireguard://QACTiBLK%2Fi70g7fG%2BUcAGJo6J%2B2%2BdT59S1zVEgHwhEY%3D@188.114.97.66:3138?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A857e%3A6b96%3Af608%3A920%3Aca5d%2F128&amp;reserved=243%2C179%2C110&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;mtu=1280#%40v2raytel</code><br/><br/>لیست پروکسی همراه اول<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://t.me/proxy?server=94.130.201.56&amp;amp;port=3443&amp;amp;secret=DDBighLLvXrFGRMCBVJdFQRueWVrdGFuZXQuY29tZmFyYTrhdi5jb212YZ6ubmFqXeEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه</a><br/><br/><a href="https://t.me/proxy?server=176.65.135.41&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=93.95.115.233&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=yalda.yalda.yalda.yalda.yalda.yalda.ylda.yalda-bood.info&amp;amp;port=443&amp;amp;secret=1603010200010001fc030386e24c3add" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=94.130.201.56&amp;amp;port=3443&amp;amp;secret=DDBighLLvXrFGRMCBVJdFQRueWVrdGFuZXQuY29tZmFyYTrhdi5jb212YZ6ubmFqXeEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=5.144.155.10&amp;amp;port=23&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=terminator.drmelongood.info&amp;amp;port=443&amp;amp;secret=1603010200010001fc030386e24c3add" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=Tabrik.shabeyalda.cfd&amp;amp;port=1320&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJwAAAAAAAAAAAAAAAAAAAAkIicxgcZ0hcMsAAAA0hcMsAAAA" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=zarinpal.ir.sedad.shaparak.ir.philips.de.lenovo.com.htc.com.samsung.com.msi.com.www.w3schools.com.wescolls.com.ketabonline.bing.duckduckgo.baidu.reddit.quora.tumblr.pinterest.wikipedia.shopify.yahoo.bing.duckduckgo.baaidu.reddiiit.lamarikolusloap.online&amp;amp;port=443&amp;amp;secret=3fQ1mpsyX_HR5QhN8OD3U3s" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><br/><a href="https://t.me/V2raytel" target="_blank">@V2raytel</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -340,7 +436,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/39" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzksInQiOjE3NTE5NzY0NTksImgiOiJhM2ZiZTVmNGQ5NjcyZGYxMGUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/39" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6MzksInQiOjE3NTE5ODE1NTksImgiOiI2YTQ4MDJlYTZjZTc1NDc3ZTUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -356,15 +452,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/v2raytel/38" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/v2raytel/38" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">MCI NET ( همراه اول پروکسی)</span>
 </div>
-<div class="tgme_widget_message_text js-message_reply_text" dir="auto"></div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانفینگ وارپ(guardwire) متصل به Mci  روی کانفیگ ضربه بزنید تا کپی شه   wireguard://QACTiBLK%2Fi70g7fG%2BUcAGJo6J%2B2%2BdT59S1zVEgHwhEY%3D@188.114.97.66:3138?address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A857e%3A6b96%3Af608%3A920%3Aca5d%2F128&amp;reserved=243%2…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">هنوز کار میکنه کانفیگ(به تاریخ ویرایش نگاه کنید)</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -373,7 +467,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/40" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDAsInQiOjE3NTE5NzY0NTksImgiOiIwZjI0YzNjYmJmMzQ1MGQzM2QifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/40" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDAsInQiOjE3NTE5ODE1NTksImgiOiJjYTJlZjk1Nzc3YWIwMWU4NTAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -390,18 +484,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><pre>wireguard://mN1ghf%2FMfrVvSiwIRkIlTDHiSxJwa%2FBmQ9kLgzLk12k%3D@188.114.98.113:4198?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A828e%3A1f5a%3A2937%3Ae30d%3Ace42%2F128&amp;reserved=47%2C188%2C60&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#v2ray_one1<br/><br/><br/>wireguard://yN1JTfs09lhO94%2BnaZ7XOwoGsywBgDM2DhU440nVrVI%3D@162.159.195.25:1010?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8841%3A4823%3A26be%3Ab97e%3Ae1ad%2F128&amp;reserved=67%2C26%2C146&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#v2ray_one1<br/><br/>wireguard://UDp2cKxGhq2u24bKnXExN5G7WYMFlfyEmCBYNT88WEA%3D@188.114.99.253:8886?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A836d%3A6db1%3A60f%3Aa52f%3A733b%2F128&amp;reserved=130%2C69%2C0&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#@v2ray_one1<br/><br/>wireguard://8LW89w519Fi6Sh9g6TGqfH%2BUqBjJgw4gKHINpNizSHo%3D@188.114.97.2:5279?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8ee4%3A29c%3Aacf2%3Ab4e3%3A51f0%2F128&amp;reserved=34%2C69%2C8&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#@v2ray_one1<br/><br/>wireguard://kI5fzVNf2R4JEaN9k1wOY0cAWy%2BHQF15%2FlCQ%2BUMht0w%3D@188.114.99.150:968?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8d67%3Ad285%3A1f72%3Aab53%3Aa2bb%2F128&amp;reserved=90%2C112%2C206&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#@v2ray_one1<br/><br/>wireguard://wJjgGblTDS2ZYoA3taTvM5VgxbSr7ZPfUx%2FnmmWDbGQ%3D@188.114.99.81:8319?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8aac%3Afda3%3A7abe%3A283b%3A648b%2F128&amp;reserved=66%2C8%2C66&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#@v2ray_one1<br/><br/>wireguard://6E3Hzx%2BjtX%2F2NDioT3tNyaQ8SGOb%2BuYTQ80C02WoQ1M%3D@188.114.96.114:2371?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8159%3A63ee%3Afcb4%3Ad571%3Addf9%2F128&amp;reserved=243%2C60%2C89&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1280#@v2ray_one1<br/><br/>wireguard://OBx%2F3GHq6KiPnxEmT8uUQRXr8xds3pvVM%2B%2Bx3GNiT1M%3D@188.114.97.149:3476?wnoise=quic&amp;address=172.16.0.2%2F32%2C2606%3A4700%3A110%3A8eda%3A3621%3A772c%3Ad243%3A5616%2F128&amp;reserved=191%2C220%2C218&amp;keepalive=5&amp;wpayloadsize=5-10&amp;publickey=bmXOC%2BF1FxEMF9dyiK2H5%2F1SUtzH0JuVo51h2wPfgyo%3D&amp;wnoisedelay=1-2&amp;wnoisecount=15&amp;mtu=1900#@v2ray_one1</pre><br/><br/><br/>کانفیگ های <i>وارپ</i> با حجم و زمان <b>بینهایت</b>&#33;&#33;&#33; ...</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/v2raytel/40"><time datetime="2025-05-10T16:28:11+00:00" class="time">16:28</time></a></span>
+    <span class="tgme_widget_message_views">1.82K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/v2raytel/40"><time datetime="2025-05-10T16:28:11+00:00" class="time">16:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/41" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDEsInQiOjE3NTE5NzY0NTksImgiOiJhMWZiYWU5ODBjYWE0MjhiYmIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/41" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDEsInQiOjE3NTE5ODE1NTksImgiOiJjOGQwNTQ1Yjk4N2ZhYzk4OGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -418,9 +510,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo removed</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -429,7 +519,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo js-widget_message" data-post="v2raytel/42" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDIsInQiOjE3NTE5NzY0NTksImgiOiI4MWEwMGIxYjYxNzJmNWJiNTkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo js-widget_message" data-post="v2raytel/42" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDIsInQiOjE3NTE5ODE1NTksImgiOiIwNGU4YjcwMmQzNzM3ZmRkYWUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -446,9 +536,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-<a class="tgme_widget_message_service_photo" href="https://t.me/v2raytel/42"><img src="https://cdn4.cdn-telegram.org/file/K63-bali0CaLLt57HT-R1bOFJ2A_j34NQszMmDOjqce4uhuhgD3zSSl_fznOoAaNMPOxHwH8-dGTR7x301Dzq4-GsdvdGqxyx-Oj6BaETHFvgYnprZauykgvAf3TN90FZPkNKnu1OY__G0gm1BYvFiOkpvzG4_eV1D7KjRctmXz12QbCKWML_vLzPlhBBjqWIKNTsaVNmLtDVZAKAKcDbDaqIf3m_RUZ1Ao_qjTiaZCzoq3RClVrUkJxsdtSW1DzPMHdtZGDXUpTMA5yCstsRf_cXL4l_6KRIMqE7pqAYTa3X-xhcnboNYjyeMWFceyh3zfjxgqBDgrPbURSthxMcg.jpg"></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
-
+<a class="tgme_widget_message_service_photo" href="https://t.me/v2raytel/42"><img src="https://cdn4.cdn-telegram.org/file/K63-bali0CaLLt57HT-R1bOFJ2A_j34NQszMmDOjqce4uhuhgD3zSSl_fznOoAaNMPOxHwH8-dGTR7x301Dzq4-GsdvdGqxyx-Oj6BaETHFvgYnprZauykgvAf3TN90FZPkNKnu1OY__G0gm1BYvFiOkpvzG4_eV1D7KjRctmXz12QbCKWML_vLzPlhBBjqWIKNTsaVNmLtDVZAKAKcDbDaqIf3m_RUZ1Ao_qjTiaZCzoq3RClVrUkJxsdtSW1DzPMHdtZGDXUpTMA5yCstsRf_cXL4l_6KRIMqE7pqAYTa3X-xhcnboNYjyeMWFceyh3zfjxgqBDgrPbURSthxMcg.jpg"></a><div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -457,7 +545,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/43" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDMsInQiOjE3NTE5NzY0NTksImgiOiIxYjlkNWY0NWQ3MDRlZjQ5MDgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/43" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDMsInQiOjE3NTE5ODE1NTksImgiOiJkYjQ1MzhjMGY0NGQ0NGI2Y2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -474,9 +562,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ ۲۴ ساعته... پینگ زیر ۲۰۰<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><br/><br/><code>vless://ab279363-2195-4605-be38-658aa7be8678@104.19.54.50:8880?security=&amp;type=ws&amp;path=/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed%3D2048&amp;host=V2rayArgoN.elmahstyle.xyz.&amp;encryption=none#V2ray_one1-v2raytel</code><br/>﻿﻿﻿﻿﻿﻿<br/>پروکسی های نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/>                                       <a href="https://t.me/proxy?server=141.11.26.32&amp;amp;port=70&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=176.65.136.60&amp;amp;port=70&amp;amp;secret=3dd9tD7jch8Py0Ck_2O1zSc%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=95.169.173.10&amp;amp;port=8443&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=176.65.128.77&amp;amp;port=155&amp;amp;secret=FgMBAgABAAH8AwOG4kw63Q" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=185.222.28.156&amp;amp;port=43&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw==" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=157.180.61.219&amp;amp;port=1080&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=92.246.87.70&amp;amp;port=777&amp;amp;secret=1603010200010001fc030386e24c3add" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a><br/><br/><a href="https://t.me/proxy?server=mmm.mmmmmmmmmmmm.eeeeeeeeeeeeeeeeeeeeeee.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.eeeeeeeeeeeeeeeeeeeeeeeeedddd.nanoliya.shop.&amp;amp;port=1&amp;amp;secret=7u7u7u7u7u7u7u7u7u7u7g" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه اول</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -485,7 +571,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/45" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDUsInQiOjE3NTE5NzY0NTksImgiOiJhZmQzNTdlNDY0YjQ2MWY1MTEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/45" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDUsInQiOjE3NTE5ODE1NTksImgiOiI2NGE1NmVhYTg5MzQ4Y2U0MTcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -502,10 +588,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/v2ray_one1/2475"><span dir="auto">V2 ray one free</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b>New&nbsp; Config</b><br/><br/><br/><code>vless://8cd229a0-9b86-479a-9d25-ed8268355f87@Speedtest.net:80?flow=&amp;type=xhttp&amp;host=joinbede_vmessorg.ir&amp;path=/@vmessorg----@vmessorg-----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg----@vmessorg?ed%3D2480&amp;mode=auto&amp;security=none#%D9%85%D9%86%D8%A7%D8%B3%D8%A8%20%D8%A7%D8%AE%D8%AA%D9%84%D8%A7%D9%84%D8%A7%D8%AA%20%D8%8C%20v2ray_one1</code><br/><br/>مناسب اختلالات<br/><br/>درصورت کار نکردن قطع و وصل کنید اوکی میشه<br/><br/><a href="https://t.me/v2ray_one1" target="_blank">@v2ray_one1</a>,&nbsp; <a href="https://t.me/v2raytel" target="_blank">@v2raytel</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">80</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/45"><time datetime="2025-06-15T15:48:41+00:00" class="time">15:48</time></a></span>
@@ -513,7 +597,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/46" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDYsInQiOjE3NTE5NzY0NTksImgiOiI0YTQ5ZjdmZGU3NzU2MjM0MTQifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/46" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDYsInQiOjE3NTE5ODE1NTksImgiOiIxZmMyMWViMjM0N2I2NGI1MmMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -530,10 +614,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=ir.brobalair.ink&amp;amp;port=8888&amp;amp;secret=FgMBAgABAAH8AwOG4kw63Q" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=159.223.219.120&amp;amp;port=443&amp;amp;secret=15115115115115115115115115115115" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=66.iropt-p.ir&amp;amp;port=3598&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=178.62.193.154&amp;amp;port=443&amp;amp;secret=15115115115115115115115115115115" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=rightel.irancell.irib.snapp.digikala.cloud.iranian.irib.ahmadp206.namakdarya.info.&amp;amp;port=8443&amp;amp;secret=%37%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%67%68%74%5A%57%52%70%59%53%35%7A%64%47%56%68%62%58%42%76%64%32%56%79%5A%57%51%75%59%32%39%74" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=FTP.neon-machine-learning.ir.&amp;amp;port=443&amp;amp;secret=7hAQEP8PSAZT____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=hagh.siteimprove.ir&amp;amp;port=1080&amp;amp;secret=1320PuNyHw_LQKT_Y7XNJw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/>پروکسی های فعال همراه اول<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9186.png')"><b>👆</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">97</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/46"><time datetime="2025-06-15T15:54:37+00:00" class="time">15:54</time></a></span>
@@ -541,7 +623,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/47" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDcsInQiOjE3NTE5NzY0NTksImgiOiIwMGU1ODk4NzQ3YWYzOTQzZWUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/47" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDcsInQiOjE3NTE5ODE1NTksImgiOiI4YWZjZGFmNjM2OTFjMWNlMGEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -558,9 +640,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel name was changed to «<span class="tgme_widget_service_strong_text" dir="auto">MCI NET ( همراه اول)</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -569,7 +649,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/48" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDgsInQiOjE3NTE5NzY0NTksImgiOiIwYWMzNzczMjEwOTkzNTVjNTUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/48" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDgsInQiOjE3NTE5ODE1NTksImgiOiIxZTg2MWQ5MmE2ZDVjN2ZkOWUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -586,18 +666,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">چنتا پروکسی فعال<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://t.me/proxy?server=79.172.228.60&amp;amp;port=70&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه اول</a><br/><br/><a href="https://t.me/proxy?server=79.172.228.46&amp;amp;port=70&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پروکسی همراه</a><br/><br/><a href="https://t.me/proxy?server=62.60.179.213&amp;amp;port=9741&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=79.172.228.61&amp;amp;port=70&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=79.172.228.70&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=79.172.228.74&amp;amp;port=700&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=7443.iropt-k.ir&amp;amp;port=443&amp;amp;secret=ee07df7df7df7dfffffdfffffffffffc07646f776e6c6f61642e77696e646f77737570646174652e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=79.172.228.19&amp;amp;port=70&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e696D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><a href="https://t.me/proxy?server=45.135.192.244&amp;amp;port=85&amp;amp;secret=ee0000f00f0f775555fffffff5006e2e69646F776E6C6F61642E77696E646F77737570646174652E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">همراه</a><br/><br/><br/><br/><a href="https://t.me/v2raytel" target="_blank">@v2raytel</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">980</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/48"><time datetime="2025-06-25T10:07:56+00:00" class="time">10:07</time></a></span>
+    <span class="tgme_widget_message_views">986</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/48"><time datetime="2025-06-25T10:07:56+00:00" class="time">10:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/49" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDksInQiOjE3NTE5NzY0NTksImgiOiJiZWEyYTUzY2E3NzkyZjY0OTEifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/49" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NDksInQiOjE3NTE5ODE1NTksImgiOiJhZTk5N2QxODdhOWEzYWFkODMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -613,15 +691,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/v2raytel/48" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/v2raytel/48" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">MCI NET ( همراه اول پروکسی)</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">چنتا پروکسی فعال<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i>  همراه اول  پروکسی همراه  همراه  همراه  همراه  همراه  همراه  همراه  همراه    @v2raytel</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">برا رفیقاتون هم بفرستید استفاده کنن</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -630,7 +706,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/50" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NTAsInQiOjE3NTE5NzY0NTksImgiOiIwZDE5NmE2ODg0NzYzM2I5N2YifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="v2raytel/50" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NTAsInQiOjE3NTE5ODE1NTksImgiOiJmNWE1YzJjYzczZmY4N2VkNDgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -647,9 +723,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel name was changed to «<span class="tgme_widget_service_strong_text" dir="auto">MCI NET ( همراه اول پروکسی)</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -658,7 +732,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/51" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NTEsInQiOjE3NTE5NzY0NTksImgiOiIxZjEwYjQ2YmQ4ZWU4YzIzYWIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="v2raytel/51" data-view="eyJjIjotMTgzMTI3MTc5MCwicCI6NTEsInQiOjE3NTE5ODE1NTksImgiOiIwZjMwMzY4ODkxNzczZDU2ZDAifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/v2raytel"><i class="tgme_widget_message_user_photo bgcolor5" data-content="M"><img src="https://cdn4.cdn-telegram.org/file/GBjtdsv7QmaigM7KOWygCnG0BgLcUU1E7SamT1XRSiOaVv7pzu5bcazKSBzLkzCRjfyXJ-u_OIyvSWTILYwOcakzU1W07tm3s2M5rAy1JXmJsKDlGxdpkQoIONj2uDuRovr-sRjkMMeHog_atdzshFkDXYtG0E_OsaLwgruJFyzVtQNaldHEKF0-reB4I9FqPchuAyLbcmMXEDBDtZhZAOb4-LGmXZ9malSwE-avneb4pMquJ_z51FhAdjNfNR0MOXtBwQG6fN1ygzw6_hE0inNa0KmQ1AxTacowtsmc4iiMVUZAuGEvfKOyE9ba3F1QHD5KJsNwNrwXEghuvjhCfg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -675,15 +749,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/v2raytel"><span dir="auto">MCI NET ( همراه اول پروکسی)</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/v2raytel/51" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@2FreakConfig.usecharge.ir:443#Telegram%20%3A%20%40V2raytel</code><br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@admin.c4.webramz.co:443#Telegram%20%3A%20%40v2raytel<br/><br/>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.samanehha.co:443#Telegram%20%3A%20%40v2raytel<br/><br/><br/><blockquote>All Operators</blockquote><br/><br/><a href="https://t.me/v2ray_one1" target="_blank">@v2ray_one1</a> ,   <a href="https://t.me/v2raytel" target="_blank">@v2raytel</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">29</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/v2raytel/51"><time datetime="2025-06-26T15:07:00+00:00" class="time">15:07</time></a></span>
@@ -700,11 +767,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 44.66ms -->
+<!-- page generated in 52.45ms -->

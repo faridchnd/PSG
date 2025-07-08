@@ -44,9 +44,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -75,7 +192,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.66K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">58</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">کانال اصلی <a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a><br/>ادمین <a href="https://t.me/Artemis_Vpn_Head" target="_blank">@Artemis_Vpn_Head</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=0f671a91aa72b76225_1674376728432999386">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=db7db42612f158d419_7606362989489401293">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -96,7 +213,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=0f671a91aa72b76225_1674376728432999386">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=db7db42612f158d419_7606362989489401293">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/artemis_vpn_free">
@@ -113,7 +230,7 @@
 <main class="tgme_main" data-url="/artemis_vpn_free">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/artemis_vpn_free?before=2153" class="tme_messages_more js-messages_more" data-before="2153"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2153" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1MywidCI6MTc1MTk3NjIwMSwiaCI6ImNjYzA5OGM4ZDI5Y2UxMjI5NSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/artemis_vpn_free?before=2153" class="tme_messages_more js-messages_more" data-before="2153"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2153" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1MywidCI6MTc1MTk4MTMwNCwiaCI6IjRlNDVkYWU0MWE1Y2UxZWZjMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -130,18 +247,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6ae833da-e51f-48b4-a870-1f1aafe17378@Artemis.sbs:80?encryption=none&amp;headerType=none&amp;type=ws&amp;path=%2F%40Artemis_vpn&amp;host=free-02.artemis-03.sbs#%F0%9F%87%A9%F0%9F%87%AA%20%40Artemis_Vpn%2802%29<br/><br/></code>بدون محدودیت سرعت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp;&nbsp;&nbsp; <br/>1 روزه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB1.png')"><b>⏱</b></i>&nbsp; <br/>برای 200 کاربر اول <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A5.png')"><b>👥</b></i><br/>&nbsp;<br/>&nbsp; 50 گيگ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>برای خرید بسته اختصاصی کانال اصلی رو دنبال کنید و به ادمین پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a> : كانال اصلي <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn_Head" target="_blank">@Artemis_Vpn_Head</a> : ادمين <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn_Free" target="_blank">@Artemis_Vpn_Free</a> : كانال رايگان</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>34</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">N. Sh</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2153"><time datetime="2023-09-21T20:34:40+00:00" class="time">20:34</time></a></span>
+    <span class="tgme_widget_message_views">7.89K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">N. Sh</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2153"><time datetime="2023-09-21T20:34:40+00:00" class="time">20:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2154" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NCwidCI6MTc1MTk3NjIwMSwiaCI6IjNhNTEyYTg0ODJkNDkzZWEyOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2154" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NCwidCI6MTc1MTk4MTMwNCwiaCI6IjM5MGQ1ZWI3OWNjYTU1ZjZiZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -158,10 +273,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6db4a91c-838d-419a-af83-bc5bd211ffc6@Artemis.sbs:80?encryption=none&amp;headerType=none&amp;type=ws&amp;path=%2F%40Artemis_vpn&amp;host=free-02.artemis-03.sbs#%F0%9F%87%A9%F0%9F%87%AA%20%40Artemis_Vpn%2802%29<br/><br/></code>بدون محدودیت سرعت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp;&nbsp;&nbsp; <br/>1 روزه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB1.png')"><b>⏱</b></i>&nbsp; <br/>برای 200 کاربر اول <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A5.png')"><b>👥</b></i><br/>&nbsp;<br/>&nbsp; 50 گيگ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>برای خرید بسته اختصاصی کانال اصلی رو دنبال کنید و به ادمین پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a> : كانال اصلي <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn_Head" target="_blank">@Artemis_Vpn_Head</a> : ادمين <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><a href="https://t.me/Artemis_Vpn_Free" target="_blank">@Artemis_Vpn_Free</a> : كانال رايگان</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>59</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">11.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">N. Sh</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2154"><time datetime="2023-09-21T21:30:37+00:00" class="time">21:30</time></a></span>
@@ -169,7 +282,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2156" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NiwidCI6MTc1MTk3NjIwMSwiaCI6ImIxN2YyZjI1ZTA3M2NiY2YwZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2156" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NiwidCI6MTc1MTk4MTMwNCwiaCI6ImVkY2I0NjcwNDI0MzVmOWVjZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -192,17 +305,15 @@
     <a href="https://t.me/Artemis_Vpn_Free/2156" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>156</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>69</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">11.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">~𝓗𝓪𝓷𝓪</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2156"><time datetime="2023-09-22T15:37:56+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">~𝓗𝓪𝓷𝓪</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2156"><time datetime="2023-09-22T15:37:56+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2157" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NywidCI6MTc1MTk3NjIwMSwiaCI6IjM0MGEzOTQ0NTgxNTlmMThhMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2157" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1NywidCI6MTc1MTk4MTMwNCwiaCI6ImUwMzE5OGJkMmZjMzkwYWRmYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -217,20 +328,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">همراهان گرامی متاسفانه به دلیل مشکلات که برای ادمین ها پیش اومد پاسخگویی به پی وی هاتون با وقفه همراه است سعی میکنیم تا به زودی به همه پیام ها جواب بدیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA48D.png')"><b>🤍</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>162</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>60</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">9.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">~𝓗𝓪𝓷𝓪</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2157"><time datetime="2023-09-25T23:17:09+00:00" class="time">23:17</time></a></span>
+    <span class="tgme_widget_message_views">9.86K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">~𝓗𝓪𝓷𝓪</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2157"><time datetime="2023-09-25T23:17:09+00:00" class="time">23:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2158" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1OCwidCI6MTc1MTk3NjIwMSwiaCI6IjA2NWI3YjgyZDc4ZjczMjM2MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2158" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1OCwidCI6MTc1MTk4MTMwNCwiaCI6ImZkZDIyODRkNjAwNDk3ZDZlYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -245,20 +354,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>27</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>16</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Artemis</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2158"><time datetime="2024-09-13T18:26:32+00:00" class="time">18:26</time></a></span>
+    <span class="tgme_widget_message_views">2.05K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Artemis</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2158"><time datetime="2024-09-13T18:26:32+00:00" class="time">18:26</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2159" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1OSwidCI6MTc1MTk3NjIwMSwiaCI6IjI5MGQyYTlkNzNmMTgwZGMzNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2159" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE1OSwidCI6MTc1MTk4MTMwNCwiaCI6ImNlMWIzM2FlYTAyMTA0YTIxMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -275,10 +382,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام عزیزان وقتتون بخیر <br/>در این شرایط قطعی تصمیم بر این شد برای همه دوستان <br/>بسته 10 گیگ 10 روزه 1 کاربر ارایه بدیم (به رایگان)<br/><br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">748</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A-Vpn</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2159"><time datetime="2025-06-15T13:46:49+00:00" class="time">13:46</time></a></span>
@@ -286,7 +391,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2160" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MCwidCI6MTc1MTk3NjIwMSwiaCI6ImJjMzQ4NjAzNTFkMThlYjg1OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2160" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MCwidCI6MTc1MTk4MTMwNCwiaCI6IjViN2EyMGQzN2YxMmI0YTBmMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -303,10 +408,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">پیام بدین دریافت کنید <br/>حتما در متن پیام بگید بسته رایگان میخواید <br/>در کانال ما هم عضو باشید <br/><br/><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">777</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A-Vpn</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2160"><time datetime="2025-06-15T13:47:11+00:00" class="time">13:47</time></a></span>
@@ -314,7 +417,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Artemis_Vpn_Free/2161" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MSwidCI6MTc1MTk3NjIwMSwiaCI6IjdjMjM1YjY0ZjE2YjFiNzA3ZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="Artemis_Vpn_Free/2161" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MSwidCI6MTc1MTk4MTMwNCwiaCI6IjM4NjFmZDhhZTVjN2UzNDViZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -331,9 +434,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">سلام عزیزان وقتتون بخیر  در این شرایط قطعی تصمیم بر این شد برای همه دوستان  بسته 10 گیگ 10 روزه 1 کاربر ارایه بدیم (به رایگان)  @A_Vpn_Owner</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -342,7 +443,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2162" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MiwidCI6MTc1MTk3NjIwMSwiaCI6ImVkODc0OTIyNjdkMWU1YTkxMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2162" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MiwidCI6MTc1MTk4MTMwNCwiaCI6IjAyNzYwOWUyYjNhOTgyNzY3YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -359,9 +460,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">حجم پیام ها  به شدت زیاده و سرور ها محدود لطف کنید پیام بزارید به ترتیب از اخر جواب میدم <br/>همچنین ممنون میشم مارو به دوستاتون معرفی کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -370,7 +469,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2163" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MywidCI6MTc1MTk3NjIwMSwiaCI6IjYxZDFjNTBkZGU1MTgzZTMwOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2163" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2MywidCI6MTc1MTk4MTMwNCwiaCI6IjJmZmMyNTdjMTFmNjIzYmRmNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -387,9 +486,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">برای همه ارسال میشه فقط باید صبر کنید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -398,7 +495,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2164" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NCwidCI6MTc1MTk3NjIwMSwiaCI6ImQyYjk4NzZmZTZlNjZjNDhmYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2164" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NCwidCI6MTc1MTk4MTMwNCwiaCI6IjkwODk0ZTRhMDI4NjI4ZDM2MSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -415,9 +512,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">وقتتون بخیر <br/>ما از دیشب 10 شب به بعد تمامی سرور هامون پر شده <br/>در حال اضافه کردن سرور هستیم به زودی براتون دوباره ارسال میشه<br/><br/><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -426,7 +521,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2165" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NSwidCI6MTc1MTk3NjIwMSwiaCI6ImYzZjI3ZWU3MGY3NjQwNjExMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2165" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NSwidCI6MTc1MTk4MTMwNCwiaCI6IjI0NmU3MTg2M2VlMjRhMThjZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -443,9 +538,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Artemis_Vpn/926"><span dir="auto">Artemis Vpn</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">A-Vpn</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور های اختصاصی دوباره قابل خریداری هستن <br/>تنها 60 کاربر موجودی داریم <br/>قیمت بسته های یک ماه 50 درصد تخفیف خورده<br/>و قیمت بسته های 3 ماه 30 درصد <br/>الویت با دوستانی ک زودتر پیام میدن (بدون هماهنگی پرداخت نکنید لطفا )<br/>دوباره افزایش ظرفیت میدیم تا شب نیاز نیست عجله کنید.<br/><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a><br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -454,7 +547,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2166" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NiwidCI6MTc1MTk3NjIwMSwiaCI6IjIxZTA2MWQ4MzllNDRmZDAwMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2166" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NiwidCI6MTc1MTk4MTMwNCwiaCI6ImUyMjhjODViMjllZDg2YWZiZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -471,9 +564,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Artemis_Vpn/927"><span dir="auto">Artemis Vpn</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">A-Vpn</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرور های رایگان 10 گیگ هم 200 عدد افزایش ظرفیت داشتیم که از الان براتون فرستاده میشه<br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -482,7 +573,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2167" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NywidCI6MTc1MTk3NjIwMSwiaCI6IjNlMGIzYzg5NTAxOGVlMDRmMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2167" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2NywidCI6MTc1MTk4MTMwNCwiaCI6IjlkMmExOWYzOTE5NjM2MzAxZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -501,9 +592,7 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5945058581567097346 1384191816_456247810" href="https://t.me/Artemis_Vpn_Free/2167" style="width:565px;background-image:url('https://cdn4.cdn-telegram.org/file/vWYi6qZ3kc7GqsyZsYXMbZyebum8xjpv31zuFZKctXe3DyyrBYozjM8WSpuakZ2mJKAUOy9m65UqQWHlmru8sHCGZomyEc8PpA094j-wmnp0alry2FnacAZgflyopu-XBMQ8SABdesLE15e5Z6BEfUFZJM_Ko8lgjiic9ZiapOZx_uDp8-odosqiY0a5rf3_DUqK--XbLLv1ugdYH85JDW9yu8IIpt3VyK0rd1wVFtirYLHNJ5s6eH9_ljxuwar7G_Q2GZdKKjIZMrnLkkk3I7Quc0OAVVDXPbVu2szd7_v9vLOBhXS3GRmuy75s25382jjVIv8BKBBF9vE-Eva60w.jpg')">
   <div class="tgme_widget_message_photo" style="width:94.166666666667%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -512,7 +601,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2168" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2OCwidCI6MTc1MTk3NjIwMSwiaCI6IjIzOTY2NjVkOTQ4MzEzOTczZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2168" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2OCwidCI6MTc1MTk4MTMwNCwiaCI6ImY2MjhhZmVmY2JjODAxNzc5OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -531,9 +620,7 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5945058581567097347 1384191816_456247811" href="https://t.me/Artemis_Vpn_Free/2168" style="width:565px;background-image:url('https://cdn4.cdn-telegram.org/file/L7IYuL3FMaldPJ7-vfDvPRK9M54bTeDc7dZaA4pGPcanMxyi2aV73Q8ez39vfoEnFnk7teWSksqcXiB-d23Db4A87hTdXjvUAxSmG4hHeCXRfDPiinCYbjFPYRdP0WjElXbMzKjVQKw0dyG_V_hbb6GYc4tfgLbZYiBfXE0eGGGVGDCgZsfA8dzz59baJPPO-a6JON5fcxc3fw7U1dMLsep8hLd93GspyI7IKTwgHh9R1mrT5rGORdfTNsPdkg2rqwsQQ31WxXfp_BZ4Dh8zHC0rdsTEnW8Qpb9FodhZFzcoeVtvDxuqVjtF-7qsLDkVTZWAe0ABaouQ04l9Lv4rkw.jpg')">
   <div class="tgme_widget_message_photo" style="width:94.166666666667%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -542,7 +629,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2169" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2OSwidCI6MTc1MTk3NjIwMSwiaCI6Ijk2NWQ3NzIwNjA5NTk1OWVkMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2169" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE2OSwidCI6MTc1MTk4MTMwNCwiaCI6Ijc1YmRjOGFiZWQyZTg2NDZkYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -559,9 +646,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Artemis_Vpn/930"><span dir="auto">Artemis Vpn</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">A-Vpn</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تخفیفات تا جمعه تمدید شد. برای خرید به ایدی <br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a> <br/><br/>پیام بدین <br/>لطفا یک پیام کامل بفرستید به همراه بسته انتخابی <br/>وقتی چندتا پیام میدین میاید بالا و چون از پایین جواب میدیم عملا هربار اینکارتون باعث میشه دیرتر بتونیم پیاماتون ببینم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -570,7 +655,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2170" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MCwidCI6MTc1MTk3NjIwMSwiaCI6ImIyZmNmM2I5ZDZiNmZlZWIwYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2170" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MCwidCI6MTc1MTk4MTMwNCwiaCI6IjM2MWI5ZmI3N2Y2MDZmNDZjNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -587,9 +672,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Artemis_Vpn/931"><span dir="auto">Artemis Vpn</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">A-Vpn</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سرویس های رایگان هم کاملا فعال و پرسرعت هستن <br/>اگر مشکلی در اتصال یا کندی سرعت داشتین حتما پیام بدین رسیدگی میکنیم براتون</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -598,7 +681,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2171" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MSwidCI6MTc1MTk3NjIwMSwiaCI6IjVlNTk5MzIxYzRmNzRiZWY0NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2171" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MSwidCI6MTc1MTk4MTMwNCwiaCI6IjRhNjMzYmViNTkwMTBhYTFhMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -615,9 +698,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Artemis_Vpn/932"><span dir="auto">Artemis Vpn</span></a>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">A-Vpn</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">متاسفانه حدود 214 پیام نخونده وجود داره اگه الان پیام بدین حدودا  در بهترین حالت 1 ساعت دیگه خونده میشه واقعا بابت این تاخیر از همتون عذرمیخوام عزیزان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -626,7 +707,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2172" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MiwidCI6MTc1MTk3NjIwMSwiaCI6IjI5NTQxY2JiYTEwM2M1MWEwNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2172" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MiwidCI6MTc1MTk4MTMwNCwiaCI6ImQxZjY2ZTUxMDY2YmE3MWM3YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -649,16 +730,14 @@
   <video src="https://cdn4.cdn-telegram.org/file/b5efecf542.mp4?token=Tdh2VmKgjHizLvvXU7J7CP00ygJezUrBOZQpN9MSjChqzmcVeObDFNuWJ1owy6Coy-eWJpZrlUz-_-ynDgWbWeWfFFzdwZolX3li1dRszWNlEUxlEomSh4VQrGI553JKAVe6EHdARWFSGiiL7icG2evJgT5XqSvmaXWcJrgSd8zXYCAD3aW8NS_8Xgmq2vw_ZKThjFlspFAMe34DZTnUIa08pbnIGD8SI7AiWMwHpvqD-BUFWGAy9GisDbRN6uXP8RXz6k3FwJW-aq4k-b43c9-wVWjP5Rr_HXJHO570TEtmeuyfIp9XNTvd-ie638zxDqTF3Y_CmAeQSe_nYVdEdQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:21</time>
+<time class="message_video_duration js-message_video_duration">0:20</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">بابت جلوگیری از سو استفاده مجبور شدم عکس ها و اسم های افراد مخدوش کنم <br/><br/>این حجم پیام های شما عزیزان از دیروز تا امروز <br/>پیشاپیش بابت تاخیر تو پاسخگویی از همتون عذرخواهی میکنم<br/><br/>اولویت با اونایی که چتشون پایین تره <br/>حتما برا همتون میفرستم فقط کمی زمان میبره <br/><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a><br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">بابت جلوگیری از سو استفاده مجبور شدم عکس ها و اسم های افراد مخدوش کنم <br/><br/>این حجم پیام های شما عزیزان از دیروز تا امروز <br/>پیشاپیش بابت تاخیر تو پاسخگویی از همتون عذرخواهی میکنم<br/><br/>اولویت با اونایی که چتشون پایین تره <br/>حتما برا همتون میفرستم فقط کمی زمان میبره <br/><a href="https://t.me/Artemis_Vpn" target="_blank">@Artemis_Vpn</a><br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">770</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">A-Vpn</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Artemis_Vpn_Free/2172"><time datetime="2025-06-16T13:18:49+00:00" class="time">13:18</time></a></span>
@@ -666,7 +745,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2173" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MywidCI6MTc1MTk3NjIwMSwiaCI6IjQ0OWU3ZTA0NTFjMTY3ZDJkYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Artemis_Vpn_Free/2173" data-view="eyJjIjotMTc3MDA1MDgyOSwicCI6MjE3MywidCI6MTc1MTk4MTMwNCwiaCI6IjQ1MDE3ZjljMDBlMTI0N2Q5YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Artemis_Vpn_Free"><i class="tgme_widget_message_user_photo bgcolor1" data-content="A"><img src="https://cdn4.cdn-telegram.org/file/t5oAn4GKVueQUndQSrgZlXpbbNY2-xXwP0ovqQw1rspRZvQBBWOtHJ8jKhSIEyuf6Hk-zHsXYgT_BoHrcGGC7IYkUDseklOblz9YuOpXBR2ThW9wRaaDYBTPBaLpELYwXx6yU0KfRAwHaJKLmEml0WlMxs4M7CnzHBtlqiGgS5QiuTSpMtRrGamdV88X9nZ_iU4SwQvtFrQQhSHHiY797Z84Azb-_ZUOPeFpWmJeIjdE8F46umBS6Z-7WgK4t-EvwrutJU_iIXnoH5k4rbseKvJWwlnnstF13ZYYX6Q78kTG4j6dzTdE4WBMRhzq59Xo2FA3q53KiwLxbRahWNH3VA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -683,9 +762,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Artemis_Vpn_Free"><span dir="auto">Artemis Vpn(Free)</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">فروش به تعداد محدود باز شد <br/>به تعداد فقط و فقط 23 کاربر با پشتیبانی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i><br/>و دریافت وی پی ان رایگان <br/>به تعداد 134 کاربر<br/>برای دریافت هرکدوم از خدمات و اطلاعات بیشتر به آیدی زیر پیام بدید<br/><a href="https://t.me/A_Vpn_Owner" target="_blank">@A_Vpn_Owner</a><br/>(تعداد پیام ها بالاست ممنون که منتظر میمونید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>)</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -703,11 +780,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 47.99ms -->
+<!-- page generated in 41.39ms -->

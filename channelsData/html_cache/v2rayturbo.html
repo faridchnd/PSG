@@ -45,9 +45,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -76,7 +193,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1.54K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">8</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های اختصاصی Turbo V2Ray: تجربه اتصالی راحت و بی دردسر و پرسرعت به اینترنتِ آزاد و بدون فیلتر <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> <a href="https://t.me/TurboV2RayAdmin" target="_blank">@TurboV2RayAdmin</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ae39143a3d9f1a5205_16120022955795586714">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d250e39ef071642ebc_13320140996553723925">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -97,7 +214,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ae39143a3d9f1a5205_16120022955795586714">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d250e39ef071642ebc_13320140996553723925">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/v2rayturbo">
@@ -114,7 +231,7 @@
 <main class="tgme_main" data-url="/v2rayturbo">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="V2RayTurbo/1" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MSwidCI6MTc1MTk3NjIwMSwiaCI6ImY5OWVlYzI4ZTQ5NjY5YTk4YyJ9">
+      <div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="V2RayTurbo/1" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MSwidCI6MTc1MTk4MTMwNCwiaCI6ImJlZjUyMWEyYmJmZTI0MWQ0ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -131,9 +248,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel created</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -142,7 +257,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/18" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MTgsInQiOjE3NTE5NzYyMDEsImgiOiIwNmY4OWM3MjYwN2Y1NTYxYzAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/18" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MTgsInQiOjE3NTE5ODEzMDQsImgiOiIxZjc4ZWM2ZDRmZjA4ZDMyMzEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -161,18 +276,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5019469485484125292 1168686311_456240236" href="https://t.me/V2RayTurbo/18" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/J9IxWOZ_UVWUF1se1WDterRqfvIoNWe6kR_L4-EOyA8Ox9tbg7rcAWaj-Zm_8zxm_-3pzdl-iDYEk2T3yqpcUf5ZFBVfEx35nRPh9S9V5pwbit01E4g7A_HfIsR88WENPsw7g3LhDFOAQKOCD2Uva2SuaB-eiNZDec-Ggzk5JIHccqovU8fOKPKNoYTLSFWblBb_SLAGUu85V0l16eQ1I6nEavsY6zRLbUE3VxV-UnApyyxpqPgarj_a8oc4q5tmUoq4--slATBMwNg4sKuFXp8sr95VMUEvzwUx9_N3OMG7wp6-JEMfpbE0RWyeySKBie-nf2v0GxRlj-7OTYDliw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های اختصاصی Turbo V2Ray: تجربه اتصالی راحت و بی دردسر و پرسرعت به اینترنتِ آزاد و بدون فیلتر <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>قابلیت اتصال در سیستم عامل های اندروید و ios<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i> ویندوز و مک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')"><b>🖥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>با بهترین قیمت و بالاترین سرعت در دانلود و آپلود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> (بسته به منطقه شما)<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>متصل با تمامی اپراتور های تلفن همراه و اینترنت ثابت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>بهترین گزینه برای استفاده از تلگرام، اینستاگرام، یوتیوب، واتساپ، توییچ، گیم، وبگردی و... <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>قابلیت چک کردن مقدار باقیمانده از حجم و زمان سرویس<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB3.png')"><b>⏳</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>تمامی سرویس ها تضمینی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>با پشتیبانی همیشگی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های اختصاصی Turbo V2Ray: تجربه اتصالی راحت و بی دردسر و پرسرعت به اینترنتِ آزاد و بدون فیلتر <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>قابلیت اتصال در سیستم عامل های اندروید و ios<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i> ویندوز و مک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F96A5.png')"><b>🖥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>با بهترین قیمت و بالاترین سرعت در دانلود و آپلود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> (بسته به منطقه شما)<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>متصل با تمامی اپراتور های تلفن همراه و اینترنت ثابت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>بهترین گزینه برای استفاده از تلگرام، اینستاگرام، یوتیوب، واتساپ، توییچ، گیم، وبگردی و... <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>قابلیت چک کردن مقدار باقیمانده از حجم و زمان سرویس<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB3.png')"><b>⏳</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>تمامی سرویس ها تضمینی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i>با پشتیبانی همیشگی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/18"><time datetime="2023-04-12T15:37:29+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">3.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/18"><time datetime="2023-04-12T15:37:29+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/19" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MTksInQiOjE3NTE5NzYyMDEsImgiOiI0MDAyNjJiYTM0MDkwYjRjZmYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/19" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MTksInQiOjE3NTE5ODEzMDQsImgiOiI5MjM4MmY2OGIyNmU4NTExZTQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -201,9 +314,7 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i> </b><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های ما در اینستاگرام<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/>‌&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>تعرفه سرویس های Turbo V2Ray <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> ماهه و <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربره:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>50 گیگ: 110 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>100 گیگ: 160 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i> 200 گیگ: 230 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> ماهه و <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/34E283A3.png')"><b>4️⃣</b></i> کاربره:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>10 گیگ: 60 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>20 گیگ: 85 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>30 گیگ: 110 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>50 گیگ: 140 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>100 گیگ: 195 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>200 گیگ: 295 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>300 گیگ: 390 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>قبل از خرید، میتونین تست هم انجام بدین.<br/>&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i> </b><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های ما در اینستاگرام<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/>‌&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')"><b>🔺</b></i>تعرفه سرویس های Turbo V2Ray <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i> ماهه و <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربره:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>50 گیگ: 110 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>100 گیگ: 160 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i> 200 گیگ: 230 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>سرویس های <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> ماهه و <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/34E283A3.png')"><b>4️⃣</b></i> کاربره:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>10 گیگ: 60 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>20 گیگ: 85 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>30 گیگ: 110 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>50 گیگ: 140 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>100 گیگ: 195 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BD.png')"><b>◽️</b></i>200 گیگ: 295 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E297BE.png')"><b>◾️</b></i>300 گیگ: 390 هزار تومان<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BB.png')"><b>🔻</b></i>قبل از خرید، میتونین تست هم انجام بدین.<br/>&rlm;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -212,7 +323,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/22" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjIsInQiOjE3NTE5NzYyMDEsImgiOiJhMWEzN2RiOWZiMjQyNThhNTIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/22" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjIsInQiOjE3NTE5ODEzMDQsImgiOiIzNjU0MzE2Y2M2NDNkNjBiNjcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +351,7 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های Turbo V2Ray در دانلود فایل از تلگرام<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><br/>همینطور که میبینید یه فایل <u>55</u> مگابایتی زیر <u>15</u> ثانیه دانلود شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/>با سرویس های ما دیگه از شر فیلترینگ و سرعت پایین راحت میشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های Turbo V2Ray در دانلود فایل از تلگرام<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><br/>همینطور که میبینید یه فایل <u>55</u> مگابایتی زیر <u>15</u> ثانیه دانلود شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/>با سرویس های ما دیگه از شر فیلترینگ و سرعت پایین راحت میشید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +360,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/23" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjMsInQiOjE3NTE5NzYyMDEsImgiOiJlY2IxZjI0YTI0NTNlZjJjMmYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/23" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjMsInQiOjE3NTE5ODEzMDQsImgiOiJlZDgzNjU5OGNhNmViYzRlYjkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -270,18 +379,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5033279759550884737 1171901766_456240001" href="https://t.me/V2RayTurbo/23" style="width:432px;background-image:url('https://cdn1.cdn-telegram.org/file/HTkSF-gfpQlMTH41jFJD0yYqUZFbbODev9mopSTz0ealstC_rNX7OOE5i5c-tzDlHRRQimtDsSqm1_RP-xwMW5KMiv5teHVx3wB-d2MnlGRm2amUfy2IW2p3xBQ7PlwenjYYOahBLLpxurtansiW4poK_htIixQelp65YDj8PBRYjKZTM7huz41s8fTHPeVDNe2uMXUiWH5R9G0gDCaurs-82wdbrOpX-EyG3vHJNzZupR1VOYiQ9c8XomATUg7ZYH6IJRhxa4ji1oVT8bRYuNBWzGVUWBC0Gmq8bWBv0_TLUd6qwmRphCCRYjPZtp8tRJ9Dajbq2m2G8HisEfhVAQ.jpg')">
   <div class="tgme_widget_message_photo" style="width:72%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> خریدار عزیز<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/>اولویت ما رضایت شما عزیزان هست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> خریدار عزیز<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/>اولویت ما رضایت شما عزیزان هست<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/23"><time datetime="2023-04-15T11:07:20+00:00" class="time">11:07</time></a></span>
+    <span class="tgme_widget_message_views">2.93K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/23"><time datetime="2023-04-15T11:07:20+00:00" class="time">11:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/24" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjQsInQiOjE3NTE5NzYyMDEsImgiOiIxMDliZDZhZjhiOTVjMjcyYmUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/24" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjQsInQiOjE3NTE5ODEzMDQsImgiOiIwZWNmN2NhYWYyYWZlMDA5ZTMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -298,18 +405,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><s><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9498.png')"><b>🔘</b></i>دوستان عزیز<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>تخفیف <u>15</u> درصدی داریم به مناسبت عید فطر روی تمامی سرویس ها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i><br/></s><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>جهت خرید و مشاوره به آیدی زیر پیام بدید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i>دوستانی که ریپورت هستن میتونن به ربات پیام بدن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/V2RayTurboBot" target="_blank"><b>@V2RayTurboBot</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/24"><time datetime="2023-04-21T20:27:36+00:00" class="time">20:27</time></a></span>
+    <span class="tgme_widget_message_views">2.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/24"><time datetime="2023-04-21T20:27:36+00:00" class="time">20:27</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/25" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjUsInQiOjE3NTE5NzYyMDEsImgiOiJkZTIyNzQ0NmM3NTk4OTBhMDgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/25" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjUsInQiOjE3NTE5ODEzMDQsImgiOiIzMjJhNTY4MTY0Yzk3MmU3NTkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -328,9 +433,7 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5053346327794133690 1176573878_456239802" href="https://t.me/V2RayTurbo/25" style="width:432px;background-image:url('https://cdn1.cdn-telegram.org/file/eHxOzgROm3o0c6bVpcJLb00VZtRJmuV239MaGJ8X9Cu0-J0BJ8Nu6Z3T9QLrGp8dEAUVxWydCTs7BDtvDABTO2Y1ewLq-8sIj8A9cZEY2HNgTrj4t_jHqdBGUPVW49MQxuJbl8mmObgmo-IpV0uioUMiFsgN5ozF5kvyPBnBmcbVt2tvq6wZipQUCX_-HqTCJRiRleiO9T7xph2Yh0eTF2ua8iXJb41v9lSJ7-rzmvqnFz2tv2bLu8OjIFxSPjG5lFa0KZL8Wd_8AqwCa-hNIyAkxhqkTUaHbFmUwF4F5_MK-htJkqbUhfWYs61krgqPbt5IBfq532TKncuRspftAA.jpg')">
   <div class="tgme_widget_message_photo" style="width:72%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -339,7 +442,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/26" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjYsInQiOjE3NTE5NzYyMDEsImgiOiJkOWU5ZTRlZWFiOTliMTc4MmUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/26" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjYsInQiOjE3NTE5ODEzMDQsImgiOiI2NmFkMjJhYjAwMzI4YjhjYTIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -368,18 +471,16 @@
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i> </b><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های ما در یوتیوب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC86.png')"><b>⬆️</b></i> </b><a href="?q=%23%D8%AA%D8%B3%D8%AA%E2%80%8C%D8%B3%D8%B1%D8%B9%D8%AA"><b>#تست‌سرعت</b></a><b> سرویس های ما در یوتیوب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/26"><time datetime="2023-05-02T17:51:02+00:00" class="time">17:51</time></a></span>
+    <span class="tgme_widget_message_views">2.24K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/26"><time datetime="2023-05-02T17:51:02+00:00" class="time">17:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/27" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjcsInQiOjE3NTE5NzYyMDEsImgiOiJhMDJlZTlhN2E4Y2I5ZTQ5ODcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/27" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjcsInQiOjE3NTE5ODEzMDQsImgiOiI1YTg4NTc0ZmQwYWMwYzBjOTIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -398,18 +499,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5127635586839063167 1193870694_456239743" href="https://t.me/V2RayTurbo/27" style="width:486px;background-image:url('https://cdn1.cdn-telegram.org/file/pQlfbhY6qof8nnE80Dlw3bFJ97BwVsB5t1AqbNGZab5k6oqJRQnLBxQ_cvjhbDUJe9lkvjdDkuu3OME1sE4cV4r5RXn8QxwE4PxDtHlWFrhDR5Pd3VP4OtbtH5WY-G0rt2Z-FWIq5ZDxmZX7IQWsgaHJsuPlQnXEOcrgCRXAQm3da6YPNISoNei6mc_efCG7iEeIujhnBpUhLQhAQ4UUy8d6a2XeytoGiNKPpGeTQJvXxNN6yhPDjtEwNCwIv4mDI0ereZ6wELIQY2dICrDLGhS5nsu_156sivpCNC1S_gb0x2V2k9N5OgqGyhAhg5CJ3N5KhB-hSC_X1sXer6adww.jpg')">
   <div class="tgme_widget_message_photo" style="width:81%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> شما<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/27"><time datetime="2023-05-17T08:30:13+00:00" class="time">08:30</time></a></span>
+    <span class="tgme_widget_message_views">2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/27"><time datetime="2023-05-17T08:30:13+00:00" class="time">08:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/28" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjgsInQiOjE3NTE5NzYyMDEsImgiOiI4MjM2Y2NlM2FlMjllN2UxMTAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/28" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjgsInQiOjE3NTE5ODEzMDQsImgiOiI3NzQ0MTRkMTRkZTAxYzA0ODYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -424,20 +523,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: سوئد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B8F09F87AA.png')"><b>🇸🇪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><b><s>vless://aa0c8dbd-7713-4af9-ffc2-aef2fab0fa70@sm.kiava.fun:443?encryption=none&amp;flow=xtls-rprx-vision&amp;security=reality&amp;sni=www.speedtest.net&amp;fp=chrome&amp;pbk=ZupmU0Um3S4mdzBkGMFjBa76n_h1i6P6i3LMYk5Iex0&amp;spx=%2F&amp;type=tcp&amp;headerType=none#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.26/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/28"><time datetime="2023-06-15T15:37:02+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">1.56K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/28"><time datetime="2023-06-15T15:37:02+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/29" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjksInQiOjE3NTE5NzYyMDEsImgiOiJhNzMwZTg4MzAzYTJiYTE4YzkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/29" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MjksInQiOjE3NTE5ODEzMDQsImgiOiI2ZTMzMmQ3Mjc2NWQ4NjdlOGMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -454,18 +551,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: فنلاند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><b><s>vless://82dd3c3c-c292-41f7-955e-e9cc998225f6@ir10hostdl.go-to-happy.click:44270?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=http#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.26/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/29"><time datetime="2023-06-16T18:40:00+00:00" class="time">18:40</time></a></span>
+    <span class="tgme_widget_message_views">1.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/29"><time datetime="2023-06-16T18:40:00+00:00" class="time">18:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/30" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzAsInQiOjE3NTE5NzYyMDEsImgiOiJlNWQxYjc0ZDUwYWJiNzg1ZDAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/30" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzAsInQiOjE3NTE5ODEzMDQsImgiOiJjMzIzYWQxZDgwNTFhYTUxN2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -484,18 +579,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 4931683712618310679 1148247093_456240151" href="https://t.me/V2RayTurbo/30" style="width:431px;background-image:url('https://cdn1.cdn-telegram.org/file/Et3jkMDSOE7X_ILnoWWhjxNSfU7s73WS0Q6f6_yfwBevKwSNvfMTr5TlHsl6NwyyxcVWO7hfTOAsmfu6o9LaK2JctS2bCeYI6ZNNXTS2sqgdFwm-15wq8-seocau7UOtSb9FsNShrM_xbfIWst14TyBNDyJVg0ChMl6MdL5cxg55Ch_j58yZs4ddUOLDHl8W5G5LNPOJHf1-AVQCfF0-_9u5X86EKmHTSO1Q1jkJvyCOqTkZg0RMzLNVsPFutdSTJOrEKKrgXWxrLtPDElJUZlUxtX2ZMQPefa-Q7ZxajAsUHSifOgXrMLjbXyATh83-dHlf_LGaZNUYuwU00D9UQw.jpg')">
   <div class="tgme_widget_message_photo" style="width:71.833333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> خریدار عزیز و تمدید سرویسشون<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D8%B1%D8%B6%D8%A7%DB%8C%D8%AA"><b>#رضایت</b></a><b> خریدار عزیز و تمدید سرویسشون<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29EA1.png')"><b>➡️</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i></b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/30"><time datetime="2023-06-17T16:38:02+00:00" class="time">16:38</time></a></span>
+    <span class="tgme_widget_message_views">1.74K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/30"><time datetime="2023-06-17T16:38:02+00:00" class="time">16:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/31" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzEsInQiOjE3NTE5NzYyMDEsImgiOiIzMjc2ZWM5NTdkZGFlOWVhM2MifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/31" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzEsInQiOjE3NTE5ODEzMDQsImgiOiIxMWE4OTg2YTM3YWIxNjhmOTYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -510,20 +603,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: فنلاند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم</b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><b><s>vless://4100e881-b3e1-418c-eb4a-bea5ac651d2d@ir10hostdl.go-to-happy.click:44270?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=http#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.26/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/31"><time datetime="2023-06-20T15:37:16+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">1.85K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/31"><time datetime="2023-06-20T15:37:16+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/32" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzIsInQiOjE3NTE5NzYyMDEsImgiOiJlZmExZDA5YTI0YjM3NjQ1ZDIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/32" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzIsInQiOjE3NTE5ODEzMDQsImgiOiI2YzJjZmQyNWE0NDk3MWVjZDcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -539,24 +630,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/V2RayTurbo/31" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/V2RayTurbo/31" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: فنلاند<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: @V2RayTurbo <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i>  vless://4100e881-b3e1-418c-eb4a-bea5ac651d2d@ir10hostdl.go-to-happy.click:44270?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=http#Telegram%3A%20%40V2RayTurb…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اوکیه براتون؟ توی کامنتا بگین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/32"><time datetime="2023-06-20T15:45:07+00:00" class="time">15:45</time></a></span>
+    <span class="tgme_widget_message_views">1.97K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/32"><time datetime="2023-06-20T15:45:07+00:00" class="time">15:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/33" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzMsInQiOjE3NTE5NzYyMDEsImgiOiJmMzY5MzVjMTk1NzdlNDYyMDMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/33" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzMsInQiOjE3NTE5ODEzMDQsImgiOiJlODM4NGNlNzEyNzg0NWFmYTgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -571,20 +660,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><s>vless://f09a3c7b-cf5b-4697-8140-19c1749480c4@ms.victor77.website:20158?encryption=none&amp;security=reality&amp;sni=Discord.com&amp;fp=firefox&amp;pbk=bf0D8kLkfGVYP8NVpiOGKcm-wutxlcLXua3760tRgkI&amp;sid=adf6b90c&amp;spx=%2F&amp;type=tcp&amp;headerType=none#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.26/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه. برنامتون رو به آخرین نسخه آپدیت کنین و ساعت موبایلتون هم روی اتومات باشه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/33"><time datetime="2023-07-04T18:07:03+00:00" class="time">18:07</time></a></span>
+    <span class="tgme_widget_message_views">1.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/33"><time datetime="2023-07-04T18:07:03+00:00" class="time">18:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/34" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzQsInQiOjE3NTE5NzYyMDEsImgiOiJkZTViYTNmODg5Mzk1ZjJmZTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/34" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzQsInQiOjE3NTE5ODEzMDQsImgiOiJjMWYwYmZmM2U1NDNhNDUzMDgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -599,20 +686,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: ترکیه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B9F09F87B7.png')"><b>🇹🇷</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><s>vless://62562be7-6553-43bd-fba9-354fdba4f7c2@host.speedgame.tech:443?encryption=none&amp;security=tls&amp;sni=host.speedgame.tech&amp;type=ws&amp;host=host.speedgame.tech&amp;path=%2F#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.27/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه. برنامتون رو به آخرین نسخه آپدیت کنین و ساعت موبایلتون هم روی اتومات باشه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/34"><time datetime="2023-07-23T15:37:42+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">1.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/34"><time datetime="2023-07-23T15:37:42+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/35" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzUsInQiOjE3NTE5NzYyMDEsImgiOiI4OGMxZWFkMmI0ZGEwOGRkMjMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/35" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzUsInQiOjE3NTE5ODEzMDQsImgiOiJiNjU1MDI4NTZhY2ExMzQzMDcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -627,20 +712,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><s>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlRlbGVncmFtOiBAVjJSYXlUdXJibyB8IEFsbCBPcGVyYXRvcnMiLA0KICAiYWRkIjogIjEyOC4xNDAuMTEyLjE1MSIsDQogICJwb3J0IjogIjMwMzAiLA0KICAiaWQiOiAiNDEwYmU5NDEtYzU1YS00Y2VjLTk1OTYtNzYxMDc2ZWE2YzYwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ0Y3AiLA0KICAidHlwZSI6ICJodHRwIiwNCiAgImhvc3QiOiAiIiwNCiAgInBhdGgiOiAiIiwNCiAgInRscyI6ICIiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiDQp9<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.27/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه. برنامتون رو به آخرین نسخه آپدیت کنین و ساعت موبایلتون هم روی اتومات باشه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/35"><time datetime="2023-07-27T15:37:01+00:00" class="time">15:37</time></a></span>
+    <span class="tgme_widget_message_views">1.69K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/35"><time datetime="2023-07-27T15:37:01+00:00" class="time">15:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/36" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzYsInQiOjE3NTE5NzYyMDEsImgiOiI1ZWMzODgxNzgyMWMxZjk0NWMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/36" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzYsInQiOjE3NTE5ODEzMDQsImgiOiI0OTRjMTY5ZjYwMzQ1MTFkZTgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -655,20 +738,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><s>vless://2efd0ebb-f5bd-47e2-ad5d-2b3a876ab92a@103.75.197.50:30975?encryption=none&amp;security=none&amp;type=tcp&amp;headerType=http#Telegram%3A%20%40V2RayTurbo%20%7C%20All%20Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.5)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.27/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه. برنامتون رو به آخرین نسخه آپدیت کنین و ساعت موبایلتون هم روی اتومات باشه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/36"><time datetime="2023-07-30T17:39:00+00:00" class="time">17:39</time></a></span>
+    <span class="tgme_widget_message_views">2.28K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/36"><time datetime="2023-07-30T17:39:00+00:00" class="time">17:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/37" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzcsInQiOjE3NTE5NzYyMDEsImgiOiI2MGFjMDhhY2M5MjE4ZTY5ZWUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="V2RayTurbo/37" data-view="eyJjIjotMTU1ODU2NDYwOCwicCI6MzcsInQiOjE3NTE5ODEzMDQsImgiOiJlNjAxMDBhNmRjNDY3NmU5MTkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/V2RayTurbo"><i class="tgme_widget_message_user_photo bgcolor6" data-content="T"><img src="https://cdn1.cdn-telegram.org/file/WgP_R1sgL89Jnz2lzUpvFHJaXd1qZMVcgxMxTkJYJNv-nQTlIx8NJOw_UDH3-FJvgjMTZOjF2bh3IOp8xu1KNlSlU-LuDngCzeY5TCDLQt49OYywLCzuY5flibJ2Uv2cdc5gbvekxNIkIJi6j93YaKp0RDpcKPHOUT1FK426qh1MCGW3wdmmZUMWh5Ph7HrD1_CBl8xL2tg99DOQqQlaQfhV56XwPRylhZK0chef5vGJhDl_AkLAIkc7SB1KOlzu-FnDCm61EkvfjaqwnsTIpJ50V5TDwLjgx3HvQX00Z-3Ip4KsSk_EJxxsGNY7sTR7BWUWn2a9NlWlxJ7_J4_fTg.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -685,13 +766,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/V2RayTurbo"><span dir="auto">Turbo V2Ray | فیلترشکن پرسرعت</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B0.png')"><b>🔰</b></i>کانفیگ رایگان | <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>همه اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i>لوکیشن: سوئد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87B8F09F87AA.png')"><b>🇸🇪</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A2.png')"><b>📢</b></i>Channel: </b><a href="https://t.me/V2RayTurbo" target="_blank"><b>@V2RayTurbo</b></a><b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i>وضعیت: اتمام حجم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i><br/><br/><s>vless://43330370-6687-48c3-ee7e-56c96853e07b@sw.mrchange.store:17081?security=none&amp;encryption=none&amp;host=www.varzesh3.com&amp;headerType=http&amp;type=tcp#Telegram%3A+%40V2RayTurbo+%7C+All+Operators<br/><br/></s></b><a href="https://github.com/2dust/v2rayNG/releases/download/1.8.6/v2rayNG_1.8.6.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز اندروید</b></a><b> (V2rayNG 1.8.6)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92BB.png')"><b>💻</b></i></b><a href="https://github.com/2dust/v2rayN/releases/download/6.28/v2rayN-With-Core.zip" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b>برنامه مورد نیاز ویندوز</b></a><b> (V2rayN)<br/></b><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i>برنامه مورد نیاز آیفون</b></a><b> (V2Box)<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i>نکته: به دلیل تعداد کانکشن زیاد ممکنه پینگ نده ولی وصله و کارِتون رو راه میندازه. برنامتون رو به آخرین نسخه آپدیت کنین و ساعت موبایلتون هم روی اتومات باشه<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡️</b></i>جهت خرید سرور اختصاصی و پرسرعت به آیدی زیر پیام بدین<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> </b><a href="https://t.me/TurboV2RayAdmin" target="_blank"><b>@TurboV2RayAdmin</b></a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/37"><time datetime="2023-08-05T17:51:02+00:00" class="time">17:51</time></a></span>
+    <span class="tgme_widget_message_views">2.04K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/V2RayTurbo/37"><time datetime="2023-08-05T17:51:02+00:00" class="time">17:51</time></a></span>
   </div>
 </div>
   </div>
@@ -705,11 +784,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 75.16ms -->
+<!-- page generated in 72.78ms -->

@@ -56,9 +56,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -87,7 +204,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">2.65K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">80</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">34</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">20</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">82</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">سرور های پرسرعت و جدید <a href="?q=%23%D8%B4%D8%AF%D9%88%D8%B3%D8%A7%DA%A9%D8%B3">#شدوساکس</a> را در این کانال پیدا کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i><br/> <a href="?q=%23%D9%BE%D8%B1%D9%88%DA%A9%D8%B3%DB%8C">#پروکسی</a>، سرور های <a href="?q=%23v2ray">#v2ray</a> و کانفیگ <a href="?q=%23injector">#injector</a> و... نیز صورت می‌گیرد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>آموزش ها را با <a href="?q=%23%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C">#آموزشی</a> در کانال پیدا کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA49D.png')"><b>🤝</b></i><br/>‌‌▬▬▬▬▬▬▬▬▬▬▬▬<br/>مدیر فروش :<br/>@<br/>تبلیغات: <a href="https://t.me/BotAdmin_support" target="_blank">@BotAdmin_support</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d217d583e2f079cfb7_13610578672878489771">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a8ebcf01e504bf1c9f_9435396352359699799">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -108,7 +225,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d217d583e2f079cfb7_13610578672878489771">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a8ebcf01e504bf1c9f_9435396352359699799">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/shadowsocksshop">
@@ -125,7 +242,7 @@
 <main class="tgme_main" data-url="/shadowsocksshop">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/shadowsocksshop?before=1518" class="tme_messages_more js-messages_more" data-before="1518"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1518" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUxOCwidCI6MTc1MTk3NjIwMSwiaCI6IjVhZjA5NDNkZDkzYTc0NjFmZCJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/shadowsocksshop?before=1518" class="tme_messages_more js-messages_more" data-before="1518"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1518" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUxOCwidCI6MTc1MTk4MTMwNCwiaCI6ImMwNzIxMzE0ZGE0NWNhNDMxNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -144,10 +261,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5891103226709786217 1371629356_456244841" href="https://t.me/shadowsocksshop/1518" style="width:664px;background-image:url('https://cdn4.cdn-telegram.org/file/Wlj0NvTX4o11rvS8zzHw6t_4sR9EpXJl-_yzjjAVKYyLPFcLgRd_z6A1VN6_MKHI0kF2Sku0EfgR4IUmwAh97WRTc0gtQ4VAWrBxc4ZRrwQ0xe8jwoJiJJzlpH8QKErU8pFpNJYr60xNIK1XD7aXN-bDIXowSb1T-fw83mWed_2M3ygEHBCq1hE9IKM3g-YAPs_T_KdYYGkGz1uuvvCS7afxsfFFmjm4Umtffko-AdYkbscCUozcZXsnJXERg-c3-hd0PP8RjuMfQ5-UeYjnNtynkHqCosNx8kOxglhgPAjWRzSLqBXMZLxkwyh9vJ0milrmFhpXZ6nTJhXO29rnQw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:120.48192771084%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9894.png')"><b>😔</b></i> آره هک شدین اسم هکر هم Sleep هست خیلی معروفه همه کامپیوتر های جهان رو هک کرده</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9894.png')"><b>😔</b></i> آره هک شدین اسم هکر هم Sleep هست خیلی معروفه همه کامپیوتر های جهان رو هک کرده</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A3.png')"><b>🤣</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">3.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1518"><time datetime="2023-12-17T07:47:37+00:00" class="time">07:47</time></a></span>
@@ -155,7 +270,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1523" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyMywidCI6MTc1MTk3NjIwMSwiaCI6ImRjYTJkNDE1MzdmMzViNDBmYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1523" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyMywidCI6MTc1MTk4MTMwNCwiaCI6IjZkOWZiZDlkY2MyYWJhMTJkNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -195,17 +310,15 @@
     </div>
   </div></a>
 </div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_voters">39</span><span class="copyonly"> voters</span><span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1523"><time datetime="2023-12-19T05:31:58+00:00" class="time">05:31</time></a></span>
+    <span class="tgme_widget_message_voters">39</span><span class="copyonly"> voters</span><span class="tgme_widget_message_views">2.89K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1523"><time datetime="2023-12-19T05:31:58+00:00" class="time">05:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1524" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNCwidCI6MTc1MTk3NjIwMSwiaCI6IjA0ZWMwNTIyNzA0OGNlMGIyMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1524" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNCwidCI6MTc1MTk4MTMwNCwiaCI6ImQxZGE0Y2QyODM3N2QzZmFjNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -221,24 +334,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/shadowsocksshop/1523" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/shadowsocksshop/1523" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">شدوساکس-shadowsocks</span>
 </div>
 <div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">عزیزا دل مشکل لینک ساب قر طرف شد؟</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان عزیزی که مشکل دارن و نه فرستادن ممنون میشم اینترنتشون و گوشیشون بگن تا بتونم مشکل بر طرف کنم</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1524"><time datetime="2023-12-19T08:08:17+00:00" class="time">08:08</time></a></span>
+    <span class="tgme_widget_message_views">2.68K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1524"><time datetime="2023-12-19T08:08:17+00:00" class="time">08:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1525" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNSwidCI6MTc1MTk3NjIwMSwiaCI6ImI3N2Q0N2RhZWRjNGNjYTk0ZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1525" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNSwidCI6MTc1MTk4MTMwNCwiaCI6IjQxYjY3NDAyNmNiMmU4ZmM3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -255,24 +366,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">بنر فعلی: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; ربات فروش وی پی ان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> ای پی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سه کاربره همزمان فعال<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>حجم دانلود نامحدود<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i> ماهیانه فقط 50 هزار&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i>پیشنهاد دیگه دارم  عضو ربات شو با لینک دعوت خودت دوستاتو دعوت کن و با هر خرید ۵ هزار بزنی به جیب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/>گفتم چه کنم درامد زایی کنم  درامد به دست بیارم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i><br/>اگ تعداد زیاد باشه پورسانت بیشتر میکنم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><br/>مثالا قیمت کانفیگ 10 هزار اضاف کنم و به پورسانت اضاف کنم بشه 15 هزار<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i></div>
-<a class="tgme_widget_message_link_preview" href="http://t.me/v2rayngshop_bot">
+<div class="tgme_widget_message_text js-message_text" dir="auto">بنر فعلی: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; ربات فروش وی پی ان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> ای پی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سه کاربره همزمان فعال<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>حجم دانلود نامحدود<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i> ماهیانه فقط 50 هزار&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i>پیشنهاد دیگه دارم  عضو ربات شو با لینک دعوت خودت دوستاتو دعوت کن و با هر خرید ۵ هزار بزنی به جیب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/>گفتم چه کنم درامد زایی کنم  درامد به دست بیارم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i><br/>اگ تعداد زیاد باشه پورسانت بیشتر میکنم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><br/>مثالا قیمت کانفیگ 10 هزار اضاف کنم و به پورسانت اضاف کنم بشه 15 هزار<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i></div><a class="tgme_widget_message_link_preview" href="http://t.me/v2rayngshop_bot">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/UAa7kBxIuc1NiZx-W6JEArJfkTzU-EqU8sRqzaBzNTsUzcvH_sAI_GT9NOh19_z8MlYaSpE4ut3VPUr0CAtxIp5GCCr-41oSW7KjQEl7MePf2e_A25-4UBw0uJt7K3yibDHyb-L6L3jq3pZ2yEZ2nAwxRx3RYoZfjVTzy30bFG1KGpBhgkekQvoFDeQiGrTPTko2skhEUHt5RI6F5nrMxO5h_ncSS5uRTtfNx2_kIJQCV2PPyWHB2I0OXbvluzPGFVpqFcRGTn9rn80KTvWaU9x7ZqyRSqBi1c56Rlio4Z_xk5LK1GPawOvnQbpAYd0KmMGaQEg5SH0njpOH8yw6WA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Vip v2ray</div>
   <div class="link_preview_description" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; تحولی جدید در افزایشـ سرعت اینترنت<br/>رفع تحریم های اینترنتی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سرعت ، کیفیت ، پشتیبانی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E97.png')"><b>🎗</b></i>کانال ما: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> @shadowsocksshop</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1525"><time datetime="2023-12-19T11:37:24+00:00" class="time">11:37</time></a></span>
+    <span class="tgme_widget_message_views">3.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1525"><time datetime="2023-12-19T11:37:24+00:00" class="time">11:37</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1526" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNiwidCI6MTc1MTk3NjIwMSwiaCI6ImM2MzdkZGViMThkYWE1OWNhNCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1526" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNiwidCI6MTc1MTk4MTMwNCwiaCI6IjMxYWNlOTFlYzQ5M2JiODVlNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -291,18 +400,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5767236653360988246 1342789422_456245334" href="https://t.me/shadowsocksshop/1526" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/m3MeyuUYXQ7KMPHWZlXhA43VTtr41z_Pl2mVJMxsqSJbYCWWP4_1-qu2j5Q-4KSx-lcW0nKH9jz1McKdWTEaQ3qv1G-0FjHU6OgcOHDkkggFgfF8xJxRaaSlNAB7MgaS3TIXA-WbbM000i6kH1wAza0WplT-ruFlBfF9mzTo67PI0PFvFEhjghVFnMK2X7XBkyiBmD-4R6ZILNlCNWv-k5CXLnGq2GSZB9g0iCJKpQ_wnxXgm5-aE5VFkXfVTwM3DX9hRYPhhzmHe5mr8MJbdVmRzFT3tzj6u5H587JIfrArS70K1ApWKQmcFJtdFU9HwD7Yh-qckiqU7AgVmE0yTg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:98.5%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://70f5d3b8-7d31-4d7d-9467-e43752d66fca@sub.shadowsokstes.WoRkErs.DeV:2096?path=vless-ws%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;host=sub.shadowsokstes.WoRkErs.DeV&amp;fp=randomized&amp;type=ws&amp;sni=sub.shadowsokstes.WoRkErs.DeV#%F0%9D%90%92%F0%9D%90%87%F0%9D%90%80%F0%9D%90%83%F0%9D%90%8E%F0%9D%90%96%F0%9D%90%92%F0%9D%90%8E%F0%9D%90%82%F0%9D%90%8A%F0%9D%90%92%F0%9D%90%92%F0%9D%90%87%F0%9D%90%8E%F0%9D%90%8F</code><br/><br/><br/><br/>Vmess Reality  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>پشتیبانی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC85.png')"><b>⬅️</b></i> همراه اول <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA5.png')"><b>🚥</b></i> ایرانسل <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA5.png')"><b>🚥</b></i> و....<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i> با گذاشتن ریکشن از ما حمایت کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5BA.png')"><b>🥺</b></i><br/><br/><br/><br/><b>【﻿دوستان　عزیز　برای　استفاده　از　لینک　های　ＳＵＢ<br/>بر　روی　لینک　های　پست　کلیک　کنید　و　از　آموزش　های　که　داخل　پست　گذاشتم　استفاده　کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i>】</b><br/><br/><br/><b>لینک ＳＵＢ برای Ｖ２ＲＡＹ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></b><br/><br/><a href="https://t.me/shadowsocksshop/1496" target="_blank" rel="noopener">https://t.me/shadowsocksshop/1496</a><br/><br/><br/><b>لینک ＳＵＢ برای ＳＩＮＧ ＢＯＸ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i>‌</b><br/><br/><a href="https://t.me/shadowsocksshop/1500" target="_blank" rel="noopener">https://t.me/shadowsocksshop/1500</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://70f5d3b8-7d31-4d7d-9467-e43752d66fca@sub.shadowsokstes.WoRkErs.DeV:2096?path=vless-ws%2F%3Fed%3D2048&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;host=sub.shadowsokstes.WoRkErs.DeV&amp;fp=randomized&amp;type=ws&amp;sni=sub.shadowsokstes.WoRkErs.DeV#%F0%9D%90%92%F0%9D%90%87%F0%9D%90%80%F0%9D%90%83%F0%9D%90%8E%F0%9D%90%96%F0%9D%90%92%F0%9D%90%8E%F0%9D%90%82%F0%9D%90%8A%F0%9D%90%92%F0%9D%90%92%F0%9D%90%87%F0%9D%90%8E%F0%9D%90%8F</code><br/><br/><br/><br/>Vmess Reality  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><br/>پشتیبانی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC85.png')"><b>⬅️</b></i> همراه اول <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA5.png')"><b>🚥</b></i> ایرانسل <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA5.png')"><b>🚥</b></i> و....<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i> با گذاشتن ریکشن از ما حمایت کنید <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5BA.png')"><b>🥺</b></i><br/><br/><br/><br/><b>【﻿دوستان　عزیز　برای　استفاده　از　لینک　های　ＳＵＢ<br/>بر　روی　لینک　های　پست　کلیک　کنید　و　از　آموزش　های　که　داخل　پست　گذاشتم　استفاده　کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i>】</b><br/><br/><br/><b>لینک ＳＵＢ برای Ｖ２ＲＡＹ <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></b><br/><br/><a href="https://t.me/shadowsocksshop/1496" target="_blank" rel="noopener">https://t.me/shadowsocksshop/1496</a><br/><br/><br/><b>لینک ＳＵＢ برای ＳＩＮＧ ＢＯＸ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i>‌</b><br/><br/><a href="https://t.me/shadowsocksshop/1500" target="_blank" rel="noopener">https://t.me/shadowsocksshop/1500</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1526"><time datetime="2023-12-19T12:40:49+00:00" class="time">12:40</time></a></span>
+    <span class="tgme_widget_message_views">3.87K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1526"><time datetime="2023-12-19T12:40:49+00:00" class="time">12:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1527" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNywidCI6MTc1MTk3NjIwMSwiaCI6IjRmZjVmODBkODczNDFjYjY3OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1527" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyNywidCI6MTc1MTk4MTMwNCwiaCI6IjhmZTNmZjZkZjQ3MjcwNTYxYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -321,18 +428,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5767236653360988255 1342789422_456245343" href="https://t.me/shadowsocksshop/1527" style="width:695px;background-image:url('https://cdn4.cdn-telegram.org/file/W9s_Zj9901jQTnvzPYVVtVFOzQ_VTxNX2XKl5duyy4Qzpvkgn_2GyfJ_cS6gt-RkGQoHhfwg351Dj-oPboVdkRrqr_gu3xaWiDFh4Jm_tRtB4umFM4B_Jg78PcI8w7s9a1MxMXzqfDpgD316aNvlWpGcO8SovL9H5_5mLTd4OkA0T6pVSYcaa2s18YQ-dpmVLBM4rObRFPA--MEANv9Ri2NSK4weOVHf72ZX4dt-H5IDKvh_VsDx8zWdlz1tz-JGXPIIGgB9pSi6YNUFnE91ielQuCHvX94PNV2PHsfyFbfkeauQjaSzLaCGZN2oUGrBr-cCBSqbCKo4IQp1v1Pnnw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:115.10791366906%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">از این به بعد میتونید کانفیگ های فعال از داخل ربات دریافت کنید مخصوص اعضا کانال<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">از این به بعد میتونید کانفیگ های فعال از داخل ربات دریافت کنید مخصوص اعضا کانال<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1527"><time datetime="2023-12-19T12:52:46+00:00" class="time">12:52</time></a></span>
+    <span class="tgme_widget_message_views">4.08K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1527"><time datetime="2023-12-19T12:52:46+00:00" class="time">12:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1528" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyOCwidCI6MTc1MTk3NjIwMSwiaCI6IjBmOWFkZjU5OTM5YTY0Yzc1MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1528" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyOCwidCI6MTc1MTk4MTMwNCwiaCI6IjIzODNlZDQ5NzRlNmM0MmY1MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -355,24 +460,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/78b0a823b7.mp4?token=pFZIyXQJvJY_73_ePyumY5UxF8PWOikKuDy2LQcoNReoqmc419EkSMvuAjdgSDUmzt90gqPz6MwHtktJ4vvrgdXULSMxlNo3pD_8njyNpLw3psrNN7RgENzTPQFbniEDHLq0-TfTeOHhCT_U-lvuR64QvOfuvk7VYu9ZqyCs3iAUqUq44n4vgHa5N0d4NXBvDzjyONmXAYqibSejoUtlqNkFVyeeVrm0kS907aLwGfDOJaFDaQ0XCWrLY8I8LrBT7I_zsN8ha7dfQUTbkhnInj0cUbxRX58UfSDedaHtbwFcN-GW6eon6BdFOmtJ3PVST4bx30jW_9-LQZc2llujQQrDZtoE0eZxxzQ74OylXoLyP8zrcv_tMqDnwkucfWu8Hr_xD9o9MtRm0OvxDcGhI7tpaM21TsC6ItxdFHfq9f1uwhvcM8AyaEoInKgN-3cZWXogWIaMnG6wVpv6TNGrAkhJ77zrFgfS0Ww8koLpll3CucEH4pDgginV8R-o5uY4XlmpGkt10SOvDdXpxSw1CncPceUP7cZfdomPvYIap43qzh1-wlmoS-o7Mas4XGwkgiX2SBj-I29z97FLN_wNckxPVGzUyUdwlLPW-Nz4Wk4uoyvNfBfObChzytYQD0hpG_Q3oRrdVfMNCJm9D8zCttAzamB7N3Qx7bYGZKTCGKY" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:39</time>
+<time class="message_video_duration js-message_video_duration">0:38</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">آموزش خرید کانفیگ از ربات تلگرامی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">آموزش خرید کانفیگ از ربات تلگرامی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1528"><time datetime="2023-12-19T21:16:46+00:00" class="time">21:16</time></a></span>
+    <span class="tgme_widget_message_views">3.27K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1528"><time datetime="2023-12-19T21:16:46+00:00" class="time">21:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1529" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyOSwidCI6MTc1MTk3NjIwMSwiaCI6IjU0NjM4MWYxMmZhM2UwNDQ4OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1529" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUyOSwidCI6MTc1MTk4MTMwNCwiaCI6ImQ4NGQ0NzBlMjU0OGIwMWU3NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -389,10 +492,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام سلام عزیزا دل چه خبرا واستون کانفیگ دارم شب یا فردا کولاک <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1529"><time datetime="2023-12-22T08:03:53+00:00" class="time">08:03</time></a></span>
@@ -400,7 +501,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1530" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMCwidCI6MTc1MTk3NjIwMSwiaCI6ImNjZGM1ZDM5NzJhZDNkNDA4ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1530" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMCwidCI6MTc1MTk4MTMwNCwiaCI6IjdmMzUyM2I5ZDJhZWRkNTdkNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -417,18 +518,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">عزیزا دل که وی پی ان خریداری کردن سرور ای پی به مشکل خورده به زودی بر طرف میشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1530"><time datetime="2023-12-30T13:03:48+00:00" class="time">13:03</time></a></span>
+    <span class="tgme_widget_message_views">2.96K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1530"><time datetime="2023-12-30T13:03:48+00:00" class="time">13:03</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1531" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMSwidCI6MTc1MTk3NjIwMSwiaCI6IjZjNDkwZTE2NzE0Yjg4ODk2YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1531" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMSwidCI6MTc1MTk4MTMwNCwiaCI6IjAxMGEyZDA2YjI3ZWIzNGNmMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -445,24 +544,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">بنر فعلی: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; ربات فروش وی پی ان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> ای پی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سه کاربره همزمان فعال<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>حجم دانلود نامحدود<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i> ماهیانه فقط 50 هزار&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i>پیشنهاد دیگه دارم&nbsp; عضو ربات شو با لینک دعوت خودت دوستاتو دعوت کن و با هر خرید ۵ هزار بزنی به جیب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
-<a class="tgme_widget_message_link_preview" href="http://t.me/v2rayngshop_bot">
+<div class="tgme_widget_message_text js-message_text" dir="auto">بنر فعلی: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; ربات فروش وی پی ان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> ای پی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سه کاربره همزمان فعال<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>حجم دانلود نامحدود<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i> ماهیانه فقط 50 هزار&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i>پیشنهاد دیگه دارم&nbsp; عضو ربات شو با لینک دعوت خودت دوستاتو دعوت کن و با هر خرید ۵ هزار بزنی به جیب<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div><a class="tgme_widget_message_link_preview" href="http://t.me/v2rayngshop_bot">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/Ag4cuNpuTGbEO-djlu5XFuDgid_C15jW1x42-GGrFpnStSzoJ2f1v__xpZ_Yf--Ya3GPZitvXJdrgYfPi6Nda3byrwjb_wSriONggwcT-Ij4nnyaSa51NPXo5M3DQr-aCdXaiS3euSH8NwdmBc-tWFcB0beD1vTWYOyIBQ7gRjFz6d3gdXN9azUpha_xTmSOY4D4YnsXEb1s4koiJ0ij6dkEC2cPuQw_Wmw09u4vKxNq9WqC_rHcBmtG1ChU2wGsDVKkk2nX18MoSt8u_offhpPTbmLe7nV5nyXoaYxcU7KrIsxttSkhB6cU__VD5JjizitV1C7NQT9hBedQM4_dvg.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">Vip v2ray</div>
   <div class="link_preview_description" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i>&nbsp; تحولی جدید در افزایشـ سرعت اینترنت<br/>رفع تحریم های اینترنتی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سرعت ، کیفیت ، پشتیبانی<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E97.png')"><b>🎗</b></i>کانال ما: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8694.png')"><b>🆔</b></i> @shadowsocksshop</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1531"><time datetime="2023-12-31T09:36:36+00:00" class="time">09:36</time></a></span>
+    <span class="tgme_widget_message_views">2.92K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1531"><time datetime="2023-12-31T09:36:36+00:00" class="time">09:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1533" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMywidCI6MTc1MTk3NjIwMSwiaCI6ImViYjE3NTNjOGU2ODUzZDU4MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1533" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzMywidCI6MTc1MTk4MTMwNCwiaCI6ImVhOTQzZGNkNjJkZjNjNDcxMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -477,20 +574,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">لینک جدید ساب اضاف کردم از جفتشون میتونید استفاده کنید به نظر من از اول استفاده کنید هر وقت مشکل خورد دومی استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1533"><time datetime="2023-12-31T09:39:43+00:00" class="time">09:39</time></a></span>
+    <span class="tgme_widget_message_views">2.87K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1533"><time datetime="2023-12-31T09:39:43+00:00" class="time">09:39</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1534" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNCwidCI6MTc1MTk3NjIwMSwiaCI6IjJkYmQ0MWE1ODZhOWY3ZmY5YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1534" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNCwidCI6MTc1MTk4MTMwNCwiaCI6IjZkN2Q1ZGZjMzBjOGNiNTRjZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -507,10 +602,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">خبر خوبی واس دوستانی که با لینک دعوتشون 10 نفر عضو کردند دارم دارم سایت فروش بالا میارم هر کدوم از دوستانی که 10 نفر بیشتر دعوت کنند یه سایت زیر مجموعه میاد واسش بالا<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F989C.png')"><b>😜</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1534"><time datetime="2023-12-31T10:16:00+00:00" class="time">10:16</time></a></span>
@@ -518,7 +611,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1535" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNSwidCI6MTc1MTk3NjIwMSwiaCI6ImRmZDQ0YTBmZGNhODVlYzcwMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1535" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNSwidCI6MTc1MTk4MTMwNCwiaCI6IjU2YzhjYjBiN2ZkYTczMmE2OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -535,18 +628,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>لینک sub کانفیگ مخصوص کانال رایگان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>لینک زیر کنید (1)<br/><br/><code>https://sub.shadowsokstes.workers.dev/sub</code><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>لینک زیر کنید (2)<br/><br/><code>https://sub.free.n125.xyz/sub</code><br/><br/><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i>اپلیکیشن اندروید<br/><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">V2RAYNG</a><br/><a href="https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">NapsternetV</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/amozshkonfig/177" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اندروید</a> <br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i>اپلیکیشن‌ ایفون<br/><br/><a href="https://apps.apple.com/us/app/npv-tunnel/id1629465476" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">NapsternetV</a><br/><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">V2box</a><br/><a href="https://apps.apple.com/us/app/foxray/id6448898396" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">FoxRay</a><br/><a href="https://apps.apple.com/us/app/fair-vpn/id1533873488" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Fair vpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1535"><time datetime="2023-12-31T10:17:35+00:00" class="time">10:17</time></a></span>
+    <span class="tgme_widget_message_views">3.14K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1535"><time datetime="2023-12-31T10:17:35+00:00" class="time">10:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1536" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNiwidCI6MTc1MTk3NjIwMSwiaCI6IjBlNDZkMjk3ZDI4YmI2NGNiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1536" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNiwidCI6MTc1MTk4MTMwNCwiaCI6ImM0ZTkwNzZmMzkzYTBmNmM1NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -565,10 +656,8 @@
 
 <a class="tgme_widget_message_photo_wrap 5803331605761212522 1351193433_456245354" href="https://t.me/shadowsocksshop/1536" style="width:781px;background-image:url('https://cdn4.cdn-telegram.org/file/V6DYibaGO7ZhsxG2vDoFVv-0RW2fqtuCL0agnh_fEEdhm1v9qzKCQy9oJ0R-P-EsLE2m3Gcz_iDbFvQsoIRYZpm4ibAYMlaMkrR3tgxexGl5cJkkFnCl1tC_I9apoS2QRvCNHACiz2l7saEroI3pNQm4fksnouf1xR3Rt8FB9O3jc7dTI9UYoBQyMugLtzk1KIy-FsMoes6JDy6MJ8WgN_KFzcidOd3qfYuQsx5N9ZMagcbkVjM9wwWLjDvUJGkXCmkiWxm_5ISGvtPoOhvUTOHxiXH3CsZV1o9BXUraZdh6WLghNYoVLaHSWf23lvupktzYtgsc2RM2UYh4GVCF3A.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:102.43277848912%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">دوستان گل اکانت تست ربات فعال شده میتونید استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">http://t.me/v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">دوستان گل اکانت تست ربات فعال شده میتونید استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">http://t.me/v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">4.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1536"><time datetime="2023-12-31T10:47:11+00:00" class="time">10:47</time></a></span>
@@ -576,7 +665,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1537" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNywidCI6MTc1MTk3NjIwMSwiaCI6IjFkMTQ4M2Y4MTk3Zjk4ZTljZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1537" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzNywidCI6MTc1MTk4MTMwNCwiaCI6IjExOWYwOWQyZmQ1NTA2MmNmMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -593,18 +682,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>لینک sub کانفیگ مخصوص کانال رایگان<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>لینک زیر کنید (1)<br/><br/><code>https://sub.shadowsokstes.workers.dev/sub</code><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918C.png')"><b>👌</b></i>لینک زیر کنید (2)<br/><br/><code>https://sub.free.n125.xyz/sub</code><br/><br/><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i>اپلیکیشن اندروید<br/><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">V2RAYNG</a><br/><a href="https://play.google.com/store/apps/details?id=com.napsternetlabs.napsternetv" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">NapsternetV</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/amozshkonfig/177" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آموزش اندروید</a> <br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i>اپلیکیشن‌ ایفون<br/><br/><a href="https://apps.apple.com/us/app/npv-tunnel/id1629465476" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">NapsternetV</a><br/><a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">V2box</a><br/><a href="https://apps.apple.com/us/app/foxray/id6448898396" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">FoxRay</a><br/><a href="https://apps.apple.com/us/app/fair-vpn/id1533873488" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Fair vpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1537"><time datetime="2024-01-02T11:12:31+00:00" class="time">11:12</time></a></span>
+    <span class="tgme_widget_message_views">4.42K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1537"><time datetime="2024-01-02T11:12:31+00:00" class="time">11:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1538" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzOCwidCI6MTc1MTk3NjIwMSwiaCI6ImQyZjhiZDNlNmM4ZWRhY2JhOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1538" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzOCwidCI6MTc1MTk4MTMwNCwiaCI6ImJhM2QxOGRkZTdhY2UwNjhjZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -627,24 +714,22 @@
   <video src="https://cdn4.cdn-telegram.org/file/78b0a823b7.mp4?token=TwN44UcO3blRjCCsWmfXHbS5kRzqqE1cZtJXYXUewODrBWkwRZnB5JyyPwLzhkWOU36RbYDEGc4HEa7HRYLrJQsx8WWAn8z3g-WjwcyxTUdqML4QvnxIggxnig9UU255sHMDBOBTI9TWa5ewjhRRUDs2IvU0iKRzyiemz_Idyop1nN858qfr_E0MPp6EwSJP-efdI-MBOVw-pYj944S3JJvJ4p7UpXmFyewGqSge7N6q0Hj4ZaNbOUlcnTdJTTh5OJfC1RSeynd08C2Lo1-3cc30Ty7mv8Shu6-8k9nsSUzCIyIK-y5kuQCo1RzQpn_HZd04ZR63UCbbsDZpdQy6slODK3j8FyIWaLM2sysWKqeqsbkwPxRNnOqbg8UBLer187nDZkJ560LxSv8HhD-KJE2jcVkUlO1M-mWYOfA-B1HhEQchtTOLDuR57iKUHiesxccY2cgs-u_RoXYT6GaBhZZ3adus5VHSRG4i9KRN6_oL-AjTLKCDM3jHwoZUYnImiaaXmM-r8-UwDUAc8giDnD4ueOc_AgERWk-9JwQmm532uaRcduTQT1oaLjciEk3C-XRAst4f1oA5E24ldOWtsjgFiy7Q09zsZ8QA5kSGqdGbX34eG161zPie8kpr58_Vgj2ZIfBLEoKIPyWcCm7WK0-J3tGnIAoOCJ0EPDbuzH0" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">0:39</time>
+<time class="message_video_duration js-message_video_duration">0:38</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">آموزش خرید کانفیگ از ربات تلگرامی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">آموزش خرید کانفیگ از ربات تلگرامی<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="http://t.me/v2rayngshop_bot" target="_blank" rel="noopener">t.me/v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1538"><time datetime="2024-01-06T22:19:38+00:00" class="time">22:19</time></a></span>
+    <span class="tgme_widget_message_views">4.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1538"><time datetime="2024-01-06T22:19:38+00:00" class="time">22:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1539" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzOSwidCI6MTc1MTk3NjIwMSwiaCI6IjE4MDdhNWYxYWNiOTY5NzIyNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1539" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTUzOSwidCI6MTc1MTk4MTMwNCwiaCI6ImQ0MjZiODg1M2ZmYzY3NDIwNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -661,18 +746,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/shadowsocksshop"><span dir="auto">شدوساکس-shadowsocks</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i>دوستان گلی که در خواست تخفیف دادن بیان پی وی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>کانفیگ سالیانه <s>150t</s>&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F949B.png')"><b>🔛</b></i> 100t<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B5.png')"><b>🥵</b></i>تخفیف ویژه تعداد محدود<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA3.png')"><b>🫣</b></i>اتیش زدم به مالم<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i></b></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1539"><time datetime="2024-01-06T22:19:59+00:00" class="time">22:19</time></a></span>
+    <span class="tgme_widget_message_views">3.67K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1539"><time datetime="2024-01-06T22:19:59+00:00" class="time">22:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1540" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MCwidCI6MTc1MTk3NjIwMSwiaCI6IjgyMGUyM2QxZmMxMGU5NTQ1YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1540" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MCwidCI6MTc1MTk4MTMwNCwiaCI6ImVkODc4ZDg0OTA4YjlhN2JlYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -701,18 +784,16 @@
     <div class="message_media_not_supported_label">Media is too big</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>فروش ربات هوشمند ساخت کانفیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>ساخت کانفیگ بیش از 7 کشور<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>ای پی ثابت برای تمام کشورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i> اپدیت روزانه کانفیگ جدید ولی ای پی قبلی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i></b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>لینک اختصاصی برای <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i><b>clash</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><b>SURFBOARD</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><b>NEKOBOX</b><br/><br/>پشتیبانی از <b>SING-BOX</b> <br/><br/>و...<br/><br/><b><i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i>یک دفه بخر همیشه استفاده کن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9494.png')"><b>🔔</b></i>سالیانه ۱۵۰ هزار</b> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9494.png')"><b>🔔</b></i><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B91.png')"><b>🛑</b></i>ایدی فروش</b> <a href="https://t.me/BotAdmin_support" target="_blank"><i>@BotAdmin_support</i></a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>فروش ربات هوشمند ساخت کانفیگ<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i>ساخت کانفیگ بیش از 7 کشور<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F98B1.png')"><b>😱</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA7A8.png')"><b>🧨</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i>ای پی ثابت برای تمام کشورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D87.png')"><b>❇️</b></i> اپدیت روزانه کانفیگ جدید ولی ای پی قبلی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i></b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>لینک اختصاصی برای <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i><b>clash</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i><b>SURFBOARD</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')"><b>🔵</b></i><b>NEKOBOX</b><br/><br/>پشتیبانی از <b>SING-BOX</b> <br/><br/>و...<br/><br/><b><i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i>یک دفه بخر همیشه استفاده کن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9494.png')"><b>🔔</b></i>سالیانه ۱۵۰ هزار</b> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9494.png')"><b>🔔</b></i><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B91.png')"><b>🛑</b></i>ایدی فروش</b> <a href="https://t.me/BotAdmin_support" target="_blank"><i>@BotAdmin_support</i></a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1540"><time datetime="2024-01-06T22:20:00+00:00" class="time">22:20</time></a></span>
+    <span class="tgme_widget_message_views">4.75K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1540"><time datetime="2024-01-06T22:20:00+00:00" class="time">22:20</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1541" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MSwidCI6MTc1MTk3NjIwMSwiaCI6IjQ0MzdiMGZkNmE5Yjg1MjFhMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1541" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MSwidCI6MTc1MTk4MTMwNCwiaCI6IjA4ZDc3Y2EyMjRiNjlmNmU3NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -731,18 +812,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5823242034763383180 1355829191_456245644" href="https://t.me/shadowsocksshop/1541" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/QzRDkkdWfR9Xf4_kJ5AtjcQCBRyycNw0mNkVgGmYTRAC0VB8Wl2Fh0kgoMZakBK6-xiogcEgYhQdwiOC2IjumcC9B3E_ZQo2-wDrlJjjIKU46FmhbHUDoCIqwpbKESZpkAs6rBiqPmdpYYTUqvB6k2UGTVchtLAbrwTyc7YIsbPb5aC1ukFOQrlxPaW6KHig6yhQpzR3U_vlVAX0AG3pagO5MEHyCN5PTFsAgCIusQgE9Yljv3WsUZiP4vIVawMIZXw7SNhKJDGMASIBjJYt_beGIRPkeiu-dhTd6zWysEqVYUj1pnkKYB1QrYKlQBEcpVT5IiGEyVUHj2bTJMIwVg.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان Outline (شدوساکس)<br/>داخل ربات گذاشتم تقدیم شما<br/>وارد ربات بشید و استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/v2rayngshop_bot" target="_blank">@v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان Outline (شدوساکس)<br/>داخل ربات گذاشتم تقدیم شما<br/>وارد ربات بشید و استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/v2rayngshop_bot" target="_blank">@v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CAD.png')"><b>🌭</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">5.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1541"><time datetime="2024-01-07T16:51:28+00:00" class="time">16:51</time></a></span>
+    <span class="tgme_widget_message_views">5.64K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1541"><time datetime="2024-01-07T16:51:28+00:00" class="time">16:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1542" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MiwidCI6MTc1MTk3NjIwMSwiaCI6IjljMGM3YjBjYTA2MWRmMDM4MSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="shadowsocksshop/1542" data-view="eyJjIjotMTc2MTE2OTgyOSwicCI6MTU0MiwidCI6MTc1MTk4MTMwNCwiaCI6Ijk0OGYzOTMxMmIzN2ViZTlkMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/shadowsocksshop"><i class="tgme_widget_message_user_photo bgcolor6" data-content="ش"><img src="https://cdn4.cdn-telegram.org/file/uX0-HvSuoBu-D8uZwXQxbKotJkzs6FyM059WSqN2vB0n9EPxqVMiv8ETmWdVfPte4ov7-hfvOdP-iRQ41X3pZzPbv2w05H-I8lY-qto_3UZNPk9qXXp-553z4xMmBJ5S41DZ4VVlHTpflxNfXXTHrysCBei5h-FkEFWoNm_6brUvCeR20wslzorm6ZfORE4UTSzvGWFlhxJFW9J6dkhYX0Hm41N5xRxBvf2-mBIJ-joioa_R9HjfqWw1g8Zb6xbxhj_3Z7vQFzgDEtLz-OCnPlc8LjUdmxRNx4JKmglgCZT08emOA_ETHDdS83o9pioMovxfRxHgnZt0f1kj0fAMIA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -761,13 +840,11 @@
 
 <a class="tgme_widget_message_photo_wrap 5823242034763383182 1355829191_456245646" href="https://t.me/shadowsocksshop/1542" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/VFqFPs2k0tD8vFZZ6cTR72XuCIyjc1EPyKJwrPf7t_XHAsL74xxf_mjRUS7BLvtBxVkS6g__RXSjl7pwNX91S4MpBMKrW8zN8y-yPB1AnokPLLHLKR2g-rqYvpfFwC-s_dhgJZAqZfFar7dOIv-6i6fCgy7THHzZzmoLXgUOjKZejrmSPmJ8_yASzbzxZECy8sU0y0vm7NnfHZF74-6iMhV2lcduz8HIwkiq3iXoz-igo1hh1KsoJAg7w5sdDGi-5muv3pZ7orAufjKVtB253n4aNW10mdEcTUByDvQO4Xc7m151feIOcr_q1DcICoOP4L7k8bgdYPI_E0oW6C3ZAA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:13.75%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان Outline (شدوساکس)<br/>داخل ربات گذاشتم تقدیم شما<br/>وارد ربات بشید و استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/v2rayngshop_bot" target="_blank">@v2rayngshop_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان Outline (شدوساکس)<br/>داخل ربات گذاشتم تقدیم شما<br/>وارد ربات بشید و استفاده کنید<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/v2rayngshop_bot" target="_blank">@v2rayngshop_bot</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CAD.png')"><b>🌭</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">7.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1542"><time datetime="2024-01-07T16:53:39+00:00" class="time">16:53</time></a></span>
+    <span class="tgme_widget_message_views">7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/shadowsocksshop/1542"><time datetime="2024-01-07T16:53:39+00:00" class="time">16:53</time></a></span>
   </div>
 </div>
   </div>
@@ -781,11 +858,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 75.09ms -->
+<!-- page generated in 67.69ms -->

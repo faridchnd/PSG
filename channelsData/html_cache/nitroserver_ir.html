@@ -54,9 +54,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -85,7 +202,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">151</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">5</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA0.png')"><b>🛠</b></i> &lt;NITROSERVER&gt; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA0.png')"><b>🛠</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> سرویس ویژه کاهش پینگ و افزایش سرعت اینترنت<br/><br/> خرید سرویس و پشتیبانی  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93AC.png')"><b>📬</b></i>  <a href="https://t.me/NitroServersup" target="_blank">@NitroServersup</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ea487c3bff6ff5cba3_7180670566904042435">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=46d3a0b9e5a568af67_3148793162169914083">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -106,7 +223,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ea487c3bff6ff5cba3_7180670566904042435">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=46d3a0b9e5a568af67_3148793162169914083">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/nitroserver_ir">
@@ -123,7 +240,7 @@
 <main class="tgme_main" data-url="/nitroserver_ir">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/nitroserver_ir?before=32" class="tme_messages_more js-messages_more" data-before="32"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/32" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MzIsInQiOjE3NTE5NzYyMDEsImgiOiJkMGYyYzcxYWNkM2VhOGE4NmIifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/nitroserver_ir?before=32" class="tme_messages_more js-messages_more" data-before="32"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/32" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MzIsInQiOjE3NTE5ODEzMDQsImgiOiI1ZDY3YTI3OTU5M2Y2NWNmZDgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -152,17 +269,15 @@
     <a href="https://t.me/Nitroserver_iR/32" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A9.png')"><b>💩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/32"><time datetime="2023-02-05T13:26:42+00:00" class="time">13:26</time></a></span>
+    <span class="tgme_widget_message_views">1.92K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/32"><time datetime="2023-02-05T13:26:42+00:00" class="time">13:26</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/35" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MzUsInQiOjE3NTE5NzYyMDEsImgiOiIzOTY0NWIyZTNiZjBmNDdlMTMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/35" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MzUsInQiOjE3NTE5ODEzMDQsImgiOiJjNjRkNzE4NzM4ZjBiZDY4OTEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -187,9 +302,7 @@
     <a href="https://t.me/Nitroserver_iR/35" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A9.png')"><b>💩</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/35"><time datetime="2023-02-12T09:09:54+00:00" class="time">09:09</time></a></span>
@@ -197,7 +310,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/51" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6NTEsInQiOjE3NTE5NzYyMDEsImgiOiJmYThhOGQwZjJkYzFhMTAzNWYifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/51" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6NTEsInQiOjE3NTE5ODEzMDQsImgiOiI4ZGI3NGM5ZmQzYWEzZmZkMGYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -222,17 +335,15 @@
     <a href="https://t.me/Nitroserver_iR/51" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A9.png')"><b>💩</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/51"><time datetime="2023-02-23T07:31:55+00:00" class="time">07:31</time></a></span>
+    <span class="tgme_widget_message_views">4.89K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/51"><time datetime="2023-02-23T07:31:55+00:00" class="time">07:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/63" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6NjMsInQiOjE3NTE5NzYyMDEsImgiOiI3YzJiYjU4YWVjYTJkZDE5NGUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/63" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6NjMsInQiOjE3NTE5ODEzMDQsImgiOiJmZWUxN2Y4YWZmMDEyZWM0ZjgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -257,17 +368,15 @@
     <a href="https://t.me/Nitroserver_iR/63" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/63"><time datetime="2023-03-20T18:42:55+00:00" class="time">18:42</time></a></span>
+    <span class="tgme_widget_message_views">4.06K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/63"><time datetime="2023-03-20T18:42:55+00:00" class="time">18:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/87" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6ODcsInQiOjE3NTE5NzYyMDEsImgiOiIyNGYzZmVmMDI0ZGM5NDg3MDAifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/87" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6ODcsInQiOjE3NTE5ODEzMDQsImgiOiJhNmQzM2RkNWIzNzcxZTU5ODcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -290,17 +399,15 @@
     <a href="https://t.me/Nitroserver_iR/87" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">4.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/87"><time datetime="2023-05-12T15:25:24+00:00" class="time">15:25</time></a></span>
+    <span class="tgme_widget_message_views">3.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/87"><time datetime="2023-05-12T15:25:24+00:00" class="time">15:25</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/106" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTA2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmYxZDU4YTZmYmQ4ZjgzODdjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/106" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTA2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjYwNWNkN2NlMjJlMGMzYjAwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -323,17 +430,15 @@
     <a href="https://t.me/Nitroserver_iR/106" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/106"><time datetime="2023-07-28T12:00:57+00:00" class="time">12:00</time></a></span>
+    <span class="tgme_widget_message_views">3.65K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/106"><time datetime="2023-07-28T12:00:57+00:00" class="time">12:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/166" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMjQ0OWFjNjg2NmFkMWZhMTg2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/166" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMTE2NGQ0MWYwZWVlYWZmMmYxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,18 +457,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6023608207651487747 1402480576_456245251" href="https://t.me/Nitroserver_iR/166" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Wnbm91bLkkZ0gb7l_nMrLVWqDiySqrbSCctMZlLsZ9vKV8qOT8ZIyJChRWnlBzkA3jCGeDoIHShquIV9WfyuS5JDuEW4-1jDluymIRTC16tiMeku6UpnjPBo7Jblgvca_1TRcxnVg2_yERXjgxE_Ecb1lM4i7C-0mK0PefQ94WAm6bejeRhrhO-iJC8v5KkGcaHKnlqjarJT5PUVWKnw0w2d3OxwU1PvcqMrUfAGe0TDUDjhtUQABXu5ykXRz7ifXKXsaNCQQFxvyDDkkM7jn-fQ5b9ztXZxjQ4NlHk_PknCc-vzYvJHFrS6eO12DhMWdNFqy2Go7g0V7QD-e-r10g.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:99.625%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://437415db-3e91-42ef-a1b2-bbdcc8f6ed71@vip.pingkiller.online:80?path=%2F&amp;security=none&amp;encryption=none&amp;type=ws#NITROSERVER</code><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سرور رایگان ( حجم 40 گیگ<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i><a href="https://t.me/Nitroserver_iR/35" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">اموزش استفاده</a><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i> اتمام حجم</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://437415db-3e91-42ef-a1b2-bbdcc8f6ed71@vip.pingkiller.online:80?path=%2F&amp;security=none&amp;encryption=none&amp;type=ws#NITROSERVER</code><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> سرور رایگان ( حجم 40 گیگ<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938D.png')"><b>📍</b></i><a href="https://t.me/Nitroserver_iR/35" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">اموزش استفاده</a><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D8C.png')"><b>❌</b></i> اتمام حجم</b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/166"><time datetime="2023-12-08T20:17:38+00:00" class="time">20:17</time></a></span>
+    <span class="tgme_widget_message_views">2.86K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/166"><time datetime="2023-12-08T20:17:38+00:00" class="time">20:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/189" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTg5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiY2VhMjg4N2M4YmU1ZjhhMmMxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/189" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTg5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNmQ1MDUyOWM5MDhlMmYwYjk5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -382,18 +485,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5996688323302769038 1396212802_456245646" href="https://t.me/Nitroserver_iR/189" style="width:753px;background-image:url('https://cdn4.cdn-telegram.org/file/SCzLQM8QGDCSQxcXO0sQy32NjFiTBMDEtYGYy-gJbtuylLYFSZXOwzpeANpcns89wHakQHCIEEn_b6epOimz1eJUrYkNtnvkpnXqGfVQWVdHCVE-ODHXqVaepR-6OLEizO3Aeeq0a6JyUeCeZ6jzXrey5w0Lq1qNdpHecODH3AkTYE7gdsZ3H_dTnWTa29XcQL8WhIgezXRGFoRBGYN0s6BJBHsZRsruuBUZdIW0xfVLnz2DZcpEK0qN485wQoU0NMf_gNuGuvqQVKdLv9LId3pyOia4iq765j3_F3fI0S-tfFaak5L-znxTw-TKFPpJL2EXgseBA5IQmUDbFduasQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:41.168658698539%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i> <a href="?q=%23%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87">#اطلاعیه</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> <s>اینستاگرام بصورت جهانی دچار اختلال شده است، در صورتی که در استفاده از اینستاگرام مشکل دارید این مشکل مربوط به سرویس نمی باشد</s><br/><br/>مشکل رفع شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93A3.png')"><b>📣</b></i> <a href="?q=%23%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87">#اطلاعیه</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> <s>اینستاگرام بصورت جهانی دچار اختلال شده است، در صورتی که در استفاده از اینستاگرام مشکل دارید این مشکل مربوط به سرویس نمی باشد</s><br/><br/>مشکل رفع شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/189"><time datetime="2024-03-05T15:45:52+00:00" class="time">15:45</time></a></span>
+    <span class="tgme_widget_message_views">1.68K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/189"><time datetime="2024-03-05T15:45:52+00:00" class="time">15:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/191" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTkxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiODA5ZDE3YWQ1MzcyN2UxNjFiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/191" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTkxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiODJjNjFiMjgyNDU1M2FiM2ZmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -412,18 +513,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6041660363218468891 1406683671_456245275" href="https://t.me/Nitroserver_iR/191" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/exyHtJFEhITuV5cOP8EvJSAXxJbZtY2caZCJqtPzR5JKwUDCGS4K-QF9mCjiSUPM7FJoULV9SvMIMwsY8fCHVvO6B70ECTJdmVPFz7XgXF79_EX6ArKGJuaNwHjBYaOk7Ur142fu-0SjfNzGl3KGgwuJBEwnnQY5hIR0mhdpr2atC3m7c8cPhEu53uZ-_enKk3sWOCuNI8mZn--Jkcl_QK0zUh3KODctzPEjVapBmarKuMTifUjgxF6QWsXZXxBZCAayjACstLgFvHlFnKq70WJL5XuRc8Ljqa1-TqFeUP4RmYesA0mmtz2wMi04hh3fd-e7M4fKIyC6rWkDU_H9RA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:66.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i> سال نو مبارک<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> از همراهی و حمایت‌ شما در طول سال گذشته سپاسگزاریم امیدواریم سال جدید زندگیتون سرشار از خیر و برکت و سلامتی و موفقیت باشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB9.png')"><b>🌹</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> به مناسبت عید نوروز تا 13 فروردین با خرید یا تمدید سرویس 25 درصد تخفیف و 15 گیگ حجم بیشتر روی تمامی پلن ها عیدی میدیم </b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i> پشتیبانی و خرید سرویس :</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> <a href="https://t.me/NitroServersup" target="_blank">@NitroServersup</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i> سال نو مبارک<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> از همراهی و حمایت‌ شما در طول سال گذشته سپاسگزاریم امیدواریم سال جدید زندگیتون سرشار از خیر و برکت و سلامتی و موفقیت باشه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8CB9.png')"><b>🌹</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i> به مناسبت عید نوروز تا 13 فروردین با خرید یا تمدید سرویس 25 درصد تخفیف و 15 گیگ حجم بیشتر روی تمامی پلن ها عیدی میدیم </b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i><br/><br/><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i> پشتیبانی و خرید سرویس :</b><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> <a href="https://t.me/NitroServersup" target="_blank">@NitroServersup</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/191"><time datetime="2024-03-19T22:58:14+00:00" class="time">22:58</time></a></span>
+    <span class="tgme_widget_message_views">1.97K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/191"><time datetime="2024-03-19T22:58:14+00:00" class="time">22:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/198" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTk4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWNmYzc3MDYyMDY4Y2YwZTYyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/198" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTk4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZDZlYzNkOTUxZjk3NGEwMWZjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -446,17 +545,15 @@
     <a href="https://t.me/Nitroserver_iR/198" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/198"><time datetime="2024-05-18T09:02:37+00:00" class="time">09:02</time></a></span>
+    <span class="tgme_widget_message_views">1.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/198"><time datetime="2024-05-18T09:02:37+00:00" class="time">09:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/199" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTk5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMWI5MWU0ZDVhNTYwMWNlYjZlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/199" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MTk5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNWMyM2ZhOWQyNTc3NzA3YjFlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -475,18 +572,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5933908292415896892 1381595687_456244540" href="https://t.me/Nitroserver_iR/199" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/r8vvrK9bPSlF0tCfqZTUBDE8a8xPZHidkfXI8_jgiu6iypgLNelJ9eybbKCH_tXfiVp-iWtUyBwxJ7hdD3HkK2BYulXUlnZoJ-xQwmP77Yz15YQlEgexxD6M_Ef6jL0XYVSxy4HMMN2PdO5OzFQfD_RmTxFMlk0_t6IGq61nF1zp86xrQhXIsmM0OgthAdP1ixml5B5NnnDkQtkDU4IrxG1T3l1XAnp5SQ7kn5eSDeTOJgJ9xMKGWQNcd-2miq5bjX5FAwCtt2TVPZxs3V9yOiyMZocCkKdyUtA975YewoJ7uk4g2enLNb6D45N1lZmS-ljWJizsAAjjeX4twn_Kdg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:45.5%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> با استفاده از لینک زیر میتوانید مشخصات کانفیگ خود را بررسی کنید <br/><br/>××<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i> با استفاده از لینک زیر میتوانید مشخصات کانفیگ خود را بررسی کنید <br/><br/>××<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i> <a href="https://t.me/Nitroserver_iR" target="_blank">@Nitroserver_iR</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/199"><time datetime="2024-05-20T08:06:20+00:00" class="time">08:06</time></a></span>
+    <span class="tgme_widget_message_views">1.73K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/199"><time datetime="2024-05-20T08:06:20+00:00" class="time">08:06</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/220" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjIwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNmQ5NDcxN2U0ZjNiM2M4NTYyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/220" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjIwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzI1NjVkMjgzNTg3NDY2ZmJkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -509,17 +604,15 @@
     <a href="https://t.me/Nitroserver_iR/220" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/220"><time datetime="2024-08-10T07:53:41+00:00" class="time">07:53</time></a></span>
+    <span class="tgme_widget_message_views">1.15K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/220"><time datetime="2024-08-10T07:53:41+00:00" class="time">07:53</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/222" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjIyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzBmMDdkMWVjZDAxMDhiNjdjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/222" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjIyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiODFmYzk4ZGU4ZjM4YjZlNjc5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -542,17 +635,15 @@
     <a href="https://t.me/Nitroserver_iR/222" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Vpn Support | پشتیبانی</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/222"><time datetime="2024-08-21T09:27:08+00:00" class="time">09:27</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Vpn Support | پشتیبانی</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/222"><time datetime="2024-08-21T09:27:08+00:00" class="time">09:27</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/239" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjM5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZTJlODE3NzM4YTQwNmVmZmQ3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/239" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjM5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGNjNTExNDVlMDY4ZWRlODQ0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -575,8 +666,6 @@
     <a href="https://t.me/Nitroserver_iR/239" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -585,7 +674,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/240" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjU5MDc5MTA4NWMzYzM0MTE3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/240" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZjI4YTQ1Y2M4OWRkZTM3OWU4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -601,7 +690,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Nitroserver_iR"><span dir="auto">NITRO - SERVER</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Nitroserver_iR/239" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Nitroserver_iR/239" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">NITRO - SERVER</span>
 </div>
@@ -613,9 +702,7 @@
     <a href="https://t.me/Nitroserver_iR/240" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">185</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/240"><time datetime="2025-06-16T22:51:58+00:00" class="time">22:51</time></a></span>
@@ -623,7 +710,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/243" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNzgyYTE5ODM5MjQ1NTkyMGU4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/243" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzRhNmQzZjMzOTkzMzg1YzhiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -646,8 +733,6 @@
     <a href="https://t.me/Nitroserver_iR/243" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -656,7 +741,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/249" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQ5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2M2ODJjYzMwYzg4M2JmNWRjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/249" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjQ5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMTM2MGQ1NDM3ZDhlYTA5ZmVlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -679,17 +764,15 @@
     <a href="https://t.me/Nitroserver_iR/249" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">121</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/249"><time datetime="2025-06-26T12:40:33+00:00" class="time">12:40</time></a></span>
+    <span class="tgme_widget_message_views">122</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/249"><time datetime="2025-06-26T12:40:33+00:00" class="time">12:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/250" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiOTljN2EyNDFiNWMzMWQ3NDJmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/250" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWY3NzJjMjAyODdlYTcwOGY0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -712,17 +795,15 @@
     <a href="https://t.me/Nitroserver_iR/250" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">75</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/250"><time datetime="2025-07-02T09:36:41+00:00" class="time">09:36</time></a></span>
+    <span class="tgme_widget_message_views">76</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/250"><time datetime="2025-07-02T09:36:41+00:00" class="time">09:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/251" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjgwNDk5OWQ4YTNkY2VmNTVjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/251" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZTY1ODU5MjczMDllNGNkM2NmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -738,7 +819,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Nitroserver_iR"><span dir="auto">NITRO - SERVER</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Nitroserver_iR/250" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Nitroserver_iR/250" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">NITRO - SERVER</span>
 </div>
@@ -750,17 +831,15 @@
     <a href="https://t.me/Nitroserver_iR/251" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">77</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/251"><time datetime="2025-07-02T09:42:19+00:00" class="time">09:42</time></a></span>
+    <span class="tgme_widget_message_views">78</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/251"><time datetime="2025-07-02T09:42:19+00:00" class="time">09:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/252" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMTM3MjFjMjUyNzhmN2IzNjNjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Nitroserver_iR/252" data-view="eyJjIjotMTg2MDg5MzQ2MywicCI6MjUyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDUyYWNjNjI5NWY0ZTc0ZWZhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/Nitroserver_iR"><i class="tgme_widget_message_user_photo bgcolor2" data-content="N"><img src="https://cdn4.cdn-telegram.org/file/qNnCdw1MK_UkF1Waoaw6S92esBTCF8n-4DB8fIAcwwg5q02iyNefqcnT5DCHAx1NrsxX-TOJ9OXmRp4b2cHKLm89TiczDVs6_eMkd3CqZFD33WWU-z30zpMkkQY93Rap1RV4JYYYOZDgH-2s1NGFSfScA7Z6ZdApf_HnfUhlaNilWwEAKdEbF67R682QQ24oTMgk6wwjp9m2tp0TJXZC3bj--QB_MBYjzoiou6r173N-BOmGFhcFCD0yr1c3bcBkf_dmB2q-t8wz_e9WRGkiP2CWFByQFCa2mih3yqN3ucOSM07jAidfjtGtXM_6c62ehF_rMrQWNtVS5CLatTxy5Q.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -783,12 +862,10 @@
     <a href="https://t.me/Nitroserver_iR/252" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">48</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/252"><time datetime="2025-07-05T21:49:06+00:00" class="time">21:49</time></a></span>
+    <span class="tgme_widget_message_views">49</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">- ‌Տⅈℕᗅ</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/Nitroserver_iR/252"><time datetime="2025-07-05T21:49:06+00:00" class="time">21:49</time></a></span>
   </div>
 </div>
   </div>
@@ -802,11 +879,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 77.57ms -->
+<!-- page generated in 66.77ms -->

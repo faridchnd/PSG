@@ -44,9 +44,126 @@ Proxy socks5
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -75,7 +192,7 @@ Proxy socks5
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">312</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">62</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">33</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">پراکسی روزانه <br/>Proxy socks5</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=b8fb60bb5e3464eaf9_10336077417133222476">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=6f40be5f28ab7bce2b_3528949830168010564">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -96,7 +213,7 @@ Proxy socks5
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=b8fb60bb5e3464eaf9_10336077417133222476">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=6f40be5f28ab7bce2b_3528949830168010564">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/socks5r">
@@ -113,7 +230,7 @@ Proxy socks5
 <main class="tgme_main" data-url="/socks5r">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/socks5r?before=360" class="tme_messages_more js-messages_more" data-before="360"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/360" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNGE4YjQ4NmQwYTkyYmJjY2YzIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/socks5r?before=360" class="tme_messages_more js-messages_more" data-before="360"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/360" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNTUyNGI1M2E1ZWE2NDRhNmY1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -130,9 +247,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32247"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>ee1603010200010001fc030386e24c3add7370656564746573742e6e6574</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -141,7 +256,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=88.198.112.135&amp;port=443&amp;secret=ee1603010200010001fc030386e24c3add7370656564746573742e6e6574" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/361" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzUyZmE2MTVhM2VhNmExN2NkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/361" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWI1Mjg2ODcxODUzZGM5MzFjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -158,9 +273,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32248"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -169,7 +282,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.ll.l.bjss.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.ll.l.bjss.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/362" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2Q5MDAzZDVjZGVmMDQ1NjA4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/362" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMmY1MGIyMjg1OTAwOThmOTRjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -186,9 +299,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32249"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>643</code><br/>Secret: <code>7sQiqN2IziAAQtnj7g6f0J13ZWIucnViaWthLmly</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -197,7 +308,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=web.rubila.ir.bmb-kasi.co.uk.&amp;port=643&amp;secret=7sQiqN2IziAAQtnj7g6f0J13ZWIucnViaWthLmly" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/363" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNGNkYTk4NzQxNThjNGZhZDM2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/363" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzYzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmVjYjdkMzBkYjQ1ZGJmNjY4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -214,9 +325,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32250"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -225,7 +334,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.brandfolder.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.brandfolder.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/364" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZmE4MmU0YmNlYmQ2ZWRkYjFiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/364" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmRhM2FhMjY1ZDgyN2UyMjQ3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -242,18 +351,16 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32251"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>ftp.shaparak.authorizeddns.net</code> <br/>Port: <code>40443</code><br/>Secret: <code>DD1603010200010001fc030386e24c3add</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/364"><time datetime="2023-12-14T14:30:19+00:00" class="time">14:30</time></a></span>
+    <span class="tgme_widget_message_views">1.18K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/364"><time datetime="2023-12-14T14:30:19+00:00" class="time">14:30</time></a></span>
   </div>
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=ftp.shaparak.authorizeddns.net&amp;port=40443&amp;secret=DD1603010200010001fc030386e24c3add" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/365" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiY2IxMmY2M2Y0NWIyNzcxMWZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/365" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjdiYmMzMDIzOTVkYWJjMzE4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -270,18 +377,16 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32252"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>7443</code><br/>Secret: <code>AAAAAAAAAAAAAAAAAAAAABQ=</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/365"><time datetime="2023-12-14T15:30:19+00:00" class="time">15:30</time></a></span>
+    <span class="tgme_widget_message_views">1.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/365"><time datetime="2023-12-14T15:30:19+00:00" class="time">15:30</time></a></span>
   </div>
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=128.140.117.13&amp;port=7443&amp;secret=AAAAAAAAAAAAAAAAAAAAABQ=" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=49.13.125.13&amp;port=7443&amp;secret=AAAAAAAAAAAAAAAAAAAAABQ=" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/366" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjBkM2MwNzRjMTRiNDViOWVlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/366" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMzQ2MTYxNmQ1ZWUzNWEyZTM2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -298,9 +403,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32253"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -309,7 +412,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.ll.l.bjss.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=I__--_A.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.l.ll.l.bjss.cfd.&amp;port=443&amp;secret=7gAAAAAAAAAAAAAAAAAAAAB0aGVndWFyZGlhbi5jb20%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/367" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2ZjZGU1OTU5MDQyNGVmNTU0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/367" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNmI4MmRiMDRmYTZjYmIxYmE1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -326,9 +429,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32254"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>AAAAAAAAAAAAAAAAAAAAABQ=</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -337,7 +438,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=Cloudflare.com.Nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.now_sudo.rm.again_to_fight.everyone.i_am.the_internet.ssl0l.sbs.&amp;port=443&amp;secret=AAAAAAAAAAAAAAAAAAAAABQ=" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/368" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOTE3ZTFjODRkNDQ3M2EwNjg5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/368" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNjcyYTlkMTEwZDI1NjRiNTM5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -354,9 +455,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32255"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>landcuroseeer.controlllerrrring.expert-pro.hair</code> <br/>Port: <code>443</code><br/>Secret: <code>7vQ1mpsyX_HR5QhN8OD3U3ttc24uY29t</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -365,7 +464,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=landcuroseeer.controlllerrrring.expert-pro.hair&amp;port=443&amp;secret=7vQ1mpsyX_HR5QhN8OD3U3ttc24uY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=kintooosering.miiietiiip.master-top.rest&amp;port=443&amp;secret=7vQ1mpsyX_HR5QhN8OD3U3ttc24uY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/369" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMGU4MDllYmVmZGIxYzRkYzE1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/369" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzY5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmEyZWQ1ZjUxZjZiZmQ4MmY5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -382,9 +481,7 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32256"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>443</code><br/>Secret: <code>3dpBFlW2hP6Hq_WOwiNeKBY%3D</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -393,7 +490,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=1554.ir.clinic133.ir.mediahamibot.ir.bakala.ir.rypa_rdaz.com.v-skill.ir.tooscarpet.ir.zagrosdns.com.karyabikaravaranngf.ir.iahope.com.parsianlotus.net.aliteb.ir.galaxyfoodco.com.arna-trading.com.kzccpp.ir.upstabriz.ir.navagam.ir.erjaki.com.neshanapp.sbs.&amp;port=443&amp;secret=3dpBFlW2hP6Hq_WOwiNeKBY%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/370" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzcwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiODYwNWU3ZGRmMzc4NDZkNDdhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/370" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzcwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiODUzNGRlZDM2NzMzYTU5ZDY5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -410,10 +507,8 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/ProxyMTProto/32257"><span dir="auto">Proxy MTProto</span></a></div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Server: <code>Unknown</code> <br/>Port: <code>3443</code><br/>Secret: <code>AAAAAAAAAAAAAAAAAAAAAGQ=</code><br/><a href="https://t.me/ProxyMTProto" target="_blank">@ProxyMTProto</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">554</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/370"><time datetime="2023-12-14T19:30:41+00:00" class="time">19:30</time></a></span>
@@ -421,7 +516,7 @@ Proxy socks5
 </div>
   </div>
   <div class="tgme_widget_message_inline_keyboard"><div class="tgme_widget_message_inline_row"><a class="tgme_widget_message_inline_button url_button" href="https://t.me/proxy?server=Cloudflare.com.Nokia.com.co.uk.do_yo.want_to.clash_with.this.www.microsoft.com.there_is_no.place_like.localhost.www.bing.com.count_with_me.cyou.net.now_sudo.rm.again_to_fight.everyone.i_am.the_internet.glow-glue.sbs.&amp;port=3443&amp;secret=AAAAAAAAAAAAAAAAAAAAAGQ=" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><span class="tgme_widget_message_inline_button_text" dir="auto">Connect</span></a></div></div>
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/374" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmIwYWMzMWEyMTFlNGJhMDE3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/374" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZWQ2YWUyNjYzYmRhMzk3ODU3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -444,9 +539,7 @@ Proxy socks5
     <a href="https://t.me/socks5R/374" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">176</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/374"><time datetime="2023-12-16T16:39:10+00:00" class="time">16:39</time></a></span>
@@ -454,7 +547,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/376" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjJkMWQ0ZmZiZTU2MDAxNTVmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/376" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYThjMThkY2IzNGY3NDlmYTQ3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -470,16 +563,14 @@ Proxy socks5
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/socks5R/374" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/socks5R/374" ">
 <div class="tgme_widget_message_author accent_color">
-  <span class="tgme_widget_message_author_name" dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span>
+  <span class="tgme_widget_message_author_name" dir="auto">BypassInternet</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><tg-emoji emoji-id="5343789187172670307"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>میزان حجم = 30GB  <tg-emoji emoji-id="5418063924933173277"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji>تعداد کاربر= نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F8E.png')"><b>🏎</b></i>پهنای باند = نا محدود <tg-emoji emoji-id="5913600088856334619"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i></tg-emoji>نوع اکانت = هدیه + حمایت از کاربران مجموعه <tg-emoji emoji-id="5345983949820666094"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB2.png')"><b>⏲</b></i></tg-emoji>مدت اعتبار لینک =سه روز تا تاریخ ۲۸ آذر- ساعت ۲۰:۰۰ شب <tg-emoji emoji-id="4969799614178788098"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>پروتوکل اکانت: VLESS اپلیکیشن : iPhone<tg-emoji emoji-id="5296273521595396248"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i></tg-emoji>: V2Box(IOS) , Foxray(IOS), Android<tg-emoji emoji-id="5280926521115025358"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: V2rayNG (Android)…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">از اونجایی که ممکنه فراموش کرده باشید: <br/><br/><br/>برای اتصال ابتدا لینک ارسال شده که به عنوان مثال با ... VLESS://eyJhZGQiOiJhc آغاز میشود کپی کنید .برنامه را باز کنید  روی علامت Configs در پایین صفحه بزنید و در منوی بالا سمت راست روی + بزنید.در منوی باز شده گزینه Import v2ray uri from clipboard را انتخاب کنید. اکنون یک سرور و کانفیگ به برنامه اضافه می شود. روی آن یکبار بزنید تا کلمه VLESS آبی رنگ گردد. روی علامت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8FA0.png')"><b>🏠</b></i> در پایین صفحه بزنید با زدن روی آیکون (کشیدنی )Slide To Connect در پایین صفحه فرایند اتصال آغاز می شود و با نشانه VPN در بالای صفحه گوشی متوجه می شویم که اتصال موفقیت آمیز بوده است.<br/><br/>نحوه اتصال در اکثر برنامه های V2Ray  به همین صورت است . موفق باشید.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">848</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/376"><time datetime="2023-12-16T16:54:25+00:00" class="time">16:54</time></a></span>
@@ -487,7 +578,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/377" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMWQxYzI5YTY0ZTYwMWE5YWJmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/377" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYzQwZmNkMzNmMWUyMjlhZDk1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -504,16 +595,14 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">برای دریافت همواره VPN (فیلترشکن رایگان) کانال زیر را دنبال کنید و از خدمات به روز آن آستفاده نمایید با پشتبانی فوق العاده. اگر دوستانی دارید که به دنبال فیلترشکن رایگان هستند این پیام را فوروارد نمایید. <br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال </a><br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال </a><br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال</a></div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/bypassInternet">
+<div class="tgme_widget_message_text js-message_text" dir="auto">برای دریافت همواره VPN (فیلترشکن رایگان) کانال زیر را دنبال کنید و از خدمات به روز آن آستفاده نمایید با پشتبانی فوق العاده. اگر دوستانی دارید که به دنبال فیلترشکن رایگان هستند این پیام را فوروارد نمایید. <br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال </a><br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال </a><br/><a href="https://t.me/bypassInternet" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">BypassInternet کانال</a></div><a class="tgme_widget_message_link_preview" href="https://t.me/bypassInternet">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/VVAP7TXinFJKimYhg2g43MEO14wiwFalj5gEiaJR8Mqi-k0Jrwbu1CICzPW9aLXpO_oUBJhjUc0L_7swr0_jh17ToheRmgEPA1fbKZM-kpUHO8SJ6fsfZ-l-ziFyyym7k8t1nWVR77k4r3FqW3Ih8duvkfwstwp1zWu7JpSdQ0IUnoyCeRgl_J0l08SKNAKOCbIqEx-7Eb-yhELMUg8Lb3IaJ-Aw4bsKE_96VQhjwdBcPK_9sIC5LIaZdblsMfBlwFzFjMPcd_U2KUxzCTPrGBJqIVur3R6auqnpE6VQeCzxCMHjYONXiM2Sh4EvjBwo2YlxSYVn9l47ryrcF0DaDQ.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">BypassInternet</div>
   <div class="link_preview_description" dir="auto">فروشگاه فیلترشکن VPN بایپس اینترنت&#33;<br/>پراکسی ، socks V2ray SSH<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9490.png')"><b>🔐</b></i> BypassN<br/>فروش فیلترشکن سریع و بدون قطعی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AA.png')"><b>💪</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i> همراه با تست رایگان<br/><br/>√ قابل استفاده در تمامی پلتفرم‌ها ( ویندوز - اندروید - iOS )<br/><br/>خرید از طریق آیدی زیر<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/>@BypassN</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">997</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/socks5R/377"><time datetime="2023-12-16T23:56:18+00:00" class="time">23:56</time></a></span>
@@ -521,7 +610,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/379" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiOTVhNDUwOWJiYzlhZWM1Zjc3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/379" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzc5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiODYxYzk3NzQ3OTQ2ZDVhYWRhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -538,15 +627,13 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/bypassInternet/176"><span dir="auto">BypassInternet</span></a></div>
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5465432711218863135"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i></tg-emoji><tg-emoji emoji-id="5424972470023104089"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji> <b>این پست هر سه روز اپدیت میشود ، از دست ندید&#33;</b><br/><br/><b>VPN رایگان + Proxy رایگان <br/></b><br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><br/><br/><br/><tg-emoji emoji-id="5447410659077661506"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>میزان حجم = 30GB<br/> <tg-emoji emoji-id="5362079447136610876"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji>تعداد کاربر= محدود<br/><tg-emoji emoji-id="5391172232749793372"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F8E.png')"><b>🏎</b></i></tg-emoji>پهنای باند = محدود<br/><tg-emoji emoji-id="5203996991054432397"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i></tg-emoji>نوع اکانت = <b>هدیه زمستانی + حمایت از کاربران مجموعه</b><br/><tg-emoji emoji-id="5345983949820666094"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB2.png')"><b>⏲</b></i></tg-emoji>مدت اعتبار لینک =<br/><br/><blockquote>سه روز از تاریخ ۷ تا ۱۰  دی - ساعت ۱۵:۰۰</blockquote><br/><br/><tg-emoji emoji-id="4969799614178788098"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>پروتوکل اکانت: VLESS<br/>اپلیکیشن :<br/>iPhone<tg-emoji emoji-id="5296273521595396248"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D8F.png')"><b>🍏</b></i></tg-emoji>: <a href="https://apps.apple.com/app/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2Box(IOS)</u></a> , <a href="https://apps.apple.com/app/id6448898396" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>Foxray(IOS),</u></a><u><br/></u>Android<tg-emoji emoji-id="5280926521115025358"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: <a href="https://github.com/2dust/v2rayNG/releases/download/1.8.12/v2rayNG_1.8.12.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2rayNG</u></a> (Android)<br/>================<br/>کانفیگ زیر را از ابتدای vless:// تا انتها کپی نمایید و در برنامه موردنظر قرار دهید .<br/><br/>================<br/><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><br/><br/><blockquote>vless://1b19829e-cda8-5b9e-974e-add34230797f@zero.realityip.org:80?encryption=none&amp;headerType=none&amp;type=ws&amp;path=%2FArmageddon&amp;host=zero.realityip.org#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i> Happy <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i> <a href="https://t.me/BypassN" target="_blank">@BypassN</a>‌ ☜خرید‌از‌تلگرام</blockquote><br/><br/><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><br/>===============<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a> ☜خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a> ☜خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a> ☜خرید‌از‌تلگرام<br/><br/><br/>از پراکسی همیشه رایگان زیر برای زمانیکه اکانت شما به اتمام رسیده یا هنوز خریداری نکردید میتوانید به رایگان استفاده نمایید &#33;<br/><br/><a href="https://t.me/proxy?server=tg.realityip.org&amp;amp;port=443&amp;amp;secret=8fced22f0dd7294e2be797040419b87d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پراکسی رایگان BYPASSNET کلیک کنید &#33;</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/socks5R/379" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">225</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/379"><time datetime="2023-12-28T17:08:37+00:00" class="time">17:08</time></a></span>
@@ -554,7 +641,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/381" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzgxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZTQ2ZmQyMTIxODQ1Zjc5YjE2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/381" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzgxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiM2RhNjE2MWZjY2JlZjU1ODBhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -571,15 +658,13 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/bypassInternet/176"><span dir="auto">BypassInternet</span></a></div>
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5465432711218863135"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i></tg-emoji><tg-emoji emoji-id="5424972470023104089"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji> <b>این پست هر سه روز اپدیت میشود ، از دست ندید&#33;</b><br/><br/><b>VPN رایگان + Proxy رایگان</b><br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><br/><br/><tg-emoji emoji-id="5447410659077661506"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>میزان حجم = 30GB<br/> <tg-emoji emoji-id="5362079447136610876"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji>تعداد کاربر= محدود<br/><tg-emoji emoji-id="5391327195169831190"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F8E.png')"><b>🏎</b></i></tg-emoji>پهنای باند = محدود<br/><tg-emoji emoji-id="5203996991054432397"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i></tg-emoji>نوع اکانت = <b>هدیه زمستانی + حمایت از کاربران مجموعه</b><br/><tg-emoji emoji-id="5345983949820666094"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB2.png')"><b>⏲</b></i></tg-emoji>مدت اعتبار لینک =<br/><blockquote>سه روز از تاریخ ۱۷ تا ۲۰  دی - ساعت ۱۵:۰۰</blockquote><br/><br/><tg-emoji emoji-id="5343789187172670307"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>پروتوکل اکانت: VLESS<br/>اپلیکیشن :<br/>iPhone<tg-emoji emoji-id="5332823031859389246"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: <a href="https://apps.apple.com/app/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2Box(IOS)</u></a> , <a href="https://apps.apple.com/app/id6448898396" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>Foxray(IOS),</u></a><u><br/></u>Android<tg-emoji emoji-id="5307884136751439109"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: <a href="https://github.com/2dust/v2rayNG/releases/download/1.8.12/v2rayNG_1.8.12.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2rayNG</u></a> (Android)<br/>================<br/>برروی کانفیگ زیر یکبار کلیک کرده تا کپی شود&#33;<br/><br/>================<br/><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><br/><br/><blockquote><code>vless://404c4d9a-3ef1-57cd-a636-9872df9d344e@alcohol.callofip.com:80?encryption=none&amp;headerType=none&amp;type=ws&amp;path=%2Fstream&amp;host=alcohol.callofip.com#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i>Alcohol 120% <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i> @BypassN‌ ☜خرید‌از‌تلگرام</code></blockquote><br/><br/><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><br/>===============<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/>===============<br/>از پراکسی تلگرام همیشه رایگان زیر برای زمانیکه اکانت شما به اتمام رسیده یا هنوز خریداری نکردید میتوانید به رایگان استفاده نمایید &#33;<br/><br/><a href="https://t.me/proxy?server=tg.realityip.org&amp;amp;port=443&amp;amp;secret=8fced22f0dd7294e2be797040419b87d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پراکسی رایگان BYPASSNET کلیک کنید &#33;</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/socks5R/381" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">231</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/381"><time datetime="2024-01-09T16:04:17+00:00" class="time">16:04</time></a></span>
@@ -587,7 +672,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/382" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzgyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNTA2MDI0NzIzM2ZiMmRjMzMwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/382" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6MzgyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMmZlMDJmMTI4M2E3MTkwZTM2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -610,17 +695,15 @@ Proxy socks5
     <a href="https://t.me/socks5R/382" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/382"><time datetime="2024-01-13T11:35:20+00:00" class="time">11:35</time></a></span>
+    <span class="tgme_widget_message_views">1.83K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/382"><time datetime="2024-01-13T11:35:20+00:00" class="time">11:35</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/384" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMTkxODY4MGFkZDM3ZmRiMjI4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/384" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDgwZDc3MjI0NTllNDc3OWJiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -637,15 +720,13 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/bypassInternet/176"><span dir="auto">BypassInternet</span></a></div>
 
-<div class="message_media_not_supported_wrap">
+<div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5465432711218863135"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i></tg-emoji><tg-emoji emoji-id="5424972470023104089"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji> <b>این پست هر سه روز اپدیت میشود ، از دست ندید&#33;</b><br/><br/><b>VPN رایگان + Proxy رایگان</b><br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><br/><br/><tg-emoji emoji-id="5447410659077661506"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>میزان حجم = 30GB<br/> <tg-emoji emoji-id="5362079447136610876"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A8E2808DF09F92BB.png')"><b>👨‍💻</b></i></tg-emoji>تعداد کاربر= محدود<br/><tg-emoji emoji-id="5391327195169831190"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F8E.png')"><b>🏎</b></i></tg-emoji>پهنای باند = محدود<br/><tg-emoji emoji-id="5203996991054432397"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E81.png')"><b>🎁</b></i></tg-emoji>نوع اکانت = <b>هدیه زمستانی + حمایت از کاربران مجموعه</b><br/><tg-emoji emoji-id="5345983949820666094"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FB2.png')"><b>⏲</b></i></tg-emoji>مدت اعتبار لینک =<br/><blockquote>پنج روز از تاریخ ۲۳ تا ۲۸  دی - ساعت ۱۵:۰۰</blockquote><br/><br/><tg-emoji emoji-id="5343789187172670307"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i></tg-emoji>پروتوکل اکانت: VLESS<br/>اپلیکیشن :<br/>iPhone<tg-emoji emoji-id="5332823031859389246"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: <a href="https://apps.apple.com/app/id6446814690" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2Box(IOS)</u></a> , <a href="https://apps.apple.com/app/id6448898396" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>Foxray(IOS),</u></a><u><br/></u>Android<tg-emoji emoji-id="5307884136751439109"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B1.png')"><b>📱</b></i></tg-emoji>: <a href="https://github.com/2dust/v2rayNG/releases/download/1.8.12/v2rayNG_1.8.12.apk" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>V2rayNG</u></a> (Android)<br/>================<br/>برروی کانفیگ زیر یکبار کلیک کرده تا کپی شود&#33;<br/><br/>================<br/><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><tg-emoji emoji-id="5447183459602669338"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BD.png')"><b>🔽</b></i></tg-emoji><br/><br/><blockquote><code>vless://66de1322-2173-52da-840c-8c72319eba2b@plus.realityip.org:80?encryption=none&amp;headerType=none&amp;type=ws&amp;path=%2FArmageddon&amp;host=plus.realityip.org#<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ACF09F87A7.png')"><b>🇬🇧</b></i>Alcohol 120% <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988B.png')"><b>😋</b></i> @BypassN‌ ☜خرید‌از‌تلگرام</code></blockquote><br/><br/><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><tg-emoji emoji-id="5449683594425410231"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94BC.png')"><b>🔼</b></i></tg-emoji><br/>===============<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/><a href="https://t.me/BypassN" target="_blank">@BypassN</a><tg-emoji emoji-id="5316650495715057696"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B92.png')"><b>🛒</b></i></tg-emoji> خرید‌از‌تلگرام<br/>===============<br/>از پراکسی تلگرام همیشه رایگان زیر برای زمانیکه اکانت شما به اتمام رسیده یا هنوز خریداری نکردید میتوانید به رایگان استفاده نمایید &#33;<br/><br/><a href="https://t.me/proxy?server=tg.realityip.org&amp;amp;port=443&amp;amp;secret=8fced22f0dd7294e2be797040419b87d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">پراکسی رایگان BYPASSNET کلیک کنید &#33;</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/socks5R/384" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/384"><time datetime="2024-01-13T11:45:44+00:00" class="time">11:45</time></a></span>
@@ -653,7 +734,7 @@ Proxy socks5
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/385" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYzgzMWRhMjk2MDg3YTlmNzczIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/385" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZDU5YmQ3ZTdlMjlmYTI3OTc3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -670,24 +751,22 @@ Proxy socks5
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/socks5R"><span dir="auto">Free MTProto &amp; V2ray VPN فیلترشکن رایگان</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/vmess4vpnbot" target="_blank" rel="noopener">https://t.me/vmess4vpnbot</a><br/><br/>رایگان اکانت تست بگیرید</div>
-<a class="tgme_widget_message_link_preview" href="https://t.me/vmess4vpnbot">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/vmess4vpnbot" target="_blank" rel="noopener">https://t.me/vmess4vpnbot</a><br/><br/>رایگان اکانت تست بگیرید</div><a class="tgme_widget_message_link_preview" href="https://t.me/vmess4vpnbot">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/rFUBf3H_JiJE6PnjC1EOJ5DyQejth6Khs7E9pUnC4XzSQAaxfifel5he6Iuz14gA6IdJN9FrCy4EqwZF8Zv0kaehzuP5qxa7vhkgJENb3nhdarwOJCZWTd98DLpi-ScunnQ4cCASPDSh6EXAdBrSKBByJAIcQylWsCfRMbqXMPHvqKxxVy72bFYJdQiqSuGcN6WQyWJl7GcYz0uUC5h-ZnCSJ4Q-jcDQAnNavxnNWATbkJ8qDTQUhUsUcH5xVjlAeEAw8QvD_tmvxy2QRolLvWc9LW-NTN2Pkp9CEsQDu46utz8NTtk0DPr8o0oKRfejIwSxL55qQL0l2kLFCosZZA.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">فیلترشکن رایگان v2ray</div>
   <div class="link_preview_description" dir="auto">ربات فیلترشکن رایگان</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/385"><time datetime="2024-02-26T18:00:18+00:00" class="time">18:00</time></a></span>
+    <span class="tgme_widget_message_views">3.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/385"><time datetime="2024-02-26T18:00:18+00:00" class="time">18:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/386" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYmJjNDI1Yzc4YWUyOTQ1YWE3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="socks5R/386" data-view="eyJjIjotMTg1NjkyNDIwMiwicCI6Mzg2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGI0YTdjNDk3NzE1ZjBhYjYzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/socks5R"><i class="tgme_widget_message_user_photo bgcolor0" data-content="F"><img src="https://cdn4.cdn-telegram.org/file/DuJaM8Z2_ooDkJWYLw9qh7YoFrm3GEEJCrOXcTFqRAZd4v3XYJeuTqCzFvN5LA7BzuQ9WCuLUQhRQCOvuYqtsPpA1tOw1TESGiCTa_GnZWNGH_7MPahoYufmaPo7Gx4LnFFCWg4DEnDsdzg1Plfg7YQgnKEq3w-dNkGYiuDGEbeKSAo_L9UouG5rNeJ567Px_s6rjTzyCKnySknLv5DZb5VI1rdMe4TY99bfY198Ev8AF0nNzyGeq4Vb_FGTHXp01GGIUNEGezC-nIdXA2pJj2tAy9_8KAObk8NLkW30xBbETKaczUlTtIdY_uhmQ7OYp2RGQyF7XR5EWYC1CP2kEA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -709,19 +788,17 @@ Proxy socks5
     <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
     <a href="https://t.me/socks5R/386" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
-</div></div>
-
-<a class="tgme_widget_message_link_preview" href="https://t.me/vmess4vpnbot">
+</div></div><a class="tgme_widget_message_link_preview" href="https://t.me/vmess4vpnbot">
   <i class="link_preview_right_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/Y5L6JhMzb78zr-EQt8xln433SsQF9BT3DiCjkeuwXKlJj1OVhgNm5Qvhr9zMfmjCyYGVeZP2CYfwM7sWd1LpuO0wDf7APbBjVQH_GC70icVX4_BgqgfqWr_6rBJom2NgHDlS2p2hQJ0blU5S9JvT0jm0kvRfTtD-YgkTlNvOLjRKK17OmV_6gVHN2K1FWCP7iUSxNPLx3GyY43E9mu14gOwZmC-LM5x5-vVublqYfBq3HPpXrJ5uVNW2nkSwF528ihECl7vQr0lOZadExDSNkuibcSArgEfAiD7jH4dOSyGeNQjLjyWOReF4ufpASR6bYt4PgUtUwTXije5gz2A7dw.jpg')"></i>
   <div class="link_preview_site_name accent_color" dir="auto">Telegram</div>
   
   <div class="link_preview_title" dir="auto">فیلترشکن رایگان v2ray</div>
   <div class="link_preview_description" dir="auto">ربات فیلترشکن رایگان</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/386"><time datetime="2024-02-26T22:23:52+00:00" class="time">22:23</time></a></span>
+    <span class="tgme_widget_message_views">3.57K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/socks5R/386"><time datetime="2024-02-26T22:23:52+00:00" class="time">22:23</time></a></span>
   </div>
 </div>
   </div>
@@ -735,11 +812,11 @@ Proxy socks5
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 67.34ms -->
+<!-- page generated in 71.18ms -->

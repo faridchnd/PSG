@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">51</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">photo</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">file</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">عضو شو اینجا قراره هر روز کانفیگ رایگان قرار بدیم.</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=192645f8dda2fdb0fb_7377515826841012635">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=457d3a199a754dd850_17072172791459434689">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=192645f8dda2fdb0fb_7377515826841012635">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=457d3a199a754dd850_17072172791459434689">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/freev2raym">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/freev2raym">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freev2raym?before=179" class="tme_messages_more js-messages_more" data-before="179"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/179" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTc5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZmM3MDY3ZjY5NTlhODg3Nzc2In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freev2raym?before=179" class="tme_messages_more js-messages_more" data-before="179"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/179" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTc5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiOTIwMTBmNDI3YjcxN2IyZWZiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,10 +245,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">خیلی بدید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">149</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/179"><time datetime="2023-11-08T20:32:54+00:00" class="time">20:32</time></a></span>
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/180" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTZmNTM5YzM0NDUzYjc0Njc4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/180" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDY5MmI5N2MxOTViNzcyNWUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,10 +271,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">که حمایت نمی‌کنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">136</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/180"><time datetime="2023-11-08T20:33:00+00:00" class="time">20:33</time></a></span>
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/181" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiODM5ZjQ3ZDQ1ZTU1MDUzOTM3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/181" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzk4YjQ0MWFiNzRlYjMyMzYxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,9 +297,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرویس V2ray و outline vpn<br/>قابل استفاده در تمامی اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> نصب در تمام سیستم عامل ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>10گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 30T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>15 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 40T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>20 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 55T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>30 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 80T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>40 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 105T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>45 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 120T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>50 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 130T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>60 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 160T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>70 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 180T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>80گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i>کاربر 200T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>85 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/34E283A3.png')"><b>4️⃣</b></i> کاربر 220T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>100گیگ ماهانه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/35E283A3.png')"><b>5️⃣</b></i>کاربر 260T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E95.png')"><b>➕</b></i> هزینه کاربر اضافه [5] هزار تومان میباشد.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><br/>تعرفه ی سرویس نامحدود<br/>تک کاربر 130 تومان<br/>و هر کاربر اضافه که بخواید 50 تومن<br/>سفارش فقط از آیدی زیر<br/><br/><br/><a href="https://t.me/Anti_ping_story" target="_blank">@Anti_ping_story</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -195,7 +306,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/182" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYWZkNjU2Mjc1NWUwZTM0ZmRiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/182" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNmM1MTkxMWE3ZTI1M2RjOTY2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -212,10 +323,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان اختصاصی چنل<br/><br/><code>vless://084a7d29-d80b-4660-be82-44f2d0ff6fa3@anti_ping.antiping.click:443?mode=gun&amp;security=tls&amp;encryption=none&amp;type=grpc&amp;serviceName=@freev2raym @freev2raym @freev2raym&amp;sni=freev2raym.antiping.click#%40freev2raym</code><br/><br/><br/>لطفا با دعوت دوستاتون به چنل از ما حمایت کنید.<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i><br/><br/><a href="https://t.me/freev2raym" target="_blank">@freev2raym</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">225</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/182"><time datetime="2023-11-09T14:06:44+00:00" class="time">14:06</time></a></span>
@@ -223,7 +332,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/183" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiN2EzYjc5NjAzNWE2ZGY0OGE2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/183" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTgzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGMxYTkxMTg4ZGY4MjZlNTJlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -240,9 +349,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">تعرفه سرویس V2ray و outline vpn قابل استفاده در تمامی اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> نصب در تمام سیستم عامل ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>10گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 30T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>15 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 40T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>20 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 55T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>30 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 80T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>40 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 105T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>45 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i>…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -251,7 +358,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/184" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjE2ZDdkYzNkZWViYjNkNjY3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/184" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiY2NjNDkyN2VhY2ViYmM2YTdlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -268,10 +375,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">تعرفه سرویس V2ray و outline vpn<br/>قابل استفاده در تمامی اپراتور ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> نصب در تمام سیستم عامل ها<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>10گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 30T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>15 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 40T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>20 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 55T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>30 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 80T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>40 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 105T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>45 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 120T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>50 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 130T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>60 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 160T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>70 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i> کاربر 180T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>80گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/33E283A3.png')"><b>3️⃣</b></i>کاربر 200T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>85 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/34E283A3.png')"><b>4️⃣</b></i> کاربر 220T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>100گیگ ماهانه<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/35E283A3.png')"><b>5️⃣</b></i>کاربر 260T<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E95.png')"><b>➕</b></i> هزینه کاربر اضافه [5] هزار تومان میباشد.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29CB3.png')"><b>✳️</b></i><br/>تعرفه ی سرویس نامحدود<br/>تک کاربر 130 تومان<br/>و هر کاربر اضافه که بخواید 50 تومن<br/>سفارش فقط از آیدی زیر<br/><br/><br/><a href="https://t.me/Anti_ping_story" target="_blank">@Anti_ping_story</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">249</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/184"><time datetime="2023-11-10T10:28:32+00:00" class="time">10:28</time></a></span>
@@ -279,7 +384,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/185" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNTBhZjJkZmM5MDI2NDc5NGZmIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/185" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTMyZTEzOWFmYzdhOGE1MDFiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -296,9 +401,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto">تعرفه سرویس V2ray و outline vpn قابل استفاده در تمامی اپراتور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i> نصب در تمام سیستم عامل ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>10گیگ ماهانه  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 30T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>15 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/31E283A3.png')"><b>1️⃣</b></i>کاربر 40T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>20 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 55T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>30 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 80T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>40 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i> کاربر 105T <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA2.png')"><b>🟢</b></i>45 گیگ ماهانه <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/32E283A3.png')"><b>2️⃣</b></i>…</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -307,7 +410,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/186" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmUyNWEzYThlYzg2NWY3ODZhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/186" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiY2Y2MDgyNDg3ZDdhMjdkMTE0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -324,18 +427,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">نظرتون چیه فعالیت رایگان و شروع کنیم .<br/><br/>ببینم چه مقدار لایک میخوره.<br/><br/><a href="https://t.me/freev2raym" target="_blank">@freev2raym</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/186"><time datetime="2024-01-30T21:34:31+00:00" class="time">21:34</time></a></span>
+    <span class="tgme_widget_message_views">1.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/186"><time datetime="2024-01-30T21:34:31+00:00" class="time">21:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/187" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDdkZGU1ZmNlNjliOGIzYTFkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/187" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDRkMThmZWFkM2NjNWZlODhmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,10 +453,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان مخصوص تمام اپراتور ها <br/>میزان حجم و تایم بستگی به حمایت شما دارد.<br/><br/>حمایت یعنی دعوت دوستاتون به چنل<br/><br/>اگه حمایت اوکی باشه تایم و حجم بیشتر میشه اگه نباشه یک ساعت دیگه حذف میشه...<br/><br/><code>vless://f97c7f12-e303-4679-8723-80edf65bbe37@antipingfree.antimelinet.click:39851?security=none&amp;encryption=none&amp;headerType=http&amp;type=tcp#join%3A%40freev2raym</code><br/><br/><br/><br/><a href="https://t.me/freev2raym" target="_blank">@freev2raym</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">180</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freev2raym/187"><time datetime="2024-01-30T21:45:00+00:00" class="time">21:45</time></a></span>
@@ -363,7 +462,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/188" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZjc4ZmVmNDE4NjgyZTk1OWJiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/188" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZDYzZjE1NGFkOWU3MmI0MTgxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -379,15 +478,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freev2raym/187" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freev2raym/187" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفیگ رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانفیگ رایگان مخصوص تمام اپراتور ها  میزان حجم و تایم بستگی به حمایت شما دارد.  حمایت یعنی دعوت دوستاتون به چنل  اگه حمایت اوکی باشه تایم و حجم بیشتر میشه اگه نباشه یک ساعت دیگه حذف میشه...  vless://f97c7f12-e303-4679-8723-80edf65bbe37@antipingfree.antime…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دامنه روی همراه فیلتر شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><br/>چه سریع میزنن</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -396,7 +493,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/189" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZjhhMDQ0MjE3MGNkMjE3ZmNiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/189" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTg5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzEwYzE1MzZkMDlkZWZmMjdkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -412,15 +509,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freev2raym/188" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freev2raym/188" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفیگ رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">دامنه روی همراه فیلتر شد <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i> چه سریع میزنن</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">درسته یا من اشتباه میکنم ؟</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -429,7 +524,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/190" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmMzMzcwYWFmODViMTA3ZWVkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/190" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzM3NTI0NGZjYzg2YWZmMGI5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -445,16 +540,14 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freev2raym/187" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freev2raym/187" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفیگ رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">کانفیگ رایگان مخصوص تمام اپراتور ها  میزان حجم و تایم بستگی به حمایت شما دارد.  حمایت یعنی دعوت دوستاتون به چنل  اگه حمایت اوکی باشه تایم و حجم بیشتر میشه اگه نباشه یک ساعت دیگه حذف میشه...  vless://f97c7f12-e303-4679-8723-80edf65bbe37@antipingfree.antime…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">آپدیت سرور <br/><br/><code>vless://f97c7f12-e303-4679-8723-80edf65bbe37@91.107.160.74:39851?security=none&amp;encryption=none&amp;headerType=http&amp;type=tcp#Test-xcr1f4xr</code><br/><br/><br/><br/>حمایت کنید .<br/><br/><a href="https://t.me/freev2raym" target="_blank">@freev2raym</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">179</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/190"><time datetime="2024-01-30T22:14:03+00:00" class="time">22:14</time></a></span>
@@ -462,7 +555,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/191" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiODMzOWMyMzhiYjY2MGY1ZTFlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/191" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjRiYzY1NGM3YjFmNzc5YjdjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -478,15 +571,13 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/freev2raym/190" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/freev2raym/190" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">کانفیگ رایگان</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">آپدیت سرور   vless://f97c7f12-e303-4679-8723-80edf65bbe37@91.107.160.74:39851?security=none&amp;encryption=none&amp;headerType=http&amp;type=tcp#Test-xcr1f4xr    حمایت کنید .  @freev2raym</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">غیر فعال شد.<br/>اگه عضو جدید دعوت بدید و راضی کننده باشه مجدد فعال خواهد شد</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -495,7 +586,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/192" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTdjNzBkMzExODYwZTllOWVlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/192" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTVkM2JjMGQwNDNjNjc2OGQ3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -512,10 +603,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان مخصوص تمام اپراتور ها <br/>میزان حجم و تایم بستگی به حمایت شما دارد.<br/><br/>حمایت یعنی دعوت دوستاتون به چنل<br/><br/><br/><br/><code>vless://7b0066b1-5c34-4cf4-bf89-6d98da423807@37.152.179.33:777?security=none&amp;encryption=none&amp;headerType=none&amp;type=tcp#%40anti_ping%3A%DA%A9%D8%A7%D9%86%D8%A7%D9%84+%D9%85%D8%A7</code><br/><br/><a href="https://t.me/freev2raym" target="_blank">@freev2raym</a><br/><a href="https://t.me/anti_ping" target="_blank">@anti_ping</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">194</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/freev2raym/192"><time datetime="2024-02-01T23:17:24+00:00" class="time">23:17</time></a></span>
@@ -523,7 +612,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/193" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOThmMGVjODVkYjdkYmU5Y2FkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/193" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTkzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNDcwMjM2ZDU4NTc0YjM3MjdjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -540,10 +629,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<span class="tgme_widget_message_forwarded_from_name"><span dir="auto">آنتی پینگ|مرگ خاموشvpn</span></span>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">مرگ خاموش</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ‌ رایگان اختصاصی چنل<br/>با لمس کانفیگ ها کپی می‌شوند.<br/><br/><code>vmess://eyJhZGQiOiI5MS4xMDcuMTQxLjAiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiYzg0ODYzNzYtMjJmNC00OWNlLTliN2YtY2IwYTM1MzBiZGI4IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiIyMTAyNCIsInBzIjoiQGFudGlfcGluZyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==</code><br/>لطفاً با دعوت دوستاتون به چنل از فعالیت رایگان حمایت کنید .<br/><code>trojan://ziIjOlyGbM@91.107.141.0:23825?type=tcp&amp;path=%2F&amp;headerType=http&amp;security=none#%40anti_ping</code><br/><br/>کانفیگ مخصوص outline و V2rayNG <br/><code>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3dmxKcEZWaEVwS2gvVlRUQ3ZPYWI4ZUVvSm8rTWVYSnBqOUNEeExZbTlvPQ==@91.107.141.0:43486#%40anti_ping</code><br/><br/><br/>با دعوت دوستاتون به چنل از فعالیت رایگان ما حمایت کنید.<br/><br/><br/><a href="https://t.me/anti_ping" target="_blank">@anti_ping</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">191</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/193"><time datetime="2024-02-08T11:00:30+00:00" class="time">11:00</time></a></span>
@@ -551,7 +638,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/194" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYTQ1NTRmZTdmYjkzNGQ5ZjA0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/194" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiOTBkYTk3YTMwN2E4ZGNjYmMzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -568,9 +655,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">آدرس ربات جدید با امکانات بیشتر<br/>جهت مشاهده حجم ، خرید و تمدید.<br/>ربات قبلی حذف شده .<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/><a href="https://t.me/Antipingshopp_bot" target="_blank">@Antipingshopp_bot</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -579,7 +664,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/195" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTJkZTRjZDUyZDA1ZmEwMmRiIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/195" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjI0Y2FlZmEyZTc3M2E0NDhjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -596,10 +681,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<span class="tgme_widget_message_forwarded_from_name"><span dir="auto">آنتی پینگ|مرگ خاموشvpn</span></span>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">مرگ خاموش</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان <br/><br/>مخصوص تمام اپراتور ها <br/><br/>با دعوت دوستاتون به چنل و شیر کردن کانفیگ از ما حمایت کنید <br/><br/><br/><code>vless://9044733f-2a53-4a83-bd70-4ad5a2dfd9e6@antipingfree.melin.shop:58634?security=none&amp;encryption=none&amp;host=zula.ir&amp;headerType=http&amp;type=tcp#%40anti_ping+%D8%B9%D8%B6%D9%88+%D8%B4%D9%88<br/></code><br/><br/><a href="https://t.me/anti_ping" target="_blank">@anti_ping</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">189</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/195"><time datetime="2024-03-05T11:07:38+00:00" class="time">11:07</time></a></span>
@@ -607,7 +690,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/196" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZTdmOTQ1MThjNmJmNmQwNjRjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="freev2raym/196" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNGRhYWE5ZjIxZjBlZGMxYzhjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -624,10 +707,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 <div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<span class="tgme_widget_message_forwarded_from_name"><span dir="auto">آنتی پینگ|مرگ خاموشvpn</span></span>&nbsp;(<span class="tgme_widget_message_forwarded_from_author" dir="auto">مرگ خاموش</span>)</div>
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">کانفیگ رایگان اختصاصی چنل<br/><br/>با دوستاتون به اشتراک بزارید و استفاده کنید .<br/><br/><br/><code>vless://222badf2-8e87-479a-8b77-1a3c952edac2@antipingchannel.antiping.click:2096?mode=gun&amp;security=tls&amp;encryption=none&amp;alpn=h2,http/1.1&amp;fp=chrome&amp;type=grpc&amp;serviceName=sourceforge.net&amp;sni=vipping.antiping.click#join%3A%40anti_ping</code><br/><br/>اگه حمایت بشه از این پست و اعضای جدیدی دعوت بدید ، فعال میمونه <br/><br/>چنل ما<br/><a href="https://t.me/anti_ping" target="_blank">@anti_ping</a><br/><br/>خرید کانفیگ‌ اختصاصی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><a href="https://t.me/Antipingshopp_bot" target="_blank">@Antipingshopp_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">174</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/freev2raym/196"><time datetime="2024-03-21T17:19:51+00:00" class="time">17:19</time></a></span>
@@ -635,7 +716,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/197" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk3LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYmZmYmQzNTI5ZDQ3OTI1MGIxIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/197" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk3LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMDZiNjJjYzUxMjQ1MmY3NGU2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -652,9 +733,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel name was changed to «<span class="tgme_widget_service_strong_text" dir="auto">خرید تلگرام پریمیوم</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -663,7 +742,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/198" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiN2MyYjEzNmJkNTQ1YzNmYTYzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="freev2raym/198" data-view="eyJjIjotMTg0MDgwMDgwNCwicCI6MTk4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZmI3ODhjOTFiNDM4YzU1ZjkwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/freev2raym"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ک"><img src="https://cdn1.cdn-telegram.org/file/SqZ3BKM_pvVFu9l2dpPRVio_w0jBBMEp7PKuUY2EvrOPDBAuXb8L_ThfNW6HEZhsmru7qz2BklpefOa9kVcxRCbXQ1Z-E68WxM3e_F4GC_bViUX9yN0iF7y-oYpQKEyYlOCTI-r_tOt-ycSIH8f8bCd1C6GFK0xGPZ5Thv7goIo2tcPcQIQs6cvLHH7LH2jk9U6_qTUsP7X2fh6GlgO1bwDZWGx2nWHr6J0770t5psuI5ClgFTQwgd70f70Vb78l0dwJEZzcAixKZ9WDjJrfwE_ZgHMSAYRFVfAestea2aLY9FCLXNOoRx9fwzWDbgY49TSEnp9jh912WXVXzW8k-w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -680,9 +759,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/freev2raym"><span dir="auto">کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">Channel name was changed to «<span class="tgme_widget_service_strong_text" dir="auto">کانفیگ رایگان</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -700,11 +777,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 57.56ms -->
+<!-- page generated in 56.98ms -->

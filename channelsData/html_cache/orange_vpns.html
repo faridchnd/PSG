@@ -54,9 +54,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -83,9 +200,9 @@
             </div>
             <div class="tgme_channel_info_header_username"><a href="https://t.me/orange_vpns">@orange_vpns</a></div>
           </div>
-          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">9.35K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">86</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">11</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2.11K</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">9.36K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">86</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">11</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2.11K</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><a href="https://t.me/orange_support" target="_blank">@orange_support</a> پشتیبانی کانال <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A5.png')"><b>👥</b></i><br/> <br/>یک کانفینگ برای همه اپراتورها  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/>اتصال سریع و آسان بدون قطعی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938A.png')"><b>📊</b></i><br/>پشتیبانی و بروز رسانی هر روزه سرور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F939D.png')"><b>📝</b></i><br/>ارائه سرورهای اختصاصی با بهترین سرعت در ایران <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B3.png')"><b>💳</b></i><br/>ارائه IP اختصاصی و پنل سرور <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9490.png')"><b>🔐</b></i></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=84a51d6bf1f9896372_7002144635049947292">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=a4f70c5665f07efdf4_5956549395886528031">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -106,7 +223,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=84a51d6bf1f9896372_7002144635049947292">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=a4f70c5665f07efdf4_5956549395886528031">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/orange_vpns">
@@ -115,7 +232,7 @@
           <div class="tgme_header_title"><span dir="auto">V2ray سرور و کانفیگ رایگان</span></div>
           <div class="tgme_header_labels"></div>
         </div>
-        <div class="tgme_header_counter">9.35K subscribers</div>
+        <div class="tgme_header_counter">9.36K subscribers</div>
       </a>
     </div>
   </div>
@@ -123,7 +240,7 @@
 <main class="tgme_main" data-url="/orange_vpns">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/orange_vpns?before=2700" class="tme_messages_more js-messages_more" data-before="2700"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2700" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMCwidCI6MTc1MTk3NjIwMSwiaCI6IjQ5Y2I4MjhiNGQ2MmIxMDBkOSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/orange_vpns?before=2700" class="tme_messages_more js-messages_more" data-before="2700"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2700" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMCwidCI6MTc1MTk4MTMwNCwiaCI6IjZmNWY1NWU2Y2JmMmJlMjc0OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -146,17 +263,15 @@
     <a href="https://t.me/orange_vpns/2700" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2700"><time datetime="2025-07-05T14:00:34+00:00" class="time">14:00</time></a></span>
+    <span class="tgme_widget_message_views">1.31K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2700"><time datetime="2025-07-05T14:00:34+00:00" class="time">14:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2701" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMSwidCI6MTc1MTk3NjIwMSwiaCI6IjJlMzhiNDhkYTBlYWRjNmE4NiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2701" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMSwidCI6MTc1MTk4MTMwNCwiaCI6ImNiNjVmM2NiZjhhOTBjNGIxYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -179,17 +294,15 @@
     <a href="https://t.me/orange_vpns/2701" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2701"><time datetime="2025-07-05T19:19:44+00:00" class="time">19:19</time></a></span>
+    <span class="tgme_widget_message_views">1.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2701"><time datetime="2025-07-05T19:19:44+00:00" class="time">19:19</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2702" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMiwidCI6MTc1MTk3NjIwMSwiaCI6IjRlNGM1ZmE1MzI2YTFiYWE5NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2702" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwMiwidCI6MTc1MTk4MTMwNCwiaCI6ImY1OTNlNmEyZjJmMWJlODc4YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -214,17 +327,15 @@
     <a href="https://t.me/orange_vpns/2702" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F998F.png')"><b>🙏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2702"><time datetime="2025-07-05T20:00:25+00:00" class="time">20:00</time></a></span>
+    <span class="tgme_widget_message_views">1.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2702"><time datetime="2025-07-05T20:00:25+00:00" class="time">20:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2706" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwNiwidCI6MTc1MTk3NjIwMSwiaCI6ImIxNjkzYjA0ZDBmMDYyYTdiYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2706" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwNiwidCI6MTc1MTk4MTMwNCwiaCI6IjdhYmU2NzcwNDAxMzVlYzRmMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -247,17 +358,15 @@
     <a href="https://t.me/orange_vpns/2706" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">839</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2706"><time datetime="2025-07-06T10:31:21+00:00" class="time">10:31</time></a></span>
+    <span class="tgme_widget_message_views">844</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2706"><time datetime="2025-07-06T10:31:21+00:00" class="time">10:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2707" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwNywidCI6MTc1MTk3NjIwMSwiaCI6IjgzNTc1YzY3NTQ1NmY2OTlhZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2707" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwNywidCI6MTc1MTk4MTMwNCwiaCI6IjQxZDYyOTBiNzBkYjY4MDcwNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -280,17 +389,15 @@
     <a href="https://t.me/orange_vpns/2707" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">905</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2707"><time datetime="2025-07-06T10:31:33+00:00" class="time">10:31</time></a></span>
+    <span class="tgme_widget_message_views">917</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2707"><time datetime="2025-07-06T10:31:33+00:00" class="time">10:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2708" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwOCwidCI6MTc1MTk3NjIwMSwiaCI6ImNjMjFhN2VlOGQ3MTZmYzJhNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2708" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwOCwidCI6MTc1MTk4MTMwNCwiaCI6ImJlYjY0OTdkNTA4MjliNGZiMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -313,17 +420,15 @@
     <a href="https://t.me/orange_vpns/2708" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">864</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2708"><time datetime="2025-07-06T10:31:43+00:00" class="time">10:31</time></a></span>
+    <span class="tgme_widget_message_views">871</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2708"><time datetime="2025-07-06T10:31:43+00:00" class="time">10:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2709" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwOSwidCI6MTc1MTk3NjIwMSwiaCI6IjA2ZTM0ZjdlNDhmMTk0ZDYxZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2709" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcwOSwidCI6MTc1MTk4MTMwNCwiaCI6ImVjZWNkYTVkZWNiMWQyOTViNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -346,17 +451,15 @@
     <a href="https://t.me/orange_vpns/2709" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">870</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2709"><time datetime="2025-07-06T10:31:58+00:00" class="time">10:31</time></a></span>
+    <span class="tgme_widget_message_views">875</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2709"><time datetime="2025-07-06T10:31:58+00:00" class="time">10:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2710" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMCwidCI6MTc1MTk3NjIwMSwiaCI6IjFjYjk4YjY4YjgxZmQxMDdiYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2710" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMCwidCI6MTc1MTk4MTMwNCwiaCI6ImEyM2ZhZTk4ZGJiNTJlNGUzOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -379,17 +482,15 @@
     <a href="https://t.me/orange_vpns/2710" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">642</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2710"><time datetime="2025-07-06T20:50:58+00:00" class="time">20:50</time></a></span>
+    <span class="tgme_widget_message_views">645</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2710"><time datetime="2025-07-06T20:50:58+00:00" class="time">20:50</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2711" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMSwidCI6MTc1MTk3NjIwMSwiaCI6IjczNmY1YTZhMjhjMTE0NDY4ZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2711" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMSwidCI6MTc1MTk4MTMwNCwiaCI6IjlmNzYxZjdiNzA1OTVhMjQ5YiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -412,17 +513,15 @@
     <a href="https://t.me/orange_vpns/2711" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">703</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2711"><time datetime="2025-07-06T20:58:02+00:00" class="time">20:58</time></a></span>
+    <span class="tgme_widget_message_views">705</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2711"><time datetime="2025-07-06T20:58:02+00:00" class="time">20:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2712" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMiwidCI6MTc1MTk3NjIwMSwiaCI6IjhjMDMxMzg2NjJkOWRkNDk2OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2712" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMiwidCI6MTc1MTk4MTMwNCwiaCI6Ijg1ZTY0OTJiOWU3YmQ4ZjI4NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -445,17 +544,15 @@
     <a href="https://t.me/orange_vpns/2712" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">718</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2712"><time datetime="2025-07-06T20:58:04+00:00" class="time">20:58</time></a></span>
+    <span class="tgme_widget_message_views">722</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2712"><time datetime="2025-07-06T20:58:04+00:00" class="time">20:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2713" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMywidCI6MTc1MTk3NjIwMSwiaCI6IjQ5ZGUwNGM1ZGFhYThkNjNjMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2713" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxMywidCI6MTc1MTk4MTMwNCwiaCI6ImI0ZWYxMjYwMTA4NTY4OTFhNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -478,17 +575,15 @@
     <a href="https://t.me/orange_vpns/2713" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">787</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2713"><time datetime="2025-07-06T21:04:28+00:00" class="time">21:04</time></a></span>
+    <span class="tgme_widget_message_views">793</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2713"><time datetime="2025-07-06T21:04:28+00:00" class="time">21:04</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2714" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNCwidCI6MTc1MTk3NjIwMSwiaCI6ImM2ZmU0NmRmOTI2YzJlYWI2ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2714" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNCwidCI6MTc1MTk4MTMwNCwiaCI6ImMyNzMzYThjMWI0Zjc3NzM4YyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -511,17 +606,15 @@
     <a href="https://t.me/orange_vpns/2714" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">648</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2714"><time datetime="2025-07-07T09:28:37+00:00" class="time">09:28</time></a></span>
+    <span class="tgme_widget_message_views">663</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2714"><time datetime="2025-07-07T09:28:37+00:00" class="time">09:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2715" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNSwidCI6MTc1MTk3NjIwMSwiaCI6IjU5Y2E0ZDUzMzUyYTFlNzBlZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2715" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNSwidCI6MTc1MTk4MTMwNCwiaCI6ImI2MjkyOGYzYTkxYjA3ZjI2YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -544,17 +637,15 @@
     <a href="https://t.me/orange_vpns/2715" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">728</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2715"><time datetime="2025-07-07T09:28:47+00:00" class="time">09:28</time></a></span>
+    <span class="tgme_widget_message_views">738</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2715"><time datetime="2025-07-07T09:28:47+00:00" class="time">09:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2716" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNiwidCI6MTc1MTk3NjIwMSwiaCI6ImU3ODk3OWU0YjlhOGU2ZDQxYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2716" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNiwidCI6MTc1MTk4MTMwNCwiaCI6IjUwODYzOTRiYTE0ZGU1MTkzZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -577,17 +668,15 @@
     <a href="https://t.me/orange_vpns/2716" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">802</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2716"><time datetime="2025-07-07T09:28:56+00:00" class="time">09:28</time></a></span>
+    <span class="tgme_widget_message_views">811</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2716"><time datetime="2025-07-07T09:28:56+00:00" class="time">09:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2717" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNywidCI6MTc1MTk3NjIwMSwiaCI6IjUwOTcyMGNiMzk1OWQxZjFiNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2717" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxNywidCI6MTc1MTk4MTMwNCwiaCI6IjAwMTlkZjU2MGY2NWRjOGJiOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -610,17 +699,15 @@
     <a href="https://t.me/orange_vpns/2717" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">889</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2717"><time datetime="2025-07-07T09:35:32+00:00" class="time">09:35</time></a></span>
+    <span class="tgme_widget_message_views">898</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2717"><time datetime="2025-07-07T09:35:32+00:00" class="time">09:35</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2718" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxOCwidCI6MTc1MTk3NjIwMSwiaCI6IjU2MjdiNTQ3Zjc1ODI5ZjdlNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2718" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxOCwidCI6MTc1MTk4MTMwNCwiaCI6IjMzMDhmMWUzOWRhZDFiZjNmMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -637,18 +724,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/orange_vpns"><span dir="auto">V2ray سرور و کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/proxy?server=146.103.99.112&amp;amp;port=8888&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=Jocker-moker.garden-workeston.borsandowww.tic.ir.eldorado-feng.info.&amp;amp;port=443&amp;amp;secret=7HQighJPBNMYVRNB6tdkVw" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=62.60.176.253&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=91.108.248.208&amp;amp;port=443&amp;amp;secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=91.108.249.112&amp;amp;port=888&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276d656469612e737465616d706f77657265642e636f6d" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a><br/><a href="https://t.me/proxy?server=89.110.76.65&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=87.248.132.96&amp;amp;port=200&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=7443.ircheck-i.ir&amp;amp;port=443&amp;amp;secret=eed77db43ee3721f0fcb40a4ff63b5cd276D656469612E737465616D706F77657265642E636F6D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=146.103.104.178&amp;amp;port=8888&amp;amp;secret=7gAA8A8Pd1VV____9QBuLmltZWRpYS5zdGVhbXBvd2VyZWQuY29t" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a> | <a href="https://t.me/proxy?server=87.248.132.70&amp;amp;port=155&amp;amp;secret=eeNEgYdJvXrFGRMCIMJdCQ" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Proxy</a><br/><br/>Jᴏɪɴ »» <a href="https://t.me/orangevpns_bot" target="_blank">@orangevpns_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">918</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2718"><time datetime="2025-07-07T09:52:26+00:00" class="time">09:52</time></a></span>
+    <span class="tgme_widget_message_views">928</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2718"><time datetime="2025-07-07T09:52:26+00:00" class="time">09:52</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2719" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxOSwidCI6MTc1MTk3NjIwMSwiaCI6ImIyYzI4ZGQxMDhlZGQ2ZDIxYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2719" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcxOSwidCI6MTc1MTk4MTMwNCwiaCI6IjEyNTRhZWM2Zjc3YTZiYjcwYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -671,17 +756,15 @@
     <a href="https://t.me/orange_vpns/2719" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">916</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2719"><time datetime="2025-07-07T12:08:29+00:00" class="time">12:08</time></a></span>
+    <span class="tgme_widget_message_views">935</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2719"><time datetime="2025-07-07T12:08:29+00:00" class="time">12:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2720" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMCwidCI6MTc1MTk3NjIwMSwiaCI6IjdkNjM1ZTU3ZmVjY2E2YzM1OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2720" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMCwidCI6MTc1MTk4MTMwNCwiaCI6IjM1YzdlZjQ2MTkyYjRkNjFiMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -704,17 +787,15 @@
     <a href="https://t.me/orange_vpns/2720" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">664</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2720"><time datetime="2025-07-07T20:26:51+00:00" class="time">20:26</time></a></span>
+    <span class="tgme_widget_message_views">704</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2720"><time datetime="2025-07-07T20:26:51+00:00" class="time">20:26</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2721" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMSwidCI6MTc1MTk3NjIwMSwiaCI6IjM3NzEzNGFmNDI3NTFkYjhiOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2721" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMSwidCI6MTc1MTk4MTMwNCwiaCI6ImZmZmZkYTBhOWQ1Njg0ZjJlOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -737,17 +818,15 @@
     <a href="https://t.me/orange_vpns/2721" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">301</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2721"><time datetime="2025-07-08T09:00:58+00:00" class="time">09:00</time></a></span>
+    <span class="tgme_widget_message_views">376</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2721"><time datetime="2025-07-08T09:00:58+00:00" class="time">09:00</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2722" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMiwidCI6MTc1MTk3NjIwMSwiaCI6IjU0ZDdlNTZlYTQ1ZDZiMTNmMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="orange_vpns/2722" data-view="eyJjIjotMTg0NDg1ODc4MiwicCI6MjcyMiwidCI6MTc1MTk4MTMwNCwiaCI6IjljZjFjNTgzNWJjOTExZjE4MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/orange_vpns"><i class="tgme_widget_message_user_photo bgcolor4" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/bQu-FMcQb3lSvY6PL91TNibtg3VbdprgAXSkx3PFnRTMonEjGUyarOGN3YpdOllQoklOZkno8Mlw0z9UXlCnTfzns_fupMRUUdsq_8LDVYIqNNXqWlx9EFqC8njVkhN8oMS2pKolKKrNyPgBecPT7bdNje-e-blc7-JXSLdeXAifwOgQl5sTXUQeAlKsl_1fNTK_p6DbSjj0XZ59bI2Rz6-ky6C4ExbE31tST6XE_lSsnyEOj74U5xN-ZGKp-e8V03aVezZvVlUiA6sFD1RmdDAErs0_7SQlieVinlYwstAC0bmo5LxyBmQ4FO1V5vLs0xPVDoOzLwF5FU-93I129g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -770,12 +849,10 @@
     <a href="https://t.me/orange_vpns/2722" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">305</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2722"><time datetime="2025-07-08T09:02:00+00:00" class="time">09:02</time></a></span>
+    <span class="tgme_widget_message_views">379</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/orange_vpns/2722"><time datetime="2025-07-08T09:02:00+00:00" class="time">09:02</time></a></span>
   </div>
 </div>
   </div>
@@ -789,11 +866,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 64.52ms -->
+<!-- page generated in 90.24ms -->

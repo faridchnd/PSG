@@ -54,9 +54,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -85,7 +202,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">443</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">28</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">9</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">1.14K</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕</b></i>Best Proxies has been selected among the best servers For you.<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕</b></i>بهترین پروکسی ها از میان بهترین سرورها برای شما انتخاب می شوند.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD95.png')"><b>⭕</b></i>گروه چت :<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8691.png')"><b>🆑</b></i>: <a href="https://t.me/groupiranproxypro" target="_blank">@groupiranproxypro</a><br/>...</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=eae5a67c107dedbc7b_1618652078730646330">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=5a1999a7bd192bccd0_12150644008225797217">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -106,7 +223,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=eae5a67c107dedbc7b_1618652078730646330">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=5a1999a7bd192bccd0_12150644008225797217">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/iranproxypro">
@@ -123,7 +240,7 @@
 <main class="tgme_main" data-url="/iranproxypro">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/iranproxypro?before=2097" class="tme_messages_more js-messages_more" data-before="2097"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2097" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5NywidCI6MTc1MTk3NjQ1OSwiaCI6ImNlNTU0NTZmOTQxZDExZGZiNyJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/iranproxypro?before=2097" class="tme_messages_more js-messages_more" data-before="2097"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2097" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5NywidCI6MTc1MTk4MTU1OSwiaCI6IjIyNTU5MmExMDRjODg2YTM2MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -140,10 +257,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://157cb924-2adc-4f4e-9d54-ba105b6dff30@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%F0%9F%8C%B9%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">138</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2097"><time datetime="2024-07-21T13:03:42+00:00" class="time">13:03</time></a></span>
@@ -151,7 +266,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2098" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5OCwidCI6MTc1MTk3NjQ1OSwiaCI6ImEzOGRhMDZhNjEwNmRkZjQ1MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2098" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5OCwidCI6MTc1MTk4MTU1OSwiaCI6ImFjMGFjYWMzYjI0NGI4NGRhNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -168,10 +283,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.162&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.162&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.130&amp;port=8443&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.130&amp;port=8443&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">268</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2098"><time datetime="2024-07-23T14:27:37+00:00" class="time">14:27</time></a></span>
@@ -179,7 +292,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2099" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5OSwidCI6MTc1MTk3NjQ1OSwiaCI6ImRmM2VmYzgyMDVmNjYwOTQ0MSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2099" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjA5OSwidCI6MTc1MTk4MTU1OSwiaCI6ImVhYmRkYjY3NTE4MDA0NmVhYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -196,10 +309,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://1d57f77e-e42c-4dab-923f-81925e3b00ae@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%F0%9F%8C%B9%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">152</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2099"><time datetime="2024-07-23T15:01:03+00:00" class="time">15:01</time></a></span>
@@ -207,7 +318,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2100" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMCwidCI6MTc1MTk3NjQ1OSwiaCI6ImViNDI0OGQxOGIwMGRhODViNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2100" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMCwidCI6MTc1MTk4MTU1OSwiaCI6IjAyNzdlNmM1NGIyMzRlNWEyNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -224,10 +335,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی ایرانسل<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://3a067aa4-8434-4975-99b9-010e66064859@vip.hackers855.sbs:721?type=tcp&amp;path=%2F&amp;host=bmw.com&amp;headerType=http&amp;security=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T2)-%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">116</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2100"><time datetime="2024-07-23T15:02:23+00:00" class="time">15:02</time></a></span>
@@ -235,7 +344,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2101" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMSwidCI6MTc1MTk3NjQ1OSwiaCI6ImYyODk0ZGM2YzQwOTgyZWE2NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2101" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMSwidCI6MTc1MTk4MTU1OSwiaCI6IjVkZmJhYjY1M2Q4MmU4ZGFhZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -252,18 +361,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.180&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.180&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.102&amp;port=68&amp;secret=eERighJJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.102&amp;port=68&amp;secret=eERighJJvXrFGRMCIMJdCQ</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.197&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.197&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">128</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2101"><time datetime="2024-07-24T09:09:21+00:00" class="time">09:09</time></a></span>
+    <span class="tgme_widget_message_views">129</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2101"><time datetime="2024-07-24T09:09:21+00:00" class="time">09:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2102" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMiwidCI6MTc1MTk3NjQ1OSwiaCI6IjQ4OGVhYzc2M2UzZDIwZDdmYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2102" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMiwidCI6MTc1MTk4MTU1OSwiaCI6ImY2MzQ2YjVkNGUzNGRiNDIzYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -280,10 +387,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://1d57f77e-e42c-4dab-923f-81925e3b00ae@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%F0%9F%8C%B9%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">118</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2102"><time datetime="2024-07-24T09:09:37+00:00" class="time">09:09</time></a></span>
@@ -291,7 +396,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2103" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMywidCI6MTc1MTk3NjQ1OSwiaCI6IjI2MTE5NjMzNTA5MWRiZDg1ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2103" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwMywidCI6MTc1MTk4MTU1OSwiaCI6ImI0OTBkOGY1ZWUyZWE0OWQ3MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -308,10 +413,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی ایرانسل<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://3a067aa4-8434-4975-99b9-010e66064859@vip.hackers855.sbs:721?type=tcp&amp;path=%2F&amp;host=bmw.com&amp;headerType=http&amp;security=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T2)-%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">149</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2103"><time datetime="2024-07-24T09:09:46+00:00" class="time">09:09</time></a></span>
@@ -319,7 +422,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2104" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNCwidCI6MTc1MTk3NjQ1OSwiaCI6ImNkNDQ5YmJhMDVlNWMzNGEwNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2104" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNCwidCI6MTc1MTk4MTU1OSwiaCI6Ijc0NDdlMDNjODE3YzMzZmI1ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -336,10 +439,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.162&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.162&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.130&amp;port=8443&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.130&amp;port=8443&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.121.225.134&amp;port=43&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.134&amp;port=43&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQtY2RueWVrdGFuZXQuY29tZmFyYWthdi5jb212YW4ubmFqdmEuY29tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">143</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2104"><time datetime="2024-07-26T05:32:19+00:00" class="time">05:32</time></a></span>
@@ -347,7 +448,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2105" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNSwidCI6MTc1MTk3NjQ1OSwiaCI6IjliMTA2ZWE3OWQzODMzNmZiYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2105" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNSwidCI6MTc1MTk4MTU1OSwiaCI6IjM5MWE0NGIzNDQzZjY4YTE3MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -364,10 +465,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی ایرانسل<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://dfebe207-5353-4da4-af9c-8fcbf45342b3@vip.hackers855.sbs:721?type=tcp&amp;path=%2F&amp;host=bmw.com&amp;headerType=http&amp;security=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T2)-%F0%9F%A4%9D%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">145</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2105"><time datetime="2024-07-26T05:35:35+00:00" class="time">05:35</time></a></span>
@@ -375,7 +474,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2106" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNiwidCI6MTc1MTk3NjQ1OSwiaCI6IjQxNjVhYjI1MTU1MmY0Njg4NCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2106" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNiwidCI6MTc1MTk4MTU1OSwiaCI6IjgwZjhkYTFiODY4YTQ1NTMzOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -392,10 +491,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://882ed1e8-41ff-491f-8134-e0ead86b78ab@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%F0%9F%92%B8%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">195</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2106"><time datetime="2024-07-26T05:37:13+00:00" class="time">05:37</time></a></span>
@@ -403,7 +500,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2107" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNywidCI6MTc1MTk3NjQ1OSwiaCI6ImNkMDVmOGIzM2MzYTdlZjJkMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2107" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwNywidCI6MTc1MTk4MTU1OSwiaCI6IjM0ZDk2ZTczN2RhNGI4Y2UwYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -420,18 +517,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.180&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.180&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.84&amp;port=23&amp;secret=eeRighJJvXrFGRMCIMJdCQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.165&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.163&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.163&amp;port=777&amp;secret=79ea54d21249bd7ac519CQ</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">228</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2107"><time datetime="2024-07-27T19:01:34+00:00" class="time">19:01</time></a></span>
+    <span class="tgme_widget_message_views">229</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2107"><time datetime="2024-07-27T19:01:34+00:00" class="time">19:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2108" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwOCwidCI6MTc1MTk3NjQ1OSwiaCI6ImU1MGY4OWFmMTRjYjk4MTI2ZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2108" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwOCwidCI6MTc1MTk4MTU1OSwiaCI6ImJjZWI4ZjgyOGFiODUzMjJiNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -448,10 +543,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://882ed1e8-41ff-491f-8134-e0ead86b78ab@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%F0%9F%92%B8%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">249</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2108"><time datetime="2024-07-27T19:02:06+00:00" class="time">19:02</time></a></span>
@@ -459,7 +552,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2109" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwOSwidCI6MTc1MTk3NjQ1OSwiaCI6IjNkMTlkYTQ3OThhNTkyZjhhMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2109" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjEwOSwidCI6MTc1MTk4MTU1OSwiaCI6IjE5ODk1MDZiMDc0MWVlYzc0NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -476,10 +569,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی ایرانسل<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://dfebe207-5353-4da4-af9c-8fcbf45342b3@vip.hackers855.sbs:721?type=tcp&amp;path=%2F&amp;host=bmw.com&amp;headerType=http&amp;security=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T2)-%F0%9F%A4%9D%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">301</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2109"><time datetime="2024-07-27T19:02:16+00:00" class="time">19:02</time></a></span>
@@ -487,7 +578,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2110" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMCwidCI6MTc1MTk3NjQ1OSwiaCI6IjcyZTZlZjdiNzg1MTc2ZmViZSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2110" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMCwidCI6MTc1MTk4MTU1OSwiaCI6IjU1OTlkNDgyMmQyMzA3ZGU5NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -504,10 +595,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.135&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.135&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.168&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.168&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=103.161.35.96&amp;port=12&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=103.161.35.96&amp;port=12&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">352</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2110"><time datetime="2024-07-31T19:58:03+00:00" class="time">19:58</time></a></span>
@@ -515,7 +604,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2111" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMSwidCI6MTc1MTk3NjQ1OSwiaCI6ImM2ZmM4NDRmZTZkNjNjZDVjMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2111" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMSwidCI6MTc1MTk4MTU1OSwiaCI6ImY3NTljZDI3YTBmNWZiNGY4ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -530,20 +619,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی ایرانسل<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://bd3aebac-d170-40c1-8e01-32f628c02b2c@vip.hackers855.sbs:721?type=tcp&amp;path=%2F&amp;host=bmw.com&amp;headerType=http&amp;security=none#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T2)-%F0%9F%8C%B9%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20%40iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">515</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2111"><time datetime="2024-07-31T20:01:07+00:00" class="time">20:01</time></a></span>
+    <span class="tgme_widget_message_views">516</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2111"><time datetime="2024-07-31T20:01:07+00:00" class="time">20:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2112" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMiwidCI6MTc1MTk3NjQ1OSwiaCI6IjE5MmYzMTkyZjFiNmEyMjEzZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2112" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMiwidCI6MTc1MTk4MTU1OSwiaCI6IjNkY2VjYTcxNWI0MmQ0MjdkNSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -558,20 +645,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i> کانفیگ جدید متصل بر روی همه اپراتورها<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: vless://6dbbbdfa-7368-4124-a224-f32f40fe9f89@www.speedtest.net:443?type=ws&amp;path=%2F&amp;host=vip.hackers855.sbs&amp;security=tls&amp;fp=chrome&amp;alpn=&amp;sni=vip.hackers855.sbs#%F0%9F%87%AB%F0%9F%87%AE%20Finland%20(T1)-%DA%86%D9%86%D9%84%20%D9%85%D8%A7%20%3A%20iranproxypro<br/><br/><br/>100G<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">597</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2112"><time datetime="2024-07-31T20:02:33+00:00" class="time">20:02</time></a></span>
+    <span class="tgme_widget_message_views">598</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2112"><time datetime="2024-07-31T20:02:33+00:00" class="time">20:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2113" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMywidCI6MTc1MTk3NjQ1OSwiaCI6ImZkYmE1YWFmMDk3MjI0OWE0NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2113" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExMywidCI6MTc1MTk4MTU1OSwiaCI6IjEzYWM2ZThiNjkwMTA0ZTM1NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -586,20 +671,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A2.png')"><b>💢</b></i>پروکسی خفن<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص ایرانسل و رایتل و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.134&amp;port=4443&amp;secret=7777772e6e69632e69727w</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.151&amp;port=4443&amp;secret=eeRighJJvXrFGRMCIMJdCQ</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA" target="_blank" rel="noopener">https://t.me/proxy?server=185.115.161.39&amp;port=68&amp;secret=eeRigzNJvXrFGRMCIMJdEA</a><br/><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>پروکسی مخصوص همراه اول و وای فای&nbsp;<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.135&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.135&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=95.169.173.168&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=95.169.173.168&amp;port=85&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i><a href="https://t.me/proxy?server=103.161.35.96&amp;port=12&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt" target="_blank" rel="noopener">https://t.me/proxy?server=103.161.35.96&amp;port=12&amp;secret=7lLIZ9x1mD-vS7N_kdUWTwkt</a><br/><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i> پیوی ادمین جهت خرید کانفیگ اختصاصی : <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤️‍🔥</b></i>: <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i>چنل تلگرام ما: <br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C90.png')"><b>🌐</b></i>: <a href="https://t.me/iranproxypro" target="_blank">@iranproxypro</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">731</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2113"><time datetime="2024-08-04T20:14:34+00:00" class="time">20:14</time></a></span>
+    <span class="tgme_widget_message_views">732</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2113"><time datetime="2024-08-04T20:14:34+00:00" class="time">20:14</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2114" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNCwidCI6MTc1MTk3NjQ1OSwiaCI6Ijk2NmZhN2E3OTcxMmNmMGU0YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2114" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNCwidCI6MTc1MTk4MTU1OSwiaCI6ImE4YjMxYjY0OWI5OGJhZjVjYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -614,20 +697,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>ارائه بهترین خدمات فیلترشکن( وی پی ان)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>بالاترین سرعت ممکن بدون حتی یک لحظه قطعی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>مخصوص اینستاگردی، ترید، وب گردی، گیم و...<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>سرعت نور<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>پینگ به شدت پایین مناسب گیم<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>آیپی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>لوکیشن فنلاند و آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>قیمت به شدت مناسب<br/><br/><br/>لیست&nbsp;قیمت کانفینگ‌ v2rayNG <br/><br/>یکماهه 10 گیگابایت |&nbsp; 40.000&nbsp;&nbsp;تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 20 گیگابایت |&nbsp; 80.000&nbsp; تومان&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 30 گیگابایت |&nbsp; 99.000&nbsp; تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 40 گیگابایت |&nbsp; 130.000&nbsp; تومان&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 50 گیگابایت |&nbsp; 160.000 تومان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/><br/>دوماهه 50گیگابایت | 175.000 تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/>دو ماهه 100گیگابایت | 320.000 تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/>یکماهه نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9484.png')"><b>🔄</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A9C.png')"><b>⚜️</b></i>1 کاربر 340 هزار تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/><br/>سازگار با تمامی اپراطور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA1.png')"><b>🛡</b></i> آیدی پشتیبانی جهت خرید: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A9C.png')"><b>⚜️</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">146</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2114"><time datetime="2025-06-15T07:32:35+00:00" class="time">07:32</time></a></span>
+    <span class="tgme_widget_message_views">147</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2114"><time datetime="2025-06-15T07:32:35+00:00" class="time">07:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2115" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNSwidCI6MTc1MTk3NjQ1OSwiaCI6IjZiMjUyMTJjODExZmNhNWY1MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2115" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNSwidCI6MTc1MTk4MTU1OSwiaCI6IjE0YThmMzE1ZmUzNmMyMjVlMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -643,24 +724,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/Iranproxypro/2114" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/Iranproxypro/2114" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>ارائه بهترین خدمات فیلترشکن( وی پی ان)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>  <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>بالاترین سرعت ممکن بدون حتی یک لحظه قطعی <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>مخصوص اینستاگردی، ترید، وب گردی، گیم و... <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>سرعت نور <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>پینگ به شدت پایین مناسب گیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>آیپی ثابت <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>لوکیشن فنلاند و آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i> <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>قیمت به شدت مناسب   لیست&nbsp;قیمت کانفینگ‌ v2rayNG   یکماهه…</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')"><b>🟥</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA8.png')"><b>🚨</b></i> هشدار<br/>قراره اینترنتا رو قطع کنن و کلا نت ملی بشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AF.png')"><b>🤯</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">150</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2115"><time datetime="2025-06-15T07:36:01+00:00" class="time">07:36</time></a></span>
+    <span class="tgme_widget_message_views">152</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2115"><time datetime="2025-06-15T07:36:01+00:00" class="time">07:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2116" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNiwidCI6MTc1MTk3NjQ1OSwiaCI6ImY5ZDM5Yzg1MGNiNTUzZDk4NyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="Iranproxypro/2116" data-view="eyJjIjotMTgyMzM5NzQwNCwicCI6MjExNiwidCI6MTc1MTk4MTU1OSwiaCI6IjAxM2FkM2Q0ZjYyZTUzOTJjZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/Iranproxypro"><i class="tgme_widget_message_user_photo bgcolor3" data-content="I"><img src="https://cdn4.cdn-telegram.org/file/s1ILTXctKgInb2q4hhHFA7v93J0faz62jlXiaCxIQLPAbw8_WfD-8Fz5fIN02NcYcr_9r2vzNj7TFWSbeAvIrPlHrsIoLBDPBm02QkXyYEPCvAQDfEAgZ8C4PeuDgy4OmhRuzqYzErhvC5ThYATdMci3J4RQnkMzPH29RlVZlGFf8PaNyHzHpex7rLeahVU90RHY0Tfy4AoFiDfeUwaPtnwYqR3zhElWdDaVyOmmL6poGcF4RvtosQ-6c2vOV2AYGy1V6ZQ_RuYIySSRmUE2ZaF05Zre5nWfu_fjDRXnkSzd9DMu1_8keQs5P-7h6ATP7y4HzjwsBr7JD9VrMcD-NA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -677,13 +756,11 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/Iranproxypro"><span dir="auto">Iran Proxy &amp; Configs| ایران پروکسی و کانفیگ</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E299A8.png')"><b>♨️</b></i>ارائه بهترین خدمات فیلترشکن( وی پی ان)<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>بالاترین سرعت ممکن بدون حتی یک لحظه قطعی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>مخصوص اینستاگردی، ترید، وب گردی، گیم و...<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>سرعت نور<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>پینگ به شدت پایین مناسب گیم<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>آیپی ثابت<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>لوکیشن فنلاند و آلمان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A9F09F87AA.png')"><b>🇩🇪</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87ABF09F87AE.png')"><b>🇫🇮</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>قیمت به شدت مناسب<br/><br/><br/>لیست&nbsp;قیمت کانفینگ‌ v2rayNG <br/><br/>یکماهه 10 گیگابایت |&nbsp; 40.000&nbsp;&nbsp;تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 20 گیگابایت |&nbsp; 80.000&nbsp; تومان&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 30 گیگابایت |&nbsp; 99.000&nbsp; تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 40 گیگابایت |&nbsp; 130.000&nbsp; تومان&nbsp;&nbsp; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/>یکماهه 50 گیگابایت |&nbsp; 160.000 تومان<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B5.png')"><b>💵</b></i><br/><br/>دوماهه 50گیگابایت | 175.000 تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/>دو ماهه 100گیگابایت | 320.000 تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/>یکماهه نامحدود <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9484.png')"><b>🔄</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A9C.png')"><b>⚜️</b></i>1 کاربر 340 هزار تومان <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92B8.png')"><b>💸</b></i><br/><br/><br/>سازگار با تمامی اپراطور ها <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i><br/><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9BA1.png')"><b>🛡</b></i> آیدی پشتیبانی جهت خرید: <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29A9C.png')"><b>⚜️</b></i> <a href="https://t.me/zari_vpn" target="_blank">@zari_vpn</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">104</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2116"><time datetime="2025-06-18T12:54:05+00:00" class="time">12:54</time></a></span>
+    <span class="tgme_widget_message_views">106</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/Iranproxypro/2116"><time datetime="2025-06-18T12:54:05+00:00" class="time">12:54</time></a></span>
   </div>
 </div>
   </div>
@@ -697,11 +774,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 139.72ms -->
+<!-- page generated in 85.5ms -->

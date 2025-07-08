@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">5.39K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">33</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">3</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">133</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">303</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Best Telegram CONFIG Channel : <a href="https://t.me/VPNOD" target="_blank">@VPNOD</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=fa3d2902d0d11fd0c0_13639032558444509837">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d800adb03b9a33a598_15293050524192914621">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=fa3d2902d0d11fd0c0_13639032558444509837">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d800adb03b9a33a598_15293050524192914621">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vpnod">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/vpnod">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnod?before=2386" class="tme_messages_more js-messages_more" data-before="2386"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2386" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4NiwidCI6MTc1MTk3NjIwMSwiaCI6IjBjNzNiODRiZjI0NDAyOTMyMiJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpnod?before=2386" class="tme_messages_more js-messages_more" data-before="2386"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2386" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4NiwidCI6MTc1MTk4MTMwNCwiaCI6IjM4MGIyNTc4NzRmMWQ4ZmVjNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -127,11 +244,11 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpnod"><span dir="auto">νρη σɗ</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/vpnod/2385" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/vpnod/2385" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">νρη σɗ</span>
 </div>
-<div class="tgme_widget_message_metatext js-message_reply_text" dir="auto">@VPNOD ======= ALL.npvt</div>
+<div class="tgme_widget_message_text js-message_reply_text" dir="auto">@VPNOD ======= ALL.npvt</div>
 </a>
 <div class="media_supported_cont"><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5253836448687204081"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i></tg-emoji> <b>میدونید که :<br/></b>کانفیگ های V2rayNG مدتی بعد از قرار گرفتن توی کانال توسط چنل های مختلف لیک ( پخش )<br/>میشه و عملا کیفیت خودشو ازدست میده<br/>ولی همچنان سرور ها رو آپدیت میکنیم و در دسترس شما میذاریم <br/>برای اتصال پایدار تر بهتره که <br/><br/><b>کانفینگ های </b><a href="https://t.me/vpnod/2384" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Napsternetv</a><br/>قابلیت لاک (قفل) شدن داره و محدود به استفاده کاربر های چنل میشه <br/><br/>ما سعی میکنم  کیفیت بهتری رو نسبت به VPN های اشتراکی <b>رایگان</b> در دسترس شما  برای استفاده از اینترنت آزاد قرار بدیدم <br/><br/><b>نکته</b><br/>حتما <a href="https://t.me/vpnod/2384" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Napsternetv</a> رو به <a href="https://t.me/vpnod/2384" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">آخرین ورژن</a> ارتقا بدید <br/>کانفینگ های اپراتور خودتون رو دانلود و وارد کنید <br/><br/>Telegram channel : <a href="https://t.me/VPNOD" target="_blank">@VPNOD</a> <tg-emoji emoji-id="5292159887818632981"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AD90.png')"><b>⭐️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
@@ -139,17 +256,15 @@
     <a href="https://t.me/vpnod/2386" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2386"><time datetime="2025-06-29T23:58:01+00:00" class="time">23:58</time></a></span>
+    <span class="tgme_widget_message_views">2.39K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2386"><time datetime="2025-06-29T23:58:01+00:00" class="time">23:58</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2387" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4NywidCI6MTc1MTk3NjIwMSwiaCI6ImIxMjdiZGFhOTkyZmUyMjA4OCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2387" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4NywidCI6MTc1MTk4MTMwNCwiaCI6IjIwZmM1YjVmYTk2MDFkNzk0YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -168,18 +283,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5118437922964614835 1191729196_456240819" href="https://t.me/vpnod/2387" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/BDdwsTJHvpD46y-GC2iC1Svdmq6oFMSqz2fig7J2Ck9Axlo55xzi5j640TzYuwSXfszrX8uX3fXuZz4trPuda-s2dbmG37rjaqvR-JrM4h-pUUaB-1AW6bSfd1HUx-MNCYI8h-IfaU4u_xeA6LqC1Z4IpNfXmTW3E-smxL25OZvxJjSRDcjKWYPwmm7fadZap3HCCtpolwK94sb5cBq8YZo6fwut6cX7ZetobTduPvR6AKM8zzD6FcsfOX4GrJlk7WAcd9csx2ZnzoCqLMTfL0oGdN1vRyp024S1VYEqC-E4M3n3PZgzY3dk0yvbVIPBBweLPCZD76GEbSNAnhdelg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:16%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">وضعیت اتصال به کانفیگ آخر رو در این قسمت دایرکت کنید</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">وضعیت اتصال به کانفیگ آخر رو در این قسمت دایرکت کنید</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>20</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2387"><time datetime="2025-06-30T00:12:38+00:00" class="time">00:12</time></a></span>
+    <span class="tgme_widget_message_views">2.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2387"><time datetime="2025-06-30T00:12:38+00:00" class="time">00:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2388" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4OCwidCI6MTc1MTk3NjIwMSwiaCI6ImRiOWVjNGU0NGUzZDcwZGM3NiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2388" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4OCwidCI6MTc1MTk4MTMwNCwiaCI6ImFiOGQxYmQ2NjZlNWYzY2RjZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -202,17 +315,15 @@
     <a href="https://t.me/vpnod/2388" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2388"><time datetime="2025-07-01T10:07:59+00:00" class="time">10:07</time></a></span>
+    <span class="tgme_widget_message_views">2.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2388"><time datetime="2025-07-01T10:07:59+00:00" class="time">10:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2389" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4OSwidCI6MTc1MTk3NjIwMSwiaCI6ImQ4YmE4Njg1MjFhNzY0NmE0MSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2389" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM4OSwidCI6MTc1MTk4MTMwNCwiaCI6IjgwNTI4YzQ4OTA3NGZlZGZjMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -235,17 +346,15 @@
     <a href="https://t.me/vpnod/2389" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2389"><time datetime="2025-07-01T11:09:17+00:00" class="time">11:09</time></a></span>
+    <span class="tgme_widget_message_views">2.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2389"><time datetime="2025-07-01T11:09:17+00:00" class="time">11:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2390" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MCwidCI6MTc1MTk3NjIwMSwiaCI6ImM4NjQ0ZTQ0OWQwZDE3Y2I4YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2390" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MCwidCI6MTc1MTk4MTMwNCwiaCI6ImQ0MTIyNTFhZjNiMTIyZWNmMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -274,17 +383,15 @@
     <a href="https://t.me/vpnod/2390" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2390"><time datetime="2025-07-02T00:30:40+00:00" class="time">00:30</time></a></span>
+    <span class="tgme_widget_message_views">2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2390"><time datetime="2025-07-02T00:30:40+00:00" class="time">00:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2391" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MSwidCI6MTc1MTk3NjIwMSwiaCI6ImNhYTEyN2UyMmFkNmY0YWQyOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2391" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MSwidCI6MTc1MTk4MTMwNCwiaCI6ImNjYWU1MmYwMzk5MWEyZjhkYSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -307,17 +414,15 @@
     <a href="https://t.me/vpnod/2391" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2391"><time datetime="2025-07-02T20:03:17+00:00" class="time">20:03</time></a></span>
+    <span class="tgme_widget_message_views">2.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2391"><time datetime="2025-07-02T20:03:17+00:00" class="time">20:03</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2392" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MiwidCI6MTc1MTk3NjIwMSwiaCI6ImM5NzBlM2E3OWM5MjRhOTVhMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2392" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MiwidCI6MTc1MTk4MTMwNCwiaCI6IjEyN2VmYmYyYTc0M2FhNDgxMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -340,17 +445,15 @@
     <a href="https://t.me/vpnod/2392" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2392"><time datetime="2025-07-04T15:08:49+00:00" class="time">15:08</time></a></span>
+    <span class="tgme_widget_message_views">1.69K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2392"><time datetime="2025-07-04T15:08:49+00:00" class="time">15:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2393" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MywidCI6MTc1MTk3NjIwMSwiaCI6IjkwM2Q5Y2RiMTI0NmQ4Y2NjYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2393" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5MywidCI6MTc1MTk4MTMwNCwiaCI6ImMwY2Y1NmRiNzg2ZTgzYjk4ZCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -373,9 +476,7 @@
     <a href="https://t.me/vpnod/2393" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">1.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2393"><time datetime="2025-07-04T15:46:14+00:00" class="time">15:46</time></a></span>
@@ -383,7 +484,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2394" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NCwidCI6MTc1MTk3NjIwMSwiaCI6ImE5ZDQ2MWI4NzYzMjg3YWNiMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2394" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NCwidCI6MTc1MTk4MTMwNCwiaCI6IjljODM4MTI1YTliMzI2MzM3MyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -406,17 +507,15 @@
     <a href="https://t.me/vpnod/2394" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2394"><time datetime="2025-07-04T21:02:46+00:00" class="time">21:02</time></a></span>
+    <span class="tgme_widget_message_views">1.55K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2394"><time datetime="2025-07-04T21:02:46+00:00" class="time">21:02</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2395" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NSwidCI6MTc1MTk3NjIwMSwiaCI6IjUyNjA1YjAzZDY0ZDEyODBiYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2395" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NSwidCI6MTc1MTk4MTMwNCwiaCI6IjdlMzNiMGFjNjVjYzQzOTRiNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -435,18 +534,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5139034756460162662 1196524770_456240742" href="https://t.me/vpnod/2395" style="width:616px;background-image:url('https://cdn1.cdn-telegram.org/file/gdmOlc9sy5ilbRPZFFU1Tj8VC1zRNfFQ7LW4b5qzPRbqFkLbm55wlK4wptdu3XKHqkQyMZnrcfAxyBkPeOA3CyCwvQD5vzMoKslgLNxXlVEfGPfxfKB2-ROGZFLMhKFJaGc4-LeNFha09jFcQDSDvzygyLUGbjErFO16EX2ktBgRgL5y_hhxy-1hIW89V_5RtHamWu2_nFWgJSa6B5XkkNT1wlBtz39OG1fzdwhT3gf2Y3PDCNMEP0Vb_GZc3h6hmp9_MRQ0y-ZhoCf8rbacu2HUUCRSVV-3ITQRMKFDA40ALVCYYnEBRPI3ENh34yq5QjV5OyCPWPPrjjUZCvESFw.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:129.87012987013%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>اختلال گسترده در دیتاسنترهای ایران</b><br/><br/>احتمالا حمله‌ی سایبری باشه .</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>اختلال گسترده در دیتاسنترهای ایران</b><br/><br/>احتمالا حمله‌ی سایبری باشه .</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2395"><time datetime="2025-07-05T22:16:38+00:00" class="time">22:16</time></a></span>
+    <span class="tgme_widget_message_views">1.36K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2395"><time datetime="2025-07-05T22:16:38+00:00" class="time">22:16</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2396" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NiwidCI6MTc1MTk3NjIwMSwiaCI6ImI5MzU2ZGIzZWVjYWZhODVmNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2396" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NiwidCI6MTc1MTk4MTMwNCwiaCI6IjEzZjA5YjA2NTI5MzU5NDMxNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -469,17 +566,15 @@
     <a href="https://t.me/vpnod/2396" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2396"><time datetime="2025-07-05T22:27:12+00:00" class="time">22:27</time></a></span>
+    <span class="tgme_widget_message_views">1.29K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2396"><time datetime="2025-07-05T22:27:12+00:00" class="time">22:27</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2397" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NywidCI6MTc1MTk3NjIwMSwiaCI6Ijg1NmRlNDcwYmM2ODRmZTZiMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2397" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5NywidCI6MTc1MTk4MTMwNCwiaCI6ImJlMTc2NDA4MzMxMjRjNDE1NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -502,17 +597,15 @@
     <a href="https://t.me/vpnod/2397" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2397"><time datetime="2025-07-05T22:42:54+00:00" class="time">22:42</time></a></span>
+    <span class="tgme_widget_message_views">1.18K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2397"><time datetime="2025-07-05T22:42:54+00:00" class="time">22:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2398" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5OCwidCI6MTc1MTk3NjIwMSwiaCI6ImViODNkMDYwYzMxM2UyMDExYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2398" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5OCwidCI6MTc1MTk4MTMwNCwiaCI6IjQ5ZGZiYmMzM2Y1NDFmOTA5MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -535,17 +628,15 @@
     <a href="https://t.me/vpnod/2398" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2398"><time datetime="2025-07-05T22:48:00+00:00" class="time">22:48</time></a></span>
+    <span class="tgme_widget_message_views">1.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2398"><time datetime="2025-07-05T22:48:00+00:00" class="time">22:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2399" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5OSwidCI6MTc1MTk3NjIwMSwiaCI6IjFkZDA2YTIxNGE3NDFkODA4OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2399" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjM5OSwidCI6MTc1MTk4MTMwNCwiaCI6IjhkMzMxMTA0ZThmNWE3YjIxZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -568,17 +659,15 @@
     <a href="https://t.me/vpnod/2399" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2399"><time datetime="2025-07-05T23:09:57+00:00" class="time">23:09</time></a></span>
+    <span class="tgme_widget_message_views">1.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpnod/2399"><time datetime="2025-07-05T23:09:57+00:00" class="time">23:09</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2400" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMCwidCI6MTc1MTk3NjIwMSwiaCI6IjA3ZDUyYTM2ZDUwY2UyZTY1MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2400" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMCwidCI6MTc1MTk4MTMwNCwiaCI6ImU0MmYzZTI4MGI1YWNmNDIxZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -601,17 +690,15 @@
     <a href="https://t.me/vpnod/2400" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2400"><time datetime="2025-07-05T23:34:12+00:00" class="time">23:34</time></a></span>
+    <span class="tgme_widget_message_views">1.12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2400"><time datetime="2025-07-05T23:34:12+00:00" class="time">23:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2401" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMSwidCI6MTc1MTk3NjIwMSwiaCI6ImE5Njk0Mjk5NTJhZjc0NTkyOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2401" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMSwidCI6MTc1MTk4MTMwNCwiaCI6IjNiODRjZDAxOWEyZmVmYjNlOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -634,17 +721,15 @@
     <a href="https://t.me/vpnod/2401" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>13</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2401"><time datetime="2025-07-05T23:36:54+00:00" class="time">23:36</time></a></span>
+    <span class="tgme_widget_message_views">1.21K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2401"><time datetime="2025-07-05T23:36:54+00:00" class="time">23:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2402" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMiwidCI6MTc1MTk3NjIwMSwiaCI6ImVjMjgyMTZiMzI2NGIzMjg2ZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2402" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMiwidCI6MTc1MTk4MTMwNCwiaCI6ImQyYzM4YTBkNTU4Y2MyMThiZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -667,17 +752,15 @@
     <a href="https://t.me/vpnod/2402" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2402"><time datetime="2025-07-05T23:51:02+00:00" class="time">23:51</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2402"><time datetime="2025-07-05T23:51:02+00:00" class="time">23:51</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2403" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMywidCI6MTc1MTk3NjIwMSwiaCI6IjkxZTZlNWU5YzM4ODcwMWRjMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2403" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwMywidCI6MTc1MTk4MTMwNCwiaCI6ImUwODZiNDY4Yzg3OGQ0NmUxMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -700,17 +783,15 @@
     <a href="https://t.me/vpnod/2403" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2403"><time datetime="2025-07-05T23:56:00+00:00" class="time">23:56</time></a></span>
+    <span class="tgme_widget_message_views">1.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2403"><time datetime="2025-07-05T23:56:00+00:00" class="time">23:56</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2404" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwNCwidCI6MTc1MTk3NjIwMSwiaCI6IjU4MmVlNjkyYWY5ZGJkMzU1MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2404" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwNCwidCI6MTc1MTk4MTMwNCwiaCI6IjI3YmQxY2E0NjIxMjkwY2VjYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -733,17 +814,15 @@
     <a href="https://t.me/vpnod/2404" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">503</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2404"><time datetime="2025-07-08T00:07:12+00:00" class="time">00:07</time></a></span>
+    <span class="tgme_widget_message_views">529</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2404"><time datetime="2025-07-08T00:07:12+00:00" class="time">00:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2405" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwNSwidCI6MTc1MTk3NjIwMSwiaCI6ImIzN2FiMjY5M2EzNWJjMzY2MCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpnod/2405" data-view="eyJjIjotMTU2MTE2MDg3NCwicCI6MjQwNSwidCI6MTc1MTk4MTMwNCwiaCI6IjVkYzhmNTA3NjA3Njg3ZThiNCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpnod"><i class="tgme_widget_message_user_photo bgcolor0" data-content="ν"><img src="https://cdn1.cdn-telegram.org/file/mENWoZzFmbPHmxeuPucb4Qq-NsQ51DV7QPWaQy3CtvMe6kwy-exs7WNTylADlBWTIo0F4bZ45oQIl730ZipV0s6p7gyZifIKf_DkWC5t4SsFD-k7-2uLxfbFEvYX_6ib8h8QE05TsLSaWYJFXDO7_L5WxmlqOxCbQtZTuzV6RIkwGxYE9OoP3n1J8NbkJXKJLLb2MONW3TF4UR-mpILldQgXVBP_BskVEzTL38u2hL5YS1YTz3TVtFgOpgletC-6ve-w5WjBuxyV-unHzm8jzcHb5EQ_CnHCyNSSMkVF1UqPkXoBvTzB_8h-qEi42srtIR6MPON9PB1j2cFJx4RjAA.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -766,12 +845,10 @@
     <a href="https://t.me/vpnod/2405" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">501</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2405"><time datetime="2025-07-08T00:14:37+00:00" class="time">00:14</time></a></span>
+    <span class="tgme_widget_message_views">529</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpnod/2405"><time datetime="2025-07-08T00:14:37+00:00" class="time">00:14</time></a></span>
   </div>
 </div>
   </div>
@@ -785,11 +862,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 54.22ms -->
+<!-- page generated in 61.19ms -->

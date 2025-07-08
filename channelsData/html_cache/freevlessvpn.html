@@ -56,9 +56,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -87,7 +204,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">7.14K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">577</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">421</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">33</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">402</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8FB4E2808DE298A0.png')"><b>🏴‍☠️</b></i> سرویس اینترنت SobiVpn<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA496.png')"><b>🤖</b></i> خرید سرویس و آموزش‌ها : <a href="https://t.me/Sobivpn_bot" target="_blank">@Sobivpn_bot</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABB6F09F8FBB.png')"><b>🫶🏻</b></i> تمام دغدغه‌ی ما حفظ امنیت و نهایت سرعت در اتصال شما به اینترنت آزاد است<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AC.png')"><b>💬</b></i> پشتیبانی سرویس: <a href="https://t.me/BO_shop1" target="_blank">@BO_shop1</a><br/>.</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=868f1f35bbcd31f5a6_11729658481687770941">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=d9fdbea21a5023db0a_9366353364603380688">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -108,7 +225,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=868f1f35bbcd31f5a6_11729658481687770941">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=d9fdbea21a5023db0a_9366353364603380688">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/freevlessvpn">
@@ -125,7 +242,7 @@
 <main class="tgme_main" data-url="/freevlessvpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freevlessvpn?before=3909" class="tme_messages_more js-messages_more" data-before="3909"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3909" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkwOSwidCI6MTc1MTk3NjIwMSwiaCI6ImViZDlhZjBmNWFjMjNhYTIzYSJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/freevlessvpn?before=3909" class="tme_messages_more js-messages_more" data-before="3909"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3909" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkwOSwidCI6MTc1MTk4MTMwNCwiaCI6Ijc4MDRlMDg0MTk3OTBlYTAxYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -150,17 +267,15 @@
     <a href="https://t.me/FreeVlessVpn/3909" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AC.png')"><b>🤬</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">767</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3909"><time datetime="2025-06-26T09:28:17+00:00" class="time">09:28</time></a></span>
+    <span class="tgme_widget_message_views">768</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3909"><time datetime="2025-06-26T09:28:17+00:00" class="time">09:28</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3910" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMCwidCI6MTc1MTk3NjIwMSwiaCI6IjU3OTVlOTlkNTJlNmNjNjE1YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3910" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMCwidCI6MTc1MTk4MTMwNCwiaCI6IjkzODUwMTM3OWZlYTA0MWU1NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -179,18 +294,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5974043129709447970 1390940307_456248098" href="https://t.me/FreeVlessVpn/3910" style="width:369px;background-image:url('https://cdn4.cdn-telegram.org/file/gu2JcOLGiYIThAMindUb1pat3mgFSoVC2KzkxjxH0PWRrb1cQLTtwpeQ-nMA7396CEDeseUKSkzLmd94d1ZYZkuYgqBvJIpiXFr-Ro-Bzp-1UUvboXOERJQzC5KmogOywq1LTegsHorotZZIidWPEhcJTTMP_3KzcQ_7lQeZFixrn186pZV9OWIlPgTkPBMjCl2zk20F8i-D02RaW8i8cUPhpKm0UaoWitokkMoBeKZmRSLChTUI5yRt1nFrguQRDypAg9NoRDaEVAI6UUG2IivPBHsnEYtvoeEXU3IrqOqYE7gMAY4WN0eVVty4FU_l3CBqIL8KXCTEqbaX_oJhSg.jpg')">
   <div class="tgme_widget_message_photo" style="width:61.5%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948C.png')"><b>🔌</b></i> به این نوع قطع و وصلی ارتباطات می‌گن “اختلالات پریودی”</b><br/>با توجه به گزارشات کارابرای کانال ک مشکل داشتن تو نت چ با فیلتر چ بدون فیلتر،  رفتم برسی کردم ک<br/>امروز  اینترنت  ناپایدار ه و دلیلش<br/><br/>طبق گزارش کلودفلر، بیشتر ترافیک ایران رفته روی HTTP ساده و ناامن. این یعنی دسترسی به سرویس‌های امن، VPNها و پروتکل‌های پیشرفته مثل HTTP/2 و HTTP/3 به‌شدت محدود شده.<br/><br/>اختلال گسترده است، همگانی هستش اتصال‌ها یا قطع می‌شن، یا به زور بالا میان.<br/><br/>مسئله از طرف کاربر نیست، از زیرساخت و محدودیت‌هایی هست که درحال بروزرسانی هستش</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948C.png')"><b>🔌</b></i> به این نوع قطع و وصلی ارتباطات می‌گن “اختلالات پریودی”</b><br/>با توجه به گزارشات کارابرای کانال ک مشکل داشتن تو نت چ با فیلتر چ بدون فیلتر،  رفتم برسی کردم ک<br/>امروز  اینترنت  ناپایدار ه و دلیلش<br/><br/>طبق گزارش کلودفلر، بیشتر ترافیک ایران رفته روی HTTP ساده و ناامن. این یعنی دسترسی به سرویس‌های امن، VPNها و پروتکل‌های پیشرفته مثل HTTP/2 و HTTP/3 به‌شدت محدود شده.<br/><br/>اختلال گسترده است، همگانی هستش اتصال‌ها یا قطع می‌شن، یا به زور بالا میان.<br/><br/>مسئله از طرف کاربر نیست، از زیرساخت و محدودیت‌هایی هست که درحال بروزرسانی هستش</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AC.png')"><b>🤬</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9890.png')"><b>😐</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">824</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3910"><time datetime="2025-06-26T12:48:14+00:00" class="time">12:48</time></a></span>
+    <span class="tgme_widget_message_views">826</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3910"><time datetime="2025-06-26T12:48:14+00:00" class="time">12:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3911" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMSwidCI6MTc1MTk3NjIwMSwiaCI6IjQ5YWZjODM1YmU4ZDJjMmUxYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3911" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMSwidCI6MTc1MTk4MTMwNCwiaCI6Ijk3OTdiOWEwMmQxNjAyNzdjOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -224,17 +337,15 @@
     <a href="https://t.me/FreeVlessVpn/3911" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3911"><time datetime="2025-06-27T12:59:40+00:00" class="time">12:59</time></a></span>
+    <span class="tgme_widget_message_views">1.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3911"><time datetime="2025-06-27T12:59:40+00:00" class="time">12:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3912" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMiwidCI6MTc1MTk3NjIwMSwiaCI6ImRjNjlhMWU3ZjA5OTQ0Yzk5YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3912" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxMiwidCI6MTc1MTk4MTMwNCwiaCI6Ijk0ZTc3OGUxZjZiM2Y5ZTE3MCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -253,21 +364,19 @@
 
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <div class="message_media_not_supported_label">This media is not supported in the widget</div>
     <a href="https://t.me/FreeVlessVpn/3912" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A1.png')"><b>🤡</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">655</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3912"><time datetime="2025-06-28T05:14:50+00:00" class="time">05:14</time></a></span>
+    <span class="tgme_widget_message_views">658</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3912"><time datetime="2025-06-28T05:14:50+00:00" class="time">05:14</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3915" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNSwidCI6MTc1MTk3NjIwMSwiaCI6IjZjMzg3NjhiYjk0ZDY3MDRmNiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3915" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNSwidCI6MTc1MTk4MTMwNCwiaCI6ImE0NzliNjJiMDA4ZjY0YzQ0NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -290,24 +399,22 @@
   
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">1:31</time>
+<time class="message_video_duration js-message_video_duration">1:30</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">Media is too big</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">خدمت شما <br/><br/><br/><b><br/>مردم عزیز کشورمان که<br/></b><br/><br/><b><br/>توسط اسرائیل پر پر شدند</b></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">خدمت شما <br/><br/><br/><b><br/>مردم عزیز کشورمان که<br/></b><br/><br/><b><br/>توسط اسرائیل پر پر شدند</b></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A1.png')"><b>🤡</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">560</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3915"><time datetime="2025-06-28T16:30:57+00:00" class="time">16:30</time></a></span>
+    <span class="tgme_widget_message_views">562</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3915"><time datetime="2025-06-28T16:30:57+00:00" class="time">16:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3916" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNiwidCI6MTc1MTk3NjIwMSwiaCI6IjcwYzViMjJkMDNmZDNiYTk1OCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3916" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNiwidCI6MTc1MTk4MTMwNCwiaCI6IjY4NzNjZWQxM2U1OWYxODc3NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -330,17 +437,15 @@
     <a href="https://t.me/FreeVlessVpn/3916" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A1.png')"><b>🤡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">737</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3916"><time datetime="2025-06-29T05:31:36+00:00" class="time">05:31</time></a></span>
+    <span class="tgme_widget_message_views">739</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3916"><time datetime="2025-06-29T05:31:36+00:00" class="time">05:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3917" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNywidCI6MTc1MTk3NjIwMSwiaCI6IjMwNzdiZjA0NjA5Mzk5OWUwMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3917" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxNywidCI6MTc1MTk4MTMwNCwiaCI6IjAyYzUyMDZhOGNkMWEzYjczYiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -356,7 +461,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FreeVlessVpn/3916" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FreeVlessVpn/3916" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">فیلترشکن | V2rayNG</span>
 </div>
@@ -368,17 +473,15 @@
     <a href="https://t.me/FreeVlessVpn/3917" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A1.png')"><b>🤡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">907</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3917"><time datetime="2025-06-29T05:31:45+00:00" class="time">05:31</time></a></span>
+    <span class="tgme_widget_message_views">911</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3917"><time datetime="2025-06-29T05:31:45+00:00" class="time">05:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3918" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxOCwidCI6MTc1MTk3NjIwMSwiaCI6IjNkMjY1YzBhMmI0NGM0NjVhOSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3918" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxOCwidCI6MTc1MTk4MTMwNCwiaCI6IjRjNzNiOWViM2E2NTgzYjUyNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -401,17 +504,15 @@
     <a href="https://t.me/FreeVlessVpn/3918" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">541</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3918"><time datetime="2025-07-01T01:08:01+00:00" class="time">01:08</time></a></span>
+    <span class="tgme_widget_message_views">544</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3918"><time datetime="2025-07-01T01:08:01+00:00" class="time">01:08</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3919" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxOSwidCI6MTc1MTk3NjIwMSwiaCI6ImI1OGQ5MTdhOWJiNjI4ZmM3OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3919" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkxOSwidCI6MTc1MTk4MTMwNCwiaCI6IjNkYjAzMjZkZmRlNzQxYTM1YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -434,17 +535,15 @@
     <a href="https://t.me/FreeVlessVpn/3919" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">509</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3919"><time datetime="2025-07-01T08:11:48+00:00" class="time">08:11</time></a></span>
+    <span class="tgme_widget_message_views">512</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3919"><time datetime="2025-07-01T08:11:48+00:00" class="time">08:11</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3920" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMCwidCI6MTc1MTk3NjIwMSwiaCI6IjQwN2ViZDM0NjMxYTMyZDFiYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3920" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMCwidCI6MTc1MTk4MTMwNCwiaCI6ImZjMTk1YTA2ZWVjM2U4ZWE4NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -463,21 +562,19 @@
 
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <div class="message_media_not_supported_label">This media is not supported in the widget</div>
     <a href="https://t.me/FreeVlessVpn/3920" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">452</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3920"><time datetime="2025-07-02T02:41:25+00:00" class="time">02:41</time></a></span>
+    <span class="tgme_widget_message_views">454</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3920"><time datetime="2025-07-02T02:41:25+00:00" class="time">02:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3921" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMSwidCI6MTc1MTk3NjIwMSwiaCI6IjRkODJmNjg4YWZiZjgxMWEzMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3921" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMSwidCI6MTc1MTk4MTMwNCwiaCI6Ijg4YWE5MmI5OTNkMDVmYTU5YSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -496,18 +593,16 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5992103767836838770 1395145377_456248178" href="https://t.me/FreeVlessVpn/3921" style="width:392px;background-image:url('https://cdn4.cdn-telegram.org/file/ugtUsW6FXy-tlcvbxtErOcENF9kX-ENqsKhm-_9f-QOt21o0ScRwHVrDHX9IaFUWsmo5HzIOTo_vOd_sHcsAMCK7te6G3fvnZCjDD3Isns4pDR2-9KuJRBSHTqnVPZ6FWSoTm4CJofuSY1rmVHT-3z3UvtjLFy2i9rQrtZU1ARnVk4xqpZ2KWbI7ssUZlkzILzgU6XYr8DrxqKYywrxjS5hERYPZf-MPrwzlvBn_5S8ewdXbqGC2ICOEc_GFPdamCB_FpORLisoOPVR5IA6YqnETM5qTyxMp873DrM2P4OuTQfdjUiwlEMCA_KAd03fpfbAskbzmP6ntj3v-q7lNaw.jpg')">
   <div class="tgme_widget_message_photo" style="width:65.333333333333%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">چرا فیلترشکن ها <br/><br/><br/><br/>باید این چیزها را بگذارند <br/><br/><br/><br/>اینها همگی برای یهود است</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">چرا فیلترشکن ها <br/><br/><br/><br/>باید این چیزها را بگذارند <br/><br/><br/><br/>اینها همگی برای یهود است</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">466</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3921"><time datetime="2025-07-02T08:12:27+00:00" class="time">08:12</time></a></span>
+    <span class="tgme_widget_message_views">469</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3921"><time datetime="2025-07-02T08:12:27+00:00" class="time">08:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3922" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMiwidCI6MTc1MTk3NjIwMSwiaCI6IjNmNjFlOTUyMjA2NWRiZDhkNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3922" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyMiwidCI6MTc1MTk4MTMwNCwiaCI6ImUxYmYyNjlhNzE1YjUzMmQwMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -524,24 +619,22 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>دوستان از برنامه V2BOX  استفاده نکنید بهترین جایگزین برای آیفون این آپ هست</b><br/><br/><a href="https://apps.apple.com/us/app/streisand/id6450534064" target="_blank" rel="noopener">https://apps.apple.com/us/app/streisand/id6450534064</a></div>
-<a class="tgme_widget_message_link_preview" href="https://apps.apple.com/us/app/streisand/id6450534064">
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>دوستان از برنامه V2BOX  استفاده نکنید بهترین جایگزین برای آیفون این آپ هست</b><br/><br/><a href="https://apps.apple.com/us/app/streisand/id6450534064" target="_blank" rel="noopener">https://apps.apple.com/us/app/streisand/id6450534064</a></div><a class="tgme_widget_message_link_preview" href="https://apps.apple.com/us/app/streisand/id6450534064">
   
   <div class="link_preview_site_name accent_color" dir="auto">App Store</div>
   <i class="link_preview_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/mxYBag4tFZt8TOdfBmUJfgjYjmoyCGeaOwCr6QEyOpm0mxF8N7qCHg0REK859srlurX9aVTWmknMjWfmRAKtxQWzBRWfxLCraw3wofJtXhuFG25nZ1ibE3lrQxgA-6nx18jeL_KUlCwjPUszShIZcq7GetKoihexqXYNFwDrpCSSqPiA4_eJWMNtvFctCkByJDZfRwilnxK0gmoE6w_FKSN48Lrb8aLUlT_0PWPbMH6NAP7i1xPq_as7vNDImCJwMiA45QfjOh8bI3zySEWP5-EwWhU6fOr06-hTO_INhhOzblsBdVfcnBtNq49fDBt75H7lbBprtYy4YfC6sQpW8w.jpg');padding-top:50%"></i>
   <div class="link_preview_title" dir="auto">&lrm;Streisand</div>
   <div class="link_preview_description" dir="auto">&lrm;Streisand is an app that helps you use proxy servers. It has a user-friendly interface and useful features.<br/><br/>Key features:<br/>1. Rule-based Proxy Setup.<br/>2. Compatibility with Various Protocols.<br/>3. Custom DNS Support.<br/><br/>Supported Protocols:<br/>- VLESS(Reality)<br/>…</div>
 </a>
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">530</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3922"><time datetime="2025-07-02T08:13:07+00:00" class="time">08:13</time></a></span>
+    <span class="tgme_widget_message_views">534</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3922"><time datetime="2025-07-02T08:13:07+00:00" class="time">08:13</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3924" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNCwidCI6MTc1MTk3NjIwMSwiaCI6ImU2OWU2YjZmNzU5MjVhYzE3YSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3924" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNCwidCI6MTc1MTk4MTMwNCwiaCI6IjYxYmQxMWEzOTVjNDk4NjgzNiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -560,18 +653,16 @@
 
 <a class="tgme_widget_message_photo_wrap 5998798260346669629 1396704060_456247869" href="https://t.me/FreeVlessVpn/3924" style="width:607px;background-image:url('https://cdn4.cdn-telegram.org/file/RdJ_HQDQCVtH5XEbeTNyT7N3s9MOr_dwKUWUzuJlt8rMmbjReEJPWRlbiCSIeQNripWeQw3kUT-5YsiT6a6nC4HBbLgFuQkRJh_Cn8_AOJ3fQ52ixDIW7oJISdiiNM5oIHP7ov3T-AKawTX0Cqfd0kisGM_xH_ZfmQuWEW9geNQ1sg-5KMBBy8QCocRZNsbdUii4yX3lKPdfJ9u-cc4lf2LaVqUVqa25Z7H4Nq-Ps_R4niB5UPUhKkTuQGdqvKFIPzZ96YDsRFi2Bjo_LN-Blc5mMgol2ZVFi_7o3V4A4n-J-UxtdivF3i4Miaw0pMOAN-9FwwUdeP_iCynSN29qkg.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:131.79571663921%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b>صف کشیدن توده های <br/><br/><br/><br/>گرد و خاک برای ورود به ایران</b></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>صف کشیدن توده های <br/><br/><br/><br/>گرد و خاک برای ورود به ایران</b></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">384</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3924"><time datetime="2025-07-04T18:42:33+00:00" class="time">18:42</time></a></span>
+    <span class="tgme_widget_message_views">388</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3924"><time datetime="2025-07-04T18:42:33+00:00" class="time">18:42</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3925" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNSwidCI6MTc1MTk3NjIwMSwiaCI6IjE1NjFkMjY1ZmMxOGI4YTM0OSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3925" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNSwidCI6MTc1MTk4MTMwNCwiaCI6ImRlMTQ3M2I1Y2ZkMWFiMDU5NiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -596,17 +687,15 @@
     <a href="https://t.me/FreeVlessVpn/3925" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">433</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3925"><time datetime="2025-07-05T15:23:38+00:00" class="time">15:23</time></a></span>
+    <span class="tgme_widget_message_views">437</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3925"><time datetime="2025-07-05T15:23:38+00:00" class="time">15:23</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3926" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNiwidCI6MTc1MTk3NjIwMSwiaCI6IjNkMDQ2NzU5NTc4MGY5ZThiYyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3926" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyNiwidCI6MTc1MTk4MTMwNCwiaCI6IjBkNTgzYTQ4ZjI1NWZhM2JjZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -623,18 +712,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">اینترنت به شدت مختل شده</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">374</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3926"><time datetime="2025-07-05T21:32:45+00:00" class="time">21:32</time></a></span>
+    <span class="tgme_widget_message_views">379</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3926"><time datetime="2025-07-05T21:32:45+00:00" class="time">21:32</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3928" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyOCwidCI6MTc1MTk3NjIwMSwiaCI6IjlkZTdiNTEwMzZlOThkOGRjYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3928" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyOCwidCI6MTc1MTk4MTMwNCwiaCI6IjAyNjI1ZTk5MzRmOTQxZTU1NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -653,18 +740,16 @@
 
 <a class="tgme_widget_message_photo_wrap 6003320701995567470 1397757023_456247662" href="https://t.me/FreeVlessVpn/3928" style="width:632px;background-image:url('https://cdn4.cdn-telegram.org/file/TkbVzmpWvLPeeJKmWyxpY2kAGO5dFLwRb4Q0jU6u8-NUvXy_FKCqnc-j5EOvaIcFssNg-_M_p4GY9fJN8-yg3Z595L0BwmMK6OofKDEXYodPJb3lj-wt1DC-9_nwiIuXU-z1tf5ER53oH-ocCPGeDcELOToooXpaI5bnBth7QO5MS_mwETQoay8TEfG9o3MVZKr--evGsHR7inDXdc-aH1B2s7M9yqgdYe6hwIbX2PoODagV0U4CFvuWGhOVlateCr3FoAdrqy3L8wegjyRV6I6OpWvEIK00qOXhtFHGXi1n0OhFj7H0tLFKX9b0O3xvQJDYxg77tOX4532GQ9ZSfQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:126.58227848101%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA8.png')"><b>🚨</b></i>اطلاعیه قطعی زیرساخت</b><br/><br/><br/><br/>ارتباط بین الملل برخی مسیرهای زیرساخت کشور با مشکل مواجه شده و اختلال به صورت سراسری روی بیشتر ISPهای کشور اتفاق افتاده است.<br/><br/><br/>این مورد کلی هست.</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9AA8.png')"><b>🚨</b></i>اطلاعیه قطعی زیرساخت</b><br/><br/><br/><br/>ارتباط بین الملل برخی مسیرهای زیرساخت کشور با مشکل مواجه شده و اختلال به صورت سراسری روی بیشتر ISPهای کشور اتفاق افتاده است.<br/><br/><br/>این مورد کلی هست.</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">336</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3928"><time datetime="2025-07-05T22:23:57+00:00" class="time">22:23</time></a></span>
+    <span class="tgme_widget_message_views">341</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3928"><time datetime="2025-07-05T22:23:57+00:00" class="time">22:23</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3929" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyOSwidCI6MTc1MTk3NjIwMSwiaCI6ImE3OWUzNjVhNzljN2VkNTcyZiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3929" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkyOSwidCI6MTc1MTk4MTMwNCwiaCI6ImRkMzUwZThlOWZkNTBiMmUzOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -681,23 +766,18 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
 
 
-<div class="message_media_not_supported_wrap">
-  <div class="message_media_not_supported">
-    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
-    <a href="https://t.me/FreeVlessVpn/3929" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
-  </div>
-</div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<a class="tgme_widget_message_photo_wrap 6003680564420396826 1397840810_456247066" href="https://t.me/FreeVlessVpn/3929" style="width:622px;background-image:url('https://cdn4.cdn-telegram.org/file/pLAmnDOql9z8cOFyuss4EBCG41HvRCN_3VmDlLkgt-YmDo5Et33POuS6vXJyfITNs8y2z8K8MvCQv4b96bbsz_F21cOEaSWrZr7eoFeRrAAu465C5cYLnIeZCrFadRGeIcqQz9al6lBKcDuk2zAwGAN0mAp6uIWzSzTSyNNYBzAAKuLVvw9YUHQP4bMP8goI2LM6WSxfNF0O7qq4K8qxSkDf1CRj32RsONBkxDm7DWQ-Xl_ChN2YUQczBHFmYVZoB4cQYCmi-CsKjLbfI0XAg2zuynie5Xy2kpj9krlMpUZ5uFHyPLTQxRKrB93j7pCyV-bgqzc9ee5rUVc8VdnXNw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:128.61736334405%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')"><b>🔴</b></i>نت بلاکس : الان اختلالات شدیدتر شد و 85% درصد اینترنت مردم ایران قطع شده.<br/><blockquote>فقط 15% از مردم ایران به اینترنت بین الملل وصلن</blockquote><br/><br/>بیش از 85 درصد اینترنت ایران قطع شده<br/><br/>همین باعث شده یک سری شهر ها و یه رنج ایپی های خاص همچنان متصل بمونه <br/><br/>( دلیل اینک بعضی پروکسی ها وصل مونده همینه)</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AC.png')"><b>🤬</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">359</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3929"><time datetime="2025-07-05T22:36:02+00:00" class="time">22:36</time></a></span>
+    <span class="tgme_widget_message_views">365</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3929"><time datetime="2025-07-05T22:36:02+00:00" class="time">22:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3930" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMCwidCI6MTc1MTk3NjIwMSwiaCI6ImE4OTM2ZDc1ZDRjNGE2ZWMyMyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3930" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMCwidCI6MTc1MTk4MTMwNCwiaCI6ImM3MzZkOTk3NjE3YmUwNTJhZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -712,20 +792,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto">تا نت یه ذره خراب میشه چنل های بچه سالا شروع میکنند به خالی کردن جیب ملت <br/><br/>بعد از فرویش هم میگن محله شما قطعه صبوری کنید<br/><br/>تا نت درست نشده کانفیگ نخرید دوستان برا دو دقیقه وصل بودن ماهی اب گل آلود بقیه نشید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">372</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3930"><time datetime="2025-07-05T22:41:24+00:00" class="time">22:41</time></a></span>
+    <span class="tgme_widget_message_views">380</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3930"><time datetime="2025-07-05T22:41:24+00:00" class="time">22:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3931" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMSwidCI6MTc1MTk3NjIwMSwiaCI6ImEyNjM0ZmM0NDIxNzNhYWMzMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3931" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMSwidCI6MTc1MTk4MTMwNCwiaCI6ImJjNGE2ZDhhM2UxYzg5ZDY3OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -741,24 +819,22 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/FreeVlessVpn"><span dir="auto">فیلترشکن | V2rayNG</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/FreeVlessVpn/3930" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/FreeVlessVpn/3930" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">فیلترشکن | V2rayNG</span>
 </div>
 <div class="tgme_widget_message_text js-message_reply_text" dir="auto">تا نت یه ذره خراب میشه چنل های بچه سالا شروع میکنند به خالی کردن جیب ملت   بعد از فرویش هم میگن محله شما قطعه صبوری کنید  تا نت درست نشده کانفیگ نخرید دوستان برا دو دقیقه وصل بودن ماهی اب گل آلود بقیه نشید</div>
 </a>
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">مجدد میگم هزینه اضافی پرداخت نکنید تا وضعیت مشخص بشه<br/><br/>هر ایپی که الان کار میکنه ممکنه دوساعت دیگ دراپ بشه پس پولتونو دور نریزید</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">372</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3931"><time datetime="2025-07-05T22:41:24+00:00" class="time">22:41</time></a></span>
+    <span class="tgme_widget_message_views">379</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3931"><time datetime="2025-07-05T22:41:24+00:00" class="time">22:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3933" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMywidCI6MTc1MTk3NjIwMSwiaCI6IjBlNTFlYThhMDk1NGQ5MzZmYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="FreeVlessVpn/3933" data-view="eyJjIjotMTY5MTQ4MTcyNCwicCI6MzkzMywidCI6MTc1MTk4MTMwNCwiaCI6ImY3ZDYyMmU4NGQyMTkzYWJmMSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/FreeVlessVpn"><i class="tgme_widget_message_user_photo bgcolor2" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/PlGftutX_0VAd7QxEpC2rubRKEJ665i3_r2E_ajeAS74clldymCTuhsey6K0qrKEVeAY78sbptmFIvyN7b8FjfsX7sxdsJa_cWGwlFnoA7ptveI1q8SBQ-R2ua6qJ-lb0CWPeLxdwninAjoHeknrae-MjK6j4zRZuKOb3Wuc_GG4VIUX2QgaytGYbKZ2ZbglARicbPwwbU1zDkE68ZmJWWY3jLt4vIQG2zB84vPgE4eHyimknJ0PYyJxhP9hDey6mvP6nfjc0hAGVBQxQcKCZgpvPM3rjMgdoedxHOiYaAohFBTcxAW1R3OyCR_UbcK33nF62yxVv9gK6mSf4BDEOQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -781,12 +857,10 @@
     <a href="https://t.me/FreeVlessVpn/3933" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A1.png')"><b>🤡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">260</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3933"><time datetime="2025-07-06T06:26:41+00:00" class="time">06:26</time></a></span>
+    <span class="tgme_widget_message_views">269</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/FreeVlessVpn/3933"><time datetime="2025-07-06T06:26:41+00:00" class="time">06:26</time></a></span>
   </div>
 </div>
   </div>
@@ -800,11 +874,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 71.1ms -->
+<!-- page generated in 70.87ms -->

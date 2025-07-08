@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">193</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">21</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">10</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">4</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">18</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">برای خرید VPN اختصاصی به <a href="https://t.me/xyzquantvpn_ir" target="_blank">@xyzquantvpn_ir</a> پیام بدید</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=72cf40755fd4526500_11630378986101697080">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=42055c9b5990452a1f_17943817108370930729">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=72cf40755fd4526500_11630378986101697080">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=42055c9b5990452a1f_17943817108370930729">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/xyzquantvpn">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/xyzquantvpn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/xyzquantvpn?before=258" class="tme_messages_more js-messages_more" data-before="258"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/258" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjU4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTgyZTA4MTJmZTFkYjEwYTI4In0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/xyzquantvpn?before=258" class="tme_messages_more js-messages_more" data-before="258"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/258" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjU4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZjg0MDY3OGY2MzQ3N2EwMmNhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان ما سرویس VPN مخصوص کنسول ps4 , ps5 و XBOX هم داریم گیمر های عزیز کانال که نیاز دارند می تونند از این سرویس هم استفاده کنند.</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/259" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjU5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMGFmNmQxZjFlY2ExMTc0MGEyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/259" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjU5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzdhNWI3ZmI5MGE5OGMxMmRlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -156,9 +271,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">یه آپدیتی امشب روی پروکسی های تلگراممون دادیم که به نظر کیفیت قابل قبولی ارائه می دن</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -167,7 +280,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/260" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZmZiYjZlOWI0YTc0N2YzYzY0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/260" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTg0OTQzYzU3ZjAxZTVmMzZiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -190,15 +303,13 @@
   <video src="https://cdn4.cdn-telegram.org/file/83b145c8d0.mp4?token=SytshtWMuAfkSmm760etkxQAwigSqnO0w_z2MUjxxvfVR79tE2EEo1abKV2vzbRJ4bos99la6kMoyTwgPYN5q9zL8hSzKpQ7NYfiXkB1qtvGxmxBY692nY95WNp1CiUCCHnMRuZ2WD6MvfEc7sQDGKWPhmpehTarda9-ndvBQUJQgDHT_-LmRJsNPD8N7WL5gVHOR_Q332ALw3fjXuPHWrToUEkXADBP-AyYgO_Gh-fef9BqEDMc2dtgmBnyrmLBz3WvPv_OWThjWVlBtfGVjXfk-CueScxLsgXRrX1eY12hb9d9kVHwKocm_fqwEZ8mtR3Z0e0eIYe2o_lg8RjvuQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
 </div>
 <div class="message_video_play js-message_video_play"></div>
-<time class="message_video_duration js-message_video_duration">2:20</time>
+<time class="message_video_duration js-message_video_duration">2:19</time>
 <div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
     <div class="message_media_not_supported_label">This media is not supported in your browser</div>
     <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
   </div>
-</div></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">اینو برسونید دست این سبک مغز<br/>از طرف من بهش بگید خیلی کند‌ذهنی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></div>
-
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto">اینو برسونید دست این سبک مغز<br/>از طرف من بهش بگید خیلی کند‌ذهنی<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9882.png')"><b>😂</b></i></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -207,7 +318,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/261" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiN2FhMDhmNzk2MDU5ZjA2YzMzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/261" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTAxNTcyZDlhNzYxMDhjNDNiIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -224,9 +335,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">نیم ساعت دیگه یه سری تغییرات روی سرور ها داریم احتمال اختلال وجود داره</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -235,7 +344,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/262" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOTVkMTgwNmNhZjNiMzExYzFkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/262" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYjllMzRiNjI2NzZmNjI2MDlkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -252,9 +361,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان کانفیگ هاتون آپدیت کنید یه دسته جدید کانفیگ اضافه کردیم</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -263,7 +370,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/263" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYzLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYWQzYjAxZmViNjY5MTQzMzNjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/263" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjYzLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzI4YjdjODg2ZjAzNDMyZDUzIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -280,9 +387,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
-<div class="tgme_widget_message_text js-message_text" dir="auto">دوستانی که اپل دارن می تونن از طریق لینک زیر اپ hiddify برای ios نصب کنند<br/><a href="https://testflight.apple.com/join/URrT6ZWm" target="_blank" rel="noopener">https://testflight.apple.com/join/URrT6ZWm</a></div>
-<a class="tgme_widget_message_link_preview" href="https://testflight.apple.com/join/URrT6ZWm">
+<div class="tgme_widget_message_text js-message_text" dir="auto">دوستانی که اپل دارن می تونن از طریق لینک زیر اپ hiddify برای ios نصب کنند<br/><a href="https://testflight.apple.com/join/URrT6ZWm" target="_blank" rel="noopener">https://testflight.apple.com/join/URrT6ZWm</a></div><a class="tgme_widget_message_link_preview" href="https://testflight.apple.com/join/URrT6ZWm">
   
   <div class="link_preview_site_name accent_color" dir="auto">Apple</div>
   <i class="link_preview_image" style="background-image:url('https://cdn4.cdn-telegram.org/file/gY2CxvFvUlU13yz5H1zCv7VTqZ7OE3DeUm02EcnffaUZgDGn-DVeh6PH_NPisKLEVNUO6TTEXYIrAqBWDmRwCQ_18yRUj1h6L5qmaSDVV9nH1jewIChrPm2MDnQBy3nyMKj5k7sZLjx5xB4ZU7WXQAGZIgWsgZnbMONvZPFHhRhOKX484e6_lCZMBc9ftu-eKLINaZaWYKpQYVR0Ol3vV6gPUSBNVq-bTachMlmDTNcrWsfw6rSQuBvbMQjxbQghqx-qxa12CGWxxn_SdqJxJQ1wxLuNxWVZbCVVpTJWteeuxjhSg2aajtd61K-3DNJml-FUxFFdfAKxnpiVWjtjQw.jpg');padding-top:52.5%"></i>
@@ -297,7 +402,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/264" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNjA0Mjc4MjA0NjEyMWQxNTkzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/264" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYzZmNmUxMGVjMTQxMzQ3YjIyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -316,9 +421,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5269652159404830302 1226936504_456257118" href="https://t.me/xyzquantVPN/264" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/k0Ba_f3AaPzuZ-jJ8dmuT8s0Iny30lwsQXV0aT04cDayHC1XFwsw9dNDQgURikriRjzC9xXTXKHmRf4i6nFC3iSJAFwithpPTzk-Bsl-ppSn7GY91-CTL_eW9omIsfHuruf1OOWGxsMZtNfFhGe3OhkxPHKE7UNLn1-5SSm_BPlTjYKZAkQ3z48Kpb_LZXzPXunezB0QVzVvI0vqqyiTMkdZuuBodeeAI5PwlhAVKi8acZGGfHmmZ1n82nEI7hzqVdJeeL3Y8N7Qce95R1vx0IAvkS8pzvtsdsupOK0Yp9IffFBnk6W6GNqqYhTSHINIj-WBHSj6Xyalk5YY1_mxqA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:56.25%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">دوستان از امروز می تونید برای گوشی های IOS و سیستم های macos از اپ هیدیفای استفاده کنید انتشار رسمی این اپ VPN روی  App store اپل دقایقی پیش اتفاق افتاد<br/><br/>از اینجا می تونید <a href="https://apps.apple.com/de/app/hiddify-proxy-vpn/id6596777532?l=en-GB" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">دانلود</a> کنید.<br/><br/>این پست حتما برای دوست های آیفون دارتون بفرستید. تا مشکلشون بر طرف بشه<br/><br/>راستی پایدار ترین VPN با بهترین سرعت رو می تونید از ما خریداری کنید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/> CHANNEL: <a href="https://t.me/XyzquantVPN" target="_blank">@XyzquantVPN</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">دوستان از امروز می تونید برای گوشی های IOS و سیستم های macos از اپ هیدیفای استفاده کنید انتشار رسمی این اپ VPN روی  App store اپل دقایقی پیش اتفاق افتاد<br/><br/>از اینجا می تونید <a href="https://apps.apple.com/de/app/hiddify-proxy-vpn/id6596777532?l=en-GB" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">دانلود</a> کنید.<br/><br/>این پست حتما برای دوست های آیفون دارتون بفرستید. تا مشکلشون بر طرف بشه<br/><br/>راستی پایدار ترین VPN با بهترین سرعت رو می تونید از ما خریداری کنید.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/> CHANNEL: <a href="https://t.me/XyzquantVPN" target="_blank">@XyzquantVPN</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -327,7 +430,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/265" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMjdlMTdjY2ZlYTYxZDcwYTg1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/265" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiNWMzYjM1ZjdjNDJhYjYyMjUxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -344,10 +447,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">خب دوستان به نظر اینستاگرام رفع فیلتر شده این خبر خیلی خوبیه  امیدواریم به زودی تلگرام هم رفع فیلتر بشه</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">165</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/265"><time datetime="2024-11-08T17:52:40+00:00" class="time">17:52</time></a></span>
@@ -355,7 +456,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/266" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY2LCJ0IjoxNzUxOTc2NDU5LCJoIjoiMTgwM2QyN2QzYzYzYzU5NTVjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/266" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY2LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZTUzYTAwMGU0OGI1OWYxYTI4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -372,10 +473,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">بالاخره بعد از ۲ سال پروژه فیلترینگ اینستاگرام شکست خورد</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">152</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/266"><time datetime="2024-11-08T17:58:40+00:00" class="time">17:58</time></a></span>
@@ -383,7 +482,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/268" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY4LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNmJmYmRhNDgzYjI5YjlkYzg5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/268" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY4LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMWFhMTFlMjc2NjJiYWQ0ZTU4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -402,9 +501,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5003884367721901284 1165057618_456240356" href="https://t.me/xyzquantVPN/268" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/F6-ZbmfZPvCRJrFmUQqDYqo2pHOvs3GoFxa52sOd6p6MMhVNBvyJpiPNA72ZUeo-kAMLis_2PPzNbWhEag1AiM-D6RJtRJFkNg06dIFXVP0K1XwMYBHrYIPzYwMvA42vmphJpyndFNyQmdYniHHH_W2NucYjWQ1OYl6JLL_vvgL5uHCYxmLV_q2Rrdn3ve5FikCYqUpAHn1BceleTxSQF_wTqFMbsaP6iyZtjKeWaij-zyyeXhvHGwd0XGZ0axKZ5XXSYIvdyfUkDk-6e9EBd3gEcEWZg1PaFIdeSfDINhHO8WvO9w6Y-10UKRENFzgSSUESA5G1eZrT5MknwdbLZQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:55.75%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">مشخص شد رفع فیلترینگ اینستاگرام اختلال فنی بوده؛ اما چیزی که مشخص نشده اینه که رسانه‌هایی که به واسطه اختلال برای دولت نوشابه باز کردن، فازشون چیه&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a>&rlm;⁧</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">مشخص شد رفع فیلترینگ اینستاگرام اختلال فنی بوده؛ اما چیزی که مشخص نشده اینه که رسانه‌هایی که به واسطه اختلال برای دولت نوشابه باز کردن، فازشون چیه&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a>&rlm;⁧</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -413,7 +510,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/269" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiNGJlMmUxYmQxNzFkMDQ0YmUwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/269" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjY5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiMmE1ODNkYzY4NWM0YzY4ZDBhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -430,10 +527,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">به نظر هنوز وقتش نشده در اینجا ببندیم راحت شیم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B1.png')"><b>🥱</b></i></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">228</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/269"><time datetime="2024-11-08T23:19:43+00:00" class="time">23:19</time></a></span>
@@ -441,7 +536,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/270" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiM2I1NWE4ZTU2NTgxNjYxYzQ0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/270" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiMjE1ZWVkZGFlZGIyOTkyM2YxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -460,9 +555,7 @@
 
 <a class="tgme_widget_message_photo_wrap 5015300876125974092 1167715731_456240716" href="https://t.me/xyzquantVPN/270" style="width:800px;background-image:url('https://cdn1.cdn-telegram.org/file/n3d9XAb9ZhgYrwQ_lgAWEGNfO9g922M0IAnq58QKvrlnuGFRetRXRb-EEwKYH_ChL37FQUm-I3zVI3X5sxv2CFB9tiRBCchGOR8ZrmsZ3Wp1sHRYWgh0T3XtHrDuQfSoHn4t9XMuYWWvDAACyJzn9056ZJjDt9NX2NXAje2Id9hU_2Z06jXOkEDKfaLw3ew8kI9f7iUz3lMpLLJPdAanSrLzDx9QcDurj4xpPEfexKDg0U9pXvgZWIgItd0hWxW6Qrup4WSvC61XKyRWieQ5oPac3CxlLSR89z0ZTtpAfJ1A-jqBfAG3OOMzJJNTiOAcue3rrEdaLAePsGysziISRA.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:49.625%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D9%86%D8%AA">#فیلترنت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a>&rlm;⁧</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="?q=%23%D9%81%DB%8C%D9%84%D8%AA%D8%B1%D9%86%D8%AA">#فیلترنت</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F948D.png')"><b>🔍</b></i> <a href="http://ircf.space/" target="_blank" rel="noopener">ircf.space</a><br/><a href="https://t.me/ircfspace" target="_blank">@ircfspace</a>&rlm;⁧</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -471,7 +564,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo js-widget_message" data-post="xyzquantVPN/271" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiMmYyMmYwNGE2YThlZDMzY2QyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message service_message_photo user-color-4 js-widget_message" data-post="xyzquantVPN/271" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNTc0OTc3MWI5ZDVkZTMzN2UwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -488,9 +581,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-<a class="tgme_widget_message_service_photo" href="https://t.me/xyzquantVPN/271"><img src="https://cdn4.cdn-telegram.org/file/NpZGFfYsdsH4oqelxBkKUEmNPu_nWKsKL8yAoNUZgWsbdKLHtEMY86hkF41gI0e8SNZ7ydXZElvCHiucDxa2yZrQU11G4ig-UJShtgxU7TAC7dcUy8A8w9D08z75WkV9wLLxU5OXIjRMSVKu-pjiZuhVjnB05ULo9fSIaqCPGP3L1t03bPsbQipqtkR8b9LuxSUKl6Fsg-WbH16Aw5rKHrDf1CY7i2DOTIDIO-OWVWYlc3p7ryrdosQ2K7PipKN8SaXdklHPUyAlBYEhAwJ1kI94XJm2EzAENH780-387lit8IEN5hnbQiQrbf7ZKtkkhZeahb1C7AWMpa-oqTJZ3Q.jpg"></a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
-
+<a class="tgme_widget_message_service_photo" href="https://t.me/xyzquantVPN/271"><img src="https://cdn4.cdn-telegram.org/file/NpZGFfYsdsH4oqelxBkKUEmNPu_nWKsKL8yAoNUZgWsbdKLHtEMY86hkF41gI0e8SNZ7ydXZElvCHiucDxa2yZrQU11G4ig-UJShtgxU7TAC7dcUy8A8w9D08z75WkV9wLLxU5OXIjRMSVKu-pjiZuhVjnB05ULo9fSIaqCPGP3L1t03bPsbQipqtkR8b9LuxSUKl6Fsg-WbH16Aw5rKHrDf1CY7i2DOTIDIO-OWVWYlc3p7ryrdosQ2K7PipKN8SaXdklHPUyAlBYEhAwJ1kI94XJm2EzAENH780-387lit8IEN5hnbQiQrbf7ZKtkkhZeahb1C7AWMpa-oqTJZ3Q.jpg"></a><div class="tgme_widget_message_text js-message_text" dir="auto">Channel photo updated</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -499,7 +590,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/272" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcyLCJ0IjoxNzUxOTc2NDU5LCJoIjoiY2M0OWRhYmM2MWRiMTdlODY5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/272" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjcyLCJ0IjoxNzUxOTgxNTU5LCJoIjoiNzBjYTg1MWExOGRkZDRkODVkIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -518,10 +609,8 @@
 
 <a class="tgme_widget_message_photo_wrap blured 5393082703378771159 1255674917_456256727" href="https://t.me/xyzquantVPN/272" style="width:360px;background-image:url('https://cdn4.cdn-telegram.org/file/jGePAStyBa_ceGxL7cON1KADRlL6zHZ0Xx9b69iYtwkGJWVkBij5yPTjbFocUsvyGugXITouBJvJiJS3jYoBLhnX8a_CbEnRA4S08XUOyhnue8Z5HuTAFY0U1iFLmNsarcrJPd8eZQx3GoSKwxAjMw7QFOBF6844ONijLZQ6kb_wYF_j0Xx6_heC2S8k7WnFfQlw24EonZQ1L8s3pWKf0_fQ6B3BQnOfC1frarorVat5lyJGZ9yy2Q6BeitkuGN3xs22bBRPvK2kU9RfVu3b9Ipc8FR9cZPVaJNnKkMyWKPTdrXiw02QcqzjsrYkwBYvZcgapyS-Tf0oN8u4UjZNVA.jpg')">
   <div class="tgme_widget_message_photo" style="width:60%;padding-top:133.33333333333%"></div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">خب بچه ها از این به بعد می تونید از لینک زیر به صفحه status ما دسترسی داشته باشید و وضعیت سرویس ما رو مشاهده کنید<br/><br/><a href="https://monitoring.xyzquant.space/status" target="_blank" rel="noopener">https://monitoring.xyzquant.space/status</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">خب بچه ها از این به بعد می تونید از لینک زیر به صفحه status ما دسترسی داشته باشید و وضعیت سرویس ما رو مشاهده کنید<br/><br/><a href="https://monitoring.xyzquant.space/status" target="_blank" rel="noopener">https://monitoring.xyzquant.space/status</a></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">251</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/272"><time datetime="2024-12-12T14:22:35+00:00" class="time">14:22</time></a></span>
@@ -529,7 +618,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/273" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjczLCJ0IjoxNzUxOTc2NDU5LCJoIjoiYzBhYTAyNjU3NTU1NjVmYWQ0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/273" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjczLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWYxYmNjM2MyZGZmZDAyNjU5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -546,10 +635,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان ما از دیروز صبح درگیر بر طرف کردن مشکل پیش اومده ایم پس باید یک توضیحی نسبت به این مشکل بدیم <br/>دیروز صبح به دلیل افزایش تحریم های علیه ایران  ارائه دهنده خدمات زیرساخت ما در آلمان اکانت ما به همراه تمامی سرور های ما پاک کرد و هیچ گونه پاسخگویی تا این لحظه نداشته است.<br/>و با توجه به شرایط فعلی امکان ارائه خدمات به شما بزرگواران نداریم<br/>ممنونم که در طول این ۳ سال همراه ما بودید.<br/> <a href="https://t.me/xyzquantvpn_ir" target="_blank">@xyzquantvpn_ir</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i>6</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">250</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/273"><time datetime="2025-04-09T21:15:22+00:00" class="time">21:15</time></a></span>
@@ -557,7 +644,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/274" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc0LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjkyMmVmYTY4ZDQyYmMzZWZjIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/274" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc0LCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWRiNGExMTE5YmM0MzJjNzZmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -574,10 +661,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان و همراهان گرامی<br/>ایکس وای زد کوآنت <br/>شهر خون<br/>آزاد شد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/> CHANNEL: <a href="https://t.me/XyzquantVPN" target="_blank">@XyzquantVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>23</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9881.png')"><b>😁</b></i>2</span><span class="tgme_reaction"><tg-emoji emoji-id="5303310030940952439"></tg-emoji>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8DBE.png')"><b>🍾</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">233</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/274"><time datetime="2025-04-15T10:01:41+00:00" class="time">10:01</time></a></span>
@@ -585,7 +670,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/275" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc1LCJ0IjoxNzUxOTc2NDU5LCJoIjoiYjQyYjQ5ZDQ2MDNlNzgzYWRhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/275" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc1LCJ0IjoxNzUxOTgxNTU5LCJoIjoiN2I3ZWYyZGRlM2I3YzAzNzc1In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -602,10 +687,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">سلام<br/>دوستان بنا به دلایلی ما دامنه‌های سرویسمون رو تغییر دادیم<br/>عزیزانی که اشتراک داشتند به پی‌وی اکانت پشتیبانی مراجعه کنند تا لینک تنظیمات جدید رو براشون ارسال کنیم.<br/><br/><a href="https://t.me/xyzquantvpn_ir" target="_blank">@xyzquantvpn_ir</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')"><b>🤩</b></i>1</span><span class="tgme_reaction"><tg-emoji emoji-id="5303310030940952439"></tg-emoji>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">222</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/275"><time datetime="2025-05-07T09:49:18+00:00" class="time">09:49</time></a></span>
@@ -613,7 +696,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/279" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc5LCJ0IjoxNzUxOTc2NDU5LCJoIjoiZGFkZGZkYThiODMxODVjMWY0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/279" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6Mjc5LCJ0IjoxNzUxOTgxNTU5LCJoIjoiZGM1NGRmM2Y5ZmMwMGNjMDhjIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -630,10 +713,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">راه های پرداخت و حمایت از ما با کریپتو<br/>Bsc:<br/><br/>0xFD37A0C4475b886836c0215D3799B1fFf2918307<br/><br/>trx:<br/><br/>TLaoi2DPpz8zFPGnmt4BDbbxrKV6r549s8</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">104</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/279"><time datetime="2025-07-04T11:34:49+00:00" class="time">11:34</time></a></span>
@@ -641,7 +722,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/280" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjgwLCJ0IjoxNzUxOTc2NDU5LCJoIjoiZDk5ODJlOTU2ZjQ0NTI1Njk5In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/280" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjgwLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYWEwYjA5ZGRlZGRkMTA0ZjFmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -658,10 +739,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://1c4f8319-2482-4295-8d6a-27cf36c6504d@static.25.243.217.95.clients.your-server.de:443?hiddify=1&amp;sni=start.ubuntu.com&amp;type=grpc&amp;alpn=h2&amp;path=JOWQNkKKWpMvAz5cfTbq&amp;serviceName=JOWQNkKKWpMvAz5cfTbq&amp;mode=gun&amp;encryption=none&amp;fp=chrome&amp;headerType=None&amp;security=reality&amp;pbk=wSvGzCaRiOiLdFWxZiC0PIFW-WyG0ZHHEk6SBj2jVFs&amp;sid=ca#start.ubuntu.com%20reality%20grpc%20direct%20vless<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29E96.png')"><b>➖</b></i><br/> CHANNEL: <a href="https://t.me/XyzquantVPN" target="_blank">@XyzquantVPN</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">92</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/xyzquantVPN/280"><time datetime="2025-07-04T16:12:10+00:00" class="time">16:12</time></a></span>
@@ -669,7 +748,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="xyzquantVPN/281" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjgxLCJ0IjoxNzUxOTc2NDU5LCJoIjoiOWZiNGI4YTJiNDkxOWU3MTk4In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap user-color-4 js-widget_message" data-post="xyzquantVPN/281" data-view="eyJjIjotMTYwMDE3OTI3NiwicCI6MjgxLCJ0IjoxNzUxOTgxNTU5LCJoIjoiYTZmNDQ4MmUyYTc4ODU3NDczIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/xyzquantVPN"><i class="tgme_widget_message_user_photo bgcolor3" data-content="X"><img src="https://cdn4.cdn-telegram.org/file/lZheTiPSmrArReKMBLHuGYV3wuufloeFCB6sr6TjrTNpRUjd1fZk4cRNPE95MWaEhp9tzdSBfGvWRap2_XmYWgHPQNBcTmOvG2HvyYo-oIkrorrDbk4Hfj9jbbH4dz_pDsF9WOvNbs5xHemo_E6UPG3v_xCv3FCD7jFpWu4n-scE2yuJ-5cCaoGBF_V3_k3dWabquHFOwrOM7RoXAHwlb6qM7o13ykUPIeQ37nCxI34Uld_uED2D-BMhBUfbFjFjimsNnXbQbR80JgIJf5mWUdneAkEUG7IUI3A2nj1H42BRCvVZ_UgP32eARCrU-ggqDWICGNgJ9YREYaEs9AH6eQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -686,9 +765,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/xyzquantVPN"><span dir="auto">Xyzquant vpn</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">دوستان بر اساس رادار ما بهترین کانفیگی که می تونید در حال حاضر بهش وصل بشید http WS relay vless  هستش که از دو سرور IR1 , IR2 می تونید استفاده کنید.</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -706,11 +783,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 52.47ms -->
+<!-- page generated in 52.29ms -->

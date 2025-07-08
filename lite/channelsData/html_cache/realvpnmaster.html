@@ -52,9 +52,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -83,7 +200,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">1</span> <span class="counter_type">video</span></div><div class="tgme_channel_info_counter"><span class="counter_value">2</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">30</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">Road to 1 k <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i><br/>هر روز کلی کانفیگ رایگان داریم <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i><br/>برای تست و خرید به ایدی های زیر پیام بدید:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i>Owner:  <a href="https://t.me/Vpn_masterreal" target="_blank">@Vpn_masterreal</a><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F91A4.png')"><b>👤</b></i>Support:  <a href="https://t.me/Vpn_masterreal" target="_blank">@Vpn_masterreal</a><br/>رضایت مشتریان: <a href="https://t.me/rezayatvpnmaster" target="_blank">@rezayatvpnmaster</a></div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=35f9459017d077be23_3846665291898092375">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=e7e7c82fd5a291cf19_10142285195921297479">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -104,7 +221,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=35f9459017d077be23_3846665291898092375">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=e7e7c82fd5a291cf19_10142285195921297479">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/realvpnmaster">
@@ -121,7 +238,7 @@
 <main class="tgme_main" data-url="/realvpnmaster">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/realvpnmaster?before=62" class="tme_messages_more js-messages_more" data-before="62"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/62" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjIsInQiOjE3NTE5NzY0NTksImgiOiI2NDM4MjYyNTk3MjNmYWE4MWUifQ">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/realvpnmaster?before=62" class="tme_messages_more js-messages_more" data-before="62"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/62" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjIsInQiOjE3NTE5ODE1NTksImgiOiIzZjAzZGRmMjZjZmU5NTRkNzIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -138,10 +255,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://452d4d88-ab7e-403d-a49a-473b73a83f8a@103.184.44.104:2052?path=%2FTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO%2CTelegram%2C%40+TEHRANARGO&amp;security=none&amp;encryption=none&amp;host=xn--018o.orerblog.filtv.blog.boredhot.cloudcccc.joinbede.sbs.&amp;type=ws#%F0%9F%87%AB%F0%9F%87%B7Telegram+%3A+<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل وصله</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">49</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Vpn master</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/realvpnmaster/62"><time datetime="2024-05-11T09:47:57+00:00" class="time">09:47</time></a></span>
@@ -149,7 +264,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/63" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjMsInQiOjE3NTE5NzY0NTksImgiOiIyOThjYmNlMDg2ZmExNjM2MzkifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/63" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjMsInQiOjE3NTE5ODE1NTksImgiOiJjZjliZjQxZTFkZDVlYTc4ZGIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -166,10 +281,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://db5a8d71-b3f3-4e5c-a2a9-e7f78c9d141c@185.146.173.185:2095?path=%2F&amp;security=none&amp;encryption=none&amp;host=V2ray-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>همه نتا <br/>نامحدود تا ساعت ۹</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">51</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Vpn master</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/realvpnmaster/63"><time datetime="2024-05-11T13:53:23+00:00" class="time">13:53</time></a></span>
@@ -177,7 +290,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/64" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjQsInQiOjE3NTE5NzY0NTksImgiOiIwZjczNmRmYjcxZDI1NjkzMTUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/64" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjQsInQiOjE3NTE5ODE1NTksImgiOiJkOGRhZjliZmU1NjVkOGE0Y2QifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -194,9 +307,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">پروکسی همه نتا<br/><br/><a href="https://t.me/proxy?server=server.setproto.ir&amp;port=1129&amp;secret=FgMBAgABAAH8AwOG4kw63Q" target="_blank" rel="noopener">https://t.me/proxy?server=server.setproto.ir&amp;port=1129&amp;secret=FgMBAgABAAH8AwOG4kw63Q</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -205,7 +316,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/65" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjUsInQiOjE3NTE5NzY0NTksImgiOiJiZWI0NGQwMzJlMGI3ZmY3OTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/65" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjUsInQiOjE3NTE5ODE1NTksImgiOiI5MWY3NmM4YmFlYTg1ZGY4ZmYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -222,9 +333,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://53ed61cd-8be2-46eb-b7c2-850a732ed849@185.146.173.24:8880?path=%2FTel%3A%40Daily_ConfigsTel%3A%40Daily_ConfigsTel%3A%40Daily_ConfigsTel%3A%40Daily_ConfigsTel%3A%40Daily_Configs&amp;security=none&amp;encryption=none&amp;host=Daily-ConfigsV2rayGmSix6.6.6.6.ir.Com.Site.xn--fhq0la447aac5504dea701axr1g.vigilantecollection.com.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل و مخابرات وصله</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -233,7 +342,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/66" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjYsInQiOjE3NTE5NzY0NTksImgiOiI0NDEwNjgzYzkwNWQ1NmQ4N2MifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/66" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjYsInQiOjE3NTE5ODE1NTksImgiOiIxYmIwNTUyYzA2Y2QwNWYyZWYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -250,9 +359,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">پروکسی ایرانسل <br/><br/><a href="https://t.me/proxy?server=185.121.225.81&amp;port=8085&amp;secret=FpABAiIBhwH8AwOG42xL3Q==" target="_blank" rel="noopener">https://t.me/proxy?server=185.121.225.81&amp;port=8085&amp;secret=FpABAiIBhwH8AwOG42xL3Q==</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -261,7 +368,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/68" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjgsInQiOjE3NTE5NzY0NTksImgiOiJjNDMyMmYyZTIyNmExY2Q1MTcifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/68" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjgsInQiOjE3NTE5ODE1NTksImgiOiI1Y2E1OTkwMjVmYWNjNjA0N2YifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -278,10 +385,8 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://VPNCUSTOMiZE@Channel-VPNCUSTOMIZE.V2ray.motorcycles:2095?path=%2FV2rayCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE-VPNCUSTOMIZE%3Fed%3D1024&amp;security=none&amp;encryption=none&amp;host=V2ray-_-_-_-_-_-VPNCUSTOMIZE.keLLekcoLLection.com.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل و همراه اول <br/>نامحدود تا فردا</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">87</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Vpn master</span>,&nbsp;<a class="tgme_widget_message_date" href="https://t.me/realvpnmaster/68"><time datetime="2024-05-11T18:35:22+00:00" class="time">18:35</time></a></span>
@@ -289,7 +394,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/69" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjksInQiOjE3NTE5NzY0NTksImgiOiJkN2U2YTE5Y2ZkYzhjZjU5NWMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/69" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NjksInQiOjE3NTE5ODE1NTksImgiOiJlYTY0ZDY1OTdjZThkNDMxMTcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -306,9 +411,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">آیدی جهت خرید کانفیگ اختصاصی:<br/><a href="https://t.me/Vpn_masterreal" target="_blank">@Vpn_masterreal</a><br/><br/><a href="https://t.me/realvpnmaster/54" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لیست قیمت</a><br/><br/>قبل خرید تست هم داره</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -317,7 +420,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/70" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzAsInQiOjE3NTE5NzY0NTksImgiOiIzMWVjMTI4MGY1ODQ3YzBhNTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/70" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzAsInQiOjE3NTE5ODE1NTksImgiOiIwYmMxM2E0MzQ4ODA4NDJlYzMifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -340,8 +443,6 @@
     <a href="https://t.me/realvpnmaster/70" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -350,7 +451,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/71" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzEsInQiOjE3NTE5NzY0NTksImgiOiI5YzhmMjY2ZTc0N2RkNjU5NTgifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/71" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzEsInQiOjE3NTE5ODE1NTksImgiOiIwYzNiMjc1Y2Q4Y2IxMGUyNzgifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -367,9 +468,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://8044d53d-2efb-4cc7-9587-4c95caa5ab56@185.146.173.237:80?path=%2Frxv2ray-rxv2ray-rxv2ray-rxv2ray%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=www.iran.ir.%E7%A7%91%E6%96%AF%E6%B6%85%E9%81%8E%E6%BF%BE%E5%99%A8.website.&amp;type=ws#Telegram+<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل و همراه اول</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -378,7 +477,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/72" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzIsInQiOjE3NTE5NzY0NTksImgiOiI5MWVhYzcyYzliYjQ2ODMxYjIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/72" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzIsInQiOjE3NTE5ODE1NTksImgiOiIwNjQ2MDdjMjBhYTM2MGYzYzIifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -395,9 +494,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://19f935c2-4c92-4b8a-b024-3e378f396255@zula.ir:80?path=%2F%40custom_config%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=336125422.ir.www.zula.ir.xn--4all.king4usd.shop.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>همه اوپراتور ها</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -406,7 +503,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/73" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzMsInQiOjE3NTE5NzY0NTksImgiOiJjNzhhZTc4ZWY3MGZmMjQ4YWMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/73" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzMsInQiOjE3NTE5ODE1NTksImgiOiI0ZWM4ZDQ2NmI0NWUxMjQyNGYifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -423,9 +520,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://5c7d90fe-f7d5-40bf-bfca-7726d5e44786@185.146.173.185:2095?path=%2F&amp;security=none&amp;encryption=none&amp;host=V2ray-_-_-_-_-_-ShhProxy.TelegramChannelJoinBede.com.&amp;type=ws#%F0%9F%87%A9%F0%9F%87%AA+<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -434,7 +529,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/74" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzQsInQiOjE3NTE5NzY0NTksImgiOiI1ZWZkY2EzMTE0ZDE1ODI4NzMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/74" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzQsInQiOjE3NTE5ODE1NTksImgiOiJjZGMxOGFlM2I2M2M3YjcxZWQifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -451,9 +546,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://259d07bc-ae4a-4fb7-8421-2296c6c4e487@103.184.44.104:8880?path=%2F%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-%40LiV2ray%3Fed%3D1024&amp;security=none&amp;encryption=none&amp;host=xn--v2ray-qhantayawi--a-mwxzc08arba93xpvac79043ht5ia.xn--v2-gn1d638jbjx.xyz.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل مخابرات</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -462,7 +555,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/75" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzUsInQiOjE3NTE5NzY0NTksImgiOiIyZTMxZjczNTUzZGUxZmJiNWMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/75" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzUsInQiOjE3NTE5ODE1NTksImgiOiJmNzAzZDkwMGY0NTJlNjc2MzUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -479,9 +572,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://737f891d-b01b-4628-9171-3340aa26ee01@185.146.173.58:80?path=%2FTelegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=501.ftp.debian.org.www.speedtest.net.%E5%85%8D%E8%B4%B9%E4%B8%8A%E7%BD%9166.Site.&amp;type=ws#JOIN%3A@realvpnmaster<br/><br/>ایرانسل مخابرات</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -490,7 +581,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/76" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzYsInQiOjE3NTE5NzY0NTksImgiOiJkMGZkY2Y0NmJlYTY0NmZiMGMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/76" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzYsInQiOjE3NTE5ODE1NTksImgiOiIyNDQ3ODZhNDIzMjczNDU5N2QifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -507,9 +598,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">آیدی جهت خرید کانفیگ اختصاصی:<br/><a href="https://t.me/Vpn_masterreal" target="_blank">@Vpn_masterreal</a><br/><br/><a href="https://t.me/realvpnmaster/54" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">لیست قیمت</a><br/><br/>قبل خرید تست هم داره</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -518,7 +607,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/77" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzcsInQiOjE3NTE5NzY0NTksImgiOiI2YzZiMzg4MzlmODViMDExYmUifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/77" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzcsInQiOjE3NTE5ODE1NTksImgiOiI0Y2UxZTNmM2RjNzQwYTQ5YjEifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -535,9 +624,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://29d742a6-c2d9-4f1d-bd43-e9ce835d0784@185.146.173.58:80?path=%2FTelegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy-Telegram-free_v2rayyy%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=501.ftp.debian.org.www.speedtest.net.%E5%85%8D%E8%B4%B9%E4%B8%8A%E7%BD%9166.Site.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>ایرانسل مخابرات همراه</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -546,7 +633,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/78" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzgsInQiOjE3NTE5NzY0NTksImgiOiJkOWZlMTRmYmNjMDA5MWFmYWIifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/78" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzgsInQiOjE3NTE5ODE1NTksImgiOiIxMmJlMTY1MTBkNjNmNGI4MzkifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -563,9 +650,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://b2449438-5b50-4ddf-ad7d-fe66f3eb7753@LIGHTNING6-joinbed.filj.top:8880?path=%2F%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-%40LiV2ray%3Fed%3D1024&amp;security=none&amp;encryption=none&amp;host=xn--v2ray-qhantayawi--a-mwxzc08arba93xpvac79043ht5ia.xn--v2-gn1d638jbjx.xyz.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/>همه اوپراتور ها<br/>نامحدود تا ساعت ۴</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -574,7 +659,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/79" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzksInQiOjE3NTE5NzY0NTksImgiOiJjNjdlMmIyZTg2ZTk3NzQxM2QifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/79" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6NzksInQiOjE3NTE5ODE1NTksImgiOiJjYzk4NTUyYjVhODRkOWM2YjUifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -591,9 +676,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/realvpnmaster"><span dir="auto">Vpn master</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto">vless://f602bb71-7011-4b59-8f04-eb50040bf2e3@LIGHTNING6-joinbed.filj.top:8880?path=%2F%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-%40LiV2ray&amp;security=none&amp;encryption=none&amp;host=xn--v2ray-qhantayawi--a-mwxzc08arba93xpvac79043ht5ia.xn--v2-gn1d638jbjx.xyz.&amp;type=ws#<a href="https://t.me/realvpnmaster" target="_blank">@realvpnmaster</a><br/><br/>همه اوپراتور ها<br/>نامحدود تا ساعت ۸</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -602,7 +685,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/80" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODAsInQiOjE3NTE5NzY0NTksImgiOiIzNWUxYTMwMjA1MTYzZmZiZTMifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/80" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODAsInQiOjE3NTE5ODE1NTksImgiOiI0MzA0NjNiNjY5OTZjMTM2N2IifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -625,9 +708,7 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">v2rayNG_1.8.24_arm64-v8a.apk</div>
     <div class="tgme_widget_message_document_extra" dir="auto">22.7 MB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">v2rayNG 1.8.24 <i>(Arm64-v8a)</i><br/>اخرین نسخه برنامه V2rayNG</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">v2rayNG 1.8.24 <i>(Arm64-v8a)</i><br/>اخرین نسخه برنامه V2rayNG</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -636,7 +717,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/81" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODEsInQiOjE3NTE5NzY0NTksImgiOiI0MzM3MTU2NzljZWI1N2NlY2YifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/81" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODEsInQiOjE3NTE5ODE1NTksImgiOiJjODkzY2RlMDY0ODYxZWZhY2QifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -659,9 +740,7 @@
     <a href="https://t.me/realvpnmaster/81" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
     <span class="tgme_widget_message_views">119</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><span class="tgme_widget_message_from_author" dir="auto">Milad</span>,&nbsp;edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/realvpnmaster/81"><time datetime="2024-05-20T13:11:24+00:00" class="time">13:11</time></a></span>
@@ -669,7 +748,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/82" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODIsInQiOjE3NTE5NzY0NTksImgiOiI5ZTQxY2RkZDdhNDg5MDhmN2QifQ">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="realvpnmaster/82" data-view="eyJjIjotMjEyOTY0MzQ4MCwicCI6ODIsInQiOjE3NTE5ODE1NTksImgiOiI3Yzk5MTA5Y2Y5MGE4ZDhmNjcifQ">
   <div class="tgme_widget_message_user"><a href="https://t.me/realvpnmaster"><i class="tgme_widget_message_user_photo bgcolor6" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/h9Pz3A1LojgBRaAeNRkcij442cihfn4JEc53ap0YezwPgQUOIlx2EyTY4w8JFb6rTijSBJkhhNUiWn83X26lNBV7flw4ZkXxMlnllvdO_ZC8K-XET14LeRj7zBbTk_eQcc88AjBk3McefgNEgRTHXoDVgTDlOBhnUIBMi1lzVClK9EnrA4y-9NQMdIrjbCsiMuL2ZPXgWe23BRHr5q9mqugF3WhiJaTh1JtmTbOFcLEAlOWL4Y2NF949HTklX5byGyCMM2cgeTnGljfcYJju4m51Mok1ckWTrjxcz_UthCd6DZVFQrD0wVMqGNOtztCqEi_tECguwJsk75fkfQtY2w.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -692,8 +771,6 @@
     <a href="https://t.me/realvpnmaster/82" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -711,11 +788,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 54.83ms -->
+<!-- page generated in 67.25ms -->

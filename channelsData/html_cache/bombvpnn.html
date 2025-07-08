@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">17.9K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">492</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">124</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">705</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">847</span> <span class="counter_type">links</span></div></div>
           <div class="tgme_channel_info_description">فروش فیلترشکن برای اندروید و آیفون با ضمانت و کیفیت عالی</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=26a7db74c3d798c67a_3763948512752762061">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=29a75e042b64493a95_1026526385187690557">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=26a7db74c3d798c67a_3763948512752762061">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=29a75e042b64493a95_1026526385187690557">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/bombvpnn">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/bombvpnn">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/bombvpnn?before=5846" class="tme_messages_more js-messages_more" data-before="5846"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5846" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0NiwidCI6MTc1MTk3NjIwMSwiaCI6IjU4MDhmY2U3ZDZmODJiMGMwNyJ9">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/bombvpnn?before=5846" class="tme_messages_more js-messages_more" data-before="5846"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5846" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0NiwidCI6MTc1MTk4MTMwNCwiaCI6IjhmMTQ2Njg2MmM1MjQ0NTcyMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -126,20 +243,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i> احتمال اختلال وکندشدن مجدد اینترنت<br/>به دلیل موج جدید حملات<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E28FBA.png')"><b>⏺</b></i> اگه خرید فیلترشکن انجام ندادید هرچه سریعتر خودتون رو براش اماده کنید&#33;<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAE.png')"><b>🎮</b></i> مشاهده پلن ها و خرید از طریق:<br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9492.png')"><b>🔒</b></i> <a href="https://t.me/bomb_vpn_bot" target="_blank">@bomb_vpn_bot</a><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i>سرویس های ما امادگی وصل شدن با اختلال وکندی رو کاملا دارد<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i><br/>.</div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA4AA.png')"><b>🤪</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5846"><time datetime="2025-07-06T07:46:50+00:00" class="time">07:46</time></a></span>
+    <span class="tgme_widget_message_views">2.35K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5846"><time datetime="2025-07-06T07:46:50+00:00" class="time">07:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5847" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0NywidCI6MTc1MTk3NjIwMSwiaCI6IjE0Yzg4NTg5NjQxNmExYmMzMiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5847" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0NywidCI6MTc1MTk4MTMwNCwiaCI6ImI0YjY5Njg3YWE3Y2VkM2Q3ZSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -154,20 +269,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B6.png')"><b>📶</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9B9C.png')"><b>🛜</b></i> ما وصلیم <br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C85.png')"><b>✅</b></i>و 100% سرورها فعال هستن.<br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E380B0.png')"><b>〰️</b></i><br/><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAF.png')"><b>🎯</b></i>  اگه میخای تو کندی از اینترنت جا نمونی همین الان در لحظه سرویست رو بگیر <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/> <a href="https://t.me/bomb_vpn_bot" target="_blank">@bomb_vpn_bot</a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5847"><time datetime="2025-07-06T08:07:36+00:00" class="time">08:07</time></a></span>
+    <span class="tgme_widget_message_views">2.38K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5847"><time datetime="2025-07-06T08:07:36+00:00" class="time">08:07</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5848" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0OCwidCI6MTc1MTk3NjIwMSwiaCI6IjdkMGRjMTVkYzg5ZjMzYzEyMSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5848" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0OCwidCI6MTc1MTk4MTMwNCwiaCI6ImIxYzg3ZmM2NzIwMWNmN2VkMCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -184,18 +297,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><b><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A5.png')"><b>💥</b></i> اختلالات داره شروع میشه ولی ما همچنان داریم فیلم می‌بینیم و دانلود می‌کنیم&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8EAC.png')"><b>🎬</b></i><br/>می‌دونی چرا؟ چون بمب کانفیگ دارم&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9188.png')"><b>👈</b></i> توام می‌خوای؟<br/>استارت کن رباتو<i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></b><br/><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F93B2.png')"><b>📲</b></i> <a href="https://t.me/bomb_vpn_bot" target="_blank"><u>@bomb_vpn_bot</u></a></div>
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8DBE.png')"><b>🍾</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5848"><time datetime="2025-07-06T15:45:58+00:00" class="time">15:45</time></a></span>
+    <span class="tgme_widget_message_views">2.16K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5848"><time datetime="2025-07-06T15:45:58+00:00" class="time">15:45</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5849" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0OSwidCI6MTc1MTk3NjIwMSwiaCI6IjgwYjNhZDY4M2IwMmQ3YTkwNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5849" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg0OSwidCI6MTc1MTk4MTMwNCwiaCI6ImUyNjM3OWI3ZGI2ZjdlYTRlOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -218,17 +329,15 @@
     <a href="https://t.me/bombvpnn/5849" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988D.png')"><b>😍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5849"><time datetime="2025-07-06T19:31:33+00:00" class="time">19:31</time></a></span>
+    <span class="tgme_widget_message_views">1.91K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5849"><time datetime="2025-07-06T19:31:33+00:00" class="time">19:31</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5850" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MCwidCI6MTc1MTk3NjIwMSwiaCI6IjhjYmZlNmI2ZjdjN2JmM2E3MyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5850" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MCwidCI6MTc1MTk4MTMwNCwiaCI6Ijk2ZjZlODMxNDc5ZjE2NTRiZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -251,17 +360,15 @@
     <a href="https://t.me/bombvpnn/5850" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5850"><time datetime="2025-07-06T21:22:22+00:00" class="time">21:22</time></a></span>
+    <span class="tgme_widget_message_views">2.03K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5850"><time datetime="2025-07-06T21:22:22+00:00" class="time">21:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5851" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MSwidCI6MTc1MTk3NjIwMSwiaCI6ImM2ZDYxMGQ4MjExZWNiMjJiOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5851" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MSwidCI6MTc1MTk4MTMwNCwiaCI6IjIzNmNjYjBlYzQxMmM0MDA1NyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -277,7 +384,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/bombvpnn/5850" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/bombvpnn/5850" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">فیلترشکن|ایفون اندروید</span>
 </div>
@@ -289,17 +396,15 @@
     <a href="https://t.me/bombvpnn/5851" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9285.png')"><b>💅</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5851"><time datetime="2025-07-06T21:22:22+00:00" class="time">21:22</time></a></span>
+    <span class="tgme_widget_message_views">1.91K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5851"><time datetime="2025-07-06T21:22:22+00:00" class="time">21:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5852" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MiwidCI6MTc1MTk3NjIwMSwiaCI6IjVhNTFiNjE3ZmNhMGQyOTY5YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5852" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MiwidCI6MTc1MTk4MTMwNCwiaCI6IjFlZWFjZmM3YTk3NjU1Y2M5MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -322,17 +427,15 @@
     <a href="https://t.me/bombvpnn/5852" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>10</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5852"><time datetime="2025-07-06T21:40:46+00:00" class="time">21:40</time></a></span>
+    <span class="tgme_widget_message_views">1.95K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5852"><time datetime="2025-07-06T21:40:46+00:00" class="time">21:40</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="bombvpnn/5853" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MywidCI6MTc1MTk3NjIwMSwiaCI6ImE4MDI5N2VmNzg4YzI4Y2NiOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap service_message js-widget_message" data-post="bombvpnn/5853" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1MywidCI6MTc1MTk4MTMwNCwiaCI6ImUyNDVhZjUxYzczNzllNjQ4NSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -349,9 +452,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><a class="tgme_widget_message_author_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a> pinned «<span class="tgme_widget_service_strong_text" dir="auto"><tg-emoji emoji-id="5868318364618725257"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94B9.png')"><b>🔹</b></i></tg-emoji> وقتی همه جا قطعه… <tg-emoji emoji-id="5226813248900187912"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92A3.png')"><b>💣</b></i></tg-emoji>بمب وی‌پی‌ان همیشه وصله&#33;  <tg-emoji emoji-id="5145427681680032825"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i></tg-emoji> بدون قطعی، بدون دردسر  <tg-emoji emoji-id="5363925144907554991"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8698.png')"><b>🆘</b></i></tg-emoji>@foroshe_vpn  <tg-emoji emoji-id="5789626613771537810"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F938C.png')"><b>📌</b></i></tg-emoji>همین الان بزن رو لینک و شروع کن<tg-emoji emoji-id="5406745015365943482"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E2AC87.png')"><b>⬇️</b></i></tg-emoji>:  [ربات خرید بمب وی‌پی‌ان]</span>»</div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -360,7 +461,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5854" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NCwidCI6MTc1MTk3NjIwMSwiaCI6IjgxOTMzMjRlMmU3ZTVmZWNiZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5854" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NCwidCI6MTc1MTk4MTMwNCwiaCI6ImI5YWRiZjNjMzIzMzk3NGE0ZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -383,17 +484,15 @@
     <a href="https://t.me/bombvpnn/5854" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')"><b>🫡</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.9K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5854"><time datetime="2025-07-06T23:18:55+00:00" class="time">23:18</time></a></span>
+    <span class="tgme_widget_message_views">1.96K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5854"><time datetime="2025-07-06T23:18:55+00:00" class="time">23:18</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5855" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NSwidCI6MTc1MTk3NjIwMSwiaCI6ImYwNmJiYTc4NjdlNzVkZGQ0MiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5855" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NSwidCI6MTc1MTk4MTMwNCwiaCI6IjczZTVmMWM4ODEyOTM1NzM4NCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -416,17 +515,15 @@
     <a href="https://t.me/bombvpnn/5855" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5855"><time datetime="2025-07-07T08:03:06+00:00" class="time">08:03</time></a></span>
+    <span class="tgme_widget_message_views">1.82K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5855"><time datetime="2025-07-07T08:03:06+00:00" class="time">08:03</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5856" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NiwidCI6MTc1MTk3NjIwMSwiaCI6IjEzYzU0MmI2NTJkNzA4YWJlOCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5856" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NiwidCI6MTc1MTk4MTMwNCwiaCI6ImU3MWY4NDBhYmI1NWM1ODkzMiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -449,17 +546,15 @@
     <a href="https://t.me/bombvpnn/5856" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5856"><time datetime="2025-07-07T08:59:09+00:00" class="time">08:59</time></a></span>
+    <span class="tgme_widget_message_views">1.78K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5856"><time datetime="2025-07-07T08:59:09+00:00" class="time">08:59</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5857" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NywidCI6MTc1MTk3NjIwMSwiaCI6IjMxYzY3ZTQ0MWE3ZWRlNGZkYiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5857" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1NywidCI6MTc1MTk4MTMwNCwiaCI6ImQwNGQyMTIxODE0NTk0MWIxMyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -482,17 +577,15 @@
     <a href="https://t.me/bombvpnn/5857" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5857"><time datetime="2025-07-07T11:34:26+00:00" class="time">11:34</time></a></span>
+    <span class="tgme_widget_message_views">1.73K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5857"><time datetime="2025-07-07T11:34:26+00:00" class="time">11:34</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5858" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1OCwidCI6MTc1MTk3NjIwMSwiaCI6ImE1MzQ2MTI2NTU3ODhjNDRiNyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5858" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1OCwidCI6MTc1MTk4MTMwNCwiaCI6IjU0ZTgwM2VhOTZlYWU3NzQ5OSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -509,7 +602,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
 
-<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5994850214739036156 1395784834_456247292" href="https://t.me/bombvpnn/5858" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/Q9UglnvUoSgVffqb0LSQCMf9OMNxIkQMc2vfiZr0xiaUcw2R0pPkpL7o3LbV40IjQYXSl17RP0UvIYP9tygBYGAUT2sSF0vHvxoTjPVvZn-O-vdgXO5cCgJcQN5S08TmyhGLe7V_klUYScVk_iy56O_dmomyfiud04Q983YqWJDFMNpwFd-e8-f4FL41aJgPRWw19dpFdjHzkIaVwbT0SwgQt6CiUpopnEOu1XgSYSud5WVLYxZnOO-rLQOoq6Xnc7QcZV2plSl53aTs4x94PuzCockJGtLM1oFVxrkzb6CjxiP9wE7fbv2LVeLrEmNun3k-6dwKJDg-UKzWMLVwvQ.jpg')">
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5994850214739036156 1395784834_456247292" href="https://t.me/bombvpnn/5858" style="width:800px;background-image:url('https://cdn4.cdn-telegram.org/file/I2LZQNZQ67rIMF6iYoeAnljnM9FN59FvYgFkxy-CZqeDp9ZZaRiQYsG963gusxYQGv_Wbcky4yHXUXBgrepGbcNolUc50CH1PWrFSv5RSPZS513g4qmmOvAmlGHQ0AevVC-xjqeoV4vYGBLFz-M0-XbHiZKToNtd58_6Ayn6K6IY1du7gemSe-R7Qs9SYrVEVJwcsz8iCrESDcKexTLd8Qyo-1Bqu-qLxXm_pma5rWsc7LGHxJx8pkyikwHCR5vNCF3L9NbkMsASSmxpCYd_3Hqw_KLaQZ-pKEdBgIqw-J5Ofu1cY5Z_nIQ-FZ-c2248_l5ZvJ2rLL81BTwEoCm8HQ.jpg')">
   <div class="tgme_widget_message_photo" style="padding-top:59.5%"></div>
 </a><div class="tgme_widget_message_text js-message_text" dir="auto"><b><tg-emoji emoji-id="5456278881780644392"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9294.png')"><b>💔</b></i></tg-emoji></b><b> اینو خوب نگاه کن&#33;<br/></b><b><tg-emoji emoji-id="5294461573677462235"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918B.png')"><b>👋</b></i></tg-emoji></b><b>این همون چیزیه که وسط قطعی و کندی همه دنبالش می‌گردن<br/><br/></b><b><tg-emoji emoji-id="5361740325108857088"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29884.png')"><b>☄️</b></i></tg-emoji></b><b>وقتی میگم پینگ عالی و پایداری<br/> واقعی یعنی این</b> <tg-emoji emoji-id="5352871660024246779"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C94.png')"><b>✔️</b></i></tg-emoji><br/><br/> همین الان سرویس خودت رو دریافت کن:<tg-emoji emoji-id="5470124868500465804"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i></tg-emoji><br/><a href="https://t.me/Bomb_vpn_bot" target="_blank" rel="noopener"><u>https://t.me/Bomb_vpn_bot</u></a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
   <div class="message_media_not_supported">
@@ -517,17 +610,15 @@
     <a href="https://t.me/bombvpnn/5858" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.7K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5858"><time datetime="2025-07-07T12:30:48+00:00" class="time">12:30</time></a></span>
+    <span class="tgme_widget_message_views">1.74K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5858"><time datetime="2025-07-07T12:30:48+00:00" class="time">12:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5859" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1OSwidCI6MTc1MTk3NjIwMSwiaCI6IjRjYzU5MDA5YmNlOTI2ZjdhMCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5859" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg1OSwidCI6MTc1MTk4MTMwNCwiaCI6IjY4NWI2NTM2ZDI1ZGQwNDYxOCJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -550,17 +641,15 @@
     <a href="https://t.me/bombvpnn/5859" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>23</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9898.png')"><b>😘</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E85.png')"><b>🎅</b></i>2</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9285.png')"><b>💅</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5859"><time datetime="2025-07-07T13:01:13+00:00" class="time">13:01</time></a></span>
+    <span class="tgme_widget_message_views">1.84K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5859"><time datetime="2025-07-07T13:01:13+00:00" class="time">13:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5860" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MCwidCI6MTc1MTk3NjIwMSwiaCI6IjJkMDIyYmY3OWE0NWM0YWFkYSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5860" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MCwidCI6MTc1MTk4MTMwNCwiaCI6IjZlYTgwNGFmODFmM2MzNWQ2MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -576,7 +665,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/bombvpnn/5859" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/bombvpnn/5859" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">فیلترشکن|ایفون اندروید</span>
 </div>
@@ -588,17 +677,15 @@
     <a href="https://t.me/bombvpnn/5860" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>5</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>4</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5860"><time datetime="2025-07-07T13:01:13+00:00" class="time">13:01</time></a></span>
+    <span class="tgme_widget_message_views">1.84K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5860"><time datetime="2025-07-07T13:01:13+00:00" class="time">13:01</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5861" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MSwidCI6MTc1MTk3NjIwMSwiaCI6IjVjMTg1NDIwMGI2M2ZlMzhlNSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5861" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MSwidCI6MTc1MTk4MTMwNCwiaCI6IjYzMTBlY2JmYmFmNDU1MzZmNyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -621,17 +708,15 @@
     <a href="https://t.me/bombvpnn/5861" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>7</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5861"><time datetime="2025-07-07T19:17:13+00:00" class="time">19:17</time></a></span>
+    <span class="tgme_widget_message_views">1.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5861"><time datetime="2025-07-07T19:17:13+00:00" class="time">19:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5862" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MiwidCI6MTc1MTk3NjIwMSwiaCI6IjMxZjlmYWY3NDVhZmMwNWE4NSJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5862" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MiwidCI6MTc1MTk4MTMwNCwiaCI6IjdlMDJiMGQwNWM3MDBlNGYyOSJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -654,17 +739,15 @@
     <a href="https://t.me/bombvpnn/5862" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5862"><time datetime="2025-07-07T19:57:53+00:00" class="time">19:57</time></a></span>
+    <span class="tgme_widget_message_views">1.45K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5862"><time datetime="2025-07-07T19:57:53+00:00" class="time">19:57</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5863" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MywidCI6MTc1MTk3NjIwMSwiaCI6IjY0ZWIwYTVjM2M1OGU3NWEzZCJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5863" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2MywidCI6MTc1MTk4MTMwNCwiaCI6IjkxNmJjYWYxMjc0OGY0OWU2MiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -687,17 +770,15 @@
     <a href="https://t.me/bombvpnn/5863" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918F.png')"><b>👏</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8DBE.png')"><b>🍾</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F928B.png')"><b>💋</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5863"><time datetime="2025-07-07T22:29:02+00:00" class="time">22:29</time></a></span>
+    <span class="tgme_widget_message_views">1.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5863"><time datetime="2025-07-07T22:29:02+00:00" class="time">22:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5864" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2NCwidCI6MTc1MTk3NjIwMSwiaCI6IjA3YWEzN2U1NjA5MGMwZWI1YiJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5864" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2NCwidCI6MTc1MTk4MTMwNCwiaCI6ImMzNDc5MmIxZmU2ZjgxZDhjZiJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -720,17 +801,15 @@
     <a href="https://t.me/bombvpnn/5864" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">668</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5864"><time datetime="2025-07-08T07:49:41+00:00" class="time">07:49</time></a></span>
+    <span class="tgme_widget_message_views">782</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5864"><time datetime="2025-07-08T07:49:41+00:00" class="time">07:49</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5865" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2NSwidCI6MTc1MTk3NjIwMSwiaCI6ImVhOGZlODA4NmZiOTNiNzg5YyJ9">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="bombvpnn/5865" data-view="eyJjIjotMTU3MDU4OTQ1MCwicCI6NTg2NSwidCI6MTc1MTk4MTMwNCwiaCI6ImViNmQzYjQ0ZWEyYmExYTBmYyJ9">
   <div class="tgme_widget_message_user"><a href="https://t.me/bombvpnn"><i class="tgme_widget_message_user_photo bgcolor3" data-content="ف"><img src="https://cdn4.cdn-telegram.org/file/cPUhypf3YgSvbZQF2T2yJo-e_qNRPud19rdCAKEQSkSnHNbL2pJV1A49Bo8yFGoicPTfmR02ymJM-GORWDg8fv0qbJaOqy2Nn8V9OozK9oL7rurApArpoMjVHXgGR1u6o-yF_eJBje6o6tmQkQh3rtsubdI8jcw2hfoEeL1XKNXY-txUr6P-p84whenT0Zmtz9v8cPMfIRlBXANM1xUomvHRRVmjl5LXqJhOHqSbGRrvHxIYwdGLrgkqrHKAKPVBHeLfuvFhl13LSvMnE3mXFsgrGMOPCteac66sYiWibY0w2luqlbGj2DBD3kWLBYUW-rQWhFNqmblHTxJjf4Ra6g.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -746,7 +825,7 @@
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/bombvpnn"><span dir="auto">فیلترشکن|ایفون اندروید</span></a></div>
 
-<a class="tgme_widget_message_reply" href="https://t.me/bombvpnn/5864" >
+<a class="tgme_widget_message_reply user-color-default" href="https://t.me/bombvpnn/5864" ">
 <div class="tgme_widget_message_author accent_color">
   <span class="tgme_widget_message_author_name" dir="auto">فیلترشکن|ایفون اندروید</span>
 </div>
@@ -758,12 +837,10 @@
     <a href="https://t.me/bombvpnn/5865" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
   </div>
 </div></div>
-
-
-<div class="tgme_widget_message_footer compact js-message_footer">
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA1.png')"><b>⚡</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F92AF.png')"><b>💯</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">639</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5865"><time datetime="2025-07-08T07:56:32+00:00" class="time">07:56</time></a></span>
+    <span class="tgme_widget_message_views">756</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/bombvpnn/5865"><time datetime="2025-07-08T07:56:32+00:00" class="time">07:56</time></a></span>
   </div>
 </div>
   </div>
@@ -777,11 +854,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 57.68ms -->
+<!-- page generated in 67.06ms -->

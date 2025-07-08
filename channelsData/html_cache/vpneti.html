@@ -42,9 +42,126 @@
 <link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
 <link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
     <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
-    <link href="//telegram.org/css/widget-frame.css?68" rel="stylesheet" media="screen">
-    <link href="//telegram.org/css/telegram-web.css?37" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/widget-frame.css?71" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
     <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
   </head>
   <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
     <div class="tgme_background_wrap">
@@ -73,7 +190,7 @@
           </div>
           <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">135</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">36</span> <span class="counter_type">files</span></div></div>
           <div class="tgme_channel_info_description">کانفیگ رایگان</div>
-          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=bb612bd788ffd3888a_4925686248782154314">
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=2218d3b3c2adc4de50_16747005514303967024">
             <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
           </a>
           <div class="tgme_footer">
@@ -94,7 +211,7 @@
       </section>
     </div>
     <div class="tgme_header_info">
-      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=bb612bd788ffd3888a_4925686248782154314">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=2218d3b3c2adc4de50_16747005514303967024">
         <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
       </a>
       <a class="tgme_header_link" href="https://t.me/vpneti">
@@ -111,7 +228,7 @@
 <main class="tgme_main" data-url="/vpneti">
   <div class="tgme_container">
     <section class="tgme_channel_history js-message_history">
-      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpneti?before=350" class="tme_messages_more js-messages_more" data-before="350"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/350" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjgyZThlNDUwYmVkOWVhODhlIn0">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/vpneti?before=350" class="tme_messages_more js-messages_more" data-before="350"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/350" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDU4YTEyNTQ3ZjM2NWJlMTljIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -128,9 +245,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://09f16c89-bd12-49d0-8a42-68f5a8d59b07@167.235.205.233:8443/?type=grpc&amp;encryption=none&amp;flow=&amp;sni=expat.com&amp;fp=chrome&amp;security=reality&amp;pbk=RtvB1dn0j--CA8FrYf2uAht4z8_rGOkQvTbmt9neYms&amp;sid=abdc0763#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -139,7 +254,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/351" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMzlmNWVlMGI2OTk4MzA3MWI1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/351" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMjU1YjY1OWRlNGM3YjAyNWU3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -154,20 +269,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6b7376dd-11d8-443c-804a-996072aefd81@16.16.143.152:8443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=coinmarketcap.com&amp;fp=chrome&amp;security=reality&amp;pbk=u-mmAoP_KxdQr89ydrgD1970cYthkkUMAUEPvd8vw2Y&amp;sid=5e#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/351"><time datetime="2023-11-05T08:48:54+00:00" class="time">08:48</time></a></span>
+    <span class="tgme_widget_message_views">2.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/351"><time datetime="2023-11-05T08:48:54+00:00" class="time">08:48</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/352" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2ZjYzg5MjFkMDIyZjQ1ZjQ2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/352" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiZmFhZjJhOGQzZDlkNzY2Zjg5In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -182,20 +295,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://693f4146-23ff-41ac-a242-b8e239fa859b@164.92.153.174:654/?type=grpc&amp;encryption=none&amp;flow=&amp;sni=trendyol.com&amp;fp=chrome&amp;security=reality&amp;pbk=usm6hgtyNe6Cm1Pm745eHpCrnxwvRf9ZqijYvSim8j0&amp;sid=5133ddd7#%40vpneti</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/352"><time datetime="2023-11-05T10:12:37+00:00" class="time">10:12</time></a></span>
+    <span class="tgme_widget_message_views">2.52K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/352"><time datetime="2023-11-05T10:12:37+00:00" class="time">10:12</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/353" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiNWQwMjExNTYzMGU4OTU3OGViIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/353" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzUzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNWE5MDRjYjVkNzY0YjE4OWE4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -210,20 +321,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://693f4146-23ff-41ac-a242-b8e239fa859b@164.92.153.174:654/?type=grpc&amp;encryption=none&amp;flow=&amp;sni=trendyol.com&amp;fp=chrome&amp;security=reality&amp;pbk=usm6hgtyNe6Cm1Pm745eHpCrnxwvRf9ZqijYvSim8j0&amp;sid=5133ddd7#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/353"><time datetime="2023-11-06T08:17:25+00:00" class="time">08:17</time></a></span>
+    <span class="tgme_widget_message_views">2.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/353"><time datetime="2023-11-06T08:17:25+00:00" class="time">08:17</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/354" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjA4MjhkYWZhMTJiMjYxNmIzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/354" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOWYzMTYzYWUxMjU3MjdmYmE4In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -238,20 +347,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6b7376dd-11d8-443c-804a-996072aefd81@13.49.221.222:8443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=coinmarketcap.com&amp;fp=chrome&amp;security=reality&amp;pbk=L6cV1NwkPVtlRrAdnr8imPmTnwjg6PhJEIM2RoCei2g&amp;sid=5e#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.5K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/354"><time datetime="2023-11-06T15:30:43+00:00" class="time">15:30</time></a></span>
+    <span class="tgme_widget_message_views">2.53K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/354"><time datetime="2023-11-06T15:30:43+00:00" class="time">15:30</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/355" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiM2UxMDY3ZGQzNDcxMzYxMGFlIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/355" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiZGEzYjVhZjBhZjJhY2M0NjgxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -266,20 +373,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6c6a1474-a170-4947-b491-cf0384295ec3@157.90.144.211:443/?type=grpc&amp;encryption=none&amp;flow=&amp;sni=dash.cloudflare.com&amp;fp=firefox&amp;security=reality&amp;pbk=KuZOpuz0L4H-VNikILS8NP9oA6Ra9uTGEZLHH0FODFM&amp;sid=83cdb009#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.6K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/355"><time datetime="2023-11-07T16:22:24+00:00" class="time">16:22</time></a></span>
+    <span class="tgme_widget_message_views">2.59K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/355"><time datetime="2023-11-07T16:22:24+00:00" class="time">16:22</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/356" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNjA4NmRiZDFmMTIxMGI2ZWEzIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/356" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNDBhNDA1ZWEyNTJlMDE5OTRlIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -294,20 +399,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://c1f0fda6-55f3-438f-a985-8615ec79e0c3@15.204.244.253:31970/?encryption=none&amp;flow=&amp;host=internet.life.com.by&amp;type=tcp&amp;headerType=http#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">2.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/356"><time datetime="2023-11-07T18:27:51+00:00" class="time">18:27</time></a></span>
+    <span class="tgme_widget_message_views">2.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/356"><time datetime="2023-11-07T18:27:51+00:00" class="time">18:27</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/357" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiMmMyMDhiZWEzNTVlY2ZhNTc2In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/357" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMWE0NzAyM2Y0ZmI0ZjY5NTYwIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -322,20 +425,18 @@
       </svg>
     </i>
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
-
 
 
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://6b7376dd-11d8-443c-804a-996072aefd81@16.170.40.252:8443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=coinmarketcap.com&amp;fp=chrome&amp;security=reality&amp;pbk=kV-EuEdgW8OwU85SCOZlC-Cg0XR25QpRPjGYniBSqxY&amp;sid=5e#%40VPNETI<br/>vmess://eyJhZGQiOiIzMS4xNC4xMTQuNTIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZWYyNDViYjgtMzAxZS00MThlLWFjMzItMjY0ZWYxOTdkYmJhIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NjUzNyIsInBzIjoiQFZQTkVUSSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==<br/>vless://6b7376dd-11d8-443c-804a-996072aefd81@13.53.186.182:8443/?type=tcp&amp;encryption=none&amp;flow=xtls-rprx-vision&amp;sni=coinmarketcap.com&amp;fp=chrome&amp;security=reality&amp;pbk=St67ftiosJQuHrHUaTNkr3_F915xSVeCTGx_oXznzHk&amp;sid=5e#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/357"><time datetime="2023-11-08T12:33:18+00:00" class="time">12:33</time></a></span>
+    <span class="tgme_widget_message_views">1.44K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/357"><time datetime="2023-11-08T12:33:18+00:00" class="time">12:33</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/358" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU4LCJ0IjoxNzUxOTc2MjAxLCJoIjoiYjJlMDRlNDBlOTg3NzUwYjc1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/358" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU4LCJ0IjoxNzUxOTgxMzA0LCJoIjoiYjNiODRhOTU2ZDc3ZTdmYWIyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -352,9 +453,7 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiI5MS4xMDcuMTUzLjEyNiIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiaW50ZXJuZXQubGlmZS5jb20uYnkiLCJpZCI6IjNkMWZhYjZlLTNiZDYtNDcyYi04ZDljLTk5MzRjMDRlYWY0MCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoiQFZQTkVUSSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -363,7 +462,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/359" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZjlmNDY1OWIwZWJlN2NhMTU3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/359" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzU5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNzg1ODNmNTNjNTRiYTliZGNmIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -380,18 +479,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vmess://eyJhZGQiOiIxMzUuMTgxLjI4LjU1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjljMDUwYTg2LWQ2MTItNDhmMS1lYzMyLWU1NzNkZjA4YTFiNyIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjMzODkiLCJwcyI6IkBWUE5FVEkiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Imh0dHAiLCJ2IjoiMiJ9</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.1K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/359"><time datetime="2023-11-17T14:41:00+00:00" class="time">14:41</time></a></span>
+    <span class="tgme_widget_message_views">3.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/359"><time datetime="2023-11-17T14:41:00+00:00" class="time">14:41</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/360" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiYWZhMDkxNjdiM2Y0MTAxZjU3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/360" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMTJhMzlmZmZmNDFjMzVmMzgxIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -414,18 +511,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-01.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">2 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.3K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/360"><time datetime="2023-11-20T09:29:38+00:00" class="time">09:29</time></a></span>
+    <span class="tgme_widget_message_views">3.26K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/360"><time datetime="2023-11-20T09:29:38+00:00" class="time">09:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/361" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYxLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZWY4MjE1NjM5MTRiMDA4ZmEwIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/361" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYxLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNGFjNTBhZWE5Y2U0MzdkMjQ0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -448,18 +543,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-02.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">2 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/361"><time datetime="2023-11-20T09:29:38+00:00" class="time">09:29</time></a></span>
+    <span class="tgme_widget_message_views">3.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/361"><time datetime="2023-11-20T09:29:38+00:00" class="time">09:29</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/362" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYyLCJ0IjoxNzUxOTc2MjAxLCJoIjoiZTExNzc2ZmMzZjhmY2NhYjYyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/362" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYyLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMmRmZDY0MTg5ODEwMTAwNTE2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -482,18 +575,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-03.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">1.1 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.4K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/362"><time datetime="2023-11-20T15:46:59+00:00" class="time">15:46</time></a></span>
+    <span class="tgme_widget_message_views">3.41K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/362"><time datetime="2023-11-20T15:46:59+00:00" class="time">15:46</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/363" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYzLCJ0IjoxNzUxOTc2MjAxLCJoIjoiOTU0ZmViMzc5MDNiMzdlOWJkIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/363" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzYzLCJ0IjoxNzUxOTgxMzA0LCJoIjoiNmE2MjQ0MjM3YzBkMGY5MDg0In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -510,18 +601,16 @@
     <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/vpneti"><span dir="auto">VPNETI | کانفیگ رایگان</span></a></div>
 
 
-
 <div class="tgme_widget_message_text js-message_text" dir="auto"><code>vless://ba3b1bb0-466e-4d7d-92d7-f2eeb4c73e76@channel-tel.vpneti.cf:443/?type=ws&amp;encryption=none&amp;flow=&amp;host=tel-channel.vpneti.cf&amp;path=%2Fde2.vlessx.xyz%2F%3Fed%3D2048&amp;security=tls&amp;sni=tel-channel.vpneti.cf#%40VPNETI</code><br/><br/><a href="https://t.me/VPNETI" target="_blank">@VPNETI</a></div>
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">1.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/363"><time datetime="2023-11-21T09:36:57+00:00" class="time">09:36</time></a></span>
+    <span class="tgme_widget_message_views">1.04K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/363"><time datetime="2023-11-21T09:36:57+00:00" class="time">09:36</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/364" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY0LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZThiMmFmOGIxOWI0MjdhYmY3In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/364" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY0LCJ0IjoxNzUxOTgxMzA0LCJoIjoiOGFlYzRjYzcxMjVjMDk4NDAyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -544,18 +633,16 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-04.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">2.2 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">پایان اعتبار</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">پایان اعتبار</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">12.0K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/364"><time datetime="2023-11-21T09:38:34+00:00" class="time">09:38</time></a></span>
+    <span class="tgme_widget_message_views">12K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/vpneti/364"><time datetime="2023-11-21T09:38:34+00:00" class="time">09:38</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/365" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY1LCJ0IjoxNzUxOTc2MjAxLCJoIjoiZDNhN2QwYWNkNGIyNWEzZjA1In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/365" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY1LCJ0IjoxNzUxOTgxMzA0LCJoIjoiODk1MDI3ZTAzZDY4NTI4YjlhIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -578,9 +665,7 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-05.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">2.2 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">پایان اعتبار</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">پایان اعتبار</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -589,7 +674,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/366" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY2LCJ0IjoxNzUxOTc2MjAxLCJoIjoiM2NiMjU3Y2EyODQ1OWE3ZjI0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/366" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY2LCJ0IjoxNzUxOTgxMzA0LCJoIjoiODA1MzIzMDYyZmUwOWI0MmU3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -613,8 +698,6 @@
     <div class="tgme_widget_message_document_extra" dir="auto">2.2 KB</div>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -623,7 +706,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/367" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY3LCJ0IjoxNzUxOTc2MjAxLCJoIjoiNGYxZGNhNWU3NWQzYWNmYmE0In0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/367" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY3LCJ0IjoxNzUxOTgxMzA0LCJoIjoiMjE1ZDkzNWM2NTY1ODU3OTQyIn0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -646,9 +729,7 @@
     <div class="tgme_widget_message_document_title accent_color" dir="auto">VPNETI-07.ehi</div>
     <div class="tgme_widget_message_document_extra" dir="auto">1.1 KB</div>
   </div>
-</a>
-<div class="tgme_widget_message_text js-message_text" dir="auto">unlimited</div>
-
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">unlimited</div>
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -657,7 +738,7 @@
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/369" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY5LCJ0IjoxNzUxOTc2MjAxLCJoIjoiN2UxOTBhY2NjODA0ZGQ2NDhhIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/369" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzY5LCJ0IjoxNzUxOTgxMzA0LCJoIjoiNjhjZGE2OGI0NDVlMGJjNmQ2In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -681,17 +762,15 @@
     <div class="tgme_widget_message_document_extra" dir="auto">3.3 KB</div>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
-    <span class="tgme_widget_message_views">3.8K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/369"><time datetime="2024-01-22T08:03:24+00:00" class="time">08:03</time></a></span>
+    <span class="tgme_widget_message_views">3.81K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/vpneti/369"><time datetime="2024-01-22T08:03:24+00:00" class="time">08:03</time></a></span>
   </div>
 </div>
   </div>
   
-</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/370" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzcwLCJ0IjoxNzUxOTc2MjAxLCJoIjoiMTVmMTRkMjc5NTYxYzIxYTYyIn0">
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="vpneti/370" data-view="eyJjIjotMTA5NzE4MDUwNywicCI6MzcwLCJ0IjoxNzUxOTgxMzA0LCJoIjoiMDM1OGI4NjBhODc5OGI1NjI3In0">
   <div class="tgme_widget_message_user"><a href="https://t.me/vpneti"><i class="tgme_widget_message_user_photo bgcolor3" data-content="V"><img src="https://cdn4.cdn-telegram.org/file/BwiHY2xtbtWmw24ju5SMWwpdXxAtITvn1SN60zo6AsL5bLQ4VEwFvfZskYoRLRPXnptw-VcYyy0_kpWC8gAgXDJQ5fjgY-8ERjp8jO2gPkEVG6aq0yskCkDNT5A10zn5uNOUKa1CS8tPBXZvTJ8ZWUWDIYzrs9WYHcsnaF9So7owRd5IR8E08eaJcAtABQMSA5-SWyxQ1_yycB4ouqtbDwbQBQ4bcFlj8H1wlelb5r_KzUgdK2slGNDl2g16Q_hGqUO0Rkc5vJMbFyKt9Xl0rwKPqW48qiY4vggM8JPesp7k5gk5TZRLtL5la3blK6OyilGiolLCbqYtLs4oqlw7nQ.jpg"></i></a></div>
   <div class="tgme_widget_message_bubble">
     
@@ -715,8 +794,6 @@
     <div class="tgme_widget_message_document_extra" dir="auto">2.9 KB</div>
   </div>
 </a>
-
-
 <div class="tgme_widget_message_footer compact js-message_footer">
   
   <div class="tgme_widget_message_info short js-message_info">
@@ -734,11 +811,11 @@
     <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 <script src="//telegram.org/js/tgsticker.js?31"></script>
 
-    <script src="//telegram.org/js/widget-frame.js?63"></script>
+    <script src="//telegram.org/js/widget-frame.js?64"></script>
     <script src="//telegram.org/js/telegram-web.js?14"></script>
     <script>TWeb.init();
 </script>
     
   </body>
 </html>
-<!-- page generated in 37.3ms -->
+<!-- page generated in 34.79ms -->
