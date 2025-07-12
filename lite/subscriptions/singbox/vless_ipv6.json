@@ -105,6 +105,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "❔ XX | 🔴 | vless | @freevpnatm | 19",
                 "❔ XX | 🔴 | vless | @freevv2rayng | 10",
                 "❔ XX | 🔴 | vless | @internet_nor | 2",
                 "❔ XX | 🟢 | vless | @kesslervpn | 2",
@@ -117,6 +118,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "❔ XX | 🔴 | vless | @freevpnatm | 19",
                 "❔ XX | 🔴 | vless | @freevv2rayng | 10",
                 "❔ XX | 🔴 | vless | @internet_nor | 2",
                 "❔ XX | 🟢 | vless | @kesslervpn | 2",
@@ -143,6 +145,31 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "❔ XX | 🔴 | vless | @freevpnatm | 19",
+            "type": "vless",
+            "server": "[2606:4700:3030::6815:2001]",
+            "server_port": 443,
+            "uuid": "6e5925c0-f39e-4449-93e9-2e2e9772b17b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "tls": {
+                "enabled": true,
+                "server_name": "[2606:4700:3030::6815:2001]",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "[2606:4700:3030::6815:2001]"
+                }
+            }
         },
         {
             "tag": "❔ XX | 🔴 | vless | @freevv2rayng | 10",
