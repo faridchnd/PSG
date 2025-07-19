@@ -105,14 +105,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔ XX | 🔴 | trojan | @freevpnatm | 15"
+                "❔ XX | 🔴 | trojan | @freevpnatm | 18",
+                "❔ XX | 🟢 | trojan | @v2rayweb | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔ XX | 🔴 | trojan | @freevpnatm | 15"
+                "❔ XX | 🔴 | trojan | @freevpnatm | 18",
+                "❔ XX | 🟢 | trojan | @v2rayweb | 19"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "3m",
@@ -135,11 +137,11 @@
             "type": "dns"
         },
         {
-            "tag": "❔ XX | 🔴 | trojan | @freevpnatm | 15",
+            "tag": "❔ XX | 🔴 | trojan | @freevpnatm | 18",
             "type": "trojan",
             "server": "[2606:4700:3030::6815:2001]",
             "server_port": 443,
-            "password": "f108e0e2-5f12-42b6-9e67-1b2f073ffb2b",
+            "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
             "tls": {
                 "enabled": true,
                 "server_name": "[2606:4700:3030::6815:2001]",
@@ -154,6 +156,29 @@
                 "path": "/",
                 "headers": {
                     "Host": "[2606:4700:3030::6815:2001]"
+                }
+            }
+        },
+        {
+            "tag": "❔ XX | 🟢 | trojan | @v2rayweb | 19",
+            "type": "trojan",
+            "server": "[2606:4700:3033::ac43:c768]",
+            "server_port": 443,
+            "password": "03e92910-34b1-4245-ac63-04a865f43cd5",
+            "tls": {
+                "enabled": true,
+                "server_name": "eEeFr5T6.4444916.XYZ",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/bi35bFWoRrnPhIJoo2wcE6Q",
+                "headers": {
+                    "Host": "eEeFr5T6.4444916.XYZ"
                 }
             }
         }
