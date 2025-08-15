@@ -17,7 +17,7 @@ dns:
   nameserver: [8.8.4.4, 1.0.0.1, "https://1.0.0.1/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪 DE | 🟢 | ss | @outlineopenkey | 7","type":"ss","server":"81.19.141.45","port":443,"password":"A6LHNY8RaeoRlrnhEn5dar","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6","type":"ss","server":"81.19.141.45","port":443,"password":"A6LHNY8RaeoRlrnhEn5dar","cipher":"chacha20-ietf-poly1305"}
 
 proxy-groups:
   - name: PSG-MANUAL
@@ -25,21 +25,21 @@ proxy-groups:
     proxies:
       - PSG-AUTO
       - PSG-FALLBACK
-    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 7'
+    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6'
 
   - name: PSG-AUTO
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 7'
+    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6'
 
   - name: PSG-FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 7'
+    - '🇩🇪 DE | 🟢 | ss | @outlineopenkey | 6'
 
 rules:
   - DOMAIN-SUFFIX,ir,DIRECT
